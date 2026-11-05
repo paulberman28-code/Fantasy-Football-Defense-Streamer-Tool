@@ -1,0 +1,33 @@
+Team,Offense,W1_4_pts,W5_8_pts,Total_pts,W9_Opponent,Backup_QB
+ATL,Atlanta Falcons (ATL),38,26,64,CIN (at ATL),No - Michael Penix Jr.
+CLE,Cleveland Browns (CLE),19,41,60,NO (vs CLE),Yes - Shedeur Sanders (Deshaun Watson concussed)
+LAC,Los Angeles Chargers (LAC),25,28,53,HOU (at LAC),No - Justin Herbert
+IND,Indianapolis Colts (IND),16,35,51,DAL (at IND),No - Daniel Jones
+SEA,Seattle Seahawks (SEA),20,29,49,ARI (at SEA),Yes - Drew Lock (Sam Darnold quad/rib)
+BAL,Baltimore Ravens (BAL),10,36,46,JAX (at BAL),Yes - Joe Fagnano (Lamar Jackson & Tyler Huntley injured)
+PIT,Pittsburgh Steelers (PIT),32,12,44,BYE (None),BYE (Starter: Aaron Rodgers)
+CAR,Carolina Panthers (CAR),15,29,44,DEN (at CAR),No - Bryce Young
+CHI,Chicago Bears (CHI),20,22,42,TB (at CHI),No - Caleb Williams
+MIA,Miami Dolphins (MIA),28,14,42,DET (at MIA),No - Malik Willis
+NYG,New York Giants (NYG),26,16,42,PHI (vs NYG),Yes - J.J. McCarthy (acquired replacement for injured Jaxson Dart)
+TB,Tampa Bay Buccaneers (TB),31,10,41,CHI (vs TB),No - Baker Mayfield
+NE,New England Patriots (NE),30,11,41,GB (at NE),No - Drake Maye
+TEN,Tennessee Titans (TEN),17,23,40,BYE (None),BYE (Starter: Cam Ward)
+PHI,Philadelphia Eagles (PHI),20,17,37,NYG (at PHI),Yes - Joe Milton III (Jalen Hurts on IR)
+ARI,Arizona Cardinals (ARI),20,17,37,SEA (vs ARI),Yes - Gardner Minshew (Jacoby Brissett benched)
+MIN,Minnesota Vikings (MIN),18,18,36,BUF (at MIN),Yes - Carson Wentz (Kyler Murray hamstring)
+NO,New Orleans Saints (NO),21,14,35,CLE (at NO),No - Tyler Shough
+LA,Los Angeles Rams (LA),23,11,34,WAS (vs LA),No - Matthew Stafford
+NYJ,New York Jets (NYJ),16,16,32,KC (vs NYJ),No - Geno Smith
+CIN,Cincinnati Bengals (CIN),20,9,29,ATL (vs CIN),No - Joe Burrow
+GB,Green Bay Packers (GB),15,12,27,NE (vs GB),No - Jordan Love
+HOU,Houston Texans (HOU),21,4,25,LAC (vs HOU),No - C.J. Stroud
+BUF,Buffalo Bills (BUF),16,8,24,MIN (vs BUF),No - Josh Allen
+DAL,Dallas Cowboys (DAL),10,13,23,IND (vs DAL),No - Dak Prescott
+WAS,Washington Commanders (WAS),11,12,23,LA (at WAS),No - Jayden Daniels
+KC,Kansas City Chiefs (KC),8,13,21,NYJ (at KC),No - Patrick Mahomes
+JAX,Jacksonville Jaguars (JAX),13,8,21,BAL (vs JAX),No - Trevor Lawrence
+DET,Detroit Lions (DET),9,11,20,MIA (vs DET),No - Jared Goff
+LV,Las Vegas Raiders (LV),11,8,19,SF (vs LV),No - Kirk Cousins
+DEN,Denver Broncos (DEN),13,6,19,CAR (vs DEN),No - Bo Nix
+SF,San Francisco 49ers (SF),3,15,18,LV (at SF),No - Brock Purdy
