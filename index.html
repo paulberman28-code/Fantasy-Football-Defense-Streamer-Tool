@@ -131,6 +131,22 @@
         <button id="reset-filters-btn" class="btn-text">Reset Filters</button>
       </div>
 
+      <div class="filter-controls" id="week10-filters" style="display: none;">
+        <div class="filter-item">
+          <label for="w10-tier-filter">Verdict:</label>
+          <select id="w10-tier-filter" aria-label="Filter Week 10 by Verdict">
+            <option value="ALL">All Outlooks</option>
+            <option value="TARGETS_ONLY">Priority & Speculative Stashes Only</option>
+            <option value="Priority Stash">Priority Stash (Top Targets)</option>
+            <option value="Speculative Stash">Speculative Stash (Solid Floor)</option>
+            <option value="Neutral Matchup">Neutral Matchups Only</option>
+            <option value="Do Not Stash / Avoid">Do Not Stash / Avoid (Traps)</option>
+          </select>
+        </div>
+
+        <button id="reset-w10-filters-btn" class="btn-text">Reset Filters</button>
+      </div>
+
       <div class="view-stats" id="active-count-label">
         Showing 30 Matchups
       </div>
@@ -189,7 +205,13 @@
       <div class="panel-header">
         <div class="panel-title-wrap">
           <h2 class="panel-title">Week 10 Look-Ahead Stash Board</h2>
-          <p class="panel-desc">Target next week's premier defensive matchups ahead of the waiver wire run. Ranked by Week 10 opponent vulnerability.</p>
+          <p class="panel-desc">Target next week's premier defensive matchups ahead of the waiver wire run. Tiered by matchup vulnerability from Priority Stashes down to High-Risk Traps.</p>
+        </div>
+        <div class="legend-row">
+          <span class="legend-item"><span class="legend-badge stash-priority">Priority Stash</span> High Upside Target</span>
+          <span class="legend-item"><span class="legend-badge stash-speculative">Speculative</span> Solid Floor</span>
+          <span class="legend-item"><span class="legend-badge stash-neutral">Neutral</span> Deep League</span>
+          <span class="legend-item"><span class="legend-badge stash-avoid">Do Not Stash</span> High-Risk / Avoid</span>
         </div>
       </div>
 
@@ -202,8 +224,9 @@
           <caption class="sr-only">Week 10 Look-Ahead Defensive Stashes</caption>
           <thead>
             <tr>
-              <th data-sort="Stash Defense" class="col-sticky col-def">Stash<br>Defense <span class="sort-arrow"></span></th>
+              <th data-sort="Defense" class="col-sticky col-def">Defense <span class="sort-arrow"></span></th>
               <th data-sort="Week 10 Opponent" class="col-def">Week 10<br>Opponent <span class="sort-arrow"></span></th>
+              <th data-sort="Week 10 Verdict" class="col-center col-tier">Week 10<br>Verdict <span class="sort-arrow"></span></th>
               <th data-sort="Opponent L4 Points Allowed" class="col-center col-stat-wide sort-active desc">Opponent L4<br>Pts Allowed <span class="sort-arrow">▼</span></th>
               <th data-sort="Opponent Total Points Allowed" class="col-center col-stat-wide">Opponent Total<br>Pts Allowed <span class="sort-arrow"></span></th>
               <th data-sort="Opponent Starting QB" class="col-qb">Opponent<br>Starting QB <span class="sort-arrow"></span></th>

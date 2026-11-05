@@ -1,29 +1,29 @@
-Stash Defense,Week 10 Opponent,Opponent L4 Points Allowed,Opponent Total Points Allowed,Opponent Starting QB,Look-Ahead Strategy Rationale
-HOU,CLE (@ CLE),41,60,Deshaun Watson,Top Week 10 stash. Cleveland has surrendered an NFL-high 41 D/ST points over their last 4 games. Adding Houston now covers Week 9 (@ LAC) and Week 10 (@ CLE).
-BAL,LAC (vs LAC),36,53,Justin Herbert,Justin Herbert and the Chargers have struggled through the air (-0.365 Pass EPA).
-LAC,BAL (@ BAL),36,46,Tyler Huntley,Faces Baltimore's backup quarterback situation on Monday Night Football.
-MIA,IND (@ IND),35,51,Daniel Jones,High upside stash. The Colts have surrendered 35 points in their last 4 games and Daniel Jones has absorbed 23 sacks.
-NO,CAR (vs CAR),32,44,Bryce Young,Elite two-week streamer. Plays Cleveland in Week 9 and Carolina (32 pts allowed L4) in Week 10 at home.
-LV,SEA (vs SEA),29,49,Sam Darnold,"Solid look-ahead play. Seattle has cooled down significantly, allowing 29 fantasy points in their last 4 games."
-KC,ATL (@ ATL),26,64,Michael Penix Jr.,Atlanta has yielded 64 fantasy points (#1 in the NFL). Kansas City's disciplined defense gets a great matchup in Week 10.
-WAS,NYG (@ NYG),23,42,J.J. McCarthy,Thursday Night Football advantage against young QB J.J. McCarthy on short rest.
-JAX,TEN (@ TEN),23,40,Cam Ward,Targets rookie Cam Ward and a Titans offense that has given up sacks on over 8% of dropbacks.
-GB,MIN (vs MIN),22,36,Kyler Murray,Divisional home game against a banged-up Minnesota backfield. Packers allow -0.200 EPA/pass over recent weeks.
-IND,MIA (vs MIA),20,42,Malik Willis,Favorable Week 10 matchup against MIA.
-NYG,WAS (vs WAS),18,23,Jayden Daniels,Favorable Week 10 matchup against WAS.
-LA,ARI (@ ARI),17,37,Gardner Minshew,Faces Gardner Minshew and Arizona's mistake-prone offense in Week 10.
-CAR,NO (@ NO),17,35,Tyler Shough,Favorable Week 10 matchup against NO.
-BUF,NYJ (@ NYJ),16,32,Geno Smith,Favorable Week 10 matchup against NYJ.
-DAL,SF (vs SF),16,18,Brock Purdy,Favorable Week 10 matchup against SF.
-ATL,KC (vs KC),15,21,Patrick Mahomes,Favorable Week 10 matchup against KC.
-PIT,CIN (@ CIN),13,29,Joe Burrow,Favorable Week 10 matchup against CIN.
-SF,DAL (@ DAL),13,23,Dak Prescott,Favorable Week 10 matchup against DAL.
-CIN,PIT (vs PIT),12,44,Aaron Rodgers,Favorable Week 10 matchup against PIT.
-MIN,GB (@ GB),12,27,Jordan Love,Favorable Week 10 matchup against GB.
-TEN,JAX (vs JAX),12,21,Trevor Lawrence,Favorable Week 10 matchup against JAX.
-NE,DET (@ DET),12,20,Jared Goff,Favorable Week 10 matchup against DET.
-DET,NE (vs NE),11,41,Drake Maye,Favorable Week 10 matchup against NE.
-ARI,LA (vs LA),11,34,Matthew Stafford,Favorable Week 10 matchup against LA.
-NYJ,BUF (vs BUF),11,24,Josh Allen,Favorable Week 10 matchup against BUF.
-SEA,LV (@ LV),8,19,Kirk Cousins,Favorable Week 10 matchup against LV.
-CLE,HOU (vs HOU),6,25,C.J. Stroud,Favorable Week 10 matchup against HOU.
+Defense,Week 10 Opponent,Week 10 Verdict,Opponent L4 Points Allowed,Opponent Total Points Allowed,Opponent Starting QB,Look-Ahead Strategy Rationale
+HOU,CLE (@ CLE),Priority Stash,41,60,Deshaun Watson,Top overall Week 10 stash. Cleveland has surrendered an NFL-high 41 D/ST points over their last 4 games. Adding Houston now covers Week 9 (@ LAC) and Week 10 (@ CLE).
+BAL,LAC (vs LAC),Priority Stash,36,53,Justin Herbert,High-ceiling home matchup. The Chargers have struggled in pass efficiency (-0.365 EPA/play) and yielded 36 D/ST points in their last 4 games.
+LAC,BAL (@ BAL),Priority Stash,36,46,Tyler Huntley,Prime Monday Night target. Baltimore has surrendered 36 points over their last 4 games while dealing with major offensive injuries under center.
+MIA,IND (@ IND),Priority Stash,35,51,Daniel Jones,High sack upside stash. Indianapolis has surrendered 35 points in their last 4 games and Daniel Jones remains sack-prone under relentless pressure.
+NO,CAR (vs CAR),Priority Stash,32,44,Bryce Young,"Elite two-week streaming asset. Plays Cleveland in Week 9 and gets Carolina (32 pts allowed L4, Bryce Young 34.8% S/P) at home in the Superdome in Week 10."
+LV,SEA (vs SEA),Priority Stash,29,49,Sam Darnold,"Turnover target. Seattle's offense has cooled down significantly, allowing 29 fantasy points in their last 4 games with a high tight-window throw rate."
+KC,ATL (@ ATL),Priority Stash,26,64,Michael Penix Jr.,"Smash matchup against Atlanta, who has yielded an NFL-high 64 fantasy points (8.0 pts/g) to opposing defenses through 8 weeks."
+WAS,NYG (@ NYG),Speculative Stash,23,42,J.J. McCarthy,Thursday Night Football advantage against young QB J.J. McCarthy on short rest. Giants have surrendered 23 D/ST points in their last 4 games.
+JAX,TEN (@ TEN),Speculative Stash,23,40,Cam Ward,Targets rookie Cam Ward and a Tennessee offense allowing sacks on over 8% of dropbacks and 23 D/ST points over their last 4 games.
+GB,MIN (vs MIN),Speculative Stash,22,36,Kyler Murray,Divisional home game against a banged-up Minnesota backfield. Packers front allows just -0.200 EPA/pass over recent weeks.
+IND,MIA (vs MIA),Speculative Stash,20,42,Malik Willis,"Under-the-radar home stash. Miami has yielded 20 D/ST points in their last 4 games, and Malik Willis holds the ball for 3.05s (NGS TTT)."
+LA,ARI (@ ARI),Speculative Stash,17,37,Gardner Minshew,Faces Gardner Minshew and an Arizona offense that takes negative plays in bunches (37 points surrendered on the season).
+NYG,WAS (vs WAS),Neutral Matchup,18,23,Jayden Daniels,Divisional test against Jayden Daniels. Washington allows just 18 points in their last 4 games; Daniels is elusive in the pocket.
+CAR,NO (@ NO),Neutral Matchup,17,35,Tyler Shough,Low upside road matchup. Saints allow only 17 points in their last 4 games and Tyler Shough protects the football well at home.
+BUF,NYJ (@ NYJ),Neutral Matchup,16,32,Geno Smith,"Solid defensive floor on the road in New York. The Jets offense is methodical (16 pts allowed L4), limiting high-end ceiling but providing safety."
+DET,NE (vs NE),Neutral Matchup,11,41,Drake Maye,"Home matchup against young QB Drake Maye. New England has allowed just 11 points over their last 4 games, so ceiling is moderate."
+DAL,SF (vs SF),Do Not Stash / Avoid,16,18,Brock Purdy,"AVOID / DO NOT STASH: Brock Purdy and Kyle Shanahan's offense are disciplined, yielding only 16 fantasy points across their last 4 games."
+ATL,KC (vs KC),Do Not Stash / Avoid,15,21,Patrick Mahomes,AVOID / DO NOT STASH: High-risk matchup against Patrick Mahomes and Kansas City. Chiefs rarely take sacks or commit multi-turnover games (15 pts allowed L4).
+PIT,CIN (@ CIN),Do Not Stash / Avoid,13,29,Joe Burrow,AVOID / DO NOT STASH: Joe Burrow rarely takes sacks (16.7% S/P) and leads a top-tier passing attack. Road matchup carries a dangerous negative floor.
+SF,DAL (@ DAL),Do Not Stash / Avoid,13,23,Dak Prescott,AVOID / DO NOT STASH: Road game in Dallas against Dak Prescott in a dome environment with high implied scoring and low turnover rate.
+CIN,PIT (vs PIT),Do Not Stash / Avoid,12,44,Aaron Rodgers,"AVOID / DO NOT STASH: Aaron Rodgers gets the ball out quickly, limiting sack volume. Pittsburgh has surrendered only 12 points in their last 4 games."
+MIN,GB (@ GB),Do Not Stash / Avoid,12,27,Jordan Love,AVOID / DO NOT STASH: Facing Jordan Love at Lambeau Field. Love generates high efficiency (+0.422 Pass EPA) and surrenders only 3.0 D/ST pts/g.
+TEN,JAX (vs JAX),Do Not Stash / Avoid,12,21,Trevor Lawrence,AVOID / DO NOT STASH: Trevor Lawrence has played clean football (+0.273 Pass EPA) with Jacksonville allowing only 12 points in their last 4 games.
+NE,DET (@ DET),Do Not Stash / Avoid,12,20,Jared Goff,AVOID / DO NOT STASH: Jared Goff and Detroit's explosive indoor offense are implied for high point totals and rarely take negative sacks.
+ARI,LA (vs LA),Do Not Stash / Avoid,11,34,Matthew Stafford,AVOID / DO NOT STASH: Matthew Stafford gets rid of the ball quickly and the Rams offense has surrendered only 11 fantasy points over their last 4 games.
+NYJ,BUF (vs BUF),Do Not Stash / Avoid,11,24,Josh Allen,AVOID / DO NOT STASH: Facing Josh Allen and Buffalo's elite offense (+0.250 EPA/play). Low turnover upside and high risk of negative bracket scoring.
+SEA,LV (@ LV),Do Not Stash / Avoid,8,19,Kirk Cousins,AVOID / DO NOT STASH: Kirk Cousins and Las Vegas have surrendered just 8 fantasy points to D/STs across their last 4 games (2.0 pts/g).
+CLE,HOU (vs HOU),Do Not Stash / Avoid,6,25,C.J. Stroud,AVOID / DO NOT STASH: Severe trap. C.J. Stroud and Houston have surrendered an NFL-low 6 points to opposing D/STs over their last 4 games (1.5 pts/g).

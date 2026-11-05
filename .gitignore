@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 .env
+analyze_defensive_streamers.py
+run_local_site.sh
+substack_content.txt

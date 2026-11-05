@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const filters = {
     search: '',
     tier: 'ALL',
+    w10Verdict: 'ALL',
     backupOnly: false,
     weatherOnly: false
   };
@@ -142,11 +143,17 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function updateFilterVisibility() {
-    const filterControls = document.getElementById('week9-filters');
+    const w9Controls = document.getElementById('week9-filters');
+    const w10Controls = document.getElementById('week10-filters');
     if (activeTab === 'week9') {
-      filterControls.style.display = 'flex';
+      if (w9Controls) w9Controls.style.display = 'flex';
+      if (w10Controls) w10Controls.style.display = 'none';
+    } else if (activeTab === 'week10') {
+      if (w9Controls) w9Controls.style.display = 'none';
+      if (w10Controls) w10Controls.style.display = 'flex';
     } else {
-      filterControls.style.display = 'none';
+      if (w9Controls) w9Controls.style.display = 'none';
+      if (w10Controls) w10Controls.style.display = 'none';
     }
   }
 
@@ -188,6 +195,26 @@ document.addEventListener('DOMContentLoaded', async () => {
       filters.weatherOnly = false;
       renderActiveTable();
     });
+
+    // Week 10 Specific Filters
+    const w10VerdictSelect = document.getElementById('w10-tier-filter');
+    if (w10VerdictSelect) {
+      w10VerdictSelect.addEventListener('change', (e) => {
+        filters.w10Verdict = e.target.value;
+        renderActiveTable();
+      });
+    }
+
+    const resetW10Btn = document.getElementById('reset-w10-filters-btn');
+    if (resetW10Btn) {
+      resetW10Btn.addEventListener('click', () => {
+        searchInput.value = '';
+        filters.search = '';
+        if (w10VerdictSelect) w10VerdictSelect.value = 'ALL';
+        filters.w10Verdict = 'ALL';
+        renderActiveTable();
+      });
+    }
   }
 
   // 5. Sorting Event Listeners
@@ -391,15 +418,28 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (filters.search) {
       rows = rows.filter(s => {
-        const text = `${s.Stash_DST} ${s.W10_Opponent} ${s.Opp_QB} ${s.Look_Ahead_Rationale}`.toLowerCase();
+        const text = `${s.Stash_DST} ${s.W10_Opponent} ${s.Opp_QB} ${s.Stash_Tier || ''} ${s.Look_Ahead_Rationale}`.toLowerCase();
         return text.includes(filters.search);
       });
     }
 
+    if (filters.w10Verdict === 'TARGETS_ONLY') {
+      rows = rows.filter(s => s.Stash_Tier === 'Priority Stash' || s.Stash_Tier === 'Speculative Stash');
+    } else if (filters.w10Verdict && filters.w10Verdict !== 'ALL') {
+      rows = rows.filter(s => s.Stash_Tier === filters.w10Verdict);
+    }
+
+    const countLabel = document.getElementById('active-count-label');
+    if (countLabel && activeTab === 'week10') {
+      countLabel.textContent = `Showing ${rows.length} Week 10 Matchups`;
+    }
+
     const sortConfig = sortStates.week10;
     const keyMap = {
+      'Defense': 'Stash_DST',
       'Stash Defense': 'Stash_DST',
       'Week 10 Opponent': 'W10_Opponent',
+      'Week 10 Verdict': 'Tier_Rank',
       'Opponent L4 Points Allowed': 'Opp_Last_4',
       'Opponent Total Points Allowed': 'Opp_Total_Pts',
       'Opponent Starting QB': 'Opp_QB'
@@ -408,17 +448,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     rows = sortData(rows, targetKey, sortConfig.ascending);
 
     tbody.innerHTML = rows.map(s => {
+      const tierBadgeClass = getStashBadgeClass(s.Stash_Tier);
       return `
         <tr>
           <td class="col-sticky"><span class="stat-bold">${s.Stash_DST}</span></td>
           <td>${s.W10_Opponent}</td>
-          <td class="col-center"><span class="pts-highlight">${s.Opp_Last_4} pts</span> <span class="stat-dim">(${(s.Opp_Last_4 / 4).toFixed(1)}/g)</span></td>
+          <td class="col-center"><span class="badge ${tierBadgeClass}">${s.Stash_Tier || 'Neutral Matchup'}</span></td>
+          <td class="col-center"><span class="pts-highlight ${s.Opp_Last_4 >= 30 ? 'pts-top' : ''}">${s.Opp_Last_4} pts</span> <span class="stat-dim">(${(s.Opp_Last_4 / 4).toFixed(1)}/g)</span></td>
           <td class="col-center"><span class="stat-bold">${s.Opp_Total_Pts} pts</span></td>
           <td>${s.Opp_QB}</td>
           <td style="white-space: normal; min-width: 380px;">${s.Look_Ahead_Rationale}</td>
         </tr>
       `;
     }).join('');
+  }
+
+  function getStashBadgeClass(tier) {
+    if (!tier) return 'stash-neutral';
+    if (tier.includes('Priority')) return 'stash-priority';
+    if (tier.includes('Speculative')) return 'stash-speculative';
+    if (tier.includes('Avoid') || tier.includes('Do Not Stash')) return 'stash-avoid';
+    return 'stash-neutral';
   }
 
   // 9. Render Tab 3: Historical Offense Vulnerability (W1–W8)

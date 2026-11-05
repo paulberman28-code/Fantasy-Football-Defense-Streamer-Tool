@@ -3,7 +3,7 @@
     "season": 2026,
     "currentWeek": 9,
     "lookAheadWeek": 10,
-    "lastUpdated": "November 05, 2026 at 03:07 PM",
+    "lastUpdated": "November 05, 2026 at 04:15 PM",
     "totalOffenses": 32
   },
   "weekMatchups": [
@@ -99,7 +99,7 @@
       "Off_Pass_EPA_L4": -0.115,
       "NGS_TTT": 2.66,
       "NGS_Agg%": 12.7,
-      "Gametime_Weather": "Clear / Mild (67\u00b0F, 4mph)",
+      "Gametime_Weather": "Heavy Rain (0.27\")",
       "Streamer_Tier": "Tier 2 (High Ceiling)",
       "Current_Week_Rationale": "Thursday Night wet turf smash. Baltimore starts 3rd-string rookie Joe Fagnano in active rain on short rest, with the Ravens implied for a slate-low 14.8 points."
     },
@@ -375,14 +375,14 @@
       "Total_pts": 27,
       "Target_DST": "NE (vs GB)",
       "Starting_QB": "Jordan Love (Starter)",
-      "Opp_Implied_Pts": 21.2,
+      "Opp_Implied_Pts": 20.8,
       "Def_Spread": 3.0,
       "Proj_Sacks": 2.3,
       "Proj_INTs": 0.5,
       "Proj_Fumbles": 0.2,
-      "Exp_Bracket": 1.7,
-      "Proj_Fantasy_Pts": 5.1,
-      "Predicted_Floor": 2.1,
+      "Exp_Bracket": 1.8,
+      "Proj_Fantasy_Pts": 5.2,
+      "Predicted_Floor": 2.2,
       "Sacks_Per_Press%": 23.1,
       "Off_Pass_EPA_L4": 0.224,
       "NGS_TTT": 2.58,
@@ -483,7 +483,7 @@
       "Off_Pass_EPA_L4": 0.273,
       "NGS_TTT": 2.75,
       "NGS_Agg%": 16.2,
-      "Gametime_Weather": "Clear / Mild (67\u00b0F, 4mph)",
+      "Gametime_Weather": "Heavy Rain (0.27\")",
       "Streamer_Tier": "Tier 5 (Avoid / Tough)",
       "Current_Week_Rationale": "Depleted roster with offensive injuries; Trevor Lawrence has played clean football recently (+0.273 Pass EPA)."
     },
@@ -695,7 +695,7 @@
       "Total_pts": 41,
       "Target_DST": "GB (@ NE)",
       "Starting_QB": "Drake Maye (Starter)",
-      "Opp_Implied_Pts": 24.2,
+      "Opp_Implied_Pts": 23.8,
       "Def_Spread": -3.0,
       "Proj_Sacks": 1.6,
       "Proj_INTs": 0.4,
@@ -1125,7 +1125,7 @@
       "Off_Pass_EPA_L4": -0.115,
       "NGS_TTT": 2.66,
       "NGS_Agg%": 12.7,
-      "Gametime_Weather": "Clear / Mild (67\u00b0F, 4mph)",
+      "Gametime_Weather": "Heavy Rain (0.27\")",
       "Streamer_Tier": "Tier 2 (High Ceiling)",
       "Current_Week_Rationale": "Thursday Night wet turf smash. Baltimore starts 3rd-string rookie Joe Fagnano in active rain on short rest, with the Ravens implied for a slate-low 14.8 points."
     },
@@ -1401,14 +1401,14 @@
       "Total_pts": 27,
       "Target_DST": "NE (vs GB)",
       "Starting_QB": "Jordan Love (Starter)",
-      "Opp_Implied_Pts": 21.2,
+      "Opp_Implied_Pts": 20.8,
       "Def_Spread": 3.0,
       "Proj_Sacks": 2.3,
       "Proj_INTs": 0.5,
       "Proj_Fumbles": 0.2,
-      "Exp_Bracket": 1.7,
-      "Proj_Fantasy_Pts": 5.1,
-      "Predicted_Floor": 2.1,
+      "Exp_Bracket": 1.8,
+      "Proj_Fantasy_Pts": 5.2,
+      "Predicted_Floor": 2.2,
       "Sacks_Per_Press%": 23.1,
       "Off_Pass_EPA_L4": 0.224,
       "NGS_TTT": 2.58,
@@ -1509,7 +1509,7 @@
       "Off_Pass_EPA_L4": 0.273,
       "NGS_TTT": 2.75,
       "NGS_Agg%": 16.2,
-      "Gametime_Weather": "Clear / Mild (67\u00b0F, 4mph)",
+      "Gametime_Weather": "Heavy Rain (0.27\")",
       "Streamer_Tier": "Tier 5 (Avoid / Tough)",
       "Current_Week_Rationale": "Depleted roster with offensive injuries; Trevor Lawrence has played clean football recently (+0.273 Pass EPA)."
     },
@@ -1721,7 +1721,7 @@
       "Total_pts": 41,
       "Target_DST": "GB (@ NE)",
       "Starting_QB": "Drake Maye (Starter)",
-      "Opp_Implied_Pts": 24.2,
+      "Opp_Implied_Pts": 23.8,
       "Def_Spread": -3.0,
       "Proj_Sacks": 1.6,
       "Proj_INTs": 0.4,
@@ -2060,212 +2060,14 @@
   ],
   "lookAheadStashes": [
     {
-      "Stash_DST": "NYG",
-      "W10_Opponent": "WAS (vs WAS)",
-      "Opp_Last_4": 18,
-      "Opp_Total_Pts": 23,
-      "Opp_QB": "Jayden Daniels",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against WAS."
-    },
-    {
-      "Stash_DST": "WAS",
-      "W10_Opponent": "NYG (@ NYG)",
-      "Opp_Last_4": 23,
-      "Opp_Total_Pts": 42,
-      "Opp_QB": "J.J. McCarthy",
-      "Look_Ahead_Rationale": "Thursday Night Football advantage against young QB J.J. McCarthy on short rest."
-    },
-    {
-      "Stash_DST": "DET",
-      "W10_Opponent": "NE (vs NE)",
-      "Opp_Last_4": 11,
-      "Opp_Total_Pts": 41,
-      "Opp_QB": "Drake Maye",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against NE."
-    },
-    {
-      "Stash_DST": "NE",
-      "W10_Opponent": "DET (@ DET)",
-      "Opp_Last_4": 12,
-      "Opp_Total_Pts": 20,
-      "Opp_QB": "Jared Goff",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against DET."
-    },
-    {
-      "Stash_DST": "ATL",
-      "W10_Opponent": "KC (vs KC)",
-      "Opp_Last_4": 15,
-      "Opp_Total_Pts": 21,
-      "Opp_QB": "Patrick Mahomes",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against KC."
-    },
-    {
-      "Stash_DST": "KC",
-      "W10_Opponent": "ATL (@ ATL)",
-      "Opp_Last_4": 26,
-      "Opp_Total_Pts": 64,
-      "Opp_QB": "Michael Penix Jr.",
-      "Look_Ahead_Rationale": "Atlanta has yielded 64 fantasy points (#1 in the NFL). Kansas City's disciplined defense gets a great matchup in Week 10."
-    },
-    {
-      "Stash_DST": "CLE",
-      "W10_Opponent": "HOU (vs HOU)",
-      "Opp_Last_4": 6,
-      "Opp_Total_Pts": 25,
-      "Opp_QB": "C.J. Stroud",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against HOU."
-    },
-    {
       "Stash_DST": "HOU",
       "W10_Opponent": "CLE (@ CLE)",
       "Opp_Last_4": 41,
       "Opp_Total_Pts": 60,
       "Opp_QB": "Deshaun Watson",
-      "Look_Ahead_Rationale": "Top Week 10 stash. Cleveland has surrendered an NFL-high 41 D/ST points over their last 4 games. Adding Houston now covers Week 9 (@ LAC) and Week 10 (@ CLE)."
-    },
-    {
-      "Stash_DST": "GB",
-      "W10_Opponent": "MIN (vs MIN)",
-      "Opp_Last_4": 22,
-      "Opp_Total_Pts": 36,
-      "Opp_QB": "Kyler Murray",
-      "Look_Ahead_Rationale": "Divisional home game against a banged-up Minnesota backfield. Packers allow -0.200 EPA/pass over recent weeks."
-    },
-    {
-      "Stash_DST": "MIN",
-      "W10_Opponent": "GB (@ GB)",
-      "Opp_Last_4": 12,
-      "Opp_Total_Pts": 27,
-      "Opp_QB": "Jordan Love",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against GB."
-    },
-    {
-      "Stash_DST": "IND",
-      "W10_Opponent": "MIA (vs MIA)",
-      "Opp_Last_4": 20,
-      "Opp_Total_Pts": 42,
-      "Opp_QB": "Malik Willis",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against MIA."
-    },
-    {
-      "Stash_DST": "MIA",
-      "W10_Opponent": "IND (@ IND)",
-      "Opp_Last_4": 35,
-      "Opp_Total_Pts": 51,
-      "Opp_QB": "Daniel Jones",
-      "Look_Ahead_Rationale": "High upside stash. The Colts have surrendered 35 points in their last 4 games and Daniel Jones has absorbed 23 sacks."
-    },
-    {
-      "Stash_DST": "NO",
-      "W10_Opponent": "CAR (vs CAR)",
-      "Opp_Last_4": 32,
-      "Opp_Total_Pts": 44,
-      "Opp_QB": "Bryce Young",
-      "Look_Ahead_Rationale": "Elite two-week streamer. Plays Cleveland in Week 9 and Carolina (32 pts allowed L4) in Week 10 at home."
-    },
-    {
-      "Stash_DST": "CAR",
-      "W10_Opponent": "NO (@ NO)",
-      "Opp_Last_4": 17,
-      "Opp_Total_Pts": 35,
-      "Opp_QB": "Tyler Shough",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against NO."
-    },
-    {
-      "Stash_DST": "NYJ",
-      "W10_Opponent": "BUF (vs BUF)",
-      "Opp_Last_4": 11,
-      "Opp_Total_Pts": 24,
-      "Opp_QB": "Josh Allen",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against BUF."
-    },
-    {
-      "Stash_DST": "BUF",
-      "W10_Opponent": "NYJ (@ NYJ)",
-      "Opp_Last_4": 16,
-      "Opp_Total_Pts": 32,
-      "Opp_QB": "Geno Smith",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against NYJ."
-    },
-    {
-      "Stash_DST": "TEN",
-      "W10_Opponent": "JAX (vs JAX)",
-      "Opp_Last_4": 12,
-      "Opp_Total_Pts": 21,
-      "Opp_QB": "Trevor Lawrence",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against JAX."
-    },
-    {
-      "Stash_DST": "JAX",
-      "W10_Opponent": "TEN (@ TEN)",
-      "Opp_Last_4": 23,
-      "Opp_Total_Pts": 40,
-      "Opp_QB": "Cam Ward",
-      "Look_Ahead_Rationale": "Targets rookie Cam Ward and a Titans offense that has given up sacks on over 8% of dropbacks."
-    },
-    {
-      "Stash_DST": "ARI",
-      "W10_Opponent": "LA (vs LA)",
-      "Opp_Last_4": 11,
-      "Opp_Total_Pts": 34,
-      "Opp_QB": "Matthew Stafford",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against LA."
-    },
-    {
-      "Stash_DST": "LA",
-      "W10_Opponent": "ARI (@ ARI)",
-      "Opp_Last_4": 17,
-      "Opp_Total_Pts": 37,
-      "Opp_QB": "Gardner Minshew",
-      "Look_Ahead_Rationale": "Faces Gardner Minshew and Arizona's mistake-prone offense in Week 10."
-    },
-    {
-      "Stash_DST": "LV",
-      "W10_Opponent": "SEA (vs SEA)",
-      "Opp_Last_4": 29,
-      "Opp_Total_Pts": 49,
-      "Opp_QB": "Sam Darnold",
-      "Look_Ahead_Rationale": "Solid look-ahead play. Seattle has cooled down significantly, allowing 29 fantasy points in their last 4 games."
-    },
-    {
-      "Stash_DST": "SEA",
-      "W10_Opponent": "LV (@ LV)",
-      "Opp_Last_4": 8,
-      "Opp_Total_Pts": 19,
-      "Opp_QB": "Kirk Cousins",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against LV."
-    },
-    {
-      "Stash_DST": "DAL",
-      "W10_Opponent": "SF (vs SF)",
-      "Opp_Last_4": 16,
-      "Opp_Total_Pts": 18,
-      "Opp_QB": "Brock Purdy",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against SF."
-    },
-    {
-      "Stash_DST": "SF",
-      "W10_Opponent": "DAL (@ DAL)",
-      "Opp_Last_4": 13,
-      "Opp_Total_Pts": 23,
-      "Opp_QB": "Dak Prescott",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against DAL."
-    },
-    {
-      "Stash_DST": "CIN",
-      "W10_Opponent": "PIT (vs PIT)",
-      "Opp_Last_4": 12,
-      "Opp_Total_Pts": 44,
-      "Opp_QB": "Aaron Rodgers",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against PIT."
-    },
-    {
-      "Stash_DST": "PIT",
-      "W10_Opponent": "CIN (@ CIN)",
-      "Opp_Last_4": 13,
-      "Opp_Total_Pts": 29,
-      "Opp_QB": "Joe Burrow",
-      "Look_Ahead_Rationale": "Favorable Week 10 matchup against CIN."
+      "Stash_Tier": "Priority Stash",
+      "Tier_Rank": 1,
+      "Look_Ahead_Rationale": "Top overall Week 10 stash. Cleveland has surrendered an NFL-high 41 D/ST points over their last 4 games. Adding Houston now covers Week 9 (@ LAC) and Week 10 (@ CLE)."
     },
     {
       "Stash_DST": "BAL",
@@ -2273,7 +2075,9 @@
       "Opp_Last_4": 36,
       "Opp_Total_Pts": 53,
       "Opp_QB": "Justin Herbert",
-      "Look_Ahead_Rationale": "Justin Herbert and the Chargers have struggled through the air (-0.365 Pass EPA)."
+      "Stash_Tier": "Priority Stash",
+      "Tier_Rank": 1,
+      "Look_Ahead_Rationale": "High-ceiling home matchup. The Chargers have struggled in pass efficiency (-0.365 EPA/play) and yielded 36 D/ST points in their last 4 games."
     },
     {
       "Stash_DST": "LAC",
@@ -2281,7 +2085,259 @@
       "Opp_Last_4": 36,
       "Opp_Total_Pts": 46,
       "Opp_QB": "Tyler Huntley",
-      "Look_Ahead_Rationale": "Faces Baltimore's backup quarterback situation on Monday Night Football."
+      "Stash_Tier": "Priority Stash",
+      "Tier_Rank": 1,
+      "Look_Ahead_Rationale": "Prime Monday Night target. Baltimore has surrendered 36 points over their last 4 games while dealing with major offensive injuries under center."
+    },
+    {
+      "Stash_DST": "MIA",
+      "W10_Opponent": "IND (@ IND)",
+      "Opp_Last_4": 35,
+      "Opp_Total_Pts": 51,
+      "Opp_QB": "Daniel Jones",
+      "Stash_Tier": "Priority Stash",
+      "Tier_Rank": 1,
+      "Look_Ahead_Rationale": "High sack upside stash. Indianapolis has surrendered 35 points in their last 4 games and Daniel Jones remains sack-prone under relentless pressure."
+    },
+    {
+      "Stash_DST": "NO",
+      "W10_Opponent": "CAR (vs CAR)",
+      "Opp_Last_4": 32,
+      "Opp_Total_Pts": 44,
+      "Opp_QB": "Bryce Young",
+      "Stash_Tier": "Priority Stash",
+      "Tier_Rank": 1,
+      "Look_Ahead_Rationale": "Elite two-week streaming asset. Plays Cleveland in Week 9 and gets Carolina (32 pts allowed L4, Bryce Young 34.8% S/P) at home in the Superdome in Week 10."
+    },
+    {
+      "Stash_DST": "LV",
+      "W10_Opponent": "SEA (vs SEA)",
+      "Opp_Last_4": 29,
+      "Opp_Total_Pts": 49,
+      "Opp_QB": "Sam Darnold",
+      "Stash_Tier": "Priority Stash",
+      "Tier_Rank": 1,
+      "Look_Ahead_Rationale": "Turnover target. Seattle's offense has cooled down significantly, allowing 29 fantasy points in their last 4 games with a high tight-window throw rate."
+    },
+    {
+      "Stash_DST": "KC",
+      "W10_Opponent": "ATL (@ ATL)",
+      "Opp_Last_4": 26,
+      "Opp_Total_Pts": 64,
+      "Opp_QB": "Michael Penix Jr.",
+      "Stash_Tier": "Priority Stash",
+      "Tier_Rank": 1,
+      "Look_Ahead_Rationale": "Smash matchup against Atlanta, who has yielded an NFL-high 64 fantasy points (8.0 pts/g) to opposing defenses through 8 weeks."
+    },
+    {
+      "Stash_DST": "WAS",
+      "W10_Opponent": "NYG (@ NYG)",
+      "Opp_Last_4": 23,
+      "Opp_Total_Pts": 42,
+      "Opp_QB": "J.J. McCarthy",
+      "Stash_Tier": "Speculative Stash",
+      "Tier_Rank": 2,
+      "Look_Ahead_Rationale": "Thursday Night Football advantage against young QB J.J. McCarthy on short rest. Giants have surrendered 23 D/ST points in their last 4 games."
+    },
+    {
+      "Stash_DST": "JAX",
+      "W10_Opponent": "TEN (@ TEN)",
+      "Opp_Last_4": 23,
+      "Opp_Total_Pts": 40,
+      "Opp_QB": "Cam Ward",
+      "Stash_Tier": "Speculative Stash",
+      "Tier_Rank": 2,
+      "Look_Ahead_Rationale": "Targets rookie Cam Ward and a Tennessee offense allowing sacks on over 8% of dropbacks and 23 D/ST points over their last 4 games."
+    },
+    {
+      "Stash_DST": "GB",
+      "W10_Opponent": "MIN (vs MIN)",
+      "Opp_Last_4": 22,
+      "Opp_Total_Pts": 36,
+      "Opp_QB": "Kyler Murray",
+      "Stash_Tier": "Speculative Stash",
+      "Tier_Rank": 2,
+      "Look_Ahead_Rationale": "Divisional home game against a banged-up Minnesota backfield. Packers front allows just -0.200 EPA/pass over recent weeks."
+    },
+    {
+      "Stash_DST": "IND",
+      "W10_Opponent": "MIA (vs MIA)",
+      "Opp_Last_4": 20,
+      "Opp_Total_Pts": 42,
+      "Opp_QB": "Malik Willis",
+      "Stash_Tier": "Speculative Stash",
+      "Tier_Rank": 2,
+      "Look_Ahead_Rationale": "Under-the-radar home stash. Miami has yielded 20 D/ST points in their last 4 games, and Malik Willis holds the ball for 3.05s (NGS TTT)."
+    },
+    {
+      "Stash_DST": "LA",
+      "W10_Opponent": "ARI (@ ARI)",
+      "Opp_Last_4": 17,
+      "Opp_Total_Pts": 37,
+      "Opp_QB": "Gardner Minshew",
+      "Stash_Tier": "Speculative Stash",
+      "Tier_Rank": 2,
+      "Look_Ahead_Rationale": "Faces Gardner Minshew and an Arizona offense that takes negative plays in bunches (37 points surrendered on the season)."
+    },
+    {
+      "Stash_DST": "NYG",
+      "W10_Opponent": "WAS (vs WAS)",
+      "Opp_Last_4": 18,
+      "Opp_Total_Pts": 23,
+      "Opp_QB": "Jayden Daniels",
+      "Stash_Tier": "Neutral Matchup",
+      "Tier_Rank": 3,
+      "Look_Ahead_Rationale": "Divisional test against Jayden Daniels. Washington allows just 18 points in their last 4 games; Daniels is elusive in the pocket."
+    },
+    {
+      "Stash_DST": "CAR",
+      "W10_Opponent": "NO (@ NO)",
+      "Opp_Last_4": 17,
+      "Opp_Total_Pts": 35,
+      "Opp_QB": "Tyler Shough",
+      "Stash_Tier": "Neutral Matchup",
+      "Tier_Rank": 3,
+      "Look_Ahead_Rationale": "Low upside road matchup. Saints allow only 17 points in their last 4 games and Tyler Shough protects the football well at home."
+    },
+    {
+      "Stash_DST": "BUF",
+      "W10_Opponent": "NYJ (@ NYJ)",
+      "Opp_Last_4": 16,
+      "Opp_Total_Pts": 32,
+      "Opp_QB": "Geno Smith",
+      "Stash_Tier": "Neutral Matchup",
+      "Tier_Rank": 3,
+      "Look_Ahead_Rationale": "Solid defensive floor on the road in New York. The Jets offense is methodical (16 pts allowed L4), limiting high-end ceiling but providing safety."
+    },
+    {
+      "Stash_DST": "DET",
+      "W10_Opponent": "NE (vs NE)",
+      "Opp_Last_4": 11,
+      "Opp_Total_Pts": 41,
+      "Opp_QB": "Drake Maye",
+      "Stash_Tier": "Neutral Matchup",
+      "Tier_Rank": 3,
+      "Look_Ahead_Rationale": "Home matchup against young QB Drake Maye. New England has allowed just 11 points over their last 4 games, so ceiling is moderate."
+    },
+    {
+      "Stash_DST": "DAL",
+      "W10_Opponent": "SF (vs SF)",
+      "Opp_Last_4": 16,
+      "Opp_Total_Pts": 18,
+      "Opp_QB": "Brock Purdy",
+      "Stash_Tier": "Do Not Stash / Avoid",
+      "Tier_Rank": 4,
+      "Look_Ahead_Rationale": "AVOID / DO NOT STASH: Brock Purdy and Kyle Shanahan's offense are disciplined, yielding only 16 fantasy points across their last 4 games."
+    },
+    {
+      "Stash_DST": "ATL",
+      "W10_Opponent": "KC (vs KC)",
+      "Opp_Last_4": 15,
+      "Opp_Total_Pts": 21,
+      "Opp_QB": "Patrick Mahomes",
+      "Stash_Tier": "Do Not Stash / Avoid",
+      "Tier_Rank": 4,
+      "Look_Ahead_Rationale": "AVOID / DO NOT STASH: High-risk matchup against Patrick Mahomes and Kansas City. Chiefs rarely take sacks or commit multi-turnover games (15 pts allowed L4)."
+    },
+    {
+      "Stash_DST": "PIT",
+      "W10_Opponent": "CIN (@ CIN)",
+      "Opp_Last_4": 13,
+      "Opp_Total_Pts": 29,
+      "Opp_QB": "Joe Burrow",
+      "Stash_Tier": "Do Not Stash / Avoid",
+      "Tier_Rank": 4,
+      "Look_Ahead_Rationale": "AVOID / DO NOT STASH: Joe Burrow rarely takes sacks (16.7% S/P) and leads a top-tier passing attack. Road matchup carries a dangerous negative floor."
+    },
+    {
+      "Stash_DST": "SF",
+      "W10_Opponent": "DAL (@ DAL)",
+      "Opp_Last_4": 13,
+      "Opp_Total_Pts": 23,
+      "Opp_QB": "Dak Prescott",
+      "Stash_Tier": "Do Not Stash / Avoid",
+      "Tier_Rank": 4,
+      "Look_Ahead_Rationale": "AVOID / DO NOT STASH: Road game in Dallas against Dak Prescott in a dome environment with high implied scoring and low turnover rate."
+    },
+    {
+      "Stash_DST": "CIN",
+      "W10_Opponent": "PIT (vs PIT)",
+      "Opp_Last_4": 12,
+      "Opp_Total_Pts": 44,
+      "Opp_QB": "Aaron Rodgers",
+      "Stash_Tier": "Do Not Stash / Avoid",
+      "Tier_Rank": 4,
+      "Look_Ahead_Rationale": "AVOID / DO NOT STASH: Aaron Rodgers gets the ball out quickly, limiting sack volume. Pittsburgh has surrendered only 12 points in their last 4 games."
+    },
+    {
+      "Stash_DST": "MIN",
+      "W10_Opponent": "GB (@ GB)",
+      "Opp_Last_4": 12,
+      "Opp_Total_Pts": 27,
+      "Opp_QB": "Jordan Love",
+      "Stash_Tier": "Do Not Stash / Avoid",
+      "Tier_Rank": 4,
+      "Look_Ahead_Rationale": "AVOID / DO NOT STASH: Facing Jordan Love at Lambeau Field. Love generates high efficiency (+0.422 Pass EPA) and surrenders only 3.0 D/ST pts/g."
+    },
+    {
+      "Stash_DST": "TEN",
+      "W10_Opponent": "JAX (vs JAX)",
+      "Opp_Last_4": 12,
+      "Opp_Total_Pts": 21,
+      "Opp_QB": "Trevor Lawrence",
+      "Stash_Tier": "Do Not Stash / Avoid",
+      "Tier_Rank": 4,
+      "Look_Ahead_Rationale": "AVOID / DO NOT STASH: Trevor Lawrence has played clean football (+0.273 Pass EPA) with Jacksonville allowing only 12 points in their last 4 games."
+    },
+    {
+      "Stash_DST": "NE",
+      "W10_Opponent": "DET (@ DET)",
+      "Opp_Last_4": 12,
+      "Opp_Total_Pts": 20,
+      "Opp_QB": "Jared Goff",
+      "Stash_Tier": "Do Not Stash / Avoid",
+      "Tier_Rank": 4,
+      "Look_Ahead_Rationale": "AVOID / DO NOT STASH: Jared Goff and Detroit's explosive indoor offense are implied for high point totals and rarely take negative sacks."
+    },
+    {
+      "Stash_DST": "ARI",
+      "W10_Opponent": "LA (vs LA)",
+      "Opp_Last_4": 11,
+      "Opp_Total_Pts": 34,
+      "Opp_QB": "Matthew Stafford",
+      "Stash_Tier": "Do Not Stash / Avoid",
+      "Tier_Rank": 4,
+      "Look_Ahead_Rationale": "AVOID / DO NOT STASH: Matthew Stafford gets rid of the ball quickly and the Rams offense has surrendered only 11 fantasy points over their last 4 games."
+    },
+    {
+      "Stash_DST": "NYJ",
+      "W10_Opponent": "BUF (vs BUF)",
+      "Opp_Last_4": 11,
+      "Opp_Total_Pts": 24,
+      "Opp_QB": "Josh Allen",
+      "Stash_Tier": "Do Not Stash / Avoid",
+      "Tier_Rank": 4,
+      "Look_Ahead_Rationale": "AVOID / DO NOT STASH: Facing Josh Allen and Buffalo's elite offense (+0.250 EPA/play). Low turnover upside and high risk of negative bracket scoring."
+    },
+    {
+      "Stash_DST": "SEA",
+      "W10_Opponent": "LV (@ LV)",
+      "Opp_Last_4": 8,
+      "Opp_Total_Pts": 19,
+      "Opp_QB": "Kirk Cousins",
+      "Stash_Tier": "Do Not Stash / Avoid",
+      "Tier_Rank": 4,
+      "Look_Ahead_Rationale": "AVOID / DO NOT STASH: Kirk Cousins and Las Vegas have surrendered just 8 fantasy points to D/STs across their last 4 games (2.0 pts/g)."
+    },
+    {
+      "Stash_DST": "CLE",
+      "W10_Opponent": "HOU (vs HOU)",
+      "Opp_Last_4": 6,
+      "Opp_Total_Pts": 25,
+      "Opp_QB": "C.J. Stroud",
+      "Stash_Tier": "Do Not Stash / Avoid",
+      "Tier_Rank": 4,
+      "Look_Ahead_Rationale": "AVOID / DO NOT STASH: Severe trap. C.J. Stroud and Houston have surrendered an NFL-low 6 points to opposing D/STs over their last 4 games (1.5 pts/g)."
     }
   ]
 }
