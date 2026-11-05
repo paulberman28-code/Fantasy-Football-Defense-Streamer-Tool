@@ -3,7 +3,7 @@
     "season": 2026,
     "currentWeek": 9,
     "lookAheadWeek": 10,
-    "lastUpdated": "November 05, 2026 at 04:15 PM",
+    "lastUpdated": "November 05, 2026 at 04:30 PM",
     "totalOffenses": 32
   },
   "weekMatchups": [
@@ -36,7 +36,7 @@
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Clear / Mild (54\u00b0F, 9mph)",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Stifling low-scoring environment. Facing Gardner Minshew and an Arizona offense implied for just 15.5 points in Seattle with 12 mph crosswinds."
     },
     {
@@ -68,7 +68,7 @@
       "NGS_TTT": 2.59,
       "NGS_Agg%": 15.5,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Volume turnover target. Atlanta has yielded an NFL-high 64 fantasy points. Michael Penix Jr. throws into tight windows (21.4% Agg%) and the Falcons offense takes negative plays in bunches."
     },
     {
@@ -100,7 +100,7 @@
       "NGS_TTT": 2.66,
       "NGS_Agg%": 12.7,
       "Gametime_Weather": "Heavy Rain (0.27\")",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Thursday Night wet turf smash. Baltimore starts 3rd-string rookie Joe Fagnano in active rain on short rest, with the Ravens implied for a slate-low 14.8 points."
     },
     {
@@ -132,7 +132,7 @@
       "NGS_TTT": 2.91,
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Neutral Matchup",
       "Current_Week_Rationale": "Facing Josh Allen and Buffalo's high-efficiency offense; low defensive ceiling."
     },
     {
@@ -164,7 +164,7 @@
       "NGS_TTT": 2.86,
       "NGS_Agg%": 13.4,
       "Gametime_Weather": "Clear / Mild (64\u00b0F, 5mph)",
-      "Streamer_Tier": "Tier 1 (Smash Play)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "High-floor sack monster. Denver's ferocious pass rush faces Bryce Young and a Panthers unit that converts 34.8% of pressures to sacks and surrendered 27 fantasy points over their last 2 games."
     },
     {
@@ -196,7 +196,7 @@
       "NGS_TTT": 3.24,
       "NGS_Agg%": 11.4,
       "Gametime_Weather": "Windy (10 mph, g25)",
-      "Streamer_Tier": "Tier 1 (Smash Play)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Elite weather-boosted turnover play. Soldier Field features 25 mph wind gusts, while Caleb Williams holds the ball for an NFL-high 3.24s (NGS TTT). This slow release allows TB's pass rush to hit him off-platform into heavy gusts, turning fluttered and sailed balls into high interception risk (TB projects for an NFL-high 2.2 INTs) along with strip-sacks."
     },
     {
@@ -228,7 +228,7 @@
       "NGS_TTT": 2.66,
       "NGS_Agg%": 12.7,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 4 (Deep Sleeper)",
+      "Streamer_Tier": "Neutral Matchup",
       "Current_Week_Rationale": "Avoid. Joe Burrow has been red-hot with +0.306 Pass EPA and rarely takes sacks (16.7% S/P)."
     },
     {
@@ -260,7 +260,7 @@
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 1 (Smash Play)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Uncontested #1 smash play. Facing Cleveland (NFL-high 41 pts allowed over L4 games) with rookie Shedeur Sanders making his first start in the Superdome behind a Browns offensive line allowing an NFL-worst 10.6% sack rate."
     },
     {
@@ -292,7 +292,7 @@
       "NGS_TTT": 2.77,
       "NGS_Agg%": 20.5,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Facing Dak Prescott in a dome with Dallas implied for over 28 points."
     },
     {
@@ -324,7 +324,7 @@
       "NGS_TTT": 2.95,
       "NGS_Agg%": 11.2,
       "Gametime_Weather": "Clear / Mild (64\u00b0F, 5mph)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Facing Bo Nix and a Denver offense that has yielded just 6 points over their last 4 games."
     },
     {
@@ -356,7 +356,7 @@
       "NGS_TTT": 2.84,
       "NGS_Agg%": 18.5,
       "Gametime_Weather": "Clear / Mild (83\u00b0F, 12mph)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Tough road test against Jared Goff and a high-powered Detroit offense implied for nearly 29 points."
     },
     {
@@ -388,7 +388,7 @@
       "NGS_TTT": 2.58,
       "NGS_Agg%": 16.3,
       "Gametime_Weather": "Windy (12 mph, g29)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Windy game (29 mph gusts) at home against Green Bay, but Jordan Love gets rid of the ball quickly (2.58s TTT), limiting ceiling."
     },
     {
@@ -420,7 +420,7 @@
       "NGS_TTT": 2.88,
       "NGS_Agg%": 19.8,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Tough matchup against C.J. Stroud and Houston, who have yielded just 6 points in their last 4 games."
     },
     {
@@ -452,7 +452,7 @@
       "NGS_TTT": 2.8,
       "NGS_Agg%": 13.4,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Under-the-radar upside play. Indianapolis has surrendered 35 points in their last 4 games (24 in L2), and Daniel Jones remains highly sack-prone (32.9% S/P) under pressure."
     },
     {
@@ -484,7 +484,7 @@
       "NGS_TTT": 2.75,
       "NGS_Agg%": 16.2,
       "Gametime_Weather": "Heavy Rain (0.27\")",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Depleted roster with offensive injuries; Trevor Lawrence has played clean football recently (+0.273 Pass EPA)."
     },
     {
@@ -516,7 +516,7 @@
       "NGS_TTT": 2.74,
       "NGS_Agg%": 6.9,
       "Gametime_Weather": "Clear / Mild (65\u00b0F, 9mph)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Facing Patrick Mahomes in Kansas City; low turnover floor."
     },
     {
@@ -548,7 +548,7 @@
       "NGS_TTT": 2.7,
       "NGS_Agg%": 13.9,
       "Gametime_Weather": "Clear / Mild (60\u00b0F, 13mph)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Tougher spot against Matthew Stafford and a Rams offense that rarely gives up fantasy points to defenses (only 11 pts allowed in L4)."
     },
     {
@@ -580,7 +580,7 @@
       "NGS_TTT": 2.81,
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 1 (Smash Play)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Elite ceiling play coming off a bye. The Chargers have an NFL-worst -0.365 Pass EPA and are implied for just 18.0 points. Houston is a 4.5-point favorite in a positive defensive game script."
     },
     {
@@ -612,7 +612,7 @@
       "NGS_TTT": 2.9,
       "NGS_Agg%": 20.8,
       "Gametime_Weather": "Clear / Mild (71\u00b0F, 7mph)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "10-point home favorite against Kirk Cousins, but Cousins gets rid of the ball quickly and limits strip-sacks."
     },
     {
@@ -644,7 +644,7 @@
       "NGS_TTT": 3.05,
       "NGS_Agg%": 18.6,
       "Gametime_Weather": "Clear / Mild (83\u00b0F, 12mph)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "High variance ceiling play. Miami allows pressure on 44% of dropbacks and Malik Willis holds the ball for 3.05s, though Detroit's secondary carries big-play variance."
     },
     {
@@ -676,7 +676,7 @@
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Solid floor vs backup Carson Wentz. Minnesota is without Kyler Murray, lowering their offensive ceiling in a dome environment."
     },
     {
@@ -708,7 +708,7 @@
       "NGS_TTT": 3.14,
       "NGS_Agg%": 12.4,
       "Gametime_Weather": "Windy (12 mph, g29)",
-      "Streamer_Tier": "Tier 4 (Deep Sleeper)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Facing Drake Maye, who has been highly efficient in recent weeks (+0.422 Pass EPA), capping Green Bay's turnover ceiling."
     },
     {
@@ -740,7 +740,7 @@
       "NGS_TTT": 2.7,
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 4 (Deep Sleeper)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Difficult matchup on the road in New Orleans against Tyler Shough, who has protected the ball well."
     },
     {
@@ -772,7 +772,7 @@
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Clear / Mild (59\u00b0F, 14mph)",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Divisional matchup facing J.J. McCarthy. NY Giants offense has been competitive, making this a secondary streaming option."
     },
     {
@@ -804,7 +804,7 @@
       "NGS_TTT": 2.96,
       "NGS_Agg%": 15.5,
       "Gametime_Weather": "Clear / Mild (65\u00b0F, 9mph)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Heavy 10-point home favorite against Geno Smith and the Jets (implied for 18.8 pts), though New York limits major negative turnovers."
     },
     {
@@ -836,7 +836,7 @@
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Clear / Mild (59\u00b0F, 14mph)",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Vegas darling matchup. Philadelphia is implied for only 17.5 points with Joe Milton III making his first start. Giants front generated high pressure rates over recent weeks."
     },
     {
@@ -900,7 +900,7 @@
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Clear / Mild (54\u00b0F, 9mph)",
-      "Streamer_Tier": "Tier 1 (Smash Play)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Strong opportunistic matchup facing backup Drew Lock (Sam Darnold out). Seattle's offense has surrendered 29 fantasy points over their last 4 games."
     },
     {
@@ -932,7 +932,7 @@
       "NGS_TTT": 3.0,
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Clear / Mild (71\u00b0F, 7mph)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Facing Brock Purdy and the 49ers off a bye; low fantasy upside."
     },
     {
@@ -964,7 +964,7 @@
       "NGS_TTT": 2.94,
       "NGS_Agg%": 13.6,
       "Gametime_Weather": "Windy (10 mph, g25)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Neutral Matchup",
       "Current_Week_Rationale": "Favorable game script. Chicago is a 6-point home favorite against Baker Mayfield, who converts 36.8% of his pressures into sacks in gusty lakefront weather."
     },
     {
@@ -1028,7 +1028,7 @@
       "NGS_TTT": 2.89,
       "NGS_Agg%": 13.1,
       "Gametime_Weather": "Clear / Mild (60\u00b0F, 13mph)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Standard matchup projection."
     }
   ],
@@ -1062,7 +1062,7 @@
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Clear / Mild (54\u00b0F, 9mph)",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Stifling low-scoring environment. Facing Gardner Minshew and an Arizona offense implied for just 15.5 points in Seattle with 12 mph crosswinds."
     },
     {
@@ -1094,7 +1094,7 @@
       "NGS_TTT": 2.59,
       "NGS_Agg%": 15.5,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Volume turnover target. Atlanta has yielded an NFL-high 64 fantasy points. Michael Penix Jr. throws into tight windows (21.4% Agg%) and the Falcons offense takes negative plays in bunches."
     },
     {
@@ -1126,7 +1126,7 @@
       "NGS_TTT": 2.66,
       "NGS_Agg%": 12.7,
       "Gametime_Weather": "Heavy Rain (0.27\")",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Thursday Night wet turf smash. Baltimore starts 3rd-string rookie Joe Fagnano in active rain on short rest, with the Ravens implied for a slate-low 14.8 points."
     },
     {
@@ -1158,7 +1158,7 @@
       "NGS_TTT": 2.91,
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Neutral Matchup",
       "Current_Week_Rationale": "Facing Josh Allen and Buffalo's high-efficiency offense; low defensive ceiling."
     },
     {
@@ -1190,7 +1190,7 @@
       "NGS_TTT": 2.86,
       "NGS_Agg%": 13.4,
       "Gametime_Weather": "Clear / Mild (64\u00b0F, 5mph)",
-      "Streamer_Tier": "Tier 1 (Smash Play)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "High-floor sack monster. Denver's ferocious pass rush faces Bryce Young and a Panthers unit that converts 34.8% of pressures to sacks and surrendered 27 fantasy points over their last 2 games."
     },
     {
@@ -1222,7 +1222,7 @@
       "NGS_TTT": 3.24,
       "NGS_Agg%": 11.4,
       "Gametime_Weather": "Windy (10 mph, g25)",
-      "Streamer_Tier": "Tier 1 (Smash Play)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Elite weather-boosted turnover play. Soldier Field features 25 mph wind gusts, while Caleb Williams holds the ball for an NFL-high 3.24s (NGS TTT). This slow release allows TB's pass rush to hit him off-platform into heavy gusts, turning fluttered and sailed balls into high interception risk (TB projects for an NFL-high 2.2 INTs) along with strip-sacks."
     },
     {
@@ -1254,7 +1254,7 @@
       "NGS_TTT": 2.66,
       "NGS_Agg%": 12.7,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 4 (Deep Sleeper)",
+      "Streamer_Tier": "Neutral Matchup",
       "Current_Week_Rationale": "Avoid. Joe Burrow has been red-hot with +0.306 Pass EPA and rarely takes sacks (16.7% S/P)."
     },
     {
@@ -1286,7 +1286,7 @@
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 1 (Smash Play)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Uncontested #1 smash play. Facing Cleveland (NFL-high 41 pts allowed over L4 games) with rookie Shedeur Sanders making his first start in the Superdome behind a Browns offensive line allowing an NFL-worst 10.6% sack rate."
     },
     {
@@ -1318,7 +1318,7 @@
       "NGS_TTT": 2.77,
       "NGS_Agg%": 20.5,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Facing Dak Prescott in a dome with Dallas implied for over 28 points."
     },
     {
@@ -1350,7 +1350,7 @@
       "NGS_TTT": 2.95,
       "NGS_Agg%": 11.2,
       "Gametime_Weather": "Clear / Mild (64\u00b0F, 5mph)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Facing Bo Nix and a Denver offense that has yielded just 6 points over their last 4 games."
     },
     {
@@ -1382,7 +1382,7 @@
       "NGS_TTT": 2.84,
       "NGS_Agg%": 18.5,
       "Gametime_Weather": "Clear / Mild (83\u00b0F, 12mph)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Tough road test against Jared Goff and a high-powered Detroit offense implied for nearly 29 points."
     },
     {
@@ -1414,7 +1414,7 @@
       "NGS_TTT": 2.58,
       "NGS_Agg%": 16.3,
       "Gametime_Weather": "Windy (12 mph, g29)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Windy game (29 mph gusts) at home against Green Bay, but Jordan Love gets rid of the ball quickly (2.58s TTT), limiting ceiling."
     },
     {
@@ -1446,7 +1446,7 @@
       "NGS_TTT": 2.88,
       "NGS_Agg%": 19.8,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Tough matchup against C.J. Stroud and Houston, who have yielded just 6 points in their last 4 games."
     },
     {
@@ -1478,7 +1478,7 @@
       "NGS_TTT": 2.8,
       "NGS_Agg%": 13.4,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Under-the-radar upside play. Indianapolis has surrendered 35 points in their last 4 games (24 in L2), and Daniel Jones remains highly sack-prone (32.9% S/P) under pressure."
     },
     {
@@ -1510,7 +1510,7 @@
       "NGS_TTT": 2.75,
       "NGS_Agg%": 16.2,
       "Gametime_Weather": "Heavy Rain (0.27\")",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Depleted roster with offensive injuries; Trevor Lawrence has played clean football recently (+0.273 Pass EPA)."
     },
     {
@@ -1542,7 +1542,7 @@
       "NGS_TTT": 2.74,
       "NGS_Agg%": 6.9,
       "Gametime_Weather": "Clear / Mild (65\u00b0F, 9mph)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Facing Patrick Mahomes in Kansas City; low turnover floor."
     },
     {
@@ -1574,7 +1574,7 @@
       "NGS_TTT": 2.7,
       "NGS_Agg%": 13.9,
       "Gametime_Weather": "Clear / Mild (60\u00b0F, 13mph)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Tougher spot against Matthew Stafford and a Rams offense that rarely gives up fantasy points to defenses (only 11 pts allowed in L4)."
     },
     {
@@ -1606,7 +1606,7 @@
       "NGS_TTT": 2.81,
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 1 (Smash Play)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Elite ceiling play coming off a bye. The Chargers have an NFL-worst -0.365 Pass EPA and are implied for just 18.0 points. Houston is a 4.5-point favorite in a positive defensive game script."
     },
     {
@@ -1638,7 +1638,7 @@
       "NGS_TTT": 2.9,
       "NGS_Agg%": 20.8,
       "Gametime_Weather": "Clear / Mild (71\u00b0F, 7mph)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "10-point home favorite against Kirk Cousins, but Cousins gets rid of the ball quickly and limits strip-sacks."
     },
     {
@@ -1670,7 +1670,7 @@
       "NGS_TTT": 3.05,
       "NGS_Agg%": 18.6,
       "Gametime_Weather": "Clear / Mild (83\u00b0F, 12mph)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "High variance ceiling play. Miami allows pressure on 44% of dropbacks and Malik Willis holds the ball for 3.05s, though Detroit's secondary carries big-play variance."
     },
     {
@@ -1702,7 +1702,7 @@
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Solid floor vs backup Carson Wentz. Minnesota is without Kyler Murray, lowering their offensive ceiling in a dome environment."
     },
     {
@@ -1734,7 +1734,7 @@
       "NGS_TTT": 3.14,
       "NGS_Agg%": 12.4,
       "Gametime_Weather": "Windy (12 mph, g29)",
-      "Streamer_Tier": "Tier 4 (Deep Sleeper)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Facing Drake Maye, who has been highly efficient in recent weeks (+0.422 Pass EPA), capping Green Bay's turnover ceiling."
     },
     {
@@ -1766,7 +1766,7 @@
       "NGS_TTT": 2.7,
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Dome (Indoors)",
-      "Streamer_Tier": "Tier 4 (Deep Sleeper)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Difficult matchup on the road in New Orleans against Tyler Shough, who has protected the ball well."
     },
     {
@@ -1798,7 +1798,7 @@
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Clear / Mild (59\u00b0F, 14mph)",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Divisional matchup facing J.J. McCarthy. NY Giants offense has been competitive, making this a secondary streaming option."
     },
     {
@@ -1830,7 +1830,7 @@
       "NGS_TTT": 2.96,
       "NGS_Agg%": 15.5,
       "Gametime_Weather": "Clear / Mild (65\u00b0F, 9mph)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Heavy 10-point home favorite against Geno Smith and the Jets (implied for 18.8 pts), though New York limits major negative turnovers."
     },
     {
@@ -1862,7 +1862,7 @@
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Clear / Mild (59\u00b0F, 14mph)",
-      "Streamer_Tier": "Tier 2 (High Ceiling)",
+      "Streamer_Tier": "Speculative Stream",
       "Current_Week_Rationale": "Vegas darling matchup. Philadelphia is implied for only 17.5 points with Joe Milton III making his first start. Giants front generated high pressure rates over recent weeks."
     },
     {
@@ -1926,7 +1926,7 @@
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Clear / Mild (54\u00b0F, 9mph)",
-      "Streamer_Tier": "Tier 1 (Smash Play)",
+      "Streamer_Tier": "Priority Stream",
       "Current_Week_Rationale": "Strong opportunistic matchup facing backup Drew Lock (Sam Darnold out). Seattle's offense has surrendered 29 fantasy points over their last 4 games."
     },
     {
@@ -1958,7 +1958,7 @@
       "NGS_TTT": 3.0,
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Clear / Mild (71\u00b0F, 7mph)",
-      "Streamer_Tier": "Tier 5 (Avoid / Tough)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Facing Brock Purdy and the 49ers off a bye; low fantasy upside."
     },
     {
@@ -1990,7 +1990,7 @@
       "NGS_TTT": 2.94,
       "NGS_Agg%": 13.6,
       "Gametime_Weather": "Windy (10 mph, g25)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Neutral Matchup",
       "Current_Week_Rationale": "Favorable game script. Chicago is a 6-point home favorite against Baker Mayfield, who converts 36.8% of his pressures into sacks in gusty lakefront weather."
     },
     {
@@ -2054,7 +2054,7 @@
       "NGS_TTT": 2.89,
       "NGS_Agg%": 13.1,
       "Gametime_Weather": "Clear / Mild (60\u00b0F, 13mph)",
-      "Streamer_Tier": "Tier 3 (Solid Floor)",
+      "Streamer_Tier": "Do Not Stream / Avoid",
       "Current_Week_Rationale": "Standard matchup projection."
     }
   ],

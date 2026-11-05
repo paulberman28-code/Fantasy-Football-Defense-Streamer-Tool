@@ -105,14 +105,14 @@
 
       <div class="filter-controls" id="week9-filters">
         <div class="filter-item">
-          <label for="tier-filter">Tier:</label>
-          <select id="tier-filter" aria-label="Filter by Tier">
-            <option value="ALL">All Tiers</option>
-            <option value="Tier 1">Tier 1 (Smash Play)</option>
-            <option value="Tier 2">Tier 2 (High Ceiling)</option>
-            <option value="Tier 3">Tier 3 (Solid Floor)</option>
-            <option value="Tier 4">Tier 4 (Deep Sleeper)</option>
-            <option value="Tier 5">Tier 5 (Avoid / Tough)</option>
+          <label for="tier-filter">Verdict:</label>
+          <select id="tier-filter" aria-label="Filter by Verdict">
+            <option value="ALL">All Outlooks</option>
+            <option value="TARGETS_ONLY">Priority & Speculative Only</option>
+            <option value="Priority Stream">Priority Stream (Top Targets)</option>
+            <option value="Speculative Stream">Speculative Stream (Solid Floor)</option>
+            <option value="Neutral Matchup">Neutral Matchups Only</option>
+            <option value="Do Not Stream / Avoid">Do Not Stream / Avoid (Traps)</option>
           </select>
         </div>
 
@@ -160,11 +160,10 @@
           <p class="panel-desc">Click any column header to sort. Full strategic rationale and Next Gen Stats displayed inline for each streaming target.</p>
         </div>
         <div class="legend-row">
-          <span class="legend-item"><span class="legend-badge tier-1">Tier 1</span> Smash</span>
-          <span class="legend-item"><span class="legend-badge tier-2">Tier 2</span> High Ceiling</span>
-          <span class="legend-item"><span class="legend-badge tier-3">Tier 3</span> Solid Floor</span>
-          <span class="legend-item"><span class="legend-badge tier-4">Tier 4</span> Sleeper</span>
-          <span class="legend-item"><span class="legend-badge tier-5">Tier 5</span> Avoid</span>
+          <span class="legend-item"><span class="legend-badge stash-priority">Priority Stream</span> Top Smash Play</span>
+          <span class="legend-item"><span class="legend-badge stash-speculative">Speculative</span> Solid Floor / Upside</span>
+          <span class="legend-item"><span class="legend-badge stash-neutral">Neutral</span> Deep League</span>
+          <span class="legend-item"><span class="legend-badge stash-avoid">Do Not Stream</span> High Risk / Avoid</span>
         </div>
       </div>
 
@@ -179,7 +178,7 @@
             <tr>
               <th data-sort="Streaming Defense" class="col-sticky col-def">Streaming<br>Defense <span class="sort-arrow"></span></th>
               <th data-sort="Opposing QB (Status)" class="col-qb">Opposing QB<br>& Status <span class="sort-arrow"></span></th>
-              <th data-sort="Streaming Tier" class="col-center col-tier">Tier <span class="sort-arrow"></span></th>
+              <th data-sort="Week 9 Verdict" class="col-center col-tier">Week 9<br>Verdict <span class="sort-arrow"></span></th>
               <th data-sort="Projected Fantasy Points" class="col-center col-stat sort-active desc">Projected<br>Points <span class="sort-arrow">▼</span></th>
               <th data-sort="Scoring Floor" class="col-center col-stat">Scoring<br>Floor <span class="sort-arrow"></span></th>
               <th data-sort="Projected Sacks" class="col-center col-stat">Projected<br>Sacks <span class="sort-arrow"></span></th>
@@ -277,7 +276,7 @@
               <th data-sort="Total Points Allowed (W1-8)" class="col-center col-stat sort-active desc">Total Pts<br>(W1–8) <span class="sort-arrow">▼</span></th>
               <th data-sort="Streaming Defense" class="col-def">Week 9<br>Opponent <span class="sort-arrow"></span></th>
               <th data-sort="Opposing QB (Status)" class="col-qb">Quarterback<br>& Status <span class="sort-arrow"></span></th>
-              <th data-sort="Streaming Tier" class="col-center col-tier">Tier <span class="sort-arrow"></span></th>
+              <th data-sort="Week 9 Verdict" class="col-center col-tier">Week 9<br>Verdict <span class="sort-arrow"></span></th>
             </tr>
           </thead>
           <tbody id="history-tbody">

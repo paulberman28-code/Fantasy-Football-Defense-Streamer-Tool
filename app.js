@@ -303,8 +303,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       });
     }
 
-    if (filters.tier !== 'ALL') {
-      rows = rows.filter(m => m.Streamer_Tier && m.Streamer_Tier.startsWith(filters.tier));
+    if (filters.tier === 'TARGETS_ONLY') {
+      rows = rows.filter(m => m.Streamer_Tier === 'Priority Stream' || m.Streamer_Tier === 'Speculative Stream');
+    } else if (filters.tier && filters.tier !== 'ALL') {
+      rows = rows.filter(m => m.Streamer_Tier === filters.tier);
     }
 
     if (filters.backupOnly) {
@@ -324,6 +326,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Streaming Defense': 'Target_DST',
       'Opponent Offense': 'Offense',
       'Opposing QB (Status)': 'Starting_QB',
+      'Week 9 Verdict': 'Streamer_Tier',
       'Streaming Tier': 'Streamer_Tier',
       'Projected Fantasy Points': 'Proj_Fantasy_Pts',
       'Scoring Floor': 'Predicted_Floor',
@@ -373,7 +376,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
           </td>
           <td>${qbDisplay}</td>
-          <td class="col-center"><span class="tier-badge ${tierClass}">${r.Streamer_Tier.split('(')[0].trim()}</span></td>
+          <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
           <td class="col-center"><span class="pts-highlight ${parseFloat(r.Proj_Fantasy_Pts) >= 9 ? 'pts-top' : ''}">${formatNum(r.Proj_Fantasy_Pts, 1)}</span></td>
           <td class="col-center stat-bold">${formatNum(r.Predicted_Floor, 1)}</td>
           <td class="col-center">${formatNum(r.Proj_Sacks, 1)}</td>
@@ -476,6 +479,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Total Points Allowed (W1-8)': 'Total_pts',
       'Streaming Defense': 'Target_DST',
       'Quarterback & Status': 'Starting_QB',
+      'Week 9 Verdict': 'Streamer_Tier',
       'Streaming Tier': 'Streamer_Tier'
     };
     const targetKey = keyMap[sortConfig.column] || sortConfig.column;
@@ -501,7 +505,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center"><span class="pts-highlight ${h.Total_pts >= 45 ? 'pts-top' : ''}">${h.Total_pts}</span></td>
           <td>${h.Target_DST || 'BYE'}</td>
           <td>${h.Starting_QB || '-'}</td>
-          <td class="col-center"><span class="tier-badge ${tierClass}">${(h.Streamer_Tier || 'BYE').split('(')[0].trim()}</span></td>
+          <td class="col-center"><span class="badge ${tierClass}">${h.Streamer_Tier || 'BYE'}</span></td>
         </tr>
       `;
     }).join('');
@@ -577,12 +581,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function getTierClass(tierStr) {
-    if (!tierStr) return 'tier-5';
-    if (tierStr.includes('Tier 1')) return 'tier-1';
-    if (tierStr.includes('Tier 2')) return 'tier-2';
-    if (tierStr.includes('Tier 3')) return 'tier-3';
-    if (tierStr.includes('Tier 4')) return 'tier-4';
-    return 'tier-5';
+    if (!tierStr) return 'stash-neutral';
+    if (tierStr.includes('Priority')) return 'stash-priority';
+    if (tierStr.includes('Speculative')) return 'stash-speculative';
+    if (tierStr.includes('Neutral')) return 'stash-neutral';
+    if (tierStr.includes('Avoid') || tierStr.includes('Do Not')) return 'stash-avoid';
+    return 'stash-neutral';
   }
 
   // 11. Dark / Light Theme Toggle
