@@ -69,8 +69,15 @@ def main():
 
     for team in teams:
         row = {'Team': team, 'Offense': f"{team_names[team]} ({team})"}
-        for period_name, weeks in [('W1_4', [1, 2, 3, 4]), ('W5_8', [5, 6, 7, 8])]:
-            sub_p = pbp_reg[pbp_reg['week'].isin(weeks)]
+        game_scores = []
+
+        for w in range(1, 9):
+            w_sched = sched_reg[(sched_reg['week'] == w) & ((sched_reg['home_team'] == team) | (sched_reg['away_team'] == team))]
+            if len(w_sched) == 0:
+                row[f'W{w}'] = 'BYE'
+                continue
+
+            sub_p = pbp_reg[pbp_reg['week'] == w]
             
             # Sacks (1 pt)
             sacks = ((sub_p['posteam'] == team) & (sub_p['sack'] == 1)).sum()
@@ -84,42 +91,44 @@ def main():
             # Safeties Allowed (2 pts)
             safeties = ((sub_p['posteam'] == team) & (sub_p['safety'] == 1)).sum()
             
-            # Blocked Kicks Allowed (Punt/FG/PAT) (1 pt)
+            # Blocked Kicks Allowed (1 pt)
             blocked = ((sub_p['posteam'] == team) & (
                 (sub_p['field_goal_result'] == 'blocked') | 
                 (sub_p['extra_point_result'] == 'blocked') | 
                 (sub_p['punt_blocked'] == 1.0)
             )).sum()
             
-            # Defensive Touchdowns Allowed (Pick-6 or Fumble Return TD) (6 pts)
+            # Defensive TDs Allowed (Pick-6 or Fumble Return TD) (6 pts)
             pick6 = ((sub_p['posteam'] == team) & (sub_p['interception'] == 1) & (sub_p['touchdown'] == 1)).sum()
             fumb_td = ((sub_p['touchdown'] == 1) & (sub_p['td_team'] == sub_p['defteam']) & 
                        (sub_p['desc'].str.contains('FUMBLE', case=False, na=False)) & (sub_p['posteam'] == team)).sum()
             def_td = pick6 + fumb_td
             
-            # Points Allowed Brackets (dictated by points scored by the offense)
-            # 0 pts -> 10 fantasy pts; 1-6 pts -> 7; 7-13 pts -> 3; 14+ -> 0
-            sub_s = sched_reg[sched_reg['week'].isin(weeks)]
-            bracket_pts = 0
-            for _, g in sub_s.iterrows():
-                pts = g['home_score'] if g['home_team'] == team else (g['away_score'] if g['away_team'] == team else None)
-                if pts is None: continue
-                if pts == 0: bracket_pts += 10
-                elif 1 <= pts <= 6: bracket_pts += 7
-                elif 7 <= pts <= 13: bracket_pts += 3
+            # Points Allowed Brackets
+            g = w_sched.iloc[0]
+            pts = g['home_score'] if g['home_team'] == team else g['away_score']
+            bracket_pts = 10 if pts == 0 else (7 if pts <= 6 else (3 if pts <= 13 else 0))
             
-            period_total = (sacks * 1) + (ints * 1) + (fumbles * 1) + (safeties * 2) + (blocked * 1) + (def_td * 6) + bracket_pts
-            row[f'{period_name}_pts'] = period_total
+            week_pts = (sacks * 1) + (ints * 1) + (fumbles * 1) + (safeties * 2) + (blocked * 1) + (def_td * 6) + bracket_pts
+            row[f'W{w}'] = week_pts
+            game_scores.append(week_pts)
 
-        row['Total_pts'] = row['W1_4_pts'] + row['W5_8_pts']
+        # Rolling Last 4 Games Played (ignoring bye weeks)
+        last_4_pts = sum(game_scores[-4:]) if len(game_scores) >= 4 else sum(game_scores)
+        last_4_avg = round(last_4_pts / min(len(game_scores), 4), 1)
+
+        row['Last_4_Games'] = last_4_pts
+        row['Last_4_Avg'] = last_4_avg
+        row['Total_pts'] = sum(game_scores)
+        row['Games_Played'] = len(game_scores)
         row['W9_Opponent'] = matchups.get(team, 'BYE (None)')
         row['Backup_QB'] = qb_status[team]
         records.append(row)
 
     df_out = pd.DataFrame(records).sort_values('Total_pts', ascending=False).reset_index(drop=True)
     df_out.to_csv("dst_streaming_targets_week9_2026.csv", index=False)
-    print("Results saved to dst_streaming_targets_week9_2026.csv")
-    print(df_out[['Offense', 'W1_4_pts', 'W5_8_pts', 'Total_pts', 'W9_Opponent', 'Backup_QB']].to_string())
+    print("Updated data saved to dst_streaming_targets_week9_2026.csv")
+    return df_out
 
 if __name__ == '__main__':
     main()
