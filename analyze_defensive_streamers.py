@@ -3,27 +3,27 @@ import numpy as np
 import requests
 import nfl_data_py as nfl
 
-def get_weather_forecasts(w9_sched):
+def get_gametime_weather(w9_sched):
     """
-    Retrieves weather forecast from Open-Meteo for Week 9 outdoor games
-    and tags domes/retractable roof stadiums.
+    Retrieves precise 3-hour game-time weather forecast from Open-Meteo
+    for outdoor games based on exact kickoff date and time.
     """
-    stadium_coords = {
-        'BAL': {'name': 'M&T Bank Stadium', 'lat': 39.28, 'lon': -76.62, 'tz': 'America/New_York', 'roof': 'outdoors'},
-        'ATL': {'name': 'Bernabeu (Madrid)', 'lat': 40.45, 'lon': -3.69, 'tz': 'Europe/Madrid', 'roof': 'retractable'},
-        'CAR': {'name': 'Bank of America Stadium', 'lat': 35.23, 'lon': -80.85, 'tz': 'America/New_York', 'roof': 'outdoors'},
-        'IND': {'name': 'Lucas Oil Stadium', 'lat': 39.76, 'lon': -86.16, 'tz': 'America/Indiana/Indianapolis', 'roof': 'dome'},
-        'KC': {'name': 'Arrowhead Stadium', 'lat': 39.05, 'lon': -94.48, 'tz': 'America/Chicago', 'roof': 'outdoors'},
-        'MIA': {'name': 'Hard Rock Stadium', 'lat': 25.96, 'lon': -80.24, 'tz': 'America/New_York', 'roof': 'outdoors'},
-        'NO': {'name': 'Caesars Superdome', 'lat': 29.95, 'lon': -90.08, 'tz': 'America/Chicago', 'roof': 'dome'},
-        'PHI': {'name': 'Lincoln Financial Field', 'lat': 39.90, 'lon': -75.17, 'tz': 'America/New_York', 'roof': 'outdoors'},
-        'WAS': {'name': 'Northwest Stadium', 'lat': 38.91, 'lon': -76.86, 'tz': 'America/New_York', 'roof': 'outdoors'},
-        'LAC': {'name': 'SoFi Stadium', 'lat': 33.95, 'lon': -118.34, 'tz': 'America/Los_Angeles', 'roof': 'dome'},
-        'SF': {'name': "Levi's Stadium", 'lat': 37.40, 'lon': -121.97, 'tz': 'America/Los_Angeles', 'roof': 'outdoors'},
-        'NE': {'name': 'Gillette Stadium', 'lat': 42.09, 'lon': -71.26, 'tz': 'America/New_York', 'roof': 'outdoors'},
-        'SEA': {'name': 'Lumen Field', 'lat': 47.60, 'lon': -122.33, 'tz': 'America/Los_Angeles', 'roof': 'outdoors'},
-        'CHI': {'name': 'Soldier Field', 'lat': 41.86, 'lon': -87.62, 'tz': 'America/Chicago', 'roof': 'outdoors'},
-        'MIN': {'name': 'U.S. Bank Stadium', 'lat': 44.97, 'lon': -93.26, 'tz': 'America/Chicago', 'roof': 'dome'},
+    stadium_info = {
+        'BAL': {'name': 'M&T Bank Stadium', 'lat': 39.28, 'lon': -76.62, 'tz': 'America/New_York', 'roof': 'outdoors', 'utc_offset': -5},
+        'ATL': {'name': 'Bernabeu (Madrid)', 'lat': 40.45, 'lon': -3.69, 'tz': 'Europe/Madrid', 'roof': 'retractable', 'utc_offset': 1},
+        'CAR': {'name': 'Bank of America Stadium', 'lat': 35.23, 'lon': -80.85, 'tz': 'America/New_York', 'roof': 'outdoors', 'utc_offset': -5},
+        'IND': {'name': 'Lucas Oil Stadium', 'lat': 39.76, 'lon': -86.16, 'tz': 'America/Indiana/Indianapolis', 'roof': 'dome', 'utc_offset': -5},
+        'KC': {'name': 'Arrowhead Stadium', 'lat': 39.05, 'lon': -94.48, 'tz': 'America/Chicago', 'roof': 'outdoors', 'utc_offset': -6},
+        'MIA': {'name': 'Hard Rock Stadium', 'lat': 25.96, 'lon': -80.24, 'tz': 'America/New_York', 'roof': 'outdoors', 'utc_offset': -5},
+        'NO': {'name': 'Caesars Superdome', 'lat': 29.95, 'lon': -90.08, 'tz': 'America/Chicago', 'roof': 'dome', 'utc_offset': -6},
+        'PHI': {'name': 'Lincoln Financial Field', 'lat': 39.90, 'lon': -75.17, 'tz': 'America/New_York', 'roof': 'outdoors', 'utc_offset': -5},
+        'WAS': {'name': 'Northwest Stadium', 'lat': 38.91, 'lon': -76.86, 'tz': 'America/New_York', 'roof': 'outdoors', 'utc_offset': -5},
+        'LAC': {'name': 'SoFi Stadium', 'lat': 33.95, 'lon': -118.34, 'tz': 'America/Los_Angeles', 'roof': 'dome', 'utc_offset': -8},
+        'SF': {'name': "Levi's Stadium", 'lat': 37.40, 'lon': -121.97, 'tz': 'America/Los_Angeles', 'roof': 'outdoors', 'utc_offset': -8},
+        'NE': {'name': 'Gillette Stadium', 'lat': 42.09, 'lon': -71.26, 'tz': 'America/New_York', 'roof': 'outdoors', 'utc_offset': -5},
+        'SEA': {'name': 'Lumen Field', 'lat': 47.60, 'lon': -122.33, 'tz': 'America/Los_Angeles', 'roof': 'outdoors', 'utc_offset': -8},
+        'CHI': {'name': 'Soldier Field', 'lat': 41.86, 'lon': -87.62, 'tz': 'America/Chicago', 'roof': 'outdoors', 'utc_offset': -6},
+        'MIN': {'name': 'U.S. Bank Stadium', 'lat': 44.97, 'lon': -93.26, 'tz': 'America/Chicago', 'roof': 'dome', 'utc_offset': -6},
     }
 
     weather_by_team = {}
@@ -31,36 +31,49 @@ def get_weather_forecasts(w9_sched):
         home = r['home_team']
         away = r['away_team']
         date = str(r['gameday'])
-        st = stadium_coords.get(home, {})
+        et_time = str(r['gametime'])
+        st = stadium_info.get(home, {})
         
         if st.get('roof') in ['dome', 'retractable']:
             cond = 'Dome (Indoors)'
         else:
             try:
-                url = f"https://api.open-meteo.com/v1/forecast?latitude={st['lat']}&longitude={st['lon']}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,snowfall_sum,wind_speed_10m_max,wind_gusts_10m_max&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone={st['tz']}&start_date={date}&end_date={date}"
-                res = requests.get(url, timeout=5).json().get('daily', {})
-                t_max = res.get('temperature_2m_max', [0])[0]
-                t_min = res.get('temperature_2m_min', [0])[0]
-                precip = res.get('precipitation_sum', [0])[0]
-                snow = res.get('snowfall_sum', [0])[0]
-                wind = res.get('wind_speed_10m_max', [0])[0]
-                gust = res.get('wind_gusts_10m_max', [0])[0]
+                # Convert ET kickoff to local kickoff hour
+                et_hour = int(et_time.split(':')[0])
+                local_hour = et_hour + (st['utc_offset'] - (-5))
+                
+                url = f"https://api.open-meteo.com/v1/forecast?latitude={st['lat']}&longitude={st['lon']}&hourly=temperature_2m,precipitation,snowfall,wind_speed_10m,wind_gusts_10m&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone={st['tz']}&start_date={date}&end_date={date}"
+                res = requests.get(url, timeout=5).json().get('hourly', {})
+                
+                # Sample the 3-hour game window
+                hours = range(local_hour, min(local_hour + 4, 24))
+                temps = [res['temperature_2m'][h] for h in hours]
+                winds = [res['wind_speed_10m'][h] for h in hours]
+                gusts = [res['wind_gusts_10m'][h] for h in hours]
+                precips = [res['precipitation'][h] for h in hours]
+                snows = [res['snowfall'][h] for h in hours]
+
+                avg_temp = sum(temps) / len(temps)
+                max_wind = max(winds)
+                max_gust = max(gusts)
+                total_rain = sum(precips)
+                total_snow = sum(snows)
 
                 alerts = []
-                if gust >= 35:
-                    alerts.append(f'Severe Gusts ({gust:.0f} mph)')
-                elif gust >= 25 or wind >= 15:
-                    alerts.append(f'Windy ({wind:.0f} mph, g{gust:.0f})')
-                if snow > 0:
-                    alerts.append(f'Snow ({snow:.1f}")')
-                elif precip >= 0.25:
-                    alerts.append(f'Heavy Rain ({precip:.2f}")')
-                elif precip >= 0.05:
-                    alerts.append(f'Rain ({precip:.2f}")')
-                if t_min <= 32:
-                    alerts.append(f'Freezing ({t_min:.0f}°F)')
+                if max_gust >= 35:
+                    alerts.append(f'Severe Gusts ({max_gust:.0f} mph)')
+                elif max_gust >= 25 or max_wind >= 15:
+                    alerts.append(f'Windy ({max_wind:.0f} mph, g{max_gust:.0f})')
+                if total_snow > 0:
+                    alerts.append(f'Snow ({total_snow:.1f}")')
+                elif total_rain >= 0.25:
+                    alerts.append(f'Heavy Rain ({total_rain:.2f}")')
+                elif total_rain >= 0.05:
+                    alerts.append(f'Rain ({total_rain:.2f}")')
+                if avg_temp <= 35:
+                    alerts.append(f'Freezing ({avg_temp:.0f}°F)')
 
-                cond = ', '.join(alerts) if alerts else f'Fair ({t_max:.0f}°F, {wind:.0f}mph)'
+                cond = ', '.join(alerts) if alerts else f'Clear / Mild ({avg_temp:.0f}°F, {max_wind:.0f}mph)'
             except Exception:
                 cond = 'Outdoor (Forecast Unavailable)'
 
@@ -129,7 +142,8 @@ def main():
         'WAS': 'No - Jayden Daniels'
     }
 
-    weather_by_team = get_weather_forecasts(w9_sched)
+    # Retrieve game-time weather for week 9 games
+    weather_by_team = get_gametime_weather(w9_sched)
 
     teams = sorted(team_names.keys())
     records = []
@@ -168,15 +182,15 @@ def main():
             row[f'W{w}'] = week_pts
             game_scores.append(week_pts)
 
-        # Rolling last 3 and last 4 games played (skipping byes)
-        last_3_pts = sum(game_scores[-3:]) if len(game_scores) >= 3 else sum(game_scores)
+        # Rolling last 2 and last 4 games played (skipping byes)
+        last_2_pts = sum(game_scores[-2:]) if len(game_scores) >= 2 else sum(game_scores)
         last_4_pts = sum(game_scores[-4:]) if len(game_scores) >= 4 else sum(game_scores)
 
-        row['Last_3_Games'] = last_3_pts
+        row['Last_2_Games'] = last_2_pts
         row['Last_4_Games'] = last_4_pts
         row['Total_pts'] = sum(game_scores)
         row['W9_Opponent'] = matchups.get(team, 'BYE (None)')
-        row['Weather'] = weather_by_team.get(team, 'BYE (N/A)')
+        row['Gametime_Weather'] = weather_by_team.get(team, 'BYE (N/A)')
         row['Backup_QB'] = qb_status[team]
         records.append(row)
 

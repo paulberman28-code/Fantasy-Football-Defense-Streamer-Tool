@@ -1,33 +1,33 @@
-Team,Offense,W1,W2,W3,W4,W5,W6,W7,W8,Last_3_Games,Last_4_Games,Total_pts,W9_Opponent,Weather,Backup_QB
-ATL,Atlanta Falcons (ATL),15,21,1,1,4,8,0,14,22,26,64,CIN (at ATL),Dome (Indoors),No - Michael Penix Jr.
-CLE,Cleveland Browns (CLE),10,2,3,4,13,8,3,17,28,41,60,NO (vs CLE),Dome (Indoors),Yes - Shedeur Sanders (Deshaun Watson concussed)
-LAC,Los Angeles Chargers (LAC),6,8,3,8,8,13,BYE,7,28,36,53,HOU (at LAC),Dome (Indoors),No - Justin Herbert
-IND,Indianapolis Colts (IND),4,1,7,4,1,10,8,16,34,35,51,DAL (at IND),Dome (Indoors),No - Daniel Jones
-SEA,Seattle Seahawks (SEA),5,2,9,4,15,8,1,5,14,29,49,ARI (at SEA),"Severe Gusts (41 mph), Rain (0.13"")",Yes - Drew Lock (Sam Darnold quad/rib)
-BAL,Baltimore Ravens (BAL),3,5,0,2,11,7,8,10,25,36,46,JAX (at BAL),"Rain (0.16"")",Yes - Joe Fagnano (Lamar Jackson & Tyler Huntley injured)
-PIT,Pittsburgh Steelers (PIT),3,19,3,7,1,6,3,2,11,12,44,BYE (None),BYE (N/A),BYE (Starter: Aaron Rodgers)
-CAR,Carolina Panthers (CAR),6,2,4,3,BYE,2,19,8,29,32,44,DEN (at CAR),"Fair (65°F, 7mph)",No - Bryce Young
-CHI,Chicago Bears (CHI),3,14,0,3,12,5,3,2,10,22,42,TB (at CHI),"Windy (14 mph, g27)",No - Caleb Williams
-MIA,Miami Dolphins (MIA),10,7,5,6,6,BYE,2,6,14,20,42,DET (at MIA),"Fair (84°F, 14mph)",No - Malik Willis
-NYG,New York Giants (NYG),3,10,6,7,4,9,3,BYE,16,23,42,PHI (vs NYG),"Windy (14 mph, g31)",Yes - J.J. McCarthy (acquired replacement for injured Jaxson Dart)
-TB,Tampa Bay Buccaneers (TB),14,4,8,5,1,7,0,2,9,10,41,CHI (vs TB),"Windy (14 mph, g27)",No - Baker Mayfield
-NE,New England Patriots (NE),9,5,13,3,2,2,3,4,9,11,41,GB (at NE),"Windy (13 mph, g29), Rain (0.09"")",No - Drake Maye
-TEN,Tennessee Titans (TEN),7,2,5,3,13,1,3,6,10,23,40,BYE (None),BYE (N/A),BYE (Starter: Cam Ward)
-PHI,Philadelphia Eagles (PHI),3,5,8,4,1,3,3,10,16,17,37,NYG (at PHI),"Windy (14 mph, g31)",Yes - Joe Milton III (Jalen Hurts on IR)
-ARI,Arizona Cardinals (ARI),1,6,2,11,6,1,3,7,11,17,37,SEA (vs ARI),"Severe Gusts (41 mph), Rain (0.13"")",Yes - Gardner Minshew (Jacoby Brissett benched)
-MIN,Minnesota Vikings (MIN),4,6,4,4,10,BYE,4,4,18,22,36,BUF (at MIN),Dome (Indoors),Yes - Carson Wentz (Kyler Murray hamstring)
-NO,New Orleans Saints (NO),8,3,7,3,7,1,6,BYE,14,17,35,CLE (at NO),Dome (Indoors),No - Tyler Shough
-LA,Los Angeles Rams (LA),5,3,12,3,2,4,3,2,9,11,34,WAS (vs LA),"Windy (14 mph, g29)",No - Matthew Stafford
-NYJ,New York Jets (NYJ),0,4,6,6,6,4,3,3,10,16,32,KC (vs NYJ),"Fair (66°F, 9mph)",No - Geno Smith
-CIN,Cincinnati Bengals (CIN),8,5,3,4,1,BYE,1,7,9,13,29,ATL (vs CIN),Dome (Indoors),No - Joe Burrow
-GB,Green Bay Packers (GB),6,4,3,2,2,4,3,3,10,12,27,NE (vs GB),"Windy (13 mph, g29), Rain (0.09"")",No - Jordan Love
-HOU,Houston Texans (HOU),5,11,3,2,2,1,1,BYE,4,6,25,LAC (vs HOU),Dome (Indoors),No - C.J. Stroud
-BUF,Buffalo Bills (BUF),2,2,9,3,3,2,BYE,3,8,11,24,MIN (vs BUF),Dome (Indoors),No - Josh Allen
-DAL,Dallas Cowboys (DAL),1,2,3,4,3,6,0,4,10,13,23,IND (vs DAL),Dome (Indoors),No - Dak Prescott
-WAS,Washington Commanders (WAS),2,1,2,6,5,4,BYE,3,12,18,23,LA (at WAS),"Windy (14 mph, g29)",No - Jayden Daniels
-KC,Kansas City Chiefs (KC),3,2,1,2,BYE,2,9,2,13,15,21,NYJ (at KC),"Fair (66°F, 9mph)",No - Patrick Mahomes
-JAX,Jacksonville Jaguars (JAX),1,6,2,4,3,1,BYE,4,8,12,21,BAL (vs JAX),"Rain (0.16"")",No - Trevor Lawrence
-DET,Detroit Lions (DET),2,4,2,1,3,BYE,3,5,11,12,20,MIA (vs DET),"Fair (84°F, 14mph)",No - Jared Goff
-LV,Las Vegas Raiders (LV),2,3,4,2,4,1,2,1,4,8,19,SF (vs LV),"Fair (72°F, 7mph)",No - Kirk Cousins
-DEN,Denver Broncos (DEN),9,1,2,1,2,2,1,1,4,6,19,CAR (vs DEN),"Fair (65°F, 7mph)",No - Bo Nix
-SF,San Francisco 49ers (SF),1,0,1,1,6,3,6,BYE,15,16,18,LV (at SF),"Fair (72°F, 7mph)",No - Brock Purdy
+Team,Offense,W1,W2,W3,W4,W5,W6,W7,W8,Last_2_Games,Last_4_Games,Total_pts,W9_Opponent,Gametime_Weather,Backup_QB
+ATL,Atlanta Falcons (ATL),15,21,1,1,4,8,0,14,14,26,64,CIN (at ATL),Dome (Indoors),No - Michael Penix Jr.
+CLE,Cleveland Browns (CLE),10,2,3,4,13,8,3,17,20,41,60,NO (vs CLE),Dome (Indoors),Yes - Shedeur Sanders (Deshaun Watson concussed)
+LAC,Los Angeles Chargers (LAC),6,8,3,8,8,13,BYE,7,20,36,53,HOU (at LAC),Dome (Indoors),No - Justin Herbert
+IND,Indianapolis Colts (IND),4,1,7,4,1,10,8,16,24,35,51,DAL (at IND),Dome (Indoors),No - Daniel Jones
+SEA,Seattle Seahawks (SEA),5,2,9,4,15,8,1,5,6,29,49,ARI (at SEA),"Clear / Mild (54°F, 9mph)",Yes - Drew Lock (Sam Darnold quad/rib)
+BAL,Baltimore Ravens (BAL),3,5,0,2,11,7,8,10,18,36,46,JAX (at BAL),"Rain (0.13"")",Yes - Joe Fagnano (Lamar Jackson & Tyler Huntley injured)
+PIT,Pittsburgh Steelers (PIT),3,19,3,7,1,6,3,2,5,12,44,BYE (None),BYE (N/A),BYE (Starter: Aaron Rodgers)
+CAR,Carolina Panthers (CAR),6,2,4,3,BYE,2,19,8,27,32,44,DEN (at CAR),"Clear / Mild (64°F, 5mph)",No - Bryce Young
+CHI,Chicago Bears (CHI),3,14,0,3,12,5,3,2,5,22,42,TB (at CHI),"Windy (10 mph, g25)",No - Caleb Williams
+MIA,Miami Dolphins (MIA),10,7,5,6,6,BYE,2,6,8,20,42,DET (at MIA),"Clear / Mild (83°F, 12mph)",No - Malik Willis
+NYG,New York Giants (NYG),3,10,6,7,4,9,3,BYE,12,23,42,PHI (vs NYG),"Clear / Mild (59°F, 14mph)",Yes - J.J. McCarthy (acquired replacement for injured Jaxson Dart)
+TB,Tampa Bay Buccaneers (TB),14,4,8,5,1,7,0,2,2,10,41,CHI (vs TB),"Windy (10 mph, g25)",No - Baker Mayfield
+NE,New England Patriots (NE),9,5,13,3,2,2,3,4,7,11,41,GB (at NE),"Windy (12 mph, g29)",No - Drake Maye
+TEN,Tennessee Titans (TEN),7,2,5,3,13,1,3,6,9,23,40,BYE (None),BYE (N/A),BYE (Starter: Cam Ward)
+PHI,Philadelphia Eagles (PHI),3,5,8,4,1,3,3,10,13,17,37,NYG (at PHI),"Clear / Mild (59°F, 14mph)",Yes - Joe Milton III (Jalen Hurts on IR)
+ARI,Arizona Cardinals (ARI),1,6,2,11,6,1,3,7,10,17,37,SEA (vs ARI),"Clear / Mild (54°F, 9mph)",Yes - Gardner Minshew (Jacoby Brissett benched)
+MIN,Minnesota Vikings (MIN),4,6,4,4,10,BYE,4,4,8,22,36,BUF (at MIN),Dome (Indoors),Yes - Carson Wentz (Kyler Murray hamstring)
+NO,New Orleans Saints (NO),8,3,7,3,7,1,6,BYE,7,17,35,CLE (at NO),Dome (Indoors),No - Tyler Shough
+LA,Los Angeles Rams (LA),5,3,12,3,2,4,3,2,5,11,34,WAS (vs LA),"Clear / Mild (60°F, 13mph)",No - Matthew Stafford
+NYJ,New York Jets (NYJ),0,4,6,6,6,4,3,3,6,16,32,KC (vs NYJ),"Clear / Mild (65°F, 9mph)",No - Geno Smith
+CIN,Cincinnati Bengals (CIN),8,5,3,4,1,BYE,1,7,8,13,29,ATL (vs CIN),Dome (Indoors),No - Joe Burrow
+GB,Green Bay Packers (GB),6,4,3,2,2,4,3,3,6,12,27,NE (vs GB),"Windy (12 mph, g29)",No - Jordan Love
+HOU,Houston Texans (HOU),5,11,3,2,2,1,1,BYE,2,6,25,LAC (vs HOU),Dome (Indoors),No - C.J. Stroud
+BUF,Buffalo Bills (BUF),2,2,9,3,3,2,BYE,3,5,11,24,MIN (vs BUF),Dome (Indoors),No - Josh Allen
+DAL,Dallas Cowboys (DAL),1,2,3,4,3,6,0,4,4,13,23,IND (vs DAL),Dome (Indoors),No - Dak Prescott
+WAS,Washington Commanders (WAS),2,1,2,6,5,4,BYE,3,7,18,23,LA (at WAS),"Clear / Mild (60°F, 13mph)",No - Jayden Daniels
+KC,Kansas City Chiefs (KC),3,2,1,2,BYE,2,9,2,11,15,21,NYJ (at KC),"Clear / Mild (65°F, 9mph)",No - Patrick Mahomes
+JAX,Jacksonville Jaguars (JAX),1,6,2,4,3,1,BYE,4,5,12,21,BAL (vs JAX),"Rain (0.13"")",No - Trevor Lawrence
+DET,Detroit Lions (DET),2,4,2,1,3,BYE,3,5,8,12,20,MIA (vs DET),"Clear / Mild (83°F, 12mph)",No - Jared Goff
+LV,Las Vegas Raiders (LV),2,3,4,2,4,1,2,1,3,8,19,SF (vs LV),"Clear / Mild (71°F, 7mph)",No - Kirk Cousins
+DEN,Denver Broncos (DEN),9,1,2,1,2,2,1,1,2,6,19,CAR (vs DEN),"Clear / Mild (64°F, 5mph)",No - Bo Nix
+SF,San Francisco 49ers (SF),1,0,1,1,6,3,6,BYE,9,16,18,LV (at SF),"Clear / Mild (71°F, 7mph)",No - Brock Purdy

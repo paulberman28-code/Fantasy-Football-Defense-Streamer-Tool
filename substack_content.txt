@@ -1,0 +1,140 @@
+This week we are giving the full article for free, enjoy! 
+Week 9 is here, and we’re back with another round of D/ST streamers and rankings.
+Before we get into this week’s matchups, Week 8 was a much better week overall than Week 7. We still had some misses, but both the model and my personal rankings did a better job identifying the defenses that finished near the top of the week.
+I’ll continue tracking both the model and my personal rankings every week. We’ve made changes throughout the season as more data becomes available, and at this point the model is using each team’s most recent four games rather than relying on full-season numbers. The goal is to put more weight on what teams are doing right now.
+For anyone new here, we’re targeting defenses rostered in 35% of Yahoo leagues or less. Streamers are released every Tuesday to all subscribers, while paid subscribers receive early access to the full rankings. Free subscribers will receive the full rankings Sunday morning before kickoff, as always.
+Quick note before we jump in: I’m partnering with Stokastic on their 
+Ask the Sims
+ tool this season. Full disclosure, you can’t currently ask it D/ST questions, so everything below is still based on my own rankings and D/ST model.
+But if you’re working through the rest of your Week 9 lineup, you can use Stokastic’s 
+Ask the Sims
+ for start/sit decisions and other fantasy questions based on their simulations.
+Overall Rankings vs. Results
+Week 8 was a much stronger week overall.
+Jacksonville was the best call from the model. The Jaguars were the model’s No. 1 defense and finished as the No. 1 D/ST on the week with 21 ESPN points.
+My personal rankings also had Jacksonville near the top at No. 2, while Pittsburgh was my No. 1 defense and finished tied for second with 16 points.
+There were several other strong calls.
+Washington was my No. 7 defense and finished fifth with 14 points. New England was ranked ninth and finished ninth, Detroit was 10th and finished 10th, and Chicago was 12th and finished eighth.
+The model also did a good job identifying several of the better defenses. Green Bay was model No. 5 and finished sixth, Chicago was No. 4 and finished eighth, New England was No. 6 and finished ninth, Detroit was No. 7 and finished 10th, and Washington was No. 10 and finished fifth.
+There were still some significant misses.
+Seattle was ranked fifth in my rankings and third by the model but finished with only 1 ESPN point. Denver was my No. 6 defense and finished with 1 point as well.
+Those are exactly the types of results that make D/ST difficult to predict. Pressure and efficiency can help us identify opportunity, but turnovers and defensive touchdowns can completely change a fantasy result.
+Week 8 Streamer Results
+Of the three defenses we highlighted that were widely available:
+Chicago Bears — 8th (10 ESPN points)
+Detroit Lions — 10th (8 ESPN points)
+Cincinnati Bengals — 19th (2 ESPN points)
+Chicago gave us another top-eight finish and Detroit finished comfortably inside the top 12.
+Cincinnati was the miss. The matchup and game script looked favorable, but the sacks and turnovers never came together to produce a good result.
+That gives us two top-12 finishes from our three Week 8 streamers.
+Both approaches correctly identified 8 of the eventual top-12 defenses within their own top 12.
+At the top of the rankings, my personal rankings identified 2 of the actual top-five defenses, while the model identified one. The model did, however, nail Jacksonville as the No. 1 defense on the week.
+Season Totals Through Week 8
+24 streaming recommendations
+10 top-eight finishes (41.7%)
+4 top-five finishes (16.7%)
+13 top-12 finishes (54.2%)
+11 finishes outside the top 12 (45.8%)
+At least one top-five streamer in four of eight weeks (50%)
+One No. 1 overall D/ST finish
+The number I continue to like is the top-12 hit rate. More than half of our streaming recommendations have finished inside the top 12 despite every recommendation coming from defenses that were widely available on waivers.
+The ceiling has been a little more inconsistent lately. We haven’t added another top-five streamer over the last few weeks, so that is something I want to improve.
+This is also why we continue adjusting the model instead of just leaving it alone.
+For Week 9, we’re using each team’s most recent four games for pressure rate, pressure allowed and EPA rather than full-season averages. We’re also continuing to incorporate Sack Opportunity, which combines expected passing volume, the pressure matchup and how frequently the opposing quarterback turns pressure into sacks.
+The goal is still the same: find defenses that can create sacks and turnovers while giving us a reasonable scoring floor.
+Week 9 D/ST Streamers
+New York Giants — 3% Rostered
+Spread:
+ Giants -3.5
+Total:
+ 40.0
+Home Team:
+ Giants
+Pressure Matchup:
+ Giants 43.5% generated vs. Eagles 46.8% allowed
+Pass EPA Matchup:
+ Eagles -0.193 EPA/Pass vs. Giants -0.249 allowed
+Rush EPA Matchup:
+ Eagles -0.203 EPA/Rush vs. Giants +0.026 allowed
+Eagles Sacks per Pressure:
+ 17.5%
+Sack Opportunity:
+ 3.38
+Eagles Implied Total:
+ 18.3
+Strong floor with one of the better sack ceilings of the week.
+The Giants are my favorite streamer heading into Week 9, and the pressure matchup is a big reason why. Over their last four games, New York has generated pressure on 43.5% of opposing dropbacks, while Philadelphia has allowed pressure at a massive 46.8% rate. That is one of the strongest pressure matchups on the slate.
+The Eagles have also struggled badly through the air recently, producing -0.193 EPA per pass over their last four games. Meanwhile, the Giants have been excellent against the pass, allowing -0.249 EPA per opposing pass play during that stretch. That combination gives New York a real advantage when Philadelphia has to throw.
+The Sack Opportunity score comes in at 3.38, one of the highest projections of Week 9. Philadelphia has also turned 17.5% of its pressures into sacks, so this isn’t just a matchup where we expect the Giants to create pressure. There is a good chance those pressures turn into actual fantasy production.
+The Vegas setup is also one of my favorites. New York is a 3.5-point home favorite, the game total is only 40, and Philadelphia is implied for just 18.3 points.
+The one weakness is the run matchup. Philadelphia has struggled on the ground at -0.203 EPA per rush, but New York has allowed +0.026 EPA per rush. Still, everything else lines up extremely well.
+Pressure, sacks, a struggling passing offense and one of the lowest opponent implied totals on the slate. This is exactly what I’m looking for from a streamer.
+Detroit Lions — 29% Rostered
+Spread:
+ Lions -7
+Total:
+ 50.0
+Home Team:
+ Lions
+Pressure Matchup:
+ Lions 37.6% generated vs. Dolphins 47.9% allowed
+Pass EPA Matchup:
+ Dolphins -0.131 EPA/Pass vs. Lions +0.147 allowed
+Rush EPA Matchup:
+ Dolphins +0.059 EPA/Rush vs. Lions -0.165 allowed
+Malik Willis Sacks per Pressure:
+ 20.0%
+Sack Opportunity:
+ 2.82
+Dolphins Implied Total:
+ 21.5
+Higher risk, but plenty of upside.
+Miami has become one of the better offenses to target for D/ST production. Over the last four games, the Dolphins have allowed pressure on 47.9% of their dropbacks, one of the highest rates in football. Detroit hasn’t been an elite pressure defense at 37.6%, but Miami has given opposing defenses plenty of opportunities to get after the quarterback.
+Malik Willis has also taken sacks on 20% of his pressures, which helps push Detroit’s Sack Opportunity score to 2.82. That gives the Lions one of the stronger projected sack environments among the defenses available on waivers.
+Miami has also struggled through the air, producing -0.131 EPA per pass over its last four games. The concern is Detroit’s pass defense, which has allowed +0.147 EPA per opposing pass play. That is easily the biggest weakness in this matchup and why I don’t view Detroit as quite as safe as the Giants.
+The run matchup looks much better. Miami is producing +0.059 EPA per rush, but Detroit has been very strong against the run, allowing -0.165 EPA per rush over the last four games. If the Lions can slow down Miami on the ground, it could create more obvious passing situations and allow the pass rush to attack.
+Vegas also gives us the game script we want. Detroit is a seven-point home favorite, which creates a good chance Miami is forced to throw more in the second half.
+There is definitely some risk because of Detroit’s pass defense, but the combination of Miami’s pressure problems, Willis’ sack rate and a favorable expected game script gives the Lions a pretty strong ceiling.
+Chicago Bears — 30% Rostered
+Spread:
+ Bears -6
+Total:
+ 46.5
+Home Team:
+ Bears
+Pressure Matchup:
+ Bears 39.9% generated vs. Buccaneers 34.3% allowed
+Pass EPA Matchup:
+ Buccaneers -0.223 EPA/Pass vs. Bears +0.022 allowed
+Rush EPA Matchup:
+ Buccaneers -0.015 EPA/Rush vs. Bears -0.201 allowed
+Baker Mayfield Sacks per Pressure:
+ 26.4%
+Sack Opportunity:
+ 2.42
+Buccaneers Implied Total:
+ 20.3
+Good floor with some sneaky sack upside. Jeffery Simmons addition hasn’t impacted the matchup stats either yet!
+Chicago doesn’t have the same elite pressure matchup as the Giants or Lions. The Bears are generating pressure at a respectable 39.9% rate, but Tampa Bay has only allowed pressure on 34.3% of dropbacks over its last four games.
+What makes this matchup interesting is what happens when Baker Mayfield does get pressured. He has taken a sack on 26.4% of his pressures, one of the highest rates among the quarterbacks we’re tracking. That helps Chicago still reach a 2.42 Sack Opportunity score despite Tampa doing a solid job limiting pressure overall.
+The Buccaneers have also been one of the least efficient passing offenses lately, producing -0.223 EPA per pass over their last four games. Chicago’s pass defense has been closer to average at +0.022 EPA allowed, but Tampa’s recent offensive struggles make the matchup much more appealing.
+Chicago has also been excellent against the run, allowing -0.201 EPA per rush. Tampa Bay hasn’t done much on the ground either at -0.015 EPA per rush, so there isn’t an obvious area of the offense that scares me here.
+The game script is another positive. Chicago is a six-point home favorite, while Tampa Bay is implied for only 20.3 points. If the Bears can get ahead and force Tampa into more passing situations, Baker’s tendency to take sacks when pressured could become very important.
+This isn’t the best pure pressure matchup of the three, but I like the combination of recent offensive struggles, quarterback sack tendency, strong run defense and favorable Vegas environment.
+Week 9 Sack Opportunity
+If your league heavily rewards sacks, I’ll also include the defenses with the highest projected sack opportunities this week.
+These projections are based on:
+Expected Dropbacks × Matchup Pressure Rate × QB Sacks Per Pressure
+A higher sack opportunity score doesn’t guarantee fantasy production, but it helps identify defenses that could have more opportunities to get after the quarterback
+Full D/ST Rankings + Week 10 Look Ahead and Model Below
+Below you’ll find the full Week 9 rankings, the updated model, and a first look at defenses worth stashing ahead of Week 10.
+I’ll continue comparing the model against my personal rankings every week so we can see what’s actually working and where adjustments still need to be made.
+My rankings for week 9 below.
+Week 10 D/ST Look-Ahead
+Our look-ahead stashes continue to provide value. Last week, both the Bears and Lions were defenses I highlighted as teams to grab early, and both are now among my favorite streamers for Week 9.
+That’s exactly why I like looking a week ahead. Instead of waiting until everyone is targeting the same defenses on waivers, we can identify favorable matchups early and get ahead of the competition.
+This week, we’re doing the same thing with a few defenses that could become popular streaming options in Week 10.
+Green Bay Packers vs. Vikings — 25% rostered
+This is probably my favorite realistic stash. Green Bay has allowed -0.200 EPA/pass and -0.241 EPA/rush over its last four, while Minnesota has been at -0.056 EPA/pass and -0.212 EPA/rush. The Vikings’ QB has also taken sacks on 22.1% of pressures. Really strong profile.
+New York Giants vs. Commanders — 3% rostered
+The Giants are generating pressure at 43.5%, while Washington has been at -0.152 EPA/pass and allows pressure at 38%. The Thursday home matchup makes this one I’d be comfortable stashing early.
