@@ -837,16 +837,16 @@ tbody td {
 .tier-4 { background: var(--tier-4-bg); color: var(--tier-4-color); border: 1px solid rgba(167, 139, 250, 0.3); }
 .tier-5 { background: var(--tier-5-bg); color: var(--tier-5-color); border: 1px solid rgba(100, 116, 139, 0.3); }
 
-/* Week 10 Look-Ahead Stash Tier Badges */
-.stash-priority { background: rgba(34, 197, 94, 0.18); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.35); }
-.stash-speculative { background: rgba(56, 189, 248, 0.18); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); }
-.stash-neutral { background: rgba(148, 163, 184, 0.15); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.3); }
-.stash-avoid { background: rgba(244, 63, 94, 0.18); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.35); }
+/* Simplified Verdict Badges: Priority, Speculative, Neutral, Avoid */
+.badge-priority, .stash-priority { background: rgba(34, 197, 94, 0.18); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.35); }
+.badge-speculative, .stash-speculative { background: rgba(56, 189, 248, 0.18); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); }
+.badge-neutral, .stash-neutral { background: rgba(148, 163, 184, 0.15); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.3); }
+.badge-avoid, .stash-avoid { background: rgba(244, 63, 94, 0.18); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.35); }
 
-[data-theme="light"] .stash-priority { background: rgba(34, 197, 94, 0.15); color: #15803d; border-color: rgba(34, 197, 94, 0.3); }
-[data-theme="light"] .stash-speculative { background: rgba(2, 132, 199, 0.12); color: #0284c7; border-color: rgba(2, 132, 199, 0.3); }
-[data-theme="light"] .stash-neutral { background: #f1f5f9; color: #475569; border-color: #cbd5e1; }
-[data-theme="light"] .stash-avoid { background: rgba(239, 68, 68, 0.12); color: #b91c1c; border-color: rgba(239, 68, 68, 0.3); }
+[data-theme="light"] .badge-priority, [data-theme="light"] .stash-priority { background: rgba(34, 197, 94, 0.15); color: #15803d; border-color: rgba(34, 197, 94, 0.3); }
+[data-theme="light"] .badge-speculative, [data-theme="light"] .stash-speculative { background: rgba(2, 132, 199, 0.12); color: #0284c7; border-color: rgba(2, 132, 199, 0.3); }
+[data-theme="light"] .badge-neutral, [data-theme="light"] .stash-neutral { background: #f1f5f9; color: #475569; border-color: #cbd5e1; }
+[data-theme="light"] .badge-avoid, [data-theme="light"] .stash-avoid { background: rgba(239, 68, 68, 0.12); color: #b91c1c; border-color: rgba(239, 68, 68, 0.3); }
 
 .pts-highlight {
   font-weight: 800;

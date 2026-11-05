@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     if (filters.tier === 'TARGETS_ONLY') {
-      rows = rows.filter(m => m.Streamer_Tier === 'Priority Stream' || m.Streamer_Tier === 'Speculative Stream');
+      rows = rows.filter(m => m.Streamer_Tier === 'Priority' || m.Streamer_Tier === 'Speculative');
     } else if (filters.tier && filters.tier !== 'ALL') {
       rows = rows.filter(m => m.Streamer_Tier === filters.tier);
     }
@@ -408,7 +408,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     if (filters.w10Verdict === 'TARGETS_ONLY') {
-      rows = rows.filter(s => s.Stash_Tier === 'Priority Stash' || s.Stash_Tier === 'Speculative Stash');
+      rows = rows.filter(s => s.Stash_Tier === 'Priority' || s.Stash_Tier === 'Speculative');
     } else if (filters.w10Verdict && filters.w10Verdict !== 'ALL') {
       rows = rows.filter(s => s.Stash_Tier === filters.w10Verdict);
     }
@@ -432,12 +432,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     rows = sortData(rows, targetKey, sortConfig.ascending);
 
     tbody.innerHTML = rows.map(s => {
-      const tierBadgeClass = getStashBadgeClass(s.Stash_Tier);
+      const tierBadgeClass = getTierClass(s.Stash_Tier);
       return `
         <tr>
           <td class="col-sticky"><span class="stat-bold">${s.Stash_DST}</span></td>
           <td>${s.W10_Opponent}</td>
-          <td class="col-center"><span class="badge ${tierBadgeClass}">${s.Stash_Tier || 'Neutral Matchup'}</span></td>
+          <td class="col-center"><span class="badge ${tierBadgeClass}">${s.Stash_Tier || 'Neutral'}</span></td>
           <td class="col-center"><span class="pts-highlight ${s.Opp_Last_4 >= 30 ? 'pts-top' : ''}">${s.Opp_Last_4} pts</span> <span class="stat-dim">(${(s.Opp_Last_4 / 4).toFixed(1)}/g)</span></td>
           <td class="col-center"><span class="stat-bold">${s.Opp_Total_Pts} pts</span></td>
           <td>${s.Opp_QB}</td>
@@ -448,11 +448,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function getStashBadgeClass(tier) {
-    if (!tier) return 'stash-neutral';
-    if (tier.includes('Priority')) return 'stash-priority';
-    if (tier.includes('Speculative')) return 'stash-speculative';
-    if (tier.includes('Avoid') || tier.includes('Do Not Stash')) return 'stash-avoid';
-    return 'stash-neutral';
+    return getTierClass(tier);
   }
 
   // 9. Render Tab 3: Historical Offense Vulnerability (W1–W8)
