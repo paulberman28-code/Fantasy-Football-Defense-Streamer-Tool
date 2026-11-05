@@ -384,29 +384,10 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center">${r['NGS_Agg%'] !== '-' ? formatNum(r['NGS_Agg%'], 1) + '%' : '—'}</td>
           <td class="col-center">${formatNum(r.Opp_Implied_Pts, 1)} pts</td>
           <td><span class="weather-pill ${weatherClass}">${weatherIcon} ${weatherText}</span></td>
-          <td class="col-center">
-            <button class="btn-rationale" data-dst="${r.Target_DST.split(' ')[0]}">View Analysis</button>
-          </td>
+          <td style="white-space: normal; min-width: 380px;">${r.Current_Week_Rationale || 'Standard matchup projection.'}</td>
         </tr>
       `;
     }).join('');
-
-    // Attach click listeners to rows & rationale buttons
-    tbody.querySelectorAll('.btn-rationale').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const dst = btn.dataset.dst;
-        const match = appData.weekMatchups.find(m => m.Target_DST.startsWith(dst));
-        if (match) openModal(match);
-      });
-    });
-
-    tbody.querySelectorAll('tr').forEach(tr => {
-      tr.addEventListener('click', () => {
-        const btn = tr.querySelector('.btn-rationale');
-        if (btn) btn.click();
-      });
-    });
   }
 
   // 8. Render Tab 2: Week 10 Look-Ahead Stashes
