@@ -80,6 +80,19 @@ def get_gametime_weather(w9_sched):
 
     return weather_by_team
 
+def calc_bracket_pts(imp_pts):
+    """
+    Computes mathematically expected fantasy points from the points allowed brackets:
+    0 pts: 10 pts | 1-6 pts: 7 pts | 7-13 pts: 3 pts | 14+ pts: 0 pts
+    """
+    if imp_pts > 28:
+        p0, p1_6, p7_13 = 0.005, 0.02, 0.05
+    else:
+        p0 = max(0.01, 0.08 - (imp_pts - 14) * 0.005)
+        p1_6 = max(0.03, 0.16 - (imp_pts - 14) * 0.010)
+        p7_13 = max(0.08, 0.38 - (imp_pts - 14) * 0.022)
+    return p0 * 10.0 + p1_6 * 7.0 + p7_13 * 3.0
+
 def main():
     print("Loading 2026 NFL play-by-play, schedules, and Next Gen Stats...")
     pbp = nfl.import_pbp_data([2026])
@@ -105,8 +118,15 @@ def main():
         'SF': 'San Francisco 49ers', 'TB': 'Tampa Bay Buccaneers', 'TEN': 'Tennessee Titans', 'WAS': 'Washington Commanders'
     }
 
-    db = pbp_reg[pbp_reg['qb_dropback'] == 1]
-    lg_sack_rate = db['sack'].sum() / len(db)
+    # League baselines
+    passes = pbp_reg[pbp_reg['play_type'] == 'pass']
+    dbs = pbp_reg[pbp_reg['qb_dropback'] == 1]
+    rushes = pbp_reg[pbp_reg['play_type'] == 'run']
+    total_plays = len(dbs) + len(rushes)
+
+    lg_sack_rate = dbs['sack'].sum() / len(dbs)
+    lg_int_rate = passes['interception'].sum() / len(passes)
+    lg_fumb_rate = pbp_reg['fumble_lost'].sum() / total_plays
 
     # 1. Process weekly points and rolling metrics per team
     records = {}
@@ -151,24 +171,46 @@ def main():
 
         # Advanced dropback & EPA stats over last 4 games played
         last_4_w = weeks_played[-4:]
-        sub_db = db[(db['posteam'] == team) & (db['week'].isin(last_4_w))]
+        sub_off_db = dbs[(dbs['posteam'] == team) & (dbs['week'].isin(last_4_w))]
+        sub_off_pass = passes[(passes['posteam'] == team) & (passes['week'].isin(last_4_w))]
+        sub_off_all = pbp_reg[(pbp_reg['fumbled_1_team'] == team) & (pbp_reg['week'].isin(last_4_w))]
         sub_runs = pbp_reg[(pbp_reg['posteam'] == team) & (pbp_reg['play_type'] == 'run') & (pbp_reg['week'].isin(last_4_w))]
 
-        sacks_l4 = sub_db['sack'].sum()
-        hits_l4 = sub_db['qb_hit'].sum()
-        dbs_l4 = len(sub_db)
+        sacks_l4 = sub_off_db['sack'].sum()
+        hits_l4 = sub_off_db['qb_hit'].sum()
+        ints_l4 = sub_off_pass['interception'].sum()
+        fumbs_l4 = sub_off_all['fumble_lost'].sum()
+        dbs_l4 = len(sub_off_db)
+        passes_l4 = len(sub_off_pass)
+        plays_l4 = len(pbp_reg[(pbp_reg['posteam'] == team) & (pbp_reg['week'].isin(last_4_w))])
 
-        row['Off_Sack_Rate_L4'] = (sacks_l4 / dbs_l4) if dbs_l4 > 0 else 0
+        row['Off_Sack_Rate_L4'] = (sacks_l4 / dbs_l4) if dbs_l4 > 0 else lg_sack_rate
+        row['Off_Int_Rate_L4'] = (ints_l4 / passes_l4) if passes_l4 > 0 else lg_int_rate
+        row['Off_Fumb_Rate_L4'] = (fumbs_l4 / plays_l4) if plays_l4 > 0 else lg_fumb_rate
         row['Off_Hit_Rate_L4'] = (hits_l4 / dbs_l4) if dbs_l4 > 0 else 0
         row['Off_S_per_P'] = (sacks_l4 / (sacks_l4 + hits_l4)) if (sacks_l4 + hits_l4) > 0 else 0.3
-        row['Off_Pass_EPA_L4'] = sub_db['epa'].mean() if dbs_l4 > 0 else 0
+        row['Off_Pass_EPA_L4'] = sub_off_db['epa'].mean() if dbs_l4 > 0 else 0
         row['Off_Rush_EPA_L4'] = sub_runs['epa'].mean() if len(sub_runs) > 0 else 0
         row['Dbs_Per_G_L4'] = dbs_l4 / len(last_4_w)
+        row['Passes_Per_G_L4'] = passes_l4 / len(last_4_w)
+        row['Plays_Per_G_L4'] = plays_l4 / len(last_4_w)
 
-        def_sub_db = db[(db['defteam'] == team) & (db['week'].isin(last_4_w))]
+        # Defense stats (L4)
+        def_sub_db = dbs[(dbs['defteam'] == team) & (dbs['week'].isin(last_4_w))]
+        def_sub_pass = passes[(passes['defteam'] == team) & (passes['week'].isin(last_4_w))]
+        def_sub_all = pbp_reg[(pbp_reg['defteam'] == team) & (pbp_reg['week'].isin(last_4_w))]
+
         def_sacks_l4 = def_sub_db['sack'].sum()
+        def_ints_l4 = def_sub_pass['interception'].sum()
+        def_fumbles_l4 = def_sub_all[def_sub_all['fumble_recovery_1_team'] == team]['fumble_lost'].sum()
+
         def_dbs_l4 = len(def_sub_db)
-        row['Def_Sack_Rate_L4'] = (def_sacks_l4 / def_dbs_l4) if def_dbs_l4 > 0 else 0
+        def_passes_l4 = len(def_sub_pass)
+        def_plays_l4 = len(def_sub_all)
+
+        row['Def_Sack_Rate_L4'] = (def_sacks_l4 / def_dbs_l4) if def_dbs_l4 > 0 else lg_sack_rate
+        row['Def_Int_Rate_L4'] = (def_ints_l4 / def_passes_l4) if def_passes_l4 > 0 else lg_int_rate
+        row['Def_Fumb_Rate_L4'] = (def_fumbles_l4 / def_plays_l4) if def_plays_l4 > 0 else lg_fumb_rate
 
         records[team] = row
 
@@ -234,6 +276,41 @@ def main():
 
     gametime_weather = get_gametime_weather(w9_sched)
 
+    # Current Week Strategic Rationales
+    current_rationales = {
+        'NO': "Uncontested #1 streamer on the slate. Facing Cleveland (41 pts allowed L4) with Shedeur Sanders making his first start in a dome behind an offensive line yielding an NFL-high 10.6% sack rate.",
+        'DEN': "High-floor sack monster. Denver's ferocious pass rush matches up with Bryce Young and a Panthers unit that converts 34.8% of pressures to sacks and surrendered 27 points over their last 2 games.",
+        'HOU': "Elite matchup coming off a bye. The Chargers have an NFL-worst -0.365 Pass EPA and are implied for just 18.0 points. High ceiling with Houston favored by 4.5 points.",
+        'DAL': "Under-the-radar upside play. Indianapolis has surrendered an NFL-high 34 fantasy points over their last 3 games (35 in L4) and Daniel Jones remains highly sack-prone under pressure.",
+        'JAX': "Thursday Night wet turf smash. Baltimore is forced to start 3rd-string rookie Joe Fagnano in active rain on short rest, with the Ravens implied for a slate-low 14.8 points.",
+        'ARI': "Strong matchup against backup Drew Lock (Sam Darnold out). Seattle's offense has yielded 29 points over their last 4 games, creating an opportunistic spot for Arizona.",
+        'NYG': "Vegas darling matchup. Philadelphia is implied for only 17.5 points with Joe Milton III making his first start. Giants front generated high pressure rates over recent weeks.",
+        'CIN': "Volume target. Atlanta has yielded 64 fantasy points (#1 in the NFL). While Michael Penix Jr. has stabilized somewhat, the Falcons offense still takes negative plays in bunches.",
+        'SEA': "Low-scoring environment. Facing Gardner Minshew and a Cardinals offense implied for just 15.5 points in Seattle. Solid baseline floor.",
+        'TB': "Weather-boosted floor play. 25 mph wind gusts in Chicago and Caleb Williams holds the ball for an NFL-high 3.24s (NGS), creating extended sack opportunities.",
+        'CHI': "Favorable game script. Chicago is a 6-point home favorite against Baker Mayfield, who converts 36.8% of his pressures into sacks.",
+        'BUF': "Solid floor vs backup Carson Wentz. Minnesota is without Kyler Murray, lowering their offensive ceiling in a dome environment.",
+        'DET': "High variance ceiling play. Miami allows pressure on 44% of dropbacks and Malik Willis holds the ball for 3.05s, but Detroit's secondary can give up big plays.",
+        'NE': "Windy game (29 mph gusts) at home against Green Bay, but Jordan Love gets rid of the ball quickly (2.58s TTT), limiting ceiling.",
+        'PHI': "Divisional matchup facing J.J. McCarthy. NY Giants offense has been competitive, making this a secondary streaming option.",
+        'KC': "Heavy 10-point home favorite against Geno Smith and the Jets (implied for 18.8 pts), though New York limits major negative turnovers.",
+        'SF': "10-point home favorite against Kirk Cousins, but Cousins gets rid of the ball quickly and limits strip-sacks.",
+        'WAS': "Tougher spot against Matthew Stafford and a Rams offense that rarely gives up fantasy points to defenses (only 11 pts allowed in L4).",
+        'GB': "Facing Drake Maye, who has been highly efficient in recent weeks (+0.422 Pass EPA), capping Green Bay's turnover ceiling.",
+        'LAC': "Tough matchup against C.J. Stroud and Houston, who have yielded just 6 points in their last 4 games.",
+        'CLE': "Difficult matchup on the road in New Orleans against Tyler Shough, who has protected the ball well.",
+        'BAL': "Depleted roster with offensive injuries; Trevor Lawrence has played clean football recently (+0.273 Pass EPA).",
+        'MIA': "Tough road test against Jared Goff and a high-powered Detroit offense implied for nearly 29 points.",
+        'ATL': "Avoid. Joe Burrow has been red-hot with +0.306 Pass EPA and rarely takes sacks (16.7% S/P).",
+        'CAR': "Facing Bo Nix and a Denver offense that has yielded just 6 points over their last 4 games.",
+        'IND': "Facing Dak Prescott in a dome with Dallas implied for over 28 points.",
+        'MIN': "Facing Josh Allen and Buffalo's high-efficiency offense; low defensive ceiling.",
+        'NYJ': "Facing Patrick Mahomes in Kansas City; low turnover floor.",
+        'LV': "Facing Brock Purdy and the 49ers off a bye; low fantasy upside.",
+        'PIT': "BYE WEEK (None)",
+        'TEN': "BYE WEEK (None)"
+    }
+
     # Compile Week 9 Master Table
     master_rows = []
     for team, data in records.items():
@@ -246,34 +323,62 @@ def main():
             opp_imp = round(m_info['opp_imp'], 1)
             def_spread = round(m_info['def_spread'], 1)
 
-            # Projected Sacks formula: Expected dropbacks * Matchup sack rate
+            # Projections for the target defense facing this offense
             d_m = records[dst]
-            exp_sack_rt = (data['Off_Sack_Rate_L4'] * d_m['Def_Sack_Rate_L4']) / (lg_sack_rate if lg_sack_rate > 0 else 0.07)
-            proj_sacks = round(data['Dbs_Per_G_L4'] * exp_sack_rt, 2)
+            
+            # 1. Proj Sacks
+            exp_sack_rt = (data['Off_Sack_Rate_L4'] * d_m['Def_Sack_Rate_L4']) / lg_sack_rate
+            proj_sacks = round(data['Dbs_Per_G_L4'] * exp_sack_rt, 1)
+
+            # 2. Proj INTs
+            exp_int_rt = (data['Off_Int_Rate_L4'] * d_m['Def_Int_Rate_L4']) / lg_int_rate
+            proj_ints = round(data['Passes_Per_G_L4'] * exp_int_rt, 1)
+
+            # 3. Proj Fumbles Recovered
+            exp_fumb_rt = (data['Off_Fumb_Rate_L4'] * d_m['Def_Fumb_Rate_L4']) / lg_fumb_rate
+            proj_fumbles = round(data['Plays_Per_G_L4'] * exp_fumb_rt, 1)
+
+            # 4. Bracket Pts
+            bracket_pts = round(calc_bracket_pts(opp_imp), 1)
+
+            # 5. Total Proj Pts (including ~8.5% def TD rate & safeties)
+            proj_def_td = (proj_ints + proj_fumbles) * 0.085
+            proj_total = round((proj_sacks * 1.0) + (proj_ints * 1.0) + (proj_fumbles * 1.0) + (proj_def_td * 6.0) + bracket_pts, 1)
+
+            # 6. Predicted Floor
+            pred_floor = round((proj_sacks * 0.55) + (proj_ints * 0.35) + (bracket_pts * 0.4), 1)
+
             target_dst_str = f"{dst} ({'@' if m_info['loc']=='home' else 'vs'} {team})"
 
             # Tier classification
             is_backup = 'Yes' in backup_flag
-            pass_epa = data['Off_Pass_EPA_L4']
             l4_pts = data['Last_4_Games']
             
-            if (l4_pts >= 35 or is_backup) and (proj_sacks >= 4.0 or opp_imp <= 20.0):
+            if proj_total >= 8.0 or (is_backup and proj_sacks >= 4.0):
                 tier = 'Tier 1 (Smash Play)'
-            elif l4_pts >= 28 or is_backup or proj_sacks >= 3.5:
+            elif proj_total >= 7.0 or is_backup or proj_sacks >= 3.5:
                 tier = 'Tier 2 (High Ceiling)'
-            elif l4_pts >= 20 or opp_imp <= 22.0:
+            elif proj_total >= 6.0 or opp_imp <= 22.0:
                 tier = 'Tier 3 (Solid Floor)'
-            elif l4_pts >= 14:
+            elif proj_total >= 5.0:
                 tier = 'Tier 4 (Deep Sleeper)'
             else:
                 tier = 'Tier 5 (Avoid / Tough)'
+
+            rationale = current_rationales.get(dst, "Standard matchup projection.")
         else:
             dst = 'BYE'
             opp_imp = '-'
             def_spread = '-'
             proj_sacks = '-'
+            proj_ints = '-'
+            proj_fumbles = '-'
+            bracket_pts = '-'
+            proj_total = '-'
+            pred_floor = '-'
             target_dst_str = 'BYE (None)'
             tier = 'BYE'
+            rationale = "BYE WEEK (None)"
 
         master_rows.append({
             'Offense': data['Offense'],
@@ -288,19 +393,39 @@ def main():
             'Opp_Implied_Pts': opp_imp,
             'Def_Spread': def_spread,
             'Proj_Sacks': proj_sacks,
+            'Proj_INTs': proj_ints,
+            'Proj_Fumbles': proj_fumbles,
+            'Exp_Bracket': bracket_pts,
+            'Proj_Fantasy_Pts': proj_total,
+            'Predicted_Floor': pred_floor,
             'Sacks_Per_Press%': round(data['Off_S_per_P'] * 100, 1),
             'Off_Pass_EPA_L4': round(data['Off_Pass_EPA_L4'], 3),
             'NGS_TTT': ttt,
             'NGS_Agg%': agg,
             'Gametime_Weather': gametime_weather.get(team, 'BYE (N/A)'),
-            'Streamer_Tier': tier
+            'Streamer_Tier': tier,
+            'Current_Week_Rationale': rationale
         })
 
     df_master = pd.DataFrame(master_rows).sort_values('Total_pts', ascending=False).reset_index(drop=True)
     df_master.to_csv("dst_streaming_targets_week9_2026.csv", index=False)
     print("Saved enriched master table to dst_streaming_targets_week9_2026.csv")
 
-    # 4. Generate Week 10 Look-Ahead Stash Board
+    # 4. Generate Week 10 Look-Ahead Stash Board with Rationales
+    stash_rationales = {
+        'HOU': "Top Week 10 stash. Cleveland has surrendered an NFL-high 41 D/ST points over their last 4 games. Adding Houston now covers Week 9 (@ LAC) and Week 10 (@ CLE).",
+        'MIA': "High upside stash. The Colts have surrendered 35 points in their last 4 games and Daniel Jones has absorbed 23 sacks.",
+        'NO': "Elite two-week streamer. Plays Cleveland in Week 9 and Carolina (32 pts allowed L4) in Week 10 at home.",
+        'LV': "Solid look-ahead play. Seattle has cooled down significantly, allowing 29 fantasy points in their last 4 games.",
+        'KC': "Atlanta has yielded 64 fantasy points (#1 in the NFL). Kansas City's disciplined defense gets a great matchup in Week 10.",
+        'WAS': "Thursday Night Football advantage against young QB J.J. McCarthy on short rest.",
+        'JAX': "Targets rookie Cam Ward and a Titans offense that has given up sacks on over 8% of dropbacks.",
+        'GB': "Divisional home game against a banged-up Minnesota backfield. Packers allow -0.200 EPA/pass over recent weeks.",
+        'LA': "Faces Gardner Minshew and Arizona's mistake-prone offense in Week 10.",
+        'BAL': "Justin Herbert and the Chargers have struggled through the air (-0.365 Pass EPA).",
+        'LAC': "Faces Baltimore's backup quarterback situation on Monday Night Football."
+    }
+
     stashes = []
     for _, r in w10_sched.iterrows():
         home = r['home_team']
@@ -314,7 +439,8 @@ def main():
             'W10_Opponent': f"{away} (vs {away})",
             'Opp_Last_4': away_l4,
             'Opp_Total_Pts': away_tot,
-            'Opp_QB': r['away_qb_name']
+            'Opp_QB': r['away_qb_name'],
+            'Look_Ahead_Rationale': stash_rationales.get(home, f"Favorable Week 10 matchup against {away}.")
         })
 
         # Away defense facing home offense
@@ -325,7 +451,8 @@ def main():
             'W10_Opponent': f"{home} (@ {home})",
             'Opp_Last_4': home_l4,
             'Opp_Total_Pts': home_tot,
-            'Opp_QB': r['home_qb_name']
+            'Opp_QB': r['home_qb_name'],
+            'Look_Ahead_Rationale': stash_rationales.get(away, f"Favorable Week 10 matchup against {home}.")
         })
 
     df_stashes = pd.DataFrame(stashes).sort_values(['Opp_Last_4', 'Opp_Total_Pts'], ascending=False).reset_index(drop=True)

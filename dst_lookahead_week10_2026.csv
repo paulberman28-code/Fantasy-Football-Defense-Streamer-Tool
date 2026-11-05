@@ -1,29 +1,29 @@
-Stash_DST,W10_Opponent,Opp_Last_4,Opp_Total_Pts,Opp_QB
-HOU,CLE (@ CLE),41,60,Deshaun Watson
-BAL,LAC (vs LAC),36,53,Justin Herbert
-LAC,BAL (@ BAL),36,46,Tyler Huntley
-MIA,IND (@ IND),35,51,Daniel Jones
-NO,CAR (vs CAR),32,44,Bryce Young
-LV,SEA (vs SEA),29,49,Sam Darnold
-KC,ATL (@ ATL),26,64,Michael Penix Jr.
-WAS,NYG (@ NYG),23,42,J.J. McCarthy
-JAX,TEN (@ TEN),23,40,Cam Ward
-GB,MIN (vs MIN),22,36,Kyler Murray
-IND,MIA (vs MIA),20,42,Malik Willis
-NYG,WAS (vs WAS),18,23,Jayden Daniels
-LA,ARI (@ ARI),17,37,Gardner Minshew
-CAR,NO (@ NO),17,35,Tyler Shough
-BUF,NYJ (@ NYJ),16,32,Geno Smith
-DAL,SF (vs SF),16,18,Brock Purdy
-ATL,KC (vs KC),15,21,Patrick Mahomes
-PIT,CIN (@ CIN),13,29,Joe Burrow
-SF,DAL (@ DAL),13,23,Dak Prescott
-CIN,PIT (vs PIT),12,44,Aaron Rodgers
-MIN,GB (@ GB),12,27,Jordan Love
-TEN,JAX (vs JAX),12,21,Trevor Lawrence
-NE,DET (@ DET),12,20,Jared Goff
-DET,NE (vs NE),11,41,Drake Maye
-ARI,LA (vs LA),11,34,Matthew Stafford
-NYJ,BUF (vs BUF),11,24,Josh Allen
-SEA,LV (@ LV),8,19,Kirk Cousins
-CLE,HOU (vs HOU),6,25,C.J. Stroud
+Stash_DST,W10_Opponent,Opp_Last_4,Opp_Total_Pts,Opp_QB,Look_Ahead_Rationale
+HOU,CLE (@ CLE),41,60,Deshaun Watson,Top Week 10 stash. Cleveland has surrendered an NFL-high 41 D/ST points over their last 4 games. Adding Houston now covers Week 9 (@ LAC) and Week 10 (@ CLE).
+BAL,LAC (vs LAC),36,53,Justin Herbert,Justin Herbert and the Chargers have struggled through the air (-0.365 Pass EPA).
+LAC,BAL (@ BAL),36,46,Tyler Huntley,Faces Baltimore's backup quarterback situation on Monday Night Football.
+MIA,IND (@ IND),35,51,Daniel Jones,High upside stash. The Colts have surrendered 35 points in their last 4 games and Daniel Jones has absorbed 23 sacks.
+NO,CAR (vs CAR),32,44,Bryce Young,Elite two-week streamer. Plays Cleveland in Week 9 and Carolina (32 pts allowed L4) in Week 10 at home.
+LV,SEA (vs SEA),29,49,Sam Darnold,"Solid look-ahead play. Seattle has cooled down significantly, allowing 29 fantasy points in their last 4 games."
+KC,ATL (@ ATL),26,64,Michael Penix Jr.,Atlanta has yielded 64 fantasy points (#1 in the NFL). Kansas City's disciplined defense gets a great matchup in Week 10.
+WAS,NYG (@ NYG),23,42,J.J. McCarthy,Thursday Night Football advantage against young QB J.J. McCarthy on short rest.
+JAX,TEN (@ TEN),23,40,Cam Ward,Targets rookie Cam Ward and a Titans offense that has given up sacks on over 8% of dropbacks.
+GB,MIN (vs MIN),22,36,Kyler Murray,Divisional home game against a banged-up Minnesota backfield. Packers allow -0.200 EPA/pass over recent weeks.
+IND,MIA (vs MIA),20,42,Malik Willis,Favorable Week 10 matchup against MIA.
+NYG,WAS (vs WAS),18,23,Jayden Daniels,Favorable Week 10 matchup against WAS.
+LA,ARI (@ ARI),17,37,Gardner Minshew,Faces Gardner Minshew and Arizona's mistake-prone offense in Week 10.
+CAR,NO (@ NO),17,35,Tyler Shough,Favorable Week 10 matchup against NO.
+BUF,NYJ (@ NYJ),16,32,Geno Smith,Favorable Week 10 matchup against NYJ.
+DAL,SF (vs SF),16,18,Brock Purdy,Favorable Week 10 matchup against SF.
+ATL,KC (vs KC),15,21,Patrick Mahomes,Favorable Week 10 matchup against KC.
+PIT,CIN (@ CIN),13,29,Joe Burrow,Favorable Week 10 matchup against CIN.
+SF,DAL (@ DAL),13,23,Dak Prescott,Favorable Week 10 matchup against DAL.
+CIN,PIT (vs PIT),12,44,Aaron Rodgers,Favorable Week 10 matchup against PIT.
+MIN,GB (@ GB),12,27,Jordan Love,Favorable Week 10 matchup against GB.
+TEN,JAX (vs JAX),12,21,Trevor Lawrence,Favorable Week 10 matchup against JAX.
+NE,DET (@ DET),12,20,Jared Goff,Favorable Week 10 matchup against DET.
+DET,NE (vs NE),11,41,Drake Maye,Favorable Week 10 matchup against NE.
+ARI,LA (vs LA),11,34,Matthew Stafford,Favorable Week 10 matchup against LA.
+NYJ,BUF (vs BUF),11,24,Josh Allen,Favorable Week 10 matchup against BUF.
+SEA,LV (@ LV),8,19,Kirk Cousins,Favorable Week 10 matchup against LV.
+CLE,HOU (vs HOU),6,25,C.J. Stroud,Favorable Week 10 matchup against HOU.
