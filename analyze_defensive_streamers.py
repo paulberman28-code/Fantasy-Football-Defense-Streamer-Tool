@@ -278,19 +278,19 @@ def main():
 
     # Current Week Strategic Rationales
     current_rationales = {
-        'NO': "Uncontested #1 streamer on the slate. Facing Cleveland (41 pts allowed L4) with Shedeur Sanders making his first start in a dome behind an offensive line yielding an NFL-high 10.6% sack rate.",
-        'DEN': "High-floor sack monster. Denver's ferocious pass rush matches up with Bryce Young and a Panthers unit that converts 34.8% of pressures to sacks and surrendered 27 points over their last 2 games.",
-        'HOU': "Elite matchup coming off a bye. The Chargers have an NFL-worst -0.365 Pass EPA and are implied for just 18.0 points. High ceiling with Houston favored by 4.5 points.",
-        'DAL': "Under-the-radar upside play. Indianapolis has surrendered an NFL-high 34 fantasy points over their last 3 games (35 in L4) and Daniel Jones remains highly sack-prone under pressure.",
-        'JAX': "Thursday Night wet turf smash. Baltimore is forced to start 3rd-string rookie Joe Fagnano in active rain on short rest, with the Ravens implied for a slate-low 14.8 points.",
-        'ARI': "Strong matchup against backup Drew Lock (Sam Darnold out). Seattle's offense has yielded 29 points over their last 4 games, creating an opportunistic spot for Arizona.",
+        'NO': "Uncontested #1 smash play. Facing Cleveland (NFL-high 41 pts allowed over L4 games) with rookie Shedeur Sanders making his first start in the Superdome behind a Browns offensive line allowing an NFL-worst 10.6% sack rate.",
+        'DEN': "High-floor sack monster. Denver's ferocious pass rush faces Bryce Young and a Panthers unit that converts 34.8% of pressures to sacks and surrendered 27 fantasy points over their last 2 games.",
+        'HOU': "Elite ceiling play coming off a bye. The Chargers have an NFL-worst -0.365 Pass EPA and are implied for just 18.0 points. Houston is a 4.5-point favorite in a positive defensive game script.",
+        'DAL': "Under-the-radar upside play. Indianapolis has surrendered 35 points in their last 4 games (24 in L2), and Daniel Jones remains highly sack-prone (32.9% S/P) under pressure.",
+        'JAX': "Thursday Night wet turf smash. Baltimore starts 3rd-string rookie Joe Fagnano in active rain on short rest, with the Ravens implied for a slate-low 14.8 points.",
+        'ARI': "Strong opportunistic matchup facing backup Drew Lock (Sam Darnold out). Seattle's offense has surrendered 29 fantasy points over their last 4 games.",
         'NYG': "Vegas darling matchup. Philadelphia is implied for only 17.5 points with Joe Milton III making his first start. Giants front generated high pressure rates over recent weeks.",
-        'CIN': "Volume target. Atlanta has yielded 64 fantasy points (#1 in the NFL). While Michael Penix Jr. has stabilized somewhat, the Falcons offense still takes negative plays in bunches.",
-        'SEA': "Low-scoring environment. Facing Gardner Minshew and a Cardinals offense implied for just 15.5 points in Seattle. Solid baseline floor.",
-        'TB': "Weather-boosted floor play. 25 mph wind gusts in Chicago and Caleb Williams holds the ball for an NFL-high 3.24s (NGS), creating extended sack opportunities.",
-        'CHI': "Favorable game script. Chicago is a 6-point home favorite against Baker Mayfield, who converts 36.8% of his pressures into sacks.",
+        'CIN': "Volume turnover target. Atlanta has yielded an NFL-high 64 fantasy points. Michael Penix Jr. throws into tight windows (21.4% Agg%) and the Falcons offense takes negative plays in bunches.",
+        'SEA': "Stifling low-scoring environment. Facing Gardner Minshew and an Arizona offense implied for just 15.5 points in Seattle with 12 mph crosswinds.",
+        'TB': "Elite weather-boosted turnover play. Soldier Field features 25 mph wind gusts, while Caleb Williams holds the ball for an NFL-high 3.24s (NGS TTT). This slow release allows TB's pass rush to hit him off-platform into heavy gusts, turning fluttered and sailed balls into high interception risk (TB projects for an NFL-high 2.2 INTs) along with strip-sacks.",
+        'CHI': "Favorable game script. Chicago is a 6-point home favorite against Baker Mayfield, who converts 36.8% of his pressures into sacks in gusty lakefront weather.",
         'BUF': "Solid floor vs backup Carson Wentz. Minnesota is without Kyler Murray, lowering their offensive ceiling in a dome environment.",
-        'DET': "High variance ceiling play. Miami allows pressure on 44% of dropbacks and Malik Willis holds the ball for 3.05s, but Detroit's secondary can give up big plays.",
+        'DET': "High variance ceiling play. Miami allows pressure on 44% of dropbacks and Malik Willis holds the ball for 3.05s, though Detroit's secondary carries big-play variance.",
         'NE': "Windy game (29 mph gusts) at home against Green Bay, but Jordan Love gets rid of the ball quickly (2.58s TTT), limiting ceiling.",
         'PHI': "Divisional matchup facing J.J. McCarthy. NY Giants offense has been competitive, making this a secondary streaming option.",
         'KC': "Heavy 10-point home favorite against Geno Smith and the Jets (implied for 18.8 pts), though New York limits major negative turnovers.",
@@ -409,7 +409,36 @@ def main():
 
     df_master = pd.DataFrame(master_rows).sort_values('Total_pts', ascending=False).reset_index(drop=True)
     df_master.to_csv("dst_streaming_targets_week9_2026.csv", index=False)
-    print("Saved enriched master table to dst_streaming_targets_week9_2026.csv")
+    
+    # Save friendly-named version
+    friendly_master_map = {
+        'Offense': 'Offense',
+        'Team': 'Team Code',
+        'W1': 'Week 1', 'W2': 'Week 2', 'W3': 'Week 3', 'W4': 'Week 4',
+        'W5': 'Week 5', 'W6': 'Week 6', 'W7': 'Week 7', 'W8': 'Week 8',
+        'Last_2_Games': 'Last 2 Games Played',
+        'Last_4_Games': 'Last 4 Games Played',
+        'Total_pts': 'Total Points Allowed (W1-8)',
+        'Target_DST': 'Streaming Defense',
+        'Starting_QB': 'Opposing QB (Status)',
+        'Opp_Implied_Pts': 'Vegas Implied Opponent Score',
+        'Def_Spread': 'Point Spread',
+        'Proj_Sacks': 'Projected Sacks',
+        'Proj_INTs': 'Projected Interceptions',
+        'Proj_Fumbles': 'Projected Fumbles Recovered',
+        'Exp_Bracket': 'Projected Points Allowed Bracket',
+        'Proj_Fantasy_Pts': 'Projected Fantasy Points',
+        'Predicted_Floor': 'Scoring Floor',
+        'Sacks_Per_Press%': 'Sack Rate on Pressure %',
+        'Off_Pass_EPA_L4': 'Pass Efficiency Allowed (EPA/Play)',
+        'NGS_TTT': 'Avg Time to Throw (Sec)',
+        'NGS_Agg%': 'Tight-Window Throw %',
+        'Gametime_Weather': 'Game-Time Kickoff Weather',
+        'Streamer_Tier': 'Streaming Tier',
+        'Current_Week_Rationale': 'Strategic Matchup Rationale'
+    }
+    df_master.rename(columns=friendly_master_map).to_csv("dst_streaming_targets_week9_2026_friendly.csv", index=False)
+    print("Saved enriched master table to dst_streaming_targets_week9_2026.csv and dst_streaming_targets_week9_2026_friendly.csv")
 
     # 4. Generate Week 10 Look-Ahead Stash Board with Rationales
     stash_rationales = {
@@ -457,7 +486,17 @@ def main():
 
     df_stashes = pd.DataFrame(stashes).sort_values(['Opp_Last_4', 'Opp_Total_Pts'], ascending=False).reset_index(drop=True)
     df_stashes.to_csv("dst_lookahead_week10_2026.csv", index=False)
-    print("Saved Week 10 look-ahead stashes to dst_lookahead_week10_2026.csv")
+    
+    friendly_stash_map = {
+        'Stash_DST': 'Stash Defense',
+        'W10_Opponent': 'Week 10 Opponent',
+        'Opp_Last_4': 'Opponent L4 Points Allowed',
+        'Opp_Total_Pts': 'Opponent Total Points Allowed',
+        'Opp_QB': 'Opponent Starting QB',
+        'Look_Ahead_Rationale': 'Look-Ahead Strategy Rationale'
+    }
+    df_stashes.rename(columns=friendly_stash_map).to_csv("dst_lookahead_week10_2026_friendly.csv", index=False)
+    print("Saved Week 10 look-ahead stashes to dst_lookahead_week10_2026.csv and dst_lookahead_week10_2026_friendly.csv")
 
     return df_master, df_stashes
 
