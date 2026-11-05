@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAFFLe Fantasy D/ST Streamer Tool | 2026 Season</title>
+  <meta name="description" content="WAFFLe Customized Defensive Scoring Fantasy D/ST streamer rankings and projections using NFL play-by-play data, Next Gen Stats, Vegas lines, and game-time weather.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="color-scheme" content="dark light">
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('waffle-theme');
+        if (savedTheme === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="header-top-bar">
+        <div class="badge-row">
+          <span class="badge badge-accent">2026 NFL Regular Season</span>
+          <span class="badge badge-primary" id="header-week-badge">Week 9 Matchups</span>
+          <span class="badge badge-waffle">WAFFLe Custom Scoring</span>
+          <span class="badge badge-muted" id="header-updated-badge">Updated: Nov 05, 2026</span>
+        </div>
+        <div class="header-controls-group">
+          <div class="visitor-counter-badge" title="Live Page Visitors">
+            <span class="visitor-icon">👥</span>
+            <span class="visitor-label">Visits:</span>
+            <span class="visitor-num" id="visitor-count">1</span>
+          </div>
+          <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Dark and Light Mode" title="Switch Theme">
+            <span class="theme-icon" id="theme-icon">☀️</span>
+            <span class="theme-label" id="theme-label">Light Mode</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="header-title-group">
+        <h1 class="app-title">Fantasy Football D/ST Streamer Tool</h1>
+        <p class="app-subtitle">Tailored to the <strong>WAFFLe's customized defensive scoring system</strong> • Data-driven target rankings powered by Next Gen Stats, rolling pressure metrics, Vegas lines & game-time weather.</p>
+      </div>
+      
+      <!-- Key Metric Highlight Cards -->
+      <div class="kpi-grid">
+        <div class="kpi-card highlight-card">
+          <span class="kpi-label">#1 Smash Play</span>
+          <div class="kpi-value" id="kpi-smash-name">New Orleans (NO)</div>
+          <span class="kpi-sub" id="kpi-smash-sub">11.2 Proj Pts • vs CLE</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Highest Floor</span>
+          <div class="kpi-value" id="kpi-floor-name">Denver (DEN)</div>
+          <span class="kpi-sub" id="kpi-floor-sub">3.8 Floor • 5.2 Sacks</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Weather Impact Alert</span>
+          <div class="kpi-value" id="kpi-weather-name">TB @ CHI & GB @ NE</div>
+          <span class="kpi-sub" id="kpi-weather-sub">25–29 mph gusts (INT Boost)</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Top Week 10 Stash</span>
+          <div class="kpi-value" id="kpi-stash-name">Houston (HOU)</div>
+          <span class="kpi-sub" id="kpi-stash-sub">@ CLE (41 pts allowed L4)</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs" role="tablist" aria-label="Main Navigation">
+      <button class="nav-tab active" role="tab" id="tab-btn-week9" aria-selected="true" aria-controls="tab-week9" data-tab="week9">
+        <span class="tab-icon">🎯</span> Week 9 Matchups & Projections
+      </button>
+      <button class="nav-tab" role="tab" id="tab-btn-week10" aria-selected="false" aria-controls="tab-week10" data-tab="week10">
+        <span class="tab-icon">🔮</span> Week 10 Look-Ahead Stashes
+      </button>
+      <button class="nav-tab" role="tab" id="tab-btn-history" aria-selected="false" aria-controls="tab-history" data-tab="history">
+        <span class="tab-icon">📊</span> Master Offense History (W1–W8)
+      </button>
+      <button class="nav-tab" role="tab" id="tab-btn-rules" aria-selected="false" aria-controls="tab-rules" data-tab="rules">
+        <span class="tab-icon">📖</span> Scoring & Methodology
+      </button>
+    </nav>
+
+    <!-- Global Filter & Search Bar -->
+    <section class="filter-bar" aria-label="Table Controls and Filters">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+        </svg>
+        <input type="text" id="global-search" placeholder="Search team, opponent, or quarterback..." aria-label="Search dataset">
+      </div>
+
+      <div class="filter-controls" id="week9-filters">
+        <div class="filter-item">
+          <label for="tier-filter">Tier:</label>
+          <select id="tier-filter" aria-label="Filter by Tier">
+            <option value="ALL">All Tiers</option>
+            <option value="Tier 1">Tier 1 (Smash Play)</option>
+            <option value="Tier 2">Tier 2 (High Ceiling)</option>
+            <option value="Tier 3">Tier 3 (Solid Floor)</option>
+            <option value="Tier 4">Tier 4 (Deep Sleeper)</option>
+            <option value="Tier 5">Tier 5 (Avoid / Tough)</option>
+          </select>
+        </div>
+
+        <label class="toggle-control">
+          <input type="checkbox" id="backup-qb-toggle">
+          <span class="toggle-track"></span>
+          <span class="toggle-label">Backup QB Matchups Only</span>
+        </label>
+
+        <label class="toggle-control">
+          <input type="checkbox" id="weather-toggle">
+          <span class="toggle-track"></span>
+          <span class="toggle-label">High Wind / Rain Alert Only</span>
+        </label>
+
+        <button id="reset-filters-btn" class="btn-text">Reset Filters</button>
+      </div>
+
+      <div class="view-stats" id="active-count-label">
+        Showing 30 Matchups
+      </div>
+    </section>
+
+    <!-- Tab 1: Week 9 Matchups & Projections -->
+    <section class="tab-panel active" id="tab-week9" role="tabpanel" aria-labelledby="tab-btn-week9">
+      <div class="panel-header">
+        <div class="panel-title-wrap">
+          <h2 class="panel-title">Week 9 Streaming Rankings & Next Gen Stats</h2>
+          <p class="panel-desc">Click any column header to sort. Click any row or the rationale pill to view the deep matchup analysis.</p>
+        </div>
+        <div class="legend-row">
+          <span class="legend-item"><span class="legend-badge tier-1">Tier 1</span> Smash</span>
+          <span class="legend-item"><span class="legend-badge tier-2">Tier 2</span> High Ceiling</span>
+          <span class="legend-item"><span class="legend-badge tier-3">Tier 3</span> Solid Floor</span>
+          <span class="legend-item"><span class="legend-badge tier-4">Tier 4</span> Sleeper</span>
+          <span class="legend-item"><span class="legend-badge tier-5">Tier 5</span> Avoid</span>
+        </div>
+      </div>
+
+      <div class="mobile-scroll-hint">
+        <span>👈 Swipe table horizontally to see all stats 👉</span>
+      </div>
+
+      <div class="table-wrapper" tabindex="0" role="region" aria-label="Week 9 Defensive Projections Table">
+        <table id="projections-table">
+          <caption class="sr-only">Week 9 Defensive Streaming Target Rankings and Performance Metrics</caption>
+          <thead>
+            <tr>
+              <th data-sort="Streaming Defense" class="col-sticky col-def">Streaming<br>Defense <span class="sort-arrow"></span></th>
+              <th data-sort="Opposing QB (Status)" class="col-qb">Opposing QB<br>& Status <span class="sort-arrow"></span></th>
+              <th data-sort="Streaming Tier" class="col-center col-tier">Tier <span class="sort-arrow"></span></th>
+              <th data-sort="Projected Fantasy Points" class="col-center col-stat sort-active desc">Projected<br>Points <span class="sort-arrow">▼</span></th>
+              <th data-sort="Scoring Floor" class="col-center col-stat">Scoring<br>Floor <span class="sort-arrow"></span></th>
+              <th data-sort="Projected Sacks" class="col-center col-stat">Projected<br>Sacks <span class="sort-arrow"></span></th>
+              <th data-sort="Projected Interceptions" class="col-center col-stat">Projected<br>INTs <span class="sort-arrow"></span></th>
+              <th data-sort="Sack Rate on Pressure %" class="col-center col-stat-wide">Sack Rate on<br>Pressure % <span class="sort-arrow"></span></th>
+              <th data-sort="Pass Efficiency Allowed (EPA/Play)" class="col-center col-stat-wide">Pass EPA<br>Allowed <span class="sort-arrow"></span></th>
+              <th data-sort="Avg Time to Throw (Sec)" class="col-center col-stat">Avg Time<br>to Throw <span class="sort-arrow"></span></th>
+              <th data-sort="Tight-Window Throw %" class="col-center col-stat-wide">Tight-Window<br>Throw % <span class="sort-arrow"></span></th>
+              <th data-sort="Vegas Implied Opponent Score" class="col-center col-stat">Vegas<br>Implied <span class="sort-arrow"></span></th>
+              <th data-sort="Game-Time Kickoff Weather" class="col-weather">Game-Time<br>Weather <span class="sort-arrow"></span></th>
+              <th class="col-center col-action">Matchup<br>Analysis</th>
+            </tr>
+          </thead>
+          <tbody id="projections-tbody">
+            <!-- Dynamically populated by app.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Tab 2: Week 10 Look-Ahead Stash Board -->
+    <section class="tab-panel" id="tab-week10" role="tabpanel" aria-labelledby="tab-btn-week10" hidden>
+      <div class="panel-header">
+        <div class="panel-title-wrap">
+          <h2 class="panel-title">Week 10 Look-Ahead Stash Board</h2>
+          <p class="panel-desc">Target next week's premier defensive matchups ahead of the waiver wire run. Ranked by Week 10 opponent vulnerability.</p>
+        </div>
+      </div>
+
+      <div class="mobile-scroll-hint">
+        <span>👈 Swipe table horizontally to see all stats 👉</span>
+      </div>
+
+      <div class="table-wrapper" tabindex="0" role="region" aria-label="Week 10 Look-Ahead Stash Table">
+        <table id="stashes-table">
+          <caption class="sr-only">Week 10 Look-Ahead Defensive Stashes</caption>
+          <thead>
+            <tr>
+              <th data-sort="Stash Defense" class="col-sticky col-def">Stash<br>Defense <span class="sort-arrow"></span></th>
+              <th data-sort="Week 10 Opponent" class="col-def">Week 10<br>Opponent <span class="sort-arrow"></span></th>
+              <th data-sort="Opponent L4 Points Allowed" class="col-center col-stat-wide sort-active desc">Opponent L4<br>Pts Allowed <span class="sort-arrow">▼</span></th>
+              <th data-sort="Opponent Total Points Allowed" class="col-center col-stat-wide">Opponent Total<br>Pts Allowed <span class="sort-arrow"></span></th>
+              <th data-sort="Opponent Starting QB" class="col-qb">Opponent<br>Starting QB <span class="sort-arrow"></span></th>
+              <th>Look-Ahead Strategy Rationale</th>
+            </tr>
+          </thead>
+          <tbody id="stashes-tbody">
+            <!-- Dynamically populated by app.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Tab 3: Master Offense Vulnerability History -->
+    <section class="tab-panel" id="tab-history" role="tabpanel" aria-labelledby="tab-btn-history" hidden>
+      <div class="panel-header">
+        <div class="panel-title-wrap">
+          <h2 class="panel-title">Master Offense Vulnerability Board (Weeks 1–8)</h2>
+          <p class="panel-desc">Breakdown of fantasy points yielded to opposing D/STs across all 8 weeks. Last 2 and Last 4 games reflect actual games played (properly skipping bye weeks).</p>
+        </div>
+        <div class="legend-row">
+          <span class="legend-item"><span class="legend-badge" style="background: #2563eb; color: #ffffff; padding: 0.2rem 0.5rem; font-weight: 700;">Blue</span> Good Offense (Low Points Allowed: 0–2)</span>
+          <span class="legend-item"><span class="legend-badge" style="background: #ffffff; color: #0f172a; padding: 0.2rem 0.5rem; font-weight: 700; border: 1px solid #94a3b8;">White</span> Neutral (League Avg: 3–6)</span>
+          <span class="legend-item"><span class="legend-badge" style="background: #dc2626; color: #ffffff; padding: 0.2rem 0.5rem; font-weight: 700;">Red</span> Poor Offense (High Points Allowed: 7–21+)</span>
+        </div>
+      </div>
+
+      <div class="mobile-scroll-hint">
+        <span>👈 Swipe table horizontally to see all stats 👉</span>
+      </div>
+
+      <div class="table-wrapper" tabindex="0" role="region" aria-label="Master Offense Vulnerability Grid">
+        <table id="history-table">
+          <caption class="sr-only">Historical Points Allowed by NFL Offenses to Opposing Defenses</caption>
+          <thead>
+            <tr>
+              <th data-sort="Offense" class="col-sticky col-def">Offense <span class="sort-arrow"></span></th>
+              <th data-sort="Week 1" class="col-center col-wk">W1 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 2" class="col-center col-wk">W2 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 3" class="col-center col-wk">W3 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 4" class="col-center col-wk">W4 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 5" class="col-center col-wk">W5 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 6" class="col-center col-wk">W6 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 7" class="col-center col-wk">W7 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 8" class="col-center col-wk">W8 <span class="sort-arrow"></span></th>
+              <th data-sort="Last 2 Games Played" class="col-center col-stat">Last 2<br>Games <span class="sort-arrow"></span></th>
+              <th data-sort="Last 4 Games Played" class="col-center col-stat">Last 4<br>Games <span class="sort-arrow"></span></th>
+              <th data-sort="Total Points Allowed (W1-8)" class="col-center col-stat sort-active desc">Total Pts<br>(W1–8) <span class="sort-arrow">▼</span></th>
+              <th data-sort="Streaming Defense" class="col-def">Week 9<br>Opponent <span class="sort-arrow"></span></th>
+              <th data-sort="Opposing QB (Status)" class="col-qb">Quarterback<br>& Status <span class="sort-arrow"></span></th>
+              <th data-sort="Streaming Tier" class="col-center col-tier">Tier <span class="sort-arrow"></span></th>
+            </tr>
+          </thead>
+          <tbody id="history-tbody">
+            <!-- Dynamically populated by app.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Tab 4: Scoring System & Methodology -->
+    <section class="tab-panel" id="tab-rules" role="tabpanel" aria-labelledby="tab-btn-rules" hidden>
+      <div class="panel-header">
+        <div class="panel-title-wrap">
+          <h2 class="panel-title">Scoring Rules & Analytical Methodology</h2>
+          <p class="panel-desc">Comprehensive documentation of custom scoring calculations, Next Gen Stats definitions, and weather physics.</p>
+        </div>
+      </div>
+
+      <div class="methodology-grid">
+        <div class="card doc-card">
+          <h3 class="card-title">1. The WAFFLe's Customized D/ST Scoring System</h3>
+          <p class="doc-text">Our projections and rankings calculate defensive fantasy points strictly tailored to the WAFFLe's customized rules:</p>
+          <div class="scoring-rules-list">
+            <div class="rule-group">
+              <span class="rule-cat">Turnovers & Big Plays:</span>
+              <ul>
+                <li><strong>Sack Taken:</strong> 1 pt</li>
+                <li><strong>Interception Thrown:</strong> 1 pt</li>
+                <li><strong>Fumble Lost:</strong> 1 pt</li>
+                <li><strong>Safety Allowed:</strong> 2 pts</li>
+                <li><strong>Blocked Kick Allowed:</strong> 1 pt</li>
+                <li><strong>Defensive Touchdown Allowed:</strong> 6 pts</li>
+              </ul>
+            </div>
+            <div class="rule-group">
+              <span class="rule-cat">Points Allowed Brackets (Dictated by Offense Score):</span>
+              <ul>
+                <li><strong>0 Points Scored:</strong> 10 pts to Defense</li>
+                <li><strong>1–6 Points Scored:</strong> 7 pts to Defense</li>
+                <li><strong>7–13 Points Scored:</strong> 3 pts to Defense</li>
+                <li><strong>14+ Points Scored:</strong> 0 pts to Defense</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card doc-card">
+          <h3 class="card-title">2. Next Gen Stats & Advanced Metrics</h3>
+          <p class="doc-text">Borrowing the analytical framework from leading NFL quant research:</p>
+          <ul class="advanced-defs">
+            <li>
+              <strong>Avg Time to Throw (NGS TTT):</strong> Time from snap to release. QBs holding the ball &gt;3.00s (e.g., Caleb Williams 3.24s, Drake Maye 3.14s) invite heavy pocket collapse and strip-sacks.
+            </li>
+            <li>
+              <strong>Tight-Window Throw % (NGS Agg%):</strong> Percentage of pass attempts where a defender is within 1 yard. High tight-window throwing leads to tipped passes and interceptions.
+            </li>
+            <li>
+              <strong>Sacks per Pressure % (S/P%):</strong> Measures QB sack avoidance under pressure. QBs like Bryce Young (34.8%), Daniel Jones (32.6%), and Baker Mayfield (36.8%) convert pressures to sacks at elite rates for opposing fantasy defenses.
+            </li>
+            <li>
+              <strong>Passing EPA Allowed (L4):</strong> Expected Points Added per pass play over the last 4 games. An offense in negative EPA territory (e.g. Chargers -0.365, Colts -0.215) is a prime streaming target.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card doc-card full-span">
+          <h3 class="card-title">3. Environmental Physics: Wind vs. Interceptions</h3>
+          <p class="doc-text">
+            While rain primarily causes slick fumbles, <strong>wind gusts of 20–25+ mph are the single most volatile environmental driver of interceptions</strong> in professional football:
+          </p>
+          <div class="weather-breakdown">
+            <div class="weather-factor">
+              <h4>Aerodynamic Instability</h4>
+              <p>On throws beyond 10 air yards, crosswinds and sudden gusts buffet the ball, causing passes to drift, flutter, and sail high over receivers into waiting safeties.</p>
+            </div>
+            <div class="weather-factor">
+              <h4>Holding the Ball into Wind</h4>
+              <p>When a QB holds the ball for an NFL-high 3.24s (Caleb Williams) in 25 mph wind gusts at Soldier Field, edge rushers force off-platform throws with diminished ball velocity that float directly into coverage.</p>
+            </div>
+            <div class="weather-factor">
+              <h4>Tipped-Ball Deflections</h4>
+              <p>Receivers fighting wind gusts suffer higher drop and double-clutch rates. Balls bobbled off hands and shoulder pads pop directly into the air for defensive backs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Matchup Details Modal -->
+  <dialog id="rationale-modal" class="app-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="badge" id="modal-tier-badge">Tier 1</span>
+          <h3 id="modal-matchup-title">New Orleans Saints vs Cleveland Browns</h3>
+        </div>
+        <button id="modal-close-btn" class="modal-close" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-kpi-row">
+          <div class="modal-kpi">
+            <span class="m-label">Projected Points</span>
+            <span class="m-val" id="modal-proj-pts">11.2</span>
+          </div>
+          <div class="modal-kpi">
+            <span class="m-label">Scoring Floor</span>
+            <span class="m-val" id="modal-floor">4.6</span>
+          </div>
+          <div class="modal-kpi">
+            <span class="m-label">Projected Sacks</span>
+            <span class="m-val" id="modal-sacks">6.8</span>
+          </div>
+          <div class="modal-kpi">
+            <span class="m-label">Projected INTs</span>
+            <span class="m-val" id="modal-ints">0.3</span>
+          </div>
+          <div class="modal-kpi">
+            <span class="m-label">Vegas Implied</span>
+            <span class="m-val" id="modal-implied">19.8</span>
+          </div>
+        </div>
+        
+        <div class="modal-section">
+          <h4>Matchup & Environmental Context</h4>
+          <div class="modal-context-grid">
+            <div><strong>Quarterback:</strong> <span id="modal-qb">Shedeur Sanders (Backup)</span></div>
+            <div><strong>Game-Time Weather:</strong> <span id="modal-weather">Dome (Indoors)</span></div>
+            <div><strong>Sacks per Pressure:</strong> <span id="modal-sp">35.5%</span></div>
+            <div><strong>Passing EPA (L4):</strong> <span id="modal-epa">-0.153</span></div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>Strategic Analysis & Rationale</h4>
+          <p id="modal-rationale-text" class="modal-rationale-body"></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <p>NFL Fantasy D/ST Streamer Tool • Built for the WAFFLe's Customized Defensive Scoring System</p>
+      <p class="footer-sub">2026 Regular Season • Data sourced from official NFL play-by-play, NFL Next Gen Stats & Open-Meteo Kickoff Weather. Ready for GitHub Pages deployment.</p>
+    </div>
+  </footer>
+
+  <!-- Load data.js for zero-CORS local Safari viewing (file:// protocol) -->
+  <script src="data.js"></script>
+  <!-- Main application logic -->
+  <script src="app.js"></script>
+</body>
+</html>

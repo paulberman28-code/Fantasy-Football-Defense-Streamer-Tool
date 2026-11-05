@@ -320,38 +320,44 @@ def main():
 
         if m_info:
             dst = m_info['dst']
-            opp_imp = round(m_info['opp_imp'], 1)
-            def_spread = round(m_info['def_spread'], 1)
+            opp_imp = round(float(m_info['opp_imp']), 1)
+            def_spread = round(float(m_info['def_spread']), 1)
 
             # Projections for the target defense facing this offense
             d_m = records[dst]
             
             # 1. Proj Sacks
             exp_sack_rt = (data['Off_Sack_Rate_L4'] * d_m['Def_Sack_Rate_L4']) / lg_sack_rate
-            proj_sacks = round(data['Dbs_Per_G_L4'] * exp_sack_rt, 1)
+            proj_sacks = round(float(data['Dbs_Per_G_L4'] * exp_sack_rt), 1)
 
             # 2. Proj INTs
             exp_int_rt = (data['Off_Int_Rate_L4'] * d_m['Def_Int_Rate_L4']) / lg_int_rate
-            proj_ints = round(data['Passes_Per_G_L4'] * exp_int_rt, 1)
+            proj_ints = round(float(data['Passes_Per_G_L4'] * exp_int_rt), 1)
 
             # 3. Proj Fumbles Recovered
             exp_fumb_rt = (data['Off_Fumb_Rate_L4'] * d_m['Def_Fumb_Rate_L4']) / lg_fumb_rate
-            proj_fumbles = round(data['Plays_Per_G_L4'] * exp_fumb_rt, 1)
+            proj_fumbles = round(float(data['Plays_Per_G_L4'] * exp_fumb_rt), 1)
 
             # 4. Bracket Pts
-            bracket_pts = round(calc_bracket_pts(opp_imp), 1)
+            bracket_pts = round(float(calc_bracket_pts(opp_imp)), 1)
 
             # 5. Total Proj Pts (including ~8.5% def TD rate & safeties)
             proj_def_td = (proj_ints + proj_fumbles) * 0.085
-            proj_total = round((proj_sacks * 1.0) + (proj_ints * 1.0) + (proj_fumbles * 1.0) + (proj_def_td * 6.0) + bracket_pts, 1)
+            proj_total = round(float((proj_sacks * 1.0) + (proj_ints * 1.0) + (proj_fumbles * 1.0) + (proj_def_td * 6.0) + bracket_pts), 1)
 
             # 6. Predicted Floor
-            pred_floor = round((proj_sacks * 0.55) + (proj_ints * 0.35) + (bracket_pts * 0.4), 1)
+            pred_floor = round(float((proj_sacks * 0.55) + (proj_ints * 0.35) + (bracket_pts * 0.4)), 1)
 
             target_dst_str = f"{dst} ({'@' if m_info['loc']=='home' else 'vs'} {team})"
 
-            # Tier classification
+            # Tier classification & QB status formatting
             is_backup = 'Yes' in backup_flag
+            if is_backup:
+                reason = backup_flag.replace('Yes', '').strip(' ()')
+                qb_display_status = f"{qb_name} (Backup: {reason})" if reason else f"{qb_name} (Backup)"
+            else:
+                qb_display_status = f"{qb_name} (Starter)"
+
             l4_pts = data['Last_4_Games']
             
             if proj_total >= 8.0 or (is_backup and proj_sacks >= 4.0):
@@ -377,6 +383,7 @@ def main():
             proj_total = '-'
             pred_floor = '-'
             target_dst_str = 'BYE (None)'
+            qb_display_status = f"{qb_name} (Starter)"
             tier = 'BYE'
             rationale = "BYE WEEK (None)"
 
@@ -389,7 +396,7 @@ def main():
             'Last_4_Games': data['Last_4_Games'],
             'Total_pts': data['Total_pts'],
             'Target_DST': target_dst_str,
-            'Starting_QB': f"{qb_name} ({backup_flag})",
+            'Starting_QB': qb_display_status,
             'Opp_Implied_Pts': opp_imp,
             'Def_Spread': def_spread,
             'Proj_Sacks': proj_sacks,
@@ -398,8 +405,8 @@ def main():
             'Exp_Bracket': bracket_pts,
             'Proj_Fantasy_Pts': proj_total,
             'Predicted_Floor': pred_floor,
-            'Sacks_Per_Press%': round(data['Off_S_per_P'] * 100, 1),
-            'Off_Pass_EPA_L4': round(data['Off_Pass_EPA_L4'], 3),
+            'Sacks_Per_Press%': round(float(data['Off_S_per_P'] * 100), 1),
+            'Off_Pass_EPA_L4': round(float(data['Off_Pass_EPA_L4']), 3),
             'NGS_TTT': ttt,
             'NGS_Agg%': agg,
             'Gametime_Weather': gametime_weather.get(team, 'BYE (N/A)'),
@@ -497,6 +504,46 @@ def main():
     }
     df_stashes.rename(columns=friendly_stash_map).to_csv("dst_lookahead_week10_2026_friendly.csv", index=False)
     print("Saved Week 10 look-ahead stashes to dst_lookahead_week10_2026.csv and dst_lookahead_week10_2026_friendly.csv")
+
+    # 5. Export structured JSON and JS for the dynamic web application
+    import json
+    from datetime import datetime
+
+    def clean_json(o):
+        if isinstance(o, (np.integer, int)):
+            return int(o)
+        elif isinstance(o, (np.floating, float)):
+            val = float(o)
+            # EPA gets 3 decimals, everything else gets 1 decimal
+            if abs(val) < 1.0 and abs(val) > 0.0001:
+                return round(val, 3)
+            return round(val, 1)
+        elif pd.isna(o):
+            return None
+        return str(o)
+
+    web_data = {
+        'meta': {
+            'season': 2026,
+            'currentWeek': 9,
+            'lookAheadWeek': 10,
+            'lastUpdated': datetime.now().strftime('%B %d, %Y at %I:%M %p'),
+            'totalOffenses': len(master_rows)
+        },
+        'weekMatchups': master_rows,
+        'historicalOffenses': master_rows,  # contains full W1-W8, L2, L4
+        'lookAheadStashes': stashes
+    }
+
+    # Save data.json for API/Fetch usage
+    with open("data.json", "w") as f:
+        json.dump(web_data, f, indent=2, default=clean_json)
+
+    # Save data.js for zero-CORS local Safari viewing (file:// protocol)
+    with open("data.js", "w") as f:
+        f.write("window.DEFENSE_DATA = " + json.dumps(web_data, indent=2, default=clean_json) + ";\n")
+
+    print("Saved dynamic web data to data.json and data.js")
 
     return df_master, df_stashes
 
