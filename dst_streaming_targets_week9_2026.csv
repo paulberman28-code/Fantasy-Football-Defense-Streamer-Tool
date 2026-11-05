@@ -1,33 +1,33 @@
-Team,Offense,W1,W2,W3,W4,W5,W6,W7,W8,Last_2_Games,Last_4_Games,Total_pts,W9_Opponent,Gametime_Weather,Backup_QB
-ATL,Atlanta Falcons (ATL),15,21,1,1,4,8,0,14,14,26,64,CIN (at ATL),Dome (Indoors),No - Michael Penix Jr.
-CLE,Cleveland Browns (CLE),10,2,3,4,13,8,3,17,20,41,60,NO (vs CLE),Dome (Indoors),Yes - Shedeur Sanders (Deshaun Watson concussed)
-LAC,Los Angeles Chargers (LAC),6,8,3,8,8,13,BYE,7,20,36,53,HOU (at LAC),Dome (Indoors),No - Justin Herbert
-IND,Indianapolis Colts (IND),4,1,7,4,1,10,8,16,24,35,51,DAL (at IND),Dome (Indoors),No - Daniel Jones
-SEA,Seattle Seahawks (SEA),5,2,9,4,15,8,1,5,6,29,49,ARI (at SEA),"Clear / Mild (54°F, 9mph)",Yes - Drew Lock (Sam Darnold quad/rib)
-BAL,Baltimore Ravens (BAL),3,5,0,2,11,7,8,10,18,36,46,JAX (at BAL),"Rain (0.13"")",Yes - Joe Fagnano (Lamar Jackson & Tyler Huntley injured)
-PIT,Pittsburgh Steelers (PIT),3,19,3,7,1,6,3,2,5,12,44,BYE (None),BYE (N/A),BYE (Starter: Aaron Rodgers)
-CAR,Carolina Panthers (CAR),6,2,4,3,BYE,2,19,8,27,32,44,DEN (at CAR),"Clear / Mild (64°F, 5mph)",No - Bryce Young
-CHI,Chicago Bears (CHI),3,14,0,3,12,5,3,2,5,22,42,TB (at CHI),"Windy (10 mph, g25)",No - Caleb Williams
-MIA,Miami Dolphins (MIA),10,7,5,6,6,BYE,2,6,8,20,42,DET (at MIA),"Clear / Mild (83°F, 12mph)",No - Malik Willis
-NYG,New York Giants (NYG),3,10,6,7,4,9,3,BYE,12,23,42,PHI (vs NYG),"Clear / Mild (59°F, 14mph)",Yes - J.J. McCarthy (acquired replacement for injured Jaxson Dart)
-TB,Tampa Bay Buccaneers (TB),14,4,8,5,1,7,0,2,2,10,41,CHI (vs TB),"Windy (10 mph, g25)",No - Baker Mayfield
-NE,New England Patriots (NE),9,5,13,3,2,2,3,4,7,11,41,GB (at NE),"Windy (12 mph, g29)",No - Drake Maye
-TEN,Tennessee Titans (TEN),7,2,5,3,13,1,3,6,9,23,40,BYE (None),BYE (N/A),BYE (Starter: Cam Ward)
-PHI,Philadelphia Eagles (PHI),3,5,8,4,1,3,3,10,13,17,37,NYG (at PHI),"Clear / Mild (59°F, 14mph)",Yes - Joe Milton III (Jalen Hurts on IR)
-ARI,Arizona Cardinals (ARI),1,6,2,11,6,1,3,7,10,17,37,SEA (vs ARI),"Clear / Mild (54°F, 9mph)",Yes - Gardner Minshew (Jacoby Brissett benched)
-MIN,Minnesota Vikings (MIN),4,6,4,4,10,BYE,4,4,8,22,36,BUF (at MIN),Dome (Indoors),Yes - Carson Wentz (Kyler Murray hamstring)
-NO,New Orleans Saints (NO),8,3,7,3,7,1,6,BYE,7,17,35,CLE (at NO),Dome (Indoors),No - Tyler Shough
-LA,Los Angeles Rams (LA),5,3,12,3,2,4,3,2,5,11,34,WAS (vs LA),"Clear / Mild (60°F, 13mph)",No - Matthew Stafford
-NYJ,New York Jets (NYJ),0,4,6,6,6,4,3,3,6,16,32,KC (vs NYJ),"Clear / Mild (65°F, 9mph)",No - Geno Smith
-CIN,Cincinnati Bengals (CIN),8,5,3,4,1,BYE,1,7,8,13,29,ATL (vs CIN),Dome (Indoors),No - Joe Burrow
-GB,Green Bay Packers (GB),6,4,3,2,2,4,3,3,6,12,27,NE (vs GB),"Windy (12 mph, g29)",No - Jordan Love
-HOU,Houston Texans (HOU),5,11,3,2,2,1,1,BYE,2,6,25,LAC (vs HOU),Dome (Indoors),No - C.J. Stroud
-BUF,Buffalo Bills (BUF),2,2,9,3,3,2,BYE,3,5,11,24,MIN (vs BUF),Dome (Indoors),No - Josh Allen
-DAL,Dallas Cowboys (DAL),1,2,3,4,3,6,0,4,4,13,23,IND (vs DAL),Dome (Indoors),No - Dak Prescott
-WAS,Washington Commanders (WAS),2,1,2,6,5,4,BYE,3,7,18,23,LA (at WAS),"Clear / Mild (60°F, 13mph)",No - Jayden Daniels
-KC,Kansas City Chiefs (KC),3,2,1,2,BYE,2,9,2,11,15,21,NYJ (at KC),"Clear / Mild (65°F, 9mph)",No - Patrick Mahomes
-JAX,Jacksonville Jaguars (JAX),1,6,2,4,3,1,BYE,4,5,12,21,BAL (vs JAX),"Rain (0.13"")",No - Trevor Lawrence
-DET,Detroit Lions (DET),2,4,2,1,3,BYE,3,5,8,12,20,MIA (vs DET),"Clear / Mild (83°F, 12mph)",No - Jared Goff
-LV,Las Vegas Raiders (LV),2,3,4,2,4,1,2,1,3,8,19,SF (vs LV),"Clear / Mild (71°F, 7mph)",No - Kirk Cousins
-DEN,Denver Broncos (DEN),9,1,2,1,2,2,1,1,2,6,19,CAR (vs DEN),"Clear / Mild (64°F, 5mph)",No - Bo Nix
-SF,San Francisco 49ers (SF),1,0,1,1,6,3,6,BYE,9,16,18,LV (at SF),"Clear / Mild (71°F, 7mph)",No - Brock Purdy
+Offense,Team,W1,W2,W3,W4,W5,W6,W7,W8,Last_2_Games,Last_4_Games,Total_pts,Target_DST,Starting_QB,Opp_Implied_Pts,Def_Spread,Proj_Sacks,Sacks_Per_Press%,Off_Pass_EPA_L4,NGS_TTT,NGS_Agg%,Gametime_Weather,Streamer_Tier
+Atlanta Falcons (ATL),ATL,15,21,1,1,4,8,0,14,14,26,64,CIN (@ ATL),Michael Penix Jr. (No),24.8,3.0,2.82,40.0,-0.13,2.59,15.5,Dome (Indoors),Tier 3 (Solid Floor)
+Cleveland Browns (CLE),CLE,10,2,3,4,13,8,3,17,20,41,60,NO (vs CLE),Shedeur Sanders (Yes (Watson concussed)),19.8,3.0,6.8,35.5,-0.153,-,-,Dome (Indoors),Tier 1 (Smash Play)
+Los Angeles Chargers (LAC),LAC,6,8,3,8,8,13,BYE,7,20,36,53,HOU (@ LAC),Justin Herbert (No),18.0,4.5,3.7,34.9,-0.365,2.81,13.7,Dome (Indoors),Tier 1 (Smash Play)
+Indianapolis Colts (IND),IND,4,1,7,4,1,10,8,16,24,35,51,DAL (@ IND),Daniel Jones (No),23.0,5.5,4.09,32.6,-0.215,2.8,13.4,Dome (Indoors),Tier 1 (Smash Play)
+Seattle Seahawks (SEA),SEA,5,2,9,4,15,8,1,5,6,29,49,ARI (@ SEA),Drew Lock (Yes (Darnold quad/rib)),24.0,-8.5,4.16,29.5,-0.038,-,-,"Clear / Mild (54°F, 9mph)",Tier 1 (Smash Play)
+Baltimore Ravens (BAL),BAL,3,5,0,2,11,7,8,10,18,36,46,JAX (@ BAL),Joe Fagnano (Yes (Lamar/Huntley injured)),14.8,10.0,2.47,30.6,-0.115,2.66,12.7,"Rain (0.13"")",Tier 1 (Smash Play)
+Pittsburgh Steelers (PIT),PIT,3,19,3,7,1,6,3,2,5,12,44,BYE (None),Aaron Rodgers (BYE),-,-,-,35.7,-0.065,2.7,16.3,BYE (N/A),BYE
+Carolina Panthers (CAR),CAR,6,2,4,3,BYE,2,19,8,27,32,44,DEN (@ CAR),Bryce Young (No),21.0,2.5,5.25,34.8,0.012,2.86,13.4,"Clear / Mild (64°F, 5mph)",Tier 2 (High Ceiling)
+Chicago Bears (CHI),CHI,3,14,0,3,12,5,3,2,5,22,42,TB (@ CHI),Caleb Williams (No),26.8,-6.0,3.07,32.4,0.05,3.24,11.4,"Windy (10 mph, g25)",Tier 3 (Solid Floor)
+Miami Dolphins (MIA),MIA,10,7,5,6,6,BYE,2,6,8,20,42,DET (@ MIA),Malik Willis (No),21.8,7.0,3.27,44.4,0.047,3.05,18.6,"Clear / Mild (83°F, 12mph)",Tier 3 (Solid Floor)
+New York Giants (NYG),NYG,3,10,6,7,4,9,3,BYE,12,23,42,PHI (vs NYG),J.J. McCarthy (Yes (Dart injured)),21.0,-3.5,2.3,34.1,0.115,-,-,"Clear / Mild (59°F, 14mph)",Tier 2 (High Ceiling)
+Tampa Bay Buccaneers (TB),TB,14,4,8,5,1,7,0,2,2,10,41,CHI (vs TB),Baker Mayfield (No),20.8,6.0,2.25,36.8,-0.117,2.94,13.6,"Windy (10 mph, g25)",Tier 3 (Solid Floor)
+New England Patriots (NE),NE,9,5,13,3,2,2,3,4,7,11,41,GB (@ NE),Drake Maye (No),24.2,-3.0,1.58,26.1,0.422,3.14,12.4,"Windy (12 mph, g29)",Tier 5 (Avoid / Tough)
+Tennessee Titans (TEN),TEN,7,2,5,3,13,1,3,6,9,23,40,BYE (None),Cam Ward (BYE),-,-,-,26.9,-0.087,2.81,10.9,BYE (N/A),BYE
+Philadelphia Eagles (PHI),PHI,3,5,8,4,1,3,3,10,13,17,37,NYG (@ PHI),Joe Milton III (Yes (Hurts on IR)),17.5,3.5,2.54,29.7,-0.136,-,-,"Clear / Mild (59°F, 14mph)",Tier 1 (Smash Play)
+Arizona Cardinals (ARI),ARI,1,6,2,11,6,1,3,7,10,17,37,SEA (vs ARI),Gardner Minshew (Yes (Brissett benched)),15.5,8.5,2.69,25.0,0.013,-,-,"Clear / Mild (54°F, 9mph)",Tier 1 (Smash Play)
+Minnesota Vikings (MIN),MIN,4,6,4,4,10,BYE,4,4,8,22,36,BUF (@ MIN),Carson Wentz (Yes (Murray hamstring)),20.8,3.0,1.7,36.4,0.029,-,-,Dome (Indoors),Tier 2 (High Ceiling)
+New Orleans Saints (NO),NO,8,3,7,3,7,1,6,BYE,7,17,35,CLE (@ NO),Tyler Shough (No),22.8,-3.0,1.39,19.2,0.024,2.7,16.1,Dome (Indoors),Tier 4 (Deep Sleeper)
+Los Angeles Rams (LA),LA,5,3,12,3,2,4,3,2,5,11,34,WAS (vs LA),Matthew Stafford (No),26.5,-4.5,1.54,27.3,0.082,2.7,13.9,"Clear / Mild (60°F, 13mph)",Tier 5 (Avoid / Tough)
+New York Jets (NYJ),NYJ,0,4,6,6,6,4,3,3,6,16,32,KC (vs NYJ),Geno Smith (No),18.8,10.0,1.4,32.4,0.128,2.96,15.5,"Clear / Mild (65°F, 9mph)",Tier 3 (Solid Floor)
+Cincinnati Bengals (CIN),CIN,8,5,3,4,1,BYE,1,7,8,13,29,ATL (vs CIN),Joe Burrow (No),27.8,-3.0,2.12,16.7,0.306,2.66,12.7,Dome (Indoors),Tier 5 (Avoid / Tough)
+Green Bay Packers (GB),GB,6,4,3,2,2,4,3,3,6,12,27,NE (vs GB),Jordan Love (No),21.2,3.0,2.26,23.1,0.224,2.58,16.3,"Windy (12 mph, g29)",Tier 3 (Solid Floor)
+Houston Texans (HOU),HOU,5,11,3,2,2,1,1,BYE,2,6,25,LAC (vs HOU),C.J. Stroud (No),22.5,-4.5,0.89,31.2,0.289,2.88,19.8,Dome (Indoors),Tier 5 (Avoid / Tough)
+Buffalo Bills (BUF),BUF,2,2,9,3,3,2,BYE,3,5,11,24,MIN (vs BUF),Josh Allen (No),23.8,-3.0,2.18,25.0,0.258,2.91,13.7,Dome (Indoors),Tier 5 (Avoid / Tough)
+Dallas Cowboys (DAL),DAL,1,2,3,4,3,6,0,4,4,13,23,IND (vs DAL),Dak Prescott (No),28.5,-5.5,1.32,22.7,0.032,2.77,20.5,Dome (Indoors),Tier 5 (Avoid / Tough)
+Washington Commanders (WAS),WAS,2,1,2,6,5,4,BYE,3,7,18,23,LA (@ WAS),Jayden Daniels (No),22.0,4.5,1.74,29.5,-0.004,2.89,13.1,"Clear / Mild (60°F, 13mph)",Tier 3 (Solid Floor)
+Kansas City Chiefs (KC),KC,3,2,1,2,BYE,2,9,2,11,15,21,NYJ (@ KC),Patrick Mahomes (No),28.8,-10.0,1.66,15.6,0.076,2.74,6.9,"Clear / Mild (65°F, 9mph)",Tier 4 (Deep Sleeper)
+Jacksonville Jaguars (JAX),JAX,1,6,2,4,3,1,BYE,4,5,12,21,BAL (vs JAX),Trevor Lawrence (No),24.8,-10.0,2.48,32.1,0.273,2.75,16.2,"Rain (0.13"")",Tier 5 (Avoid / Tough)
+Detroit Lions (DET),DET,2,4,2,1,3,BYE,3,5,8,12,20,MIA (vs DET),Jared Goff (No),28.8,-7.0,2.41,34.6,0.228,2.84,18.5,"Clear / Mild (83°F, 12mph)",Tier 5 (Avoid / Tough)
+Las Vegas Raiders (LV),LV,2,3,4,2,4,1,2,1,3,8,19,SF (vs LV),Kirk Cousins (No),20.8,10.0,1.38,20.7,0.153,2.9,20.8,"Clear / Mild (71°F, 7mph)",Tier 3 (Solid Floor)
+Denver Broncos (DEN),DEN,9,1,2,1,2,2,1,1,2,6,19,CAR (vs DEN),Bo Nix (No),23.5,-2.5,0.53,33.3,0.01,2.95,11.2,"Clear / Mild (64°F, 5mph)",Tier 5 (Avoid / Tough)
+San Francisco 49ers (SF),SF,1,0,1,1,6,3,6,BYE,9,16,18,LV (@ SF),Brock Purdy (No),30.8,-10.0,1.22,26.9,0.057,3.0,16.1,"Clear / Mild (71°F, 7mph)",Tier 4 (Deep Sleeper)
