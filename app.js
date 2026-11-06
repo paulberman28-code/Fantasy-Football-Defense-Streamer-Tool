@@ -54,6 +54,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function initializeApp() {
     document.body.setAttribute('data-active-tab', activeTab);
+    const headerKpis = document.querySelector('.app-header .kpi-grid');
+    if (headerKpis) {
+      headerKpis.style.display = (activeTab === 'audit' || activeTab === 'rules') ? 'none' : '';
+    }
     setupHeaderMeta();
     setupNavigation();
     setupFilterEvents();
@@ -205,7 +209,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const headerKpis = document.querySelector('.app-header .kpi-grid');
         if (headerKpis) {
-          headerKpis.style.display = (target === 'audit') ? 'none' : '';
+          headerKpis.style.display = (target === 'audit' || target === 'rules') ? 'none' : '';
         }
 
         renderActiveTable();
