@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     week9: { column: 'Projected Fantasy Points', ascending: false },
     week10: { column: 'Opponent L4 Points Allowed', ascending: false },
     history: { column: 'Total Points Allowed (W1-8)', ascending: false },
-    anatomy: { column: 'PPG', ascending: false }
+    anatomy: { column: 'PPG', ascending: false },
+    audit: { column: 'Projected Points', ascending: false }
   };
 
   // Filter states
@@ -821,32 +822,69 @@ document.addEventListener('DOMContentLoaded', async () => {
       const currentWeekNum = (appData.meta && appData.meta.currentWeek) || 9;
       const weekAudit = completedAudits.find(a => a.week === currentWeekNum);
 
-      matchupsTbody.innerHTML = activeMatchups.map(r => {
-        const tierClass = getTierClass(r.Streamer_Tier);
-        const targetCode = r.Target_DST.split(' ')[0];
+      let enrichedRows = activeMatchups.map(r => {
+        const targetCode = r.Target_DST ? r.Target_DST.split(' ')[0] : '';
+        const match = weekAudit && weekAudit.matchup_reconciliation ? 
+          weekAudit.matchup_reconciliation.find(m => m.dst === targetCode) : null;
+        
+        const toProj = (parseFloat(r.Proj_INTs || 0) + parseFloat(r.Proj_Fumbles || 0));
+        return {
+          ...r,
+          _auditMatch: match,
+          _projPts: parseFloat(match ? match.proj_pts : r.Proj_Fantasy_Pts) || 0,
+          _actualPts: match && match.actual_pts !== undefined ? match.actual_pts : null,
+          _projError: match && match.error_diff !== undefined ? match.error_diff : null,
+          _floor: parseFloat(match ? match.floor : r.Predicted_Floor) || 0,
+          _floorMet: match ? (match.floor_met ? 1 : 0) : null,
+          _projSacks: parseFloat(match ? match.proj_sacks : r.Proj_Sacks) || 0,
+          _projTO: parseFloat(match ? match.proj_to : toProj) || 0,
+          _projBracket: parseFloat(match ? match.proj_bracket : r.Exp_Bracket) || 0,
+          _outcome: match ? (match.hit ? 'HIT' : 'MISS') : 'Pending'
+        };
+      });
 
-        if (weekAudit && weekAudit.matchup_reconciliation) {
-          const match = weekAudit.matchup_reconciliation.find(m => m.dst === targetCode);
-          if (match) {
-            const errorSign = match.error_diff > 0 ? '+' : '';
-            const errorClass = Math.abs(match.error_diff) <= 2.5 ? 'pts-top' : (Math.abs(match.error_diff) >= 5.0 ? 'stat-dim' : '');
-            return `
-              <tr>
-                <td class="col-sticky"><span class="stat-bold">${r.Target_DST}</span></td>
-                <td>${r.Offense}</td>
-                <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
-                <td class="col-center stat-bold">${formatNum(match.proj_pts, 1)}</td>
-                <td class="col-center pts-highlight">${formatNum(match.actual_pts, 1)}</td>
-                <td class="col-center stat-bold ${errorClass}">${errorSign}${formatNum(match.error_diff, 1)}</td>
-                <td class="col-center stat-dim">${formatNum(match.floor, 1)}</td>
-                <td class="col-center">${match.floor_met ? '✅ Yes' : '❌ No'}</td>
-                <td class="col-center">${formatNum(match.proj_sacks, 1)} / ${match.actual_sacks}</td>
-                <td class="col-center">${formatNum(match.proj_to, 1)} / ${match.actual_to}</td>
-                <td class="col-center">${formatNum(match.proj_bracket, 1)} / ${match.actual_bracket}</td>
-                <td class="col-center"><span class="badge ${match.hit ? 'badge-priority' : 'badge-avoid'}">${match.hit ? 'HIT' : 'MISS'}</span></td>
-              </tr>
-            `;
-          }
+      // Sort according to active audit sort state (defaults to Projected Points descending)
+      const sortConfig = sortStates.audit || { column: 'Projected Points', ascending: false };
+      const keyMap = {
+        'Streaming Defense': 'Target_DST',
+        'Opponent': 'Offense',
+        'Week Verdict': 'Streamer_Tier',
+        'Projected Points': '_projPts',
+        'Actual Fantasy Pts': '_actualPts',
+        'Projection Error': '_projError',
+        'Floor': '_floor',
+        'Floor Met?': '_floorMet',
+        'Sacks (Proj / Act)': '_projSacks',
+        'Turnovers (Proj / Act)': '_projTO',
+        'Bracket (Proj / Act)': '_projBracket',
+        'Outcome': '_outcome'
+      };
+      const targetKey = keyMap[sortConfig.column] || '_projPts';
+      enrichedRows = sortData(enrichedRows, targetKey, sortConfig.ascending);
+
+      matchupsTbody.innerHTML = enrichedRows.map(r => {
+        const tierClass = getTierClass(r.Streamer_Tier);
+        const match = r._auditMatch;
+
+        if (match) {
+          const errorSign = match.error_diff > 0 ? '+' : '';
+          const errorClass = Math.abs(match.error_diff) <= 2.5 ? 'pts-top' : (Math.abs(match.error_diff) >= 5.0 ? 'stat-dim' : '');
+          return `
+            <tr>
+              <td class="col-sticky"><span class="stat-bold">${r.Target_DST}</span></td>
+              <td>${r.Offense}</td>
+              <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
+              <td class="col-center stat-bold">${formatNum(match.proj_pts, 1)}</td>
+              <td class="col-center pts-highlight">${formatNum(match.actual_pts, 1)}</td>
+              <td class="col-center stat-bold ${errorClass}">${errorSign}${formatNum(match.error_diff, 1)}</td>
+              <td class="col-center stat-dim">${formatNum(match.floor, 1)}</td>
+              <td class="col-center">${match.floor_met ? '✅ Yes' : '❌ No'}</td>
+              <td class="col-center">${formatNum(match.proj_sacks, 1)} / ${match.actual_sacks}</td>
+              <td class="col-center">${formatNum(match.proj_to, 1)} / ${match.actual_to}</td>
+              <td class="col-center">${formatNum(match.proj_bracket, 1)} / ${match.actual_bracket}</td>
+              <td class="col-center"><span class="badge ${match.hit ? 'badge-priority' : 'badge-avoid'}">${match.hit ? 'HIT' : 'MISS'}</span></td>
+            </tr>
+          `;
         }
 
         // Pre-game active view: strictly truth-grounded in locked snapshot
