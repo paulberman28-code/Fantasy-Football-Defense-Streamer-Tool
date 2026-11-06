@@ -1,0 +1,14 @@
+[
+  {
+    "snapshot_id": "2026_week_09",
+    "season": 2026,
+    "week": 9,
+    "timestamp_utc": "2026-11-06T16:12:00.976253+00:00",
+    "timestamp_local": "November 06, 2026 at 10:12 AM",
+    "git_commit_hash": "79b2872a9c84ee4facbff21f7f87339234d9ac67",
+    "file_json": "snapshots/week_09_2026_snapshot.json",
+    "file_csv": "snapshots/week_09_2026_snapshot.csv",
+    "records_count": 32,
+    "sha256": "74956912c7072630be7ff9a435d7296a9602282e7fa803171f7303ef08188daf"
+  }
+]
