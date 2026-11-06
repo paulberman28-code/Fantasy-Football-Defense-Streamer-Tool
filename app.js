@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   const sortStates = {
     week9: { column: 'Projected Fantasy Points', ascending: false },
     week10: { column: 'Opponent L4 Points Allowed', ascending: false },
-    history: { column: 'Total Points Allowed (W1-8)', ascending: false }
+    history: { column: 'Total Points Allowed (W1-8)', ascending: false },
+    anatomy: { column: 'Total_Pts', ascending: false }
   };
 
   // Filter states
@@ -22,7 +23,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     tier: 'ALL',
     w10Verdict: 'ALL',
     backupOnly: false,
-    weatherOnly: false
+    weatherOnly: false,
+    anatomyTeam: 'ALL'
   };
 
   // Initialize Header Controls (Theme Toggle & Visitor Counter) immediately
@@ -146,15 +148,23 @@ document.addEventListener('DOMContentLoaded', async () => {
   function updateFilterVisibility() {
     const w9Controls = document.getElementById('week9-filters');
     const w10Controls = document.getElementById('week10-filters');
+    const anatomyControls = document.getElementById('anatomy-filters');
     if (activeTab === 'week9') {
       if (w9Controls) w9Controls.style.display = 'flex';
       if (w10Controls) w10Controls.style.display = 'none';
+      if (anatomyControls) anatomyControls.style.display = 'none';
     } else if (activeTab === 'week10') {
       if (w9Controls) w9Controls.style.display = 'none';
       if (w10Controls) w10Controls.style.display = 'flex';
+      if (anatomyControls) anatomyControls.style.display = 'none';
+    } else if (activeTab === 'anatomy') {
+      if (w9Controls) w9Controls.style.display = 'none';
+      if (w10Controls) w10Controls.style.display = 'none';
+      if (anatomyControls) anatomyControls.style.display = 'flex';
     } else {
       if (w9Controls) w9Controls.style.display = 'none';
       if (w10Controls) w10Controls.style.display = 'none';
+      if (anatomyControls) anatomyControls.style.display = 'none';
     }
   }
 
@@ -213,6 +223,26 @@ document.addEventListener('DOMContentLoaded', async () => {
         filters.search = '';
         if (w10VerdictSelect) w10VerdictSelect.value = 'ALL';
         filters.w10Verdict = 'ALL';
+        renderActiveTable();
+      });
+    }
+
+    // Points Anatomy Specific Filters
+    const anatomySelect = document.getElementById('anatomy-team-filter');
+    if (anatomySelect) {
+      anatomySelect.addEventListener('change', (e) => {
+        filters.anatomyTeam = e.target.value;
+        renderActiveTable();
+      });
+    }
+
+    const resetAnatomyBtn = document.getElementById('reset-anatomy-filters-btn');
+    if (resetAnatomyBtn) {
+      resetAnatomyBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        filters.search = '';
+        if (anatomySelect) anatomySelect.value = 'ALL';
+        filters.anatomyTeam = 'ALL';
         renderActiveTable();
       });
     }
@@ -280,12 +310,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderWeek9Projections();
     renderWeek10Stashes();
     renderHistory();
+    renderPointsAnatomy();
   }
 
   function renderActiveTable() {
     if (activeTab === 'week9') renderWeek9Projections();
     else if (activeTab === 'week10') renderWeek10Stashes();
     else if (activeTab === 'history') renderHistory();
+    else if (activeTab === 'anatomy') renderPointsAnatomy();
   }
 
   // 7. Render Tab 1: Week 9 Projections
@@ -329,14 +361,19 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Opposing QB (Status)': 'Starting_QB',
       'Week 9 Verdict': 'Streamer_Tier',
       'Streaming Tier': 'Streamer_Tier',
+      'Vegas Implied Opponent Score': 'Opp_Implied_Pts',
+      'Vegas Implied': 'Opp_Implied_Pts',
       'Projected Fantasy Points': 'Proj_Fantasy_Pts',
       'Scoring Floor': 'Predicted_Floor',
       'Projected Sacks': 'Proj_Sacks',
       'Projected Interceptions': 'Proj_INTs',
+      'Projected Fumbles': 'Proj_Fumbles',
+      'Projected Fumbles Recovered': 'Proj_Fumbles',
       'Defensive Quality Index (DQI)': 'Def_DQI',
       'Def Quality Index (DQI)': 'Def_DQI',
       'DQI': 'Def_DQI',
       'Defensive Pressure %': 'Def_Pressure_Rate%',
+      'Def Pressure %': 'Def_Pressure_Rate%',
       'Defensive Pass EPA Allowed': 'Def_Pass_EPA',
       'Def Pass EPA': 'Def_Pass_EPA',
       '3rd Down Stop Rate %': 'Def_3rd_Stop%',
@@ -349,11 +386,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Def Health / Key Injuries': 'Def_Injuries',
       'Def Health / Injuries': 'Def_Injuries',
       'Sack Rate on Pressure %': 'Sacks_Per_Press%',
+      'QB Fumble Rate %': 'QB_Fumble_Rate%',
+      'QB Fumbles': 'QB_Fumbles',
       'Pass Efficiency Allowed (EPA/Play)': 'Off_Pass_EPA_L4',
       'Opponent Pass EPA (L4)': 'Off_Pass_EPA_L4',
+      'Opp Pass EPA (L4)': 'Off_Pass_EPA_L4',
       'Avg Time to Throw (Sec)': 'NGS_TTT',
       'Tight-Window Throw %': 'NGS_Agg%',
-      'Vegas Implied Opponent Score': 'Opp_Implied_Pts',
       'Game-Time Kickoff Weather': 'Gametime_Weather'
     };
 
@@ -395,10 +434,12 @@ document.addEventListener('DOMContentLoaded', async () => {
           </td>
           <td>${qbDisplay}</td>
           <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
+          <td class="col-center">${formatNum(r.Opp_Implied_Pts, 1)} pts</td>
           <td class="col-center"><span class="pts-highlight ${parseFloat(r.Proj_Fantasy_Pts) >= 9 ? 'pts-top' : ''}">${formatNum(r.Proj_Fantasy_Pts, 1)}</span></td>
           <td class="col-center stat-bold">${formatNum(r.Predicted_Floor, 1)}</td>
           <td class="col-center">${formatNum(r.Proj_Sacks, 1)}</td>
           <td class="col-center ${parseFloat(r.Proj_INTs) >= 1.5 ? 'stat-bold' : ''}">${formatNum(r.Proj_INTs, 1)}</td>
+          <td class="col-center">${formatNum(r.Proj_Fumbles, 1)}</td>
           <td class="col-center"><span class="dqi-badge ${getDqiClass(r.Def_DQI)}">${r.Def_DQI !== '-' ? formatNum(r.Def_DQI, 1) : '—'}</span></td>
           <td class="col-center ${parseFloat(r['Def_Pressure_Rate%']) >= 25 ? 'stat-bold pts-top' : (parseFloat(r['Def_Pressure_Rate%']) >= 22.5 ? 'stat-bold' : '')}">${r['Def_Pressure_Rate%'] !== '-' ? formatNum(r['Def_Pressure_Rate%'], 1) + '%' : '—'}</td>
           <td class="col-center ${parseFloat(r.Def_Pass_EPA) < 0 ? 'pts-top stat-bold' : ''}">${r.Def_Pass_EPA !== '-' ? (parseFloat(r.Def_Pass_EPA) > 0 ? '+' : '') + formatNum(r.Def_Pass_EPA, 3) : '—'}</td>
@@ -408,10 +449,10 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center ${parseFloat(r['Def_RZ_TD_Allowed%']) <= 25 ? 'pts-top stat-bold' : ''}">${r['Def_RZ_TD_Allowed%'] !== '-' ? formatNum(r['Def_RZ_TD_Allowed%'], 1) + '%' : '—'}</td>
           <td>${r.Def_Injuries && !r.Def_Injuries.toLowerCase().includes('healthy') ? `<span class="injury-alert" title="${r.Def_Injuries}">⚠️ ${r.Def_Injuries}</span>` : '<span class="injury-healthy">✅ Healthy</span>'}</td>
           <td class="col-center">${formatNum(r['Sacks_Per_Press%'], 1)}%</td>
+          <td class="col-center ${parseFloat(r['QB_Fumble_Rate%']) >= 2.5 ? 'pts-top stat-bold' : ''}" title="${r.QB_Fumbles !== undefined ? r.QB_Fumbles + ' total fumbles' : ''}">${r['QB_Fumble_Rate%'] !== undefined && r['QB_Fumble_Rate%'] !== '-' ? formatNum(r['QB_Fumble_Rate%'], 1) + '%' : '—'}</td>
           <td class="col-center ${parseFloat(r.Off_Pass_EPA_L4) < 0 ? 'pts-top' : ''}">${parseFloat(r.Off_Pass_EPA_L4) > 0 ? '+' : ''}${formatNum(r.Off_Pass_EPA_L4, 3)}</td>
           <td class="col-center">${r.NGS_TTT !== '-' ? formatNum(r.NGS_TTT, 2) + 's' : '—'}</td>
           <td class="col-center">${r['NGS_Agg%'] !== '-' ? formatNum(r['NGS_Agg%'], 1) + '%' : '—'}</td>
-          <td class="col-center">${formatNum(r.Opp_Implied_Pts, 1)} pts</td>
           <td><span class="weather-pill ${weatherClass}">${weatherIcon} ${weatherText}</span></td>
           <td style="white-space: normal; min-width: 380px;">${r.Current_Week_Rationale || 'Standard matchup projection.'}</td>
         </tr>
@@ -581,7 +622,92 @@ document.addEventListener('DOMContentLoaded', async () => {
     return `<td class="col-wk excel-cell" style="background-color: ${bg} !important; color: ${textColor} !important; font-weight: 700;">${num}</td>`;
   }
 
-  // 10. Modal Logic
+  // 10. Render Tab 4: D/ST Fantasy Points Anatomy (Weeks 1-8)
+  function renderPointsAnatomy() {
+    const tbody = document.getElementById('anatomy-tbody');
+    if (!tbody || !appData.pointsAnatomy) return;
+
+    let rows = [...appData.pointsAnatomy];
+
+    // Populate anatomy team dropdown if empty
+    const teamSelect = document.getElementById('anatomy-team-filter');
+    if (teamSelect && teamSelect.options.length <= 1) {
+      const sortedTeams = [...rows].sort((a, b) => a.Team.localeCompare(b.Team));
+      sortedTeams.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t.Team;
+        opt.textContent = `${t.Team} - ${t.Team_Name || t.Team}`;
+        teamSelect.appendChild(opt);
+      });
+    }
+
+    if (filters.search) {
+      rows = rows.filter(t => {
+        const text = `${t.Team} ${t.Team_Name || ''}`.toLowerCase();
+        return text.includes(filters.search);
+      });
+    }
+
+    if (filters.anatomyTeam && filters.anatomyTeam !== 'ALL') {
+      rows = rows.filter(t => t.Team === filters.anatomyTeam);
+    }
+
+    const countLabel = document.getElementById('active-count-label');
+    if (countLabel && activeTab === 'anatomy') {
+      countLabel.textContent = `Showing ${rows.length} NFL Defenses`;
+    }
+
+    const sortConfig = sortStates.anatomy;
+    const keyMap = {
+      'Team': 'Team',
+      'NFL Defense': 'Team',
+      'Games Played': 'GP',
+      'GP': 'GP',
+      'Total Fantasy Points': 'Total_Pts',
+      'Total_Pts': 'Total_Pts',
+      'Fantasy PPG': 'PPG',
+      'PPG': 'PPG',
+      'Sacks': 'Sacks',
+      'Points Allowed Bracket': 'Bracket_Pts',
+      'Bracket_Pts': 'Bracket_Pts',
+      'INTs': 'INTs',
+      'Fumbles Rec': 'Fumbles_Rec',
+      'Fumbles_Rec': 'Fumbles_Rec',
+      'Def TDs': 'Def_TDs',
+      'Def_TDs': 'Def_TDs',
+      'Safeties': 'Safeties'
+    };
+    const targetKey = keyMap[sortConfig.column] || sortConfig.column;
+    rows = sortData(rows, targetKey, sortConfig.ascending);
+
+    tbody.innerHTML = rows.map(r => {
+      return `
+        <tr>
+          <td class="col-sticky"><span class="stat-bold">${r.Team_Name || r.Team}</span> <span class="stat-dim">(${r.Team})</span></td>
+          <td class="col-center">${r.GP}</td>
+          <td class="col-center"><span class="pts-highlight pts-top">${r.Total_Pts} pts</span></td>
+          <td class="col-center stat-bold">${formatNum(r.PPG, 1)}</td>
+          <td class="col-center"><span class="stat-bold">${r.Sacks}</span> <span class="stat-dim">(${r.Sack_Pts} pts • ${formatNum(r.Sack_Pct, 1)}%)</span></td>
+          <td class="col-center"><span class="stat-bold">${r.Bracket_Pts} pts</span> <span class="stat-dim">(${formatNum(r.Bracket_Pct, 1)}%)</span></td>
+          <td class="col-center"><span class="stat-bold">${r.INTs}</span> <span class="stat-dim">(${r.INT_Pts} pts • ${formatNum(r.INT_Pct, 1)}%)</span></td>
+          <td class="col-center"><span class="stat-bold">${r.Fumbles_Rec}</span> <span class="stat-dim">(${r.Fumble_Pts} pts • ${formatNum(r.Fumble_Pct, 1)}%)</span></td>
+          <td class="col-center"><span class="stat-bold">${r.Def_TDs}</span> <span class="stat-dim">(${r.TD_Pts} pts • ${formatNum(r.TD_Pct, 1)}%)</span></td>
+          <td class="col-center"><span class="stat-bold">${r.Safeties}</span> <span class="stat-dim">(${r.Safety_Pts} pts)</span></td>
+          <td>
+            <div class="dist-bar-wrap" title="Sacks: ${r.Sack_Pct}%, Bracket: ${r.Bracket_Pct}%, INTs: ${r.INT_Pct}%, Fumbles: ${r.Fumble_Pct}%, TDs: ${r.TD_Pct}%">
+              <div class="dist-seg seg-sack" style="width: ${r.Sack_Pct}%;"></div>
+              <div class="dist-seg seg-bracket" style="width: ${r.Bracket_Pct}%;"></div>
+              <div class="dist-seg seg-int" style="width: ${r.INT_Pct}%;"></div>
+              <div class="dist-seg seg-fumb" style="width: ${r.Fumble_Pct}%;"></div>
+              <div class="dist-seg seg-td" style="width: ${r.TD_Pct}%;"></div>
+            </div>
+          </td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  // 11. Modal Logic
   function setupModalEvents() {
     const modal = document.getElementById('rationale-modal');
     const closeBtn = document.getElementById('modal-close-btn');
@@ -620,6 +746,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('modal-floor').textContent = formatNum(data.Predicted_Floor, 1);
     document.getElementById('modal-sacks').textContent = formatNum(data.Proj_Sacks, 1);
     document.getElementById('modal-ints').textContent = formatNum(data.Proj_INTs, 1);
+    const fumblesEl = document.getElementById('modal-fumbles');
+    if (fumblesEl) fumblesEl.textContent = formatNum(data.Proj_Fumbles, 1);
     document.getElementById('modal-implied').textContent = `${formatNum(data.Opp_Implied_Pts, 1)} pts`;
 
     document.getElementById('modal-qb').textContent = data.Starting_QB;
@@ -643,6 +771,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (defInjEl) defInjEl.textContent = data.Def_Injuries || 'Healthy';
 
     document.getElementById('modal-sp').textContent = `${formatNum(data['Sacks_Per_Press%'], 1)}%`;
+    const qbFumbEl = document.getElementById('modal-qb-fumble');
+    if (qbFumbEl) qbFumbEl.textContent = (data['QB_Fumble_Rate%'] !== undefined && data['QB_Fumble_Rate%'] !== '-') ? `${formatNum(data['QB_Fumble_Rate%'], 1)}% (${data.QB_Fumbles || 0} fumbles)` : '—';
     document.getElementById('modal-epa').textContent = `${parseFloat(data.Off_Pass_EPA_L4) > 0 ? '+' : ''}${formatNum(data.Off_Pass_EPA_L4, 3)}`;
 
     document.getElementById('modal-rationale-text').textContent = data.Current_Week_Rationale || 'Matchup analysis pending.';
