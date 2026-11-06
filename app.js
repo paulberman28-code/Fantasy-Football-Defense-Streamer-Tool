@@ -72,6 +72,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     return num.toFixed(decimals);
   }
 
+  // Helper for formatting Streaming Defense names (ensures home games display as (Home))
+  function formatDstLabel(dstStr) {
+    if (!dstStr) return '';
+    return dstStr.replace(/\(vs\s+[A-Za-z]+\)/gi, '(Home)');
+  }
+
   // Helper for 2-row QB cell formatting with wrapped badge
   function formatQbCell(qbRaw) {
     if (!qbRaw || qbRaw === '-' || qbRaw === 'BYE') return qbRaw || '-';
@@ -138,14 +144,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Top Smash Play
         const topSmash = [...active].sort((a, b) => (parseFloat(b.Proj_Fantasy_Pts) || 0) - (parseFloat(a.Proj_Fantasy_Pts) || 0))[0];
         if (topSmash) {
-          document.getElementById('kpi-smash-name').textContent = topSmash.Target_DST;
+          document.getElementById('kpi-smash-name').textContent = formatDstLabel(topSmash.Target_DST);
           document.getElementById('kpi-smash-sub').textContent = `${formatNum(topSmash.Proj_Fantasy_Pts, 1)} Proj Pts • vs ${topSmash.Team}`;
         }
 
         // Top Floor Play
         const topFloor = [...active].sort((a, b) => (parseFloat(b.Predicted_Floor) || 0) - (parseFloat(a.Predicted_Floor) || 0))[0];
         if (topFloor) {
-          document.getElementById('kpi-floor-name').textContent = topFloor.Target_DST;
+          document.getElementById('kpi-floor-name').textContent = formatDstLabel(topFloor.Target_DST);
           document.getElementById('kpi-floor-sub').textContent = `${formatNum(topFloor.Predicted_Floor, 1)} Floor • ${formatNum(topFloor.Proj_Sacks, 1)} Sacks`;
         }
 
@@ -375,7 +381,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         <tr data-row-idx="${idx}" class="matchup-row">
           <td class="col-sticky">
             <div class="team-badge">
-              <span class="stat-bold">${r.Target_DST}</span>
+              <span class="stat-bold">${formatDstLabel(r.Target_DST)}</span>
             </div>
           </td>
           <td>${qbDisplay}</td>
@@ -422,7 +428,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <article class="mobile-matchup-card" data-row-idx="${idx}">
             <div class="m-card-header">
               <div class="m-card-title-group">
-                <span class="m-card-team">${r.Target_DST}</span>
+                <span class="m-card-team">${formatDstLabel(r.Target_DST)}</span>
                 <span class="badge ${tierClass}">${r.Streamer_Tier}</span>
               </div>
               <div class="m-card-pts-box">
@@ -618,7 +624,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center"><span class="stat-bold ${h.Last_2_Games >= 15 ? 'pts-top' : ''}">${h.Last_2_Games}</span></td>
           <td class="col-center"><span class="stat-bold ${h.Last_4_Games >= 30 ? 'pts-top' : ''}">${h.Last_4_Games}</span></td>
           <td class="col-center"><span class="pts-highlight ${h.Total_pts >= 45 ? 'pts-top' : ''}">${h.Total_pts}</span></td>
-          <td>${h.Target_DST || 'BYE'}</td>
+          <td>${formatDstLabel(h.Target_DST) || 'BYE'}</td>
           <td>${formatQbCell(h.Starting_QB)}</td>
           <td class="col-center"><span class="badge ${tierClass}">${h.Streamer_Tier || 'BYE'}</span></td>
         </tr>
@@ -879,7 +885,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           const errorClass = Math.abs(match.error_diff) <= 2.5 ? 'pts-top' : (Math.abs(match.error_diff) >= 5.0 ? 'stat-dim' : '');
           return `
             <tr>
-              <td class="col-sticky"><span class="stat-bold">${r.Target_DST}</span></td>
+              <td class="col-sticky"><span class="stat-bold">${formatDstLabel(r.Target_DST)}</span></td>
               <td>${r.Offense}</td>
               <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
               <td class="col-center stat-bold">${formatNum(match.proj_pts, 1)}</td>
@@ -899,7 +905,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const toProj = (parseFloat(r.Proj_INTs || 0) + parseFloat(r.Proj_Fumbles || 0)).toFixed(1);
         return `
           <tr>
-            <td class="col-sticky"><span class="stat-bold">${r.Target_DST}</span></td>
+            <td class="col-sticky"><span class="stat-bold">${formatDstLabel(r.Target_DST)}</span></td>
             <td>${r.Offense}</td>
             <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
             <td class="col-center stat-bold pts-highlight">${formatNum(r.Proj_Fantasy_Pts, 1)}</td>
@@ -1029,7 +1035,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const kpiRow = modal.querySelector('.modal-kpi-row');
     if (kpiRow) kpiRow.style.display = '';
 
-    document.getElementById('modal-matchup-title').textContent = `${data.Target_DST} vs ${data.Offense}`;
+    document.getElementById('modal-matchup-title').textContent = `${formatDstLabel(data.Target_DST)} vs ${data.Offense}`;
     document.getElementById('modal-tier-badge').textContent = data.Streamer_Tier;
     document.getElementById('modal-tier-badge').className = `badge tier-badge ${getTierClass(data.Streamer_Tier)}`;
 
