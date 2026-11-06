@@ -157,7 +157,7 @@
       <div class="panel-header">
         <div class="panel-title-wrap">
           <h2 class="panel-title">Week 9 Streaming Rankings & Next Gen Stats</h2>
-          <p class="panel-desc">Click any column header to sort. Full strategic rationale and Next Gen Stats displayed inline for each streaming target.</p>
+          <p class="panel-desc">Click any column header to sort. Evaluates defenses using the composite <strong>Defensive Quality Index (DQI)</strong>, pressure rate, pass EPA, 3rd down stops, takeaway drive %, punt %, red zone defense, and official injuries.</p>
         </div>
         <div class="legend-row">
           <span class="legend-item"><span class="legend-badge badge-priority">Priority</span> Top Target</span>
@@ -183,12 +183,16 @@
               <th data-sort="Scoring Floor" class="col-center col-stat">Scoring<br>Floor <span class="sort-arrow"></span></th>
               <th data-sort="Projected Sacks" class="col-center col-stat">Projected<br>Sacks <span class="sort-arrow"></span></th>
               <th data-sort="Projected Interceptions" class="col-center col-stat">Projected<br>INTs <span class="sort-arrow"></span></th>
+              <th data-sort="Defensive Quality Index (DQI)" class="col-center col-stat">Def Quality<br>Index (DQI) <span class="sort-arrow"></span></th>
               <th data-sort="Defensive Pressure %" class="col-center col-stat-wide">Def<br>Pressure % <span class="sort-arrow"></span></th>
               <th data-sort="Defensive Pass EPA Allowed" class="col-center col-stat-wide">Def Pass<br>EPA <span class="sort-arrow"></span></th>
               <th data-sort="3rd Down Stop Rate %" class="col-center col-stat-wide">3rd Down<br>Stop % <span class="sort-arrow"></span></th>
+              <th data-sort="Takeaway Drive %" class="col-center col-stat-wide">Takeaway<br>Drive % <span class="sort-arrow"></span></th>
+              <th data-sort="Punt Drive %" class="col-center col-stat-wide">Punt<br>Drive % <span class="sort-arrow"></span></th>
+              <th data-sort="Red Zone TD Allowed %" class="col-center col-stat-wide">RZ TD<br>Allowed % <span class="sort-arrow"></span></th>
               <th data-sort="Key Defensive Injuries" class="col-stat-wide" style="min-width: 150px;">Def Health /<br>Injuries <span class="sort-arrow"></span></th>
               <th data-sort="Sack Rate on Pressure %" class="col-center col-stat-wide">Sack Rate on<br>Pressure % <span class="sort-arrow"></span></th>
-              <th data-sort="Pass Efficiency Allowed (EPA/Play)" class="col-center col-stat-wide">Pass EPA<br>Allowed <span class="sort-arrow"></span></th>
+              <th data-sort="Opponent Pass EPA (L4)" class="col-center col-stat-wide">Opp Pass<br>EPA (L4) <span class="sort-arrow"></span></th>
               <th data-sort="Avg Time to Throw (Sec)" class="col-center col-stat">Avg Time<br>to Throw <span class="sort-arrow"></span></th>
               <th data-sort="Tight-Window Throw %" class="col-center col-stat-wide">Tight-Window<br>Throw % <span class="sort-arrow"></span></th>
               <th data-sort="Vegas Implied Opponent Score" class="col-center col-stat">Vegas<br>Implied <span class="sort-arrow"></span></th>
@@ -230,6 +234,12 @@
               <th data-sort="Defense" class="col-sticky col-def">Defense <span class="sort-arrow"></span></th>
               <th data-sort="Week 10 Opponent" class="col-def">Week 10<br>Opponent <span class="sort-arrow"></span></th>
               <th data-sort="Week 10 Verdict" class="col-center col-tier">Week 10<br>Verdict <span class="sort-arrow"></span></th>
+              <th data-sort="Def Quality Index (DQI)" class="col-center col-stat">Def Quality<br>Index (DQI) <span class="sort-arrow"></span></th>
+              <th data-sort="Def Pressure %" class="col-center col-stat-wide">Def<br>Pressure % <span class="sort-arrow"></span></th>
+              <th data-sort="Def Pass EPA" class="col-center col-stat-wide">Def Pass<br>EPA <span class="sort-arrow"></span></th>
+              <th data-sort="3rd Down Stop %" class="col-center col-stat-wide">3rd Down<br>Stop % <span class="sort-arrow"></span></th>
+              <th data-sort="Takeaway Drive %" class="col-center col-stat-wide">Takeaway<br>Drive % <span class="sort-arrow"></span></th>
+              <th data-sort="RZ TD Allowed %" class="col-center col-stat-wide">RZ TD<br>Allowed % <span class="sort-arrow"></span></th>
               <th data-sort="Opponent L4 Points Allowed" class="col-center col-stat-wide sort-active desc">Opponent L4<br>Pts Allowed <span class="sort-arrow">▼</span></th>
               <th data-sort="Opponent Total Points Allowed" class="col-center col-stat-wide">Opponent Total<br>Pts Allowed <span class="sort-arrow"></span></th>
               <th data-sort="Opponent Starting QB" class="col-qb">Opponent<br>Starting QB <span class="sort-arrow"></span></th>
@@ -332,6 +342,27 @@
           <p class="doc-text">Borrowing the analytical framework from leading NFL quant research:</p>
           <ul class="advanced-defs">
             <li>
+              <strong>Defensive Quality Index (DQI):</strong> Composite quality score (50–100 scale, average = 75.0) synthesizing defensive pressure generation (25%), defensive pass EPA allowed (25%), 3rd down stop rate (20%), takeaway drive rate (15%), and red zone touchdown prevention (15%). Identifies inherently elite defenses (e.g. Minnesota 95.4) regardless of matchup.
+            </li>
+            <li>
+              <strong>Defensive Pressure %:</strong> Share of opponent dropbacks where the defense creates pressure (hurry, knockdown, or sack). Defenses generating &gt;25% pressure disrupt quarterback timing and force erratic throws.
+            </li>
+            <li>
+              <strong>Defensive Pass EPA Allowed:</strong> Expected Points Added allowed per pass play. Negative values represent lockdown pass coverage (e.g. Minnesota -0.158), while positive values indicate porous secondaries.
+            </li>
+            <li>
+              <strong>3rd Down Stop %:</strong> Percentage of 3rd down attempts where the defense prevents a first down. Teams above 70% terminate opponent drives early and rack up punt opportunities.
+            </li>
+            <li>
+              <strong>Takeaway Drive %:</strong> Percentage of defensive drives ending in an interception or fumble recovery.
+            </li>
+            <li>
+              <strong>Red Zone TD Allowed %:</strong> Opponent touchdown conversion rate inside the 20-yard line. Elite red-zone defenses bend without breaking, preserving low-scoring fantasy brackets.
+            </li>
+            <li>
+              <strong>Key Defensive Injuries:</strong> Official injury report statuses (Out, DNP, Questionable, IR) filtering out veteran rest days to isolate impactful absences along the defensive line, edge rush, and secondary.
+            </li>
+            <li>
               <strong>Avg Time to Throw (NGS TTT):</strong> Time from snap to release. QBs holding the ball &gt;3.00s (e.g., Caleb Williams 3.24s, Drake Maye 3.14s) invite heavy pocket collapse and strip-sacks.
             </li>
             <li>
@@ -341,7 +372,7 @@
               <strong>Sacks per Pressure % (S/P%):</strong> Measures QB sack avoidance under pressure. QBs like Bryce Young (34.8%), Daniel Jones (32.6%), and Baker Mayfield (36.8%) convert pressures to sacks at elite rates for opposing fantasy defenses.
             </li>
             <li>
-              <strong>Passing EPA Allowed (L4):</strong> Expected Points Added per pass play over the last 4 games. An offense in negative EPA territory (e.g. Chargers -0.365, Colts -0.215) is a prime streaming target.
+              <strong>Opponent Passing EPA (L4):</strong> Expected Points Added per pass play conceded by the opposing offense over the last 4 games. An offense in negative EPA territory (e.g. Chargers -0.365, Colts -0.215) is a prime streaming target.
             </li>
           </ul>
         </div>
@@ -409,9 +440,13 @@
           <div class="modal-context-grid">
             <div><strong>Quarterback:</strong> <span id="modal-qb">Shedeur Sanders (Backup)</span></div>
             <div><strong>Game-Time Weather:</strong> <span id="modal-weather">Dome (Indoors)</span></div>
+            <div><strong>Def Quality Index:</strong> <span id="modal-dqi">70.0</span></div>
             <div><strong>Def Pressure %:</strong> <span id="modal-def-press">19.9%</span></div>
             <div><strong>Def Pass EPA:</strong> <span id="modal-def-pass-epa">+0.101</span></div>
             <div><strong>3rd Down Stop %:</strong> <span id="modal-def-3rd-stop">57.0%</span></div>
+            <div><strong>Takeaway Drive %:</strong> <span id="modal-def-to-drive">30.0%</span></div>
+            <div><strong>Punt Drive %:</strong> <span id="modal-def-punt-drive">33.3%</span></div>
+            <div><strong>RZ TD Allowed %:</strong> <span id="modal-def-rz-td">31.8%</span></div>
             <div><strong>Def Health / Injuries:</strong> <span id="modal-def-injuries">Healthy</span></div>
             <div><strong>Sacks per Pressure:</strong> <span id="modal-sp">35.5%</span></div>
             <div><strong>Opp Pass EPA (L4):</strong> <span id="modal-epa">-0.153</span></div>

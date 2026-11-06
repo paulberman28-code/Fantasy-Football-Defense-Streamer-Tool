@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // State management
   let appData = null;
   let activeTab = 'week9';
+  let currentRenderedWeek9Rows = [];
   
   // Sort states for each table
   const sortStates = {
@@ -332,11 +333,18 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Scoring Floor': 'Predicted_Floor',
       'Projected Sacks': 'Proj_Sacks',
       'Projected Interceptions': 'Proj_INTs',
+      'Defensive Quality Index (DQI)': 'Def_DQI',
+      'Def Quality Index (DQI)': 'Def_DQI',
+      'DQI': 'Def_DQI',
       'Defensive Pressure %': 'Def_Pressure_Rate%',
       'Defensive Pass EPA Allowed': 'Def_Pass_EPA',
       'Def Pass EPA': 'Def_Pass_EPA',
       '3rd Down Stop Rate %': 'Def_3rd_Stop%',
       '3rd Down Stop %': 'Def_3rd_Stop%',
+      'Takeaway Drive %': 'Def_Takeaway_Drive%',
+      'Punt Drive %': 'Def_Punt_Drive%',
+      'Red Zone TD Allowed %': 'Def_RZ_TD_Allowed%',
+      'RZ TD Allowed %': 'Def_RZ_TD_Allowed%',
       'Key Defensive Injuries': 'Def_Injuries',
       'Def Health / Key Injuries': 'Def_Injuries',
       'Def Health / Injuries': 'Def_Injuries',
@@ -351,6 +359,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const targetKey = keyMap[sortConfig.column] || sortConfig.column;
     rows = sortData(rows, targetKey, sortConfig.ascending);
+    currentRenderedWeek9Rows = rows;
 
     document.getElementById('active-count-label').textContent = `Showing ${rows.length} Matchups`;
 
@@ -390,9 +399,13 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center stat-bold">${formatNum(r.Predicted_Floor, 1)}</td>
           <td class="col-center">${formatNum(r.Proj_Sacks, 1)}</td>
           <td class="col-center ${parseFloat(r.Proj_INTs) >= 1.5 ? 'stat-bold' : ''}">${formatNum(r.Proj_INTs, 1)}</td>
+          <td class="col-center"><span class="dqi-badge ${getDqiClass(r.Def_DQI)}">${r.Def_DQI !== '-' ? formatNum(r.Def_DQI, 1) : '—'}</span></td>
           <td class="col-center ${parseFloat(r['Def_Pressure_Rate%']) >= 25 ? 'stat-bold pts-top' : (parseFloat(r['Def_Pressure_Rate%']) >= 22.5 ? 'stat-bold' : '')}">${r['Def_Pressure_Rate%'] !== '-' ? formatNum(r['Def_Pressure_Rate%'], 1) + '%' : '—'}</td>
           <td class="col-center ${parseFloat(r.Def_Pass_EPA) < 0 ? 'pts-top stat-bold' : ''}">${r.Def_Pass_EPA !== '-' ? (parseFloat(r.Def_Pass_EPA) > 0 ? '+' : '') + formatNum(r.Def_Pass_EPA, 3) : '—'}</td>
           <td class="col-center ${parseFloat(r['Def_3rd_Stop%']) >= 70 ? 'pts-top stat-bold' : ''}">${r['Def_3rd_Stop%'] !== '-' ? formatNum(r['Def_3rd_Stop%'], 1) + '%' : '—'}</td>
+          <td class="col-center ${parseFloat(r['Def_Takeaway_Drive%']) >= 45 ? 'stat-bold' : ''}">${r['Def_Takeaway_Drive%'] !== '-' ? formatNum(r['Def_Takeaway_Drive%'], 1) + '%' : '—'}</td>
+          <td class="col-center ${parseFloat(r['Def_Punt_Drive%']) >= 40 ? 'stat-bold' : ''}">${r['Def_Punt_Drive%'] !== '-' ? formatNum(r['Def_Punt_Drive%'], 1) + '%' : '—'}</td>
+          <td class="col-center ${parseFloat(r['Def_RZ_TD_Allowed%']) <= 25 ? 'pts-top stat-bold' : ''}">${r['Def_RZ_TD_Allowed%'] !== '-' ? formatNum(r['Def_RZ_TD_Allowed%'], 1) + '%' : '—'}</td>
           <td>${r.Def_Injuries && !r.Def_Injuries.toLowerCase().includes('healthy') ? `<span class="injury-alert" title="${r.Def_Injuries}">⚠️ ${r.Def_Injuries}</span>` : '<span class="injury-healthy">✅ Healthy</span>'}</td>
           <td class="col-center">${formatNum(r['Sacks_Per_Press%'], 1)}%</td>
           <td class="col-center ${parseFloat(r.Off_Pass_EPA_L4) < 0 ? 'pts-top' : ''}">${parseFloat(r.Off_Pass_EPA_L4) > 0 ? '+' : ''}${formatNum(r.Off_Pass_EPA_L4, 3)}</td>
@@ -437,6 +450,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Stash Defense': 'Stash_DST',
       'Week 10 Opponent': 'W10_Opponent',
       'Week 10 Verdict': 'Tier_Rank',
+      'Def Quality Index (DQI)': 'Stash_DQI',
+      'Defensive Quality Index (DQI)': 'Stash_DQI',
+      'DQI': 'Stash_DQI',
+      'Def Pressure %': 'Def_Pressure_Rate%',
+      'Def Pass EPA': 'Def_Pass_EPA',
+      '3rd Down Stop %': 'Def_3rd_Stop%',
+      'Takeaway Drive %': 'Def_Takeaway_Drive%',
+      'RZ TD Allowed %': 'Def_RZ_TD_Allowed%',
       'Opponent L4 Points Allowed': 'Opp_Last_4',
       'Opponent Total Points Allowed': 'Opp_Total_Pts',
       'Opponent Starting QB': 'Opp_QB'
@@ -451,6 +472,12 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-sticky"><span class="stat-bold">${s.Stash_DST}</span></td>
           <td>${s.W10_Opponent}</td>
           <td class="col-center"><span class="badge ${tierBadgeClass}">${s.Stash_Tier || 'Neutral'}</span></td>
+          <td class="col-center"><span class="dqi-badge ${getDqiClass(s.Stash_DQI)}">${s.Stash_DQI !== undefined && s.Stash_DQI !== null && s.Stash_DQI !== '-' ? formatNum(s.Stash_DQI, 1) : '—'}</span></td>
+          <td class="col-center ${parseFloat(s['Def_Pressure_Rate%']) >= 25 ? 'stat-bold pts-top' : (parseFloat(s['Def_Pressure_Rate%']) >= 22.5 ? 'stat-bold' : '')}">${s['Def_Pressure_Rate%'] !== undefined && s['Def_Pressure_Rate%'] !== '-' ? formatNum(s['Def_Pressure_Rate%'], 1) + '%' : '—'}</td>
+          <td class="col-center ${parseFloat(s.Def_Pass_EPA) < 0 ? 'pts-top stat-bold' : ''}">${s.Def_Pass_EPA !== undefined && s.Def_Pass_EPA !== '-' ? (parseFloat(s.Def_Pass_EPA) > 0 ? '+' : '') + formatNum(s.Def_Pass_EPA, 3) : '—'}</td>
+          <td class="col-center ${parseFloat(s['Def_3rd_Stop%']) >= 70 ? 'pts-top stat-bold' : ''}">${s['Def_3rd_Stop%'] !== undefined && s['Def_3rd_Stop%'] !== '-' ? formatNum(s['Def_3rd_Stop%'], 1) + '%' : '—'}</td>
+          <td class="col-center ${parseFloat(s['Def_Takeaway_Drive%']) >= 45 ? 'stat-bold' : ''}">${s['Def_Takeaway_Drive%'] !== undefined && s['Def_Takeaway_Drive%'] !== '-' ? formatNum(s['Def_Takeaway_Drive%'], 1) + '%' : '—'}</td>
+          <td class="col-center ${parseFloat(s['Def_RZ_TD_Allowed%']) <= 25 ? 'pts-top stat-bold' : ''}">${s['Def_RZ_TD_Allowed%'] !== undefined && s['Def_RZ_TD_Allowed%'] !== '-' ? formatNum(s['Def_RZ_TD_Allowed%'], 1) + '%' : '—'}</td>
           <td class="col-center"><span class="pts-highlight ${s.Opp_Last_4 >= 30 ? 'pts-top' : ''}">${s.Opp_Last_4} pts</span> <span class="stat-dim">(${(s.Opp_Last_4 / 4).toFixed(1)}/g)</span></td>
           <td class="col-center"><span class="stat-bold">${s.Opp_Total_Pts} pts</span></td>
           <td>${s.Opp_QB}</td>
@@ -559,10 +586,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     const modal = document.getElementById('rationale-modal');
     const closeBtn = document.getElementById('modal-close-btn');
 
-    closeBtn.addEventListener('click', () => modal.close());
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) modal.close();
-    });
+    if (closeBtn) closeBtn.addEventListener('click', () => modal.close());
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.close();
+      });
+    }
+
+    // Clicking anywhere on a Week 9 matchup row opens the comprehensive strategic breakdown
+    const tbody = document.getElementById('projections-tbody');
+    if (tbody) {
+      tbody.addEventListener('click', (e) => {
+        const row = e.target.closest('tr.matchup-row');
+        if (row && row.dataset.rowIdx !== undefined) {
+          const idx = parseInt(row.dataset.rowIdx, 10);
+          if (currentRenderedWeek9Rows && currentRenderedWeek9Rows[idx]) {
+            openModal(currentRenderedWeek9Rows[idx]);
+          }
+        }
+      });
+    }
   }
 
   function openModal(data) {
@@ -581,14 +624,24 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     document.getElementById('modal-qb').textContent = data.Starting_QB;
     document.getElementById('modal-weather').textContent = data.Gametime_Weather;
+
+    const dqiEl = document.getElementById('modal-dqi');
+    if (dqiEl) dqiEl.textContent = (data.Def_DQI !== undefined && data.Def_DQI !== '-') ? formatNum(data.Def_DQI, 1) : '—';
     const defPressEl = document.getElementById('modal-def-press');
-    if (defPressEl) defPressEl.textContent = data['Def_Pressure_Rate%'] !== '-' ? `${formatNum(data['Def_Pressure_Rate%'], 1)}%` : '—';
+    if (defPressEl) defPressEl.textContent = (data['Def_Pressure_Rate%'] !== undefined && data['Def_Pressure_Rate%'] !== '-') ? `${formatNum(data['Def_Pressure_Rate%'], 1)}%` : '—';
     const defPassEpaEl = document.getElementById('modal-def-pass-epa');
-    if (defPassEpaEl) defPassEpaEl.textContent = data.Def_Pass_EPA !== '-' ? `${parseFloat(data.Def_Pass_EPA) > 0 ? '+' : ''}${formatNum(data.Def_Pass_EPA, 3)}` : '—';
+    if (defPassEpaEl) defPassEpaEl.textContent = (data.Def_Pass_EPA !== undefined && data.Def_Pass_EPA !== '-') ? `${parseFloat(data.Def_Pass_EPA) > 0 ? '+' : ''}${formatNum(data.Def_Pass_EPA, 3)}` : '—';
     const def3rdEl = document.getElementById('modal-def-3rd-stop');
-    if (def3rdEl) def3rdEl.textContent = data['Def_3rd_Stop%'] !== '-' ? `${formatNum(data['Def_3rd_Stop%'], 1)}%` : '—';
+    if (def3rdEl) def3rdEl.textContent = (data['Def_3rd_Stop%'] !== undefined && data['Def_3rd_Stop%'] !== '-') ? `${formatNum(data['Def_3rd_Stop%'], 1)}%` : '—';
+    const toEl = document.getElementById('modal-def-to-drive');
+    if (toEl) toEl.textContent = (data['Def_Takeaway_Drive%'] !== undefined && data['Def_Takeaway_Drive%'] !== '-') ? `${formatNum(data['Def_Takeaway_Drive%'], 1)}%` : '—';
+    const puntEl = document.getElementById('modal-def-punt-drive');
+    if (puntEl) puntEl.textContent = (data['Def_Punt_Drive%'] !== undefined && data['Def_Punt_Drive%'] !== '-') ? `${formatNum(data['Def_Punt_Drive%'], 1)}%` : '—';
+    const rzEl = document.getElementById('modal-def-rz-td');
+    if (rzEl) rzEl.textContent = (data['Def_RZ_TD_Allowed%'] !== undefined && data['Def_RZ_TD_Allowed%'] !== '-') ? `${formatNum(data['Def_RZ_TD_Allowed%'], 1)}%` : '—';
     const defInjEl = document.getElementById('modal-def-injuries');
     if (defInjEl) defInjEl.textContent = data.Def_Injuries || 'Healthy';
+
     document.getElementById('modal-sp').textContent = `${formatNum(data['Sacks_Per_Press%'], 1)}%`;
     document.getElementById('modal-epa').textContent = `${parseFloat(data.Off_Pass_EPA_L4) > 0 ? '+' : ''}${formatNum(data.Off_Pass_EPA_L4, 3)}`;
 
@@ -604,6 +657,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (tierStr.includes('Neutral')) return 'stash-neutral';
     if (tierStr.includes('Avoid') || tierStr.includes('Do Not')) return 'stash-avoid';
     return 'stash-neutral';
+  }
+
+  function getDqiClass(dqi) {
+    const val = parseFloat(dqi);
+    if (isNaN(val)) return 'dqi-avg';
+    if (val >= 90) return 'dqi-elite';
+    if (val >= 80) return 'dqi-strong';
+    if (val >= 70) return 'dqi-avg';
+    return 'dqi-low';
   }
 
   // 11. Dark / Light Theme Toggle
