@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   let appData = null;
   let activeTab = 'week9';
   let currentRenderedWeek9Rows = [];
+  let currentRenderedWeek10Rows = [];
   
   // Sort states for each table
   const sortStates = {
@@ -89,6 +90,35 @@ document.addEventListener('DOMContentLoaded', async () => {
       <div class="qb-cell">
         <div class="qb-name">${qbName}</div>
         ${qbStatusBadge ? `<div class="qb-status-wrap">${qbStatusBadge}</div>` : ''}
+      </div>
+    `;
+  }
+
+  // Helper for compact 1-line injury badge (prevents multi-line row stretching)
+  function formatInjuryCell(injRaw) {
+    if (!injRaw || injRaw === '-' || injRaw.toLowerCase().includes('healthy')) {
+      return '<span class="injury-healthy">✅ Healthy</span>';
+    }
+    if (injRaw.toUpperCase().includes('BYE')) {
+      return '<span class="stat-dim">BYE</span>';
+    }
+    const items = injRaw.split(/\),\s*/).filter(Boolean);
+    if (items.length <= 1) {
+      return `<span class="injury-alert" title="${injRaw}">⚠️ ${injRaw}</span>`;
+    }
+    const firstItem = items[0];
+    const parenIdx = firstItem.indexOf('(');
+    const firstName = parenIdx !== -1 ? firstItem.slice(0, parenIdx).trim() : firstItem.trim();
+    return `<span class="injury-alert" title="${injRaw} (Click row for full details)">⚠️ ${items.length} Injuries (${firstName} +${items.length - 1})</span>`;
+  }
+
+  // Helper for succinct 2-line rationale preview + inviting button
+  function formatRationaleCell(rationaleText) {
+    const text = rationaleText || 'Standard matchup projection.';
+    return `
+      <div class="rationale-preview-cell">
+        <div class="rationale-snippet" title="Click for complete strategic breakdown">${text}</div>
+        <button type="button" class="btn-rationale">Full Analysis ➔</button>
       </div>
     `;
   }
@@ -353,17 +383,74 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center ${parseFloat(r['Def_Takeaway_Drive%']) >= 45 ? 'stat-bold' : ''}">${r['Def_Takeaway_Drive%'] !== '-' ? formatNum(r['Def_Takeaway_Drive%'], 1) + '%' : '—'}</td>
           <td class="col-center ${parseFloat(r['Def_Punt_Drive%']) >= 40 ? 'stat-bold' : ''}">${r['Def_Punt_Drive%'] !== '-' ? formatNum(r['Def_Punt_Drive%'], 1) + '%' : '—'}</td>
           <td class="col-center ${parseFloat(r['Def_RZ_TD_Allowed%']) <= 25 ? 'pts-top stat-bold' : ''}">${r['Def_RZ_TD_Allowed%'] !== '-' ? formatNum(r['Def_RZ_TD_Allowed%'], 1) + '%' : '—'}</td>
-          <td>${r.Def_Injuries && !r.Def_Injuries.toLowerCase().includes('healthy') ? `<span class="injury-alert" title="${r.Def_Injuries}">⚠️ ${r.Def_Injuries}</span>` : '<span class="injury-healthy">✅ Healthy</span>'}</td>
+          <td>${formatInjuryCell(r.Def_Injuries)}</td>
           <td class="col-center">${formatNum(r['Sacks_Per_Press%'], 1)}%</td>
           <td class="col-center ${parseFloat(r['QB_Fumble_Rate%']) >= 2.5 ? 'pts-top stat-bold' : ''}" title="${r.QB_Fumbles !== undefined ? r.QB_Fumbles + ' total fumbles' : ''}">${r['QB_Fumble_Rate%'] !== undefined && r['QB_Fumble_Rate%'] !== '-' ? formatNum(r['QB_Fumble_Rate%'], 1) + '%' : '—'}</td>
           <td class="col-center ${parseFloat(r.Off_Pass_EPA_L4) < 0 ? 'pts-top' : ''}">${parseFloat(r.Off_Pass_EPA_L4) > 0 ? '+' : ''}${formatNum(r.Off_Pass_EPA_L4, 3)}</td>
           <td class="col-center">${r.NGS_TTT !== '-' ? formatNum(r.NGS_TTT, 2) + 's' : '—'}</td>
           <td class="col-center">${r['NGS_Agg%'] !== '-' ? formatNum(r['NGS_Agg%'], 1) + '%' : '—'}</td>
           <td><span class="weather-pill ${weatherClass}">${weatherIcon} ${weatherText}</span></td>
-          <td style="white-space: normal; min-width: 380px;">${r.Current_Week_Rationale || 'Standard matchup projection.'}</td>
+          <td class="col-rationale">${formatRationaleCell(r.Current_Week_Rationale)}</td>
         </tr>
       `;
     }).join('');
+
+    // Render Mobile Card View for Week 9
+    const cardsContainer = document.getElementById('week9-cards-container');
+    if (cardsContainer) {
+      cardsContainer.innerHTML = rows.map((r, idx) => {
+        const qbDisplay = formatQbCell(r.Starting_QB);
+        const weatherText = r.Gametime_Weather || 'N/A';
+        const isWind = weatherText.toLowerCase().includes('wind') || weatherText.toLowerCase().includes('gust') || weatherText.toLowerCase().includes('breezy');
+        const isDome = weatherText.toLowerCase().includes('dome');
+        const weatherClass = isWind ? 'weather-wind' : (isDome ? 'weather-dome' : '');
+        const weatherIcon = isWind ? '🌬️' : (isDome ? '🏟️' : '☀️');
+        const tierClass = getTierClass(r.Streamer_Tier);
+
+        return `
+          <article class="mobile-matchup-card" data-row-idx="${idx}">
+            <div class="m-card-header">
+              <div class="m-card-title-group">
+                <span class="m-card-team">${r.Target_DST}</span>
+                <span class="badge ${tierClass}">${r.Streamer_Tier}</span>
+              </div>
+              <div class="m-card-pts-box">
+                <span class="m-card-pts ${parseFloat(r.Proj_Fantasy_Pts) >= 9 ? 'pts-top' : ''}">${formatNum(r.Proj_Fantasy_Pts, 1)} <small>PTS</small></span>
+                <span class="m-card-floor">Floor: <strong>${formatNum(r.Predicted_Floor, 1)}</strong></span>
+              </div>
+            </div>
+            <div class="m-card-context-row">
+              <div class="m-card-qb">${qbDisplay}</div>
+              <div class="m-card-env">
+                <span class="weather-pill ${weatherClass}">${weatherIcon} ${weatherText}</span>
+              </div>
+            </div>
+            <div class="m-card-stats-grid">
+              <div class="m-stat-box">
+                <span class="m-stat-lbl">Proj Sacks</span>
+                <span class="m-stat-val">${formatNum(r.Proj_Sacks, 1)}</span>
+              </div>
+              <div class="m-stat-box">
+                <span class="m-stat-lbl">INT / Fum</span>
+                <span class="m-stat-val">${formatNum(r.Proj_INTs, 1)} / ${formatNum(r.Proj_Fumbles, 1)}</span>
+              </div>
+              <div class="m-stat-box">
+                <span class="m-stat-lbl">Vegas Pts</span>
+                <span class="m-stat-val">${formatNum(r.Opp_Implied_Pts, 1)}</span>
+              </div>
+              <div class="m-stat-box">
+                <span class="m-stat-lbl">Def DQI</span>
+                <span class="m-stat-val"><span class="dqi-badge ${getDqiClass(r.Def_DQI)}">${r.Def_DQI !== '-' ? formatNum(r.Def_DQI, 1) : '—'}</span></span>
+              </div>
+            </div>
+            <div class="m-card-footer">
+              <p class="m-card-snippet">${r.Current_Week_Rationale || 'Standard matchup projection.'}</p>
+              <button type="button" class="btn-rationale m-card-btn">Full Analysis & All Stats ➔</button>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
   }
 
   // 8. Render Tab 2: Week 10 Look-Ahead Stashes
@@ -400,11 +487,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
     const targetKey = keyMap[sortConfig.column] || sortConfig.column;
     rows = sortData(rows, targetKey, sortConfig.ascending);
+    currentRenderedWeek10Rows = rows;
 
-    tbody.innerHTML = rows.map(s => {
+    tbody.innerHTML = rows.map((s, idx) => {
       const tierBadgeClass = getTierClass(s.Stash_Tier);
       return `
-        <tr>
+        <tr data-stash-idx="${idx}" class="stash-row">
           <td class="col-sticky"><span class="stat-bold">${s.Stash_DST}</span></td>
           <td>${s.W10_Opponent}</td>
           <td class="col-center"><span class="badge ${tierBadgeClass}">${s.Stash_Tier || 'Neutral'}</span></td>
@@ -417,10 +505,58 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center"><span class="pts-highlight ${s.Opp_Last_4 >= 30 ? 'pts-top' : ''}">${s.Opp_Last_4} pts</span> <span class="stat-dim">(${(s.Opp_Last_4 / 4).toFixed(1)}/g)</span></td>
           <td class="col-center"><span class="stat-bold">${s.Opp_Total_Pts} pts</span></td>
           <td>${s.Opp_QB}</td>
-          <td style="white-space: normal; min-width: 380px;">${s.Look_Ahead_Rationale}</td>
+          <td class="col-rationale">${formatRationaleCell(s.Look_Ahead_Rationale)}</td>
         </tr>
       `;
     }).join('');
+
+    // Render Mobile Card View for Week 10 Stashes
+    const w10CardsContainer = document.getElementById('week10-cards-container');
+    if (w10CardsContainer) {
+      w10CardsContainer.innerHTML = rows.map((s, idx) => {
+        const tierBadgeClass = getTierClass(s.Stash_Tier);
+        return `
+          <article class="mobile-matchup-card stash-mobile-card" data-stash-idx="${idx}">
+            <div class="m-card-header">
+              <div class="m-card-title-group">
+                <span class="m-card-team">${s.Stash_DST} <small style="font-weight:500; opacity:0.85;">vs ${s.W10_Opponent}</small></span>
+                <span class="badge ${tierBadgeClass}">${s.Stash_Tier || 'Neutral'}</span>
+              </div>
+              <div class="m-card-pts-box">
+                <span class="m-card-pts ${s.Opp_Last_4 >= 30 ? 'pts-top' : ''}">${s.Opp_Last_4} <small>L4 PTS</small></span>
+                <span class="m-card-floor">Avg: <strong>${(s.Opp_Last_4 / 4).toFixed(1)}/g</strong></span>
+              </div>
+            </div>
+            <div class="m-card-context-row">
+              <div class="m-card-qb"><strong>Opp QB:</strong> ${s.Opp_QB}</div>
+              <div class="m-card-env"><strong>Szn Yield:</strong> ${s.Opp_Total_Pts} pts</div>
+            </div>
+            <div class="m-card-stats-grid">
+              <div class="m-stat-box">
+                <span class="m-stat-lbl">Def DQI</span>
+                <span class="m-stat-val"><span class="dqi-badge ${getDqiClass(s.Stash_DQI)}">${s.Stash_DQI !== undefined && s.Stash_DQI !== '-' ? formatNum(s.Stash_DQI, 1) : '—'}</span></span>
+              </div>
+              <div class="m-stat-box">
+                <span class="m-stat-lbl">Pressure %</span>
+                <span class="m-stat-val">${s['Def_Pressure_Rate%'] !== undefined && s['Def_Pressure_Rate%'] !== '-' ? formatNum(s['Def_Pressure_Rate%'], 1) + '%' : '—'}</span>
+              </div>
+              <div class="m-stat-box">
+                <span class="m-stat-lbl">3rd Stop %</span>
+                <span class="m-stat-val">${s['Def_3rd_Stop%'] !== undefined && s['Def_3rd_Stop%'] !== '-' ? formatNum(s['Def_3rd_Stop%'], 1) + '%' : '—'}</span>
+              </div>
+              <div class="m-stat-box">
+                <span class="m-stat-lbl">Takeaway %</span>
+                <span class="m-stat-val">${s['Def_Takeaway_Drive%'] !== undefined && s['Def_Takeaway_Drive%'] !== '-' ? formatNum(s['Def_Takeaway_Drive%'], 1) + '%' : '—'}</span>
+              </div>
+            </div>
+            <div class="m-card-footer">
+              <p class="m-card-snippet">${s.Look_Ahead_Rationale || 'Look-ahead stash analysis.'}</p>
+              <button type="button" class="btn-rationale m-card-btn">Full Stash Analysis & Stats ➔</button>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
   }
 
   function getStashBadgeClass(tier) {
@@ -570,7 +706,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }).join('');
   }
 
-  // 11. Modal Logic
+  // 11. Modal & Mobile View Logic
   function setupModalEvents() {
     const modal = document.getElementById('rationale-modal');
     const closeBtn = document.getElementById('modal-close-btn');
@@ -595,11 +731,92 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       });
     }
+
+    // Clicking anywhere on a Week 9 mobile card opens the modal
+    const w9Cards = document.getElementById('week9-cards-container');
+    if (w9Cards) {
+      w9Cards.addEventListener('click', (e) => {
+        const card = e.target.closest('.mobile-matchup-card');
+        if (card && card.dataset.rowIdx !== undefined) {
+          const idx = parseInt(card.dataset.rowIdx, 10);
+          if (currentRenderedWeek9Rows && currentRenderedWeek9Rows[idx]) {
+            openModal(currentRenderedWeek9Rows[idx]);
+          }
+        }
+      });
+    }
+
+    // Clicking anywhere on a Week 10 stash row opens the stash modal
+    const stashesTbody = document.getElementById('stashes-tbody');
+    if (stashesTbody) {
+      stashesTbody.addEventListener('click', (e) => {
+        const row = e.target.closest('tr.stash-row');
+        if (row && row.dataset.stashIdx !== undefined) {
+          const idx = parseInt(row.dataset.stashIdx, 10);
+          if (currentRenderedWeek10Rows && currentRenderedWeek10Rows[idx]) {
+            openStashModal(currentRenderedWeek10Rows[idx]);
+          }
+        }
+      });
+    }
+
+    // Clicking anywhere on a Week 10 mobile card opens the stash modal
+    const w10Cards = document.getElementById('week10-cards-container');
+    if (w10Cards) {
+      w10Cards.addEventListener('click', (e) => {
+        const card = e.target.closest('.stash-mobile-card');
+        if (card && card.dataset.stashIdx !== undefined) {
+          const idx = parseInt(card.dataset.stashIdx, 10);
+          if (currentRenderedWeek10Rows && currentRenderedWeek10Rows[idx]) {
+            openStashModal(currentRenderedWeek10Rows[idx]);
+          }
+        }
+      });
+    }
+
+    // Mobile View Mode Toggles (Cards vs Full Table)
+    document.querySelectorAll('.m-toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const view = btn.dataset.view;
+        const target = btn.dataset.target;
+        const section = document.getElementById(`tab-${target}`);
+        if (section) {
+          section.setAttribute('data-mobile-view', view);
+        }
+        const group = btn.closest('.mobile-view-toggle');
+        if (group) {
+          group.querySelectorAll('.m-toggle-btn').forEach(b => b.classList.remove('active'));
+        }
+        btn.classList.add('active');
+      });
+    });
+
+    // Mobile Sort Dropdowns
+    const w9MobileSort = document.getElementById('week9-mobile-sort');
+    if (w9MobileSort) {
+      w9MobileSort.addEventListener('change', (e) => {
+        const [col, dir] = e.target.value.split(':');
+        sortStates.week9 = { column: col, ascending: dir === 'asc' };
+        renderWeek9Projections();
+      });
+    }
+
+    const w10MobileSort = document.getElementById('week10-mobile-sort');
+    if (w10MobileSort) {
+      w10MobileSort.addEventListener('change', (e) => {
+        const [col, dir] = e.target.value.split(':');
+        sortStates.week10 = { column: col, ascending: dir === 'asc' };
+        renderWeek10Stashes();
+      });
+    }
   }
 
   function openModal(data) {
     const modal = document.getElementById('rationale-modal');
     if (!modal) return;
+
+    const kpiRow = modal.querySelector('.modal-kpi-row');
+    if (kpiRow) kpiRow.style.display = '';
 
     document.getElementById('modal-matchup-title').textContent = `${data.Target_DST} vs ${data.Offense}`;
     document.getElementById('modal-tier-badge').textContent = data.Streamer_Tier;
@@ -639,6 +856,47 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('modal-epa').textContent = `${parseFloat(data.Off_Pass_EPA_L4) > 0 ? '+' : ''}${formatNum(data.Off_Pass_EPA_L4, 3)}`;
 
     document.getElementById('modal-rationale-text').textContent = data.Current_Week_Rationale || 'Matchup analysis pending.';
+
+    modal.showModal();
+  }
+
+  function openStashModal(data) {
+    const modal = document.getElementById('rationale-modal');
+    if (!modal) return;
+
+    const kpiRow = modal.querySelector('.modal-kpi-row');
+    if (kpiRow) kpiRow.style.display = 'none';
+
+    document.getElementById('modal-matchup-title').textContent = `Week 10 Stash: ${data.Stash_DST} vs ${data.W10_Opponent}`;
+    document.getElementById('modal-tier-badge').textContent = data.Stash_Tier || 'Neutral';
+    document.getElementById('modal-tier-badge').className = `badge tier-badge ${getTierClass(data.Stash_Tier)}`;
+
+    document.getElementById('modal-qb').textContent = data.Opp_QB || '—';
+    document.getElementById('modal-weather').textContent = `Opp L4 Yield: ${data.Opp_Last_4} pts (${(data.Opp_Last_4 / 4).toFixed(1)}/g) • Szn: ${data.Opp_Total_Pts} pts`;
+
+    const dqiEl = document.getElementById('modal-dqi');
+    if (dqiEl) dqiEl.textContent = (data.Stash_DQI !== undefined && data.Stash_DQI !== '-') ? formatNum(data.Stash_DQI, 1) : '—';
+    const defPressEl = document.getElementById('modal-def-press');
+    if (defPressEl) defPressEl.textContent = (data['Def_Pressure_Rate%'] !== undefined && data['Def_Pressure_Rate%'] !== '-') ? `${formatNum(data['Def_Pressure_Rate%'], 1)}%` : '—';
+    const defPassEpaEl = document.getElementById('modal-def-pass-epa');
+    if (defPassEpaEl) defPassEpaEl.textContent = (data.Def_Pass_EPA !== undefined && data.Def_Pass_EPA !== '-') ? `${parseFloat(data.Def_Pass_EPA) > 0 ? '+' : ''}${formatNum(data.Def_Pass_EPA, 3)}` : '—';
+    const def3rdEl = document.getElementById('modal-def-3rd-stop');
+    if (def3rdEl) def3rdEl.textContent = (data['Def_3rd_Stop%'] !== undefined && data['Def_3rd_Stop%'] !== '-') ? `${formatNum(data['Def_3rd_Stop%'], 1)}%` : '—';
+    const toEl = document.getElementById('modal-def-to-drive');
+    if (toEl) toEl.textContent = (data['Def_Takeaway_Drive%'] !== undefined && data['Def_Takeaway_Drive%'] !== '-') ? `${formatNum(data['Def_Takeaway_Drive%'], 1)}%` : '—';
+    const puntEl = document.getElementById('modal-def-punt-drive');
+    if (puntEl) puntEl.textContent = '—';
+    const rzEl = document.getElementById('modal-def-rz-td');
+    if (rzEl) rzEl.textContent = (data['Def_RZ_TD_Allowed%'] !== undefined && data['Def_RZ_TD_Allowed%'] !== '-') ? `${formatNum(data['Def_RZ_TD_Allowed%'], 1)}%` : '—';
+    const defInjEl = document.getElementById('modal-def-injuries');
+    if (defInjEl) defInjEl.textContent = 'See Week 9 Tab';
+
+    document.getElementById('modal-sp').textContent = '—';
+    const qbFumbEl = document.getElementById('modal-qb-fumble');
+    if (qbFumbEl) qbFumbEl.textContent = '—';
+    document.getElementById('modal-epa').textContent = '—';
+
+    document.getElementById('modal-rationale-text').textContent = data.Look_Ahead_Rationale || 'Look-ahead analysis pending.';
 
     modal.showModal();
   }

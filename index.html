@@ -98,7 +98,7 @@
     </nav>
 
     <!-- Tab 1: Week 9 Matchups & Projections -->
-    <section class="tab-panel active" id="tab-week9" role="tabpanel" aria-labelledby="tab-btn-week9">
+    <section class="tab-panel active" id="tab-week9" role="tabpanel" aria-labelledby="tab-btn-week9" data-mobile-view="cards">
       <div class="panel-header">
         <div class="panel-title-wrap">
           <h2 class="panel-title">Week 9 Streaming Rankings & Next Gen Stats</h2>
@@ -112,8 +112,29 @@
         </div>
       </div>
 
-      <div class="mobile-scroll-hint">
-        <span>👈 Swipe table horizontally to see all stats 👉</span>
+      <div class="mobile-view-controls" id="week9-mobile-controls">
+        <div class="mobile-view-toggle" role="group" aria-label="Week 9 view mode selector">
+          <button type="button" class="m-toggle-btn active" data-view="cards" data-target="week9">📱 Card View</button>
+          <button type="button" class="m-toggle-btn" data-view="table" data-target="week9">📊 Full Table</button>
+        </div>
+        <div class="mobile-sort-wrap" id="week9-mobile-sort-wrap">
+          <label for="week9-mobile-sort" class="m-sort-label">Sort:</label>
+          <select id="week9-mobile-sort" class="m-sort-select">
+            <option value="Projected Fantasy Points:desc">Proj Points (High ➔ Low)</option>
+            <option value="Scoring Floor:desc">Scoring Floor (High ➔ Low)</option>
+            <option value="Projected Sacks:desc">Proj Sacks (High ➔ Low)</option>
+            <option value="Defensive Quality Index (DQI):desc">Def DQI (High ➔ Low)</option>
+            <option value="Vegas Implied Opponent Score:asc">Vegas Implied (Low ➔ High)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mobile-cards-container" id="week9-cards-container">
+        <!-- Dynamically populated by app.js for mobile screens -->
+      </div>
+
+      <div class="mobile-scroll-hint" id="week9-scroll-hint">
+        <span>👈 Swipe table horizontally to see all 25 columns • Tap any row for Full Analysis 👉</span>
       </div>
 
       <div class="table-wrapper" tabindex="0" role="region" aria-label="Week 9 Defensive Projections Table">
@@ -164,7 +185,7 @@
     </section>
 
     <!-- Tab 2: Week 10 Look-Ahead Stash Board -->
-    <section class="tab-panel" id="tab-week10" role="tabpanel" aria-labelledby="tab-btn-week10" hidden>
+    <section class="tab-panel" id="tab-week10" role="tabpanel" aria-labelledby="tab-btn-week10" data-mobile-view="cards" hidden>
       <div class="panel-header">
         <div class="panel-title-wrap">
           <h2 class="panel-title">Week 10 Look-Ahead Stash Board</h2>
@@ -178,8 +199,28 @@
         </div>
       </div>
 
-      <div class="mobile-scroll-hint">
-        <span>👈 Swipe table horizontally to see all stats 👉</span>
+      <div class="mobile-view-controls" id="week10-mobile-controls">
+        <div class="mobile-view-toggle" role="group" aria-label="Week 10 view mode selector">
+          <button type="button" class="m-toggle-btn active" data-view="cards" data-target="week10">📱 Card View</button>
+          <button type="button" class="m-toggle-btn" data-view="table" data-target="week10">📊 Full Table</button>
+        </div>
+        <div class="mobile-sort-wrap" id="week10-mobile-sort-wrap">
+          <label for="week10-mobile-sort" class="m-sort-label">Sort:</label>
+          <select id="week10-mobile-sort" class="m-sort-select">
+            <option value="Opponent L4 Points Allowed:desc">Opp L4 Pts Allowed (High ➔ Low)</option>
+            <option value="Week 10 Verdict:asc">Week 10 Verdict (Priority First)</option>
+            <option value="Def Quality Index (DQI):desc">Def DQI (High ➔ Low)</option>
+            <option value="Opponent Total Points Allowed:desc">Opp Szn Pts Allowed (High ➔ Low)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mobile-cards-container" id="week10-cards-container">
+        <!-- Dynamically populated by app.js for mobile screens -->
+      </div>
+
+      <div class="mobile-scroll-hint" id="week10-scroll-hint">
+        <span>👈 Swipe table horizontally to see all columns • Tap any row for Full Analysis 👉</span>
       </div>
 
       <div class="table-wrapper" tabindex="0" role="region" aria-label="Week 10 Look-Ahead Stash Table">
