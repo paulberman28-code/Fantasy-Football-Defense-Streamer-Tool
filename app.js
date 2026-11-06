@@ -765,29 +765,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function renderDefHeatCell(val) {
-    if (val === 'BYE') return `<td class="stat-dim col-wk">BYE</td>`;
-    const num = parseFloat(val);
-    if (isNaN(num)) return `<td class="col-wk">${val}</td>`;
-
-    // Defense Scoring Heatmap:
-    // Emerald for Elite Boom (10–22+ pts scored)
-    // Mint for Solid Floor (6–9 pts)
-    // Slate for Modest (3–5 pts)
-    // Coral for Sub-Par / Quiet (0–2 pts)
-    let bg = '';
-    let textColor = '#ffffff';
-
-    if (num >= 10) {
-      bg = '#059669'; // rich emerald
-    } else if (num >= 6) {
-      bg = '#10b981'; // mint green
-    } else if (num >= 3) {
-      bg = '#475569'; // slate
-    } else {
-      bg = '#ef4444'; // coral red
-    }
-
-    return `<td class="col-center col-wk excel-cell" style="background-color: ${bg} !important; color: ${textColor} !important; font-weight: 700; text-align: center;">${num}</td>`;
+    // Use the exact same Microsoft Excel Red-White-Blue conditional formatting scale as Offense History
+    return renderHeatCell(val);
   }
 
   // 10. Render Tab 4: D/ST Fantasy Points Anatomy (Weeks 1-8)
