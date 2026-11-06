@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     week9: { column: 'Projected Fantasy Points', ascending: false },
     week10: { column: 'Opponent L4 Points Allowed', ascending: false },
     history: { column: 'Total Points Allowed (W1-8)', ascending: false },
+    'def-history': { column: 'Total Points (W1-8)', ascending: false },
     anatomy: { column: 'PPG', ascending: false },
     audit: { column: 'Projected Points', ascending: false }
   };
@@ -284,6 +285,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderWeek9Projections();
     renderWeek10Stashes();
     renderHistory();
+    renderDefenseHistory();
     renderPointsAnatomy();
     renderAuditReport();
   }
@@ -292,6 +294,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (activeTab === 'week9') renderWeek9Projections();
     else if (activeTab === 'week10') renderWeek10Stashes();
     else if (activeTab === 'history') renderHistory();
+    else if (activeTab === 'def-history') renderDefenseHistory();
     else if (activeTab === 'anatomy') renderPointsAnatomy();
     else if (activeTab === 'audit') renderAuditReport();
   }
@@ -685,6 +688,106 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     return `<td class="col-wk excel-cell" style="background-color: ${bg} !important; color: ${textColor} !important; font-weight: 700;">${num}</td>`;
+  }
+
+  // 9b. Render Tab: Historical Defense Performance & Momentum (W1–W8)
+  function renderDefenseHistory() {
+    const tbody = document.getElementById('def-history-tbody');
+    if (!tbody || !appData.historicalDefenses) return;
+
+    let rows = [...appData.historicalDefenses];
+
+    const sortConfig = sortStates['def-history'] || { column: 'Total Points (W1-8)', ascending: false };
+    const keyMap = {
+      'Defense': 'Defense',
+      'Week 1': 'W1', 'Week 2': 'W2', 'Week 3': 'W3', 'Week 4': 'W4',
+      'Week 5': 'W5', 'Week 6': 'W6', 'Week 7': 'W7', 'Week 8': 'W8',
+      'Last 2 Games Played': 'Last_2_Games',
+      'Last 4 Games Played': 'Last_4_Games',
+      'Total Points (W1-8)': 'Total_pts',
+      'Total Points': 'Total_pts',
+      'Total Pts (W1-8)': 'Total_pts',
+      'Fantasy PPG': 'PPG',
+      'PPG': 'PPG',
+      'Trend Momentum': 'Trend_Delta',
+      'Momentum Trend': 'Trend_Delta',
+      'Def Quality Index (DQI)': 'Def_DQI',
+      'Def Pressure %': 'Def_Pressure_Rate%',
+      'Def Pass EPA': 'Def_Pass_EPA',
+      'Total Sacks': 'Sacks',
+      'Sacks': 'Sacks',
+      'Total Takeaways': 'Takeaways',
+      'Takeaways': 'Takeaways',
+      'Week 9 Opponent': 'Week9_Opponent',
+      'Week 9 Matchup': 'Week9_Opponent',
+      'Week 9 Verdict': 'Week9_Verdict'
+    };
+    const targetKey = keyMap[sortConfig.column] || sortConfig.column;
+    rows = sortData(rows, targetKey, sortConfig.ascending);
+
+    tbody.innerHTML = rows.map(d => {
+      const tierClass = getTierClass(d.Week9_Verdict);
+      let trendBadge = '';
+      if (d.Trend_Delta >= 1.5) {
+        trendBadge = `<span class="badge badge-priority" title="L4 PPG is +${d.Trend_Delta} above season average">▲ +${d.Trend_Delta} Surging</span>`;
+      } else if (d.Trend_Delta <= -1.5) {
+        trendBadge = `<span class="badge badge-avoid" title="L4 PPG is ${d.Trend_Delta} below season average">▼ ${d.Trend_Delta} Cooling</span>`;
+      } else {
+        trendBadge = `<span class="badge badge-neutral" title="L4 PPG is consistent with season average">➔ ${d.Trend_Delta > 0 ? '+' : ''}${d.Trend_Delta} Steady</span>`;
+      }
+
+      return `
+        <tr>
+          <td class="col-sticky"><span class="stat-bold team-desktop">${d.Defense}</span><span class="stat-bold team-mobile">${d.Team || d.Defense}</span></td>
+          ${renderDefHeatCell(d.W1)}
+          ${renderDefHeatCell(d.W2)}
+          ${renderDefHeatCell(d.W3)}
+          ${renderDefHeatCell(d.W4)}
+          ${renderDefHeatCell(d.W5)}
+          ${renderDefHeatCell(d.W6)}
+          ${renderDefHeatCell(d.W7)}
+          ${renderDefHeatCell(d.W8)}
+          <td class="col-center"><span class="stat-bold ${d.Last_2_Games >= 18 ? 'pts-top' : ''}">${d.Last_2_Games}</span></td>
+          <td class="col-center"><span class="stat-bold ${d.Last_4_Games >= 32 ? 'pts-top' : ''}">${d.Last_4_Games}</span> <span class="stat-dim">(${d.L4_PPG}/g)</span></td>
+          <td class="col-center"><span class="pts-highlight ${d.Total_pts >= 50 ? 'pts-top' : ''}">${d.Total_pts}</span></td>
+          <td class="col-center stat-bold">${formatNum(d.PPG, 1)}</td>
+          <td class="col-center">${trendBadge}</td>
+          <td class="col-center"><span class="dqi-badge ${getDqiClass(d.Def_DQI)}">${d.Def_DQI !== '-' ? formatNum(d.Def_DQI, 1) : '—'}</span></td>
+          <td class="col-center ${parseFloat(d['Def_Pressure_Rate%']) >= 25 ? 'stat-bold pts-top' : ''}">${d['Def_Pressure_Rate%'] !== '-' ? formatNum(d['Def_Pressure_Rate%'], 1) + '%' : '—'}</td>
+          <td class="col-center ${parseFloat(d.Def_Pass_EPA) < 0 ? 'pts-top stat-bold' : ''}">${d.Def_Pass_EPA !== '-' ? (parseFloat(d.Def_Pass_EPA) > 0 ? '+' : '') + formatNum(d.Def_Pass_EPA, 3) : '—'}</td>
+          <td class="col-center stat-bold">${d.Sacks}</td>
+          <td class="col-center stat-bold">${d.Takeaways}</td>
+          <td>${d.Week9_Opponent}</td>
+          <td class="col-center"><span class="badge ${tierClass}">${d.Week9_Verdict}</span></td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  function renderDefHeatCell(val) {
+    if (val === 'BYE') return `<td class="stat-dim col-wk">BYE</td>`;
+    const num = parseFloat(val);
+    if (isNaN(num)) return `<td class="col-wk">${val}</td>`;
+
+    // Defense Scoring Heatmap:
+    // Emerald for Elite Boom (10–22+ pts scored)
+    // Mint for Solid Floor (6–9 pts)
+    // Slate for Modest (3–5 pts)
+    // Coral for Sub-Par / Quiet (0–2 pts)
+    let bg = '';
+    let textColor = '#ffffff';
+
+    if (num >= 10) {
+      bg = '#059669'; // rich emerald
+    } else if (num >= 6) {
+      bg = '#10b981'; // mint green
+    } else if (num >= 3) {
+      bg = '#475569'; // slate
+    } else {
+      bg = '#ef4444'; // coral red
+    }
+
+    return `<td class="col-center col-wk excel-cell" style="background-color: ${bg} !important; color: ${textColor} !important; font-weight: 700; text-align: center;">${num}</td>`;
   }
 
   // 10. Render Tab 4: D/ST Fantasy Points Anatomy (Weeks 1-8)

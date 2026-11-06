@@ -432,9 +432,9 @@ body[data-active-tab="rules"] .app-subtitle {
 
 .nav-tabs {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 0.5rem;
-  padding: 0.4rem;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.35rem;
+  padding: 0.35rem;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);

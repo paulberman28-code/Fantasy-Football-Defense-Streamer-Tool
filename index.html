@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WAFFLe Fantasy D/ST Streamer Tool | 2026 Season</title>
   <meta name="description" content="WAFFLe Customized Defensive Scoring Fantasy D/ST streamer rankings and projections using NFL play-by-play data, Next Gen Stats, Vegas lines, and game-time weather.">
-  <link rel="stylesheet" href="style.css?v=20261106_6">
+  <link rel="stylesheet" href="style.css?v=20261106_7">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -88,7 +88,10 @@
         <span class="tab-icon">🔮</span> <span class="tab-label">Week 10 Stashes</span>
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-history" aria-selected="false" aria-controls="tab-history" data-tab="history">
-        <span class="tab-icon">📊</span> <span class="tab-label">Offense History (W1–8)</span>
+        <span class="tab-icon">📊</span> <span class="tab-label">Offense History</span>
+      </button>
+      <button class="nav-tab" role="tab" id="tab-btn-def-history" aria-selected="false" aria-controls="tab-def-history" data-tab="def-history">
+        <span class="tab-icon">🛡️</span> <span class="tab-label">Defense History</span>
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-anatomy" aria-selected="false" aria-controls="tab-anatomy" data-tab="anatomy">
         <span class="tab-icon">🏈</span> <span class="tab-label">Points Anatomy</span>
@@ -97,7 +100,7 @@
         <span class="tab-icon">📖</span> <span class="tab-label">Scoring Rules</span>
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-audit" aria-selected="false" aria-controls="tab-audit" data-tab="audit">
-        <span class="tab-icon">🎓</span> <span class="tab-label">Audit & Report Card</span>
+        <span class="tab-icon">🎓</span> <span class="tab-label">Report Card</span>
       </button>
     </nav>
 
@@ -300,6 +303,62 @@
             </tr>
           </thead>
           <tbody id="history-tbody">
+            <!-- Dynamically populated by app.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Tab 4: Master Defense History & Momentum Board (Weeks 1-8) -->
+    <section class="tab-panel" id="tab-def-history" role="tabpanel" aria-labelledby="tab-btn-def-history" hidden>
+      <div class="panel-header">
+        <div class="panel-title-wrap">
+          <h2 class="panel-title">Master Defense History & Momentum Board (Weeks 1–8)</h2>
+          <p class="panel-desc">Empirical fantasy scoring history for all 32 NFL defenses across Weeks 1–8 under WAFFLe rules. Evaluates rolling momentum (Last 2 & Last 4 games played) and short-term trajectory (L4 PPG vs. Season PPG) alongside underlying quality metrics.</p>
+        </div>
+        <div class="legend-row">
+          <span class="legend-item"><span class="legend-badge" style="background: #059669; color: #ffffff; padding: 0.2rem 0.5rem; font-weight: 700;">Emerald</span> Elite Boom (10–22+ pts scored)</span>
+          <span class="legend-item"><span class="legend-badge" style="background: #10b981; color: #ffffff; padding: 0.2rem 0.5rem; font-weight: 700;">Mint</span> Solid Floor (6–9 pts)</span>
+          <span class="legend-item"><span class="legend-badge" style="background: #64748b; color: #ffffff; padding: 0.2rem 0.5rem; font-weight: 700;">Slate</span> Modest (3–5 pts)</span>
+          <span class="legend-item"><span class="legend-badge" style="background: #ef4444; color: #ffffff; padding: 0.2rem 0.5rem; font-weight: 700;">Coral</span> Sub-Par / Quiet (0–2 pts)</span>
+          <span class="legend-item"><span class="legend-badge badge-priority">▲ Surging</span> L4 PPG &gt; Szn (+1.5+)</span>
+          <span class="legend-item"><span class="legend-badge badge-avoid">▼ Cooling</span> L4 PPG &lt; Szn (-1.5-)</span>
+        </div>
+      </div>
+
+      <div class="mobile-scroll-hint">
+        <span>👈 Swipe table horizontally to see all 21 columns 👉</span>
+      </div>
+
+      <div class="table-wrapper" tabindex="0" role="region" aria-label="Master Defense History & Momentum Grid">
+        <table id="def-history-table">
+          <caption class="sr-only">Historical Points Scored by NFL Defenses Across Weeks 1 to 8</caption>
+          <thead>
+            <tr>
+              <th data-sort="Defense" class="col-sticky col-def">Defense <span class="sort-arrow"></span></th>
+              <th data-sort="Week 1" class="col-center col-wk">W1 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 2" class="col-center col-wk">W2 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 3" class="col-center col-wk">W3 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 4" class="col-center col-wk">W4 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 5" class="col-center col-wk">W5 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 6" class="col-center col-wk">W6 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 7" class="col-center col-wk">W7 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 8" class="col-center col-wk">W8 <span class="sort-arrow"></span></th>
+              <th data-sort="Last 2 Games Played" class="col-center col-stat">Last 2<br>Games <span class="sort-arrow"></span></th>
+              <th data-sort="Last 4 Games Played" class="col-center col-stat">Last 4<br>Games <span class="sort-arrow"></span></th>
+              <th data-sort="Total Points (W1-8)" class="col-center col-stat sort-active desc">Total Pts<br>(W1–8) <span class="sort-arrow">▼</span></th>
+              <th data-sort="Fantasy PPG" class="col-center col-stat">PPG <span class="sort-arrow"></span></th>
+              <th data-sort="Trend Momentum" class="col-center col-stat-wide">Momentum<br>Trend <span class="sort-arrow"></span></th>
+              <th data-sort="Def Quality Index (DQI)" class="col-center col-stat">Def Quality<br>Index (Szn) <span class="sort-arrow"></span></th>
+              <th data-sort="Def Pressure %" class="col-center col-stat-wide">Def Pressure<br>% (Szn) <span class="sort-arrow"></span></th>
+              <th data-sort="Def Pass EPA" class="col-center col-stat-wide">Def Pass<br>EPA (Szn) <span class="sort-arrow"></span></th>
+              <th data-sort="Total Sacks" class="col-center col-stat">Sacks <span class="sort-arrow"></span></th>
+              <th data-sort="Total Takeaways" class="col-center col-stat">Takeaways <span class="sort-arrow"></span></th>
+              <th data-sort="Week 9 Opponent" class="col-def">Week 9<br>Matchup <span class="sort-arrow"></span></th>
+              <th data-sort="Week 9 Verdict" class="col-center col-tier">Week 9<br>Verdict <span class="sort-arrow"></span></th>
+            </tr>
+          </thead>
+          <tbody id="def-history-tbody">
             <!-- Dynamically populated by app.js -->
           </tbody>
         </table>
@@ -866,8 +925,8 @@
   </footer>
 
   <!-- Load data.js for zero-CORS local Safari viewing (file:// protocol) -->
-  <script src="data.js?v=20261106_6"></script>
+  <script src="data.js?v=20261106_7"></script>
   <!-- Main application logic -->
-  <script src="app.js?v=20261106_6"></script>
+  <script src="app.js?v=20261106_7"></script>
 </body>
 </html>
