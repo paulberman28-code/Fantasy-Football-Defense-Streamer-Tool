@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WAFFLe Fantasy D/ST Streamer Tool | 2026 Season</title>
   <meta name="description" content="WAFFLe Customized Defensive Scoring Fantasy D/ST streamer rankings and projections using NFL play-by-play data, Next Gen Stats, Vegas lines, and game-time weather.">
-  <link rel="stylesheet" href="style.css?v=20261106_3">
+  <link rel="stylesheet" href="style.css?v=20261106_4">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -623,6 +623,49 @@
             </div>
           </div>
         </div>
+
+        <!-- 7. Model Accuracy Audit & Error Attribution Glossary -->
+        <div class="card doc-card full-span">
+          <h3 class="card-title">7. Model Accuracy Audit & Error Attribution Glossary (Tab 6 Metrics)</h3>
+          <p class="doc-text">
+            Objective definitions and mathematical formulas for all validation metrics, snapshot ledgers, and reconciliation columns featured in the Model Accuracy Audit & Report Card:
+          </p>
+          <ul class="advanced-defs">
+            <li>
+              <strong>Zero Hindsight Guarantee & Immutable Snapshots:</strong> Prior to weekly kickoff, all model inputs, projections, and verdicts are mathematically frozen into timestamped, version-controlled JSON snapshots archived in Git. Each snapshot is sealed with a unique SHA-256 cryptographic checksum, guaranteeing that projections are never tweaked, retroactively back-fitted, or adjusted after game results are known.
+            </li>
+            <li>
+              <strong>Cumulative Mean Absolute Error (MAE):</strong> The primary statistical benchmark evaluating overall projection precision across all audited matchups: <code>MAE = (1/N) × Σ |Actual Fantasy Pts - Projected Fantasy Pts|</code>. In NFL fantasy defense modeling, where single-game variance is notoriously elevated, an MAE &le;3.2 pts represents elite predictive calibration.
+            </li>
+            <li>
+              <strong>Priority Hit Rate %:</strong> The percentage of top-tier recommendations (Priority tier) that deliver winning fantasy outcomes. A Priority call is scored as a <em>HIT</em> if the defense scores &ge;7.0 actual fantasy points (the WAFFLe threshold for a top-tier starting performance) or meets/exceeds its projection while finishing in the top half of weekly defenses.
+            </li>
+            <li>
+              <strong>Floor Reliability Rate %:</strong> The share of audited matchups where a defense's actual fantasy score met or exceeded its conservative downside baseline (<code>Actual Pts &ge; Predicted_Floor</code>). Model target benchmark is &ge;85.0%, ensuring managers relying on floor picks avoid devastating zero-point busts.
+            </li>
+            <li>
+              <strong>Weekly Letter Grade Scale:</strong> An objective mathematical rubric scoring overall weekly model performance based on accuracy, recommendation success, and downside protection:
+              <br>• <strong style="color: #4ade80;">Grade A / A+:</strong> MAE &le;2.8 pts, Priority Hit Rate &ge;75%, Floor Reliability &ge;85%
+              <br>• <strong style="color: #38bdf8;">Grade A-:</strong> MAE &le;3.2 pts, Priority Hit Rate &ge;70%, Floor Reliability &ge;80%
+              <br>• <strong style="color: #60a5fa;">Grade B+ / B:</strong> MAE &le;3.8 pts, Priority Hit Rate &ge;50–60%, Floor Reliability &ge;70%
+              <br>• <strong style="color: #f59e0b;">Grade C:</strong> MAE &le;4.2 pts
+              <br>• <strong style="color: #f87171;">Grade D / F:</strong> MAE &gt;4.2 pts
+            </li>
+            <li>
+              <strong>Projection Error (&Delta; Error):</strong> The directional variance between actual box-score output and pre-game expectations: <code>Actual Pts - Projected Pts</code>. A positive score (+2.4) indicates an outperforming defense, while a negative score (-3.1) highlights an underperformance.
+            </li>
+            <li>
+              <strong>Component Error Attribution (Sacks, Turnovers, Brackets, Other):</strong> Granular breakdown isolating the four distinct scoring engines under WAFFLe rules to explain 100% of the variance between projection and reality:
+              <br>• <strong>Sacks (Proj / Act):</strong> 1 pt per sack generated.
+              <br>• <strong>Turnovers (Proj / Act):</strong> 1 pt per takeaway (Interceptions + Fumble Recoveries).
+              <br>• <strong>Bracket (Proj / Act):</strong> Points-allowed bracket points (10 pts for shutout, 7 pts for 1–6 pts, 3 pts for 7–13 pts, 0 pts for 14+ pts).
+              <br>• <strong>Other & Splash Plays (Proj / Act):</strong> Defensive/ST Touchdowns (6 pts), Safeties (2 pts), and Blocked Kicks (1 pt). Isolating "Other" separates predictable, repeatable defensive pressure skills from low-frequency, high-variance splash events (such as an 85-yard fumble-return TD).
+            </li>
+            <li>
+              <strong>Mathematical Component Identity:</strong> Proves full accounting transparency across all active matchups: <code>Total Projected Points = Proj Sacks + Proj Turnovers + Proj Bracket + Proj Other</code>, and <code>Actual Fantasy Points = Actual Sacks + Actual Turnovers + Actual Bracket + Actual Other</code>.
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <!-- Tab 6: Model Audit & Accuracy Report Card -->
@@ -817,8 +860,8 @@
   </footer>
 
   <!-- Load data.js for zero-CORS local Safari viewing (file:// protocol) -->
-  <script src="data.js?v=20261106_3"></script>
+  <script src="data.js?v=20261106_4"></script>
   <!-- Main application logic -->
-  <script src="app.js?v=20261106_3"></script>
+  <script src="app.js?v=20261106_4"></script>
 </body>
 </html>
