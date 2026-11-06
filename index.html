@@ -97,74 +97,6 @@
       </button>
     </nav>
 
-    <!-- Global Filter & Search Bar -->
-    <section class="filter-bar" aria-label="Table Controls and Filters">
-      <div class="search-box">
-        <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
-          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-        </svg>
-        <input type="text" id="global-search" placeholder="Search team, opponent, or quarterback..." aria-label="Search dataset">
-      </div>
-
-      <div class="filter-controls" id="week9-filters">
-        <div class="filter-item">
-          <label for="tier-filter">Verdict:</label>
-          <select id="tier-filter" aria-label="Filter by Verdict">
-            <option value="ALL">All Verdicts</option>
-            <option value="TARGETS_ONLY">Priority & Speculative Only</option>
-            <option value="Priority">Priority</option>
-            <option value="Speculative">Speculative</option>
-            <option value="Neutral">Neutral</option>
-            <option value="Avoid">Avoid</option>
-          </select>
-        </div>
-
-        <label class="toggle-control">
-          <input type="checkbox" id="backup-qb-toggle">
-          <span class="toggle-track"></span>
-          <span class="toggle-label">Backup QB Matchups Only</span>
-        </label>
-
-        <label class="toggle-control">
-          <input type="checkbox" id="weather-toggle">
-          <span class="toggle-track"></span>
-          <span class="toggle-label">High Wind / Rain Alert Only</span>
-        </label>
-
-        <button id="reset-filters-btn" class="btn-text">Reset Filters</button>
-      </div>
-
-      <div class="filter-controls" id="week10-filters" style="display: none;">
-        <div class="filter-item">
-          <label for="w10-tier-filter">Verdict:</label>
-          <select id="w10-tier-filter" aria-label="Filter Week 10 by Verdict">
-            <option value="ALL">All Verdicts</option>
-            <option value="TARGETS_ONLY">Priority & Speculative Only</option>
-            <option value="Priority">Priority</option>
-            <option value="Speculative">Speculative</option>
-            <option value="Neutral">Neutral</option>
-            <option value="Avoid">Avoid</option>
-          </select>
-        </div>
-
-        <button id="reset-w10-filters-btn" class="btn-text">Reset Filters</button>
-      </div>
-
-      <div class="filter-controls" id="anatomy-filters" style="display: none;">
-        <div class="filter-item">
-          <label for="anatomy-team-filter">Defense:</label>
-          <select id="anatomy-team-filter" aria-label="Filter by NFL Defense">
-            <option value="ALL">All 32 NFL Defenses</option>
-          </select>
-        </div>
-        <button id="reset-anatomy-filters-btn" class="btn-text">Reset Filters</button>
-      </div>
-
-      <div class="view-stats" id="active-count-label">
-        Showing 30 Matchups
-      </div>
-    </section>
-
     <!-- Tab 1: Week 9 Matchups & Projections -->
     <section class="tab-panel active" id="tab-week9" role="tabpanel" aria-labelledby="tab-btn-week9">
       <div class="panel-header">
@@ -494,7 +426,7 @@
               <strong>Streamer Verdicts:</strong> Simplified four-tier decision framework:
               <br>• <strong style="color: #4ade80;">Priority:</strong> Elite must-start units (&ge;7.0 proj pts) with high floors and dominant pressure/takeaway upside.
               <br>• <strong style="color: #60a5fa;">Speculative:</strong> High-upside streaming options (&ge;5.0 proj pts) targeting backup QBs, offensive line mismatches, or weather opportunities.
-              <br>• <strong style="color: #94a3b8;">Neutral:</strong> Mid-tier floor plays (&ge;4.5 proj pts) or elite defenses facing formidable quarterbacks (e.g. Minnesota vs. Josh Allen).
+              <br>• <strong style="color: #94a3b8;">Neutral:</strong> Mid-tier floor plays (&ge;4.5 proj pts) or elite defenses facing formidable quarterbacks (e.g. Vikings vs. Josh Allen).
               <br>• <strong style="color: #f87171;">Avoid:</strong> High-risk matchups facing explosive offenses (implied 24+ points) with low sack or turnover projections.
             </li>
           </ul>
@@ -540,10 +472,10 @@
               <strong>Defensive Pressure % (Szn):</strong> Full-season share of opponent dropbacks where the defense creates pressure (hurry, knockdown, or sack). Units generating &gt;25% pressure disrupt quarterback timing and force erratic throws.
             </li>
             <li>
-              <strong>Defensive Pass EPA Allowed (Szn):</strong> Full-season Expected Points Added allowed per pass play. Negative values represent lockdown pass coverage (e.g. Minnesota -0.207), while positive values indicate porous secondaries.
+              <strong>Defensive Pass EPA Allowed (Szn):</strong> Full-season Expected Points Added allowed per pass play. Negative values represent lockdown pass coverage (e.g. Vikings -0.207), while positive values indicate porous secondaries.
             </li>
             <li>
-              <strong>3rd Down Stop Rate % (Szn):</strong> Full-season percentage of opponent 3rd down attempts prevented from converting. Elite defenses (&gt;70%, e.g. Chicago 78.2%) terminate opponent drives early and pin offenses deep.
+              <strong>3rd Down Stop Rate % (Szn):</strong> Full-season percentage of opponent 3rd down attempts prevented from converting. Elite defenses (&gt;70%, e.g. Bears 78.2%) terminate opponent drives early and pin offenses deep.
             </li>
             <li>
               <strong>Takeaway Drive % (Szn):</strong> Full-season percentage of opponent offensive drives ending in an interception or fumble recovery. Primary engine of high-ceiling defensive fantasy performances.
@@ -597,7 +529,7 @@
             <div class="rule-group">
               <span class="rule-cat">Points Anatomy Table Columns:</span>
               <ul>
-                <li><strong>Fantasy PPG (Points per Game):</strong> Total fantasy points divided by games played. Default sort metric highlighting weekly efficiency (e.g. Minnesota 8.6 PPG, Cincinnati 7.4 PPG).</li>
+                <li><strong>Fantasy PPG (Points per Game):</strong> Total fantasy points divided by games played. Default sort metric highlighting weekly efficiency (e.g. Vikings 8.6 PPG, Bengals 7.4 PPG).</li>
                 <li><strong>Total Fantasy Points (Total_Pts):</strong> Cumulative fantasy points earned across Weeks 1–8 under customized WAFFLe rules.</li>
                 <li><strong>Point Source Distribution Bar:</strong> Proportional visual bar illustrating the percentage of a defense's scoring derived from Sacks (amber), Brackets (blue), INTs (cyan), Fumbles (emerald), Blocks (pink), and TDs (purple).</li>
               </ul>

@@ -163,113 +163,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         activeTab = target;
-        updateFilterVisibility();
         renderActiveTable();
       });
     });
   }
 
-  function updateFilterVisibility() {
-    const w9Controls = document.getElementById('week9-filters');
-    const w10Controls = document.getElementById('week10-filters');
-    const anatomyControls = document.getElementById('anatomy-filters');
-    if (activeTab === 'week9') {
-      if (w9Controls) w9Controls.style.display = 'flex';
-      if (w10Controls) w10Controls.style.display = 'none';
-      if (anatomyControls) anatomyControls.style.display = 'none';
-    } else if (activeTab === 'week10') {
-      if (w9Controls) w9Controls.style.display = 'none';
-      if (w10Controls) w10Controls.style.display = 'flex';
-      if (anatomyControls) anatomyControls.style.display = 'none';
-    } else if (activeTab === 'anatomy') {
-      if (w9Controls) w9Controls.style.display = 'none';
-      if (w10Controls) w10Controls.style.display = 'none';
-      if (anatomyControls) anatomyControls.style.display = 'flex';
-    } else {
-      if (w9Controls) w9Controls.style.display = 'none';
-      if (w10Controls) w10Controls.style.display = 'none';
-      if (anatomyControls) anatomyControls.style.display = 'none';
-    }
-  }
-
-  // 4. Filter Event Listeners
+  // 4. Filter Event Listeners (Removed - no filters)
   function setupFilterEvents() {
-    const searchInput = document.getElementById('global-search');
-    searchInput.addEventListener('input', (e) => {
-      filters.search = e.target.value.toLowerCase().trim();
-      renderActiveTable();
-    });
-
-    const tierSelect = document.getElementById('tier-filter');
-    tierSelect.addEventListener('change', (e) => {
-      filters.tier = e.target.value;
-      renderActiveTable();
-    });
-
-    const backupToggle = document.getElementById('backup-qb-toggle');
-    backupToggle.addEventListener('change', (e) => {
-      filters.backupOnly = e.target.checked;
-      renderActiveTable();
-    });
-
-    const weatherToggle = document.getElementById('weather-toggle');
-    weatherToggle.addEventListener('change', (e) => {
-      filters.weatherOnly = e.target.checked;
-      renderActiveTable();
-    });
-
-    const resetBtn = document.getElementById('reset-filters-btn');
-    resetBtn.addEventListener('click', () => {
-      searchInput.value = '';
-      filters.search = '';
-      tierSelect.value = 'ALL';
-      filters.tier = 'ALL';
-      backupToggle.checked = false;
-      filters.backupOnly = false;
-      weatherToggle.checked = false;
-      filters.weatherOnly = false;
-      renderActiveTable();
-    });
-
-    // Week 10 Specific Filters
-    const w10VerdictSelect = document.getElementById('w10-tier-filter');
-    if (w10VerdictSelect) {
-      w10VerdictSelect.addEventListener('change', (e) => {
-        filters.w10Verdict = e.target.value;
-        renderActiveTable();
-      });
-    }
-
-    const resetW10Btn = document.getElementById('reset-w10-filters-btn');
-    if (resetW10Btn) {
-      resetW10Btn.addEventListener('click', () => {
-        searchInput.value = '';
-        filters.search = '';
-        if (w10VerdictSelect) w10VerdictSelect.value = 'ALL';
-        filters.w10Verdict = 'ALL';
-        renderActiveTable();
-      });
-    }
-
-    // Points Anatomy Specific Filters
-    const anatomySelect = document.getElementById('anatomy-team-filter');
-    if (anatomySelect) {
-      anatomySelect.addEventListener('change', (e) => {
-        filters.anatomyTeam = e.target.value;
-        renderActiveTable();
-      });
-    }
-
-    const resetAnatomyBtn = document.getElementById('reset-anatomy-filters-btn');
-    if (resetAnatomyBtn) {
-      resetAnatomyBtn.addEventListener('click', () => {
-        searchInput.value = '';
-        filters.search = '';
-        if (anatomySelect) anatomySelect.value = 'ALL';
-        filters.anatomyTeam = 'ALL';
-        renderActiveTable();
-      });
-    }
+    // Search and filter bars removed per user request
   }
 
   // 5. Sorting Event Listeners
@@ -352,31 +253,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Filter out BYE teams for streaming view
     let rows = appData.weekMatchups.filter(m => m.Target_DST && !m.Target_DST.includes('BYE'));
 
-    // Apply User Filters
-    if (filters.search) {
-      rows = rows.filter(m => {
-        const text = `${m.Target_DST} ${m.Offense} ${m.Starting_QB} ${m.Streamer_Tier}`.toLowerCase();
-        return text.includes(filters.search);
-      });
-    }
-
-    if (filters.tier === 'TARGETS_ONLY') {
-      rows = rows.filter(m => m.Streamer_Tier === 'Priority' || m.Streamer_Tier === 'Speculative');
-    } else if (filters.tier && filters.tier !== 'ALL') {
-      rows = rows.filter(m => m.Streamer_Tier === filters.tier);
-    }
-
-    if (filters.backupOnly) {
-      rows = rows.filter(m => m.Starting_QB && (m.Starting_QB.includes('Backup') || m.Starting_QB.includes('Yes')));
-    }
-
-    if (filters.weatherOnly) {
-      rows = rows.filter(m => {
-        const w = (m.Gametime_Weather || '').toLowerCase();
-        return w.includes('wind') || w.includes('rain') || w.includes('gust') || w.includes('breezy');
-      });
-    }
-
     // Sort
     const sortConfig = sortStates.week9;
     const keyMap = {
@@ -440,8 +316,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     rows = sortData(rows, targetKey, sortConfig.ascending);
     currentRenderedWeek9Rows = rows;
 
-    document.getElementById('active-count-label').textContent = `Showing ${rows.length} Matchups`;
-
     // Render HTML
     tbody.innerHTML = rows.map((r, idx) => {
       const qbDisplay = formatQbCell(r.Starting_QB);
@@ -498,24 +372,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!tbody || !appData.lookAheadStashes) return;
 
     let rows = [...appData.lookAheadStashes];
-
-    if (filters.search) {
-      rows = rows.filter(s => {
-        const text = `${s.Stash_DST} ${s.W10_Opponent} ${s.Opp_QB} ${s.Stash_Tier || ''} ${s.Look_Ahead_Rationale}`.toLowerCase();
-        return text.includes(filters.search);
-      });
-    }
-
-    if (filters.w10Verdict === 'TARGETS_ONLY') {
-      rows = rows.filter(s => s.Stash_Tier === 'Priority' || s.Stash_Tier === 'Speculative');
-    } else if (filters.w10Verdict && filters.w10Verdict !== 'ALL') {
-      rows = rows.filter(s => s.Stash_Tier === filters.w10Verdict);
-    }
-
-    const countLabel = document.getElementById('active-count-label');
-    if (countLabel && activeTab === 'week10') {
-      countLabel.textContent = `Showing ${rows.length} Week 10 Matchups`;
-    }
 
     const sortConfig = sortStates.week10;
     const keyMap = {
@@ -577,13 +433,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!tbody || !appData.historicalOffenses) return;
 
     let rows = [...appData.historicalOffenses];
-
-    if (filters.search) {
-      rows = rows.filter(h => {
-        const text = `${h.Offense} ${h.Team} ${h.Starting_QB}`.toLowerCase();
-        return text.includes(filters.search);
-      });
-    }
 
     const sortConfig = sortStates.history;
     const keyMap = {
@@ -667,34 +516,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!tbody || !appData.pointsAnatomy) return;
 
     let rows = [...appData.pointsAnatomy];
-
-    // Populate anatomy team dropdown if empty
-    const teamSelect = document.getElementById('anatomy-team-filter');
-    if (teamSelect && teamSelect.options.length <= 1) {
-      const sortedTeams = [...rows].sort((a, b) => a.Team.localeCompare(b.Team));
-      sortedTeams.forEach(t => {
-        const opt = document.createElement('option');
-        opt.value = t.Team;
-        opt.textContent = `${t.Team} - ${t.Team_Name || t.Team}`;
-        teamSelect.appendChild(opt);
-      });
-    }
-
-    if (filters.search) {
-      rows = rows.filter(t => {
-        const text = `${t.Team} ${t.Team_Name || ''}`.toLowerCase();
-        return text.includes(filters.search);
-      });
-    }
-
-    if (filters.anatomyTeam && filters.anatomyTeam !== 'ALL') {
-      rows = rows.filter(t => t.Team === filters.anatomyTeam);
-    }
-
-    const countLabel = document.getElementById('active-count-label');
-    if (countLabel && activeTab === 'anatomy') {
-      countLabel.textContent = `Showing ${rows.length} NFL Defenses`;
-    }
 
     const sortConfig = sortStates.anatomy;
     const keyMap = {
