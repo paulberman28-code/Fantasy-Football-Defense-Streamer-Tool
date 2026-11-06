@@ -304,10 +304,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     const sortConfig = sortStates.week9;
     const keyMap = {
       'Streaming Defense': 'Target_DST',
+      'Opponent': 'Offense',
       'Opponent Offense': 'Offense',
       'Opposing QB (Status)': 'Starting_QB',
       'Week 9 Verdict': 'Streamer_Tier',
       'Streaming Tier': 'Streamer_Tier',
+      'Opponent Points Allowed L4': 'Last_4_Games',
+      'Opponent L4 Points Allowed': 'Last_4_Games',
+      'Opponent L4 Pts Allowed': 'Last_4_Games',
+      'Opp L4 Pts Allowed': 'Last_4_Games',
+      'Opponent Points Allowed Season': 'Total_pts',
+      'Opponent Points Allowed (Season)': 'Total_pts',
+      'Opponent Szn Pts Allowed': 'Total_pts',
+      'Opponent Total Points Allowed': 'Total_pts',
+      'Opp Szn Pts Allowed': 'Total_pts',
       'Vegas Implied Opponent Score': 'Opp_Implied_Pts',
       'Vegas Implied': 'Opp_Implied_Pts',
       'Projected Bracket Points': 'Exp_Bracket',
@@ -384,8 +394,11 @@ document.addEventListener('DOMContentLoaded', async () => {
               <span class="stat-bold">${formatDstLabel(r.Target_DST)}</span>
             </div>
           </td>
+          <td>${r.Offense}</td>
           <td>${qbDisplay}</td>
           <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
+          <td class="col-center"><span class="pts-highlight ${parseFloat(r.Last_4_Games) >= 30 ? 'pts-top' : ''}">${r.Last_4_Games} pts</span> <span class="stat-dim">(${(parseFloat(r.Last_4_Games) / 4).toFixed(1)}/g)</span></td>
+          <td class="col-center"><span class="stat-bold">${r.Total_pts} pts</span></td>
           <td class="col-center"><span class="pts-highlight ${parseFloat(r.Proj_Fantasy_Pts) >= 9 ? 'pts-top' : ''}">${formatNum(r.Proj_Fantasy_Pts, 1)}</span></td>
           <td class="col-center stat-bold">${formatNum(r.Predicted_Floor, 1)}</td>
           <td class="col-center">${formatNum(r.Proj_Sacks, 1)}</td>
@@ -428,7 +441,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <article class="mobile-matchup-card" data-row-idx="${idx}">
             <div class="m-card-header">
               <div class="m-card-title-group">
-                <span class="m-card-team">${formatDstLabel(r.Target_DST)}</span>
+                <span class="m-card-team">${formatDstLabel(r.Target_DST)} <small style="font-weight:500; opacity:0.85;">vs ${r.Offense}</small></span>
                 <span class="badge ${tierClass}">${r.Streamer_Tier}</span>
               </div>
               <div class="m-card-pts-box">
@@ -441,6 +454,10 @@ document.addEventListener('DOMContentLoaded', async () => {
               <div class="m-card-env">
                 <span class="weather-pill ${weatherClass}">${weatherIcon} ${weatherText}</span>
               </div>
+            </div>
+            <div class="m-card-opp-row" style="display:flex; justify-content:space-between; font-size:0.82rem; padding: 4px 8px; margin-bottom: 8px; background: rgba(255,255,255,0.03); border-radius: 4px;">
+              <span>Opponent: <strong>${r.Offense}</strong></span>
+              <span>L4 Yield: <strong>${r.Last_4_Games} pts</strong> (${(r.Last_4_Games / 4).toFixed(1)}/g) • Szn: <strong>${r.Total_pts} pts</strong></span>
             </div>
             <div class="m-card-stats-grid">
               <div class="m-stat-box">
@@ -1061,6 +1078,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('modal-implied').textContent = `${formatNum(data.Opp_Implied_Pts, 1)} pts`;
 
     document.getElementById('modal-qb').textContent = data.Starting_QB;
+    const oppPtsEl = document.getElementById('modal-opp-pts-allowed');
+    if (oppPtsEl) {
+      oppPtsEl.textContent = (data.Last_4_Games !== undefined && data.Total_pts !== undefined) ? 
+        `${data.Last_4_Games} pts (${(parseFloat(data.Last_4_Games) / 4).toFixed(1)}/g) • Szn: ${data.Total_pts} pts` : '—';
+    }
     document.getElementById('modal-weather').textContent = data.Gametime_Weather;
 
     const dqiEl = document.getElementById('modal-dqi');
@@ -1102,7 +1124,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('modal-tier-badge').className = `badge tier-badge ${getTierClass(data.Stash_Tier)}`;
 
     document.getElementById('modal-qb').textContent = data.Opp_QB || '—';
-    document.getElementById('modal-weather').textContent = `Opp L4 Yield: ${data.Opp_Last_4} pts (${(data.Opp_Last_4 / 4).toFixed(1)}/g) • Szn: ${data.Opp_Total_Pts} pts`;
+    const oppPtsEl = document.getElementById('modal-opp-pts-allowed');
+    if (oppPtsEl) {
+      oppPtsEl.textContent = `${data.Opp_Last_4} pts (${(data.Opp_Last_4 / 4).toFixed(1)}/g) • Szn: ${data.Opp_Total_Pts} pts`;
+    }
+    document.getElementById('modal-weather').textContent = 'Look-Ahead Matchup (Weather Pending)';
 
     const dqiEl = document.getElementById('modal-dqi');
     if (dqiEl) dqiEl.textContent = (data.Stash_DQI !== undefined && data.Stash_DQI !== '-') ? formatNum(data.Stash_DQI, 1) : '—';

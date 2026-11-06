@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WAFFLe Fantasy D/ST Streamer Tool | 2026 Season</title>
   <meta name="description" content="WAFFLe Customized Defensive Scoring Fantasy D/ST streamer rankings and projections using NFL play-by-play data, Next Gen Stats, Vegas lines, and game-time weather.">
-  <link rel="stylesheet" href="style.css?v=20261106_4">
+  <link rel="stylesheet" href="style.css?v=20261106_5">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -126,6 +126,8 @@
           <select id="week9-mobile-sort" class="m-sort-select">
             <option value="Projected Fantasy Points:desc">Proj Points (High ➔ Low)</option>
             <option value="Scoring Floor:desc">Scoring Floor (High ➔ Low)</option>
+            <option value="Opponent Points Allowed L4:desc">Opp L4 Pts Allowed (High ➔ Low)</option>
+            <option value="Opponent Points Allowed Season:desc">Opp Szn Pts Allowed (High ➔ Low)</option>
             <option value="Projected Sacks:desc">Proj Sacks (High ➔ Low)</option>
             <option value="Defensive Quality Index (DQI):desc">Def DQI (High ➔ Low)</option>
             <option value="Vegas Implied Opponent Score:asc">Vegas Implied (Low ➔ High)</option>
@@ -138,7 +140,7 @@
       </div>
 
       <div class="mobile-scroll-hint" id="week9-scroll-hint">
-        <span>👈 Swipe table horizontally to see all 25 columns • Tap any row for Full Analysis 👉</span>
+        <span>👈 Swipe table horizontally to see all 28 columns • Tap any row for Full Analysis 👉</span>
       </div>
 
       <div class="table-wrapper" tabindex="0" role="region" aria-label="Week 9 Defensive Projections Table">
@@ -146,7 +148,7 @@
           <caption class="sr-only">Week 9 Defensive Streaming Target Rankings and Performance Metrics</caption>
           <thead>
             <tr class="header-super-row">
-              <th colspan="3" class="super-header super-matchup">Matchup Core</th>
+              <th colspan="6" class="super-header super-matchup">Matchup Core & Opponent Form</th>
               <th colspan="7" class="super-header super-projections">Fantasy Projections & Vegas</th>
               <th colspan="8" class="super-header super-defense">Defensive Quality & Health (Full Season Baseline)</th>
               <th colspan="5" class="super-header super-qb">Opponent QB & Stats (Recent L4 Form + Szn)</th>
@@ -155,8 +157,11 @@
             </tr>
             <tr class="header-sub-row">
               <th data-sort="Streaming Defense" class="col-sticky col-def">Streaming<br>Defense <span class="sort-arrow"></span></th>
+              <th data-sort="Opponent" class="col-def">Opponent <span class="sort-arrow"></span></th>
               <th data-sort="Opposing QB (Status)" class="col-qb">Opposing QB<br>& Status <span class="sort-arrow"></span></th>
               <th data-sort="Week 9 Verdict" class="col-center col-tier">Week 9<br>Verdict <span class="sort-arrow"></span></th>
+              <th data-sort="Opponent Points Allowed L4" class="col-center col-stat-wide">Opponent L4<br>Pts Allowed <span class="sort-arrow"></span></th>
+              <th data-sort="Opponent Points Allowed Season" class="col-center col-stat-wide">Opponent Szn<br>Pts Allowed <span class="sort-arrow"></span></th>
               <th data-sort="Projected Fantasy Points" class="col-center col-stat sort-active desc">Projected<br>Points <span class="sort-arrow">▼</span></th>
               <th data-sort="Scoring Floor" class="col-center col-stat">Scoring<br>Floor <span class="sort-arrow"></span></th>
               <th data-sort="Projected Sacks" class="col-center col-stat">Projected<br>Sacks <span class="sort-arrow"></span></th>
@@ -829,6 +834,7 @@
           <h4>Matchup & Environmental Context</h4>
           <div class="modal-context-grid">
             <div><strong>Quarterback:</strong> <span id="modal-qb">Shedeur Sanders (Backup)</span></div>
+            <div><strong>Opp Pts Allowed (L4/Szn):</strong> <span id="modal-opp-pts-allowed">—</span></div>
             <div><strong>Game-Time Weather:</strong> <span id="modal-weather">Dome (Indoors)</span></div>
             <div><strong>Def Quality Index:</strong> <span id="modal-dqi">70.0</span></div>
             <div><strong>Def Pressure %:</strong> <span id="modal-def-press">19.9%</span></div>
@@ -860,8 +866,8 @@
   </footer>
 
   <!-- Load data.js for zero-CORS local Safari viewing (file:// protocol) -->
-  <script src="data.js?v=20261106_4"></script>
+  <script src="data.js?v=20261106_5"></script>
   <!-- Main application logic -->
-  <script src="app.js?v=20261106_4"></script>
+  <script src="app.js?v=20261106_5"></script>
 </body>
 </html>
