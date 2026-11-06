@@ -211,6 +211,9 @@ def reconcile_week(week, season=2026, snapshot_path=None, allow_partial=False):
         proj_sacks = float(p.get('Proj_Sacks', 0))
         proj_to = round(float(p.get('Proj_INTs', 0)) + float(p.get('Proj_Fumbles', 0)), 1)
         proj_bracket = float(p.get('Exp_Bracket', 0))
+        proj_other = round(max(0.0, proj_pts - (proj_sacks + proj_to + proj_bracket)), 1)
+
+        actual_other = round(float((act.get('actual_tds', 0) * 6.0) + (act.get('actual_safeties', 0) * 2.0) + (act.get('actual_blocks', 0) * 1.0)), 1)
 
         reconciliation_rows.append({
             'dst': dst_code,
@@ -228,6 +231,8 @@ def reconcile_week(week, season=2026, snapshot_path=None, allow_partial=False):
             'actual_to': act['actual_to'],
             'proj_bracket': proj_bracket,
             'actual_bracket': act['actual_bracket'],
+            'proj_other': proj_other,
+            'actual_other': actual_other,
             'hit': hit
         })
 

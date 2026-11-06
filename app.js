@@ -842,17 +842,27 @@ document.addEventListener('DOMContentLoaded', async () => {
           weekAudit.matchup_reconciliation.find(m => m.dst === targetCode) : null;
         
         const toProj = (parseFloat(r.Proj_INTs || 0) + parseFloat(r.Proj_Fumbles || 0));
+        const projSacks = parseFloat(match ? match.proj_sacks : r.Proj_Sacks) || 0;
+        const projTO = parseFloat(match ? match.proj_to : toProj) || 0;
+        const projBracket = parseFloat(match ? match.proj_bracket : r.Exp_Bracket) || 0;
+        const totalProj = parseFloat(match ? match.proj_pts : r.Proj_Fantasy_Pts) || 0;
+        const projOther = match && match.proj_other !== undefined ? 
+          parseFloat(match.proj_other) : Math.max(0, parseFloat((totalProj - (projSacks + projTO + projBracket)).toFixed(1)));
+        const actualOther = match && match.actual_other !== undefined ? parseFloat(match.actual_other) : null;
+
         return {
           ...r,
           _auditMatch: match,
-          _projPts: parseFloat(match ? match.proj_pts : r.Proj_Fantasy_Pts) || 0,
+          _projPts: totalProj,
           _actualPts: match && match.actual_pts !== undefined ? match.actual_pts : null,
           _projError: match && match.error_diff !== undefined ? match.error_diff : null,
           _floor: parseFloat(match ? match.floor : r.Predicted_Floor) || 0,
           _floorMet: match ? (match.floor_met ? 1 : 0) : null,
-          _projSacks: parseFloat(match ? match.proj_sacks : r.Proj_Sacks) || 0,
-          _projTO: parseFloat(match ? match.proj_to : toProj) || 0,
-          _projBracket: parseFloat(match ? match.proj_bracket : r.Exp_Bracket) || 0,
+          _projSacks: projSacks,
+          _projTO: projTO,
+          _projBracket: projBracket,
+          _projOther: projOther,
+          _actualOther: actualOther,
           _outcome: match ? (match.hit ? 'HIT' : 'MISS') : 'Pending'
         };
       });
@@ -871,6 +881,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         'Sacks (Proj / Act)': '_projSacks',
         'Turnovers (Proj / Act)': '_projTO',
         'Bracket (Proj / Act)': '_projBracket',
+        'Other (Proj / Act)': '_projOther',
         'Outcome': '_outcome'
       };
       const targetKey = keyMap[sortConfig.column] || '_projPts';
@@ -896,6 +907,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               <td class="col-center">${formatNum(match.proj_sacks, 1)} / ${match.actual_sacks}</td>
               <td class="col-center">${formatNum(match.proj_to, 1)} / ${match.actual_to}</td>
               <td class="col-center">${formatNum(match.proj_bracket, 1)} / ${match.actual_bracket}</td>
+              <td class="col-center">${formatNum(r._projOther, 1)} / ${formatNum(r._actualOther !== null ? r._actualOther : 0, 1)}</td>
               <td class="col-center"><span class="badge ${match.hit ? 'badge-priority' : 'badge-avoid'}">${match.hit ? 'HIT' : 'MISS'}</span></td>
             </tr>
           `;
@@ -916,6 +928,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <td class="col-center">${formatNum(r.Proj_Sacks, 1)} / —</td>
             <td class="col-center">${toProj} / —</td>
             <td class="col-center">${formatNum(r.Exp_Bracket, 1)} / —</td>
+            <td class="col-center">${formatNum(r._projOther, 1)} / —</td>
             <td class="col-center"><span class="badge badge-neutral">Pending</span></td>
           </tr>
         `;
