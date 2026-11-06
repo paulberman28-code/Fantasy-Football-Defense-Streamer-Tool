@@ -1446,14 +1446,30 @@ td.col-rationale {
   }
 
   .nav-tabs {
-    -webkit-overflow-scrolling: touch;
+    flex-direction: column;
+    overflow-x: visible;
     gap: 0.4rem;
-    padding: 0.35rem;
+    padding: 0.45rem;
   }
 
   .nav-tab {
-    padding: 0.55rem 0.85rem;
-    font-size: 0.82rem;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0.65rem 0.95rem;
+    font-size: 0.86rem;
+  }
+
+  /* Use abbreviated team names in mobile tables to save horizontal space */
+  .team-desktop {
+    display: none !important;
+  }
+
+  .team-mobile {
+    display: inline !important;
+  }
+
+  th.col-def {
+    min-width: 68px;
   }
 
   /* Mobile horizontal swipe helper banner */
@@ -1729,7 +1745,8 @@ td.col-rationale {
 /* Hide mobile-only controls and card decks on Desktop (> 768px) */
 @media (min-width: 769px) {
   .mobile-view-controls,
-  .mobile-cards-container {
+  .mobile-cards-container,
+  .team-mobile {
     display: none !important;
   }
 }

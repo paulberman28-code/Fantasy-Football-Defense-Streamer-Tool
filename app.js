@@ -491,10 +491,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     tbody.innerHTML = rows.map((s, idx) => {
       const tierBadgeClass = getTierClass(s.Stash_Tier);
+      const mobileOpp = s.W10_Opponent_Mobile || s.W10_Opponent;
       return `
         <tr data-stash-idx="${idx}" class="stash-row">
           <td class="col-sticky"><span class="stat-bold">${s.Stash_DST}</span></td>
-          <td>${s.W10_Opponent}</td>
+          <td><span class="team-desktop">${s.W10_Opponent}</span><span class="team-mobile stat-bold">${mobileOpp}</span></td>
           <td class="col-center"><span class="badge ${tierBadgeClass}">${s.Stash_Tier || 'Neutral'}</span></td>
           <td class="col-center"><span class="dqi-badge ${getDqiClass(s.Stash_DQI)}">${s.Stash_DQI !== undefined && s.Stash_DQI !== null && s.Stash_DQI !== '-' ? formatNum(s.Stash_DQI, 1) : '—'}</span></td>
           <td class="col-center ${parseFloat(s['Def_Pressure_Rate%']) >= 25 ? 'stat-bold pts-top' : (parseFloat(s['Def_Pressure_Rate%']) >= 22.5 ? 'stat-bold' : '')}">${s['Def_Pressure_Rate%'] !== undefined && s['Def_Pressure_Rate%'] !== '-' ? formatNum(s['Def_Pressure_Rate%'], 1) + '%' : '—'}</td>
@@ -515,11 +516,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (w10CardsContainer) {
       w10CardsContainer.innerHTML = rows.map((s, idx) => {
         const tierBadgeClass = getTierClass(s.Stash_Tier);
+        const mobileOpp = s.W10_Opponent_Mobile || s.W10_Opponent;
+        const matchupLabel = mobileOpp.startsWith('@') ? `(${mobileOpp})` : `vs ${mobileOpp}`;
         return `
           <article class="mobile-matchup-card stash-mobile-card" data-stash-idx="${idx}">
             <div class="m-card-header">
               <div class="m-card-title-group">
-                <span class="m-card-team">${s.Stash_DST} <small style="font-weight:500; opacity:0.85;">vs ${s.W10_Opponent}</small></span>
+                <span class="m-card-team">${s.Stash_DST} <small style="font-weight:500; opacity:0.85;">${matchupLabel}</small></span>
                 <span class="badge ${tierBadgeClass}">${s.Stash_Tier || 'Neutral'}</span>
               </div>
               <div class="m-card-pts-box">
@@ -592,7 +595,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       return `
         <tr>
-          <td class="col-sticky"><span class="stat-bold">${h.Offense}</span></td>
+          <td class="col-sticky"><span class="stat-bold team-desktop">${h.Offense}</span><span class="stat-bold team-mobile">${h.Team || h.Offense}</span></td>
           ${renderHeatCell(h.W1)}
           ${renderHeatCell(h.W2)}
           ${renderHeatCell(h.W3)}
@@ -680,7 +683,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     tbody.innerHTML = rows.map(r => {
       return `
         <tr>
-          <td class="col-sticky"><span class="stat-bold">${r.Team_Name || r.Team}</span> <span class="stat-dim">(${r.Team})</span></td>
+          <td class="col-sticky"><span class="team-desktop"><span class="stat-bold">${r.Team_Name || r.Team}</span> <span class="stat-dim">(${r.Team})</span></span><span class="stat-bold team-mobile">${r.Team}</span></td>
           <td class="col-center">${r.GP}</td>
           <td class="col-center stat-bold pts-top">${formatNum(r.PPG, 1)}</td>
           <td class="col-center"><span class="pts-highlight">${r.Total_Pts} pts</span></td>
