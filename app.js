@@ -333,8 +333,16 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Projected Sacks': 'Proj_Sacks',
       'Projected Interceptions': 'Proj_INTs',
       'Defensive Pressure %': 'Def_Pressure_Rate%',
+      'Defensive Pass EPA Allowed': 'Def_Pass_EPA',
+      'Def Pass EPA': 'Def_Pass_EPA',
+      '3rd Down Stop Rate %': 'Def_3rd_Stop%',
+      '3rd Down Stop %': 'Def_3rd_Stop%',
+      'Key Defensive Injuries': 'Def_Injuries',
+      'Def Health / Key Injuries': 'Def_Injuries',
+      'Def Health / Injuries': 'Def_Injuries',
       'Sack Rate on Pressure %': 'Sacks_Per_Press%',
       'Pass Efficiency Allowed (EPA/Play)': 'Off_Pass_EPA_L4',
+      'Opponent Pass EPA (L4)': 'Off_Pass_EPA_L4',
       'Avg Time to Throw (Sec)': 'NGS_TTT',
       'Tight-Window Throw %': 'NGS_Agg%',
       'Vegas Implied Opponent Score': 'Opp_Implied_Pts',
@@ -383,6 +391,9 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center">${formatNum(r.Proj_Sacks, 1)}</td>
           <td class="col-center ${parseFloat(r.Proj_INTs) >= 1.5 ? 'stat-bold' : ''}">${formatNum(r.Proj_INTs, 1)}</td>
           <td class="col-center ${parseFloat(r['Def_Pressure_Rate%']) >= 25 ? 'stat-bold pts-top' : (parseFloat(r['Def_Pressure_Rate%']) >= 22.5 ? 'stat-bold' : '')}">${r['Def_Pressure_Rate%'] !== '-' ? formatNum(r['Def_Pressure_Rate%'], 1) + '%' : '—'}</td>
+          <td class="col-center ${parseFloat(r.Def_Pass_EPA) < 0 ? 'pts-top stat-bold' : ''}">${r.Def_Pass_EPA !== '-' ? (parseFloat(r.Def_Pass_EPA) > 0 ? '+' : '') + formatNum(r.Def_Pass_EPA, 3) : '—'}</td>
+          <td class="col-center ${parseFloat(r['Def_3rd_Stop%']) >= 70 ? 'pts-top stat-bold' : ''}">${r['Def_3rd_Stop%'] !== '-' ? formatNum(r['Def_3rd_Stop%'], 1) + '%' : '—'}</td>
+          <td>${r.Def_Injuries && !r.Def_Injuries.toLowerCase().includes('healthy') ? `<span class="injury-alert" title="${r.Def_Injuries}">⚠️ ${r.Def_Injuries}</span>` : '<span class="injury-healthy">✅ Healthy</span>'}</td>
           <td class="col-center">${formatNum(r['Sacks_Per_Press%'], 1)}%</td>
           <td class="col-center ${parseFloat(r.Off_Pass_EPA_L4) < 0 ? 'pts-top' : ''}">${parseFloat(r.Off_Pass_EPA_L4) > 0 ? '+' : ''}${formatNum(r.Off_Pass_EPA_L4, 3)}</td>
           <td class="col-center">${r.NGS_TTT !== '-' ? formatNum(r.NGS_TTT, 2) + 's' : '—'}</td>
@@ -572,6 +583,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('modal-weather').textContent = data.Gametime_Weather;
     const defPressEl = document.getElementById('modal-def-press');
     if (defPressEl) defPressEl.textContent = data['Def_Pressure_Rate%'] !== '-' ? `${formatNum(data['Def_Pressure_Rate%'], 1)}%` : '—';
+    const defPassEpaEl = document.getElementById('modal-def-pass-epa');
+    if (defPassEpaEl) defPassEpaEl.textContent = data.Def_Pass_EPA !== '-' ? `${parseFloat(data.Def_Pass_EPA) > 0 ? '+' : ''}${formatNum(data.Def_Pass_EPA, 3)}` : '—';
+    const def3rdEl = document.getElementById('modal-def-3rd-stop');
+    if (def3rdEl) def3rdEl.textContent = data['Def_3rd_Stop%'] !== '-' ? `${formatNum(data['Def_3rd_Stop%'], 1)}%` : '—';
+    const defInjEl = document.getElementById('modal-def-injuries');
+    if (defInjEl) defInjEl.textContent = data.Def_Injuries || 'Healthy';
     document.getElementById('modal-sp').textContent = `${formatNum(data['Sacks_Per_Press%'], 1)}%`;
     document.getElementById('modal-epa').textContent = `${parseFloat(data.Off_Pass_EPA_L4) > 0 ? '+' : ''}${formatNum(data.Off_Pass_EPA_L4, 3)}`;
 
