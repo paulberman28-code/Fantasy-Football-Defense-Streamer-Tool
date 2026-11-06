@@ -93,7 +93,7 @@
         <span class="tab-icon">🏈</span> D/ST Points Anatomy
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-rules" aria-selected="false" aria-controls="tab-rules" data-tab="rules">
-        <span class="tab-icon">📖</span> Scoring & Methodology
+        <span class="tab-icon">📖</span> Scoring Rules and Glossary
       </button>
     </nav>
 
@@ -429,33 +429,34 @@
       </div>
     </section>
 
-    <!-- Tab 5: Scoring System & Methodology -->
+    <!-- Tab 5: Scoring Rules and Glossary -->
     <section class="tab-panel" id="tab-rules" role="tabpanel" aria-labelledby="tab-btn-rules" hidden>
       <div class="panel-header">
         <div class="panel-title-wrap">
-          <h2 class="panel-title">Scoring Rules & Analytical Methodology</h2>
-          <p class="panel-desc">Comprehensive documentation of custom scoring calculations, Next Gen Stats definitions, and weather physics.</p>
+          <h2 class="panel-title">Scoring Rules and Glossary</h2>
+          <p class="panel-desc">Comprehensive reference guide and glossary covering custom fantasy scoring rules, projection formulas, advanced Next Gen Stats, defensive metrics, and table definitions.</p>
         </div>
       </div>
 
       <div class="methodology-grid">
+        <!-- 1. The WAFFLe's Scoring System -->
         <div class="card doc-card">
           <h3 class="card-title">1. The WAFFLe's Customized D/ST Scoring System</h3>
-          <p class="doc-text">Our projections and rankings calculate defensive fantasy points strictly tailored to the WAFFLe's customized rules:</p>
+          <p class="doc-text">Our projections and rankings calculate defensive fantasy points strictly tailored to the WAFFLe's customized scoring format:</p>
           <div class="scoring-rules-list">
             <div class="rule-group">
-              <span class="rule-cat">Turnovers & Big Plays:</span>
+              <span class="rule-cat">Turnovers, Big Plays & Special Teams:</span>
               <ul>
-                <li><strong>Sack Taken:</strong> 1 pt</li>
-                <li><strong>Interception Thrown:</strong> 1 pt</li>
-                <li><strong>Fumble Lost:</strong> 1 pt</li>
+                <li><strong>Quarterback Sack:</strong> 1 pt</li>
+                <li><strong>Interception Caught:</strong> 1 pt</li>
+                <li><strong>Fumble Recovered:</strong> 1 pt</li>
                 <li><strong>Safety Allowed:</strong> 2 pts</li>
-                <li><strong>Blocked Kick Allowed:</strong> 1 pt</li>
-                <li><strong>Defensive Touchdown Allowed:</strong> 6 pts</li>
+                <li><strong>Blocked Kick (FG / Punt / XP):</strong> 1 pt</li>
+                <li><strong>Defensive & ST Touchdown:</strong> 6 pts (Pick-six, fumble scoop-and-score, punt/kickoff return)</li>
               </ul>
             </div>
             <div class="rule-group">
-              <span class="rule-cat">Points Allowed Brackets (Dictated by Offense Score):</span>
+              <span class="rule-cat">Points Allowed Brackets (Opponent Offensive Score):</span>
               <ul>
                 <li><strong>0 Points Scored:</strong> 10 pts to Defense</li>
                 <li><strong>1–6 Points Scored:</strong> 7 pts to Defense</li>
@@ -463,69 +464,157 @@
                 <li><strong>14+ Points Scored:</strong> 0 pts to Defense</li>
               </ul>
               <p class="doc-text" style="margin-top: 0.65rem; font-size: 0.85rem; color: var(--text-dim); line-height: 1.4;">
-                <strong>Vegas Calibration (17.0 Implied Cutoff):</strong> Because any opponent scoring 14+ points earns 0 fantasy points, our projection engine enforces a strict 17.0 Vegas implied point cutoff (5 points above the 7–13 pt bracket ceiling). Any offense implied for &gt;17.0 points projects flat 0.0 bracket fantasy points, ensuring high-risk defenses (e.g. facing Detroit, San Francisco, or Dallas) derive 100% of their projection from genuine sack and takeaway potential.
+                <strong>Vegas Calibration (17.0 Implied Cutoff):</strong> Because any opponent scoring 14+ points earns 0 fantasy points, our projection engine enforces a strict 17.0 Vegas implied point cutoff (5 points above the 7–13 pt bracket ceiling). Any offense implied for &gt;17.0 points projects flat 0.0 bracket fantasy points, ensuring high-risk defenses derive 100% of their projection from genuine sack and takeaway potential.
               </p>
             </div>
           </div>
         </div>
 
+        <!-- 2. Fantasy Projections & Streamer Verdicts Glossary -->
         <div class="card doc-card">
-          <h3 class="card-title">2. Next Gen Stats & Advanced Metrics</h3>
-          <p class="doc-text">Borrowing the analytical framework from leading NFL quant research:</p>
+          <h3 class="card-title">2. Fantasy Projections & Streamer Verdicts Glossary</h3>
+          <p class="doc-text">Definitions of all core projection and ranking columns featured on the Week 9 and Look-Ahead boards:</p>
           <ul class="advanced-defs">
             <li>
-              <strong>Defensive Quality Index (DQI):</strong> Composite quality score (50–100 scale, average = 75.0) synthesizing defensive pressure generation (25%), defensive pass EPA allowed (25%), 3rd down stop rate (20%), takeaway drive rate (15%), and red zone touchdown prevention (15%). Identifies inherently elite defenses (e.g. Minnesota 95.4) regardless of matchup.
+              <strong>Projected Fantasy Points (Proj Pts):</strong> Mathematically weighted fantasy projection summing expected sacks (1.0), interceptions (1.0), fumbles recovered (1.0), defensive/ST touchdowns (6.0), safeties (2.0), and expected points-allowed bracket points.
             </li>
             <li>
-              <strong>Defensive Pressure %:</strong> Share of opponent dropbacks where the defense creates pressure (hurry, knockdown, or sack). Defenses generating &gt;25% pressure disrupt quarterback timing and force erratic throws.
+              <strong>Scoring Floor:</strong> Conservative downside baseline calculation: <code>(0.55 × Proj Sacks) + (0.35 × Proj INTs) + (0.40 × Proj Bracket Pts)</code>. Measures bankable production in worst-case negative game scripts.
             </li>
             <li>
-              <strong>Defensive Pass EPA Allowed:</strong> Expected Points Added allowed per pass play. Negative values represent lockdown pass coverage (e.g. Minnesota -0.158), while positive values indicate porous secondaries.
+              <strong>Projected Sacks, INTs & Fumbles:</strong> Individual component expectations derived from opposing offensive dropback rates, QB sack avoidance, tight-window throwing, and fumble frequencies.
             </li>
             <li>
-              <strong>3rd Down Stop %:</strong> Percentage of 3rd down attempts where the defense prevents a first down. Teams above 70% terminate opponent drives early and rack up punt opportunities.
+              <strong>Vegas Implied Opponent Score (Vegas Implied):</strong> Expected points scored by the opposing offense derived from consensus sportsbook totals and spreads: <code>(Over-Under / 2) - (Spread / 2)</code>.
             </li>
             <li>
-              <strong>Takeaway Drive %:</strong> Percentage of defensive drives ending in an interception or fumble recovery.
+              <strong>Projected Bracket Points (Proj Bracket Points):</strong> Expected fantasy points earned from holding an opponent to 0, 1–6, or 7–13 points, strictly zeroed out when the opponent's Vegas implied total exceeds 17.0 points.
             </li>
             <li>
-              <strong>Red Zone TD Allowed %:</strong> Opponent touchdown conversion rate inside the 20-yard line. Elite red-zone defenses bend without breaking, preserving low-scoring fantasy brackets.
-            </li>
-            <li>
-              <strong>Key Defensive Injuries:</strong> Official injury report statuses (Out, DNP, Questionable, IR) filtering out veteran rest days to isolate impactful absences along the defensive line, edge rush, and secondary.
-            </li>
-            <li>
-              <strong>Avg Time to Throw (NGS TTT):</strong> Time from snap to release. QBs holding the ball &gt;3.00s (e.g., Caleb Williams 3.24s, Drake Maye 3.14s) invite heavy pocket collapse and strip-sacks.
-            </li>
-            <li>
-              <strong>Tight-Window Throw % (NGS Agg%):</strong> Percentage of pass attempts where a defender is within 1 yard. High tight-window throwing leads to tipped passes and interceptions.
-            </li>
-            <li>
-              <strong>Sacks per Pressure % (S/P%):</strong> Measures QB sack avoidance under pressure. QBs like Bryce Young (34.8%), Daniel Jones (32.6%), and Baker Mayfield (36.8%) convert pressures to sacks at elite rates for opposing fantasy defenses.
-            </li>
-            <li>
-              <strong>Opponent Passing EPA (L4):</strong> Expected Points Added per pass play conceded by the opposing offense over the last 4 games. An offense in negative EPA territory (e.g. Chargers -0.365, Colts -0.215) is a prime streaming target.
+              <strong>Streamer Verdicts:</strong> Simplified four-tier decision framework:
+              <br>• <strong style="color: #4ade80;">Priority:</strong> Elite must-start units (&ge;7.0 proj pts) with high floors and dominant pressure/takeaway upside.
+              <br>• <strong style="color: #60a5fa;">Speculative:</strong> High-upside streaming options (&ge;5.0 proj pts) targeting backup QBs, offensive line mismatches, or weather opportunities.
+              <br>• <strong style="color: #94a3b8;">Neutral:</strong> Mid-tier floor plays (&ge;4.5 proj pts) or elite defenses facing formidable quarterbacks (e.g. Minnesota vs. Josh Allen).
+              <br>• <strong style="color: #f87171;">Avoid:</strong> High-risk matchups facing explosive offenses (implied 24+ points) with low sack or turnover projections.
             </li>
           </ul>
         </div>
 
+        <!-- 3. Defensive Quality & Health Glossary -->
+        <div class="card doc-card">
+          <h3 class="card-title">3. Defensive Quality & Health Glossary (Team Level)</h3>
+          <p class="doc-text">Advanced metrics measuring the defense's inherent skill, efficiency, and roster health:</p>
+          <ul class="advanced-defs">
+            <li>
+              <strong>Defensive Quality Index (DQI):</strong> Composite quality score (50–100 scale, league average = 75.0) synthesizing defensive pressure generation (25%), defensive pass EPA allowed (25%), 3rd down stop rate (20%), takeaway drive rate (15%), and red zone touchdown prevention (15%). Isolates true defensive prowess regardless of matchup.
+            </li>
+            <li>
+              <strong>Defensive Pressure %:</strong> Share of opponent dropbacks where the defense creates pressure (hurry, knockdown, or sack). Units generating &gt;25% pressure disrupt quarterback timing and force erratic throws.
+            </li>
+            <li>
+              <strong>Defensive Pass EPA Allowed:</strong> Expected Points Added allowed per pass play. Negative values represent lockdown pass coverage (e.g. Minnesota -0.207), while positive values indicate porous secondaries.
+            </li>
+            <li>
+              <strong>3rd Down Stop Rate %:</strong> Percentage of opponent 3rd down attempts prevented from converting. Elite defenses (&gt;70%, e.g. Chicago 78.2%) terminate opponent drives early and pin offenses deep.
+            </li>
+            <li>
+              <strong>Takeaway Drive %:</strong> Percentage of opponent offensive drives ending in an interception or fumble recovery. Primary engine of high-ceiling defensive fantasy performances.
+            </li>
+            <li>
+              <strong>Punt Drive %:</strong> Percentage of opponent offensive possessions terminated in a punt. Measures defensive drive disruption and field position control.
+            </li>
+            <li>
+              <strong>Red Zone TD Allowed %:</strong> Opponent touchdown conversion rate inside the 20-yard line. Elite red-zone defenses bend without breaking, holding offenses to field goals and preserving low-scoring brackets.
+            </li>
+            <li>
+              <strong>Def Health / Key Defensive Injuries:</strong> Official practice participation and injury report statuses (Out, DNP, Questionable, IR), filtering out routine veteran rest to isolate impactful absences along the defensive line, edge rush, and secondary.
+            </li>
+          </ul>
+        </div>
+
+        <!-- 4. Opposing Quarterback & Next Gen Stats Glossary -->
+        <div class="card doc-card">
+          <h3 class="card-title">4. Opposing Quarterback & Next Gen Stats Glossary (Offense Level)</h3>
+          <p class="doc-text">Metrics evaluating the opposing quarterback's tendencies, decision-making, and vulnerability:</p>
+          <ul class="advanced-defs">
+            <li>
+              <strong>Sack Rate on Pressure % (S/P%):</strong> Percentage of pocket pressures converted into sacks. Measures QB sack avoidance: passers like Bryce Young (34.8%), Daniel Jones (32.9%), and Baker Mayfield (36.8%) manufacture sacks for fantasy defenses.
+            </li>
+            <li>
+              <strong>QB Fumble Rate %:</strong> Percentage of offensive dropbacks and touches where the quarterback commits a fumble. QBs above 2.0% (e.g. Baker Mayfield 4.8%, Joe Fagnano 4.2%) offer enhanced strip-sack upside.
+            </li>
+            <li>
+              <strong>Avg Time to Throw (NGS TTT):</strong> Time from snap to release in seconds. QBs holding the ball &gt;3.00s (e.g. Caleb Williams 3.24s, Malik Willis 3.05s) invite pocket collapse and blindside sacks.
+            </li>
+            <li>
+              <strong>Tight-Window Throw % (NGS Agg%):</strong> Percentage of pass attempts where a defender is within 1 yard of the intended receiver. High tight-window throwing leads to tipped passes, deflections, and interceptions.
+            </li>
+            <li>
+              <strong>Opponent Passing EPA (L4):</strong> Expected Points Added per pass play conceded by the opposing offense over the last 4 games. An offense in negative EPA territory (e.g. Chargers -0.365) is a prime streaming target.
+            </li>
+            <li>
+              <strong>Opponent Points Allowed to D/ST (L2, L4, Total):</strong> Historical fantasy points yielded by that offense to opposing defenses across Weeks 1–8. High values indicate systematic vulnerability to defensive scoring.
+            </li>
+            <li>
+              <strong>Opposing QB & Status:</strong> Starting quarterback identified along with Starter or Backup designation and context (injury, benching).
+            </li>
+          </ul>
+        </div>
+
+        <!-- 5. D/ST Fantasy Points Anatomy Glossary -->
         <div class="card doc-card full-span">
-          <h3 class="card-title">3. Environmental Physics: Wind vs. Interceptions</h3>
+          <h3 class="card-title">5. D/ST Points Anatomy & League Scoring Glossary (Tab 4 Metrics)</h3>
+          <p class="doc-text">Comprehensive definitions for all columns in the D/ST Fantasy Points Anatomy breakdown, based on 1,181 total defensive fantasy points recorded across Weeks 1–8:</p>
+          <div class="scoring-rules-list">
+            <div class="rule-group">
+              <span class="rule-cat">Points Anatomy Table Columns:</span>
+              <ul>
+                <li><strong>Fantasy PPG (Points per Game):</strong> Total fantasy points divided by games played. Default sort metric highlighting weekly efficiency (e.g. Minnesota 8.6 PPG, Cincinnati 7.4 PPG).</li>
+                <li><strong>Total Fantasy Points (Total_Pts):</strong> Cumulative fantasy points earned across Weeks 1–8 under customized WAFFLe rules.</li>
+                <li><strong>Point Source Distribution Bar:</strong> Proportional visual bar illustrating the percentage of a defense's scoring derived from Sacks (amber), Brackets (blue), INTs (cyan), Fumbles (emerald), Blocks (pink), and TDs (purple).</li>
+              </ul>
+            </div>
+            <div class="rule-group">
+              <span class="rule-cat">League-Wide Scoring Distribution (Weeks 1–8):</span>
+              <ul>
+                <li><strong>Sacks (1 pt):</strong> 557 pts (<strong style="color: #f59e0b;">47.2%</strong>) • #1 point generator league-wide.</li>
+                <li><strong>Points Allowed Brackets:</strong> 179 pts (<strong style="color: #3b82f6;">15.2%</strong>) • 10 / 7 / 3 pts tiers.</li>
+                <li><strong>Interceptions (1 pt):</strong> 170 pts (<strong style="color: #06b6d4;">14.4%</strong>) • Pressures & tight-window throws.</li>
+                <li><strong>Fumble Recoveries (1 pt):</strong> 135 pts (<strong style="color: #10b981;">11.4%</strong>) • Strip-sacks & wet ball carries.</li>
+                <li><strong>Def & ST Touchdowns (6 pts):</strong> 120 pts (<strong style="color: #8b5cf6;">10.2%</strong>) • Pick-sixes, fumble returns & punt/kick returns.</li>
+                <li><strong>Blocked Kicks (1 pt):</strong> 16 pts (<strong style="color: #ec4899;">1.4%</strong>) • Blocked field goals, extra points, and punts.</li>
+                <li><strong>Safeties (2 pts):</strong> 4 pts (<strong style="color: #94a3b8;">0.3%</strong>) • End-zone tackles and holding penalties.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Environmental Physics & Weather Physics -->
+        <div class="card doc-card full-span">
+          <h3 class="card-title">6. Environmental Physics & Weather Modeling Glossary</h3>
           <p class="doc-text">
-            While rain primarily causes slick fumbles, <strong>wind gusts of 20–25+ mph are the single most volatile environmental driver of interceptions</strong> in professional football:
+            While rain primarily causes slick fumbles, <strong>sustained winds and peak gusts of 20–25+ mph are the single most volatile environmental driver of interceptions</strong> in professional football:
           </p>
           <div class="weather-breakdown">
             <div class="weather-factor">
               <h4>Aerodynamic Instability</h4>
-              <p>On throws beyond 10 air yards, crosswinds and sudden gusts buffet the ball, causing passes to drift, flutter, and sail high over receivers into waiting safeties.</p>
+              <p>On throws beyond 10 air yards, crosswinds and sudden gusts buffet the football in flight, causing passes to drift, flutter, and sail high over receivers into waiting safeties.</p>
             </div>
             <div class="weather-factor">
               <h4>Holding the Ball into Wind</h4>
-              <p>When a QB holds the ball for an NFL-high 3.24s (Caleb Williams) in 25 mph wind gusts at Soldier Field, edge rushers force off-platform throws with diminished ball velocity that float directly into coverage.</p>
+              <p>When a QB holds the ball for &gt;3.00s in gusty winds, edge rushers force off-platform throws with diminished ball velocity that float directly into coverage.</p>
             </div>
             <div class="weather-factor">
               <h4>Tipped-Ball Deflections</h4>
               <p>Receivers fighting wind gusts suffer higher drop and double-clutch rates. Balls bobbled off hands and shoulder pads pop directly into the air for defensive backs.</p>
+            </div>
+            <div class="weather-factor">
+              <h4>Slick Turf & Ball Security</h4>
+              <p>Precipitation (&ge;0.05" rain or snow) creates slick leather footballs and slippery turf, significantly elevating strip-sack and loose-ball fumble recovery rates.</p>
+            </div>
+            <div class="weather-factor">
+              <h4>Indoor Dome Advantage</h4>
+              <p>Climate-controlled stadiums eliminate weather variance, providing clean track conditions for high-pressure fronts to operate at maximum speed on turf.</p>
             </div>
           </div>
         </div>
