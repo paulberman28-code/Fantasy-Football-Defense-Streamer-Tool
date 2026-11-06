@@ -3,7 +3,7 @@ window.DEFENSE_DATA = {
     "season": 2026,
     "currentWeek": 9,
     "lookAheadWeek": 10,
-    "lastUpdated": "November 05, 2026 at 09:12 PM",
+    "lastUpdated": "November 05, 2026 at 09:25 PM",
     "totalOffenses": 32
   },
   "weekMatchups": [
@@ -45,9 +45,9 @@ window.DEFENSE_DATA = {
       "Off_Pass_EPA_L4": 0.013,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (54\u00b0F, 13mph)",
+      "Gametime_Weather": "Clear / Breezy (54\u00b0F, 13mph, g20)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Stifling low-scoring environment. Fully healthy Mike Macdonald defense generates an elite 25.2% pressure rate (#3 in NFL), -0.072 Def Pass EPA, and 71.3% 3rd-down stop rate, pinning down Gardner Minshew and an Arizona offense implied for just 15.5 points in Seattle with 12 mph crosswinds."
+      "Current_Week_Rationale": "Stifling low-scoring Speculative environment. Mike Macdonald's completely healthy defense generates an elite 25.2% pressure rate (#3 in NFL), -0.072 Def Pass EPA, and 71.3% 3rd-down stops. Facing Gardner Minshew behind a compromised Cardinals line with Arizona implied for a slate-low 15.5 points, Seattle is one of only two defenses with projected bracket points (1.4 pts) and a robust 2.3-point floor."
     },
     {
       "Offense": "Atlanta Falcons (ATL)",
@@ -89,7 +89,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 15.5,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Volume turnover target. Atlanta has yielded an NFL-high 64 fantasy points. Cincinnati's front generates a stout 24.1% defensive pressure rate to exploit Michael Penix Jr. throwing into tight windows (21.4% Agg%), though safety Kyle Dugger (quad) and CB DJ Turner II (heel) missed practice."
+      "Current_Week_Rationale": "Volume turnover Speculative target. Atlanta has surrendered an NFL-high 64 fantasy points to opposing defenses. Cincinnati's front generates a stout 24.1% defensive pressure rate to exploit Michael Penix Jr. forcing balls into tight windows (21.4% Agg%), projecting 2.8 sacks and 1.4 INTs. Monitor secondary injuries with safety Kyle Dugger (quad) and CB DJ Turner II (heel) missing practice."
     },
     {
       "Offense": "Baltimore Ravens (BAL)",
@@ -131,7 +131,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 12.7,
       "Gametime_Weather": "Heavy Rain (0.53\")",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Thursday Night wet turf smash. Jacksonville's aggressive defense (-0.050 Def Pass EPA, 69.6% 3rd-down stop rate) faces 3rd-string rookie Joe Fagnano in active rain on short rest, with Baltimore implied for a slate-low 14.8 points. Watch DE Travon Walker's status (rib, questionable)."
+      "Current_Week_Rationale": "Wet turf Speculative smash. Jacksonville's aggressive defense (-0.050 Def Pass EPA, 69.6% 3rd-down stop rate) faces 3rd-string rookie Joe Fagnano in heavy rain (0.53\" precipitation) with Baltimore implied for only 16.0 points. Fagnano's 4.2% fumble rate and the slick conditions offer prime strip-sack upside. Watch DE Travon Walker's status (rib, questionable)."
     },
     {
       "Offense": "Buffalo Bills (BUF)",
@@ -173,7 +173,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Brian Flores' unit generates an NFL-best 34.9% pressure rate, -0.207 Def Pass EPA, and 73.3% 3rd-down stop rate with a completely healthy roster, but faces MVP candidate Josh Allen (implied for 27.5 pts), who neutralizes pressure (only 13.0% S/P) and avoids turnovers."
+      "Current_Week_Rationale": "Unstoppable force meets immovable object. Brian Flores' defense boasts league-leading metrics across the board (NFL-best 95.4 DQI, 34.9% pressure rate, -0.207 Def Pass EPA, and 60 total fantasy pts) with a clean bill of health. However, facing MVP candidate Josh Allen (implied 23.8 pts), who neutralizes pressure (only 13.0% S/P) and avoids turnovers, caps Minnesota's fantasy ceiling to Neutral territory."
     },
     {
       "Offense": "Carolina Panthers (CAR)",
@@ -215,7 +215,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 13.4,
       "Gametime_Weather": "Clear / Mild (64\u00b0F, 5mph)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "High-floor sack monster. Denver generates an NFL #2 28.5% defensive pressure rate (league-high 74 QB hits), colliding directly with Bryce Young (34.8% S/P). Note: Safeties Talanoa Hufanga (ankle) and Brandon Jones (hamstring) missed practice, but Denver's elite pass-rushing front is fully healthy to terrorize Carolina's backfield."
+      "Current_Week_Rationale": "High-floor Priority sack monster. Denver brings an elite 28.5% defensive pressure rate (#2 in NFL with 74 QB hits), colliding directly with Bryce Young, who takes sacks on an astronomical 34.8% of pressures (Denver projects for a slate-high 5.2 sacks). While safeties Talanoa Hufanga (ankle) and Brandon Jones (hamstring) missed practice, Denver's lethal pass-rushing front is fully healthy to terrorize Carolina's backfield."
     },
     {
       "Offense": "Chicago Bears (CHI)",
@@ -255,9 +255,9 @@ window.DEFENSE_DATA = {
       "Off_Pass_EPA_L4": 0.05,
       "NGS_TTT": 3.24,
       "NGS_Agg%": 11.4,
-      "Gametime_Weather": "Clear / Mild (54\u00b0F, 8mph)",
+      "Gametime_Weather": "Clear / Breezy (54\u00b0F, 8mph, g20)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Elite weather-boosted turnover play. Soldier Field features 25 mph wind gusts, while Caleb Williams holds the ball for an NFL-high 3.24s (NGS TTT). This slow release allows TB's elite coverage unit (NFL-leading 15 takeaways, -0.161 Def Pass EPA, 71.2% 3rd-down stop rate) to capitalize on fluttered balls (TB projects for 2.2 INTs). Pass rusher Yaya Diaby (knee) missed practice."
+      "Current_Week_Rationale": "Elite Priority turnover play on Sunday Night Football. While daytime 25+ mph lakefront gusts subside to 8 mph breezes (g20) by kickoff, rookie Caleb Williams holds the ball for an NFL-high 3.24s (NGS TTT) and converts 32.4% of pressures into sacks. This slow release allows Tampa Bay's ball-hawking secondary (NFL-leading 15 takeaways, -0.161 Def Pass EPA, 71.2% 3rd-down stop rate) to capitalize on mistakes (TB projects for 2.2 INTs). Pass rusher Yaya Diaby (knee) missed practice."
     },
     {
       "Offense": "Cincinnati Bengals (CIN)",
@@ -299,7 +299,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 12.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Avoid. Joe Burrow has been red-hot with +0.306 Pass EPA and rarely takes sacks (16.7% S/P), neutralizing Atlanta's 22.7% pressure rate."
+      "Current_Week_Rationale": "Avoid. Facing an elite passer in Joe Burrow, who has been red-hot with +0.306 Pass EPA and rarely takes sacks (only 16.7% S/P), while Cincinnati is implied for a hefty 27.8 points. Despite Atlanta's respectable 22.7% pressure rate, the lack of sack and turnover opportunities makes this a matchup to avoid."
     },
     {
       "Offense": "Cleveland Browns (CLE)",
@@ -341,7 +341,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Uncontested #1 smash play. Facing Cleveland (NFL-high 41 pts allowed over L4 games) with rookie Shedeur Sanders making his first start in the Superdome behind a Browns offensive line allowing an NFL-worst 10.6% sack rate. New Orleans enters completely healthy with no key defensive inactives."
+      "Current_Week_Rationale": "Uncontested #1 Priority smash play. New Orleans enters fully healthy with no key defensive inactives to face rookie Shedeur Sanders making his first NFL start behind a porous Cleveland offensive line allowing an NFL-worst 10.6% sack rate. The Superdome dome environment provides optimal conditions for New Orleans' fearsome defense (-0.112 Def Pass EPA, 69.4% 3rd-down stops) to tee off on an offense that has yielded an NFL-high 41 fantasy points over their last 4 games."
     },
     {
       "Offense": "Dallas Cowboys (DAL)",
@@ -383,7 +383,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 20.5,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Dak Prescott in a dome with Dallas implied for over 28 points, neutralizing Indy's 19.3% pressure rate."
+      "Current_Week_Rationale": "High-scoring dome shootout. Facing Dak Prescott and a Dallas offense implied for 28.5 points in Lucas Oil Stadium, Indianapolis projects for 0.0 bracket points. With DT DeForest Buckner on IR, Indy's 19.3% pressure rate offers virtually no turnover upside. Avoid."
     },
     {
       "Offense": "Denver Broncos (DEN)",
@@ -425,7 +425,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 11.2,
       "Gametime_Weather": "Clear / Mild (64\u00b0F, 5mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Bo Nix and a Denver offense that has yielded just 6 points over their last 4 games; Carolina's 14.5% pressure rate ranks near the bottom of the league, and linebackers Bobby Okereke (foot) and Jaelan Phillips (hamstring) missed practice."
+      "Current_Week_Rationale": "Lowest-rated defense on the board. Carolina ranks near the bottom in every defensive category (58.4 DQI, 14.5% pressure rate, and a porous 0.284 Def Pass EPA). Facing Bo Nix and an ascending Denver offense with linebackers Bobby Okereke (foot) and Jaelan Phillips (hamstring) sidelined, Carolina projects for just 0.8 fantasy points. Avoid."
     },
     {
       "Offense": "Detroit Lions (DET)",
@@ -467,7 +467,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 18.5,
       "Gametime_Weather": "Clear / Mild (83\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Tough road test against Jared Goff and a high-powered Detroit offense implied for nearly 29 points; Miami's 18.0% pressure rate and league-worst +0.302 Def Pass EPA face a stout Lions offensive line."
+      "Current_Week_Rationale": "Severe blowout risk. Miami's defense yields a league-worst +0.302 Def Pass EPA and faces Jared Goff behind Detroit's dominant offensive line, implied for 28.8 points. With 0.0 bracket points and a low sack ceiling (18.0% pressure), Miami is firmly in the Avoid tier."
     },
     {
       "Offense": "Green Bay Packers (GB)",
@@ -509,7 +509,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 16.3,
       "Gametime_Weather": "Windy (12 mph, g26)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Windy game (29 mph gusts) at home against Green Bay. New England generates a strong 24.1% defensive pressure rate, but Jordan Love gets rid of the ball quickly (2.58s TTT), limiting ceiling. DT Christian Barmore (illness) missed practice."
+      "Current_Week_Rationale": "Windy matchup at Gillette Stadium (26 mph gusts). New England generates a stout 24.1% pressure rate, but Jordan Love gets rid of the ball with lightning speed (2.58s TTT) and rarely takes sacks (16.7% S/P). With DT Christian Barmore (illness) missing practice, New England lacks the upside to justify starting. Avoid."
     },
     {
       "Offense": "Houston Texans (HOU)",
@@ -551,7 +551,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 19.8,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Tough matchup against C.J. Stroud and Houston, who have yielded just 6 points in their last 4 games, with All-Pro safety Derwin James on IR."
+      "Current_Week_Rationale": "Tough matchup against C.J. Stroud and a Houston offense that has yielded only 6 fantasy points in their last 4 games. With All-Pro safety Derwin James on IR, the Chargers' 16.5% pressure rate yields a slate-low 1.4 projected fantasy points. Avoid."
     },
     {
       "Offense": "Indianapolis Colts (IND)",
@@ -593,7 +593,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 13.4,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Under-the-radar upside play. Dallas brings a 19.1% pressure rate (21.5% L4) against Daniel Jones and an Indianapolis unit that has surrendered 35 points in their last 4 games (24 in L2), with Jones converting 32.9% of pressures into sacks. Dallas secondary is without safeties P.J. Locke and Caleb Downs (concussions)."
+      "Current_Week_Rationale": "Under-the-radar Speculative play. Dallas brings a 19.1% pressure rate (21.5% over L4) against Daniel Jones and an Indianapolis unit that has surrendered 35 points in their last 4 games (24 in L2), with Jones converting 32.9% of his pressures into sacks. Dallas projects for 3.3 sacks and 1.1 takeaways, though their secondary is thinned out with safeties P.J. Locke and Caleb Downs in concussion protocol."
     },
     {
       "Offense": "Jacksonville Jaguars (JAX)",
@@ -635,7 +635,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 16.2,
       "Gametime_Weather": "Heavy Rain (0.53\")",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Depleted roster with offensive injuries; Trevor Lawrence has played clean football recently (+0.273 Pass EPA), while Baltimore's secondary is banged up with Nate Wiggins (stinger) and Jaylinn Hawkins (knee, Out)."
+      "Current_Week_Rationale": "Battered defense in inclement weather. Although Thursday night features heavy rain (0.53\"), Baltimore's defense is heavily depleted with Roquan Smith on IR, safety Jaylinn Hawkins Out, and CB Nate Wiggins (stinger) missing practice. Trevor Lawrence has played clean football (+0.273 Pass EPA), leaving Baltimore with just a 14.8% pressure rate. Avoid."
     },
     {
       "Offense": "Kansas City Chiefs (KC)",
@@ -677,7 +677,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 6.9,
       "Gametime_Weather": "Clear / Mild (66\u00b0F, 9mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Patrick Mahomes in Kansas City; low turnover floor despite a 21.7% pressure rate, and DT Harrison Phillips (ankle) missed practice."
+      "Current_Week_Rationale": "Facing Patrick Mahomes at Arrowhead. Mahomes takes sacks on an NFL-low 14.8% of pressures and Kansas City is implied for 28.8 points. Despite a solid 21.7% pressure rate, the Jets project for 0.0 bracket points and just 2.2 total points. DT Harrison Phillips (ankle) missed practice. Avoid."
     },
     {
       "Offense": "Los Angeles Rams (LA)",
@@ -719,7 +719,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 13.9,
       "Gametime_Weather": "Clear / Mild (61\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Tougher spot against Matthew Stafford and a Rams offense that rarely gives up fantasy points to defenses (only 11 pts allowed in L4); defensive tackle Daron Payne remains on IR."
+      "Current_Week_Rationale": "Tough matchup against Matthew Stafford and a disciplined Rams passing attack that has yielded only 11 fantasy points over their last 4 games. With DT Daron Payne on IR, Washington's 16.4% pressure rate will struggle to penetrate, projecting flat 0.0 bracket points against an implied 26.5 total. Avoid."
     },
     {
       "Offense": "Los Angeles Chargers (LAC)",
@@ -761,7 +761,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Elite ceiling play coming off a bye. Houston's fearsome front (23.7% Def Pressure with Will Anderson Jr. & Danielle Hunter) faces a Chargers passing attack with an NFL-worst -0.365 Pass EPA, implied for just 18.0 points. Starting S Reed Blankenship (concussion) is in protocol, but Houston's front seven is fully loaded."
+      "Current_Week_Rationale": "Elite ceiling Speculative play coming off a bye. Houston's fearsome front (23.7% pressure with Will Anderson Jr. & Danielle Hunter) faces a depleted Chargers passing attack struggling with an NFL-worst -0.365 Pass EPA, implied for just 17.2 points. Starting safety Reed Blankenship remains on IR, but Houston's front seven is fully loaded to harass Justin Herbert in SoFi Stadium."
     },
     {
       "Offense": "Las Vegas Raiders (LV)",
@@ -803,7 +803,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 20.8,
       "Gametime_Weather": "Clear / Mild (71\u00b0F, 7mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "10-point home favorite against Kirk Cousins, but Cousins gets rid of the ball quickly and limits strip-sacks, facing a 49ers front with a 19.0% pressure rate and 66.4% 3rd-down stop rate."
+      "Current_Week_Rationale": "Kirk Cousins gets rid of the ball quickly (2.61s TTT) and avoids bad sacks, facing a 49ers defense missing superstar edge rusher Nick Bosa on IR. With only a 19.0% pressure rate and 0.0 bracket points against Las Vegas' 20.8 implied total, San Francisco offers very little fantasy appeal. Avoid."
     },
     {
       "Offense": "Miami Dolphins (MIA)",
@@ -845,7 +845,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 18.6,
       "Gametime_Weather": "Clear / Mild (83\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "High variance ceiling play. Detroit generates 24.6% pressure against Miami, where Malik Willis holds the ball for 3.05s and the Dolphins allow pressure on 44% of dropbacks. However, injuries to top cornerback D.J. Reed (hip) and linebacker Jack Campbell (neck) heighten big-play risk."
+      "Current_Week_Rationale": "Volatile road spot. Detroit generates a strong 24.6% pressure rate against Malik Willis, who holds the ball for 3.05s behind a Dolphins line allowing 44% pressure. However, injuries to standout CB D.J. Reed (hip) and LB Jack Campbell (neck) heighten big-play vulnerability in South Florida heat (83\u00b0F), landing Detroit in Avoid."
     },
     {
       "Offense": "Minnesota Vikings (MIN)",
@@ -887,7 +887,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Solid floor vs backup Carson Wentz. Minnesota is without Kyler Murray, lowering their offensive ceiling. Buffalo's healthy defense generates 23.4% pressure to keep Wentz in check."
+      "Current_Week_Rationale": "Road test against Carson Wentz, who is filling in for Kyler Murray (IR). Buffalo enters healthy with a 23.4% pressure rate, but Kevin O'Connell's offensive scheme limits negative plays in the dome, leaving Buffalo with 0.0 bracket points and a 2.8-point projection. Avoid."
     },
     {
       "Offense": "New England Patriots (NE)",
@@ -929,7 +929,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 12.4,
       "Gametime_Weather": "Windy (12 mph, g26)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Facing Drake Maye, who has been highly efficient in recent weeks (+0.422 Pass EPA), capping Green Bay's turnover ceiling despite their solid 21.2% pressure rate and -0.052 Def Pass EPA. LB Zaire Franklin (shin) missed practice."
+      "Current_Week_Rationale": "Windy road test in Foxborough (26 mph gusts). Green Bay's defense features a solid 21.2% pressure rate and -0.052 Def Pass EPA, but rookie Drake Maye has been scorching hot over his last 4 games (+0.422 Pass EPA), capping Green Bay's turnover ceiling to Neutral. LB Zaire Franklin (shin) missed practice."
     },
     {
       "Offense": "New Orleans Saints (NO)",
@@ -971,7 +971,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Difficult road matchup in New Orleans against Tyler Shough, who has protected the ball well, limiting the upside of Cleveland's 24.1% pressure rate. DT Maliek Collins (elbow) and LB Quincy Williams (hamstring) missed practice."
+      "Current_Week_Rationale": "Hostile road environment in the Superdome. Tyler Shough has protected the football effectively (only 19.2% S/P), limiting the turnover ceiling for Cleveland's 24.1% pressure rate. Defensive line depth is compromised with DT Maliek Collins (elbow) and LB Quincy Williams (hamstring) missing practice. Firm Avoid."
     },
     {
       "Offense": "New York Giants (NYG)",
@@ -1011,9 +1011,9 @@ window.DEFENSE_DATA = {
       "Off_Pass_EPA_L4": 0.115,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (59\u00b0F, 11mph)",
+      "Gametime_Weather": "Clear / Breezy (59\u00b0F, 11mph, g20)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Divisional matchup facing J.J. McCarthy. Philadelphia generates a modest 12.3% pressure rate (#32 in NFL) and is missing key secondary depth with Jonathan Jones (hamstring) and Michael Carter II (abdomen) sidelined."
+      "Current_Week_Rationale": "Decimated secondary. While rookie J.J. McCarthy takes sacks on 34.1% of pressures, Philadelphia's pass rush ranks dead last in the NFL with a 12.3% pressure rate. Coupled with injuries to key cornerbacks Jonathan Jones and Michael Carter II, the Eagles present too much downside risk. Avoid."
     },
     {
       "Offense": "New York Jets (NYJ)",
@@ -1055,7 +1055,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 15.5,
       "Gametime_Weather": "Clear / Mild (66\u00b0F, 9mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Heavy 10-point home favorite against Geno Smith and the Jets (implied for 18.8 pts). Kansas City generates a 15.4% pressure rate and 66.1% 3rd-down stop rate; New York limits major negative turnovers."
+      "Current_Week_Rationale": "Heavy 10-point home favorite at Arrowhead. While the Jets are implied for just 18.8 points, Kansas City's pass rush generates a modest 15.4% pressure rate, and New York limits turnover cascades. With DT Payton Woods (neck) missing practice, Kansas City projects for just 2.9 fantasy points. Avoid."
     },
     {
       "Offense": "Philadelphia Eagles (PHI)",
@@ -1095,9 +1095,9 @@ window.DEFENSE_DATA = {
       "Off_Pass_EPA_L4": -0.136,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (59\u00b0F, 11mph)",
+      "Gametime_Weather": "Clear / Breezy (59\u00b0F, 11mph, g20)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Vegas darling matchup. Giants front generated high pressure rates recently (18.6% L4) and faces Joe Milton III making his first NFL start, with Philadelphia implied for only 17.5 points. Watch rookie LB Abdul Carter (illness)."
+      "Current_Week_Rationale": "Low-implied divisional game. The Giants face backup Joe Milton III making his first NFL start, with Philadelphia implied for 17.5 points. However, New York's modest 13.9% pressure rate and missing linebackers (Tremaine Edmunds on IR, rookie Abdul Carter ill) cap their fantasy scoring to just 3.6 projected points. Avoid."
     },
     {
       "Offense": "Pittsburgh Steelers (PIT)",
@@ -1179,9 +1179,9 @@ window.DEFENSE_DATA = {
       "Off_Pass_EPA_L4": -0.038,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (54\u00b0F, 13mph)",
+      "Gametime_Weather": "Clear / Breezy (54\u00b0F, 13mph, g20)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Opportunistic matchup facing backup Drew Lock (Sam Darnold out). Healthy Arizona front (20.9% pressure) faces a Seattle offense that has surrendered 29 fantasy points over their last 4 games, though game script (SEA -8.5) keeps Arizona in Speculative territory."
+      "Current_Week_Rationale": "Opportunistic Speculative matchup against backup Drew Lock (Sam Darnold sidelined with quad/rib injuries). Arizona enters fully healthy and projects for 4.2 sacks against Lock, who holds the ball for 3.01s. However, Arizona's vulnerable pass defense (+0.246 Def Pass EPA) and Seattle's 24.0 implied total keep Arizona strictly in Speculative territory."
     },
     {
       "Offense": "San Francisco 49ers (SF)",
@@ -1223,7 +1223,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Clear / Mild (71\u00b0F, 7mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Brock Purdy and the 49ers off a bye; low fantasy upside against a disciplined Shanahan offense despite a 23.4% pressure rate."
+      "Current_Week_Rationale": "Dangerous road matchup in the Bay. Las Vegas faces Brock Purdy and a rested 49ers offense coming off a bye, implied for an NFL-high 30.8 points. With 0.0 projected bracket points and CB Joey Porter Jr. (groin) sidelined, Las Vegas is a clear Avoid despite their 23.4% pressure rate."
     },
     {
       "Offense": "Tampa Bay Buccaneers (TB)",
@@ -1263,9 +1263,9 @@ window.DEFENSE_DATA = {
       "Off_Pass_EPA_L4": -0.117,
       "NGS_TTT": 2.94,
       "NGS_Agg%": 13.6,
-      "Gametime_Weather": "Clear / Mild (54\u00b0F, 8mph)",
+      "Gametime_Weather": "Clear / Breezy (54\u00b0F, 8mph, g20)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Favorable game script. A completely healthy Chicago defense brings a stout 24.0% defensive pressure rate and an NFL-best 78.2% 3rd-down stop rate against Baker Mayfield, who converts 36.8% of his pressures into sacks in gusty lakefront weather."
+      "Current_Week_Rationale": "Low-scoring Sunday Night Football battle. A fully healthy Chicago defense boasts an elite 78.2% 3rd-down stop rate (#1 in NFL) and 24.0% pressure rate against Baker Mayfield (who takes sacks on 36.8% of pressures and has a 4.8% fumble rate). However, facing an explosive Tampa Bay offense caps Chicago's scoring projection to 3.1 points with 0.0 bracket points. Avoid."
     },
     {
       "Offense": "Tennessee Titans (TEN)",
@@ -1349,7 +1349,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 13.1,
       "Gametime_Weather": "Clear / Mild (61\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Standard matchup projection."
+      "Current_Week_Rationale": "Severely depleted defense on the road. The Rams are missing superstar edge rusher Myles Garrett on IR, plus starting safety Kamren Curl (foot) and cornerbacks Trent McDuffie (back) and Jaylen Watson (shoulder). Containing the dual-threat electric rookie Jayden Daniels with a battered defense makes Los Angeles an easy Avoid."
     }
   ],
   "historicalOffenses": [
@@ -1391,9 +1391,9 @@ window.DEFENSE_DATA = {
       "Off_Pass_EPA_L4": 0.013,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (54\u00b0F, 13mph)",
+      "Gametime_Weather": "Clear / Breezy (54\u00b0F, 13mph, g20)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Stifling low-scoring environment. Fully healthy Mike Macdonald defense generates an elite 25.2% pressure rate (#3 in NFL), -0.072 Def Pass EPA, and 71.3% 3rd-down stop rate, pinning down Gardner Minshew and an Arizona offense implied for just 15.5 points in Seattle with 12 mph crosswinds."
+      "Current_Week_Rationale": "Stifling low-scoring Speculative environment. Mike Macdonald's completely healthy defense generates an elite 25.2% pressure rate (#3 in NFL), -0.072 Def Pass EPA, and 71.3% 3rd-down stops. Facing Gardner Minshew behind a compromised Cardinals line with Arizona implied for a slate-low 15.5 points, Seattle is one of only two defenses with projected bracket points (1.4 pts) and a robust 2.3-point floor."
     },
     {
       "Offense": "Atlanta Falcons (ATL)",
@@ -1435,7 +1435,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 15.5,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Volume turnover target. Atlanta has yielded an NFL-high 64 fantasy points. Cincinnati's front generates a stout 24.1% defensive pressure rate to exploit Michael Penix Jr. throwing into tight windows (21.4% Agg%), though safety Kyle Dugger (quad) and CB DJ Turner II (heel) missed practice."
+      "Current_Week_Rationale": "Volume turnover Speculative target. Atlanta has surrendered an NFL-high 64 fantasy points to opposing defenses. Cincinnati's front generates a stout 24.1% defensive pressure rate to exploit Michael Penix Jr. forcing balls into tight windows (21.4% Agg%), projecting 2.8 sacks and 1.4 INTs. Monitor secondary injuries with safety Kyle Dugger (quad) and CB DJ Turner II (heel) missing practice."
     },
     {
       "Offense": "Baltimore Ravens (BAL)",
@@ -1477,7 +1477,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 12.7,
       "Gametime_Weather": "Heavy Rain (0.53\")",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Thursday Night wet turf smash. Jacksonville's aggressive defense (-0.050 Def Pass EPA, 69.6% 3rd-down stop rate) faces 3rd-string rookie Joe Fagnano in active rain on short rest, with Baltimore implied for a slate-low 14.8 points. Watch DE Travon Walker's status (rib, questionable)."
+      "Current_Week_Rationale": "Wet turf Speculative smash. Jacksonville's aggressive defense (-0.050 Def Pass EPA, 69.6% 3rd-down stop rate) faces 3rd-string rookie Joe Fagnano in heavy rain (0.53\" precipitation) with Baltimore implied for only 16.0 points. Fagnano's 4.2% fumble rate and the slick conditions offer prime strip-sack upside. Watch DE Travon Walker's status (rib, questionable)."
     },
     {
       "Offense": "Buffalo Bills (BUF)",
@@ -1519,7 +1519,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Brian Flores' unit generates an NFL-best 34.9% pressure rate, -0.207 Def Pass EPA, and 73.3% 3rd-down stop rate with a completely healthy roster, but faces MVP candidate Josh Allen (implied for 27.5 pts), who neutralizes pressure (only 13.0% S/P) and avoids turnovers."
+      "Current_Week_Rationale": "Unstoppable force meets immovable object. Brian Flores' defense boasts league-leading metrics across the board (NFL-best 95.4 DQI, 34.9% pressure rate, -0.207 Def Pass EPA, and 60 total fantasy pts) with a clean bill of health. However, facing MVP candidate Josh Allen (implied 23.8 pts), who neutralizes pressure (only 13.0% S/P) and avoids turnovers, caps Minnesota's fantasy ceiling to Neutral territory."
     },
     {
       "Offense": "Carolina Panthers (CAR)",
@@ -1561,7 +1561,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 13.4,
       "Gametime_Weather": "Clear / Mild (64\u00b0F, 5mph)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "High-floor sack monster. Denver generates an NFL #2 28.5% defensive pressure rate (league-high 74 QB hits), colliding directly with Bryce Young (34.8% S/P). Note: Safeties Talanoa Hufanga (ankle) and Brandon Jones (hamstring) missed practice, but Denver's elite pass-rushing front is fully healthy to terrorize Carolina's backfield."
+      "Current_Week_Rationale": "High-floor Priority sack monster. Denver brings an elite 28.5% defensive pressure rate (#2 in NFL with 74 QB hits), colliding directly with Bryce Young, who takes sacks on an astronomical 34.8% of pressures (Denver projects for a slate-high 5.2 sacks). While safeties Talanoa Hufanga (ankle) and Brandon Jones (hamstring) missed practice, Denver's lethal pass-rushing front is fully healthy to terrorize Carolina's backfield."
     },
     {
       "Offense": "Chicago Bears (CHI)",
@@ -1601,9 +1601,9 @@ window.DEFENSE_DATA = {
       "Off_Pass_EPA_L4": 0.05,
       "NGS_TTT": 3.24,
       "NGS_Agg%": 11.4,
-      "Gametime_Weather": "Clear / Mild (54\u00b0F, 8mph)",
+      "Gametime_Weather": "Clear / Breezy (54\u00b0F, 8mph, g20)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Elite weather-boosted turnover play. Soldier Field features 25 mph wind gusts, while Caleb Williams holds the ball for an NFL-high 3.24s (NGS TTT). This slow release allows TB's elite coverage unit (NFL-leading 15 takeaways, -0.161 Def Pass EPA, 71.2% 3rd-down stop rate) to capitalize on fluttered balls (TB projects for 2.2 INTs). Pass rusher Yaya Diaby (knee) missed practice."
+      "Current_Week_Rationale": "Elite Priority turnover play on Sunday Night Football. While daytime 25+ mph lakefront gusts subside to 8 mph breezes (g20) by kickoff, rookie Caleb Williams holds the ball for an NFL-high 3.24s (NGS TTT) and converts 32.4% of pressures into sacks. This slow release allows Tampa Bay's ball-hawking secondary (NFL-leading 15 takeaways, -0.161 Def Pass EPA, 71.2% 3rd-down stop rate) to capitalize on mistakes (TB projects for 2.2 INTs). Pass rusher Yaya Diaby (knee) missed practice."
     },
     {
       "Offense": "Cincinnati Bengals (CIN)",
@@ -1645,7 +1645,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 12.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Avoid. Joe Burrow has been red-hot with +0.306 Pass EPA and rarely takes sacks (16.7% S/P), neutralizing Atlanta's 22.7% pressure rate."
+      "Current_Week_Rationale": "Avoid. Facing an elite passer in Joe Burrow, who has been red-hot with +0.306 Pass EPA and rarely takes sacks (only 16.7% S/P), while Cincinnati is implied for a hefty 27.8 points. Despite Atlanta's respectable 22.7% pressure rate, the lack of sack and turnover opportunities makes this a matchup to avoid."
     },
     {
       "Offense": "Cleveland Browns (CLE)",
@@ -1687,7 +1687,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Uncontested #1 smash play. Facing Cleveland (NFL-high 41 pts allowed over L4 games) with rookie Shedeur Sanders making his first start in the Superdome behind a Browns offensive line allowing an NFL-worst 10.6% sack rate. New Orleans enters completely healthy with no key defensive inactives."
+      "Current_Week_Rationale": "Uncontested #1 Priority smash play. New Orleans enters fully healthy with no key defensive inactives to face rookie Shedeur Sanders making his first NFL start behind a porous Cleveland offensive line allowing an NFL-worst 10.6% sack rate. The Superdome dome environment provides optimal conditions for New Orleans' fearsome defense (-0.112 Def Pass EPA, 69.4% 3rd-down stops) to tee off on an offense that has yielded an NFL-high 41 fantasy points over their last 4 games."
     },
     {
       "Offense": "Dallas Cowboys (DAL)",
@@ -1729,7 +1729,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 20.5,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Dak Prescott in a dome with Dallas implied for over 28 points, neutralizing Indy's 19.3% pressure rate."
+      "Current_Week_Rationale": "High-scoring dome shootout. Facing Dak Prescott and a Dallas offense implied for 28.5 points in Lucas Oil Stadium, Indianapolis projects for 0.0 bracket points. With DT DeForest Buckner on IR, Indy's 19.3% pressure rate offers virtually no turnover upside. Avoid."
     },
     {
       "Offense": "Denver Broncos (DEN)",
@@ -1771,7 +1771,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 11.2,
       "Gametime_Weather": "Clear / Mild (64\u00b0F, 5mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Bo Nix and a Denver offense that has yielded just 6 points over their last 4 games; Carolina's 14.5% pressure rate ranks near the bottom of the league, and linebackers Bobby Okereke (foot) and Jaelan Phillips (hamstring) missed practice."
+      "Current_Week_Rationale": "Lowest-rated defense on the board. Carolina ranks near the bottom in every defensive category (58.4 DQI, 14.5% pressure rate, and a porous 0.284 Def Pass EPA). Facing Bo Nix and an ascending Denver offense with linebackers Bobby Okereke (foot) and Jaelan Phillips (hamstring) sidelined, Carolina projects for just 0.8 fantasy points. Avoid."
     },
     {
       "Offense": "Detroit Lions (DET)",
@@ -1813,7 +1813,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 18.5,
       "Gametime_Weather": "Clear / Mild (83\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Tough road test against Jared Goff and a high-powered Detroit offense implied for nearly 29 points; Miami's 18.0% pressure rate and league-worst +0.302 Def Pass EPA face a stout Lions offensive line."
+      "Current_Week_Rationale": "Severe blowout risk. Miami's defense yields a league-worst +0.302 Def Pass EPA and faces Jared Goff behind Detroit's dominant offensive line, implied for 28.8 points. With 0.0 bracket points and a low sack ceiling (18.0% pressure), Miami is firmly in the Avoid tier."
     },
     {
       "Offense": "Green Bay Packers (GB)",
@@ -1855,7 +1855,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 16.3,
       "Gametime_Weather": "Windy (12 mph, g26)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Windy game (29 mph gusts) at home against Green Bay. New England generates a strong 24.1% defensive pressure rate, but Jordan Love gets rid of the ball quickly (2.58s TTT), limiting ceiling. DT Christian Barmore (illness) missed practice."
+      "Current_Week_Rationale": "Windy matchup at Gillette Stadium (26 mph gusts). New England generates a stout 24.1% pressure rate, but Jordan Love gets rid of the ball with lightning speed (2.58s TTT) and rarely takes sacks (16.7% S/P). With DT Christian Barmore (illness) missing practice, New England lacks the upside to justify starting. Avoid."
     },
     {
       "Offense": "Houston Texans (HOU)",
@@ -1897,7 +1897,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 19.8,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Tough matchup against C.J. Stroud and Houston, who have yielded just 6 points in their last 4 games, with All-Pro safety Derwin James on IR."
+      "Current_Week_Rationale": "Tough matchup against C.J. Stroud and a Houston offense that has yielded only 6 fantasy points in their last 4 games. With All-Pro safety Derwin James on IR, the Chargers' 16.5% pressure rate yields a slate-low 1.4 projected fantasy points. Avoid."
     },
     {
       "Offense": "Indianapolis Colts (IND)",
@@ -1939,7 +1939,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 13.4,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Under-the-radar upside play. Dallas brings a 19.1% pressure rate (21.5% L4) against Daniel Jones and an Indianapolis unit that has surrendered 35 points in their last 4 games (24 in L2), with Jones converting 32.9% of pressures into sacks. Dallas secondary is without safeties P.J. Locke and Caleb Downs (concussions)."
+      "Current_Week_Rationale": "Under-the-radar Speculative play. Dallas brings a 19.1% pressure rate (21.5% over L4) against Daniel Jones and an Indianapolis unit that has surrendered 35 points in their last 4 games (24 in L2), with Jones converting 32.9% of his pressures into sacks. Dallas projects for 3.3 sacks and 1.1 takeaways, though their secondary is thinned out with safeties P.J. Locke and Caleb Downs in concussion protocol."
     },
     {
       "Offense": "Jacksonville Jaguars (JAX)",
@@ -1981,7 +1981,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 16.2,
       "Gametime_Weather": "Heavy Rain (0.53\")",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Depleted roster with offensive injuries; Trevor Lawrence has played clean football recently (+0.273 Pass EPA), while Baltimore's secondary is banged up with Nate Wiggins (stinger) and Jaylinn Hawkins (knee, Out)."
+      "Current_Week_Rationale": "Battered defense in inclement weather. Although Thursday night features heavy rain (0.53\"), Baltimore's defense is heavily depleted with Roquan Smith on IR, safety Jaylinn Hawkins Out, and CB Nate Wiggins (stinger) missing practice. Trevor Lawrence has played clean football (+0.273 Pass EPA), leaving Baltimore with just a 14.8% pressure rate. Avoid."
     },
     {
       "Offense": "Kansas City Chiefs (KC)",
@@ -2023,7 +2023,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 6.9,
       "Gametime_Weather": "Clear / Mild (66\u00b0F, 9mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Patrick Mahomes in Kansas City; low turnover floor despite a 21.7% pressure rate, and DT Harrison Phillips (ankle) missed practice."
+      "Current_Week_Rationale": "Facing Patrick Mahomes at Arrowhead. Mahomes takes sacks on an NFL-low 14.8% of pressures and Kansas City is implied for 28.8 points. Despite a solid 21.7% pressure rate, the Jets project for 0.0 bracket points and just 2.2 total points. DT Harrison Phillips (ankle) missed practice. Avoid."
     },
     {
       "Offense": "Los Angeles Rams (LA)",
@@ -2065,7 +2065,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 13.9,
       "Gametime_Weather": "Clear / Mild (61\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Tougher spot against Matthew Stafford and a Rams offense that rarely gives up fantasy points to defenses (only 11 pts allowed in L4); defensive tackle Daron Payne remains on IR."
+      "Current_Week_Rationale": "Tough matchup against Matthew Stafford and a disciplined Rams passing attack that has yielded only 11 fantasy points over their last 4 games. With DT Daron Payne on IR, Washington's 16.4% pressure rate will struggle to penetrate, projecting flat 0.0 bracket points against an implied 26.5 total. Avoid."
     },
     {
       "Offense": "Los Angeles Chargers (LAC)",
@@ -2107,7 +2107,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Elite ceiling play coming off a bye. Houston's fearsome front (23.7% Def Pressure with Will Anderson Jr. & Danielle Hunter) faces a Chargers passing attack with an NFL-worst -0.365 Pass EPA, implied for just 18.0 points. Starting S Reed Blankenship (concussion) is in protocol, but Houston's front seven is fully loaded."
+      "Current_Week_Rationale": "Elite ceiling Speculative play coming off a bye. Houston's fearsome front (23.7% pressure with Will Anderson Jr. & Danielle Hunter) faces a depleted Chargers passing attack struggling with an NFL-worst -0.365 Pass EPA, implied for just 17.2 points. Starting safety Reed Blankenship remains on IR, but Houston's front seven is fully loaded to harass Justin Herbert in SoFi Stadium."
     },
     {
       "Offense": "Las Vegas Raiders (LV)",
@@ -2149,7 +2149,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 20.8,
       "Gametime_Weather": "Clear / Mild (71\u00b0F, 7mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "10-point home favorite against Kirk Cousins, but Cousins gets rid of the ball quickly and limits strip-sacks, facing a 49ers front with a 19.0% pressure rate and 66.4% 3rd-down stop rate."
+      "Current_Week_Rationale": "Kirk Cousins gets rid of the ball quickly (2.61s TTT) and avoids bad sacks, facing a 49ers defense missing superstar edge rusher Nick Bosa on IR. With only a 19.0% pressure rate and 0.0 bracket points against Las Vegas' 20.8 implied total, San Francisco offers very little fantasy appeal. Avoid."
     },
     {
       "Offense": "Miami Dolphins (MIA)",
@@ -2191,7 +2191,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 18.6,
       "Gametime_Weather": "Clear / Mild (83\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "High variance ceiling play. Detroit generates 24.6% pressure against Miami, where Malik Willis holds the ball for 3.05s and the Dolphins allow pressure on 44% of dropbacks. However, injuries to top cornerback D.J. Reed (hip) and linebacker Jack Campbell (neck) heighten big-play risk."
+      "Current_Week_Rationale": "Volatile road spot. Detroit generates a strong 24.6% pressure rate against Malik Willis, who holds the ball for 3.05s behind a Dolphins line allowing 44% pressure. However, injuries to standout CB D.J. Reed (hip) and LB Jack Campbell (neck) heighten big-play vulnerability in South Florida heat (83\u00b0F), landing Detroit in Avoid."
     },
     {
       "Offense": "Minnesota Vikings (MIN)",
@@ -2233,7 +2233,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Solid floor vs backup Carson Wentz. Minnesota is without Kyler Murray, lowering their offensive ceiling. Buffalo's healthy defense generates 23.4% pressure to keep Wentz in check."
+      "Current_Week_Rationale": "Road test against Carson Wentz, who is filling in for Kyler Murray (IR). Buffalo enters healthy with a 23.4% pressure rate, but Kevin O'Connell's offensive scheme limits negative plays in the dome, leaving Buffalo with 0.0 bracket points and a 2.8-point projection. Avoid."
     },
     {
       "Offense": "New England Patriots (NE)",
@@ -2275,7 +2275,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 12.4,
       "Gametime_Weather": "Windy (12 mph, g26)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Facing Drake Maye, who has been highly efficient in recent weeks (+0.422 Pass EPA), capping Green Bay's turnover ceiling despite their solid 21.2% pressure rate and -0.052 Def Pass EPA. LB Zaire Franklin (shin) missed practice."
+      "Current_Week_Rationale": "Windy road test in Foxborough (26 mph gusts). Green Bay's defense features a solid 21.2% pressure rate and -0.052 Def Pass EPA, but rookie Drake Maye has been scorching hot over his last 4 games (+0.422 Pass EPA), capping Green Bay's turnover ceiling to Neutral. LB Zaire Franklin (shin) missed practice."
     },
     {
       "Offense": "New Orleans Saints (NO)",
@@ -2317,7 +2317,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Difficult road matchup in New Orleans against Tyler Shough, who has protected the ball well, limiting the upside of Cleveland's 24.1% pressure rate. DT Maliek Collins (elbow) and LB Quincy Williams (hamstring) missed practice."
+      "Current_Week_Rationale": "Hostile road environment in the Superdome. Tyler Shough has protected the football effectively (only 19.2% S/P), limiting the turnover ceiling for Cleveland's 24.1% pressure rate. Defensive line depth is compromised with DT Maliek Collins (elbow) and LB Quincy Williams (hamstring) missing practice. Firm Avoid."
     },
     {
       "Offense": "New York Giants (NYG)",
@@ -2357,9 +2357,9 @@ window.DEFENSE_DATA = {
       "Off_Pass_EPA_L4": 0.115,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (59\u00b0F, 11mph)",
+      "Gametime_Weather": "Clear / Breezy (59\u00b0F, 11mph, g20)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Divisional matchup facing J.J. McCarthy. Philadelphia generates a modest 12.3% pressure rate (#32 in NFL) and is missing key secondary depth with Jonathan Jones (hamstring) and Michael Carter II (abdomen) sidelined."
+      "Current_Week_Rationale": "Decimated secondary. While rookie J.J. McCarthy takes sacks on 34.1% of pressures, Philadelphia's pass rush ranks dead last in the NFL with a 12.3% pressure rate. Coupled with injuries to key cornerbacks Jonathan Jones and Michael Carter II, the Eagles present too much downside risk. Avoid."
     },
     {
       "Offense": "New York Jets (NYJ)",
@@ -2401,7 +2401,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 15.5,
       "Gametime_Weather": "Clear / Mild (66\u00b0F, 9mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Heavy 10-point home favorite against Geno Smith and the Jets (implied for 18.8 pts). Kansas City generates a 15.4% pressure rate and 66.1% 3rd-down stop rate; New York limits major negative turnovers."
+      "Current_Week_Rationale": "Heavy 10-point home favorite at Arrowhead. While the Jets are implied for just 18.8 points, Kansas City's pass rush generates a modest 15.4% pressure rate, and New York limits turnover cascades. With DT Payton Woods (neck) missing practice, Kansas City projects for just 2.9 fantasy points. Avoid."
     },
     {
       "Offense": "Philadelphia Eagles (PHI)",
@@ -2441,9 +2441,9 @@ window.DEFENSE_DATA = {
       "Off_Pass_EPA_L4": -0.136,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (59\u00b0F, 11mph)",
+      "Gametime_Weather": "Clear / Breezy (59\u00b0F, 11mph, g20)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Vegas darling matchup. Giants front generated high pressure rates recently (18.6% L4) and faces Joe Milton III making his first NFL start, with Philadelphia implied for only 17.5 points. Watch rookie LB Abdul Carter (illness)."
+      "Current_Week_Rationale": "Low-implied divisional game. The Giants face backup Joe Milton III making his first NFL start, with Philadelphia implied for 17.5 points. However, New York's modest 13.9% pressure rate and missing linebackers (Tremaine Edmunds on IR, rookie Abdul Carter ill) cap their fantasy scoring to just 3.6 projected points. Avoid."
     },
     {
       "Offense": "Pittsburgh Steelers (PIT)",
@@ -2525,9 +2525,9 @@ window.DEFENSE_DATA = {
       "Off_Pass_EPA_L4": -0.038,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (54\u00b0F, 13mph)",
+      "Gametime_Weather": "Clear / Breezy (54\u00b0F, 13mph, g20)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Opportunistic matchup facing backup Drew Lock (Sam Darnold out). Healthy Arizona front (20.9% pressure) faces a Seattle offense that has surrendered 29 fantasy points over their last 4 games, though game script (SEA -8.5) keeps Arizona in Speculative territory."
+      "Current_Week_Rationale": "Opportunistic Speculative matchup against backup Drew Lock (Sam Darnold sidelined with quad/rib injuries). Arizona enters fully healthy and projects for 4.2 sacks against Lock, who holds the ball for 3.01s. However, Arizona's vulnerable pass defense (+0.246 Def Pass EPA) and Seattle's 24.0 implied total keep Arizona strictly in Speculative territory."
     },
     {
       "Offense": "San Francisco 49ers (SF)",
@@ -2569,7 +2569,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Clear / Mild (71\u00b0F, 7mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Brock Purdy and the 49ers off a bye; low fantasy upside against a disciplined Shanahan offense despite a 23.4% pressure rate."
+      "Current_Week_Rationale": "Dangerous road matchup in the Bay. Las Vegas faces Brock Purdy and a rested 49ers offense coming off a bye, implied for an NFL-high 30.8 points. With 0.0 projected bracket points and CB Joey Porter Jr. (groin) sidelined, Las Vegas is a clear Avoid despite their 23.4% pressure rate."
     },
     {
       "Offense": "Tampa Bay Buccaneers (TB)",
@@ -2609,9 +2609,9 @@ window.DEFENSE_DATA = {
       "Off_Pass_EPA_L4": -0.117,
       "NGS_TTT": 2.94,
       "NGS_Agg%": 13.6,
-      "Gametime_Weather": "Clear / Mild (54\u00b0F, 8mph)",
+      "Gametime_Weather": "Clear / Breezy (54\u00b0F, 8mph, g20)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Favorable game script. A completely healthy Chicago defense brings a stout 24.0% defensive pressure rate and an NFL-best 78.2% 3rd-down stop rate against Baker Mayfield, who converts 36.8% of his pressures into sacks in gusty lakefront weather."
+      "Current_Week_Rationale": "Low-scoring Sunday Night Football battle. A fully healthy Chicago defense boasts an elite 78.2% 3rd-down stop rate (#1 in NFL) and 24.0% pressure rate against Baker Mayfield (who takes sacks on 36.8% of pressures and has a 4.8% fumble rate). However, facing an explosive Tampa Bay offense caps Chicago's scoring projection to 3.1 points with 0.0 bracket points. Avoid."
     },
     {
       "Offense": "Tennessee Titans (TEN)",
@@ -2695,7 +2695,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 13.1,
       "Gametime_Weather": "Clear / Mild (61\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Standard matchup projection."
+      "Current_Week_Rationale": "Severely depleted defense on the road. The Rams are missing superstar edge rusher Myles Garrett on IR, plus starting safety Kamren Curl (foot) and cornerbacks Trent McDuffie (back) and Jaylen Watson (shoulder). Containing the dual-threat electric rookie Jayden Daniels with a battered defense makes Los Angeles an easy Avoid."
     }
   ],
   "lookAheadStashes": [

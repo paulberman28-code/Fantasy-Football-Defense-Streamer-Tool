@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // Weather Alert
-        const windy = active.filter(m => (m.Gametime_Weather || '').toLowerCase().includes('wind') || (m.Gametime_Weather || '').toLowerCase().includes('gust'));
+        const windy = active.filter(m => (m.Gametime_Weather || '').toLowerCase().includes('wind') || (m.Gametime_Weather || '').toLowerCase().includes('gust') || (m.Gametime_Weather || '').toLowerCase().includes('breezy'));
         if (windy.length > 0) {
           const names = windy.map(w => w.Target_DST.split(' ')[0]).join(' & ');
           document.getElementById('kpi-weather-name').textContent = names;
@@ -373,7 +373,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (filters.weatherOnly) {
       rows = rows.filter(m => {
         const w = (m.Gametime_Weather || '').toLowerCase();
-        return w.includes('wind') || w.includes('rain') || w.includes('gust');
+        return w.includes('wind') || w.includes('rain') || w.includes('gust') || w.includes('breezy');
       });
     }
 
@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       
       // Weather pill style
       const weatherText = r.Gametime_Weather || 'N/A';
-      const isWind = weatherText.toLowerCase().includes('wind') || weatherText.toLowerCase().includes('gust');
+      const isWind = weatherText.toLowerCase().includes('wind') || weatherText.toLowerCase().includes('gust') || weatherText.toLowerCase().includes('breezy');
       const isDome = weatherText.toLowerCase().includes('dome');
       const weatherClass = isWind ? 'weather-wind' : (isDome ? 'weather-dome' : '');
       const weatherIcon = isWind ? '🌬️' : (isDome ? '🏟️' : '☀️');
