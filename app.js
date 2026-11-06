@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const sortStates = {
     week9: { column: 'Projected Fantasy Points', ascending: false },
     week10: { column: 'Opponent L4 Points Allowed', ascending: false },
+    playoffs: { column: 'Avg Opp Pts Allowed', ascending: false },
     history: { column: 'Total Points Allowed (W1-8)', ascending: false },
     'def-history': { column: 'Total Points (W1-8)', ascending: false },
     anatomy: { column: 'PPG', ascending: false },
@@ -64,9 +65,73 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupFilterEvents();
     setupSortingEvents();
     setupModalEvents();
+    setupCopyCheatSheet();
+    setupCompareModal();
 
     // Initial render
     renderAll();
+  }
+
+  // Official NFL Team Logos & Identity Helpers (ESPN CDN)
+  function getTeamLogoUrl(code) {
+    if (!code) return '';
+    const clean = String(code).trim().toUpperCase();
+    const espnMap = {
+      'WAS': 'wsh',
+      'WSH': 'wsh',
+      'LAR': 'lar',
+      'LA': 'lar',
+      'LAC': 'lac'
+    };
+    const espnCode = espnMap[clean] || clean.toLowerCase();
+    return `https://a.espncdn.com/i/teamlogos/nfl/500/${espnCode}.png`;
+  }
+
+  function renderTeamLogoHtml(code, label = '', size = 'sm') {
+    if (!code || code === 'BYE') return '';
+    const url = getTeamLogoUrl(code);
+    const sizeClass = size === 'lg' ? 'team-logo team-logo-lg' : 'team-logo';
+    return `<img class="${sizeClass}" src="${url}" alt="${label || code} logo" loading="lazy" onerror="this.style.display='none'">`;
+  }
+
+  function extractTeamCode(str) {
+    if (!str) return '';
+    const s = String(str).trim();
+    const paren = s.match(/\(([A-Z]{2,3})\)/);
+    if (paren) return paren[1];
+    const start = s.match(/^[A-Z]{2,3}\b/);
+    if (start && start[0] !== 'BYE') return start[0];
+    const opp = s.match(/[@vs]\s*([A-Z]{2,3})/i);
+    if (opp) return opp[1].toUpperCase();
+    const nameToCode = {
+      'Cardinals': 'ARI', 'Falcons': 'ATL', 'Ravens': 'BAL', 'Bills': 'BUF', 'Panthers': 'CAR',
+      'Bears': 'CHI', 'Bengals': 'CIN', 'Browns': 'CLE', 'Cowboys': 'DAL', 'Broncos': 'DEN',
+      'Lions': 'DET', 'Packers': 'GB', 'Texans': 'HOU', 'Colts': 'IND', 'Jaguars': 'JAX',
+      'Chiefs': 'KC', 'Raiders': 'LV', 'Chargers': 'LAC', 'Rams': 'LAR', 'Dolphins': 'MIA',
+      'Vikings': 'MIN', 'Patriots': 'NE', 'Saints': 'NO', 'Giants': 'NYG', 'Jets': 'NYJ',
+      'Eagles': 'PHI', 'Steelers': 'PIT', '49ers': 'SF', 'Seahawks': 'SEA', 'Buccaneers': 'TB',
+      'Titans': 'TEN', 'Commanders': 'WAS'
+    };
+    for (const [name, code] of Object.entries(nameToCode)) {
+      if (s.includes(name)) return code;
+    }
+    return '';
+  }
+
+  // 3-Week Multi-Week Stream-Ahead Runway Cell Helper
+  function renderRunwayCell(runway, grade) {
+    if (!runway || !Array.isArray(runway) || runway.length === 0) {
+      return `<span class="stat-dim">—</span>`;
+    }
+    const cleanGrade = (grade || 'C').replace('+', '-plus');
+    const gradeBadge = `<span class="runway-grade-badge grade-${cleanGrade}">${grade || 'C'}</span>`;
+    const chips = runway.map(m => {
+      const chipClass = `chip-${m.diff || 'neutral'}`;
+      const ppgText = m.diff === 'bye' ? 'BYE' : `${m.opp_ppg != null ? m.opp_ppg : '—'} PPG allowed`;
+      const title = `Week ${m.week}: ${m.matchup} (${m.diff}) • ${ppgText}`;
+      return `<span class="runway-chip ${chipClass}" title="${title}">${m.matchup || 'BYE'}</span>`;
+    }).join('');
+    return `<div class="runway-wrapper">${gradeBadge}<div class="runway-chips">${chips}</div></div>`;
   }
 
   // Helper for consistent number formatting to 1 decimal place (or specified decimals)
@@ -149,30 +214,38 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Top Smash Play
         const topSmash = [...active].sort((a, b) => (parseFloat(b.Proj_Fantasy_Pts) || 0) - (parseFloat(a.Proj_Fantasy_Pts) || 0))[0];
         if (topSmash) {
-          document.getElementById('kpi-smash-name').textContent = formatDstLabel(topSmash.Target_DST);
+          const smashCode = topSmash.Target_DST.split(' ')[0];
+          document.getElementById('kpi-smash-name').innerHTML = `${renderTeamLogoHtml(smashCode, smashCode, 'lg')} <span>${formatDstLabel(topSmash.Target_DST)}</span>`;
           document.getElementById('kpi-smash-sub').textContent = `${formatNum(topSmash.Proj_Fantasy_Pts, 1)} Proj Pts • vs ${topSmash.Team}`;
         }
 
         // Top Floor Play
         const topFloor = [...active].sort((a, b) => (parseFloat(b.Predicted_Floor) || 0) - (parseFloat(a.Predicted_Floor) || 0))[0];
         if (topFloor) {
-          document.getElementById('kpi-floor-name').textContent = formatDstLabel(topFloor.Target_DST);
+          const floorCode = topFloor.Target_DST.split(' ')[0];
+          document.getElementById('kpi-floor-name').innerHTML = `${renderTeamLogoHtml(floorCode, floorCode, 'lg')} <span>${formatDstLabel(topFloor.Target_DST)}</span>`;
           document.getElementById('kpi-floor-sub').textContent = `${formatNum(topFloor.Predicted_Floor, 1)} Floor • ${formatNum(topFloor.Proj_Sacks, 1)} Sacks`;
         }
 
         // Weather Alert
         const windy = active.filter(m => (m.Gametime_Weather || '').toLowerCase().includes('wind') || (m.Gametime_Weather || '').toLowerCase().includes('gust') || (m.Gametime_Weather || '').toLowerCase().includes('breezy'));
         if (windy.length > 0) {
-          const names = windy.map(w => w.Target_DST.split(' ')[0]).join(' & ');
-          document.getElementById('kpi-weather-name').textContent = names;
-          document.getElementById('kpi-weather-sub').textContent = `High Wind Gusts (INT Boost)`;
+          const teamCodes = windy.map(w => w.Target_DST.split(' ')[0]);
+          if (teamCodes.length > 4) {
+            document.getElementById('kpi-weather-name').textContent = `${teamCodes.length} Games Impacted`;
+            document.getElementById('kpi-weather-sub').textContent = `High Winds: ${teamCodes.slice(0, 4).join(', ')} +${teamCodes.length - 4} more`;
+          } else {
+            document.getElementById('kpi-weather-name').textContent = teamCodes.join(' & ');
+            document.getElementById('kpi-weather-sub').textContent = `High Wind Gusts (INT Boost)`;
+          }
         }
       }
     }
 
     if (appData.lookAheadStashes && appData.lookAheadStashes.length > 0) {
       const topStash = appData.lookAheadStashes[0];
-      document.getElementById('kpi-stash-name').textContent = `${topStash.Stash_DST} (Week ${meta.lookAheadWeek})`;
+      const stashCode = topStash.Stash_DST.split(' ')[0];
+      document.getElementById('kpi-stash-name').innerHTML = `${renderTeamLogoHtml(stashCode, stashCode, 'lg')} <span>${topStash.Stash_DST} (Week ${meta.lookAheadWeek})</span>`;
       document.getElementById('kpi-stash-sub').textContent = `${topStash.W10_Opponent} (${topStash.Opp_Last_4} pts L4)`;
     }
   }
@@ -227,8 +300,25 @@ document.addEventListener('DOMContentLoaded', async () => {
   function setupSortingEvents() {
     document.querySelectorAll('th[data-sort]').forEach(th => {
       th.addEventListener('click', () => {
+        const table = th.closest('table');
         const column = th.dataset.sort;
+
+        if (table && table.id === 'playoffs-table') {
+          if (!sortStates.playoffs) sortStates.playoffs = { column: 'Avg Opp Pts Allowed', ascending: false };
+          const currentSort = sortStates.playoffs;
+          if (currentSort.column === column) {
+            currentSort.ascending = !currentSort.ascending;
+          } else {
+            currentSort.column = column;
+            currentSort.ascending = false;
+          }
+          updateSortHeaders(table, column, currentSort.ascending);
+          renderPlayoffRadar();
+          return;
+        }
+
         const currentSort = sortStates[activeTab];
+        if (!currentSort) return;
 
         if (currentSort.column === column) {
           currentSort.ascending = !currentSort.ascending;
@@ -284,6 +374,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   function renderAll() {
     renderWeek9Projections();
     renderWeek10Stashes();
+    renderPlayoffRadar();
     renderHistory();
     renderDefenseHistory();
     renderPointsAnatomy();
@@ -292,7 +383,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function renderActiveTable() {
     if (activeTab === 'week9') renderWeek9Projections();
-    else if (activeTab === 'week10') renderWeek10Stashes();
+    else if (activeTab === 'week10') {
+      renderWeek10Stashes();
+      renderPlayoffRadar();
+    }
     else if (activeTab === 'history') renderHistory();
     else if (activeTab === 'def-history') renderDefenseHistory();
     else if (activeTab === 'anatomy') renderPointsAnatomy();
@@ -325,6 +419,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Opponent Szn Pts Allowed': 'Total_pts',
       'Opponent Total Points Allowed': 'Total_pts',
       'Opp Szn Pts Allowed': 'Total_pts',
+      '3-Week Runway Grade': 'Runway_Avg_Pts',
+      '3-Week Runway': 'Runway_Avg_Pts',
+      'Runway (W9-W11)': 'Runway_Avg_Pts',
+      '3-Week Runway (W9–W11)': 'Runway_Avg_Pts',
       'Vegas Implied Opponent Score': 'Opp_Implied_Pts',
       'Vegas Implied': 'Opp_Implied_Pts',
       'Projected Bracket Points': 'Exp_Bracket',
@@ -383,6 +481,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Render HTML
     tbody.innerHTML = rows.map((r, idx) => {
       const qbDisplay = formatQbCell(r.Starting_QB);
+      const teamCode = r.Target_DST.split(' ')[0];
+      const oppCode = extractTeamCode(r.Offense);
       
       // Weather pill style
       const weatherText = r.Gametime_Weather || 'N/A';
@@ -397,15 +497,22 @@ document.addEventListener('DOMContentLoaded', async () => {
       return `
         <tr data-row-idx="${idx}" class="matchup-row">
           <td class="col-sticky">
-            <div class="team-badge">
+            <div class="team-cell">
+              ${renderTeamLogoHtml(teamCode, r.Target_DST)}
               <span class="stat-bold">${formatDstLabel(r.Target_DST)}</span>
             </div>
           </td>
-          <td>${r.Offense}</td>
+          <td>
+            <div class="team-cell">
+              ${renderTeamLogoHtml(oppCode, r.Offense)}
+              <span>${r.Offense}</span>
+            </div>
+          </td>
           <td>${qbDisplay}</td>
           <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
           <td class="col-center"><span class="pts-highlight ${parseFloat(r.Last_4_Games) >= 30 ? 'pts-top' : ''}">${r.Last_4_Games} pts</span> <span class="stat-dim">(${(parseFloat(r.Last_4_Games) / 4).toFixed(1)}/g)</span></td>
           <td class="col-center"><span class="stat-bold">${r.Total_pts} pts</span></td>
+          <td class="col-center">${renderRunwayCell(r.Runway_W9_W11, r.Runway_Grade)}</td>
           <td class="col-center"><span class="pts-highlight ${parseFloat(r.Proj_Fantasy_Pts) >= 9 ? 'pts-top' : ''}">${formatNum(r.Proj_Fantasy_Pts, 1)}</span></td>
           <td class="col-center stat-bold">${formatNum(r.Predicted_Floor, 1)}</td>
           <td class="col-center">${formatNum(r.Proj_Sacks, 1)}</td>
@@ -437,6 +544,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (cardsContainer) {
       cardsContainer.innerHTML = rows.map((r, idx) => {
         const qbDisplay = formatQbCell(r.Starting_QB);
+        const teamCode = r.Target_DST.split(' ')[0];
         const weatherText = r.Gametime_Weather || 'N/A';
         const isWind = weatherText.toLowerCase().includes('wind') || weatherText.toLowerCase().includes('gust') || weatherText.toLowerCase().includes('breezy');
         const isDome = weatherText.toLowerCase().includes('dome');
@@ -448,8 +556,14 @@ document.addEventListener('DOMContentLoaded', async () => {
           <article class="mobile-matchup-card" data-row-idx="${idx}">
             <div class="m-card-header">
               <div class="m-card-title-group">
-                <span class="m-card-team">${formatDstLabel(r.Target_DST)} <small style="font-weight:500; opacity:0.85;">vs ${r.Offense}</small></span>
-                <span class="badge ${tierClass}">${r.Streamer_Tier}</span>
+                <div class="team-cell">
+                  ${renderTeamLogoHtml(teamCode, r.Target_DST)}
+                  <span class="m-card-team">${formatDstLabel(r.Target_DST)} <small style="font-weight:500; opacity:0.85;">vs ${r.Offense}</small></span>
+                </div>
+                <div style="display:flex; align-items:center; gap:0.4rem; margin-top:0.25rem;">
+                  ${renderRunwayCell(r.Runway_W9_W11, r.Runway_Grade)}
+                  <span class="badge ${tierClass}">${r.Streamer_Tier}</span>
+                </div>
               </div>
               <div class="m-card-pts-box">
                 <span class="m-card-pts ${parseFloat(r.Proj_Fantasy_Pts) >= 9 ? 'pts-top' : ''}">${formatNum(r.Proj_Fantasy_Pts, 1)} <small>PTS</small></span>
@@ -533,10 +647,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     tbody.innerHTML = rows.map((s, idx) => {
       const tierBadgeClass = getTierClass(s.Stash_Tier);
       const mobileOpp = s.W10_Opponent_Mobile || s.W10_Opponent;
+      const stashCode = s.Stash_DST;
+      const oppCode = extractTeamCode(s.W10_Opponent);
+
       return `
         <tr data-stash-idx="${idx}" class="stash-row">
-          <td class="col-sticky"><span class="stat-bold">${s.Stash_DST}</span></td>
-          <td><span class="team-desktop">${s.W10_Opponent}</span><span class="team-mobile stat-bold">${mobileOpp}</span></td>
+          <td class="col-sticky">
+            <div class="team-cell">
+              ${renderTeamLogoHtml(stashCode, s.Stash_DST)}
+              <span class="stat-bold">${s.Stash_DST}</span>
+            </div>
+          </td>
+          <td>
+            <div class="team-cell">
+              ${renderTeamLogoHtml(oppCode, s.W10_Opponent)}
+              <span class="team-desktop">${s.W10_Opponent}</span><span class="team-mobile stat-bold">${mobileOpp}</span>
+            </div>
+          </td>
           <td class="col-center"><span class="badge ${tierBadgeClass}">${s.Stash_Tier || 'Neutral'}</span></td>
           <td class="col-center"><span class="dqi-badge ${getDqiClass(s.Stash_DQI)}">${s.Stash_DQI !== undefined && s.Stash_DQI !== null && s.Stash_DQI !== '-' ? formatNum(s.Stash_DQI, 1) : '—'}</span></td>
           <td class="col-center ${parseFloat(s['Def_Pressure_Rate%']) >= 25 ? 'stat-bold pts-top' : (parseFloat(s['Def_Pressure_Rate%']) >= 22.5 ? 'stat-bold' : '')}">${s['Def_Pressure_Rate%'] !== undefined && s['Def_Pressure_Rate%'] !== '-' ? formatNum(s['Def_Pressure_Rate%'], 1) + '%' : '—'}</td>
@@ -559,11 +686,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         const tierBadgeClass = getTierClass(s.Stash_Tier);
         const mobileOpp = s.W10_Opponent_Mobile || s.W10_Opponent;
         const matchupLabel = mobileOpp.startsWith('@') ? `(${mobileOpp})` : `vs ${mobileOpp}`;
+        const stashCode = s.Stash_DST;
+
         return `
           <article class="mobile-matchup-card stash-mobile-card" data-stash-idx="${idx}">
             <div class="m-card-header">
               <div class="m-card-title-group">
-                <span class="m-card-team">${s.Stash_DST} <small style="font-weight:500; opacity:0.85;">${matchupLabel}</small></span>
+                <div class="team-cell">
+                  ${renderTeamLogoHtml(stashCode, s.Stash_DST)}
+                  <span class="m-card-team">${s.Stash_DST} <small style="font-weight:500; opacity:0.85;">${matchupLabel}</small></span>
+                </div>
                 <span class="badge ${tierBadgeClass}">${s.Stash_Tier || 'Neutral'}</span>
               </div>
               <div class="m-card-pts-box">
@@ -601,6 +733,71 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
       }).join('');
     }
+
+    // Synchronously render the Playoff Schedule Radar
+    renderPlayoffRadar();
+  }
+
+  // 8b. Render Fantasy Playoff Schedule Radar (Weeks 15–17)
+  function renderPlayoffRadar() {
+    const tbody = document.getElementById('playoffs-tbody');
+    if (!tbody || !appData || !appData.playoffRadar) return;
+
+    let rows = [...appData.playoffRadar];
+    const sortConfig = sortStates.playoffs || { column: 'Avg Opp Pts Allowed', ascending: false };
+
+    const keyMap = {
+      'Defense': 'Defense',
+      'Playoff Rating': 'Playoff_Rating',
+      'Avg Opp Pts Allowed': 'Playoff_Avg_Opp_Allowed',
+      'Week 15 Matchup': 'W15_Opp_Pts',
+      'Week 16 Matchup': 'W16_Opp_Pts',
+      'Week 17 Matchup': 'W17_Opp_Pts'
+    };
+
+    const targetKey = keyMap[sortConfig.column] || sortConfig.column;
+    rows = sortData(rows, targetKey, sortConfig.ascending);
+
+    function getPlayoffBadgeClass(rating) {
+      if (!rating) return 'badge-neutral';
+      if (rating.includes('Elite')) return 'badge-priority';
+      if (rating.includes('Favorable')) return 'badge-speculative';
+      if (rating.includes('Moderate')) return 'badge-neutral';
+      return 'badge-avoid';
+    }
+
+    function renderMatchupChip(matchup, opp, pts, diff) {
+      const chipClass = `chip-${diff || 'neutral'}`;
+      const title = `${opp} allows ${pts} PPG to fantasy D/ST`;
+      return `
+        <div style="display:flex; flex-direction:column; align-items:center; gap:2px;">
+          <span class="runway-chip ${chipClass}" title="${title}">${matchup}</span>
+          <span class="stat-dim" style="font-size:0.75rem;">${pts} pts/g</span>
+        </div>
+      `;
+    }
+
+    tbody.innerHTML = rows.map(r => {
+      const badgeClass = getPlayoffBadgeClass(r.Playoff_Rating);
+      const teamCode = r.Team || extractTeamCode(r.Defense);
+
+      return `
+        <tr>
+          <td class="col-sticky">
+            <div class="team-cell">
+              ${renderTeamLogoHtml(teamCode, r.Defense)}
+              <span class="stat-bold">${r.Defense}</span>
+            </div>
+          </td>
+          <td class="col-center"><span class="badge ${badgeClass}">${r.Playoff_Rating}</span></td>
+          <td class="col-center"><span class="pts-highlight ${r.Playoff_Avg_Opp_Allowed >= 5.5 ? 'pts-top' : ''}">${formatNum(r.Playoff_Avg_Opp_Allowed, 2)} pts</span></td>
+          <td class="col-center">${renderMatchupChip(r.W15_Matchup, r.W15_Opp, r.W15_Opp_Pts, r.W15_Diff)}</td>
+          <td class="col-center">${renderMatchupChip(r.W16_Matchup, r.W16_Opp, r.W16_Opp_Pts, r.W16_Diff)}</td>
+          <td class="col-center">${renderMatchupChip(r.W17_Matchup, r.W17_Opp, r.W17_Opp_Pts, r.W17_Diff)}</td>
+          <td class="col-rationale" style="font-size:0.84rem; line-height:1.45;">${r.Playoff_Outlook}</td>
+        </tr>
+      `;
+    }).join('');
   }
 
   function getStashBadgeClass(tier) {
@@ -636,7 +833,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       return `
         <tr>
-          <td class="col-sticky"><span class="stat-bold team-desktop">${h.Offense}</span><span class="stat-bold team-mobile">${h.Team || h.Offense}</span></td>
+          <td class="col-sticky">
+            <div class="team-cell">
+              ${renderTeamLogoHtml(extractTeamCode(h.Offense), h.Offense)}
+              <span class="stat-bold team-desktop">${h.Offense}</span><span class="stat-bold team-mobile">${h.Team || h.Offense}</span>
+            </div>
+          </td>
           ${renderHeatCell(h.W1)}
           ${renderHeatCell(h.W2)}
           ${renderHeatCell(h.W3)}
@@ -738,7 +940,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       return `
         <tr>
-          <td class="col-sticky"><span class="stat-bold team-desktop">${d.Defense}</span><span class="stat-bold team-mobile">${d.Team || d.Defense}</span></td>
+          <td class="col-sticky">
+            <div class="team-cell">
+              ${renderTeamLogoHtml(extractTeamCode(d.Defense), d.Defense)}
+              <span class="stat-bold team-desktop">${d.Defense}</span><span class="stat-bold team-mobile">${d.Team || d.Defense}</span>
+            </div>
+          </td>
           ${renderDefHeatCell(d.W1)}
           ${renderDefHeatCell(d.W2)}
           ${renderDefHeatCell(d.W3)}
@@ -832,7 +1039,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     tbody.innerHTML = rows.map(r => {
       return `
         <tr>
-          <td class="col-sticky"><span class="team-desktop"><span class="stat-bold">${r.Team_Name || r.Team}</span> <span class="stat-dim">(${r.Team})</span></span><span class="stat-bold team-mobile">${r.Team}</span></td>
+          <td class="col-sticky">
+            <div class="team-cell">
+              ${renderTeamLogoHtml(r.Team, r.Team_Name || r.Team)}
+              <span class="team-desktop"><span class="stat-bold">${r.Team_Name || r.Team}</span> <span class="stat-dim">(${r.Team})</span></span><span class="stat-bold team-mobile">${r.Team}</span>
+            </div>
+          </td>
           <td class="col-center">${r.GP}</td>
           <td class="col-center stat-bold pts-top">${formatNum(r.PPG, 1)}</td>
           <td class="col-center"><span class="pts-highlight">${r.Total_Pts} pts</span></td>
@@ -1180,7 +1392,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const kpiRow = modal.querySelector('.modal-kpi-row');
     if (kpiRow) kpiRow.style.display = '';
 
-    document.getElementById('modal-matchup-title').textContent = `${formatDstLabel(data.Target_DST)} vs ${data.Offense}`;
+    document.getElementById('modal-matchup-title').innerHTML = `<div class="team-cell" style="display:inline-flex;">${renderTeamLogoHtml(data.Target_DST.split(' ')[0], data.Target_DST, 'lg')} <span>${formatDstLabel(data.Target_DST)} vs ${data.Offense}</span></div>`;
     document.getElementById('modal-tier-badge').textContent = data.Streamer_Tier;
     document.getElementById('modal-tier-badge').className = `badge tier-badge ${getTierClass(data.Streamer_Tier)}`;
 
@@ -1234,7 +1446,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const kpiRow = modal.querySelector('.modal-kpi-row');
     if (kpiRow) kpiRow.style.display = 'none';
 
-    document.getElementById('modal-matchup-title').textContent = `Week 10 Stash: ${data.Stash_DST} vs ${data.W10_Opponent}`;
+    document.getElementById('modal-matchup-title').innerHTML = `<div class="team-cell" style="display:inline-flex;">${renderTeamLogoHtml(data.Stash_DST, data.Stash_DST, 'lg')} <span>Week 10 Stash: ${data.Stash_DST} vs ${data.W10_Opponent}</span></div>`;
     document.getElementById('modal-tier-badge').textContent = data.Stash_Tier || 'Neutral';
     document.getElementById('modal-tier-badge').className = `badge tier-badge ${getTierClass(data.Stash_Tier)}`;
 
@@ -1288,6 +1500,254 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (val >= 80) return 'dqi-strong';
     if (val >= 70) return 'dqi-avg';
     return 'dqi-low';
+  }
+
+  // 13. One-Click Copy Cheat Sheet to Clipboard Logic
+  function setupCopyCheatSheet() {
+    const btn = document.getElementById('btn-copy-cheatsheet');
+    const copyIcon = document.getElementById('copy-icon');
+    const copyText = document.getElementById('copy-text');
+    if (!btn) return;
+
+    btn.addEventListener('click', async () => {
+      if (!appData || !appData.weekMatchups) return;
+      try {
+        const active = appData.weekMatchups.filter(m => m.Target_DST && !m.Target_DST.includes('BYE'));
+        const sorted = [...active].sort((a, b) => (parseFloat(b.Proj_Fantasy_Pts) || 0) - (parseFloat(a.Proj_Fantasy_Pts) || 0));
+
+        const topSmash = sorted[0];
+        const priorityTargets = sorted.filter(m => (m.Streamer_Tier || '').includes('Priority') && m !== topSmash);
+        const speculativeTargets = sorted.filter(m => (m.Streamer_Tier || '').includes('Speculative')).slice(0, 4);
+
+        const meta = appData.meta || { currentWeek: 9, lastUpdated: 'Nov 06, 2026' };
+        const topStash = (appData.lookAheadStashes && appData.lookAheadStashes[0]) || null;
+        const windy = active.filter(m => (m.Gametime_Weather || '').toLowerCase().includes('wind') || (m.Gametime_Weather || '').toLowerCase().includes('gust'));
+
+        let text = `🏈 WEEK ${meta.currentWeek} DEFENSIVE STREAMING CHEAT SHEET (WAFFLe League)\n`;
+        text += `Updated: ${meta.lastUpdated || 'Current'}\n\n`;
+
+        if (topSmash) {
+          text += `🔥 #1 SMASH PLAY:\n`;
+          text += `• ${topSmash.Target_DST} vs ${topSmash.Offense} — ${formatNum(topSmash.Proj_Fantasy_Pts, 1)} Proj Pts (Floor: ${formatNum(topSmash.Predicted_Floor, 1)}, Sacks: ${formatNum(topSmash.Proj_Sacks, 1)}) | 3-Wk Runway: ${topSmash.Runway_Grade || 'A'}\n\n`;
+        }
+
+        if (priorityTargets.length > 0) {
+          text += `🎯 PRIORITY TARGETS:\n`;
+          priorityTargets.forEach((m, i) => {
+            text += `${i + 1}. ${m.Target_DST} vs ${m.Offense} — ${formatNum(m.Proj_Fantasy_Pts, 1)} pts (Floor: ${formatNum(m.Predicted_Floor, 1)}) | Opp L4: ${m.Last_4_Games} pts | Runway: ${m.Runway_Grade || 'B'}\n`;
+          });
+          text += `\n`;
+        }
+
+        if (speculativeTargets.length > 0) {
+          text += `🎲 SPECULATIVE UPSIDE PLAYS:\n`;
+          speculativeTargets.forEach((m) => {
+            text += `• ${m.Target_DST} vs ${m.Offense} — ${formatNum(m.Proj_Fantasy_Pts, 1)} pts (Vegas: ${formatNum(m.Opp_Implied_Pts, 1)} pts)\n`;
+          });
+          text += `\n`;
+        }
+
+        if (topStash) {
+          text += `🔮 TOP WEEK 10 LOOK-AHEAD STASH:\n`;
+          text += `• ${topStash.Stash_DST} (W10: ${topStash.W10_Opponent}) — ${topStash.Opp_Last_4} pts allowed L4\n\n`;
+        }
+
+        if (windy.length > 0) {
+          text += `💨 WEATHER IMPACT ALERTS:\n`;
+          text += `• High Wind Gusts: ${windy.map(w => w.Target_DST.split(' ')[0]).join(', ')}\n\n`;
+        }
+
+        text += `📊 Interactive Rankings, 3-Week Runway & Playoff Radar:\nhttps://paulberman28-code.github.io/Fantasy-Football-Defense-Streamer-Tool/`;
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(text);
+        } else {
+          const textarea = document.createElement('textarea');
+          textarea.value = text;
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+        }
+
+        btn.classList.add('copied');
+        if (copyIcon) copyIcon.textContent = '✅';
+        if (copyText) copyText.textContent = 'Copied to Clipboard!';
+
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          if (copyIcon) copyIcon.textContent = '📋';
+          if (copyText) copyText.textContent = 'Copy Cheat Sheet';
+        }, 2500);
+      } catch (err) {
+        console.error('Failed to copy cheat sheet:', err);
+      }
+    });
+  }
+
+  // 14. Start 'Em / Sit 'Em Head-to-Head Comparison Decider Modal
+  function setupCompareModal() {
+    const modal = document.getElementById('compare-modal');
+    const openBtn = document.getElementById('btn-compare-modal');
+    const closeBtn = document.getElementById('compare-close-btn');
+    const selectA = document.getElementById('select-def-a');
+    const selectB = document.getElementById('select-def-b');
+    const verdictBox = document.getElementById('compare-verdict-box');
+    const tbody = document.getElementById('compare-tbody');
+    const thA = document.getElementById('compare-th-a');
+    const thB = document.getElementById('compare-th-b');
+
+    if (!modal || !openBtn || !selectA || !selectB) return;
+
+    if (closeBtn) closeBtn.addEventListener('click', () => modal.close());
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.close();
+    });
+
+    function populateSelects() {
+      if (!appData || !appData.weekMatchups) return;
+      const active = appData.weekMatchups.filter(m => m.Target_DST && !m.Target_DST.includes('BYE'));
+      const sorted = [...active].sort((a, b) => (parseFloat(b.Proj_Fantasy_Pts) || 0) - (parseFloat(a.Proj_Fantasy_Pts) || 0));
+
+      const optionsHtml = sorted.map((m, i) => {
+        const teamCode = m.Target_DST.split(' ')[0];
+        return `<option value="${teamCode}" ${i === 0 ? 'selected' : ''}>${formatDstLabel(m.Target_DST)} (${formatNum(m.Proj_Fantasy_Pts, 1)} pts)</option>`;
+      }).join('');
+
+      selectA.innerHTML = optionsHtml;
+      selectB.innerHTML = optionsHtml;
+
+      if (sorted.length > 1) {
+        selectB.selectedIndex = 1;
+      }
+    }
+
+    function runComparison() {
+      if (!appData || !appData.weekMatchups) return;
+      const codeA = selectA.value;
+      const codeB = selectB.value;
+
+      const teamA = appData.weekMatchups.find(m => m.Target_DST && m.Target_DST.split(' ')[0] === codeA);
+      const teamB = appData.weekMatchups.find(m => m.Target_DST && m.Target_DST.split(' ')[0] === codeB);
+
+      if (!teamA || !teamB) return;
+
+      const ptsA = parseFloat(teamA.Proj_Fantasy_Pts) || 0;
+      const ptsB = parseFloat(teamB.Proj_Fantasy_Pts) || 0;
+      const diff = Math.abs(ptsA - ptsB);
+
+      // Update Table Headers
+      thA.innerHTML = `<div class="team-cell" style="justify-content:center;">${renderTeamLogoHtml(codeA, codeA)} <span>${formatDstLabel(teamA.Target_DST)}</span></div>`;
+      thB.innerHTML = `<div class="team-cell" style="justify-content:center;">${renderTeamLogoHtml(codeB, codeB)} <span>${formatDstLabel(teamB.Target_DST)}</span></div>`;
+
+      // Determine verdict
+      let verdictTitle = '';
+      let verdictDesc = '';
+
+      if (codeA === codeB) {
+        verdictTitle = 'Identical Defense Selected';
+        verdictDesc = 'Please select two different defenses to see the head-to-head matchup comparison.';
+      } else if (diff < 0.3) {
+        const higherFloor = (parseFloat(teamA.Predicted_Floor) || 0) >= (parseFloat(teamB.Predicted_Floor) || 0) ? teamA : teamB;
+        verdictTitle = `⚖️ Virtual Toss-Up: Lean ${formatDstLabel(higherFloor.Target_DST)}`;
+        verdictDesc = `Both defenses are separated by just ${diff.toFixed(1)} projected fantasy points. Lean <strong>${formatDstLabel(higherFloor.Target_DST)}</strong> due to superior scoring floor (${formatNum(higherFloor.Predicted_Floor, 1)} pts) and safer sack baseline.`;
+      } else {
+        const winner = ptsA > ptsB ? teamA : teamB;
+        const loser = ptsA > ptsB ? teamB : teamA;
+        verdictTitle = `🏆 Start ${formatDstLabel(winner.Target_DST)} over ${formatDstLabel(loser.Target_DST)} (+${diff.toFixed(1)} Pts)`;
+        verdictDesc = `<strong>${formatDstLabel(winner.Target_DST)}</strong> projects for <strong>${formatNum(winner.Proj_Fantasy_Pts, 1)} points</strong> compared to ${formatNum(loser.Proj_Fantasy_Pts, 1)} for ${formatDstLabel(loser.Target_DST)}. Key advantages: higher expected scoring floor (${formatNum(winner.Predicted_Floor, 1)} vs ${formatNum(loser.Predicted_Floor, 1)}) and higher turnover upside against ${winner.Offense}.`;
+      }
+
+      verdictBox.innerHTML = `
+        <div class="verdict-header">
+          <span class="verdict-title">${verdictTitle}</span>
+        </div>
+        <p class="verdict-desc">${verdictDesc}</p>
+      `;
+
+      // Comparison Metrics rows
+      const metrics = [
+        {
+          label: 'Streaming Tier',
+          getVal: (m) => `<span class="badge ${getTierClass(m.Streamer_Tier)}">${m.Streamer_Tier}</span>`,
+          winner: 0
+        },
+        {
+          label: 'Projected Fantasy Points',
+          getVal: (m) => `<strong>${formatNum(m.Proj_Fantasy_Pts, 1)} pts</strong>`,
+          winner: ptsA === ptsB ? 0 : (ptsA > ptsB ? 1 : 2)
+        },
+        {
+          label: 'Scoring Floor (Safe Floor)',
+          getVal: (m) => `${formatNum(m.Predicted_Floor, 1)} pts`,
+          winner: (parseFloat(teamA.Predicted_Floor) || 0) === (parseFloat(teamB.Predicted_Floor) || 0) ? 0 : ((parseFloat(teamA.Predicted_Floor) || 0) > (parseFloat(teamB.Predicted_Floor) || 0) ? 1 : 2)
+        },
+        {
+          label: 'Projected Sacks',
+          getVal: (m) => `${formatNum(m.Proj_Sacks, 1)} sacks`,
+          winner: (parseFloat(teamA.Proj_Sacks) || 0) === (parseFloat(teamB.Proj_Sacks) || 0) ? 0 : ((parseFloat(teamA.Proj_Sacks) || 0) > (parseFloat(teamB.Proj_Sacks) || 0) ? 1 : 2)
+        },
+        {
+          label: 'Projected Turnovers (INT + Fum)',
+          getVal: (m) => `${((parseFloat(m.Proj_INTs) || 0) + (parseFloat(m.Proj_Fumbles) || 0)).toFixed(1)} (${formatNum(m.Proj_INTs, 1)} INT / ${formatNum(m.Proj_Fumbles, 1)} Fum)`,
+          winner: ((parseFloat(teamA.Proj_INTs) || 0) + (parseFloat(teamA.Proj_Fumbles) || 0)) === ((parseFloat(teamB.Proj_INTs) || 0) + (parseFloat(teamB.Proj_Fumbles) || 0)) ? 0 : (((parseFloat(teamA.Proj_INTs) || 0) + (parseFloat(teamA.Proj_Fumbles) || 0)) > ((parseFloat(teamB.Proj_INTs) || 0) + (parseFloat(teamB.Proj_Fumbles) || 0)) ? 1 : 2)
+        },
+        {
+          label: 'Opponent L4 Pts Allowed',
+          getVal: (m) => `${m.Last_4_Games} pts (${(m.Last_4_Games / 4).toFixed(1)}/g)`,
+          winner: parseFloat(teamA.Last_4_Games) === parseFloat(teamB.Last_4_Games) ? 0 : (parseFloat(teamA.Last_4_Games) > parseFloat(teamB.Last_4_Games) ? 1 : 2)
+        },
+        {
+          label: 'Def Quality Index (DQI)',
+          getVal: (m) => `<span class="dqi-badge ${getDqiClass(m.Def_DQI)}">${m.Def_DQI !== '-' ? formatNum(m.Def_DQI, 1) : '—'}</span>`,
+          winner: (parseFloat(teamA.Def_DQI) || 0) === (parseFloat(teamB.Def_DQI) || 0) ? 0 : ((parseFloat(teamA.Def_DQI) || 0) > (parseFloat(teamB.Def_DQI) || 0) ? 1 : 2)
+        },
+        {
+          label: 'Vegas Implied Opponent Score',
+          getVal: (m) => `${formatNum(m.Opp_Implied_Pts, 1)} pts`,
+          winner: parseFloat(teamA.Opp_Implied_Pts) === parseFloat(teamB.Opp_Implied_Pts) ? 0 : (parseFloat(teamA.Opp_Implied_Pts) < parseFloat(teamB.Opp_Implied_Pts) ? 1 : 2) // lower is better
+        },
+        {
+          label: '3-Week Runway Grade',
+          getVal: (m) => renderRunwayCell(m.Runway_W9_W11, m.Runway_Grade),
+          winner: 0
+        },
+        {
+          label: 'Opponent QB & Status',
+          getVal: (m) => formatQbCell(m.Starting_QB),
+          winner: 0
+        },
+        {
+          label: 'Kickoff Weather Environment',
+          getVal: (m) => m.Gametime_Weather || 'Standard',
+          winner: 0
+        }
+      ];
+
+      tbody.innerHTML = metrics.map(met => {
+        const valA = met.getVal(teamA);
+        const valB = met.getVal(teamB);
+        const advA = met.winner === 1 ? `<span class="adv-pill">✓ Advantage</span>` : '';
+        const advB = met.winner === 2 ? `<span class="adv-pill">✓ Advantage</span>` : '';
+
+        return `
+          <tr>
+            <td class="col-metric">${met.label}</td>
+            <td class="col-team ${met.winner === 1 ? 'col-adv' : ''}">${valA} ${advA}</td>
+            <td class="col-team ${met.winner === 2 ? 'col-adv' : ''}">${valB} ${advB}</td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    selectA.addEventListener('change', runComparison);
+    selectB.addEventListener('change', runComparison);
+
+    openBtn.addEventListener('click', () => {
+      populateSelects();
+      runComparison();
+      modal.showModal();
+    });
   }
 
   // 11. Dark / Light Theme Toggle

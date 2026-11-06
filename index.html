@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WAFFLe Fantasy D/ST Streamer Tool | 2026 Season</title>
   <meta name="description" content="WAFFLe Customized Defensive Scoring Fantasy D/ST streamer rankings and projections using NFL play-by-play data, Next Gen Stats, Vegas lines, and game-time weather.">
-  <link rel="stylesheet" href="style.css?v=20261106_9">
+  <link rel="stylesheet" href="style.css?v=20261106_10">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -35,6 +35,14 @@
           <span class="badge badge-muted" id="header-updated-badge">Updated: Nov 05, 2026</span>
         </div>
         <div class="header-controls-group">
+          <button class="action-btn" id="btn-copy-cheatsheet" title="Copy Week 9 Streaming Cheat Sheet for League Chat / Text">
+            <span class="btn-icon" id="copy-icon">📋</span>
+            <span id="copy-text">Copy Cheat Sheet</span>
+          </button>
+          <button class="action-btn action-btn-compare" id="btn-compare-modal" title="Compare any two defenses head-to-head">
+            <span class="btn-icon">⚖️</span>
+            <span>Start 'Em / Sit 'Em</span>
+          </button>
           <div class="visitor-counter-badge" title="Live Page Visitors">
             <span class="visitor-icon">👥</span>
             <span class="visitor-label">Visits:</span>
@@ -143,7 +151,7 @@
       </div>
 
       <div class="mobile-scroll-hint" id="week9-scroll-hint">
-        <span>👈 Swipe table horizontally to see all 28 columns • Tap any row for Full Analysis 👉</span>
+        <span>👈 Swipe table horizontally to see all 29 columns • Tap any row for Full Analysis 👉</span>
       </div>
 
       <div class="table-wrapper" tabindex="0" role="region" aria-label="Week 9 Defensive Projections Table">
@@ -151,7 +159,7 @@
           <caption class="sr-only">Week 9 Defensive Streaming Target Rankings and Performance Metrics</caption>
           <thead>
             <tr class="header-super-row">
-              <th colspan="6" class="super-header super-matchup">Matchup Core & Opponent Form</th>
+              <th colspan="7" class="super-header super-matchup">Matchup Core & Opponent Form</th>
               <th colspan="7" class="super-header super-projections">Fantasy Projections & Vegas</th>
               <th colspan="8" class="super-header super-defense">Defensive Quality & Health (Full Season Baseline)</th>
               <th colspan="5" class="super-header super-qb">Opponent QB & Stats (Recent L4 Form + Szn)</th>
@@ -165,6 +173,7 @@
               <th data-sort="Week 9 Verdict" class="col-center col-tier">Week 9<br>Verdict <span class="sort-arrow"></span></th>
               <th data-sort="Opponent Points Allowed L4" class="col-center col-stat-wide">Opponent L4<br>Pts Allowed <span class="sort-arrow"></span></th>
               <th data-sort="Opponent Points Allowed Season" class="col-center col-stat-wide">Opponent Szn<br>Pts Allowed <span class="sort-arrow"></span></th>
+              <th data-sort="3-Week Runway Grade" class="col-center col-stat-wide" title="Schedule difficulty for Weeks 9, 10, and 11 (Green=Easy, Yellow=Neutral, Red=Hard, Grey=BYE)">3-Week Runway<br>(W9–W11) <span class="sort-arrow"></span></th>
               <th data-sort="Projected Fantasy Points" class="col-center col-stat sort-active desc">Projected<br>Points <span class="sort-arrow">▼</span></th>
               <th data-sort="Scoring Floor" class="col-center col-stat">Scoring<br>Floor <span class="sort-arrow"></span></th>
               <th data-sort="Projected Sacks" class="col-center col-stat">Projected<br>Sacks <span class="sort-arrow"></span></th>
@@ -256,6 +265,46 @@
             </tr>
           </thead>
           <tbody id="stashes-tbody">
+            <!-- Dynamically populated by app.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Sub-Section: Fantasy Playoff Schedule Radar (Weeks 15-17) -->
+      <div class="subpanel-divider" style="margin: 2.5rem 0 1rem; border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
+        <div class="panel-header" style="margin-bottom: 0.75rem;">
+          <div class="panel-title-wrap">
+            <h2 class="panel-title">🏆 Fantasy Playoff Schedule Radar (Weeks 15–17)</h2>
+            <p class="panel-desc">Long-range strategic evaluation for the fantasy playoffs (Quarterfinals, Semifinals, and Championship). Defenses are ranked by average opponent fantasy points surrendered to opposing D/STs across Weeks 15–17.</p>
+          </div>
+          <div class="legend-row">
+            <span class="legend-item"><span class="legend-badge badge-priority">Elite (Tier 1)</span> 5.7+ Pts Allowed/G</span>
+            <span class="legend-item"><span class="legend-badge badge-speculative">Favorable (Tier 2)</span> 5.2–5.6 Pts/G</span>
+            <span class="legend-item"><span class="legend-badge badge-neutral">Moderate (Tier 3)</span> 4.6–5.1 Pts/G</span>
+            <span class="legend-item"><span class="legend-badge badge-avoid">Tough (Tier 4)</span> &lt; 4.6 Pts/G</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-scroll-hint">
+        <span>👈 Swipe table horizontally to see all columns 👉</span>
+      </div>
+
+      <div class="table-wrapper" tabindex="0" role="region" aria-label="Fantasy Playoff Schedule Radar Table">
+        <table id="playoffs-table">
+          <caption class="sr-only">Fantasy Playoff Defensive Matchup Radar across Weeks 15, 16, and 17</caption>
+          <thead>
+            <tr>
+              <th data-sort="Defense" class="col-sticky col-def">Defense <span class="sort-arrow"></span></th>
+              <th data-sort="Playoff Rating" class="col-center col-tier">Playoff<br>Tier <span class="sort-arrow"></span></th>
+              <th data-sort="Avg Opp Pts Allowed" class="col-center col-stat sort-active desc">Avg Opp Pts<br>Allowed/G <span class="sort-arrow">▼</span></th>
+              <th data-sort="Week 15 Matchup" class="col-center col-def">Week 15<br>(Quarterfinals) <span class="sort-arrow"></span></th>
+              <th data-sort="Week 16 Matchup" class="col-center col-def">Week 16<br>(Semifinals) <span class="sort-arrow"></span></th>
+              <th data-sort="Week 17 Matchup" class="col-center col-def">Week 17<br>(Championship) <span class="sort-arrow"></span></th>
+              <th>Strategic Playoff Outlook</th>
+            </tr>
+          </thead>
+          <tbody id="playoffs-tbody">
             <!-- Dynamically populated by app.js -->
           </tbody>
         </table>
@@ -916,6 +965,58 @@
     </div>
   </dialog>
 
+  <!-- Head-to-Head Start 'Em / Sit 'Em Decider Modal -->
+  <dialog id="compare-modal" class="app-modal compare-modal">
+    <div class="modal-content compare-modal-content">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-badge-row">
+            <span class="badge badge-accent">Decision Engine</span>
+            <span class="badge badge-waffle">Head-to-Head</span>
+          </div>
+          <h3 class="modal-title">⚖️ Start 'Em / Sit 'Em Decider</h3>
+          <p class="modal-sub">Compare any two Week 9 defenses side-by-side to make the optimal starting lineup decision.</p>
+        </div>
+        <button id="compare-close-btn" class="modal-close" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Team Selector Dropdowns -->
+        <div class="compare-selectors-grid">
+          <div class="selector-card">
+            <label for="select-def-a" class="selector-label">Defense A:</label>
+            <select id="select-def-a" class="compare-select"></select>
+          </div>
+          <div class="vs-divider"><span class="vs-circle">VS</span></div>
+          <div class="selector-card">
+            <label for="select-def-b" class="selector-label">Defense B:</label>
+            <select id="select-def-b" class="compare-select"></select>
+          </div>
+        </div>
+
+        <!-- Automated Verdict Callout Box -->
+        <div id="compare-verdict-box" class="compare-verdict-box">
+          <!-- Populated by app.js -->
+        </div>
+
+        <!-- Side-by-Side Comparison Table -->
+        <div class="table-wrapper compare-table-wrap">
+          <table class="compare-table" id="compare-table">
+            <thead>
+              <tr>
+                <th class="col-metric">Metric / Context</th>
+                <th id="compare-th-a" class="col-team col-team-a">Defense A</th>
+                <th id="compare-th-b" class="col-team col-team-b">Defense B</th>
+              </tr>
+            </thead>
+            <tbody id="compare-tbody">
+              <!-- Populated dynamically by app.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
   <footer class="app-footer">
     <div class="footer-inner">
       <p>NFL Fantasy D/ST Streamer Tool • Built for the WAFFLe's Customized Defensive Scoring System</p>
@@ -924,8 +1025,8 @@
   </footer>
 
   <!-- Load data.js for zero-CORS local Safari viewing (file:// protocol) -->
-  <script src="data.js?v=20261106_9"></script>
+  <script src="data.js?v=20261106_10"></script>
   <!-- Main application logic -->
-  <script src="app.js?v=20261106_9"></script>
+  <script src="app.js?v=20261106_10"></script>
 </body>
 </html>

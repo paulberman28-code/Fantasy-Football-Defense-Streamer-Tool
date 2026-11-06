@@ -3,7 +3,7 @@
     "season": 2026,
     "currentWeek": 9,
     "lookAheadWeek": 10,
-    "lastUpdated": "November 06, 2026 at 12:44 PM",
+    "lastUpdated": "November 06, 2026 at 03:58 PM",
     "totalOffenses": 32
   },
   "weekMatchups": [
@@ -31,6 +31,34 @@
       "Exp_Bracket": 1.4,
       "Proj_Fantasy_Pts": 5.3,
       "Predicted_Floor": 2.3,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs ARI",
+          "opp": "ARI",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.62
+        },
+        {
+          "week": 10,
+          "matchup": "@ LV",
+          "opp": "LV",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.38
+        },
+        {
+          "week": 11,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 3.5,
       "Def_DQI": 84.6,
       "Def_Pressure_Rate%": 25.2,
       "Def_Pass_EPA": -0.072,
@@ -45,9 +73,9 @@
       "Off_Pass_EPA_L4": 0.013,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Windy (13 mph, g25)",
+      "Gametime_Weather": "Clear / Breezy (54\u00b0F, 13mph, g24)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "High-upside Speculative matchup attacking a backup QB (5.3 proj pts). Facing backup Gardner Minshew (Brissett benched), who converts 25.0% of pressures into sacks. SEA features a 25.2% pressure rate and -0.072 Def Pass EPA (84.6 DQI). Their 3rd-down defense is stout, halting 71.3% of attempts. The Cardinals are implied for only 15.5 points, providing 1.4 projected bracket points. Projects for 2.7 sacks, 0.6 INTs, and 0.2 fumbles. Weather factor: Windy (13 mph, g25). Note defensive injuries: L. Williams (DT - Stinger, DNP), B. Pili (DT - Back, DNP), C. O'Toole (LB - Foot, DNP)."
+      "Current_Week_Rationale": "High-upside Speculative matchup attacking a backup QB (5.3 proj pts). Facing backup Gardner Minshew (Brissett benched), who converts 25.0% of pressures into sacks. SEA features a 25.2% pressure rate and -0.072 Def Pass EPA (84.6 DQI). Their 3rd-down defense is stout, halting 71.3% of attempts. The Cardinals are implied for only 15.5 points, providing 1.4 projected bracket points. Projects for 2.7 sacks, 0.6 INTs, and 0.2 fumbles. Weather factor: Clear / Breezy (54\u00b0F, 13mph, g24). Note defensive injuries: L. Williams (DT - Stinger, DNP), B. Pili (DT - Back, DNP), C. O'Toole (LB - Foot, DNP)."
     },
     {
       "Offense": "Falcons (ATL)",
@@ -73,6 +101,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 6.1,
       "Predicted_Floor": 2.0,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ ATL",
+          "opp": "ATL",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 8.0
+        },
+        {
+          "week": 10,
+          "matchup": "vs PIT",
+          "opp": "PIT",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 5.5
+        },
+        {
+          "week": 11,
+          "matchup": "@ WAS",
+          "opp": "WAS",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.29
+        }
+      ],
+      "Runway_Grade": "A",
+      "Runway_Avg_Pts": 5.6,
       "Def_DQI": 78.2,
       "Def_Pressure_Rate%": 24.1,
       "Def_Pass_EPA": 0.025,
@@ -115,6 +171,34 @@
       "Exp_Bracket": 1.1,
       "Proj_Fantasy_Pts": 5.3,
       "Predicted_Floor": 2.1,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ BAL",
+          "opp": "BAL",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 5.75
+        },
+        {
+          "week": 10,
+          "matchup": "@ TEN",
+          "opp": "TEN",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.0
+        },
+        {
+          "week": 11,
+          "matchup": "@ NYG",
+          "opp": "NYG",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.0
+        }
+      ],
+      "Runway_Grade": "A",
+      "Runway_Avg_Pts": 5.58,
       "Def_DQI": 83.6,
       "Def_Pressure_Rate%": 21.1,
       "Def_Pass_EPA": -0.05,
@@ -149,7 +233,7 @@
       "Total_pts": 24,
       "Target_DST": "MIN (Home)",
       "Starting_QB": "Josh Allen (Starter)",
-      "Opp_Implied_Pts": 23.8,
+      "Opp_Implied_Pts": 23.2,
       "Def_Spread": -3.0,
       "Proj_Sacks": 2.2,
       "Proj_INTs": 1.5,
@@ -157,6 +241,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 5.4,
       "Predicted_Floor": 1.7,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs BUF",
+          "opp": "BUF",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.43
+        },
+        {
+          "week": 10,
+          "matchup": "@ GB",
+          "opp": "GB",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.38
+        },
+        {
+          "week": 11,
+          "matchup": "@ SF",
+          "opp": "SF",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.57
+        }
+      ],
+      "Runway_Grade": "D",
+      "Runway_Avg_Pts": 3.13,
       "Def_DQI": 95.4,
       "Def_Pressure_Rate%": 34.9,
       "Def_Pass_EPA": -0.207,
@@ -173,7 +285,7 @@
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Elite defense in a challenging Neutral matchup (5.4 proj pts). Facing Josh Allen, who converts 25.0% of pressures into sacks. The Bills enter in strong offensive form (+0.258 Pass EPA over their last 4 games). MIN features a 34.9% pressure rate and -0.207 Def Pass EPA (95.4 DQI). Their 3rd-down defense is stout, halting 73.3% of attempts. The Bills are implied for 23.8 points (0.0 bracket points). Projects for 2.2 sacks, 1.5 INTs, and 0.6 fumbles. Indoors in dome conditions. Note defensive injuries: T. Jackson (S - Quadricep, DNP)."
+      "Current_Week_Rationale": "Elite defense in a challenging Neutral matchup (5.4 proj pts). Facing Josh Allen, who converts 25.0% of pressures into sacks. The Bills enter in strong offensive form (+0.258 Pass EPA over their last 4 games). MIN features a 34.9% pressure rate and -0.207 Def Pass EPA (95.4 DQI). Their 3rd-down defense is stout, halting 73.3% of attempts. The Bills are implied for 23.2 points (0.0 bracket points). Projects for 2.2 sacks, 1.5 INTs, and 0.6 fumbles. Indoors in dome conditions. Note defensive injuries: T. Jackson (S - Quadricep, DNP)."
     },
     {
       "Offense": "Panthers (CAR)",
@@ -199,6 +311,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 7.2,
       "Predicted_Floor": 3.1,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ CAR",
+          "opp": "CAR",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.29
+        },
+        {
+          "week": 10,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        },
+        {
+          "week": 11,
+          "matchup": "vs LV",
+          "opp": "LV",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 2.38
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.33,
       "Def_DQI": 78.0,
       "Def_Pressure_Rate%": 28.5,
       "Def_Pass_EPA": -0.024,
@@ -241,6 +381,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 7.6,
       "Predicted_Floor": 2.5,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ CHI",
+          "opp": "CHI",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.25
+        },
+        {
+          "week": 10,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        },
+        {
+          "week": 11,
+          "matchup": "@ DET",
+          "opp": "DET",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.86
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.05,
       "Def_DQI": 83.4,
       "Def_Pressure_Rate%": 17.7,
       "Def_Pass_EPA": -0.161,
@@ -255,9 +423,9 @@
       "Off_Pass_EPA_L4": 0.05,
       "NGS_TTT": 3.24,
       "NGS_Agg%": 11.4,
-      "Gametime_Weather": "Clear / Breezy (53\u00b0F, 9mph, g21)",
+      "Gametime_Weather": "Clear / Breezy (53\u00b0F, 9mph, g24)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Elite high-floor Priority streamer (7.6 proj pts, 2.5 floor). Facing Caleb Williams, who converts 32.4% of pressures into sacks while holding the ball for 3.24s (TTT). TB features a 17.7% pressure rate and -0.161 Def Pass EPA (83.4 DQI). Their 3rd-down defense is stout, halting 71.2% of attempts. The Bears are implied for 26.8 points (0.0 bracket points). Projects for 3.1 sacks, 2.2 INTs, and 0.8 fumbles. Weather factor: Clear / Breezy (53\u00b0F, 9mph, g21). Note defensive injuries: Y. Diaby (LB - Knee, DNP)."
+      "Current_Week_Rationale": "Elite high-floor Priority streamer (7.6 proj pts, 2.5 floor). Facing Caleb Williams, who converts 32.4% of pressures into sacks while holding the ball for 3.24s (TTT). TB features a 17.7% pressure rate and -0.161 Def Pass EPA (83.4 DQI). Their 3rd-down defense is stout, halting 71.2% of attempts. The Bears are implied for 26.8 points (0.0 bracket points). Projects for 3.1 sacks, 2.2 INTs, and 0.8 fumbles. Weather factor: Clear / Breezy (53\u00b0F, 9mph, g24). Note defensive injuries: Y. Diaby (LB - Knee, DNP)."
     },
     {
       "Offense": "Bengals (CIN)",
@@ -283,6 +451,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 4.7,
       "Predicted_Floor": 1.5,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs CIN",
+          "opp": "CIN",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.14
+        },
+        {
+          "week": 10,
+          "matchup": "vs KC",
+          "opp": "KC",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.0
+        },
+        {
+          "week": 11,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 3.57,
       "Def_DQI": 75.9,
       "Def_Pressure_Rate%": 22.7,
       "Def_Pass_EPA": -0.006,
@@ -317,14 +513,42 @@
       "Total_pts": 60,
       "Target_DST": "NO (Home)",
       "Starting_QB": "Shedeur Sanders (Backup: Watson concussed)",
-      "Opp_Implied_Pts": 19.8,
-      "Def_Spread": 3.0,
+      "Opp_Implied_Pts": 19.5,
+      "Def_Spread": 3.5,
       "Proj_Sacks": 6.8,
       "Proj_INTs": 0.3,
       "Proj_Fumbles": 1.3,
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 9.2,
       "Predicted_Floor": 3.8,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs CLE",
+          "opp": "CLE",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 7.5
+        },
+        {
+          "week": 10,
+          "matchup": "vs CAR",
+          "opp": "CAR",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 6.29
+        },
+        {
+          "week": 11,
+          "matchup": "@ CHI",
+          "opp": "CHI",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.25
+        }
+      ],
+      "Runway_Grade": "A",
+      "Runway_Avg_Pts": 6.35,
       "Def_DQI": 70.0,
       "Def_Pressure_Rate%": 19.9,
       "Def_Pass_EPA": 0.101,
@@ -341,7 +565,7 @@
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Uncontested #1 Priority smash play (9.2 proj pts, 3.8 floor). Facing backup Shedeur Sanders (Watson concussed), who converts an elevated 35.5% of pressures to sacks (S/P%). The Browns have surrendered an elevated 41 fantasy points to opposing defenses over their last 4 games. NO features a 19.9% pressure rate and 0.101 Def Pass EPA (70.0 DQI). They force turnovers on 30.0% of opponent drives. The Browns are implied for 19.8 points (0.0 bracket points). Projects for 6.8 sacks, 0.3 INTs, and 1.3 fumbles. Indoors in dome conditions. Defense enters healthy with no key starters ruled out."
+      "Current_Week_Rationale": "Uncontested #1 Priority smash play (9.2 proj pts, 3.8 floor). Facing backup Shedeur Sanders (Watson concussed), who converts an elevated 35.5% of pressures to sacks (S/P%). The Browns have surrendered an elevated 41 fantasy points to opposing defenses over their last 4 games. NO features a 19.9% pressure rate and 0.101 Def Pass EPA (70.0 DQI). They force turnovers on 30.0% of opponent drives. The Browns are implied for 19.5 points (0.0 bracket points). Projects for 6.8 sacks, 0.3 INTs, and 1.3 fumbles. Indoors in dome conditions. Defense enters healthy with no key starters ruled out."
     },
     {
       "Offense": "Cowboys (DAL)",
@@ -367,6 +591,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 2.2,
       "Predicted_Floor": 0.9,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs DAL",
+          "opp": "DAL",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 2.88
+        },
+        {
+          "week": 10,
+          "matchup": "vs MIA",
+          "opp": "MIA",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 6.0
+        },
+        {
+          "week": 11,
+          "matchup": "@ HOU",
+          "opp": "HOU",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.57
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.15,
       "Def_DQI": 71.2,
       "Def_Pressure_Rate%": 19.3,
       "Def_Pass_EPA": 0.096,
@@ -409,6 +661,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 0.8,
       "Predicted_Floor": 0.3,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs DEN",
+          "opp": "DEN",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 2.38
+        },
+        {
+          "week": 10,
+          "matchup": "@ NO",
+          "opp": "NO",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.0
+        },
+        {
+          "week": 11,
+          "matchup": "vs BAL",
+          "opp": "BAL",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 5.75
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.38,
       "Def_DQI": 67.8,
       "Def_Pressure_Rate%": 14.5,
       "Def_Pass_EPA": 0.056,
@@ -443,7 +723,7 @@
       "Total_pts": 20,
       "Target_DST": "MIA (Home)",
       "Starting_QB": "Jared Goff (Starter)",
-      "Opp_Implied_Pts": 28.5,
+      "Opp_Implied_Pts": 28.0,
       "Def_Spread": -6.5,
       "Proj_Sacks": 2.4,
       "Proj_INTs": 0.1,
@@ -451,6 +731,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.0,
       "Predicted_Floor": 1.4,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs DET",
+          "opp": "DET",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 2.86
+        },
+        {
+          "week": 10,
+          "matchup": "@ IND",
+          "opp": "IND",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.38
+        },
+        {
+          "week": 11,
+          "matchup": "@ BUF",
+          "opp": "BUF",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.43
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.22,
       "Def_DQI": 62.6,
       "Def_Pressure_Rate%": 18.0,
       "Def_Pass_EPA": 0.302,
@@ -465,9 +773,9 @@
       "Off_Pass_EPA_L4": 0.228,
       "NGS_TTT": 2.84,
       "NGS_Agg%": 18.5,
-      "Gametime_Weather": "Clear / Mild (83\u00b0F, 10mph)",
+      "Gametime_Weather": "Clear / Mild (83\u00b0F, 9mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Severe high-scoring risk matchup to Avoid (3.0 proj pts). Facing Jared Goff, who converts an elevated 34.6% of pressures to sacks (S/P%). The Lions enter in strong offensive form (+0.228 Pass EPA over their last 4 games). MIA features a 18.0% pressure rate and 0.302 Def Pass EPA (62.6 DQI). They force turnovers on 27.3% of opponent drives. The Lions are implied for 28.5 points (0.0 bracket points). Projects for 2.4 sacks, 0.1 INTs, and 0.3 fumbles. Defense enters healthy with no key starters ruled out."
+      "Current_Week_Rationale": "Severe high-scoring risk matchup to Avoid (3.0 proj pts). Facing Jared Goff, who converts an elevated 34.6% of pressures to sacks (S/P%). The Lions enter in strong offensive form (+0.228 Pass EPA over their last 4 games). MIA features a 18.0% pressure rate and 0.302 Def Pass EPA (62.6 DQI). They force turnovers on 27.3% of opponent drives. The Lions are implied for 28.0 points (0.0 bracket points). Projects for 2.4 sacks, 0.1 INTs, and 0.3 fumbles. Defense enters healthy with no key starters ruled out."
     },
     {
       "Offense": "Packers (GB)",
@@ -493,6 +801,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.4,
       "Predicted_Floor": 1.4,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs GB",
+          "opp": "GB",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.38
+        },
+        {
+          "week": 10,
+          "matchup": "@ DET",
+          "opp": "DET",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.86
+        },
+        {
+          "week": 11,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 3.12,
       "Def_DQI": 78.4,
       "Def_Pressure_Rate%": 24.1,
       "Def_Pass_EPA": 0.069,
@@ -507,9 +843,9 @@
       "Off_Pass_EPA_L4": 0.224,
       "NGS_TTT": 2.58,
       "NGS_Agg%": 16.3,
-      "Gametime_Weather": "Windy (12 mph, g26)",
+      "Gametime_Weather": "Windy (12 mph, g25)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.4 proj pts). Facing Jordan Love, who converts 23.1% of pressures into sacks with a quick 2.58s Time to Throw. The Packers enter in strong offensive form (+0.224 Pass EPA over their last 4 games). NE features a 24.1% pressure rate and 0.069 Def Pass EPA (78.4 DQI). They force turnovers on 36.4% of opponent drives. The Packers are implied for 20.8 points (0.0 bracket points). Projects for 2.3 sacks, 0.5 INTs, and 0.2 fumbles. Weather factor: Windy (12 mph, g26). Note defensive injuries: Harold Landry III (LB - IR), M. Jones (CB - Foot, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.4 proj pts). Facing Jordan Love, who converts 23.1% of pressures into sacks with a quick 2.58s Time to Throw. The Packers enter in strong offensive form (+0.224 Pass EPA over their last 4 games). NE features a 24.1% pressure rate and 0.069 Def Pass EPA (78.4 DQI). They force turnovers on 36.4% of opponent drives. The Packers are implied for 20.8 points (0.0 bracket points). Projects for 2.3 sacks, 0.5 INTs, and 0.2 fumbles. Weather factor: Windy (12 mph, g25). Note defensive injuries: Harold Landry III (LB - IR), M. Jones (CB - Foot, DNP)."
     },
     {
       "Offense": "Texans (HOU)",
@@ -535,6 +871,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 1.4,
       "Predicted_Floor": 0.6,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs HOU",
+          "opp": "HOU",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.57
+        },
+        {
+          "week": 10,
+          "matchup": "@ BAL",
+          "opp": "BAL",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 5.75
+        },
+        {
+          "week": 11,
+          "matchup": "vs NYJ",
+          "opp": "NYJ",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.44,
       "Def_DQI": 81.7,
       "Def_Pressure_Rate%": 22.3,
       "Def_Pass_EPA": -0.025,
@@ -577,6 +941,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 6.2,
       "Predicted_Floor": 2.7,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ IND",
+          "opp": "IND",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.38
+        },
+        {
+          "week": 10,
+          "matchup": "vs SF",
+          "opp": "SF",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 2.57
+        },
+        {
+          "week": 11,
+          "matchup": "vs TEN",
+          "opp": "TEN",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.65,
       "Def_DQI": 64.1,
       "Def_Pressure_Rate%": 19.1,
       "Def_Pass_EPA": 0.226,
@@ -619,6 +1011,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.3,
       "Predicted_Floor": 1.5,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs JAX",
+          "opp": "JAX",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.0
+        },
+        {
+          "week": 10,
+          "matchup": "vs LAC",
+          "opp": "LAC",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 7.57
+        },
+        {
+          "week": 11,
+          "matchup": "@ CAR",
+          "opp": "CAR",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.29
+        }
+      ],
+      "Runway_Grade": "A",
+      "Runway_Avg_Pts": 5.62,
       "Def_DQI": 75.6,
       "Def_Pressure_Rate%": 22.4,
       "Def_Pass_EPA": 0.057,
@@ -661,6 +1081,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 2.2,
       "Predicted_Floor": 0.9,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ KC",
+          "opp": "KC",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.0
+        },
+        {
+          "week": 10,
+          "matchup": "vs BUF",
+          "opp": "BUF",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.43
+        },
+        {
+          "week": 11,
+          "matchup": "@ LAC",
+          "opp": "LAC",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 7.57
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.67,
       "Def_DQI": 73.1,
       "Def_Pressure_Rate%": 21.7,
       "Def_Pass_EPA": 0.155,
@@ -675,7 +1123,7 @@
       "Off_Pass_EPA_L4": 0.076,
       "NGS_TTT": 2.74,
       "NGS_Agg%": 6.9,
-      "Gametime_Weather": "Clear / Mild (65\u00b0F, 8mph)",
+      "Gametime_Weather": "Clear / Mild (64\u00b0F, 8mph)",
       "Streamer_Tier": "Avoid",
       "Current_Week_Rationale": "Severe high-scoring risk matchup to Avoid (2.2 proj pts). Facing Patrick Mahomes, who avoids sacks effectively with an NFL-low 15.6% sack-per-pressure rate (S/P%). NYJ features a 21.7% pressure rate and 0.155 Def Pass EPA (73.1 DQI). They force turnovers on 32.0% of opponent drives. The Chiefs are implied for 29.0 points (0.0 bracket points). Projects for 1.7 sacks, 0.0 INTs, and 0.3 fumbles. Note defensive injuries: David Onyemata (DL - IR), H. Phillips (DT - Ankle, DNP), T. Wallace (LB - Groin, DNP)."
     },
@@ -703,6 +1151,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.2,
       "Predicted_Floor": 0.9,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs LA",
+          "opp": "LA",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.25
+        },
+        {
+          "week": 10,
+          "matchup": "@ NYG",
+          "opp": "NYG",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.0
+        },
+        {
+          "week": 11,
+          "matchup": "vs CIN",
+          "opp": "CIN",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.14
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.8,
       "Def_DQI": 70.6,
       "Def_Pressure_Rate%": 19.4,
       "Def_Pass_EPA": 0.085,
@@ -717,7 +1193,7 @@
       "Off_Pass_EPA_L4": 0.082,
       "NGS_TTT": 2.7,
       "NGS_Agg%": 13.9,
-      "Gametime_Weather": "Clear / Mild (63\u00b0F, 10mph)",
+      "Gametime_Weather": "Clear / Mild (62\u00b0F, 10mph)",
       "Streamer_Tier": "Avoid",
       "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.2 proj pts). Facing Matthew Stafford, who converts 27.3% of pressures into sacks. WAS features a 19.4% pressure rate and 0.085 Def Pass EPA (70.6 DQI). They force turnovers on 40.0% of opponent drives. The Rams are implied for 26.0 points (0.0 bracket points). Projects for 1.5 sacks, 0.3 INTs, and 0.8 fumbles. Note defensive injuries: Daron Payne (DL - IR)."
     },
@@ -745,6 +1221,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 5.8,
       "Predicted_Floor": 2.4,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ LAC",
+          "opp": "LAC",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 7.57
+        },
+        {
+          "week": 10,
+          "matchup": "@ CLE",
+          "opp": "CLE",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 7.5
+        },
+        {
+          "week": 11,
+          "matchup": "vs IND",
+          "opp": "IND",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 6.38
+        }
+      ],
+      "Runway_Grade": "A+",
+      "Runway_Avg_Pts": 7.15,
       "Def_DQI": 72.6,
       "Def_Pressure_Rate%": 23.7,
       "Def_Pass_EPA": 0.07,
@@ -787,6 +1291,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 2.0,
       "Predicted_Floor": 0.8,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs LV",
+          "opp": "LV",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 2.38
+        },
+        {
+          "week": 10,
+          "matchup": "@ DAL",
+          "opp": "DAL",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.88
+        },
+        {
+          "week": 11,
+          "matchup": "vs MIN",
+          "opp": "MIN",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.14
+        }
+      ],
+      "Runway_Grade": "D",
+      "Runway_Avg_Pts": 3.47,
       "Def_DQI": 75.1,
       "Def_Pressure_Rate%": 19.0,
       "Def_Pass_EPA": 0.039,
@@ -821,7 +1353,7 @@
       "Total_pts": 42,
       "Target_DST": "DET (@ MIA)",
       "Starting_QB": "Malik Willis (Starter)",
-      "Opp_Implied_Pts": 22.0,
+      "Opp_Implied_Pts": 21.5,
       "Def_Spread": 6.5,
       "Proj_Sacks": 3.3,
       "Proj_INTs": 0.6,
@@ -829,6 +1361,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 4.2,
       "Predicted_Floor": 2.0,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ MIA",
+          "opp": "MIA",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.0
+        },
+        {
+          "week": 10,
+          "matchup": "vs NE",
+          "opp": "NE",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.12
+        },
+        {
+          "week": 11,
+          "matchup": "vs TB",
+          "opp": "TB",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.12
+        }
+      ],
+      "Runway_Grade": "B",
+      "Runway_Avg_Pts": 5.41,
       "Def_DQI": 67.4,
       "Def_Pressure_Rate%": 24.6,
       "Def_Pass_EPA": 0.199,
@@ -843,9 +1403,9 @@
       "Off_Pass_EPA_L4": 0.047,
       "NGS_TTT": 3.05,
       "NGS_Agg%": 18.6,
-      "Gametime_Weather": "Clear / Mild (83\u00b0F, 10mph)",
+      "Gametime_Weather": "Clear / Mild (83\u00b0F, 9mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (4.2 proj pts). Facing Malik Willis, who converts an elevated 44.4% of pressures to sacks (S/P%) while holding the ball for 3.05s (TTT). DET features a 24.6% pressure rate and 0.199 Def Pass EPA (67.4 DQI). They force turnovers on 26.9% of opponent drives. The Dolphins are implied for 22.0 points (0.0 bracket points). Projects for 3.3 sacks, 0.6 INTs, and 0.0 fumbles. Note defensive injuries: D. Reed (CB - Hip, DNP), D. Wonnum (DE - Concussion, DNP), J. Campbell (LB - Neck, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (4.2 proj pts). Facing Malik Willis, who converts an elevated 44.4% of pressures to sacks (S/P%) while holding the ball for 3.05s (TTT). DET features a 24.6% pressure rate and 0.199 Def Pass EPA (67.4 DQI). They force turnovers on 26.9% of opponent drives. The Dolphins are implied for 21.5 points (0.0 bracket points). Projects for 3.3 sacks, 0.6 INTs, and 0.0 fumbles. Note defensive injuries: D. Reed (CB - Hip, DNP), D. Wonnum (DE - Concussion, DNP), J. Campbell (LB - Neck, DNP)."
     },
     {
       "Offense": "Vikings (MIN)",
@@ -863,7 +1423,7 @@
       "Total_pts": 36,
       "Target_DST": "BUF (@ MIN)",
       "Starting_QB": "Carson Wentz (Backup: Murray hamstring)",
-      "Opp_Implied_Pts": 20.8,
+      "Opp_Implied_Pts": 20.2,
       "Def_Spread": 3.0,
       "Proj_Sacks": 1.7,
       "Proj_INTs": 0.2,
@@ -871,6 +1431,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 2.8,
       "Predicted_Floor": 1.0,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ MIN",
+          "opp": "MIN",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.14
+        },
+        {
+          "week": 10,
+          "matchup": "@ NYJ",
+          "opp": "NYJ",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 4.0
+        },
+        {
+          "week": 11,
+          "matchup": "vs MIA",
+          "opp": "MIA",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 6.0
+        }
+      ],
+      "Runway_Grade": "B",
+      "Runway_Avg_Pts": 5.05,
       "Def_DQI": 71.2,
       "Def_Pressure_Rate%": 23.4,
       "Def_Pass_EPA": 0.14,
@@ -887,7 +1475,7 @@
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (2.8 proj pts). Facing backup Carson Wentz (Murray hamstring), who converts an elevated 36.4% of pressures to sacks (S/P%). BUF features a 23.4% pressure rate and 0.140 Def Pass EPA (71.2 DQI). They force turnovers on 45.0% of opponent drives. The Vikings are implied for 20.8 points (0.0 bracket points). Projects for 1.7 sacks, 0.2 INTs, and 0.5 fumbles. Indoors in dome conditions. Note defensive injuries: G. Gaines (DT - Calf, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (2.8 proj pts). Facing backup Carson Wentz (Murray hamstring), who converts an elevated 36.4% of pressures to sacks (S/P%). BUF features a 23.4% pressure rate and 0.140 Def Pass EPA (71.2 DQI). They force turnovers on 45.0% of opponent drives. The Vikings are implied for 20.2 points (0.0 bracket points). Projects for 1.7 sacks, 0.2 INTs, and 0.5 fumbles. Indoors in dome conditions. Note defensive injuries: G. Gaines (DT - Calf, DNP)."
     },
     {
       "Offense": "Patriots (NE)",
@@ -913,6 +1501,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 4.6,
       "Predicted_Floor": 1.0,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ NE",
+          "opp": "NE",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.12
+        },
+        {
+          "week": 10,
+          "matchup": "vs MIN",
+          "opp": "MIN",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.14
+        },
+        {
+          "week": 11,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 5.13,
       "Def_DQI": 79.2,
       "Def_Pressure_Rate%": 21.2,
       "Def_Pass_EPA": -0.052,
@@ -927,9 +1543,9 @@
       "Off_Pass_EPA_L4": 0.422,
       "NGS_TTT": 3.14,
       "NGS_Agg%": 12.4,
-      "Gametime_Weather": "Windy (12 mph, g26)",
+      "Gametime_Weather": "Windy (12 mph, g25)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Balanced Neutral matchup (4.6 proj pts). Facing Drake Maye, who converts 26.1% of pressures into sacks while holding the ball for 3.14s (TTT). The Patriots enter in strong offensive form (+0.422 Pass EPA over their last 4 games). GB features a 21.2% pressure rate and -0.052 Def Pass EPA (79.2 DQI). They force turnovers on 60.0% of opponent drives. The Patriots are implied for 23.8 points (0.0 bracket points). Projects for 1.6 sacks, 0.4 INTs, and 1.6 fumbles. Weather factor: Windy (12 mph, g26). Note defensive injuries: Javon Hargrave (DL - IR), Z. Franklin (LB - Shin, DNP), K. Nixon (CB - Groin, DNP)."
+      "Current_Week_Rationale": "Balanced Neutral matchup (4.6 proj pts). Facing Drake Maye, who converts 26.1% of pressures into sacks while holding the ball for 3.14s (TTT). The Patriots enter in strong offensive form (+0.422 Pass EPA over their last 4 games). GB features a 21.2% pressure rate and -0.052 Def Pass EPA (79.2 DQI). They force turnovers on 60.0% of opponent drives. The Patriots are implied for 23.8 points (0.0 bracket points). Projects for 1.6 sacks, 0.4 INTs, and 1.6 fumbles. Weather factor: Windy (12 mph, g25). Note defensive injuries: Javon Hargrave (DL - IR), Z. Franklin (LB - Shin, DNP), K. Nixon (CB - Groin, DNP)."
     },
     {
       "Offense": "Saints (NO)",
@@ -947,14 +1563,42 @@
       "Total_pts": 35,
       "Target_DST": "CLE (@ NO)",
       "Starting_QB": "Tyler Shough (Starter)",
-      "Opp_Implied_Pts": 22.8,
-      "Def_Spread": -3.0,
+      "Opp_Implied_Pts": 23.0,
+      "Def_Spread": -3.5,
       "Proj_Sacks": 1.4,
       "Proj_INTs": 0.6,
       "Proj_Fumbles": 1.1,
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 4.0,
       "Predicted_Floor": 1.0,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ NO",
+          "opp": "NO",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.0
+        },
+        {
+          "week": 10,
+          "matchup": "vs HOU",
+          "opp": "HOU",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.57
+        },
+        {
+          "week": 11,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.29,
       "Def_DQI": 79.4,
       "Def_Pressure_Rate%": 24.1,
       "Def_Pass_EPA": -0.015,
@@ -971,7 +1615,7 @@
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (4.0 proj pts). Facing Tyler Shough, who avoids sacks effectively with an NFL-low 19.2% sack-per-pressure rate (S/P%). CLE features a 24.1% pressure rate and -0.015 Def Pass EPA (79.4 DQI). They force turnovers on 41.7% of opponent drives. The Saints are implied for 22.8 points (0.0 bracket points). Projects for 1.4 sacks, 0.6 INTs, and 1.1 fumbles. Indoors in dome conditions. Note defensive injuries: M. Collins (DT - Elbow, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (4.0 proj pts). Facing Tyler Shough, who avoids sacks effectively with an NFL-low 19.2% sack-per-pressure rate (S/P%). CLE features a 24.1% pressure rate and -0.015 Def Pass EPA (79.4 DQI). They force turnovers on 41.7% of opponent drives. The Saints are implied for 23.0 points (0.0 bracket points). Projects for 1.4 sacks, 0.6 INTs, and 1.1 fumbles. Indoors in dome conditions. Note defensive injuries: M. Collins (DT - Elbow, DNP)."
     },
     {
       "Offense": "Giants (NYG)",
@@ -989,14 +1633,42 @@
       "Total_pts": 42,
       "Target_DST": "PHI (Home)",
       "Starting_QB": "J.J. McCarthy (Backup: Dart injured)",
-      "Opp_Implied_Pts": 21.0,
-      "Def_Spread": -3.5,
+      "Opp_Implied_Pts": 20.8,
+      "Def_Spread": -3.0,
       "Proj_Sacks": 2.3,
       "Proj_INTs": 0.4,
       "Proj_Fumbles": 0.3,
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.4,
       "Predicted_Floor": 1.4,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs NYG",
+          "opp": "NYG",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 6.0
+        },
+        {
+          "week": 10,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        },
+        {
+          "week": 11,
+          "matchup": "vs PIT",
+          "opp": "PIT",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 5.5
+        }
+      ],
+      "Runway_Grade": "B",
+      "Runway_Avg_Pts": 5.75,
       "Def_DQI": 65.1,
       "Def_Pressure_Rate%": 12.3,
       "Def_Pass_EPA": 0.141,
@@ -1011,9 +1683,9 @@
       "Off_Pass_EPA_L4": 0.115,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Breezy (62\u00b0F, 11mph, g18)",
+      "Gametime_Weather": "Clear / Breezy (62\u00b0F, 11mph, g19)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.4 proj pts). Facing backup J.J. McCarthy (Dart injured), who converts an elevated 34.1% of pressures to sacks (S/P%). PHI features a 12.3% pressure rate and 0.141 Def Pass EPA (65.1 DQI). They force turnovers on 16.0% of opponent drives. The Giants are implied for 21.0 points (0.0 bracket points). Projects for 2.3 sacks, 0.4 INTs, and 0.3 fumbles. Weather factor: Clear / Breezy (62\u00b0F, 11mph, g18). Note defensive injuries: J. Jones (CB - Hamstring, DNP), M. Carter II (CB - Abdomen, DNP), J. Campbell (LB - Hamstring, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.4 proj pts). Facing backup J.J. McCarthy (Dart injured), who converts an elevated 34.1% of pressures to sacks (S/P%). PHI features a 12.3% pressure rate and 0.141 Def Pass EPA (65.1 DQI). They force turnovers on 16.0% of opponent drives. The Giants are implied for 20.8 points (0.0 bracket points). Projects for 2.3 sacks, 0.4 INTs, and 0.3 fumbles. Weather factor: Clear / Breezy (62\u00b0F, 11mph, g19). Note defensive injuries: J. Jones (CB - Hamstring, DNP), M. Carter II (CB - Abdomen, DNP), J. Campbell (LB - Hamstring, DNP)."
     },
     {
       "Offense": "Jets (NYJ)",
@@ -1039,6 +1711,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 2.9,
       "Predicted_Floor": 1.0,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs NYJ",
+          "opp": "NYJ",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.0
+        },
+        {
+          "week": 10,
+          "matchup": "@ ATL",
+          "opp": "ATL",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 8.0
+        },
+        {
+          "week": 11,
+          "matchup": "vs ARI",
+          "opp": "ARI",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.62
+        }
+      ],
+      "Runway_Grade": "A",
+      "Runway_Avg_Pts": 5.54,
       "Def_DQI": 73.5,
       "Def_Pressure_Rate%": 15.4,
       "Def_Pass_EPA": 0.027,
@@ -1053,7 +1753,7 @@
       "Off_Pass_EPA_L4": 0.128,
       "NGS_TTT": 2.96,
       "NGS_Agg%": 15.5,
-      "Gametime_Weather": "Clear / Mild (65\u00b0F, 8mph)",
+      "Gametime_Weather": "Clear / Mild (64\u00b0F, 8mph)",
       "Streamer_Tier": "Avoid",
       "Current_Week_Rationale": "Unfavorable matchup to Avoid (2.9 proj pts). Facing Geno Smith, who converts 32.4% of pressures into sacks. KC features a 15.4% pressure rate and 0.027 Def Pass EPA (73.5 DQI). They force turnovers on 41.7% of opponent drives. The Jets are implied for 19.5 points (0.0 bracket points). Projects for 1.4 sacks, 0.7 INTs, and 0.3 fumbles. Note defensive injuries: P. Woods (DT - Neck, DNP)."
     },
@@ -1073,14 +1773,42 @@
       "Total_pts": 37,
       "Target_DST": "NYG (@ PHI)",
       "Starting_QB": "Joe Milton III (Backup: Hurts on IR)",
-      "Opp_Implied_Pts": 17.5,
-      "Def_Spread": 3.5,
+      "Opp_Implied_Pts": 17.8,
+      "Def_Spread": 3.0,
       "Proj_Sacks": 2.5,
       "Proj_INTs": 0.6,
       "Proj_Fumbles": 0.1,
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.6,
       "Predicted_Floor": 1.6,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ PHI",
+          "opp": "PHI",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 4.62
+        },
+        {
+          "week": 10,
+          "matchup": "vs WAS",
+          "opp": "WAS",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.29
+        },
+        {
+          "week": 11,
+          "matchup": "vs JAX",
+          "opp": "JAX",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.0
+        }
+      ],
+      "Runway_Grade": "D",
+      "Runway_Avg_Pts": 3.64,
       "Def_DQI": 67.9,
       "Def_Pressure_Rate%": 13.9,
       "Def_Pass_EPA": 0.063,
@@ -1095,9 +1823,9 @@
       "Off_Pass_EPA_L4": -0.136,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Breezy (62\u00b0F, 11mph, g18)",
+      "Gametime_Weather": "Clear / Breezy (62\u00b0F, 11mph, g19)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.6 proj pts). Facing backup Joe Milton III (Hurts on IR), who converts 29.7% of pressures into sacks. NYG features a 13.9% pressure rate and 0.063 Def Pass EPA (67.9 DQI). They force turnovers on 31.0% of opponent drives. The Eagles are implied for 17.5 points (0.0 bracket points). Projects for 2.5 sacks, 0.6 INTs, and 0.1 fumbles. Weather factor: Clear / Breezy (62\u00b0F, 11mph, g18). Note defensive injuries: Tremaine Edmunds (LB - IR)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.6 proj pts). Facing backup Joe Milton III (Hurts on IR), who converts 29.7% of pressures into sacks. NYG features a 13.9% pressure rate and 0.063 Def Pass EPA (67.9 DQI). They force turnovers on 31.0% of opponent drives. The Eagles are implied for 17.8 points (0.0 bracket points). Projects for 2.5 sacks, 0.6 INTs, and 0.1 fumbles. Weather factor: Clear / Breezy (62\u00b0F, 11mph, g19). Note defensive injuries: Tremaine Edmunds (LB - IR)."
     },
     {
       "Offense": "Steelers (PIT)",
@@ -1123,6 +1851,9 @@
       "Exp_Bracket": "-",
       "Proj_Fantasy_Pts": "-",
       "Predicted_Floor": "-",
+      "Runway_W9_W11": [],
+      "Runway_Grade": "BYE",
+      "Runway_Avg_Pts": 0.0,
       "Def_DQI": "-",
       "Def_Pressure_Rate%": "-",
       "Def_Pass_EPA": "-",
@@ -1165,6 +1896,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 4.7,
       "Predicted_Floor": 2.3,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ SEA",
+          "opp": "SEA",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.12
+        },
+        {
+          "week": 10,
+          "matchup": "vs LA",
+          "opp": "LA",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.25
+        },
+        {
+          "week": 11,
+          "matchup": "@ KC",
+          "opp": "KC",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.46,
       "Def_DQI": 67.1,
       "Def_Pressure_Rate%": 20.9,
       "Def_Pass_EPA": 0.246,
@@ -1179,9 +1938,9 @@
       "Off_Pass_EPA_L4": -0.038,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Windy (13 mph, g25)",
+      "Gametime_Weather": "Clear / Breezy (54\u00b0F, 13mph, g24)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "High-upside Speculative matchup attacking a backup QB (4.7 proj pts). Facing backup Drew Lock (Darnold quad/rib), who converts 29.5% of pressures into sacks. ARI features a 20.9% pressure rate and 0.246 Def Pass EPA (67.1 DQI). They force turnovers on 26.9% of opponent drives. The Seahawks are implied for 24.0 points (0.0 bracket points). Projects for 4.2 sacks, 0.0 INTs, and 0.3 fumbles. Weather factor: Windy (13 mph, g25). Defense enters healthy with no key starters ruled out."
+      "Current_Week_Rationale": "High-upside Speculative matchup attacking a backup QB (4.7 proj pts). Facing backup Drew Lock (Darnold quad/rib), who converts 29.5% of pressures into sacks. ARI features a 20.9% pressure rate and 0.246 Def Pass EPA (67.1 DQI). They force turnovers on 26.9% of opponent drives. The Seahawks are implied for 24.0 points (0.0 bracket points). Projects for 4.2 sacks, 0.0 INTs, and 0.3 fumbles. Weather factor: Clear / Breezy (54\u00b0F, 13mph, g24). Defense enters healthy with no key starters ruled out."
     },
     {
       "Offense": "49ers (SF)",
@@ -1207,6 +1966,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.3,
       "Predicted_Floor": 0.9,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ SF",
+          "opp": "SF",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.57
+        },
+        {
+          "week": 10,
+          "matchup": "vs SEA",
+          "opp": "SEA",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 6.12
+        },
+        {
+          "week": 11,
+          "matchup": "@ DEN",
+          "opp": "DEN",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.38
+        }
+      ],
+      "Runway_Grade": "D",
+      "Runway_Avg_Pts": 3.69,
       "Def_DQI": 75.0,
       "Def_Pressure_Rate%": 23.4,
       "Def_Pass_EPA": 0.159,
@@ -1249,6 +2036,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.1,
       "Predicted_Floor": 1.4,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs TB",
+          "opp": "TB",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.12
+        },
+        {
+          "week": 10,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        },
+        {
+          "week": 11,
+          "matchup": "vs NO",
+          "opp": "NO",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 5.06,
       "Def_DQI": 81.2,
       "Def_Pressure_Rate%": 24.0,
       "Def_Pass_EPA": 0.011,
@@ -1263,9 +2078,9 @@
       "Off_Pass_EPA_L4": -0.117,
       "NGS_TTT": 2.94,
       "NGS_Agg%": 13.6,
-      "Gametime_Weather": "Clear / Breezy (53\u00b0F, 9mph, g21)",
+      "Gametime_Weather": "Clear / Breezy (53\u00b0F, 9mph, g24)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.1 proj pts). Facing Baker Mayfield, who converts an elevated 36.8% of pressures to sacks (S/P%) and coughing up a 4.8% fumble rate (6 fumbles). CHI features a 24.0% pressure rate and 0.011 Def Pass EPA (81.2 DQI). Their 3rd-down defense is stout, halting 78.2% of attempts. The Buccaneers are implied for 20.8 points (0.0 bracket points). Projects for 2.2 sacks, 0.4 INTs, and 0.2 fumbles. Weather factor: Clear / Breezy (53\u00b0F, 9mph, g21). Note defensive injuries: D. Jackson (LB - Ankle, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.1 proj pts). Facing Baker Mayfield, who converts an elevated 36.8% of pressures to sacks (S/P%) and coughing up a 4.8% fumble rate (6 fumbles). CHI features a 24.0% pressure rate and 0.011 Def Pass EPA (81.2 DQI). Their 3rd-down defense is stout, halting 78.2% of attempts. The Buccaneers are implied for 20.8 points (0.0 bracket points). Projects for 2.2 sacks, 0.4 INTs, and 0.2 fumbles. Weather factor: Clear / Breezy (53\u00b0F, 9mph, g24). Note defensive injuries: D. Jackson (LB - Ankle, DNP)."
     },
     {
       "Offense": "Titans (TEN)",
@@ -1291,6 +2106,9 @@
       "Exp_Bracket": "-",
       "Proj_Fantasy_Pts": "-",
       "Predicted_Floor": "-",
+      "Runway_W9_W11": [],
+      "Runway_Grade": "BYE",
+      "Runway_Avg_Pts": 0.0,
       "Def_DQI": "-",
       "Def_Pressure_Rate%": "-",
       "Def_Pass_EPA": "-",
@@ -1333,6 +2151,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 2.5,
       "Predicted_Floor": 1.1,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ WAS",
+          "opp": "WAS",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.29
+        },
+        {
+          "week": 10,
+          "matchup": "@ ARI",
+          "opp": "ARI",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 4.62
+        },
+        {
+          "week": 11,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 3.96,
       "Def_DQI": 77.0,
       "Def_Pressure_Rate%": 15.2,
       "Def_Pass_EPA": -0.062,
@@ -1347,7 +2193,7 @@
       "Off_Pass_EPA_L4": -0.004,
       "NGS_TTT": 2.89,
       "NGS_Agg%": 13.1,
-      "Gametime_Weather": "Clear / Mild (63\u00b0F, 10mph)",
+      "Gametime_Weather": "Clear / Mild (62\u00b0F, 10mph)",
       "Streamer_Tier": "Avoid",
       "Current_Week_Rationale": "Low-ceiling matchup firmly in the Avoid tier (2.5 proj pts). Facing Jayden Daniels, who converts 29.5% of pressures into sacks. LA features a 15.2% pressure rate and -0.062 Def Pass EPA (77.0 DQI). Their 3rd-down defense is stout, halting 71.3% of attempts. The Commanders are implied for 21.5 points (0.0 bracket points). Projects for 1.7 sacks, 0.4 INTs, and 0.1 fumbles. Note defensive injuries: Myles Garrett (LB - IR), K. Curl (S - Foot, DNP), T. McDuffie (CB - Back, DNP), J. Watson (CB - Shoulder, DNP)."
     }
@@ -1377,6 +2223,34 @@
       "Exp_Bracket": 1.4,
       "Proj_Fantasy_Pts": 5.3,
       "Predicted_Floor": 2.3,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs ARI",
+          "opp": "ARI",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.62
+        },
+        {
+          "week": 10,
+          "matchup": "@ LV",
+          "opp": "LV",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.38
+        },
+        {
+          "week": 11,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 3.5,
       "Def_DQI": 84.6,
       "Def_Pressure_Rate%": 25.2,
       "Def_Pass_EPA": -0.072,
@@ -1391,9 +2265,9 @@
       "Off_Pass_EPA_L4": 0.013,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Windy (13 mph, g25)",
+      "Gametime_Weather": "Clear / Breezy (54\u00b0F, 13mph, g24)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "High-upside Speculative matchup attacking a backup QB (5.3 proj pts). Facing backup Gardner Minshew (Brissett benched), who converts 25.0% of pressures into sacks. SEA features a 25.2% pressure rate and -0.072 Def Pass EPA (84.6 DQI). Their 3rd-down defense is stout, halting 71.3% of attempts. The Cardinals are implied for only 15.5 points, providing 1.4 projected bracket points. Projects for 2.7 sacks, 0.6 INTs, and 0.2 fumbles. Weather factor: Windy (13 mph, g25). Note defensive injuries: L. Williams (DT - Stinger, DNP), B. Pili (DT - Back, DNP), C. O'Toole (LB - Foot, DNP)."
+      "Current_Week_Rationale": "High-upside Speculative matchup attacking a backup QB (5.3 proj pts). Facing backup Gardner Minshew (Brissett benched), who converts 25.0% of pressures into sacks. SEA features a 25.2% pressure rate and -0.072 Def Pass EPA (84.6 DQI). Their 3rd-down defense is stout, halting 71.3% of attempts. The Cardinals are implied for only 15.5 points, providing 1.4 projected bracket points. Projects for 2.7 sacks, 0.6 INTs, and 0.2 fumbles. Weather factor: Clear / Breezy (54\u00b0F, 13mph, g24). Note defensive injuries: L. Williams (DT - Stinger, DNP), B. Pili (DT - Back, DNP), C. O'Toole (LB - Foot, DNP)."
     },
     {
       "Offense": "Falcons (ATL)",
@@ -1419,6 +2293,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 6.1,
       "Predicted_Floor": 2.0,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ ATL",
+          "opp": "ATL",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 8.0
+        },
+        {
+          "week": 10,
+          "matchup": "vs PIT",
+          "opp": "PIT",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 5.5
+        },
+        {
+          "week": 11,
+          "matchup": "@ WAS",
+          "opp": "WAS",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.29
+        }
+      ],
+      "Runway_Grade": "A",
+      "Runway_Avg_Pts": 5.6,
       "Def_DQI": 78.2,
       "Def_Pressure_Rate%": 24.1,
       "Def_Pass_EPA": 0.025,
@@ -1461,6 +2363,34 @@
       "Exp_Bracket": 1.1,
       "Proj_Fantasy_Pts": 5.3,
       "Predicted_Floor": 2.1,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ BAL",
+          "opp": "BAL",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 5.75
+        },
+        {
+          "week": 10,
+          "matchup": "@ TEN",
+          "opp": "TEN",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.0
+        },
+        {
+          "week": 11,
+          "matchup": "@ NYG",
+          "opp": "NYG",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.0
+        }
+      ],
+      "Runway_Grade": "A",
+      "Runway_Avg_Pts": 5.58,
       "Def_DQI": 83.6,
       "Def_Pressure_Rate%": 21.1,
       "Def_Pass_EPA": -0.05,
@@ -1495,7 +2425,7 @@
       "Total_pts": 24,
       "Target_DST": "MIN (Home)",
       "Starting_QB": "Josh Allen (Starter)",
-      "Opp_Implied_Pts": 23.8,
+      "Opp_Implied_Pts": 23.2,
       "Def_Spread": -3.0,
       "Proj_Sacks": 2.2,
       "Proj_INTs": 1.5,
@@ -1503,6 +2433,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 5.4,
       "Predicted_Floor": 1.7,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs BUF",
+          "opp": "BUF",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.43
+        },
+        {
+          "week": 10,
+          "matchup": "@ GB",
+          "opp": "GB",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.38
+        },
+        {
+          "week": 11,
+          "matchup": "@ SF",
+          "opp": "SF",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.57
+        }
+      ],
+      "Runway_Grade": "D",
+      "Runway_Avg_Pts": 3.13,
       "Def_DQI": 95.4,
       "Def_Pressure_Rate%": 34.9,
       "Def_Pass_EPA": -0.207,
@@ -1519,7 +2477,7 @@
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Elite defense in a challenging Neutral matchup (5.4 proj pts). Facing Josh Allen, who converts 25.0% of pressures into sacks. The Bills enter in strong offensive form (+0.258 Pass EPA over their last 4 games). MIN features a 34.9% pressure rate and -0.207 Def Pass EPA (95.4 DQI). Their 3rd-down defense is stout, halting 73.3% of attempts. The Bills are implied for 23.8 points (0.0 bracket points). Projects for 2.2 sacks, 1.5 INTs, and 0.6 fumbles. Indoors in dome conditions. Note defensive injuries: T. Jackson (S - Quadricep, DNP)."
+      "Current_Week_Rationale": "Elite defense in a challenging Neutral matchup (5.4 proj pts). Facing Josh Allen, who converts 25.0% of pressures into sacks. The Bills enter in strong offensive form (+0.258 Pass EPA over their last 4 games). MIN features a 34.9% pressure rate and -0.207 Def Pass EPA (95.4 DQI). Their 3rd-down defense is stout, halting 73.3% of attempts. The Bills are implied for 23.2 points (0.0 bracket points). Projects for 2.2 sacks, 1.5 INTs, and 0.6 fumbles. Indoors in dome conditions. Note defensive injuries: T. Jackson (S - Quadricep, DNP)."
     },
     {
       "Offense": "Panthers (CAR)",
@@ -1545,6 +2503,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 7.2,
       "Predicted_Floor": 3.1,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ CAR",
+          "opp": "CAR",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.29
+        },
+        {
+          "week": 10,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        },
+        {
+          "week": 11,
+          "matchup": "vs LV",
+          "opp": "LV",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 2.38
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.33,
       "Def_DQI": 78.0,
       "Def_Pressure_Rate%": 28.5,
       "Def_Pass_EPA": -0.024,
@@ -1587,6 +2573,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 7.6,
       "Predicted_Floor": 2.5,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ CHI",
+          "opp": "CHI",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.25
+        },
+        {
+          "week": 10,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        },
+        {
+          "week": 11,
+          "matchup": "@ DET",
+          "opp": "DET",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.86
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.05,
       "Def_DQI": 83.4,
       "Def_Pressure_Rate%": 17.7,
       "Def_Pass_EPA": -0.161,
@@ -1601,9 +2615,9 @@
       "Off_Pass_EPA_L4": 0.05,
       "NGS_TTT": 3.24,
       "NGS_Agg%": 11.4,
-      "Gametime_Weather": "Clear / Breezy (53\u00b0F, 9mph, g21)",
+      "Gametime_Weather": "Clear / Breezy (53\u00b0F, 9mph, g24)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Elite high-floor Priority streamer (7.6 proj pts, 2.5 floor). Facing Caleb Williams, who converts 32.4% of pressures into sacks while holding the ball for 3.24s (TTT). TB features a 17.7% pressure rate and -0.161 Def Pass EPA (83.4 DQI). Their 3rd-down defense is stout, halting 71.2% of attempts. The Bears are implied for 26.8 points (0.0 bracket points). Projects for 3.1 sacks, 2.2 INTs, and 0.8 fumbles. Weather factor: Clear / Breezy (53\u00b0F, 9mph, g21). Note defensive injuries: Y. Diaby (LB - Knee, DNP)."
+      "Current_Week_Rationale": "Elite high-floor Priority streamer (7.6 proj pts, 2.5 floor). Facing Caleb Williams, who converts 32.4% of pressures into sacks while holding the ball for 3.24s (TTT). TB features a 17.7% pressure rate and -0.161 Def Pass EPA (83.4 DQI). Their 3rd-down defense is stout, halting 71.2% of attempts. The Bears are implied for 26.8 points (0.0 bracket points). Projects for 3.1 sacks, 2.2 INTs, and 0.8 fumbles. Weather factor: Clear / Breezy (53\u00b0F, 9mph, g24). Note defensive injuries: Y. Diaby (LB - Knee, DNP)."
     },
     {
       "Offense": "Bengals (CIN)",
@@ -1629,6 +2643,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 4.7,
       "Predicted_Floor": 1.5,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs CIN",
+          "opp": "CIN",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.14
+        },
+        {
+          "week": 10,
+          "matchup": "vs KC",
+          "opp": "KC",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.0
+        },
+        {
+          "week": 11,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 3.57,
       "Def_DQI": 75.9,
       "Def_Pressure_Rate%": 22.7,
       "Def_Pass_EPA": -0.006,
@@ -1663,14 +2705,42 @@
       "Total_pts": 60,
       "Target_DST": "NO (Home)",
       "Starting_QB": "Shedeur Sanders (Backup: Watson concussed)",
-      "Opp_Implied_Pts": 19.8,
-      "Def_Spread": 3.0,
+      "Opp_Implied_Pts": 19.5,
+      "Def_Spread": 3.5,
       "Proj_Sacks": 6.8,
       "Proj_INTs": 0.3,
       "Proj_Fumbles": 1.3,
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 9.2,
       "Predicted_Floor": 3.8,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs CLE",
+          "opp": "CLE",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 7.5
+        },
+        {
+          "week": 10,
+          "matchup": "vs CAR",
+          "opp": "CAR",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 6.29
+        },
+        {
+          "week": 11,
+          "matchup": "@ CHI",
+          "opp": "CHI",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.25
+        }
+      ],
+      "Runway_Grade": "A",
+      "Runway_Avg_Pts": 6.35,
       "Def_DQI": 70.0,
       "Def_Pressure_Rate%": 19.9,
       "Def_Pass_EPA": 0.101,
@@ -1687,7 +2757,7 @@
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Uncontested #1 Priority smash play (9.2 proj pts, 3.8 floor). Facing backup Shedeur Sanders (Watson concussed), who converts an elevated 35.5% of pressures to sacks (S/P%). The Browns have surrendered an elevated 41 fantasy points to opposing defenses over their last 4 games. NO features a 19.9% pressure rate and 0.101 Def Pass EPA (70.0 DQI). They force turnovers on 30.0% of opponent drives. The Browns are implied for 19.8 points (0.0 bracket points). Projects for 6.8 sacks, 0.3 INTs, and 1.3 fumbles. Indoors in dome conditions. Defense enters healthy with no key starters ruled out."
+      "Current_Week_Rationale": "Uncontested #1 Priority smash play (9.2 proj pts, 3.8 floor). Facing backup Shedeur Sanders (Watson concussed), who converts an elevated 35.5% of pressures to sacks (S/P%). The Browns have surrendered an elevated 41 fantasy points to opposing defenses over their last 4 games. NO features a 19.9% pressure rate and 0.101 Def Pass EPA (70.0 DQI). They force turnovers on 30.0% of opponent drives. The Browns are implied for 19.5 points (0.0 bracket points). Projects for 6.8 sacks, 0.3 INTs, and 1.3 fumbles. Indoors in dome conditions. Defense enters healthy with no key starters ruled out."
     },
     {
       "Offense": "Cowboys (DAL)",
@@ -1713,6 +2783,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 2.2,
       "Predicted_Floor": 0.9,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs DAL",
+          "opp": "DAL",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 2.88
+        },
+        {
+          "week": 10,
+          "matchup": "vs MIA",
+          "opp": "MIA",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 6.0
+        },
+        {
+          "week": 11,
+          "matchup": "@ HOU",
+          "opp": "HOU",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.57
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.15,
       "Def_DQI": 71.2,
       "Def_Pressure_Rate%": 19.3,
       "Def_Pass_EPA": 0.096,
@@ -1755,6 +2853,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 0.8,
       "Predicted_Floor": 0.3,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs DEN",
+          "opp": "DEN",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 2.38
+        },
+        {
+          "week": 10,
+          "matchup": "@ NO",
+          "opp": "NO",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.0
+        },
+        {
+          "week": 11,
+          "matchup": "vs BAL",
+          "opp": "BAL",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 5.75
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.38,
       "Def_DQI": 67.8,
       "Def_Pressure_Rate%": 14.5,
       "Def_Pass_EPA": 0.056,
@@ -1789,7 +2915,7 @@
       "Total_pts": 20,
       "Target_DST": "MIA (Home)",
       "Starting_QB": "Jared Goff (Starter)",
-      "Opp_Implied_Pts": 28.5,
+      "Opp_Implied_Pts": 28.0,
       "Def_Spread": -6.5,
       "Proj_Sacks": 2.4,
       "Proj_INTs": 0.1,
@@ -1797,6 +2923,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.0,
       "Predicted_Floor": 1.4,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs DET",
+          "opp": "DET",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 2.86
+        },
+        {
+          "week": 10,
+          "matchup": "@ IND",
+          "opp": "IND",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.38
+        },
+        {
+          "week": 11,
+          "matchup": "@ BUF",
+          "opp": "BUF",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.43
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.22,
       "Def_DQI": 62.6,
       "Def_Pressure_Rate%": 18.0,
       "Def_Pass_EPA": 0.302,
@@ -1811,9 +2965,9 @@
       "Off_Pass_EPA_L4": 0.228,
       "NGS_TTT": 2.84,
       "NGS_Agg%": 18.5,
-      "Gametime_Weather": "Clear / Mild (83\u00b0F, 10mph)",
+      "Gametime_Weather": "Clear / Mild (83\u00b0F, 9mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Severe high-scoring risk matchup to Avoid (3.0 proj pts). Facing Jared Goff, who converts an elevated 34.6% of pressures to sacks (S/P%). The Lions enter in strong offensive form (+0.228 Pass EPA over their last 4 games). MIA features a 18.0% pressure rate and 0.302 Def Pass EPA (62.6 DQI). They force turnovers on 27.3% of opponent drives. The Lions are implied for 28.5 points (0.0 bracket points). Projects for 2.4 sacks, 0.1 INTs, and 0.3 fumbles. Defense enters healthy with no key starters ruled out."
+      "Current_Week_Rationale": "Severe high-scoring risk matchup to Avoid (3.0 proj pts). Facing Jared Goff, who converts an elevated 34.6% of pressures to sacks (S/P%). The Lions enter in strong offensive form (+0.228 Pass EPA over their last 4 games). MIA features a 18.0% pressure rate and 0.302 Def Pass EPA (62.6 DQI). They force turnovers on 27.3% of opponent drives. The Lions are implied for 28.0 points (0.0 bracket points). Projects for 2.4 sacks, 0.1 INTs, and 0.3 fumbles. Defense enters healthy with no key starters ruled out."
     },
     {
       "Offense": "Packers (GB)",
@@ -1839,6 +2993,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.4,
       "Predicted_Floor": 1.4,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs GB",
+          "opp": "GB",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.38
+        },
+        {
+          "week": 10,
+          "matchup": "@ DET",
+          "opp": "DET",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.86
+        },
+        {
+          "week": 11,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 3.12,
       "Def_DQI": 78.4,
       "Def_Pressure_Rate%": 24.1,
       "Def_Pass_EPA": 0.069,
@@ -1853,9 +3035,9 @@
       "Off_Pass_EPA_L4": 0.224,
       "NGS_TTT": 2.58,
       "NGS_Agg%": 16.3,
-      "Gametime_Weather": "Windy (12 mph, g26)",
+      "Gametime_Weather": "Windy (12 mph, g25)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.4 proj pts). Facing Jordan Love, who converts 23.1% of pressures into sacks with a quick 2.58s Time to Throw. The Packers enter in strong offensive form (+0.224 Pass EPA over their last 4 games). NE features a 24.1% pressure rate and 0.069 Def Pass EPA (78.4 DQI). They force turnovers on 36.4% of opponent drives. The Packers are implied for 20.8 points (0.0 bracket points). Projects for 2.3 sacks, 0.5 INTs, and 0.2 fumbles. Weather factor: Windy (12 mph, g26). Note defensive injuries: Harold Landry III (LB - IR), M. Jones (CB - Foot, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.4 proj pts). Facing Jordan Love, who converts 23.1% of pressures into sacks with a quick 2.58s Time to Throw. The Packers enter in strong offensive form (+0.224 Pass EPA over their last 4 games). NE features a 24.1% pressure rate and 0.069 Def Pass EPA (78.4 DQI). They force turnovers on 36.4% of opponent drives. The Packers are implied for 20.8 points (0.0 bracket points). Projects for 2.3 sacks, 0.5 INTs, and 0.2 fumbles. Weather factor: Windy (12 mph, g25). Note defensive injuries: Harold Landry III (LB - IR), M. Jones (CB - Foot, DNP)."
     },
     {
       "Offense": "Texans (HOU)",
@@ -1881,6 +3063,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 1.4,
       "Predicted_Floor": 0.6,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs HOU",
+          "opp": "HOU",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.57
+        },
+        {
+          "week": 10,
+          "matchup": "@ BAL",
+          "opp": "BAL",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 5.75
+        },
+        {
+          "week": 11,
+          "matchup": "vs NYJ",
+          "opp": "NYJ",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.44,
       "Def_DQI": 81.7,
       "Def_Pressure_Rate%": 22.3,
       "Def_Pass_EPA": -0.025,
@@ -1923,6 +3133,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 6.2,
       "Predicted_Floor": 2.7,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ IND",
+          "opp": "IND",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.38
+        },
+        {
+          "week": 10,
+          "matchup": "vs SF",
+          "opp": "SF",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 2.57
+        },
+        {
+          "week": 11,
+          "matchup": "vs TEN",
+          "opp": "TEN",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.65,
       "Def_DQI": 64.1,
       "Def_Pressure_Rate%": 19.1,
       "Def_Pass_EPA": 0.226,
@@ -1965,6 +3203,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.3,
       "Predicted_Floor": 1.5,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs JAX",
+          "opp": "JAX",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.0
+        },
+        {
+          "week": 10,
+          "matchup": "vs LAC",
+          "opp": "LAC",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 7.57
+        },
+        {
+          "week": 11,
+          "matchup": "@ CAR",
+          "opp": "CAR",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.29
+        }
+      ],
+      "Runway_Grade": "A",
+      "Runway_Avg_Pts": 5.62,
       "Def_DQI": 75.6,
       "Def_Pressure_Rate%": 22.4,
       "Def_Pass_EPA": 0.057,
@@ -2007,6 +3273,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 2.2,
       "Predicted_Floor": 0.9,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ KC",
+          "opp": "KC",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.0
+        },
+        {
+          "week": 10,
+          "matchup": "vs BUF",
+          "opp": "BUF",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.43
+        },
+        {
+          "week": 11,
+          "matchup": "@ LAC",
+          "opp": "LAC",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 7.57
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.67,
       "Def_DQI": 73.1,
       "Def_Pressure_Rate%": 21.7,
       "Def_Pass_EPA": 0.155,
@@ -2021,7 +3315,7 @@
       "Off_Pass_EPA_L4": 0.076,
       "NGS_TTT": 2.74,
       "NGS_Agg%": 6.9,
-      "Gametime_Weather": "Clear / Mild (65\u00b0F, 8mph)",
+      "Gametime_Weather": "Clear / Mild (64\u00b0F, 8mph)",
       "Streamer_Tier": "Avoid",
       "Current_Week_Rationale": "Severe high-scoring risk matchup to Avoid (2.2 proj pts). Facing Patrick Mahomes, who avoids sacks effectively with an NFL-low 15.6% sack-per-pressure rate (S/P%). NYJ features a 21.7% pressure rate and 0.155 Def Pass EPA (73.1 DQI). They force turnovers on 32.0% of opponent drives. The Chiefs are implied for 29.0 points (0.0 bracket points). Projects for 1.7 sacks, 0.0 INTs, and 0.3 fumbles. Note defensive injuries: David Onyemata (DL - IR), H. Phillips (DT - Ankle, DNP), T. Wallace (LB - Groin, DNP)."
     },
@@ -2049,6 +3343,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.2,
       "Predicted_Floor": 0.9,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs LA",
+          "opp": "LA",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.25
+        },
+        {
+          "week": 10,
+          "matchup": "@ NYG",
+          "opp": "NYG",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.0
+        },
+        {
+          "week": 11,
+          "matchup": "vs CIN",
+          "opp": "CIN",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.14
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.8,
       "Def_DQI": 70.6,
       "Def_Pressure_Rate%": 19.4,
       "Def_Pass_EPA": 0.085,
@@ -2063,7 +3385,7 @@
       "Off_Pass_EPA_L4": 0.082,
       "NGS_TTT": 2.7,
       "NGS_Agg%": 13.9,
-      "Gametime_Weather": "Clear / Mild (63\u00b0F, 10mph)",
+      "Gametime_Weather": "Clear / Mild (62\u00b0F, 10mph)",
       "Streamer_Tier": "Avoid",
       "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.2 proj pts). Facing Matthew Stafford, who converts 27.3% of pressures into sacks. WAS features a 19.4% pressure rate and 0.085 Def Pass EPA (70.6 DQI). They force turnovers on 40.0% of opponent drives. The Rams are implied for 26.0 points (0.0 bracket points). Projects for 1.5 sacks, 0.3 INTs, and 0.8 fumbles. Note defensive injuries: Daron Payne (DL - IR)."
     },
@@ -2091,6 +3413,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 5.8,
       "Predicted_Floor": 2.4,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ LAC",
+          "opp": "LAC",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 7.57
+        },
+        {
+          "week": 10,
+          "matchup": "@ CLE",
+          "opp": "CLE",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 7.5
+        },
+        {
+          "week": 11,
+          "matchup": "vs IND",
+          "opp": "IND",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 6.38
+        }
+      ],
+      "Runway_Grade": "A+",
+      "Runway_Avg_Pts": 7.15,
       "Def_DQI": 72.6,
       "Def_Pressure_Rate%": 23.7,
       "Def_Pass_EPA": 0.07,
@@ -2133,6 +3483,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 2.0,
       "Predicted_Floor": 0.8,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs LV",
+          "opp": "LV",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 2.38
+        },
+        {
+          "week": 10,
+          "matchup": "@ DAL",
+          "opp": "DAL",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.88
+        },
+        {
+          "week": 11,
+          "matchup": "vs MIN",
+          "opp": "MIN",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.14
+        }
+      ],
+      "Runway_Grade": "D",
+      "Runway_Avg_Pts": 3.47,
       "Def_DQI": 75.1,
       "Def_Pressure_Rate%": 19.0,
       "Def_Pass_EPA": 0.039,
@@ -2167,7 +3545,7 @@
       "Total_pts": 42,
       "Target_DST": "DET (@ MIA)",
       "Starting_QB": "Malik Willis (Starter)",
-      "Opp_Implied_Pts": 22.0,
+      "Opp_Implied_Pts": 21.5,
       "Def_Spread": 6.5,
       "Proj_Sacks": 3.3,
       "Proj_INTs": 0.6,
@@ -2175,6 +3553,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 4.2,
       "Predicted_Floor": 2.0,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ MIA",
+          "opp": "MIA",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.0
+        },
+        {
+          "week": 10,
+          "matchup": "vs NE",
+          "opp": "NE",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.12
+        },
+        {
+          "week": 11,
+          "matchup": "vs TB",
+          "opp": "TB",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.12
+        }
+      ],
+      "Runway_Grade": "B",
+      "Runway_Avg_Pts": 5.41,
       "Def_DQI": 67.4,
       "Def_Pressure_Rate%": 24.6,
       "Def_Pass_EPA": 0.199,
@@ -2189,9 +3595,9 @@
       "Off_Pass_EPA_L4": 0.047,
       "NGS_TTT": 3.05,
       "NGS_Agg%": 18.6,
-      "Gametime_Weather": "Clear / Mild (83\u00b0F, 10mph)",
+      "Gametime_Weather": "Clear / Mild (83\u00b0F, 9mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (4.2 proj pts). Facing Malik Willis, who converts an elevated 44.4% of pressures to sacks (S/P%) while holding the ball for 3.05s (TTT). DET features a 24.6% pressure rate and 0.199 Def Pass EPA (67.4 DQI). They force turnovers on 26.9% of opponent drives. The Dolphins are implied for 22.0 points (0.0 bracket points). Projects for 3.3 sacks, 0.6 INTs, and 0.0 fumbles. Note defensive injuries: D. Reed (CB - Hip, DNP), D. Wonnum (DE - Concussion, DNP), J. Campbell (LB - Neck, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (4.2 proj pts). Facing Malik Willis, who converts an elevated 44.4% of pressures to sacks (S/P%) while holding the ball for 3.05s (TTT). DET features a 24.6% pressure rate and 0.199 Def Pass EPA (67.4 DQI). They force turnovers on 26.9% of opponent drives. The Dolphins are implied for 21.5 points (0.0 bracket points). Projects for 3.3 sacks, 0.6 INTs, and 0.0 fumbles. Note defensive injuries: D. Reed (CB - Hip, DNP), D. Wonnum (DE - Concussion, DNP), J. Campbell (LB - Neck, DNP)."
     },
     {
       "Offense": "Vikings (MIN)",
@@ -2209,7 +3615,7 @@
       "Total_pts": 36,
       "Target_DST": "BUF (@ MIN)",
       "Starting_QB": "Carson Wentz (Backup: Murray hamstring)",
-      "Opp_Implied_Pts": 20.8,
+      "Opp_Implied_Pts": 20.2,
       "Def_Spread": 3.0,
       "Proj_Sacks": 1.7,
       "Proj_INTs": 0.2,
@@ -2217,6 +3623,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 2.8,
       "Predicted_Floor": 1.0,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ MIN",
+          "opp": "MIN",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.14
+        },
+        {
+          "week": 10,
+          "matchup": "@ NYJ",
+          "opp": "NYJ",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 4.0
+        },
+        {
+          "week": 11,
+          "matchup": "vs MIA",
+          "opp": "MIA",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 6.0
+        }
+      ],
+      "Runway_Grade": "B",
+      "Runway_Avg_Pts": 5.05,
       "Def_DQI": 71.2,
       "Def_Pressure_Rate%": 23.4,
       "Def_Pass_EPA": 0.14,
@@ -2233,7 +3667,7 @@
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (2.8 proj pts). Facing backup Carson Wentz (Murray hamstring), who converts an elevated 36.4% of pressures to sacks (S/P%). BUF features a 23.4% pressure rate and 0.140 Def Pass EPA (71.2 DQI). They force turnovers on 45.0% of opponent drives. The Vikings are implied for 20.8 points (0.0 bracket points). Projects for 1.7 sacks, 0.2 INTs, and 0.5 fumbles. Indoors in dome conditions. Note defensive injuries: G. Gaines (DT - Calf, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (2.8 proj pts). Facing backup Carson Wentz (Murray hamstring), who converts an elevated 36.4% of pressures to sacks (S/P%). BUF features a 23.4% pressure rate and 0.140 Def Pass EPA (71.2 DQI). They force turnovers on 45.0% of opponent drives. The Vikings are implied for 20.2 points (0.0 bracket points). Projects for 1.7 sacks, 0.2 INTs, and 0.5 fumbles. Indoors in dome conditions. Note defensive injuries: G. Gaines (DT - Calf, DNP)."
     },
     {
       "Offense": "Patriots (NE)",
@@ -2259,6 +3693,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 4.6,
       "Predicted_Floor": 1.0,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ NE",
+          "opp": "NE",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.12
+        },
+        {
+          "week": 10,
+          "matchup": "vs MIN",
+          "opp": "MIN",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.14
+        },
+        {
+          "week": 11,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 5.13,
       "Def_DQI": 79.2,
       "Def_Pressure_Rate%": 21.2,
       "Def_Pass_EPA": -0.052,
@@ -2273,9 +3735,9 @@
       "Off_Pass_EPA_L4": 0.422,
       "NGS_TTT": 3.14,
       "NGS_Agg%": 12.4,
-      "Gametime_Weather": "Windy (12 mph, g26)",
+      "Gametime_Weather": "Windy (12 mph, g25)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Balanced Neutral matchup (4.6 proj pts). Facing Drake Maye, who converts 26.1% of pressures into sacks while holding the ball for 3.14s (TTT). The Patriots enter in strong offensive form (+0.422 Pass EPA over their last 4 games). GB features a 21.2% pressure rate and -0.052 Def Pass EPA (79.2 DQI). They force turnovers on 60.0% of opponent drives. The Patriots are implied for 23.8 points (0.0 bracket points). Projects for 1.6 sacks, 0.4 INTs, and 1.6 fumbles. Weather factor: Windy (12 mph, g26). Note defensive injuries: Javon Hargrave (DL - IR), Z. Franklin (LB - Shin, DNP), K. Nixon (CB - Groin, DNP)."
+      "Current_Week_Rationale": "Balanced Neutral matchup (4.6 proj pts). Facing Drake Maye, who converts 26.1% of pressures into sacks while holding the ball for 3.14s (TTT). The Patriots enter in strong offensive form (+0.422 Pass EPA over their last 4 games). GB features a 21.2% pressure rate and -0.052 Def Pass EPA (79.2 DQI). They force turnovers on 60.0% of opponent drives. The Patriots are implied for 23.8 points (0.0 bracket points). Projects for 1.6 sacks, 0.4 INTs, and 1.6 fumbles. Weather factor: Windy (12 mph, g25). Note defensive injuries: Javon Hargrave (DL - IR), Z. Franklin (LB - Shin, DNP), K. Nixon (CB - Groin, DNP)."
     },
     {
       "Offense": "Saints (NO)",
@@ -2293,14 +3755,42 @@
       "Total_pts": 35,
       "Target_DST": "CLE (@ NO)",
       "Starting_QB": "Tyler Shough (Starter)",
-      "Opp_Implied_Pts": 22.8,
-      "Def_Spread": -3.0,
+      "Opp_Implied_Pts": 23.0,
+      "Def_Spread": -3.5,
       "Proj_Sacks": 1.4,
       "Proj_INTs": 0.6,
       "Proj_Fumbles": 1.1,
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 4.0,
       "Predicted_Floor": 1.0,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ NO",
+          "opp": "NO",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 5.0
+        },
+        {
+          "week": 10,
+          "matchup": "vs HOU",
+          "opp": "HOU",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.57
+        },
+        {
+          "week": 11,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.29,
       "Def_DQI": 79.4,
       "Def_Pressure_Rate%": 24.1,
       "Def_Pass_EPA": -0.015,
@@ -2317,7 +3807,7 @@
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (4.0 proj pts). Facing Tyler Shough, who avoids sacks effectively with an NFL-low 19.2% sack-per-pressure rate (S/P%). CLE features a 24.1% pressure rate and -0.015 Def Pass EPA (79.4 DQI). They force turnovers on 41.7% of opponent drives. The Saints are implied for 22.8 points (0.0 bracket points). Projects for 1.4 sacks, 0.6 INTs, and 1.1 fumbles. Indoors in dome conditions. Note defensive injuries: M. Collins (DT - Elbow, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (4.0 proj pts). Facing Tyler Shough, who avoids sacks effectively with an NFL-low 19.2% sack-per-pressure rate (S/P%). CLE features a 24.1% pressure rate and -0.015 Def Pass EPA (79.4 DQI). They force turnovers on 41.7% of opponent drives. The Saints are implied for 23.0 points (0.0 bracket points). Projects for 1.4 sacks, 0.6 INTs, and 1.1 fumbles. Indoors in dome conditions. Note defensive injuries: M. Collins (DT - Elbow, DNP)."
     },
     {
       "Offense": "Giants (NYG)",
@@ -2335,14 +3825,42 @@
       "Total_pts": 42,
       "Target_DST": "PHI (Home)",
       "Starting_QB": "J.J. McCarthy (Backup: Dart injured)",
-      "Opp_Implied_Pts": 21.0,
-      "Def_Spread": -3.5,
+      "Opp_Implied_Pts": 20.8,
+      "Def_Spread": -3.0,
       "Proj_Sacks": 2.3,
       "Proj_INTs": 0.4,
       "Proj_Fumbles": 0.3,
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.4,
       "Predicted_Floor": 1.4,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs NYG",
+          "opp": "NYG",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 6.0
+        },
+        {
+          "week": 10,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        },
+        {
+          "week": 11,
+          "matchup": "vs PIT",
+          "opp": "PIT",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 5.5
+        }
+      ],
+      "Runway_Grade": "B",
+      "Runway_Avg_Pts": 5.75,
       "Def_DQI": 65.1,
       "Def_Pressure_Rate%": 12.3,
       "Def_Pass_EPA": 0.141,
@@ -2357,9 +3875,9 @@
       "Off_Pass_EPA_L4": 0.115,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Breezy (62\u00b0F, 11mph, g18)",
+      "Gametime_Weather": "Clear / Breezy (62\u00b0F, 11mph, g19)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.4 proj pts). Facing backup J.J. McCarthy (Dart injured), who converts an elevated 34.1% of pressures to sacks (S/P%). PHI features a 12.3% pressure rate and 0.141 Def Pass EPA (65.1 DQI). They force turnovers on 16.0% of opponent drives. The Giants are implied for 21.0 points (0.0 bracket points). Projects for 2.3 sacks, 0.4 INTs, and 0.3 fumbles. Weather factor: Clear / Breezy (62\u00b0F, 11mph, g18). Note defensive injuries: J. Jones (CB - Hamstring, DNP), M. Carter II (CB - Abdomen, DNP), J. Campbell (LB - Hamstring, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.4 proj pts). Facing backup J.J. McCarthy (Dart injured), who converts an elevated 34.1% of pressures to sacks (S/P%). PHI features a 12.3% pressure rate and 0.141 Def Pass EPA (65.1 DQI). They force turnovers on 16.0% of opponent drives. The Giants are implied for 20.8 points (0.0 bracket points). Projects for 2.3 sacks, 0.4 INTs, and 0.3 fumbles. Weather factor: Clear / Breezy (62\u00b0F, 11mph, g19). Note defensive injuries: J. Jones (CB - Hamstring, DNP), M. Carter II (CB - Abdomen, DNP), J. Campbell (LB - Hamstring, DNP)."
     },
     {
       "Offense": "Jets (NYJ)",
@@ -2385,6 +3903,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 2.9,
       "Predicted_Floor": 1.0,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs NYJ",
+          "opp": "NYJ",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.0
+        },
+        {
+          "week": 10,
+          "matchup": "@ ATL",
+          "opp": "ATL",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 8.0
+        },
+        {
+          "week": 11,
+          "matchup": "vs ARI",
+          "opp": "ARI",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.62
+        }
+      ],
+      "Runway_Grade": "A",
+      "Runway_Avg_Pts": 5.54,
       "Def_DQI": 73.5,
       "Def_Pressure_Rate%": 15.4,
       "Def_Pass_EPA": 0.027,
@@ -2399,7 +3945,7 @@
       "Off_Pass_EPA_L4": 0.128,
       "NGS_TTT": 2.96,
       "NGS_Agg%": 15.5,
-      "Gametime_Weather": "Clear / Mild (65\u00b0F, 8mph)",
+      "Gametime_Weather": "Clear / Mild (64\u00b0F, 8mph)",
       "Streamer_Tier": "Avoid",
       "Current_Week_Rationale": "Unfavorable matchup to Avoid (2.9 proj pts). Facing Geno Smith, who converts 32.4% of pressures into sacks. KC features a 15.4% pressure rate and 0.027 Def Pass EPA (73.5 DQI). They force turnovers on 41.7% of opponent drives. The Jets are implied for 19.5 points (0.0 bracket points). Projects for 1.4 sacks, 0.7 INTs, and 0.3 fumbles. Note defensive injuries: P. Woods (DT - Neck, DNP)."
     },
@@ -2419,14 +3965,42 @@
       "Total_pts": 37,
       "Target_DST": "NYG (@ PHI)",
       "Starting_QB": "Joe Milton III (Backup: Hurts on IR)",
-      "Opp_Implied_Pts": 17.5,
-      "Def_Spread": 3.5,
+      "Opp_Implied_Pts": 17.8,
+      "Def_Spread": 3.0,
       "Proj_Sacks": 2.5,
       "Proj_INTs": 0.6,
       "Proj_Fumbles": 0.1,
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.6,
       "Predicted_Floor": 1.6,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ PHI",
+          "opp": "PHI",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 4.62
+        },
+        {
+          "week": 10,
+          "matchup": "vs WAS",
+          "opp": "WAS",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.29
+        },
+        {
+          "week": 11,
+          "matchup": "vs JAX",
+          "opp": "JAX",
+          "is_home": true,
+          "diff": "hard",
+          "opp_ppg": 3.0
+        }
+      ],
+      "Runway_Grade": "D",
+      "Runway_Avg_Pts": 3.64,
       "Def_DQI": 67.9,
       "Def_Pressure_Rate%": 13.9,
       "Def_Pass_EPA": 0.063,
@@ -2441,9 +4015,9 @@
       "Off_Pass_EPA_L4": -0.136,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Breezy (62\u00b0F, 11mph, g18)",
+      "Gametime_Weather": "Clear / Breezy (62\u00b0F, 11mph, g19)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.6 proj pts). Facing backup Joe Milton III (Hurts on IR), who converts 29.7% of pressures into sacks. NYG features a 13.9% pressure rate and 0.063 Def Pass EPA (67.9 DQI). They force turnovers on 31.0% of opponent drives. The Eagles are implied for 17.5 points (0.0 bracket points). Projects for 2.5 sacks, 0.6 INTs, and 0.1 fumbles. Weather factor: Clear / Breezy (62\u00b0F, 11mph, g18). Note defensive injuries: Tremaine Edmunds (LB - IR)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.6 proj pts). Facing backup Joe Milton III (Hurts on IR), who converts 29.7% of pressures into sacks. NYG features a 13.9% pressure rate and 0.063 Def Pass EPA (67.9 DQI). They force turnovers on 31.0% of opponent drives. The Eagles are implied for 17.8 points (0.0 bracket points). Projects for 2.5 sacks, 0.6 INTs, and 0.1 fumbles. Weather factor: Clear / Breezy (62\u00b0F, 11mph, g19). Note defensive injuries: Tremaine Edmunds (LB - IR)."
     },
     {
       "Offense": "Steelers (PIT)",
@@ -2469,6 +4043,9 @@
       "Exp_Bracket": "-",
       "Proj_Fantasy_Pts": "-",
       "Predicted_Floor": "-",
+      "Runway_W9_W11": [],
+      "Runway_Grade": "BYE",
+      "Runway_Avg_Pts": 0.0,
       "Def_DQI": "-",
       "Def_Pressure_Rate%": "-",
       "Def_Pass_EPA": "-",
@@ -2511,6 +4088,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 4.7,
       "Predicted_Floor": 2.3,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ SEA",
+          "opp": "SEA",
+          "is_home": false,
+          "diff": "easy",
+          "opp_ppg": 6.12
+        },
+        {
+          "week": 10,
+          "matchup": "vs LA",
+          "opp": "LA",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 4.25
+        },
+        {
+          "week": 11,
+          "matchup": "@ KC",
+          "opp": "KC",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 4.46,
       "Def_DQI": 67.1,
       "Def_Pressure_Rate%": 20.9,
       "Def_Pass_EPA": 0.246,
@@ -2525,9 +4130,9 @@
       "Off_Pass_EPA_L4": -0.038,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Windy (13 mph, g25)",
+      "Gametime_Weather": "Clear / Breezy (54\u00b0F, 13mph, g24)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "High-upside Speculative matchup attacking a backup QB (4.7 proj pts). Facing backup Drew Lock (Darnold quad/rib), who converts 29.5% of pressures into sacks. ARI features a 20.9% pressure rate and 0.246 Def Pass EPA (67.1 DQI). They force turnovers on 26.9% of opponent drives. The Seahawks are implied for 24.0 points (0.0 bracket points). Projects for 4.2 sacks, 0.0 INTs, and 0.3 fumbles. Weather factor: Windy (13 mph, g25). Defense enters healthy with no key starters ruled out."
+      "Current_Week_Rationale": "High-upside Speculative matchup attacking a backup QB (4.7 proj pts). Facing backup Drew Lock (Darnold quad/rib), who converts 29.5% of pressures into sacks. ARI features a 20.9% pressure rate and 0.246 Def Pass EPA (67.1 DQI). They force turnovers on 26.9% of opponent drives. The Seahawks are implied for 24.0 points (0.0 bracket points). Projects for 4.2 sacks, 0.0 INTs, and 0.3 fumbles. Weather factor: Clear / Breezy (54\u00b0F, 13mph, g24). Defense enters healthy with no key starters ruled out."
     },
     {
       "Offense": "49ers (SF)",
@@ -2553,6 +4158,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.3,
       "Predicted_Floor": 0.9,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ SF",
+          "opp": "SF",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.57
+        },
+        {
+          "week": 10,
+          "matchup": "vs SEA",
+          "opp": "SEA",
+          "is_home": true,
+          "diff": "easy",
+          "opp_ppg": 6.12
+        },
+        {
+          "week": 11,
+          "matchup": "@ DEN",
+          "opp": "DEN",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 2.38
+        }
+      ],
+      "Runway_Grade": "D",
+      "Runway_Avg_Pts": 3.69,
       "Def_DQI": 75.0,
       "Def_Pressure_Rate%": 23.4,
       "Def_Pass_EPA": 0.159,
@@ -2595,6 +4228,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 3.1,
       "Predicted_Floor": 1.4,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "vs TB",
+          "opp": "TB",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.12
+        },
+        {
+          "week": 10,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        },
+        {
+          "week": 11,
+          "matchup": "vs NO",
+          "opp": "NO",
+          "is_home": true,
+          "diff": "neutral",
+          "opp_ppg": 5.0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 5.06,
       "Def_DQI": 81.2,
       "Def_Pressure_Rate%": 24.0,
       "Def_Pass_EPA": 0.011,
@@ -2609,9 +4270,9 @@
       "Off_Pass_EPA_L4": -0.117,
       "NGS_TTT": 2.94,
       "NGS_Agg%": 13.6,
-      "Gametime_Weather": "Clear / Breezy (53\u00b0F, 9mph, g21)",
+      "Gametime_Weather": "Clear / Breezy (53\u00b0F, 9mph, g24)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.1 proj pts). Facing Baker Mayfield, who converts an elevated 36.8% of pressures to sacks (S/P%) and coughing up a 4.8% fumble rate (6 fumbles). CHI features a 24.0% pressure rate and 0.011 Def Pass EPA (81.2 DQI). Their 3rd-down defense is stout, halting 78.2% of attempts. The Buccaneers are implied for 20.8 points (0.0 bracket points). Projects for 2.2 sacks, 0.4 INTs, and 0.2 fumbles. Weather factor: Clear / Breezy (53\u00b0F, 9mph, g21). Note defensive injuries: D. Jackson (LB - Ankle, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (3.1 proj pts). Facing Baker Mayfield, who converts an elevated 36.8% of pressures to sacks (S/P%) and coughing up a 4.8% fumble rate (6 fumbles). CHI features a 24.0% pressure rate and 0.011 Def Pass EPA (81.2 DQI). Their 3rd-down defense is stout, halting 78.2% of attempts. The Buccaneers are implied for 20.8 points (0.0 bracket points). Projects for 2.2 sacks, 0.4 INTs, and 0.2 fumbles. Weather factor: Clear / Breezy (53\u00b0F, 9mph, g24). Note defensive injuries: D. Jackson (LB - Ankle, DNP)."
     },
     {
       "Offense": "Titans (TEN)",
@@ -2637,6 +4298,9 @@
       "Exp_Bracket": "-",
       "Proj_Fantasy_Pts": "-",
       "Predicted_Floor": "-",
+      "Runway_W9_W11": [],
+      "Runway_Grade": "BYE",
+      "Runway_Avg_Pts": 0.0,
       "Def_DQI": "-",
       "Def_Pressure_Rate%": "-",
       "Def_Pass_EPA": "-",
@@ -2679,6 +4343,34 @@
       "Exp_Bracket": 0.0,
       "Proj_Fantasy_Pts": 2.5,
       "Predicted_Floor": 1.1,
+      "Runway_W9_W11": [
+        {
+          "week": 9,
+          "matchup": "@ WAS",
+          "opp": "WAS",
+          "is_home": false,
+          "diff": "hard",
+          "opp_ppg": 3.29
+        },
+        {
+          "week": 10,
+          "matchup": "@ ARI",
+          "opp": "ARI",
+          "is_home": false,
+          "diff": "neutral",
+          "opp_ppg": 4.62
+        },
+        {
+          "week": 11,
+          "matchup": "BYE",
+          "opp": "BYE",
+          "is_home": null,
+          "diff": "bye",
+          "opp_ppg": 0
+        }
+      ],
+      "Runway_Grade": "C",
+      "Runway_Avg_Pts": 3.96,
       "Def_DQI": 77.0,
       "Def_Pressure_Rate%": 15.2,
       "Def_Pass_EPA": -0.062,
@@ -2693,7 +4385,7 @@
       "Off_Pass_EPA_L4": -0.004,
       "NGS_TTT": 2.89,
       "NGS_Agg%": 13.1,
-      "Gametime_Weather": "Clear / Mild (63\u00b0F, 10mph)",
+      "Gametime_Weather": "Clear / Mild (62\u00b0F, 10mph)",
       "Streamer_Tier": "Avoid",
       "Current_Week_Rationale": "Low-ceiling matchup firmly in the Avoid tier (2.5 proj pts). Facing Jayden Daniels, who converts 29.5% of pressures into sacks. LA features a 15.2% pressure rate and -0.062 Def Pass EPA (77.0 DQI). Their 3rd-down defense is stout, halting 71.3% of attempts. The Commanders are implied for 21.5 points (0.0 bracket points). Projects for 1.7 sacks, 0.4 INTs, and 0.1 fumbles. Note defensive injuries: Myles Garrett (LB - IR), K. Curl (S - Foot, DNP), T. McDuffie (CB - Back, DNP), J. Watson (CB - Shoulder, DNP)."
     }
@@ -4106,6 +5798,616 @@
       "Look_Ahead_Rationale": "AVOID / DO NOT STASH: Severe trap. C.J. Stroud and Texans have surrendered an NFL-low 6 points to opposing D/STs over their last 4 games (1.5 pts/g)."
     }
   ],
+  "playoffRadar": [
+    {
+      "Defense": "Bengals (CIN)",
+      "Team": "CIN",
+      "W15_Matchup": "@ CAR",
+      "W15_Opp": "CAR",
+      "W15_Opp_Pts": 6.29,
+      "W15_Diff": "easy",
+      "W16_Matchup": "@ IND",
+      "W16_Opp": "IND",
+      "W16_Opp_Pts": 6.38,
+      "W16_Diff": "easy",
+      "W17_Matchup": "vs BAL",
+      "W17_Opp": "BAL",
+      "W17_Opp_Pts": 5.75,
+      "W17_Diff": "easy",
+      "Playoff_Avg_Opp_Allowed": 6.14,
+      "Playoff_Rating": "Elite (Tier 1)",
+      "Playoff_Outlook": "Top-tier playoff stash: 3 highly exploitable matchups (CAR, IND, BAL) against high-turnover, sack-vulnerable offenses."
+    },
+    {
+      "Defense": "Browns (CLE)",
+      "Team": "CLE",
+      "W15_Matchup": "@ NYG",
+      "W15_Opp": "NYG",
+      "W15_Opp_Pts": 6.0,
+      "W15_Diff": "easy",
+      "W16_Matchup": "@ BAL",
+      "W16_Opp": "BAL",
+      "W16_Opp_Pts": 5.75,
+      "W16_Diff": "easy",
+      "W17_Matchup": "vs IND",
+      "W17_Opp": "IND",
+      "W17_Opp_Pts": 6.38,
+      "W17_Diff": "easy",
+      "Playoff_Avg_Opp_Allowed": 6.04,
+      "Playoff_Rating": "Elite (Tier 1)",
+      "Playoff_Outlook": "Top-tier playoff stash: 3 highly exploitable matchups (NYG, BAL, IND) against high-turnover, sack-vulnerable offenses."
+    },
+    {
+      "Defense": "Saints (NO)",
+      "Team": "NO",
+      "W15_Matchup": "@ TB",
+      "W15_Opp": "TB",
+      "W15_Opp_Pts": 5.12,
+      "W15_Diff": "neutral",
+      "W16_Matchup": "vs ARI",
+      "W16_Opp": "ARI",
+      "W16_Opp_Pts": 4.62,
+      "W16_Diff": "neutral",
+      "W17_Matchup": "@ ATL",
+      "W17_Opp": "ATL",
+      "W17_Opp_Pts": 8.0,
+      "W17_Diff": "easy",
+      "Playoff_Avg_Opp_Allowed": 5.91,
+      "Playoff_Rating": "Elite (Tier 1)",
+      "Playoff_Outlook": "Top-tier playoff stash: 3 highly exploitable matchups (TB, ARI, ATL) against high-turnover, sack-vulnerable offenses."
+    },
+    {
+      "Defense": "Buccaneers (TB)",
+      "Team": "TB",
+      "W15_Matchup": "vs NO",
+      "W15_Opp": "NO",
+      "W15_Opp_Pts": 5.0,
+      "W15_Diff": "neutral",
+      "W16_Matchup": "@ ATL",
+      "W16_Opp": "ATL",
+      "W16_Opp_Pts": 8.0,
+      "W16_Diff": "easy",
+      "W17_Matchup": "vs LA",
+      "W17_Opp": "LA",
+      "W17_Opp_Pts": 4.25,
+      "W17_Diff": "neutral",
+      "Playoff_Avg_Opp_Allowed": 5.75,
+      "Playoff_Rating": "Elite (Tier 1)",
+      "Playoff_Outlook": "Top-tier playoff stash: 3 highly exploitable matchups (NO, ATL, LA) against high-turnover, sack-vulnerable offenses."
+    },
+    {
+      "Defense": "Ravens (BAL)",
+      "Team": "BAL",
+      "W15_Matchup": "@ PIT",
+      "W15_Opp": "PIT",
+      "W15_Opp_Pts": 5.5,
+      "W15_Diff": "easy",
+      "W16_Matchup": "vs CLE",
+      "W16_Opp": "CLE",
+      "W16_Opp_Pts": 7.5,
+      "W16_Diff": "easy",
+      "W17_Matchup": "@ CIN",
+      "W17_Opp": "CIN",
+      "W17_Opp_Pts": 4.14,
+      "W17_Diff": "neutral",
+      "Playoff_Avg_Opp_Allowed": 5.71,
+      "Playoff_Rating": "Elite (Tier 1)",
+      "Playoff_Outlook": "Top-tier playoff stash: 3 highly exploitable matchups (PIT, CLE, CIN) against high-turnover, sack-vulnerable offenses."
+    },
+    {
+      "Defense": "Steelers (PIT)",
+      "Team": "PIT",
+      "W15_Matchup": "vs BAL",
+      "W15_Opp": "BAL",
+      "W15_Opp_Pts": 5.75,
+      "W15_Diff": "easy",
+      "W16_Matchup": "vs CAR",
+      "W16_Opp": "CAR",
+      "W16_Opp_Pts": 6.29,
+      "W16_Diff": "easy",
+      "W17_Matchup": "@ TEN",
+      "W17_Opp": "TEN",
+      "W17_Opp_Pts": 5.0,
+      "W17_Diff": "neutral",
+      "Playoff_Avg_Opp_Allowed": 5.68,
+      "Playoff_Rating": "Favorable (Tier 2)",
+      "Playoff_Outlook": "Strong playoff asset: multiple favorable matchups (BAL, CAR, TEN) with high weekly fantasy scoring floors."
+    },
+    {
+      "Defense": "Colts (IND)",
+      "Team": "IND",
+      "W15_Matchup": "@ TEN",
+      "W15_Opp": "TEN",
+      "W15_Opp_Pts": 5.0,
+      "W15_Diff": "neutral",
+      "W16_Matchup": "vs CIN",
+      "W16_Opp": "CIN",
+      "W16_Opp_Pts": 4.14,
+      "W16_Diff": "neutral",
+      "W17_Matchup": "@ CLE",
+      "W17_Opp": "CLE",
+      "W17_Opp_Pts": 7.5,
+      "W17_Diff": "easy",
+      "Playoff_Avg_Opp_Allowed": 5.55,
+      "Playoff_Rating": "Favorable (Tier 2)",
+      "Playoff_Outlook": "Strong playoff asset: multiple favorable matchups (TEN, CIN, CLE) with high weekly fantasy scoring floors."
+    },
+    {
+      "Defense": "Lions (DET)",
+      "Team": "DET",
+      "W15_Matchup": "@ MIN",
+      "W15_Opp": "MIN",
+      "W15_Opp_Pts": 5.14,
+      "W15_Diff": "neutral",
+      "W16_Matchup": "vs NYG",
+      "W16_Opp": "NYG",
+      "W16_Opp_Pts": 6.0,
+      "W16_Diff": "easy",
+      "W17_Matchup": "@ CHI",
+      "W17_Opp": "CHI",
+      "W17_Opp_Pts": 5.25,
+      "W17_Diff": "neutral",
+      "Playoff_Avg_Opp_Allowed": 5.46,
+      "Playoff_Rating": "Favorable (Tier 2)",
+      "Playoff_Outlook": "Strong playoff asset: multiple favorable matchups (MIN, NYG, CHI) with high weekly fantasy scoring floors."
+    },
+    {
+      "Defense": "Commanders (WAS)",
+      "Team": "WAS",
+      "W15_Matchup": "vs ATL",
+      "W15_Opp": "ATL",
+      "W15_Opp_Pts": 8.0,
+      "W15_Diff": "easy",
+      "W16_Matchup": "@ MIN",
+      "W16_Opp": "MIN",
+      "W16_Opp_Pts": 5.14,
+      "W16_Diff": "neutral",
+      "W17_Matchup": "@ JAX",
+      "W17_Opp": "JAX",
+      "W17_Opp_Pts": 3.0,
+      "W17_Diff": "hard",
+      "Playoff_Avg_Opp_Allowed": 5.38,
+      "Playoff_Rating": "Favorable (Tier 2)",
+      "Playoff_Outlook": "Strong playoff asset: multiple favorable matchups (ATL, MIN, JAX) with high weekly fantasy scoring floors."
+    },
+    {
+      "Defense": "Panthers (CAR)",
+      "Team": "CAR",
+      "W15_Matchup": "vs CIN",
+      "W15_Opp": "CIN",
+      "W15_Opp_Pts": 4.14,
+      "W15_Diff": "neutral",
+      "W16_Matchup": "@ PIT",
+      "W16_Opp": "PIT",
+      "W16_Opp_Pts": 5.5,
+      "W16_Diff": "easy",
+      "W17_Matchup": "vs SEA",
+      "W17_Opp": "SEA",
+      "W17_Opp_Pts": 6.12,
+      "W17_Diff": "easy",
+      "Playoff_Avg_Opp_Allowed": 5.25,
+      "Playoff_Rating": "Favorable (Tier 2)",
+      "Playoff_Outlook": "Strong playoff asset: multiple favorable matchups (CIN, PIT, SEA) with high weekly fantasy scoring floors."
+    },
+    {
+      "Defense": "Chiefs (KC)",
+      "Team": "KC",
+      "W15_Matchup": "vs NE",
+      "W15_Opp": "NE",
+      "W15_Opp_Pts": 5.12,
+      "W15_Diff": "neutral",
+      "W16_Matchup": "vs SF",
+      "W16_Opp": "SF",
+      "W16_Opp_Pts": 2.57,
+      "W16_Diff": "hard",
+      "W17_Matchup": "@ LAC",
+      "W17_Opp": "LAC",
+      "W17_Opp_Pts": 7.57,
+      "W17_Diff": "easy",
+      "Playoff_Avg_Opp_Allowed": 5.09,
+      "Playoff_Rating": "Moderate (Tier 3)",
+      "Playoff_Outlook": "Balanced playoff path: favorable target games mixed with neutral test matchups (NE, SF, LAC)."
+    },
+    {
+      "Defense": "49ers (SF)",
+      "Team": "SF",
+      "W15_Matchup": "@ LAC",
+      "W15_Opp": "LAC",
+      "W15_Opp_Pts": 7.57,
+      "W15_Diff": "easy",
+      "W16_Matchup": "@ KC",
+      "W16_Opp": "KC",
+      "W16_Opp_Pts": 3.0,
+      "W16_Diff": "hard",
+      "W17_Matchup": "vs PHI",
+      "W17_Opp": "PHI",
+      "W17_Opp_Pts": 4.62,
+      "W17_Diff": "neutral",
+      "Playoff_Avg_Opp_Allowed": 5.06,
+      "Playoff_Rating": "Moderate (Tier 3)",
+      "Playoff_Outlook": "Balanced playoff path: favorable target games mixed with neutral test matchups (LAC, KC, PHI)."
+    },
+    {
+      "Defense": "Seahawks (SEA)",
+      "Team": "SEA",
+      "W15_Matchup": "@ PHI",
+      "W15_Opp": "PHI",
+      "W15_Opp_Pts": 4.62,
+      "W15_Diff": "neutral",
+      "W16_Matchup": "vs LA",
+      "W16_Opp": "LA",
+      "W16_Opp_Pts": 4.25,
+      "W16_Diff": "neutral",
+      "W17_Matchup": "@ CAR",
+      "W17_Opp": "CAR",
+      "W17_Opp_Pts": 6.29,
+      "W17_Diff": "easy",
+      "Playoff_Avg_Opp_Allowed": 5.05,
+      "Playoff_Rating": "Moderate (Tier 3)",
+      "Playoff_Outlook": "Balanced playoff path: favorable target games mixed with neutral test matchups (PHI, LA, CAR)."
+    },
+    {
+      "Defense": "Jets (NYJ)",
+      "Team": "NYJ",
+      "W15_Matchup": "@ ARI",
+      "W15_Opp": "ARI",
+      "W15_Opp_Pts": 4.62,
+      "W15_Diff": "neutral",
+      "W16_Matchup": "vs NE",
+      "W16_Opp": "NE",
+      "W16_Opp_Pts": 5.12,
+      "W16_Diff": "neutral",
+      "W17_Matchup": "vs MIN",
+      "W17_Opp": "MIN",
+      "W17_Opp_Pts": 5.14,
+      "W17_Diff": "neutral",
+      "Playoff_Avg_Opp_Allowed": 4.96,
+      "Playoff_Rating": "Moderate (Tier 3)",
+      "Playoff_Outlook": "Balanced playoff path: favorable target games mixed with neutral test matchups (ARI, NE, MIN)."
+    },
+    {
+      "Defense": "Packers (GB)",
+      "Team": "GB",
+      "W15_Matchup": "vs MIA",
+      "W15_Opp": "MIA",
+      "W15_Opp_Pts": 6.0,
+      "W15_Diff": "easy",
+      "W16_Matchup": "@ CHI",
+      "W16_Opp": "CHI",
+      "W16_Opp_Pts": 5.25,
+      "W16_Diff": "neutral",
+      "W17_Matchup": "vs HOU",
+      "W17_Opp": "HOU",
+      "W17_Opp_Pts": 3.57,
+      "W17_Diff": "hard",
+      "Playoff_Avg_Opp_Allowed": 4.94,
+      "Playoff_Rating": "Moderate (Tier 3)",
+      "Playoff_Outlook": "Balanced playoff path: favorable target games mixed with neutral test matchups (MIA, CHI, HOU)."
+    },
+    {
+      "Defense": "Dolphins (MIA)",
+      "Team": "MIA",
+      "W15_Matchup": "@ GB",
+      "W15_Opp": "GB",
+      "W15_Opp_Pts": 3.38,
+      "W15_Diff": "hard",
+      "W16_Matchup": "vs LAC",
+      "W16_Opp": "LAC",
+      "W16_Opp_Pts": 7.57,
+      "W16_Diff": "easy",
+      "W17_Matchup": "vs BUF",
+      "W17_Opp": "BUF",
+      "W17_Opp_Pts": 3.43,
+      "W17_Diff": "hard",
+      "Playoff_Avg_Opp_Allowed": 4.79,
+      "Playoff_Rating": "Moderate (Tier 3)",
+      "Playoff_Outlook": "Balanced playoff path: favorable target games mixed with neutral test matchups (GB, LAC, BUF)."
+    },
+    {
+      "Defense": "Titans (TEN)",
+      "Team": "TEN",
+      "W15_Matchup": "vs IND",
+      "W15_Opp": "IND",
+      "W15_Opp_Pts": 6.38,
+      "W15_Diff": "easy",
+      "W16_Matchup": "@ LV",
+      "W16_Opp": "LV",
+      "W16_Opp_Pts": 2.38,
+      "W16_Diff": "hard",
+      "W17_Matchup": "vs PIT",
+      "W17_Opp": "PIT",
+      "W17_Opp_Pts": 5.5,
+      "W17_Diff": "easy",
+      "Playoff_Avg_Opp_Allowed": 4.75,
+      "Playoff_Rating": "Moderate (Tier 3)",
+      "Playoff_Outlook": "Balanced playoff path: favorable target games mixed with neutral test matchups (IND, LV, PIT)."
+    },
+    {
+      "Defense": "Rams (LA)",
+      "Team": "LA",
+      "W15_Matchup": "vs DAL",
+      "W15_Opp": "DAL",
+      "W15_Opp_Pts": 2.88,
+      "W15_Diff": "hard",
+      "W16_Matchup": "@ SEA",
+      "W16_Opp": "SEA",
+      "W16_Opp_Pts": 6.12,
+      "W16_Diff": "easy",
+      "W17_Matchup": "@ TB",
+      "W17_Opp": "TB",
+      "W17_Opp_Pts": 5.12,
+      "W17_Diff": "neutral",
+      "Playoff_Avg_Opp_Allowed": 4.71,
+      "Playoff_Rating": "Moderate (Tier 3)",
+      "Playoff_Outlook": "Balanced playoff path: favorable target games mixed with neutral test matchups (DAL, SEA, TB)."
+    },
+    {
+      "Defense": "Bills (BUF)",
+      "Team": "BUF",
+      "W15_Matchup": "vs CHI",
+      "W15_Opp": "CHI",
+      "W15_Opp_Pts": 5.25,
+      "W15_Diff": "neutral",
+      "W16_Matchup": "@ DEN",
+      "W16_Opp": "DEN",
+      "W16_Opp_Pts": 2.38,
+      "W16_Diff": "hard",
+      "W17_Matchup": "@ MIA",
+      "W17_Opp": "MIA",
+      "W17_Opp_Pts": 6.0,
+      "W17_Diff": "easy",
+      "Playoff_Avg_Opp_Allowed": 4.54,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (CHI, DEN, MIA) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Falcons (ATL)",
+      "Team": "ATL",
+      "W15_Matchup": "@ WAS",
+      "W15_Opp": "WAS",
+      "W15_Opp_Pts": 3.29,
+      "W15_Diff": "hard",
+      "W16_Matchup": "vs TB",
+      "W16_Opp": "TB",
+      "W16_Opp_Pts": 5.12,
+      "W16_Diff": "neutral",
+      "W17_Matchup": "vs NO",
+      "W17_Opp": "NO",
+      "W17_Opp_Pts": 5.0,
+      "W17_Diff": "neutral",
+      "Playoff_Avg_Opp_Allowed": 4.47,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (WAS, TB, NO) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Cowboys (DAL)",
+      "Team": "DAL",
+      "W15_Matchup": "@ LA",
+      "W15_Opp": "LA",
+      "W15_Opp_Pts": 4.25,
+      "W15_Diff": "neutral",
+      "W16_Matchup": "vs JAX",
+      "W16_Opp": "JAX",
+      "W16_Opp_Pts": 3.0,
+      "W16_Diff": "hard",
+      "W17_Matchup": "vs NYG",
+      "W17_Opp": "NYG",
+      "W17_Opp_Pts": 6.0,
+      "W17_Diff": "easy",
+      "Playoff_Avg_Opp_Allowed": 4.42,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (LA, JAX, NYG) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Giants (NYG)",
+      "Team": "NYG",
+      "W15_Matchup": "vs CLE",
+      "W15_Opp": "CLE",
+      "W15_Opp_Pts": 7.5,
+      "W15_Diff": "easy",
+      "W16_Matchup": "@ DET",
+      "W16_Opp": "DET",
+      "W16_Opp_Pts": 2.86,
+      "W16_Diff": "hard",
+      "W17_Matchup": "@ DAL",
+      "W17_Opp": "DAL",
+      "W17_Opp_Pts": 2.88,
+      "W17_Diff": "hard",
+      "Playoff_Avg_Opp_Allowed": 4.41,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (CLE, DET, DAL) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Eagles (PHI)",
+      "Team": "PHI",
+      "W15_Matchup": "vs SEA",
+      "W15_Opp": "SEA",
+      "W15_Opp_Pts": 6.12,
+      "W15_Diff": "easy",
+      "W16_Matchup": "vs HOU",
+      "W16_Opp": "HOU",
+      "W16_Opp_Pts": 3.57,
+      "W16_Diff": "hard",
+      "W17_Matchup": "@ SF",
+      "W17_Opp": "SF",
+      "W17_Opp_Pts": 2.57,
+      "W17_Diff": "hard",
+      "Playoff_Avg_Opp_Allowed": 4.09,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (SEA, HOU, SF) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Raiders (LV)",
+      "Team": "LV",
+      "W15_Matchup": "vs DEN",
+      "W15_Opp": "DEN",
+      "W15_Opp_Pts": 2.38,
+      "W15_Diff": "hard",
+      "W16_Matchup": "vs TEN",
+      "W16_Opp": "TEN",
+      "W16_Opp_Pts": 5.0,
+      "W16_Diff": "neutral",
+      "W17_Matchup": "@ ARI",
+      "W17_Opp": "ARI",
+      "W17_Opp_Pts": 4.62,
+      "W17_Diff": "neutral",
+      "Playoff_Avg_Opp_Allowed": 4.0,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (DEN, TEN, ARI) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Chargers (LAC)",
+      "Team": "LAC",
+      "W15_Matchup": "vs SF",
+      "W15_Opp": "SF",
+      "W15_Opp_Pts": 2.57,
+      "W15_Diff": "hard",
+      "W16_Matchup": "@ MIA",
+      "W16_Opp": "MIA",
+      "W16_Opp_Pts": 6.0,
+      "W16_Diff": "easy",
+      "W17_Matchup": "vs KC",
+      "W17_Opp": "KC",
+      "W17_Opp_Pts": 3.0,
+      "W17_Diff": "hard",
+      "Playoff_Avg_Opp_Allowed": 3.86,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (SF, MIA, KC) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Cardinals (ARI)",
+      "Team": "ARI",
+      "W15_Matchup": "vs NYJ",
+      "W15_Opp": "NYJ",
+      "W15_Opp_Pts": 4.0,
+      "W15_Diff": "neutral",
+      "W16_Matchup": "@ NO",
+      "W16_Opp": "NO",
+      "W16_Opp_Pts": 5.0,
+      "W16_Diff": "neutral",
+      "W17_Matchup": "vs LV",
+      "W17_Opp": "LV",
+      "W17_Opp_Pts": 2.38,
+      "W17_Diff": "hard",
+      "Playoff_Avg_Opp_Allowed": 3.79,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (NYJ, NO, LV) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Texans (HOU)",
+      "Team": "HOU",
+      "W15_Matchup": "vs JAX",
+      "W15_Opp": "JAX",
+      "W15_Opp_Pts": 3.0,
+      "W15_Diff": "hard",
+      "W16_Matchup": "@ PHI",
+      "W16_Opp": "PHI",
+      "W16_Opp_Pts": 4.62,
+      "W16_Diff": "neutral",
+      "W17_Matchup": "@ GB",
+      "W17_Opp": "GB",
+      "W17_Opp_Pts": 3.38,
+      "W17_Diff": "hard",
+      "Playoff_Avg_Opp_Allowed": 3.67,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (JAX, PHI, GB) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Broncos (DEN)",
+      "Team": "DEN",
+      "W15_Matchup": "@ LV",
+      "W15_Opp": "LV",
+      "W15_Opp_Pts": 2.38,
+      "W15_Diff": "hard",
+      "W16_Matchup": "vs BUF",
+      "W16_Opp": "BUF",
+      "W16_Opp_Pts": 3.43,
+      "W16_Diff": "hard",
+      "W17_Matchup": "@ NE",
+      "W17_Opp": "NE",
+      "W17_Opp_Pts": 5.12,
+      "W17_Diff": "neutral",
+      "Playoff_Avg_Opp_Allowed": 3.64,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (LV, BUF, NE) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Vikings (MIN)",
+      "Team": "MIN",
+      "W15_Matchup": "vs DET",
+      "W15_Opp": "DET",
+      "W15_Opp_Pts": 2.86,
+      "W15_Diff": "hard",
+      "W16_Matchup": "vs WAS",
+      "W16_Opp": "WAS",
+      "W16_Opp_Pts": 3.29,
+      "W16_Diff": "hard",
+      "W17_Matchup": "@ NYJ",
+      "W17_Opp": "NYJ",
+      "W17_Opp_Pts": 4.0,
+      "W17_Diff": "neutral",
+      "Playoff_Avg_Opp_Allowed": 3.38,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (DET, WAS, NYJ) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Jaguars (JAX)",
+      "Team": "JAX",
+      "W15_Matchup": "@ HOU",
+      "W15_Opp": "HOU",
+      "W15_Opp_Pts": 3.57,
+      "W15_Diff": "hard",
+      "W16_Matchup": "@ DAL",
+      "W16_Opp": "DAL",
+      "W16_Opp_Pts": 2.88,
+      "W16_Diff": "hard",
+      "W17_Matchup": "vs WAS",
+      "W17_Opp": "WAS",
+      "W17_Opp_Pts": 3.29,
+      "W17_Diff": "hard",
+      "Playoff_Avg_Opp_Allowed": 3.25,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (HOU, DAL, WAS) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Bears (CHI)",
+      "Team": "CHI",
+      "W15_Matchup": "@ BUF",
+      "W15_Opp": "BUF",
+      "W15_Opp_Pts": 3.43,
+      "W15_Diff": "hard",
+      "W16_Matchup": "vs GB",
+      "W16_Opp": "GB",
+      "W16_Opp_Pts": 3.38,
+      "W16_Diff": "hard",
+      "W17_Matchup": "vs DET",
+      "W17_Opp": "DET",
+      "W17_Opp_Pts": 2.86,
+      "W17_Diff": "hard",
+      "Playoff_Avg_Opp_Allowed": 3.22,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (BUF, GB, DET) with suppressed sack/turnover ceilings."
+    },
+    {
+      "Defense": "Patriots (NE)",
+      "Team": "NE",
+      "W15_Matchup": "@ KC",
+      "W15_Opp": "KC",
+      "W15_Opp_Pts": 3.0,
+      "W15_Diff": "hard",
+      "W16_Matchup": "@ NYJ",
+      "W16_Opp": "NYJ",
+      "W16_Opp_Pts": 4.0,
+      "W16_Diff": "neutral",
+      "W17_Matchup": "vs DEN",
+      "W17_Opp": "DEN",
+      "W17_Opp_Pts": 2.38,
+      "W17_Diff": "hard",
+      "Playoff_Avg_Opp_Allowed": 3.13,
+      "Playoff_Rating": "Tough (Tier 4)",
+      "Playoff_Outlook": "Challenging playoff slate: faces potent scoring offenses (KC, NYJ, DEN) with suppressed sack/turnover ceilings."
+    }
+  ],
   "pointsAnatomy": [
     {
       "Team": "MIN",
@@ -5036,23 +7338,23 @@
         "snapshot_id": "2026_week_09",
         "season": 2026,
         "week": 9,
-        "timestamp_utc": "2026-11-06T18:44:09.930653+00:00",
-        "timestamp_local": "November 06, 2026 at 12:44 PM",
-        "git_commit_hash": "c84b03230f4f76871ae7a3dda160a2c9361d819b",
+        "timestamp_utc": "2026-11-06T21:58:55.339072+00:00",
+        "timestamp_local": "November 06, 2026 at 03:58 PM",
+        "git_commit_hash": "86f713505fbd96c0cc39ec08f1c2042e9aec14a1",
         "file_json": "snapshots/week_09_2026_snapshot.json",
         "file_csv": "snapshots/week_09_2026_snapshot.csv",
         "records_count": 32,
-        "sha256": "a64701424f65ba37fd01fdb85e104eba678cddeb9c8e8c6ffb66c7b1443b5f47"
+        "sha256": "a724c6c949de2205c74e01429bc970e31df5c60b3000130486ba7129e8b55de5"
       }
     ],
     "activeSnapshot": {
       "snapshot_id": "2026_week_09",
       "season": 2026,
       "week": 9,
-      "timestamp_utc": "2026-11-06T18:44:09.930653+00:00",
-      "timestamp_local": "November 06, 2026 at 12:44 PM",
-      "git_commit_hash": "c84b03230f4f76871ae7a3dda160a2c9361d819b",
-      "sha256": "a64701424f65ba37fd01fdb85e104eba678cddeb9c8e8c6ffb66c7b1443b5f47",
+      "timestamp_utc": "2026-11-06T21:58:55.339072+00:00",
+      "timestamp_local": "November 06, 2026 at 03:58 PM",
+      "git_commit_hash": "86f713505fbd96c0cc39ec08f1c2042e9aec14a1",
+      "sha256": "a724c6c949de2205c74e01429bc970e31df5c60b3000130486ba7129e8b55de5",
       "records_count": 30
     },
     "completedAudits": []
