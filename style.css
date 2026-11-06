@@ -748,7 +748,28 @@ th.col-tier {
 }
 
 th.col-qb {
-  min-width: 165px;
+  min-width: 125px;
+  max-width: 165px;
+}
+
+/* Opposing QB & Status 2-Row Cell */
+.qb-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+  white-space: normal;
+}
+
+.qb-name {
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.25;
+}
+
+.qb-status-wrap {
+  display: flex;
+  align-items: center;
 }
 
 th.col-def {
@@ -1598,4 +1619,6 @@ thead tr.header-super-row th:hover {
 .seg-bracket { background: #3b82f6; }   /* Blue - Points Allowed */
 .seg-int { background: #06b6d4; }       /* Cyan - Interceptions */
 .seg-fumb { background: #10b981; }      /* Emerald - Fumble Recs */
+.seg-block { background: #ec4899; }     /* Pink - Blocked Kicks */
 .seg-td { background: #8b5cf6; }        /* Purple - Def TDs */
+.seg-safety { background: #64748b; }    /* Slate - Safeties */

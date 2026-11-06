@@ -190,7 +190,7 @@
           <thead>
             <tr class="header-super-row">
               <th colspan="3" class="super-header super-matchup">Matchup Core</th>
-              <th colspan="6" class="super-header super-projections">Fantasy Projections & Vegas</th>
+              <th colspan="7" class="super-header super-projections">Fantasy Projections & Vegas</th>
               <th colspan="8" class="super-header super-defense">Defensive Quality & Health</th>
               <th colspan="5" class="super-header super-qb">Opponent QB & Next Gen Stats</th>
               <th colspan="1" class="super-header super-game">Game</th>
@@ -200,12 +200,13 @@
               <th data-sort="Streaming Defense" class="col-sticky col-def">Streaming<br>Defense <span class="sort-arrow"></span></th>
               <th data-sort="Opposing QB (Status)" class="col-qb">Opposing QB<br>& Status <span class="sort-arrow"></span></th>
               <th data-sort="Week 9 Verdict" class="col-center col-tier">Week 9<br>Verdict <span class="sort-arrow"></span></th>
-              <th data-sort="Vegas Implied Opponent Score" class="col-center col-stat">Vegas<br>Implied <span class="sort-arrow"></span></th>
               <th data-sort="Projected Fantasy Points" class="col-center col-stat sort-active desc">Projected<br>Points <span class="sort-arrow">▼</span></th>
               <th data-sort="Scoring Floor" class="col-center col-stat">Scoring<br>Floor <span class="sort-arrow"></span></th>
               <th data-sort="Projected Sacks" class="col-center col-stat">Projected<br>Sacks <span class="sort-arrow"></span></th>
               <th data-sort="Projected Interceptions" class="col-center col-stat">Projected<br>INTs <span class="sort-arrow"></span></th>
               <th data-sort="Projected Fumbles Recovered" class="col-center col-stat">Projected<br>Fumbles <span class="sort-arrow"></span></th>
+              <th data-sort="Vegas Implied Opponent Score" class="col-center col-stat">Vegas<br>Implied <span class="sort-arrow"></span></th>
+              <th data-sort="Projected Bracket Points" class="col-center col-stat">Proj Bracket<br>Points <span class="sort-arrow"></span></th>
               <th data-sort="Defensive Quality Index (DQI)" class="col-center col-stat">Def Quality<br>Index (DQI) <span class="sort-arrow"></span></th>
               <th data-sort="Defensive Pressure %" class="col-center col-stat-wide">Def<br>Pressure % <span class="sort-arrow"></span></th>
               <th data-sort="Defensive Pass EPA Allowed" class="col-center col-stat-wide">Def Pass<br>EPA <span class="sort-arrow"></span></th>
@@ -328,7 +329,7 @@
       <div class="panel-header">
         <div class="panel-title-wrap">
           <h2 class="panel-title">D/ST Fantasy Points Anatomy (Weeks 1–8)</h2>
-          <p class="panel-desc">Where do defensive fantasy points come from? Empirical breakdown of all 1,123.0 fantasy points scored across the 2026 NFL regular season under WAFFLe rules. Filter by NFL defense or sort any column to see which teams rely on sacks, takeaways, or low points allowed.</p>
+          <p class="panel-desc">Where do defensive fantasy points come from? Empirical breakdown of all 1,181.0 fantasy points scored across the 2026 NFL regular season under WAFFLe rules. Sorted by Fantasy Points per Game (PPG). Filter by NFL defense or sort any column to see which teams rely on sacks, takeaways, or low points allowed.</p>
         </div>
       </div>
 
@@ -339,7 +340,7 @@
             <span class="a-icon">💥</span>
             <span class="a-title">Sacks (1 pt)</span>
           </div>
-          <div class="a-val">557 pts <span class="a-pct">49.6%</span></div>
+          <div class="a-val">557 pts <span class="a-pct">47.2%</span></div>
           <p class="a-desc">#1 overall fantasy point generator. Sacks account for nearly half of all defensive scoring.</p>
         </div>
 
@@ -348,7 +349,7 @@
             <span class="a-icon">🛡️</span>
             <span class="a-title">Points Allowed Brackets</span>
           </div>
-          <div class="a-val">179 pts <span class="a-pct">15.9%</span></div>
+          <div class="a-val">179 pts <span class="a-pct">15.2%</span></div>
           <p class="a-desc">10 pts (0 allowed), 7 pts (1–6), 3 pts (7–13). Heavily driven by Vegas implied score totals.</p>
         </div>
 
@@ -357,7 +358,7 @@
             <span class="a-icon">🎯</span>
             <span class="a-title">Interceptions (1 pt)</span>
           </div>
-          <div class="a-val">170 pts <span class="a-pct">15.1%</span></div>
+          <div class="a-val">170 pts <span class="a-pct">14.4%</span></div>
           <p class="a-desc">Driven by tight-window throw % (Agg%), pocket pressure, and high-wind weather gusts.</p>
         </div>
 
@@ -366,17 +367,26 @@
             <span class="a-icon">🏈</span>
             <span class="a-title">Fumble Recoveries (1 pt)</span>
           </div>
-          <div class="a-val">135 pts <span class="a-pct">12.0%</span></div>
+          <div class="a-val">135 pts <span class="a-pct">11.4%</span></div>
           <p class="a-desc">Generated via strip-sacks (QBs with slow release times &gt;3.0s) and wet ball carries. 47% recovery rate.</p>
         </div>
 
         <div class="card anatomy-card">
           <div class="anatomy-card-header">
             <span class="a-icon">⚡</span>
-            <span class="a-title">Def Touchdowns (6 pts)</span>
+            <span class="a-title">Def & ST Touchdowns (6 pts)</span>
           </div>
-          <div class="a-val">78 pts <span class="a-pct">6.9%</span></div>
-          <p class="a-desc">13 pick-sixes and scoop-and-scores. High point swings with game-winning upside.</p>
+          <div class="a-val">120 pts <span class="a-pct">10.2%</span></div>
+          <p class="a-desc">20 pick-sixes, scoop-and-scores, and punt/kick returns. High point swings with game-winning upside.</p>
+        </div>
+
+        <div class="card anatomy-card">
+          <div class="anatomy-card-header">
+            <span class="a-icon">🛑</span>
+            <span class="a-title">Blocked Kicks (1 pt)</span>
+          </div>
+          <div class="a-val">16 pts <span class="a-pct">1.4%</span></div>
+          <p class="a-desc">16 blocked field goals, extra points, and punts recorded across the NFL.</p>
         </div>
 
         <div class="card anatomy-card">
@@ -384,7 +394,7 @@
             <span class="a-icon">🔒</span>
             <span class="a-title">Safeties (2 pts)</span>
           </div>
-          <div class="a-val">4 pts <span class="a-pct">0.4%</span></div>
+          <div class="a-val">4 pts <span class="a-pct">0.3%</span></div>
           <p class="a-desc">End-zone tackles/holding penalties (2 total recorded across NFL in Weeks 1–8).</p>
         </div>
       </div>
@@ -400,12 +410,13 @@
             <tr>
               <th data-sort="Team" class="col-sticky col-def">NFL Defense <span class="sort-arrow"></span></th>
               <th data-sort="GP" class="col-center col-stat">Games<br>Played <span class="sort-arrow"></span></th>
-              <th data-sort="Total_Pts" class="col-center col-stat sort-active desc">Total Fantasy<br>Points <span class="sort-arrow">▼</span></th>
-              <th data-sort="PPG" class="col-center col-stat">Fantasy<br>PPG <span class="sort-arrow"></span></th>
+              <th data-sort="PPG" class="col-center col-stat sort-active desc">Fantasy<br>PPG <span class="sort-arrow">▼</span></th>
+              <th data-sort="Total_Pts" class="col-center col-stat">Total Fantasy<br>Points <span class="sort-arrow"></span></th>
               <th data-sort="Sacks" class="col-center col-stat-wide">Sacks<br>(Pts / %) <span class="sort-arrow"></span></th>
               <th data-sort="Bracket_Pts" class="col-center col-stat-wide">Points Allowed<br>Bracket (Pts / %) <span class="sort-arrow"></span></th>
               <th data-sort="INTs" class="col-center col-stat-wide">INTs<br>(Pts / %) <span class="sort-arrow"></span></th>
               <th data-sort="Fumbles_Rec" class="col-center col-stat-wide">Fumbles Rec<br>(Pts / %) <span class="sort-arrow"></span></th>
+              <th data-sort="Blocks" class="col-center col-stat-wide">Blocks<br>(Pts / %) <span class="sort-arrow"></span></th>
               <th data-sort="Def_TDs" class="col-center col-stat-wide">Def TDs<br>(Pts / %) <span class="sort-arrow"></span></th>
               <th data-sort="Safeties" class="col-center col-stat-wide">Safeties<br>(Pts / %) <span class="sort-arrow"></span></th>
               <th style="min-width: 220px;">Point Source Distribution</th>

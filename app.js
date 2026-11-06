@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     week9: { column: 'Projected Fantasy Points', ascending: false },
     week10: { column: 'Opponent L4 Points Allowed', ascending: false },
     history: { column: 'Total Points Allowed (W1-8)', ascending: false },
-    anatomy: { column: 'Total_Pts', ascending: false }
+    anatomy: { column: 'PPG', ascending: false }
   };
 
   // Filter states
@@ -67,6 +67,30 @@ document.addEventListener('DOMContentLoaded', async () => {
     const num = parseFloat(val);
     if (isNaN(num)) return val;
     return num.toFixed(decimals);
+  }
+
+  // Helper for 2-row QB cell formatting with wrapped badge
+  function formatQbCell(qbRaw) {
+    if (!qbRaw || qbRaw === '-' || qbRaw === 'BYE') return qbRaw || '-';
+    let qbName = qbRaw;
+    let qbStatusBadge = '';
+    const parenIdx = qbRaw.indexOf('(');
+    if (parenIdx !== -1) {
+      qbName = qbRaw.slice(0, parenIdx).trim();
+      const statusContent = qbRaw.slice(parenIdx + 1).replace(/\)$/, '').trim();
+      if (statusContent.toLowerCase().includes('backup') || statusContent.toLowerCase().includes('yes')) {
+        const cleanStatus = statusContent.replace(/^Yes:?\s*/i, 'Backup: ').replace(/^Yes$/i, 'Backup');
+        qbStatusBadge = `<span class="qb-backup-badge">${cleanStatus}</span>`;
+      } else {
+        qbStatusBadge = `<span class="qb-starter-badge">Starter</span>`;
+      }
+    }
+    return `
+      <div class="qb-cell">
+        <div class="qb-name">${qbName}</div>
+        ${qbStatusBadge ? `<div class="qb-status-wrap">${qbStatusBadge}</div>` : ''}
+      </div>
+    `;
   }
 
   // 2. Setup Header & Metadata
@@ -363,6 +387,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Streaming Tier': 'Streamer_Tier',
       'Vegas Implied Opponent Score': 'Opp_Implied_Pts',
       'Vegas Implied': 'Opp_Implied_Pts',
+      'Projected Bracket Points': 'Exp_Bracket',
+      'Proj Bracket Points': 'Exp_Bracket',
+      'Bracket Points': 'Exp_Bracket',
       'Projected Fantasy Points': 'Proj_Fantasy_Pts',
       'Scoring Floor': 'Predicted_Floor',
       'Projected Sacks': 'Proj_Sacks',
@@ -404,16 +431,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Render HTML
     tbody.innerHTML = rows.map((r, idx) => {
-      let qbDisplay = r.Starting_QB || '-';
-      if (qbDisplay.includes('Backup:')) {
-        qbDisplay = qbDisplay.replace(/\(Backup:\s*([^)]*)\)/i, '<span class="qb-backup-badge">Backup: $1</span>');
-      } else if (qbDisplay.includes('(Starter)')) {
-        qbDisplay = qbDisplay.replace(/\(Starter\)/i, '<span class="qb-starter-badge">Starter</span>');
-      } else if (qbDisplay.includes('(No)')) {
-        qbDisplay = qbDisplay.replace(/\(No\)/i, '<span class="qb-starter-badge">Starter</span>');
-      } else if (qbDisplay.includes('(Yes')) {
-        qbDisplay = qbDisplay.replace(/\(Yes\s*\(?([^)]*)\)?\)/i, '<span class="qb-backup-badge">Backup: $1</span>');
-      }
+      const qbDisplay = formatQbCell(r.Starting_QB);
       
       // Weather pill style
       const weatherText = r.Gametime_Weather || 'N/A';
@@ -434,12 +452,13 @@ document.addEventListener('DOMContentLoaded', async () => {
           </td>
           <td>${qbDisplay}</td>
           <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
-          <td class="col-center">${formatNum(r.Opp_Implied_Pts, 1)} pts</td>
           <td class="col-center"><span class="pts-highlight ${parseFloat(r.Proj_Fantasy_Pts) >= 9 ? 'pts-top' : ''}">${formatNum(r.Proj_Fantasy_Pts, 1)}</span></td>
           <td class="col-center stat-bold">${formatNum(r.Predicted_Floor, 1)}</td>
           <td class="col-center">${formatNum(r.Proj_Sacks, 1)}</td>
           <td class="col-center ${parseFloat(r.Proj_INTs) >= 1.5 ? 'stat-bold' : ''}">${formatNum(r.Proj_INTs, 1)}</td>
           <td class="col-center">${formatNum(r.Proj_Fumbles, 1)}</td>
+          <td class="col-center">${formatNum(r.Opp_Implied_Pts, 1)} pts</td>
+          <td class="col-center">${formatNum(r.Exp_Bracket, 1)} pts</td>
           <td class="col-center"><span class="dqi-badge ${getDqiClass(r.Def_DQI)}">${r.Def_DQI !== '-' ? formatNum(r.Def_DQI, 1) : '—'}</span></td>
           <td class="col-center ${parseFloat(r['Def_Pressure_Rate%']) >= 25 ? 'stat-bold pts-top' : (parseFloat(r['Def_Pressure_Rate%']) >= 22.5 ? 'stat-bold' : '')}">${r['Def_Pressure_Rate%'] !== '-' ? formatNum(r['Def_Pressure_Rate%'], 1) + '%' : '—'}</td>
           <td class="col-center ${parseFloat(r.Def_Pass_EPA) < 0 ? 'pts-top stat-bold' : ''}">${r.Def_Pass_EPA !== '-' ? (parseFloat(r.Def_Pass_EPA) > 0 ? '+' : '') + formatNum(r.Def_Pass_EPA, 3) : '—'}</td>
@@ -581,7 +600,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center"><span class="stat-bold ${h.Last_4_Games >= 30 ? 'pts-top' : ''}">${h.Last_4_Games}</span></td>
           <td class="col-center"><span class="pts-highlight ${h.Total_pts >= 45 ? 'pts-top' : ''}">${h.Total_pts}</span></td>
           <td>${h.Target_DST || 'BYE'}</td>
-          <td>${h.Starting_QB || '-'}</td>
+          <td>${formatQbCell(h.Starting_QB)}</td>
           <td class="col-center"><span class="badge ${tierClass}">${h.Streamer_Tier || 'BYE'}</span></td>
         </tr>
       `;
@@ -673,6 +692,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       'INTs': 'INTs',
       'Fumbles Rec': 'Fumbles_Rec',
       'Fumbles_Rec': 'Fumbles_Rec',
+      'Blocks': 'Blocks',
       'Def TDs': 'Def_TDs',
       'Def_TDs': 'Def_TDs',
       'Safeties': 'Safeties'
@@ -685,20 +705,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         <tr>
           <td class="col-sticky"><span class="stat-bold">${r.Team_Name || r.Team}</span> <span class="stat-dim">(${r.Team})</span></td>
           <td class="col-center">${r.GP}</td>
-          <td class="col-center"><span class="pts-highlight pts-top">${r.Total_Pts} pts</span></td>
-          <td class="col-center stat-bold">${formatNum(r.PPG, 1)}</td>
+          <td class="col-center stat-bold pts-top">${formatNum(r.PPG, 1)}</td>
+          <td class="col-center"><span class="pts-highlight">${r.Total_Pts} pts</span></td>
           <td class="col-center"><span class="stat-bold">${r.Sacks}</span> <span class="stat-dim">(${r.Sack_Pts} pts • ${formatNum(r.Sack_Pct, 1)}%)</span></td>
           <td class="col-center"><span class="stat-bold">${r.Bracket_Pts} pts</span> <span class="stat-dim">(${formatNum(r.Bracket_Pct, 1)}%)</span></td>
           <td class="col-center"><span class="stat-bold">${r.INTs}</span> <span class="stat-dim">(${r.INT_Pts} pts • ${formatNum(r.INT_Pct, 1)}%)</span></td>
           <td class="col-center"><span class="stat-bold">${r.Fumbles_Rec}</span> <span class="stat-dim">(${r.Fumble_Pts} pts • ${formatNum(r.Fumble_Pct, 1)}%)</span></td>
+          <td class="col-center"><span class="stat-bold">${r.Blocks || 0}</span> <span class="stat-dim">(${r.Block_Pts || 0} pts • ${formatNum(r.Block_Pct || 0, 1)}%)</span></td>
           <td class="col-center"><span class="stat-bold">${r.Def_TDs}</span> <span class="stat-dim">(${r.TD_Pts} pts • ${formatNum(r.TD_Pct, 1)}%)</span></td>
           <td class="col-center"><span class="stat-bold">${r.Safeties}</span> <span class="stat-dim">(${r.Safety_Pts} pts)</span></td>
           <td>
-            <div class="dist-bar-wrap" title="Sacks: ${r.Sack_Pct}%, Bracket: ${r.Bracket_Pct}%, INTs: ${r.INT_Pct}%, Fumbles: ${r.Fumble_Pct}%, TDs: ${r.TD_Pct}%">
+            <div class="dist-bar-wrap" title="Sacks: ${r.Sack_Pct}%, Bracket: ${r.Bracket_Pct}%, INTs: ${r.INT_Pct}%, Fumbles: ${r.Fumble_Pct}%, Blocks: ${r.Block_Pct || 0}%, TDs: ${r.TD_Pct}%">
               <div class="dist-seg seg-sack" style="width: ${r.Sack_Pct}%;"></div>
               <div class="dist-seg seg-bracket" style="width: ${r.Bracket_Pct}%;"></div>
               <div class="dist-seg seg-int" style="width: ${r.INT_Pct}%;"></div>
               <div class="dist-seg seg-fumb" style="width: ${r.Fumble_Pct}%;"></div>
+              <div class="dist-seg seg-block" style="width: ${r.Block_Pct || 0}%;"></div>
               <div class="dist-seg seg-td" style="width: ${r.TD_Pct}%;"></div>
             </div>
           </td>
