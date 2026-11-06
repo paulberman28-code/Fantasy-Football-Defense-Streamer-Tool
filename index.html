@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WAFFLe Fantasy D/ST Streamer Tool | 2026 Season</title>
   <meta name="description" content="WAFFLe Customized Defensive Scoring Fantasy D/ST streamer rankings and projections using NFL play-by-play data, Next Gen Stats, Vegas lines, and game-time weather.">
-  <link rel="stylesheet" href="style.css?v=20261106_2">
+  <link rel="stylesheet" href="style.css?v=20261106_3">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -14,7 +14,8 @@
     (function() {
       try {
         var savedTheme = localStorage.getItem('waffle-theme');
-        if (savedTheme === 'light') {
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        if (savedTheme === 'light' || (!savedTheme && prefersLight)) {
           document.documentElement.setAttribute('data-theme', 'light');
         } else {
           document.documentElement.removeAttribute('data-theme');
@@ -81,22 +82,22 @@
     <!-- Navigation Tabs -->
     <nav class="nav-tabs" role="tablist" aria-label="Main Navigation">
       <button class="nav-tab active" role="tab" id="tab-btn-week9" aria-selected="true" aria-controls="tab-week9" data-tab="week9">
-        <span class="tab-icon">🎯</span> Week 9 Matchups & Projections
+        <span class="tab-icon">🎯</span> <span class="tab-label">Week 9 Projections</span>
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-week10" aria-selected="false" aria-controls="tab-week10" data-tab="week10">
-        <span class="tab-icon">🔮</span> Week 10 Look-Ahead Stashes
+        <span class="tab-icon">🔮</span> <span class="tab-label">Week 10 Stashes</span>
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-history" aria-selected="false" aria-controls="tab-history" data-tab="history">
-        <span class="tab-icon">📊</span> Master Offense History (W1–W8)
+        <span class="tab-icon">📊</span> <span class="tab-label">Offense History (W1–8)</span>
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-anatomy" aria-selected="false" aria-controls="tab-anatomy" data-tab="anatomy">
-        <span class="tab-icon">🏈</span> D/ST Points Anatomy
+        <span class="tab-icon">🏈</span> <span class="tab-label">Points Anatomy</span>
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-rules" aria-selected="false" aria-controls="tab-rules" data-tab="rules">
-        <span class="tab-icon">📖</span> Scoring Rules and Glossary
+        <span class="tab-icon">📖</span> <span class="tab-label">Scoring Rules</span>
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-audit" aria-selected="false" aria-controls="tab-audit" data-tab="audit">
-        <span class="tab-icon">🎓</span> Model Audit & Report Card
+        <span class="tab-icon">🎓</span> <span class="tab-label">Audit & Report Card</span>
       </button>
     </nav>
 
@@ -816,8 +817,8 @@
   </footer>
 
   <!-- Load data.js for zero-CORS local Safari viewing (file:// protocol) -->
-  <script src="data.js?v=20261106_2"></script>
+  <script src="data.js?v=20261106_3"></script>
   <!-- Main application logic -->
-  <script src="app.js?v=20261106_2"></script>
+  <script src="app.js?v=20261106_3"></script>
 </body>
 </html>

@@ -428,36 +428,39 @@ body[data-active-tab="audit"] .app-subtitle {
 }
 
 .nav-tabs {
-  display: flex;
-  gap: 0.65rem;
-  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+  padding: 0.4rem;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   margin-bottom: 1.5rem;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow-x: visible;
 }
 
 .nav-tab {
   background: var(--bg-card);
   border: 1px solid var(--border-strong);
   color: var(--text-main);
-  padding: 0.75rem 1.35rem;
+  padding: 0.65rem 0.35rem;
   font-family: inherit;
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   font-weight: 600;
   border-radius: var(--radius-sm);
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 0.55rem;
+  justify-content: center;
+  gap: 0.35rem;
   position: relative;
   transition: var(--transition);
-  white-space: nowrap;
-  flex-shrink: 0;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.25;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  min-width: 0;
 }
 
 .nav-tab:hover {
@@ -1459,7 +1462,9 @@ td.col-rationale {
   }
 
   .nav-tabs {
+    display: flex;
     flex-direction: column;
+    grid-template-columns: none;
     overflow-x: visible;
     gap: 0.4rem;
     padding: 0.45rem;
@@ -1470,6 +1475,8 @@ td.col-rationale {
     justify-content: flex-start;
     padding: 0.65rem 0.95rem;
     font-size: 0.86rem;
+    white-space: nowrap;
+    text-align: left;
   }
 
   /* Use abbreviated team names in mobile tables to save horizontal space */
