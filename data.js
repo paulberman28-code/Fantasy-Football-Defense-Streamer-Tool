@@ -3,7 +3,7 @@ window.DEFENSE_DATA = {
     "season": 2026,
     "currentWeek": 9,
     "lookAheadWeek": 10,
-    "lastUpdated": "November 05, 2026 at 04:38 PM",
+    "lastUpdated": "November 05, 2026 at 07:16 PM",
     "totalOffenses": 32
   },
   "weekMatchups": [
@@ -31,13 +31,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 2.8,
       "Proj_Fantasy_Pts": 6.7,
       "Predicted_Floor": 2.8,
+      "Def_Pressure_Rate%": 25.2,
       "Sacks_Per_Press%": 25.0,
       "Off_Pass_EPA_L4": 0.013,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (54\u00b0F, 9mph)",
+      "Gametime_Weather": "Clear / Mild (54\u00b0F, 13mph)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Stifling low-scoring environment. Facing Gardner Minshew and an Arizona offense implied for just 15.5 points in Seattle with 12 mph crosswinds."
+      "Current_Week_Rationale": "Stifling low-scoring environment. Mike Macdonald's defense generates an elite 25.2% pressure rate (#3 in NFL) and -0.072 Pass EPA allowed, pinning down Gardner Minshew and an Arizona offense implied for just 15.5 points in Seattle with 12 mph crosswinds."
     },
     {
       "Offense": "Atlanta Falcons (ATL)",
@@ -63,13 +64,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.1,
       "Proj_Fantasy_Pts": 7.2,
       "Predicted_Floor": 2.5,
+      "Def_Pressure_Rate%": 24.1,
       "Sacks_Per_Press%": 40.0,
       "Off_Pass_EPA_L4": -0.13,
       "NGS_TTT": 2.59,
       "NGS_Agg%": 15.5,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Volume turnover target. Atlanta has yielded an NFL-high 64 fantasy points. Michael Penix Jr. throws into tight windows (21.4% Agg%) and the Falcons offense takes negative plays in bunches."
+      "Current_Week_Rationale": "Volume turnover target. Atlanta has yielded an NFL-high 64 fantasy points. Cincinnati's front generates a stout 24.1% defensive pressure rate (8.2% sack rate) to exploit Michael Penix Jr. throwing into tight windows (21.4% Agg%)."
     },
     {
       "Offense": "Baltimore Ravens (BAL)",
@@ -87,21 +89,22 @@ window.DEFENSE_DATA = {
       "Total_pts": 46,
       "Target_DST": "JAX (@ BAL)",
       "Starting_QB": "Joe Fagnano (Backup: Lamar/Huntley injured)",
-      "Opp_Implied_Pts": 14.8,
-      "Def_Spread": 10.0,
+      "Opp_Implied_Pts": 16.0,
+      "Def_Spread": 8.5,
       "Proj_Sacks": 2.5,
       "Proj_INTs": 0.8,
       "Proj_Fumbles": 0.3,
-      "Exp_Bracket": 2.9,
-      "Proj_Fantasy_Pts": 7.1,
-      "Predicted_Floor": 2.8,
+      "Exp_Bracket": 2.7,
+      "Proj_Fantasy_Pts": 6.9,
+      "Predicted_Floor": 2.7,
+      "Def_Pressure_Rate%": 21.1,
       "Sacks_Per_Press%": 30.6,
       "Off_Pass_EPA_L4": -0.115,
       "NGS_TTT": 2.66,
       "NGS_Agg%": 12.7,
-      "Gametime_Weather": "Heavy Rain (0.27\")",
-      "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Thursday Night wet turf smash. Baltimore starts 3rd-string rookie Joe Fagnano in active rain on short rest, with the Ravens implied for a slate-low 14.8 points."
+      "Gametime_Weather": "Clear / Mild (69\u00b0F, 4mph)",
+      "Streamer_Tier": "Speculative",
+      "Current_Week_Rationale": "Thursday Night wet turf smash. Jacksonville's aggressive front (21.1% Def Pressure, 69.6% 3rd-down stop rate) faces 3rd-string rookie Joe Fagnano in active rain on short rest, with Baltimore implied for a slate-low 14.8 points."
     },
     {
       "Offense": "Buffalo Bills (BUF)",
@@ -127,13 +130,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.2,
       "Proj_Fantasy_Pts": 6.6,
       "Predicted_Floor": 2.2,
+      "Def_Pressure_Rate%": 34.9,
       "Sacks_Per_Press%": 25.0,
       "Off_Pass_EPA_L4": 0.258,
       "NGS_TTT": 2.91,
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Facing Josh Allen and Buffalo's high-efficiency offense; low defensive ceiling."
+      "Current_Week_Rationale": "Brian Flores' unit generates an NFL-best 34.9% defensive pressure rate and -0.207 Pass EPA, but faces MVP candidate Josh Allen (implied for 27.5 pts), who neutralizes pressure (only 13.0% S/P) and avoids turnovers."
     },
     {
       "Offense": "Carolina Panthers (CAR)",
@@ -159,13 +163,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.8,
       "Proj_Fantasy_Pts": 9.0,
       "Predicted_Floor": 3.8,
+      "Def_Pressure_Rate%": 28.5,
       "Sacks_Per_Press%": 34.8,
       "Off_Pass_EPA_L4": 0.012,
       "NGS_TTT": 2.86,
       "NGS_Agg%": 13.4,
       "Gametime_Weather": "Clear / Mild (64\u00b0F, 5mph)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "High-floor sack monster. Denver's ferocious pass rush faces Bryce Young and a Panthers unit that converts 34.8% of pressures to sacks and surrendered 27 fantasy points over their last 2 games."
+      "Current_Week_Rationale": "High-floor sack monster. Denver generates an NFL #2 28.5% defensive pressure rate (league-high 74 QB hits), colliding directly with Bryce Young and a Panthers unit that converts 34.8% of pressures to sacks and surrendered 27 fantasy points over their last 2 games."
     },
     {
       "Offense": "Chicago Bears (CHI)",
@@ -191,13 +196,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.7,
       "Proj_Fantasy_Pts": 8.3,
       "Predicted_Floor": 2.8,
+      "Def_Pressure_Rate%": 17.7,
       "Sacks_Per_Press%": 32.4,
       "Off_Pass_EPA_L4": 0.05,
       "NGS_TTT": 3.24,
       "NGS_Agg%": 11.4,
-      "Gametime_Weather": "Windy (10 mph, g25)",
+      "Gametime_Weather": "Windy (8 mph, g25)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Elite weather-boosted turnover play. Soldier Field features 25 mph wind gusts, while Caleb Williams holds the ball for an NFL-high 3.24s (NGS TTT). This slow release allows TB's pass rush to hit him off-platform into heavy gusts, turning fluttered and sailed balls into high interception risk (TB projects for an NFL-high 2.2 INTs) along with strip-sacks."
+      "Current_Week_Rationale": "Elite weather-boosted turnover play. Soldier Field features 25 mph wind gusts, while Caleb Williams holds the ball for an NFL-high 3.24s (NGS TTT). This slow release allows TB's pass rush (17.7% Def Pressure, NFL-leading 15 takeaways and -0.161 Pass EPA allowed) to hit him off-platform into heavy gusts, forcing fluttered balls into high interception risk (TB projects for an NFL-high 2.2 INTs) along with strip-sacks."
     },
     {
       "Offense": "Cincinnati Bengals (CIN)",
@@ -223,13 +229,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.6,
       "Proj_Fantasy_Pts": 5.3,
       "Predicted_Floor": 1.7,
+      "Def_Pressure_Rate%": 22.7,
       "Sacks_Per_Press%": 16.7,
       "Off_Pass_EPA_L4": 0.306,
       "NGS_TTT": 2.66,
       "NGS_Agg%": 12.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Avoid. Joe Burrow has been red-hot with +0.306 Pass EPA and rarely takes sacks (16.7% S/P)."
+      "Current_Week_Rationale": "Avoid. Joe Burrow has been red-hot with +0.306 Pass EPA and rarely takes sacks (16.7% S/P), neutralizing Atlanta's 22.7% pressure rate."
     },
     {
       "Offense": "Cleveland Browns (CLE)",
@@ -255,13 +262,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 2.0,
       "Proj_Fantasy_Pts": 11.2,
       "Predicted_Floor": 4.6,
+      "Def_Pressure_Rate%": 19.9,
       "Sacks_Per_Press%": 35.5,
       "Off_Pass_EPA_L4": -0.153,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Uncontested #1 smash play. Facing Cleveland (NFL-high 41 pts allowed over L4 games) with rookie Shedeur Sanders making his first start in the Superdome behind a Browns offensive line allowing an NFL-worst 10.6% sack rate."
+      "Current_Week_Rationale": "Uncontested #1 smash play. Facing Cleveland (NFL-high 41 pts allowed over L4 games) with rookie Shedeur Sanders making his first start in the Superdome behind a Browns offensive line allowing an NFL-worst 10.6% sack rate. New Orleans (19.9% Def Pressure) is set up to overwhelm a rookie making his NFL debut."
     },
     {
       "Offense": "Dallas Cowboys (DAL)",
@@ -287,13 +295,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.3,
       "Proj_Fantasy_Pts": 2.5,
       "Predicted_Floor": 1.0,
+      "Def_Pressure_Rate%": 19.3,
       "Sacks_Per_Press%": 22.7,
       "Off_Pass_EPA_L4": 0.032,
       "NGS_TTT": 2.77,
       "NGS_Agg%": 20.5,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Dak Prescott in a dome with Dallas implied for over 28 points."
+      "Current_Week_Rationale": "Facing Dak Prescott in a dome with Dallas implied for over 28 points, neutralizing Indy's 19.3% pressure rate."
     },
     {
       "Offense": "Denver Broncos (DEN)",
@@ -319,13 +328,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.3,
       "Proj_Fantasy_Pts": 2.1,
       "Predicted_Floor": 0.8,
+      "Def_Pressure_Rate%": 14.5,
       "Sacks_Per_Press%": 33.3,
       "Off_Pass_EPA_L4": 0.01,
       "NGS_TTT": 2.95,
       "NGS_Agg%": 11.2,
       "Gametime_Weather": "Clear / Mild (64\u00b0F, 5mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Bo Nix and a Denver offense that has yielded just 6 points over their last 4 games."
+      "Current_Week_Rationale": "Facing Bo Nix and a Denver offense that has yielded just 6 points over their last 4 games; Carolina's 14.5% pressure rate ranks near the bottom of the league."
     },
     {
       "Offense": "Detroit Lions (DET)",
@@ -351,13 +361,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.3,
       "Proj_Fantasy_Pts": 3.3,
       "Predicted_Floor": 1.5,
+      "Def_Pressure_Rate%": 18.0,
       "Sacks_Per_Press%": 34.6,
       "Off_Pass_EPA_L4": 0.228,
       "NGS_TTT": 2.84,
       "NGS_Agg%": 18.5,
-      "Gametime_Weather": "Clear / Mild (83\u00b0F, 12mph)",
+      "Gametime_Weather": "Clear / Mild (83\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Tough road test against Jared Goff and a high-powered Detroit offense implied for nearly 29 points."
+      "Current_Week_Rationale": "Tough road test against Jared Goff and a high-powered Detroit offense implied for nearly 29 points; Miami's 18.0% pressure rate faces a stout Lions offensive line."
     },
     {
       "Offense": "Green Bay Packers (GB)",
@@ -383,13 +394,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.8,
       "Proj_Fantasy_Pts": 5.2,
       "Predicted_Floor": 2.2,
+      "Def_Pressure_Rate%": 24.1,
       "Sacks_Per_Press%": 23.1,
       "Off_Pass_EPA_L4": 0.224,
       "NGS_TTT": 2.58,
       "NGS_Agg%": 16.3,
       "Gametime_Weather": "Windy (12 mph, g29)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Windy game (29 mph gusts) at home against Green Bay, but Jordan Love gets rid of the ball quickly (2.58s TTT), limiting ceiling."
+      "Current_Week_Rationale": "Windy game (29 mph gusts) at home against Green Bay. New England generates a strong 24.1% defensive pressure rate, but Jordan Love gets rid of the ball quickly (2.58s TTT), limiting ceiling."
     },
     {
       "Offense": "Houston Texans (HOU)",
@@ -407,21 +419,22 @@ window.DEFENSE_DATA = {
       "Total_pts": 25,
       "Target_DST": "LAC (vs HOU)",
       "Starting_QB": "C.J. Stroud (Starter)",
-      "Opp_Implied_Pts": 23.0,
-      "Def_Spread": -5.5,
+      "Opp_Implied_Pts": 23.2,
+      "Def_Spread": -6.0,
       "Proj_Sacks": 0.9,
       "Proj_INTs": 0.3,
       "Proj_Fumbles": 0.0,
-      "Exp_Bracket": 1.4,
-      "Proj_Fantasy_Pts": 2.8,
-      "Predicted_Floor": 1.2,
+      "Exp_Bracket": 1.3,
+      "Proj_Fantasy_Pts": 2.7,
+      "Predicted_Floor": 1.1,
+      "Def_Pressure_Rate%": 22.3,
       "Sacks_Per_Press%": 31.2,
       "Off_Pass_EPA_L4": 0.289,
       "NGS_TTT": 2.88,
       "NGS_Agg%": 19.8,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Tough matchup against C.J. Stroud and Houston, who have yielded just 6 points in their last 4 games."
+      "Current_Week_Rationale": "Tough matchup against C.J. Stroud and Houston, who have yielded just 6 points in their last 4 games, despite LAC's 22.3% pressure rate."
     },
     {
       "Offense": "Indianapolis Colts (IND)",
@@ -447,13 +460,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.4,
       "Proj_Fantasy_Pts": 7.6,
       "Predicted_Floor": 3.2,
+      "Def_Pressure_Rate%": 19.1,
       "Sacks_Per_Press%": 32.6,
       "Off_Pass_EPA_L4": -0.215,
       "NGS_TTT": 2.8,
       "NGS_Agg%": 13.4,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Under-the-radar upside play. Indianapolis has surrendered 35 points in their last 4 games (24 in L2), and Daniel Jones remains highly sack-prone (32.9% S/P) under pressure."
+      "Current_Week_Rationale": "Under-the-radar upside play. Dallas brings a 19.1% pressure rate (21.5% L4) against Daniel Jones and an Indianapolis unit that has surrendered 35 points in their last 4 games (24 in L2), with Jones converting 32.9% of pressures into sacks."
     },
     {
       "Offense": "Jacksonville Jaguars (JAX)",
@@ -471,21 +485,22 @@ window.DEFENSE_DATA = {
       "Total_pts": 21,
       "Target_DST": "BAL (vs JAX)",
       "Starting_QB": "Trevor Lawrence (Starter)",
-      "Opp_Implied_Pts": 24.8,
-      "Def_Spread": -10.0,
+      "Opp_Implied_Pts": 24.5,
+      "Def_Spread": -8.5,
       "Proj_Sacks": 2.5,
       "Proj_INTs": 0.4,
       "Proj_Fumbles": 0.1,
       "Exp_Bracket": 1.1,
       "Proj_Fantasy_Pts": 4.4,
       "Predicted_Floor": 2.0,
+      "Def_Pressure_Rate%": 22.4,
       "Sacks_Per_Press%": 32.1,
       "Off_Pass_EPA_L4": 0.273,
       "NGS_TTT": 2.75,
       "NGS_Agg%": 16.2,
-      "Gametime_Weather": "Heavy Rain (0.27\")",
+      "Gametime_Weather": "Clear / Mild (69\u00b0F, 4mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Depleted roster with offensive injuries; Trevor Lawrence has played clean football recently (+0.273 Pass EPA)."
+      "Current_Week_Rationale": "Depleted roster with offensive injuries; Trevor Lawrence has played clean football recently (+0.273 Pass EPA), giving Baltimore's 22.4% pressure rate fewer mistake opportunities."
     },
     {
       "Offense": "Kansas City Chiefs (KC)",
@@ -511,13 +526,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.3,
       "Proj_Fantasy_Pts": 2.5,
       "Predicted_Floor": 1.1,
+      "Def_Pressure_Rate%": 21.7,
       "Sacks_Per_Press%": 15.6,
       "Off_Pass_EPA_L4": 0.076,
       "NGS_TTT": 2.74,
       "NGS_Agg%": 6.9,
-      "Gametime_Weather": "Clear / Mild (65\u00b0F, 9mph)",
+      "Gametime_Weather": "Clear / Mild (66\u00b0F, 9mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Patrick Mahomes in Kansas City; low turnover floor."
+      "Current_Week_Rationale": "Facing Patrick Mahomes in Kansas City; low turnover floor despite a 21.7% pressure rate."
     },
     {
       "Offense": "Los Angeles Rams (LA)",
@@ -543,13 +559,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.7,
       "Proj_Fantasy_Pts": 3.9,
       "Predicted_Floor": 1.2,
+      "Def_Pressure_Rate%": 19.4,
       "Sacks_Per_Press%": 27.3,
       "Off_Pass_EPA_L4": 0.082,
       "NGS_TTT": 2.7,
       "NGS_Agg%": 13.9,
-      "Gametime_Weather": "Clear / Mild (60\u00b0F, 13mph)",
+      "Gametime_Weather": "Clear / Mild (61\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Tougher spot against Matthew Stafford and a Rams offense that rarely gives up fantasy points to defenses (only 11 pts allowed in L4)."
+      "Current_Week_Rationale": "Tougher spot against Matthew Stafford and a Rams offense that rarely gives up fantasy points to defenses (only 11 pts allowed in L4), despite Washington's 19.4% pressure rate."
     },
     {
       "Offense": "Los Angeles Chargers (LAC)",
@@ -567,21 +584,22 @@ window.DEFENSE_DATA = {
       "Total_pts": 53,
       "Target_DST": "HOU (@ LAC)",
       "Starting_QB": "Justin Herbert (Starter)",
-      "Opp_Implied_Pts": 17.5,
-      "Def_Spread": 5.5,
+      "Opp_Implied_Pts": 17.2,
+      "Def_Spread": 6.0,
       "Proj_Sacks": 3.7,
       "Proj_INTs": 1.0,
       "Proj_Fumbles": 0.4,
-      "Exp_Bracket": 2.4,
-      "Proj_Fantasy_Pts": 8.2,
-      "Predicted_Floor": 3.3,
+      "Exp_Bracket": 2.5,
+      "Proj_Fantasy_Pts": 8.3,
+      "Predicted_Floor": 3.4,
+      "Def_Pressure_Rate%": 23.7,
       "Sacks_Per_Press%": 34.9,
       "Off_Pass_EPA_L4": -0.365,
       "NGS_TTT": 2.81,
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Elite ceiling play coming off a bye. The Chargers have an NFL-worst -0.365 Pass EPA and are implied for just 18.0 points. Houston is a 4.5-point favorite in a positive defensive game script."
+      "Current_Week_Rationale": "Elite ceiling play coming off a bye. Houston's fearsome front (23.7% Def Pressure with Will Anderson Jr. & Danielle Hunter) faces a Chargers passing attack with an NFL-worst -0.365 Pass EPA, implied for just 18.0 points in a positive game script."
     },
     {
       "Offense": "Las Vegas Raiders (LV)",
@@ -607,13 +625,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.8,
       "Proj_Fantasy_Pts": 3.8,
       "Predicted_Floor": 1.6,
+      "Def_Pressure_Rate%": 19.0,
       "Sacks_Per_Press%": 20.7,
       "Off_Pass_EPA_L4": 0.153,
       "NGS_TTT": 2.9,
       "NGS_Agg%": 20.8,
       "Gametime_Weather": "Clear / Mild (71\u00b0F, 7mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "10-point home favorite against Kirk Cousins, but Cousins gets rid of the ball quickly and limits strip-sacks."
+      "Current_Week_Rationale": "10-point home favorite against Kirk Cousins, but Cousins gets rid of the ball quickly and limits strip-sacks, facing a 49ers front with a 19.0% pressure rate."
     },
     {
       "Offense": "Miami Dolphins (MIA)",
@@ -639,13 +658,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.6,
       "Proj_Fantasy_Pts": 5.8,
       "Predicted_Floor": 2.7,
+      "Def_Pressure_Rate%": 24.6,
       "Sacks_Per_Press%": 44.4,
       "Off_Pass_EPA_L4": 0.047,
       "NGS_TTT": 3.05,
       "NGS_Agg%": 18.6,
-      "Gametime_Weather": "Clear / Mild (83\u00b0F, 12mph)",
+      "Gametime_Weather": "Clear / Mild (83\u00b0F, 11mph)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "High variance ceiling play. Miami allows pressure on 44% of dropbacks and Malik Willis holds the ball for 3.05s, though Detroit's secondary carries big-play variance."
+      "Current_Week_Rationale": "High variance ceiling play. Detroit generates 24.6% pressure against Miami, where Malik Willis holds the ball for 3.05s and the Dolphins allow pressure on 44% of dropbacks, though Detroit's secondary carries big-play variance."
     },
     {
       "Offense": "Minnesota Vikings (MIN)",
@@ -671,13 +691,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.8,
       "Proj_Fantasy_Pts": 4.6,
       "Predicted_Floor": 1.7,
+      "Def_Pressure_Rate%": 23.4,
       "Sacks_Per_Press%": 36.4,
       "Off_Pass_EPA_L4": 0.029,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Solid floor vs backup Carson Wentz. Minnesota is without Kyler Murray, lowering their offensive ceiling in a dome environment."
+      "Current_Week_Rationale": "Solid floor vs backup Carson Wentz. Minnesota is without Kyler Murray, lowering their offensive ceiling. Buffalo generates 23.4% defensive pressure to keep Wentz in check."
     },
     {
       "Offense": "New England Patriots (NE)",
@@ -703,13 +724,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.2,
       "Proj_Fantasy_Pts": 5.8,
       "Predicted_Floor": 1.5,
+      "Def_Pressure_Rate%": 21.2,
       "Sacks_Per_Press%": 26.1,
       "Off_Pass_EPA_L4": 0.422,
       "NGS_TTT": 3.14,
       "NGS_Agg%": 12.4,
       "Gametime_Weather": "Windy (12 mph, g29)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Facing Drake Maye, who has been highly efficient in recent weeks (+0.422 Pass EPA), capping Green Bay's turnover ceiling."
+      "Current_Week_Rationale": "Facing Drake Maye, who has been highly efficient in recent weeks (+0.422 Pass EPA), capping Green Bay's turnover ceiling despite their solid 21.2% pressure rate."
     },
     {
       "Offense": "New Orleans Saints (NO)",
@@ -735,13 +757,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.4,
       "Proj_Fantasy_Pts": 5.4,
       "Predicted_Floor": 1.5,
+      "Def_Pressure_Rate%": 24.1,
       "Sacks_Per_Press%": 19.2,
       "Off_Pass_EPA_L4": 0.024,
       "NGS_TTT": 2.7,
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Difficult matchup on the road in New Orleans against Tyler Shough, who has protected the ball well."
+      "Current_Week_Rationale": "Difficult road matchup in New Orleans against Tyler Shough, who has protected the ball well, limiting the upside of Cleveland's 24.1% pressure rate."
     },
     {
       "Offense": "New York Giants (NYG)",
@@ -767,13 +790,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.8,
       "Proj_Fantasy_Pts": 5.2,
       "Predicted_Floor": 2.1,
+      "Def_Pressure_Rate%": 12.3,
       "Sacks_Per_Press%": 34.1,
       "Off_Pass_EPA_L4": 0.115,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (59\u00b0F, 14mph)",
+      "Gametime_Weather": "Clear / Mild (59\u00b0F, 11mph)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Divisional matchup facing J.J. McCarthy. NY Giants offense has been competitive, making this a secondary streaming option."
+      "Current_Week_Rationale": "Divisional matchup facing J.J. McCarthy. Philadelphia generates a modest 12.3% pressure rate (#32 in NFL) and the NY Giants offense has been competitive, making this a secondary option."
     },
     {
       "Offense": "New York Jets (NYJ)",
@@ -799,13 +823,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 2.2,
       "Proj_Fantasy_Pts": 5.1,
       "Predicted_Floor": 1.9,
+      "Def_Pressure_Rate%": 15.4,
       "Sacks_Per_Press%": 32.4,
       "Off_Pass_EPA_L4": 0.128,
       "NGS_TTT": 2.96,
       "NGS_Agg%": 15.5,
-      "Gametime_Weather": "Clear / Mild (65\u00b0F, 9mph)",
+      "Gametime_Weather": "Clear / Mild (66\u00b0F, 9mph)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Heavy 10-point home favorite against Geno Smith and the Jets (implied for 18.8 pts), though New York limits major negative turnovers."
+      "Current_Week_Rationale": "Heavy 10-point home favorite against Geno Smith and the Jets (implied for 18.8 pts). Kansas City generates a 15.4% pressure rate, and New York limits major negative turnovers."
     },
     {
       "Offense": "Philadelphia Eagles (PHI)",
@@ -831,13 +856,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 2.4,
       "Proj_Fantasy_Pts": 6.0,
       "Predicted_Floor": 2.5,
+      "Def_Pressure_Rate%": 13.9,
       "Sacks_Per_Press%": 29.7,
       "Off_Pass_EPA_L4": -0.136,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (59\u00b0F, 14mph)",
+      "Gametime_Weather": "Clear / Mild (59\u00b0F, 11mph)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Vegas darling matchup. Philadelphia is implied for only 17.5 points with Joe Milton III making his first start. Giants front generated high pressure rates over recent weeks."
+      "Current_Week_Rationale": "Vegas darling matchup. Giants front generated high pressure rates recently (18.6% L4) and faces Joe Milton III making his first NFL start, with Philadelphia implied for only 17.5 points."
     },
     {
       "Offense": "Pittsburgh Steelers (PIT)",
@@ -863,6 +889,7 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": "-",
       "Proj_Fantasy_Pts": "-",
       "Predicted_Floor": "-",
+      "Def_Pressure_Rate%": "-",
       "Sacks_Per_Press%": 35.7,
       "Off_Pass_EPA_L4": -0.065,
       "NGS_TTT": 2.7,
@@ -895,13 +922,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.2,
       "Proj_Fantasy_Pts": 5.9,
       "Predicted_Floor": 2.8,
+      "Def_Pressure_Rate%": 20.9,
       "Sacks_Per_Press%": 29.5,
       "Off_Pass_EPA_L4": -0.038,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (54\u00b0F, 9mph)",
+      "Gametime_Weather": "Clear / Mild (54\u00b0F, 13mph)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Strong opportunistic matchup facing backup Drew Lock (Sam Darnold out). Seattle's offense has surrendered 29 fantasy points over their last 4 games."
+      "Current_Week_Rationale": "Opportunistic matchup facing backup Drew Lock (Sam Darnold out). Arizona generates 20.9% pressure against a Seattle offense that has surrendered 29 fantasy points over their last 4 games, though game script (SEA -8.5) keeps Arizona in Speculative territory."
     },
     {
       "Offense": "San Francisco 49ers (SF)",
@@ -927,13 +955,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.3,
       "Proj_Fantasy_Pts": 3.6,
       "Predicted_Floor": 1.0,
+      "Def_Pressure_Rate%": 23.4,
       "Sacks_Per_Press%": 26.9,
       "Off_Pass_EPA_L4": 0.057,
       "NGS_TTT": 3.0,
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Clear / Mild (71\u00b0F, 7mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Brock Purdy and the 49ers off a bye; low fantasy upside."
+      "Current_Week_Rationale": "Facing Brock Purdy and the 49ers off a bye; low fantasy upside against a disciplined Shanahan offense despite a 23.4% pressure rate."
     },
     {
       "Offense": "Tampa Bay Buccaneers (TB)",
@@ -959,13 +988,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.8,
       "Proj_Fantasy_Pts": 4.9,
       "Predicted_Floor": 2.1,
+      "Def_Pressure_Rate%": 24.0,
       "Sacks_Per_Press%": 36.8,
       "Off_Pass_EPA_L4": -0.117,
       "NGS_TTT": 2.94,
       "NGS_Agg%": 13.6,
-      "Gametime_Weather": "Windy (10 mph, g25)",
+      "Gametime_Weather": "Windy (8 mph, g25)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Favorable game script. Chicago is a 6-point home favorite against Baker Mayfield, who converts 36.8% of his pressures into sacks in gusty lakefront weather."
+      "Current_Week_Rationale": "Favorable game script. Chicago is a 6-point home favorite with a stout 24.0% defensive pressure rate and an NFL-best 78.2% 3rd-down stop rate against Baker Mayfield, who converts 36.8% of his pressures into sacks in gusty lakefront weather."
     },
     {
       "Offense": "Tennessee Titans (TEN)",
@@ -991,6 +1021,7 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": "-",
       "Proj_Fantasy_Pts": "-",
       "Predicted_Floor": "-",
+      "Def_Pressure_Rate%": "-",
       "Sacks_Per_Press%": 26.9,
       "Off_Pass_EPA_L4": -0.087,
       "NGS_TTT": 2.81,
@@ -1023,11 +1054,12 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.6,
       "Proj_Fantasy_Pts": 4.1,
       "Predicted_Floor": 1.7,
+      "Def_Pressure_Rate%": 15.2,
       "Sacks_Per_Press%": 29.5,
       "Off_Pass_EPA_L4": -0.004,
       "NGS_TTT": 2.89,
       "NGS_Agg%": 13.1,
-      "Gametime_Weather": "Clear / Mild (60\u00b0F, 13mph)",
+      "Gametime_Weather": "Clear / Mild (61\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
       "Current_Week_Rationale": "Standard matchup projection."
     }
@@ -1057,13 +1089,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 2.8,
       "Proj_Fantasy_Pts": 6.7,
       "Predicted_Floor": 2.8,
+      "Def_Pressure_Rate%": 25.2,
       "Sacks_Per_Press%": 25.0,
       "Off_Pass_EPA_L4": 0.013,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (54\u00b0F, 9mph)",
+      "Gametime_Weather": "Clear / Mild (54\u00b0F, 13mph)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Stifling low-scoring environment. Facing Gardner Minshew and an Arizona offense implied for just 15.5 points in Seattle with 12 mph crosswinds."
+      "Current_Week_Rationale": "Stifling low-scoring environment. Mike Macdonald's defense generates an elite 25.2% pressure rate (#3 in NFL) and -0.072 Pass EPA allowed, pinning down Gardner Minshew and an Arizona offense implied for just 15.5 points in Seattle with 12 mph crosswinds."
     },
     {
       "Offense": "Atlanta Falcons (ATL)",
@@ -1089,13 +1122,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.1,
       "Proj_Fantasy_Pts": 7.2,
       "Predicted_Floor": 2.5,
+      "Def_Pressure_Rate%": 24.1,
       "Sacks_Per_Press%": 40.0,
       "Off_Pass_EPA_L4": -0.13,
       "NGS_TTT": 2.59,
       "NGS_Agg%": 15.5,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Volume turnover target. Atlanta has yielded an NFL-high 64 fantasy points. Michael Penix Jr. throws into tight windows (21.4% Agg%) and the Falcons offense takes negative plays in bunches."
+      "Current_Week_Rationale": "Volume turnover target. Atlanta has yielded an NFL-high 64 fantasy points. Cincinnati's front generates a stout 24.1% defensive pressure rate (8.2% sack rate) to exploit Michael Penix Jr. throwing into tight windows (21.4% Agg%)."
     },
     {
       "Offense": "Baltimore Ravens (BAL)",
@@ -1113,21 +1147,22 @@ window.DEFENSE_DATA = {
       "Total_pts": 46,
       "Target_DST": "JAX (@ BAL)",
       "Starting_QB": "Joe Fagnano (Backup: Lamar/Huntley injured)",
-      "Opp_Implied_Pts": 14.8,
-      "Def_Spread": 10.0,
+      "Opp_Implied_Pts": 16.0,
+      "Def_Spread": 8.5,
       "Proj_Sacks": 2.5,
       "Proj_INTs": 0.8,
       "Proj_Fumbles": 0.3,
-      "Exp_Bracket": 2.9,
-      "Proj_Fantasy_Pts": 7.1,
-      "Predicted_Floor": 2.8,
+      "Exp_Bracket": 2.7,
+      "Proj_Fantasy_Pts": 6.9,
+      "Predicted_Floor": 2.7,
+      "Def_Pressure_Rate%": 21.1,
       "Sacks_Per_Press%": 30.6,
       "Off_Pass_EPA_L4": -0.115,
       "NGS_TTT": 2.66,
       "NGS_Agg%": 12.7,
-      "Gametime_Weather": "Heavy Rain (0.27\")",
-      "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Thursday Night wet turf smash. Baltimore starts 3rd-string rookie Joe Fagnano in active rain on short rest, with the Ravens implied for a slate-low 14.8 points."
+      "Gametime_Weather": "Clear / Mild (69\u00b0F, 4mph)",
+      "Streamer_Tier": "Speculative",
+      "Current_Week_Rationale": "Thursday Night wet turf smash. Jacksonville's aggressive front (21.1% Def Pressure, 69.6% 3rd-down stop rate) faces 3rd-string rookie Joe Fagnano in active rain on short rest, with Baltimore implied for a slate-low 14.8 points."
     },
     {
       "Offense": "Buffalo Bills (BUF)",
@@ -1153,13 +1188,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.2,
       "Proj_Fantasy_Pts": 6.6,
       "Predicted_Floor": 2.2,
+      "Def_Pressure_Rate%": 34.9,
       "Sacks_Per_Press%": 25.0,
       "Off_Pass_EPA_L4": 0.258,
       "NGS_TTT": 2.91,
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Facing Josh Allen and Buffalo's high-efficiency offense; low defensive ceiling."
+      "Current_Week_Rationale": "Brian Flores' unit generates an NFL-best 34.9% defensive pressure rate and -0.207 Pass EPA, but faces MVP candidate Josh Allen (implied for 27.5 pts), who neutralizes pressure (only 13.0% S/P) and avoids turnovers."
     },
     {
       "Offense": "Carolina Panthers (CAR)",
@@ -1185,13 +1221,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.8,
       "Proj_Fantasy_Pts": 9.0,
       "Predicted_Floor": 3.8,
+      "Def_Pressure_Rate%": 28.5,
       "Sacks_Per_Press%": 34.8,
       "Off_Pass_EPA_L4": 0.012,
       "NGS_TTT": 2.86,
       "NGS_Agg%": 13.4,
       "Gametime_Weather": "Clear / Mild (64\u00b0F, 5mph)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "High-floor sack monster. Denver's ferocious pass rush faces Bryce Young and a Panthers unit that converts 34.8% of pressures to sacks and surrendered 27 fantasy points over their last 2 games."
+      "Current_Week_Rationale": "High-floor sack monster. Denver generates an NFL #2 28.5% defensive pressure rate (league-high 74 QB hits), colliding directly with Bryce Young and a Panthers unit that converts 34.8% of pressures to sacks and surrendered 27 fantasy points over their last 2 games."
     },
     {
       "Offense": "Chicago Bears (CHI)",
@@ -1217,13 +1254,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.7,
       "Proj_Fantasy_Pts": 8.3,
       "Predicted_Floor": 2.8,
+      "Def_Pressure_Rate%": 17.7,
       "Sacks_Per_Press%": 32.4,
       "Off_Pass_EPA_L4": 0.05,
       "NGS_TTT": 3.24,
       "NGS_Agg%": 11.4,
-      "Gametime_Weather": "Windy (10 mph, g25)",
+      "Gametime_Weather": "Windy (8 mph, g25)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Elite weather-boosted turnover play. Soldier Field features 25 mph wind gusts, while Caleb Williams holds the ball for an NFL-high 3.24s (NGS TTT). This slow release allows TB's pass rush to hit him off-platform into heavy gusts, turning fluttered and sailed balls into high interception risk (TB projects for an NFL-high 2.2 INTs) along with strip-sacks."
+      "Current_Week_Rationale": "Elite weather-boosted turnover play. Soldier Field features 25 mph wind gusts, while Caleb Williams holds the ball for an NFL-high 3.24s (NGS TTT). This slow release allows TB's pass rush (17.7% Def Pressure, NFL-leading 15 takeaways and -0.161 Pass EPA allowed) to hit him off-platform into heavy gusts, forcing fluttered balls into high interception risk (TB projects for an NFL-high 2.2 INTs) along with strip-sacks."
     },
     {
       "Offense": "Cincinnati Bengals (CIN)",
@@ -1249,13 +1287,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.6,
       "Proj_Fantasy_Pts": 5.3,
       "Predicted_Floor": 1.7,
+      "Def_Pressure_Rate%": 22.7,
       "Sacks_Per_Press%": 16.7,
       "Off_Pass_EPA_L4": 0.306,
       "NGS_TTT": 2.66,
       "NGS_Agg%": 12.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Avoid. Joe Burrow has been red-hot with +0.306 Pass EPA and rarely takes sacks (16.7% S/P)."
+      "Current_Week_Rationale": "Avoid. Joe Burrow has been red-hot with +0.306 Pass EPA and rarely takes sacks (16.7% S/P), neutralizing Atlanta's 22.7% pressure rate."
     },
     {
       "Offense": "Cleveland Browns (CLE)",
@@ -1281,13 +1320,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 2.0,
       "Proj_Fantasy_Pts": 11.2,
       "Predicted_Floor": 4.6,
+      "Def_Pressure_Rate%": 19.9,
       "Sacks_Per_Press%": 35.5,
       "Off_Pass_EPA_L4": -0.153,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Uncontested #1 smash play. Facing Cleveland (NFL-high 41 pts allowed over L4 games) with rookie Shedeur Sanders making his first start in the Superdome behind a Browns offensive line allowing an NFL-worst 10.6% sack rate."
+      "Current_Week_Rationale": "Uncontested #1 smash play. Facing Cleveland (NFL-high 41 pts allowed over L4 games) with rookie Shedeur Sanders making his first start in the Superdome behind a Browns offensive line allowing an NFL-worst 10.6% sack rate. New Orleans (19.9% Def Pressure) is set up to overwhelm a rookie making his NFL debut."
     },
     {
       "Offense": "Dallas Cowboys (DAL)",
@@ -1313,13 +1353,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.3,
       "Proj_Fantasy_Pts": 2.5,
       "Predicted_Floor": 1.0,
+      "Def_Pressure_Rate%": 19.3,
       "Sacks_Per_Press%": 22.7,
       "Off_Pass_EPA_L4": 0.032,
       "NGS_TTT": 2.77,
       "NGS_Agg%": 20.5,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Dak Prescott in a dome with Dallas implied for over 28 points."
+      "Current_Week_Rationale": "Facing Dak Prescott in a dome with Dallas implied for over 28 points, neutralizing Indy's 19.3% pressure rate."
     },
     {
       "Offense": "Denver Broncos (DEN)",
@@ -1345,13 +1386,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.3,
       "Proj_Fantasy_Pts": 2.1,
       "Predicted_Floor": 0.8,
+      "Def_Pressure_Rate%": 14.5,
       "Sacks_Per_Press%": 33.3,
       "Off_Pass_EPA_L4": 0.01,
       "NGS_TTT": 2.95,
       "NGS_Agg%": 11.2,
       "Gametime_Weather": "Clear / Mild (64\u00b0F, 5mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Bo Nix and a Denver offense that has yielded just 6 points over their last 4 games."
+      "Current_Week_Rationale": "Facing Bo Nix and a Denver offense that has yielded just 6 points over their last 4 games; Carolina's 14.5% pressure rate ranks near the bottom of the league."
     },
     {
       "Offense": "Detroit Lions (DET)",
@@ -1377,13 +1419,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.3,
       "Proj_Fantasy_Pts": 3.3,
       "Predicted_Floor": 1.5,
+      "Def_Pressure_Rate%": 18.0,
       "Sacks_Per_Press%": 34.6,
       "Off_Pass_EPA_L4": 0.228,
       "NGS_TTT": 2.84,
       "NGS_Agg%": 18.5,
-      "Gametime_Weather": "Clear / Mild (83\u00b0F, 12mph)",
+      "Gametime_Weather": "Clear / Mild (83\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Tough road test against Jared Goff and a high-powered Detroit offense implied for nearly 29 points."
+      "Current_Week_Rationale": "Tough road test against Jared Goff and a high-powered Detroit offense implied for nearly 29 points; Miami's 18.0% pressure rate faces a stout Lions offensive line."
     },
     {
       "Offense": "Green Bay Packers (GB)",
@@ -1409,13 +1452,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.8,
       "Proj_Fantasy_Pts": 5.2,
       "Predicted_Floor": 2.2,
+      "Def_Pressure_Rate%": 24.1,
       "Sacks_Per_Press%": 23.1,
       "Off_Pass_EPA_L4": 0.224,
       "NGS_TTT": 2.58,
       "NGS_Agg%": 16.3,
       "Gametime_Weather": "Windy (12 mph, g29)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Windy game (29 mph gusts) at home against Green Bay, but Jordan Love gets rid of the ball quickly (2.58s TTT), limiting ceiling."
+      "Current_Week_Rationale": "Windy game (29 mph gusts) at home against Green Bay. New England generates a strong 24.1% defensive pressure rate, but Jordan Love gets rid of the ball quickly (2.58s TTT), limiting ceiling."
     },
     {
       "Offense": "Houston Texans (HOU)",
@@ -1433,21 +1477,22 @@ window.DEFENSE_DATA = {
       "Total_pts": 25,
       "Target_DST": "LAC (vs HOU)",
       "Starting_QB": "C.J. Stroud (Starter)",
-      "Opp_Implied_Pts": 23.0,
-      "Def_Spread": -5.5,
+      "Opp_Implied_Pts": 23.2,
+      "Def_Spread": -6.0,
       "Proj_Sacks": 0.9,
       "Proj_INTs": 0.3,
       "Proj_Fumbles": 0.0,
-      "Exp_Bracket": 1.4,
-      "Proj_Fantasy_Pts": 2.8,
-      "Predicted_Floor": 1.2,
+      "Exp_Bracket": 1.3,
+      "Proj_Fantasy_Pts": 2.7,
+      "Predicted_Floor": 1.1,
+      "Def_Pressure_Rate%": 22.3,
       "Sacks_Per_Press%": 31.2,
       "Off_Pass_EPA_L4": 0.289,
       "NGS_TTT": 2.88,
       "NGS_Agg%": 19.8,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Tough matchup against C.J. Stroud and Houston, who have yielded just 6 points in their last 4 games."
+      "Current_Week_Rationale": "Tough matchup against C.J. Stroud and Houston, who have yielded just 6 points in their last 4 games, despite LAC's 22.3% pressure rate."
     },
     {
       "Offense": "Indianapolis Colts (IND)",
@@ -1473,13 +1518,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.4,
       "Proj_Fantasy_Pts": 7.6,
       "Predicted_Floor": 3.2,
+      "Def_Pressure_Rate%": 19.1,
       "Sacks_Per_Press%": 32.6,
       "Off_Pass_EPA_L4": -0.215,
       "NGS_TTT": 2.8,
       "NGS_Agg%": 13.4,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Under-the-radar upside play. Indianapolis has surrendered 35 points in their last 4 games (24 in L2), and Daniel Jones remains highly sack-prone (32.9% S/P) under pressure."
+      "Current_Week_Rationale": "Under-the-radar upside play. Dallas brings a 19.1% pressure rate (21.5% L4) against Daniel Jones and an Indianapolis unit that has surrendered 35 points in their last 4 games (24 in L2), with Jones converting 32.9% of pressures into sacks."
     },
     {
       "Offense": "Jacksonville Jaguars (JAX)",
@@ -1497,21 +1543,22 @@ window.DEFENSE_DATA = {
       "Total_pts": 21,
       "Target_DST": "BAL (vs JAX)",
       "Starting_QB": "Trevor Lawrence (Starter)",
-      "Opp_Implied_Pts": 24.8,
-      "Def_Spread": -10.0,
+      "Opp_Implied_Pts": 24.5,
+      "Def_Spread": -8.5,
       "Proj_Sacks": 2.5,
       "Proj_INTs": 0.4,
       "Proj_Fumbles": 0.1,
       "Exp_Bracket": 1.1,
       "Proj_Fantasy_Pts": 4.4,
       "Predicted_Floor": 2.0,
+      "Def_Pressure_Rate%": 22.4,
       "Sacks_Per_Press%": 32.1,
       "Off_Pass_EPA_L4": 0.273,
       "NGS_TTT": 2.75,
       "NGS_Agg%": 16.2,
-      "Gametime_Weather": "Heavy Rain (0.27\")",
+      "Gametime_Weather": "Clear / Mild (69\u00b0F, 4mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Depleted roster with offensive injuries; Trevor Lawrence has played clean football recently (+0.273 Pass EPA)."
+      "Current_Week_Rationale": "Depleted roster with offensive injuries; Trevor Lawrence has played clean football recently (+0.273 Pass EPA), giving Baltimore's 22.4% pressure rate fewer mistake opportunities."
     },
     {
       "Offense": "Kansas City Chiefs (KC)",
@@ -1537,13 +1584,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.3,
       "Proj_Fantasy_Pts": 2.5,
       "Predicted_Floor": 1.1,
+      "Def_Pressure_Rate%": 21.7,
       "Sacks_Per_Press%": 15.6,
       "Off_Pass_EPA_L4": 0.076,
       "NGS_TTT": 2.74,
       "NGS_Agg%": 6.9,
-      "Gametime_Weather": "Clear / Mild (65\u00b0F, 9mph)",
+      "Gametime_Weather": "Clear / Mild (66\u00b0F, 9mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Patrick Mahomes in Kansas City; low turnover floor."
+      "Current_Week_Rationale": "Facing Patrick Mahomes in Kansas City; low turnover floor despite a 21.7% pressure rate."
     },
     {
       "Offense": "Los Angeles Rams (LA)",
@@ -1569,13 +1617,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.7,
       "Proj_Fantasy_Pts": 3.9,
       "Predicted_Floor": 1.2,
+      "Def_Pressure_Rate%": 19.4,
       "Sacks_Per_Press%": 27.3,
       "Off_Pass_EPA_L4": 0.082,
       "NGS_TTT": 2.7,
       "NGS_Agg%": 13.9,
-      "Gametime_Weather": "Clear / Mild (60\u00b0F, 13mph)",
+      "Gametime_Weather": "Clear / Mild (61\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Tougher spot against Matthew Stafford and a Rams offense that rarely gives up fantasy points to defenses (only 11 pts allowed in L4)."
+      "Current_Week_Rationale": "Tougher spot against Matthew Stafford and a Rams offense that rarely gives up fantasy points to defenses (only 11 pts allowed in L4), despite Washington's 19.4% pressure rate."
     },
     {
       "Offense": "Los Angeles Chargers (LAC)",
@@ -1593,21 +1642,22 @@ window.DEFENSE_DATA = {
       "Total_pts": 53,
       "Target_DST": "HOU (@ LAC)",
       "Starting_QB": "Justin Herbert (Starter)",
-      "Opp_Implied_Pts": 17.5,
-      "Def_Spread": 5.5,
+      "Opp_Implied_Pts": 17.2,
+      "Def_Spread": 6.0,
       "Proj_Sacks": 3.7,
       "Proj_INTs": 1.0,
       "Proj_Fumbles": 0.4,
-      "Exp_Bracket": 2.4,
-      "Proj_Fantasy_Pts": 8.2,
-      "Predicted_Floor": 3.3,
+      "Exp_Bracket": 2.5,
+      "Proj_Fantasy_Pts": 8.3,
+      "Predicted_Floor": 3.4,
+      "Def_Pressure_Rate%": 23.7,
       "Sacks_Per_Press%": 34.9,
       "Off_Pass_EPA_L4": -0.365,
       "NGS_TTT": 2.81,
       "NGS_Agg%": 13.7,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Priority",
-      "Current_Week_Rationale": "Elite ceiling play coming off a bye. The Chargers have an NFL-worst -0.365 Pass EPA and are implied for just 18.0 points. Houston is a 4.5-point favorite in a positive defensive game script."
+      "Current_Week_Rationale": "Elite ceiling play coming off a bye. Houston's fearsome front (23.7% Def Pressure with Will Anderson Jr. & Danielle Hunter) faces a Chargers passing attack with an NFL-worst -0.365 Pass EPA, implied for just 18.0 points in a positive game script."
     },
     {
       "Offense": "Las Vegas Raiders (LV)",
@@ -1633,13 +1683,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.8,
       "Proj_Fantasy_Pts": 3.8,
       "Predicted_Floor": 1.6,
+      "Def_Pressure_Rate%": 19.0,
       "Sacks_Per_Press%": 20.7,
       "Off_Pass_EPA_L4": 0.153,
       "NGS_TTT": 2.9,
       "NGS_Agg%": 20.8,
       "Gametime_Weather": "Clear / Mild (71\u00b0F, 7mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "10-point home favorite against Kirk Cousins, but Cousins gets rid of the ball quickly and limits strip-sacks."
+      "Current_Week_Rationale": "10-point home favorite against Kirk Cousins, but Cousins gets rid of the ball quickly and limits strip-sacks, facing a 49ers front with a 19.0% pressure rate."
     },
     {
       "Offense": "Miami Dolphins (MIA)",
@@ -1665,13 +1716,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.6,
       "Proj_Fantasy_Pts": 5.8,
       "Predicted_Floor": 2.7,
+      "Def_Pressure_Rate%": 24.6,
       "Sacks_Per_Press%": 44.4,
       "Off_Pass_EPA_L4": 0.047,
       "NGS_TTT": 3.05,
       "NGS_Agg%": 18.6,
-      "Gametime_Weather": "Clear / Mild (83\u00b0F, 12mph)",
+      "Gametime_Weather": "Clear / Mild (83\u00b0F, 11mph)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "High variance ceiling play. Miami allows pressure on 44% of dropbacks and Malik Willis holds the ball for 3.05s, though Detroit's secondary carries big-play variance."
+      "Current_Week_Rationale": "High variance ceiling play. Detroit generates 24.6% pressure against Miami, where Malik Willis holds the ball for 3.05s and the Dolphins allow pressure on 44% of dropbacks, though Detroit's secondary carries big-play variance."
     },
     {
       "Offense": "Minnesota Vikings (MIN)",
@@ -1697,13 +1749,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.8,
       "Proj_Fantasy_Pts": 4.6,
       "Predicted_Floor": 1.7,
+      "Def_Pressure_Rate%": 23.4,
       "Sacks_Per_Press%": 36.4,
       "Off_Pass_EPA_L4": 0.029,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Solid floor vs backup Carson Wentz. Minnesota is without Kyler Murray, lowering their offensive ceiling in a dome environment."
+      "Current_Week_Rationale": "Solid floor vs backup Carson Wentz. Minnesota is without Kyler Murray, lowering their offensive ceiling. Buffalo generates 23.4% defensive pressure to keep Wentz in check."
     },
     {
       "Offense": "New England Patriots (NE)",
@@ -1729,13 +1782,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.2,
       "Proj_Fantasy_Pts": 5.8,
       "Predicted_Floor": 1.5,
+      "Def_Pressure_Rate%": 21.2,
       "Sacks_Per_Press%": 26.1,
       "Off_Pass_EPA_L4": 0.422,
       "NGS_TTT": 3.14,
       "NGS_Agg%": 12.4,
       "Gametime_Weather": "Windy (12 mph, g29)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Facing Drake Maye, who has been highly efficient in recent weeks (+0.422 Pass EPA), capping Green Bay's turnover ceiling."
+      "Current_Week_Rationale": "Facing Drake Maye, who has been highly efficient in recent weeks (+0.422 Pass EPA), capping Green Bay's turnover ceiling despite their solid 21.2% pressure rate."
     },
     {
       "Offense": "New Orleans Saints (NO)",
@@ -1761,13 +1815,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.4,
       "Proj_Fantasy_Pts": 5.4,
       "Predicted_Floor": 1.5,
+      "Def_Pressure_Rate%": 24.1,
       "Sacks_Per_Press%": 19.2,
       "Off_Pass_EPA_L4": 0.024,
       "NGS_TTT": 2.7,
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Dome (Indoors)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Difficult matchup on the road in New Orleans against Tyler Shough, who has protected the ball well."
+      "Current_Week_Rationale": "Difficult road matchup in New Orleans against Tyler Shough, who has protected the ball well, limiting the upside of Cleveland's 24.1% pressure rate."
     },
     {
       "Offense": "New York Giants (NYG)",
@@ -1793,13 +1848,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.8,
       "Proj_Fantasy_Pts": 5.2,
       "Predicted_Floor": 2.1,
+      "Def_Pressure_Rate%": 12.3,
       "Sacks_Per_Press%": 34.1,
       "Off_Pass_EPA_L4": 0.115,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (59\u00b0F, 14mph)",
+      "Gametime_Weather": "Clear / Mild (59\u00b0F, 11mph)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Divisional matchup facing J.J. McCarthy. NY Giants offense has been competitive, making this a secondary streaming option."
+      "Current_Week_Rationale": "Divisional matchup facing J.J. McCarthy. Philadelphia generates a modest 12.3% pressure rate (#32 in NFL) and the NY Giants offense has been competitive, making this a secondary option."
     },
     {
       "Offense": "New York Jets (NYJ)",
@@ -1825,13 +1881,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 2.2,
       "Proj_Fantasy_Pts": 5.1,
       "Predicted_Floor": 1.9,
+      "Def_Pressure_Rate%": 15.4,
       "Sacks_Per_Press%": 32.4,
       "Off_Pass_EPA_L4": 0.128,
       "NGS_TTT": 2.96,
       "NGS_Agg%": 15.5,
-      "Gametime_Weather": "Clear / Mild (65\u00b0F, 9mph)",
+      "Gametime_Weather": "Clear / Mild (66\u00b0F, 9mph)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Heavy 10-point home favorite against Geno Smith and the Jets (implied for 18.8 pts), though New York limits major negative turnovers."
+      "Current_Week_Rationale": "Heavy 10-point home favorite against Geno Smith and the Jets (implied for 18.8 pts). Kansas City generates a 15.4% pressure rate, and New York limits major negative turnovers."
     },
     {
       "Offense": "Philadelphia Eagles (PHI)",
@@ -1857,13 +1914,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 2.4,
       "Proj_Fantasy_Pts": 6.0,
       "Predicted_Floor": 2.5,
+      "Def_Pressure_Rate%": 13.9,
       "Sacks_Per_Press%": 29.7,
       "Off_Pass_EPA_L4": -0.136,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (59\u00b0F, 14mph)",
+      "Gametime_Weather": "Clear / Mild (59\u00b0F, 11mph)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Vegas darling matchup. Philadelphia is implied for only 17.5 points with Joe Milton III making his first start. Giants front generated high pressure rates over recent weeks."
+      "Current_Week_Rationale": "Vegas darling matchup. Giants front generated high pressure rates recently (18.6% L4) and faces Joe Milton III making his first NFL start, with Philadelphia implied for only 17.5 points."
     },
     {
       "Offense": "Pittsburgh Steelers (PIT)",
@@ -1889,6 +1947,7 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": "-",
       "Proj_Fantasy_Pts": "-",
       "Predicted_Floor": "-",
+      "Def_Pressure_Rate%": "-",
       "Sacks_Per_Press%": 35.7,
       "Off_Pass_EPA_L4": -0.065,
       "NGS_TTT": 2.7,
@@ -1921,13 +1980,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.2,
       "Proj_Fantasy_Pts": 5.9,
       "Predicted_Floor": 2.8,
+      "Def_Pressure_Rate%": 20.9,
       "Sacks_Per_Press%": 29.5,
       "Off_Pass_EPA_L4": -0.038,
       "NGS_TTT": "-",
       "NGS_Agg%": "-",
-      "Gametime_Weather": "Clear / Mild (54\u00b0F, 9mph)",
+      "Gametime_Weather": "Clear / Mild (54\u00b0F, 13mph)",
       "Streamer_Tier": "Speculative",
-      "Current_Week_Rationale": "Strong opportunistic matchup facing backup Drew Lock (Sam Darnold out). Seattle's offense has surrendered 29 fantasy points over their last 4 games."
+      "Current_Week_Rationale": "Opportunistic matchup facing backup Drew Lock (Sam Darnold out). Arizona generates 20.9% pressure against a Seattle offense that has surrendered 29 fantasy points over their last 4 games, though game script (SEA -8.5) keeps Arizona in Speculative territory."
     },
     {
       "Offense": "San Francisco 49ers (SF)",
@@ -1953,13 +2013,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 0.3,
       "Proj_Fantasy_Pts": 3.6,
       "Predicted_Floor": 1.0,
+      "Def_Pressure_Rate%": 23.4,
       "Sacks_Per_Press%": 26.9,
       "Off_Pass_EPA_L4": 0.057,
       "NGS_TTT": 3.0,
       "NGS_Agg%": 16.1,
       "Gametime_Weather": "Clear / Mild (71\u00b0F, 7mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Facing Brock Purdy and the 49ers off a bye; low fantasy upside."
+      "Current_Week_Rationale": "Facing Brock Purdy and the 49ers off a bye; low fantasy upside against a disciplined Shanahan offense despite a 23.4% pressure rate."
     },
     {
       "Offense": "Tampa Bay Buccaneers (TB)",
@@ -1985,13 +2046,14 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.8,
       "Proj_Fantasy_Pts": 4.9,
       "Predicted_Floor": 2.1,
+      "Def_Pressure_Rate%": 24.0,
       "Sacks_Per_Press%": 36.8,
       "Off_Pass_EPA_L4": -0.117,
       "NGS_TTT": 2.94,
       "NGS_Agg%": 13.6,
-      "Gametime_Weather": "Windy (10 mph, g25)",
+      "Gametime_Weather": "Windy (8 mph, g25)",
       "Streamer_Tier": "Neutral",
-      "Current_Week_Rationale": "Favorable game script. Chicago is a 6-point home favorite against Baker Mayfield, who converts 36.8% of his pressures into sacks in gusty lakefront weather."
+      "Current_Week_Rationale": "Favorable game script. Chicago is a 6-point home favorite with a stout 24.0% defensive pressure rate and an NFL-best 78.2% 3rd-down stop rate against Baker Mayfield, who converts 36.8% of his pressures into sacks in gusty lakefront weather."
     },
     {
       "Offense": "Tennessee Titans (TEN)",
@@ -2017,6 +2079,7 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": "-",
       "Proj_Fantasy_Pts": "-",
       "Predicted_Floor": "-",
+      "Def_Pressure_Rate%": "-",
       "Sacks_Per_Press%": 26.9,
       "Off_Pass_EPA_L4": -0.087,
       "NGS_TTT": 2.81,
@@ -2049,11 +2112,12 @@ window.DEFENSE_DATA = {
       "Exp_Bracket": 1.6,
       "Proj_Fantasy_Pts": 4.1,
       "Predicted_Floor": 1.7,
+      "Def_Pressure_Rate%": 15.2,
       "Sacks_Per_Press%": 29.5,
       "Off_Pass_EPA_L4": -0.004,
       "NGS_TTT": 2.89,
       "NGS_Agg%": 13.1,
-      "Gametime_Weather": "Clear / Mild (60\u00b0F, 13mph)",
+      "Gametime_Weather": "Clear / Mild (61\u00b0F, 11mph)",
       "Streamer_Tier": "Avoid",
       "Current_Week_Rationale": "Standard matchup projection."
     }
@@ -2067,7 +2131,7 @@ window.DEFENSE_DATA = {
       "Opp_QB": "Deshaun Watson",
       "Stash_Tier": "Priority",
       "Tier_Rank": 1,
-      "Look_Ahead_Rationale": "Top overall Week 10 stash. Cleveland has surrendered an NFL-high 41 D/ST points over their last 4 games. Adding Houston now covers Week 9 (@ LAC) and Week 10 (@ CLE)."
+      "Look_Ahead_Rationale": "Top overall Week 10 stash. Cleveland has surrendered an NFL-high 41 D/ST points over their last 4 games. Houston's pass rush (23.7% Def Pressure with Will Anderson Jr. & Danielle Hunter) gets Cleveland's league-worst 10.6% sack rate offensive line. Adding Houston now covers Week 9 (@ LAC) and Week 10 (@ CLE)."
     },
     {
       "Stash_DST": "BAL",
@@ -2077,7 +2141,7 @@ window.DEFENSE_DATA = {
       "Opp_QB": "Justin Herbert",
       "Stash_Tier": "Priority",
       "Tier_Rank": 1,
-      "Look_Ahead_Rationale": "High-ceiling home matchup. The Chargers have struggled in pass efficiency (-0.365 EPA/play) and yielded 36 D/ST points in their last 4 games."
+      "Look_Ahead_Rationale": "High-ceiling home matchup. The Chargers have struggled in pass efficiency (-0.365 EPA/play) and yielded 36 D/ST points in their last 4 games; Baltimore brings a solid 22.4% pressure rate in front of the home crowd."
     },
     {
       "Stash_DST": "LAC",
@@ -2087,7 +2151,7 @@ window.DEFENSE_DATA = {
       "Opp_QB": "Tyler Huntley",
       "Stash_Tier": "Priority",
       "Tier_Rank": 1,
-      "Look_Ahead_Rationale": "Prime Monday Night target. Baltimore has surrendered 36 points over their last 4 games while dealing with major offensive injuries under center."
+      "Look_Ahead_Rationale": "Prime Monday Night target. Baltimore has surrendered 36 points over their last 4 games while dealing with major offensive injuries under center. Chargers generate 22.3% pressure and an elite 72.0% 3rd-down stop rate."
     },
     {
       "Stash_DST": "MIA",
@@ -2097,7 +2161,7 @@ window.DEFENSE_DATA = {
       "Opp_QB": "Daniel Jones",
       "Stash_Tier": "Priority",
       "Tier_Rank": 1,
-      "Look_Ahead_Rationale": "High sack upside stash. Indianapolis has surrendered 35 points in their last 4 games and Daniel Jones remains sack-prone under relentless pressure."
+      "Look_Ahead_Rationale": "High sack upside stash. Indianapolis has surrendered 35 points in their last 4 games and Daniel Jones remains sack-prone under pressure (32.9% S/P)."
     },
     {
       "Stash_DST": "NO",

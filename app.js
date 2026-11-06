@@ -332,6 +332,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Scoring Floor': 'Predicted_Floor',
       'Projected Sacks': 'Proj_Sacks',
       'Projected Interceptions': 'Proj_INTs',
+      'Defensive Pressure %': 'Def_Pressure_Rate%',
       'Sack Rate on Pressure %': 'Sacks_Per_Press%',
       'Pass Efficiency Allowed (EPA/Play)': 'Off_Pass_EPA_L4',
       'Avg Time to Throw (Sec)': 'NGS_TTT',
@@ -381,6 +382,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center stat-bold">${formatNum(r.Predicted_Floor, 1)}</td>
           <td class="col-center">${formatNum(r.Proj_Sacks, 1)}</td>
           <td class="col-center ${parseFloat(r.Proj_INTs) >= 1.5 ? 'stat-bold' : ''}">${formatNum(r.Proj_INTs, 1)}</td>
+          <td class="col-center ${parseFloat(r['Def_Pressure_Rate%']) >= 25 ? 'stat-bold pts-top' : (parseFloat(r['Def_Pressure_Rate%']) >= 22.5 ? 'stat-bold' : '')}">${r['Def_Pressure_Rate%'] !== '-' ? formatNum(r['Def_Pressure_Rate%'], 1) + '%' : '—'}</td>
           <td class="col-center">${formatNum(r['Sacks_Per_Press%'], 1)}%</td>
           <td class="col-center ${parseFloat(r.Off_Pass_EPA_L4) < 0 ? 'pts-top' : ''}">${parseFloat(r.Off_Pass_EPA_L4) > 0 ? '+' : ''}${formatNum(r.Off_Pass_EPA_L4, 3)}</td>
           <td class="col-center">${r.NGS_TTT !== '-' ? formatNum(r.NGS_TTT, 2) + 's' : '—'}</td>
@@ -568,6 +570,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     document.getElementById('modal-qb').textContent = data.Starting_QB;
     document.getElementById('modal-weather').textContent = data.Gametime_Weather;
+    const defPressEl = document.getElementById('modal-def-press');
+    if (defPressEl) defPressEl.textContent = data['Def_Pressure_Rate%'] !== '-' ? `${formatNum(data['Def_Pressure_Rate%'], 1)}%` : '—';
     document.getElementById('modal-sp').textContent = `${formatNum(data['Sacks_Per_Press%'], 1)}%`;
     document.getElementById('modal-epa').textContent = `${parseFloat(data.Off_Pass_EPA_L4) > 0 ? '+' : ''}${formatNum(data.Off_Pass_EPA_L4, 3)}`;
 
