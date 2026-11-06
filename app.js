@@ -266,6 +266,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderWeek10Stashes();
     renderHistory();
     renderPointsAnatomy();
+    renderAuditReport();
   }
 
   function renderActiveTable() {
@@ -273,6 +274,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     else if (activeTab === 'week10') renderWeek10Stashes();
     else if (activeTab === 'history') renderHistory();
     else if (activeTab === 'anatomy') renderPointsAnatomy();
+    else if (activeTab === 'audit') renderAuditReport();
   }
 
   // 7. Render Tab 1: Week 9 Projections
@@ -709,7 +711,167 @@ document.addEventListener('DOMContentLoaded', async () => {
     }).join('');
   }
 
-  // 11. Modal & Mobile View Logic
+  // 11. Render Tab 6: Model Audit & Report Card
+  function renderAuditReport() {
+    if (!appData) return;
+
+    const auditData = appData.audit || {};
+    const activeSnap = auditData.activeSnapshot || null;
+    const completedAudits = auditData.completedAudits || [];
+
+    // 1. Populate Snapshot Transparency Ledger
+    if (activeSnap) {
+      const statusEl = document.getElementById('audit-ledger-status');
+      if (statusEl) {
+        statusEl.textContent = completedAudits.length > 0 ? `✅ Week ${activeSnap.week} Audited` : `⏳ Week ${activeSnap.week} Baseline Locked`;
+        statusEl.className = `ledger-badge ${completedAudits.length > 0 ? 'badge-priority' : 'badge-speculative'}`;
+      }
+      const idEl = document.getElementById('audit-ledger-id');
+      if (idEl) idEl.textContent = activeSnap.snapshot_id || '2026_week_09';
+      const timeEl = document.getElementById('audit-ledger-time');
+      if (timeEl) timeEl.textContent = activeSnap.timestamp_local || 'November 06, 2026 at 10:12 AM';
+      const commitEl = document.getElementById('audit-ledger-commit');
+      if (commitEl) commitEl.textContent = (activeSnap.git_commit_hash || '').slice(0, 10);
+      const shaEl = document.getElementById('audit-ledger-sha');
+      if (shaEl) shaEl.textContent = (activeSnap.sha256 || '').slice(0, 16) + '...';
+      const countEl = document.getElementById('audit-ledger-count');
+      if (countEl) countEl.textContent = `${activeSnap.records_count || 30} Active Defenses`;
+    }
+
+    // 2. Cumulative Season KPIs
+    const maeEl = document.getElementById('audit-kpi-mae');
+    const priorityEl = document.getElementById('audit-kpi-priority');
+    const floorEl = document.getElementById('audit-kpi-floor');
+    const matchupsEl = document.getElementById('audit-kpi-matchups');
+
+    if (completedAudits.length > 0) {
+      // Real mathematical aggregations across all completed audits
+      const totalMatchups = completedAudits.reduce((acc, a) => acc + (a.summary.total_matchups || 0), 0);
+      const weightedMae = (completedAudits.reduce((acc, a) => acc + (a.summary.mae * a.summary.total_matchups), 0) / (totalMatchups || 1)).toFixed(2);
+      const avgPriorityHit = (completedAudits.reduce((acc, a) => acc + (a.summary.priority_hit_rate_pct || 0), 0) / completedAudits.length).toFixed(1);
+      const avgFloorRel = (completedAudits.reduce((acc, a) => acc + (a.summary.floor_reliability_pct || 0), 0) / completedAudits.length).toFixed(1);
+
+      if (maeEl) maeEl.textContent = `${weightedMae} pts`;
+      if (priorityEl) priorityEl.textContent = `${avgPriorityHit}%`;
+      if (floorEl) floorEl.textContent = `${avgFloorRel}%`;
+      if (matchupsEl) matchupsEl.textContent = `${totalMatchups} (${completedAudits.length} wks)`;
+    } else {
+      // Pre-game zero-hardcoding state: strictly grounded in live status
+      if (maeEl) maeEl.textContent = 'Pending';
+      if (priorityEl) priorityEl.textContent = 'Pending';
+      if (floorEl) floorEl.textContent = 'Pending';
+      if (matchupsEl) matchupsEl.textContent = `0 Audited (W9 Locked)`;
+    }
+
+    // 3. Weekly Report Cards Summary Table
+    const summaryTbody = document.getElementById('audit-summary-tbody');
+    if (summaryTbody) {
+      let summaryRowsHtml = '';
+
+      // Completed weeks from audits/
+      completedAudits.forEach(aud => {
+        const gradeClass = (aud.summary.weekly_letter_grade || '').startsWith('A') ? 'badge-priority' : ((aud.summary.weekly_letter_grade || '').startsWith('B') ? 'badge-speculative' : 'badge-neutral');
+        summaryRowsHtml += `
+          <tr>
+            <td class="stat-bold">Week ${aud.week}</td>
+            <td><span class="badge badge-priority">✅ Finalized</span></td>
+            <td>${aud.summary.priority_teams || '—'}</td>
+            <td class="col-center stat-bold">${formatNum(aud.summary.priority_avg_proj, 1)} / ${formatNum(aud.summary.priority_avg_actual, 1)} pts</td>
+            <td class="col-center"><span class="pts-highlight">${formatNum(aud.summary.priority_hit_rate_pct, 1)}%</span></td>
+            <td class="col-center stat-bold">${formatNum(aud.summary.mae, 2)} pts</td>
+            <td class="col-center">${formatNum(aud.summary.floor_reliability_pct, 1)}%</td>
+            <td class="col-center"><span class="badge ${gradeClass}">${aud.summary.weekly_letter_grade}</span></td>
+          </tr>
+        `;
+      });
+
+      // Current In-Progress / Locked Week (Week 9)
+      const activeWeek = (appData.meta && appData.meta.currentWeek) || 9;
+      const isCurrentAudited = completedAudits.some(a => a.week === activeWeek);
+
+      if (!isCurrentAudited && appData.weekMatchups) {
+        const activeMatchups = appData.weekMatchups.filter(m => m.Target_DST && !m.Target_DST.includes('BYE'));
+        const priorityList = activeMatchups.filter(m => m.Streamer_Tier === 'Priority');
+        const priorityNames = priorityList.map(m => m.Target_DST.split(' ')[0]).join(', ');
+        const avgPriorityProj = priorityList.length > 0 ? (priorityList.reduce((acc, m) => acc + (parseFloat(m.Proj_Fantasy_Pts) || 0), 0) / priorityList.length).toFixed(1) : '—';
+
+        summaryRowsHtml += `
+          <tr>
+            <td class="stat-bold">Week ${activeWeek}</td>
+            <td><span class="badge badge-speculative">⏳ Games In Progress</span></td>
+            <td>${priorityNames || '—'}</td>
+            <td class="col-center stat-bold">${avgPriorityProj} pts / Pending</td>
+            <td class="col-center stat-dim">Awaiting final</td>
+            <td class="col-center stat-dim">Awaiting final</td>
+            <td class="col-center stat-dim">Awaiting final</td>
+            <td class="col-center"><span class="badge badge-neutral">In Progress</span></td>
+          </tr>
+        `;
+      }
+
+      summaryTbody.innerHTML = summaryRowsHtml;
+    }
+
+    // 4. Granular Team-by-Team Reconciliation Table
+    const matchupsTbody = document.getElementById('audit-matchups-tbody');
+    if (matchupsTbody && appData.weekMatchups) {
+      const activeMatchups = appData.weekMatchups.filter(m => m.Target_DST && !m.Target_DST.includes('BYE'));
+
+      // Check if we have a completed audit for this week
+      const currentWeekNum = (appData.meta && appData.meta.currentWeek) || 9;
+      const weekAudit = completedAudits.find(a => a.week === currentWeekNum);
+
+      matchupsTbody.innerHTML = activeMatchups.map(r => {
+        const tierClass = getTierClass(r.Streamer_Tier);
+        const targetCode = r.Target_DST.split(' ')[0];
+
+        if (weekAudit && weekAudit.matchup_reconciliation) {
+          const match = weekAudit.matchup_reconciliation.find(m => m.dst === targetCode);
+          if (match) {
+            const errorSign = match.error_diff > 0 ? '+' : '';
+            const errorClass = Math.abs(match.error_diff) <= 2.5 ? 'pts-top' : (Math.abs(match.error_diff) >= 5.0 ? 'stat-dim' : '');
+            return `
+              <tr>
+                <td class="col-sticky"><span class="stat-bold">${r.Target_DST}</span></td>
+                <td>${r.Offense}</td>
+                <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
+                <td class="col-center stat-bold">${formatNum(match.proj_pts, 1)}</td>
+                <td class="col-center pts-highlight">${formatNum(match.actual_pts, 1)}</td>
+                <td class="col-center stat-bold ${errorClass}">${errorSign}${formatNum(match.error_diff, 1)}</td>
+                <td class="col-center stat-dim">${formatNum(match.floor, 1)}</td>
+                <td class="col-center">${match.floor_met ? '✅ Yes' : '❌ No'}</td>
+                <td class="col-center">${formatNum(match.proj_sacks, 1)} / ${match.actual_sacks}</td>
+                <td class="col-center">${formatNum(match.proj_to, 1)} / ${match.actual_to}</td>
+                <td class="col-center">${formatNum(match.proj_bracket, 1)} / ${match.actual_bracket}</td>
+                <td class="col-center"><span class="badge ${match.hit ? 'badge-priority' : 'badge-avoid'}">${match.hit ? 'HIT' : 'MISS'}</span></td>
+              </tr>
+            `;
+          }
+        }
+
+        // Pre-game active view: strictly truth-grounded in locked snapshot
+        const toProj = (parseFloat(r.Proj_INTs || 0) + parseFloat(r.Proj_Fumbles || 0)).toFixed(1);
+        return `
+          <tr>
+            <td class="col-sticky"><span class="stat-bold">${r.Target_DST}</span></td>
+            <td>${r.Offense}</td>
+            <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
+            <td class="col-center stat-bold pts-highlight">${formatNum(r.Proj_Fantasy_Pts, 1)}</td>
+            <td class="col-center"><span class="badge badge-neutral">⏳ Game Pending</span></td>
+            <td class="col-center stat-dim">—</td>
+            <td class="col-center stat-bold">${formatNum(r.Predicted_Floor, 1)}</td>
+            <td class="col-center stat-dim">Awaiting final</td>
+            <td class="col-center">${formatNum(r.Proj_Sacks, 1)} / —</td>
+            <td class="col-center">${toProj} / —</td>
+            <td class="col-center">${formatNum(r.Exp_Bracket, 1)} / —</td>
+            <td class="col-center"><span class="badge badge-neutral">Pending</span></td>
+          </tr>
+        `;
+      }).join('');
+    }
+  }
+
+  // 12. Modal & Mobile View Logic
   function setupModalEvents() {
     const modal = document.getElementById('rationale-modal');
     const closeBtn = document.getElementById('modal-close-btn');

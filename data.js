@@ -3,7 +3,7 @@ window.DEFENSE_DATA = {
     "season": 2026,
     "currentWeek": 9,
     "lookAheadWeek": 10,
-    "lastUpdated": "November 06, 2026 at 10:12 AM",
+    "lastUpdated": "November 06, 2026 at 10:26 AM",
     "totalOffenses": 32
   },
   "weekMatchups": [
@@ -443,8 +443,8 @@ window.DEFENSE_DATA = {
       "Total_pts": 20,
       "Target_DST": "MIA (vs DET)",
       "Starting_QB": "Jared Goff (Starter)",
-      "Opp_Implied_Pts": 28.5,
-      "Def_Spread": -6.5,
+      "Opp_Implied_Pts": 28.8,
+      "Def_Spread": -7.0,
       "Proj_Sacks": 2.4,
       "Proj_INTs": 0.1,
       "Proj_Fumbles": 0.3,
@@ -467,7 +467,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 18.5,
       "Gametime_Weather": "Clear / Mild (82\u00b0F, 10mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Severe high-scoring risk matchup to Avoid (3.0 proj pts). Facing Jared Goff, who converts an elevated 34.6% of pressures to sacks (S/P%). The Lions enter in strong offensive form (+0.228 Pass EPA over their last 4 games). MIA features a 18.0% pressure rate and 0.302 Def Pass EPA (62.6 DQI). They force turnovers on 27.3% of opponent drives. The Lions are implied for 28.5 points (0.0 bracket points). Projects for 2.4 sacks, 0.1 INTs, and 0.3 fumbles. Defense enters healthy with no key starters ruled out."
+      "Current_Week_Rationale": "Severe high-scoring risk matchup to Avoid (3.0 proj pts). Facing Jared Goff, who converts an elevated 34.6% of pressures to sacks (S/P%). The Lions enter in strong offensive form (+0.228 Pass EPA over their last 4 games). MIA features a 18.0% pressure rate and 0.302 Def Pass EPA (62.6 DQI). They force turnovers on 27.3% of opponent drives. The Lions are implied for 28.8 points (0.0 bracket points). Projects for 2.4 sacks, 0.1 INTs, and 0.3 fumbles. Defense enters healthy with no key starters ruled out."
     },
     {
       "Offense": "Packers (GB)",
@@ -821,8 +821,8 @@ window.DEFENSE_DATA = {
       "Total_pts": 42,
       "Target_DST": "DET (@ MIA)",
       "Starting_QB": "Malik Willis (Starter)",
-      "Opp_Implied_Pts": 22.0,
-      "Def_Spread": 6.5,
+      "Opp_Implied_Pts": 21.8,
+      "Def_Spread": 7.0,
       "Proj_Sacks": 3.3,
       "Proj_INTs": 0.6,
       "Proj_Fumbles": 0.0,
@@ -845,7 +845,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 18.6,
       "Gametime_Weather": "Clear / Mild (82\u00b0F, 10mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (4.2 proj pts). Facing Malik Willis, who converts an elevated 44.4% of pressures to sacks (S/P%) while holding the ball for 3.05s (TTT). DET features a 24.6% pressure rate and 0.199 Def Pass EPA (67.4 DQI). They force turnovers on 26.9% of opponent drives. The Dolphins are implied for 22.0 points (0.0 bracket points). Projects for 3.3 sacks, 0.6 INTs, and 0.0 fumbles. Note defensive injuries: D. Reed (CB - Hip, DNP), D. Wonnum (DE - Concussion, DNP), J. Campbell (LB - Neck, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (4.2 proj pts). Facing Malik Willis, who converts an elevated 44.4% of pressures to sacks (S/P%) while holding the ball for 3.05s (TTT). DET features a 24.6% pressure rate and 0.199 Def Pass EPA (67.4 DQI). They force turnovers on 26.9% of opponent drives. The Dolphins are implied for 21.8 points (0.0 bracket points). Projects for 3.3 sacks, 0.6 INTs, and 0.0 fumbles. Note defensive injuries: D. Reed (CB - Hip, DNP), D. Wonnum (DE - Concussion, DNP), J. Campbell (LB - Neck, DNP)."
     },
     {
       "Offense": "Vikings (MIN)",
@@ -1789,8 +1789,8 @@ window.DEFENSE_DATA = {
       "Total_pts": 20,
       "Target_DST": "MIA (vs DET)",
       "Starting_QB": "Jared Goff (Starter)",
-      "Opp_Implied_Pts": 28.5,
-      "Def_Spread": -6.5,
+      "Opp_Implied_Pts": 28.8,
+      "Def_Spread": -7.0,
       "Proj_Sacks": 2.4,
       "Proj_INTs": 0.1,
       "Proj_Fumbles": 0.3,
@@ -1813,7 +1813,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 18.5,
       "Gametime_Weather": "Clear / Mild (82\u00b0F, 10mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Severe high-scoring risk matchup to Avoid (3.0 proj pts). Facing Jared Goff, who converts an elevated 34.6% of pressures to sacks (S/P%). The Lions enter in strong offensive form (+0.228 Pass EPA over their last 4 games). MIA features a 18.0% pressure rate and 0.302 Def Pass EPA (62.6 DQI). They force turnovers on 27.3% of opponent drives. The Lions are implied for 28.5 points (0.0 bracket points). Projects for 2.4 sacks, 0.1 INTs, and 0.3 fumbles. Defense enters healthy with no key starters ruled out."
+      "Current_Week_Rationale": "Severe high-scoring risk matchup to Avoid (3.0 proj pts). Facing Jared Goff, who converts an elevated 34.6% of pressures to sacks (S/P%). The Lions enter in strong offensive form (+0.228 Pass EPA over their last 4 games). MIA features a 18.0% pressure rate and 0.302 Def Pass EPA (62.6 DQI). They force turnovers on 27.3% of opponent drives. The Lions are implied for 28.8 points (0.0 bracket points). Projects for 2.4 sacks, 0.1 INTs, and 0.3 fumbles. Defense enters healthy with no key starters ruled out."
     },
     {
       "Offense": "Packers (GB)",
@@ -2167,8 +2167,8 @@ window.DEFENSE_DATA = {
       "Total_pts": 42,
       "Target_DST": "DET (@ MIA)",
       "Starting_QB": "Malik Willis (Starter)",
-      "Opp_Implied_Pts": 22.0,
-      "Def_Spread": 6.5,
+      "Opp_Implied_Pts": 21.8,
+      "Def_Spread": 7.0,
       "Proj_Sacks": 3.3,
       "Proj_INTs": 0.6,
       "Proj_Fumbles": 0.0,
@@ -2191,7 +2191,7 @@ window.DEFENSE_DATA = {
       "NGS_Agg%": 18.6,
       "Gametime_Weather": "Clear / Mild (82\u00b0F, 10mph)",
       "Streamer_Tier": "Avoid",
-      "Current_Week_Rationale": "Unfavorable matchup to Avoid (4.2 proj pts). Facing Malik Willis, who converts an elevated 44.4% of pressures to sacks (S/P%) while holding the ball for 3.05s (TTT). DET features a 24.6% pressure rate and 0.199 Def Pass EPA (67.4 DQI). They force turnovers on 26.9% of opponent drives. The Dolphins are implied for 22.0 points (0.0 bracket points). Projects for 3.3 sacks, 0.6 INTs, and 0.0 fumbles. Note defensive injuries: D. Reed (CB - Hip, DNP), D. Wonnum (DE - Concussion, DNP), J. Campbell (LB - Neck, DNP)."
+      "Current_Week_Rationale": "Unfavorable matchup to Avoid (4.2 proj pts). Facing Malik Willis, who converts an elevated 44.4% of pressures to sacks (S/P%) while holding the ball for 3.05s (TTT). DET features a 24.6% pressure rate and 0.199 Def Pass EPA (67.4 DQI). They force turnovers on 26.9% of opponent drives. The Dolphins are implied for 21.8 points (0.0 bracket points). Projects for 3.3 sacks, 0.6 INTs, and 0.0 fumbles. Note defensive injuries: D. Reed (CB - Hip, DNP), D. Wonnum (DE - Concussion, DNP), J. Campbell (LB - Neck, DNP)."
     },
     {
       "Offense": "Vikings (MIN)",
@@ -4099,5 +4099,32 @@ window.DEFENSE_DATA = {
       "Total_Pts": 1181,
       "Pct": 100.0
     }
-  ]
+  ],
+  "audit": {
+    "manifest": [
+      {
+        "snapshot_id": "2026_week_09",
+        "season": 2026,
+        "week": 9,
+        "timestamp_utc": "2026-11-06T16:26:50.747700+00:00",
+        "timestamp_local": "November 06, 2026 at 10:26 AM",
+        "git_commit_hash": "a27fd8b27556965299db5a9d6c9c9e445e06ee0a",
+        "file_json": "snapshots/week_09_2026_snapshot.json",
+        "file_csv": "snapshots/week_09_2026_snapshot.csv",
+        "records_count": 32,
+        "sha256": "152b479e114b61fd17c461eba40f3fd4ccca4206f036e2558d29b8505c10f6d4"
+      }
+    ],
+    "activeSnapshot": {
+      "snapshot_id": "2026_week_09",
+      "season": 2026,
+      "week": 9,
+      "timestamp_utc": "2026-11-06T16:26:50.747700+00:00",
+      "timestamp_local": "November 06, 2026 at 10:26 AM",
+      "git_commit_hash": "a27fd8b27556965299db5a9d6c9c9e445e06ee0a",
+      "sha256": "152b479e114b61fd17c461eba40f3fd4ccca4206f036e2558d29b8505c10f6d4",
+      "records_count": 30
+    },
+    "completedAudits": []
+  }
 };

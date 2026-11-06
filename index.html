@@ -95,6 +95,9 @@
       <button class="nav-tab" role="tab" id="tab-btn-rules" aria-selected="false" aria-controls="tab-rules" data-tab="rules">
         <span class="tab-icon">📖</span> Scoring Rules and Glossary
       </button>
+      <button class="nav-tab" role="tab" id="tab-btn-audit" aria-selected="false" aria-controls="tab-audit" data-tab="audit">
+        <span class="tab-icon">🎓</span> Model Audit & Report Card
+      </button>
     </nav>
 
     <!-- Tab 1: Week 9 Matchups & Projections -->
@@ -618,6 +621,122 @@
               <p>Climate-controlled stadiums eliminate weather variance, providing clean track conditions for high-pressure fronts to operate at maximum speed on turf.</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tab 6: Model Audit & Accuracy Report Card -->
+    <section class="tab-panel" id="tab-audit" role="tabpanel" aria-labelledby="tab-btn-audit" hidden>
+      <div class="panel-header">
+        <div class="panel-title-wrap">
+          <h2 class="panel-title">Model Accuracy Audit & Report Card</h2>
+          <p class="panel-desc">Objective, pre-kickoff validation of weekly projections and verdict tiers. Weekly projections are permanently frozen into immutable snapshot files before games begin to audit Mean Absolute Error (MAE), component variance (sacks, turnovers, brackets), and verdict hit rates against official NFL game outcomes.</p>
+        </div>
+      </div>
+
+      <!-- Season-to-Date Audit Scorecard KPIs -->
+      <div class="audit-kpi-grid">
+        <div class="card audit-kpi-card">
+          <span class="audit-kpi-lbl">Cumulative MAE</span>
+          <div class="audit-kpi-val" id="audit-kpi-mae">—</div>
+          <span class="audit-kpi-sub" id="audit-kpi-mae-sub">Target: &le;3.2 pts</span>
+        </div>
+        <div class="card audit-kpi-card">
+          <span class="audit-kpi-lbl">Priority Hit Rate</span>
+          <div class="audit-kpi-val" id="audit-kpi-priority">—</div>
+          <span class="audit-kpi-sub" id="audit-kpi-priority-sub">Top-tier recommendations</span>
+        </div>
+        <div class="card audit-kpi-card">
+          <span class="audit-kpi-lbl">Floor Reliability Rate</span>
+          <div class="audit-kpi-val" id="audit-kpi-floor">—</div>
+          <span class="audit-kpi-sub" id="audit-kpi-floor-sub">Target: &ge;85.0%</span>
+        </div>
+        <div class="card audit-kpi-card">
+          <span class="audit-kpi-lbl">Audited Matchups</span>
+          <div class="audit-kpi-val" id="audit-kpi-matchups">—</div>
+          <span class="audit-kpi-sub" id="audit-kpi-weeks-sub">Sample size</span>
+        </div>
+      </div>
+
+      <!-- Pre-Game Snapshot Verification Ledger (Transparency Proof) -->
+      <div class="audit-ledger-card">
+        <div class="ledger-header">
+          <div class="ledger-title-group">
+            <span class="ledger-badge" id="audit-ledger-status">⏳ Week 9 Baseline Locked</span>
+            <h3 class="ledger-title">Pre-Kickoff Immutable Snapshot Ledger</h3>
+          </div>
+          <div class="ledger-meta-group">
+            <span class="ledger-meta-item"><strong>Snapshot ID:</strong> <code id="audit-ledger-id">—</code></span>
+            <span class="ledger-meta-item"><strong>Locked:</strong> <span id="audit-ledger-time">—</span></span>
+          </div>
+        </div>
+        <div class="ledger-details-grid">
+          <div><strong>Git Commit Hash:</strong> <code id="audit-ledger-commit">—</code></div>
+          <div><strong>SHA-256 Checksum:</strong> <code id="audit-ledger-sha">—</code></div>
+          <div><strong>Tracked Defenses:</strong> <span id="audit-ledger-count">—</span></div>
+          <div><strong>Audit Protocol:</strong> <span>Strict pre-game freeze • Box scores reconciled post-MNF</span></div>
+        </div>
+        <p class="ledger-explainer">
+          🛡️ <strong>Zero Hindsight Guarantee:</strong> Projections and tier verdicts are mathematically locked prior to kickoff and archived in version-controlled JSON snapshots. Projections are never adjusted or fine-tuned retroactively after games are played.
+        </p>
+      </div>
+
+      <!-- Weekly Report Cards Table -->
+      <div class="audit-section-block">
+        <div class="audit-section-header">
+          <h3 class="audit-section-title">Weekly Performance Scorecards & Letter Grades</h3>
+          <p class="audit-section-desc">Summary of model performance by week. Evaluates whether Priority streams produced winning scores, Avoid calls protected rosters from traps, and projections matched reality.</p>
+        </div>
+        <div class="table-wrapper">
+          <table id="audit-summary-table">
+            <thead>
+              <tr>
+                <th>Week</th>
+                <th>Status</th>
+                <th>Priority Recommendations</th>
+                <th class="col-center">Priority Avg Proj / Actual</th>
+                <th class="col-center">Priority Hit Rate</th>
+                <th class="col-center">Mean Error (MAE)</th>
+                <th class="col-center">Floor Met %</th>
+                <th class="col-center">Weekly Grade</th>
+              </tr>
+            </thead>
+            <tbody id="audit-summary-tbody">
+              <!-- Dynamically populated by app.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Granular Team-by-Team Reconciliation Grid -->
+      <div class="audit-section-block">
+        <div class="audit-section-header">
+          <div class="audit-section-title-wrap">
+            <h3 class="audit-section-title">Granular Matchup Reconciliation & Error Audit</h3>
+            <p class="audit-section-desc">Comparing frozen pre-game projections against official post-game box scores across all active matchups.</p>
+          </div>
+        </div>
+        <div class="table-wrapper">
+          <table id="audit-matchups-table">
+            <thead>
+              <tr>
+                <th class="col-sticky col-def">Streaming Defense</th>
+                <th>Opponent</th>
+                <th class="col-center">Week Verdict</th>
+                <th class="col-center">Projected Points</th>
+                <th class="col-center">Actual Fantasy Pts</th>
+                <th class="col-center">Projection Error</th>
+                <th class="col-center">Floor</th>
+                <th class="col-center">Floor Met?</th>
+                <th class="col-center">Sacks (Proj / Act)</th>
+                <th class="col-center">Turnovers (Proj / Act)</th>
+                <th class="col-center">Bracket (Proj / Act)</th>
+                <th class="col-center">Outcome</th>
+              </tr>
+            </thead>
+            <tbody id="audit-matchups-tbody">
+              <!-- Dynamically populated by app.js -->
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
