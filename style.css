@@ -363,6 +363,19 @@ body {
   gap: 1rem;
 }
 
+/* Hide Streaming KPI highlight cards when viewing Model Audit & Report Card */
+body[data-active-tab="audit"] .app-header .kpi-grid {
+  display: none !important;
+}
+
+body[data-active-tab="audit"] .app-header {
+  padding-bottom: 1.25rem;
+}
+
+body[data-active-tab="audit"] .app-subtitle {
+  margin-bottom: 0.5rem;
+}
+
 .kpi-card {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);

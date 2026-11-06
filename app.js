@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function initializeApp() {
+    document.body.setAttribute('data-active-tab', activeTab);
     setupHeaderMeta();
     setupNavigation();
     setupFilterEvents();
@@ -194,6 +195,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         activeTab = target;
+        document.body.setAttribute('data-active-tab', target);
+
+        const headerKpis = document.querySelector('.app-header .kpi-grid');
+        if (headerKpis) {
+          headerKpis.style.display = (target === 'audit') ? 'none' : '';
+        }
+
         renderActiveTable();
       });
     });
