@@ -765,8 +765,37 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function renderDefHeatCell(val) {
-    // Use the exact same Microsoft Excel Red-White-Blue conditional formatting scale as Offense History
-    return renderHeatCell(val);
+    if (val === 'BYE') return `<td class="stat-dim col-wk">BYE</td>`;
+    const num = parseFloat(val);
+    if (isNaN(num)) return `<td class="col-wk">${val}</td>`;
+
+    // Standard Microsoft Excel Blue - White - Red conditional formatting scale (Flipped for Defense):
+    // Blue for Boom Week (High points scored: 7 to 22+)
+    // White for Neutral (Average points scored: 3 to 6)
+    // Red for Quiet Week (Low points scored: 0 to 2)
+    const mid = 4.5;
+    const maxVal = 14.0;
+    let bg, textColor;
+
+    if (num <= mid) {
+      // Interpolate from Rich Red (0 pts) to White (4.5 pts)
+      const ratio = num / mid;
+      const r = 255;
+      const g = Math.round(38 + (255 - 38) * ratio);
+      const b = Math.round(38 + (255 - 38) * ratio);
+      bg = `rgb(${r}, ${g}, ${b})`;
+      textColor = ratio < 0.45 ? '#ffffff' : '#0f172a';
+    } else {
+      // Interpolate from White (4.5 pts) to Rich Blue (14+ pts)
+      const ratio = Math.min(1.0, (num - mid) / (maxVal - mid));
+      const r = Math.round(255 - (255 - 37) * ratio);
+      const g = Math.round(255 - (255 - 99) * ratio);
+      const b = 255;
+      bg = `rgb(${r}, ${g}, ${b})`;
+      textColor = ratio > 0.55 ? '#ffffff' : '#0f172a';
+    }
+
+    return `<td class="col-wk excel-cell" style="background-color: ${bg} !important; color: ${textColor} !important; font-weight: 700;">${num}</td>`;
   }
 
   // 10. Render Tab 4: D/ST Fantasy Points Anatomy (Weeks 1-8)
