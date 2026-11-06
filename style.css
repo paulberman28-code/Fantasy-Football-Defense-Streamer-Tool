@@ -1763,6 +1763,43 @@ td.col-rationale {
     padding: 0.45rem 0.75rem;
     font-size: 0.8rem;
   }
+
+  /* Playoff Schedule Mobile Card Layout */
+  .playoff-mobile-card {
+    border-left: 3px solid var(--color-primary);
+  }
+
+  .playoff-card-schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.45rem;
+    margin: 0.65rem 0 0.4rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.6rem 0.4rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-subtle);
+    text-align: center;
+  }
+
+  [data-theme="light"] .playoff-card-schedule-grid {
+    background: #f8fafc;
+    border-color: #e2e8f0;
+  }
+
+  .playoff-round-lbl {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 4px;
+  }
+
+  .playoff-round-sub {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 3px;
+  }
 }
 
 /* Hide mobile-only controls and card decks on Desktop (> 768px) */

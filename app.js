@@ -798,6 +798,53 @@ document.addEventListener('DOMContentLoaded', async () => {
         </tr>
       `;
     }).join('');
+
+    // Render Mobile Card View for Playoff Schedule Radar
+    const cardsContainer = document.getElementById('playoffs-cards-container');
+    if (cardsContainer) {
+      cardsContainer.innerHTML = rows.map(r => {
+        const badgeClass = getPlayoffBadgeClass(r.Playoff_Rating);
+        const teamCode = r.Team || extractTeamCode(r.Defense);
+
+        return `
+          <article class="mobile-matchup-card playoff-mobile-card">
+            <div class="m-card-header">
+              <div class="m-card-title-group">
+                <div class="team-cell">
+                  ${renderTeamLogoHtml(teamCode, r.Defense)}
+                  <span class="m-card-team">${r.Defense}</span>
+                </div>
+                <span class="badge ${badgeClass}">${r.Playoff_Rating}</span>
+              </div>
+              <div class="m-card-pts-box">
+                <span class="m-card-pts ${r.Playoff_Avg_Opp_Allowed >= 5.5 ? 'pts-top' : ''}">${formatNum(r.Playoff_Avg_Opp_Allowed, 2)} <small>PTS/G</small></span>
+                <span class="m-card-floor">Playoff Avg</span>
+              </div>
+            </div>
+            <div class="playoff-card-schedule-grid">
+              <div class="playoff-round-col">
+                <div class="playoff-round-lbl">W15 Qtrs</div>
+                <span class="runway-chip chip-${r.W15_Diff || 'neutral'}" title="${r.W15_Opp} allows ${r.W15_Opp_Pts} PPG">${r.W15_Matchup}</span>
+                <div class="playoff-round-sub">${formatNum(r.W15_Opp_Pts, 1)}/g</div>
+              </div>
+              <div class="playoff-round-col">
+                <div class="playoff-round-lbl">W16 Semis</div>
+                <span class="runway-chip chip-${r.W16_Diff || 'neutral'}" title="${r.W16_Opp} allows ${r.W16_Opp_Pts} PPG">${r.W16_Matchup}</span>
+                <div class="playoff-round-sub">${formatNum(r.W16_Opp_Pts, 1)}/g</div>
+              </div>
+              <div class="playoff-round-col">
+                <div class="playoff-round-lbl">W17 Finals</div>
+                <span class="runway-chip chip-${r.W17_Diff || 'neutral'}" title="${r.W17_Opp} allows ${r.W17_Opp_Pts} PPG">${r.W17_Matchup}</span>
+                <div class="playoff-round-sub">${formatNum(r.W17_Opp_Pts, 1)}/g</div>
+              </div>
+            </div>
+            <div class="m-card-footer" style="margin-top: 0.35rem; padding-top: 0.35rem; border-top: 1px solid var(--border-subtle);">
+              <p class="m-card-snippet" style="font-size: 0.8rem; line-height: 1.4; color: var(--text-muted); -webkit-line-clamp: 3;">${r.Playoff_Outlook}</p>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
   }
 
   function getStashBadgeClass(tier) {
