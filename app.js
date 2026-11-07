@@ -1861,20 +1861,57 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // 12. Visitor Counter Logic (Reset to 0 for Launch + Session-Aware)
+  // 12. Global Visitor Counter Logic (Synchronized Cloud Counter + Session-Aware)
   function initVisitorCounter() {
     const counterEl = document.getElementById('visitor-count');
     if (!counterEl) return;
 
-    // Reset visit counter to 0 for official launch
-    let currentVisits = parseInt(localStorage.getItem('waffle_streamer_visits_launch_2026') || '0', 10);
-    
-    // Only increment once per browser session to prevent reload spam
-    if (!sessionStorage.getItem('waffle_counted_session')) {
-      currentVisits += 1;
-      localStorage.setItem('waffle_streamer_visits_launch_2026', currentVisits);
-      sessionStorage.setItem('waffle_counted_session', 'true');
+    // Canonical tracking URL for WAFFLe Streamer Tool on GitHub Pages
+    const TRACKING_URL = 'https://paulberman28-code.github.io/Fantasy-Football-Defense-Streamer-Tool/';
+
+    // 1. Immediately show cached global count to prevent layout shift
+    const cachedVisits = parseInt(localStorage.getItem('waffle_global_hits_v1') || '0', 10);
+    if (cachedVisits > 0) {
+      counterEl.textContent = cachedVisits.toLocaleString();
     }
-    counterEl.textContent = currentVisits.toLocaleString();
+
+    // 2. When online via HTTP/HTTPS, sync with the global cloud counter
+    if (window.location.protocol.startsWith('http')) {
+      const sessionKey = 'waffle_global_session_logged';
+      const hasCountedSession = sessionStorage.getItem(sessionKey);
+
+      // New session: increment the global counter via /api/hit
+      // Existing session (page reload or tab switch): read current global count via /api/history without double-counting
+      const apiUrl = hasCountedSession
+        ? `https://hitscounter.dev/api/history?url=${encodeURIComponent(TRACKING_URL)}`
+        : `https://hitscounter.dev/api/hit?url=${encodeURIComponent(TRACKING_URL)}&output=json`;
+
+      fetch(apiUrl)
+        .then(res => {
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          return res.json();
+        })
+        .then(data => {
+          if (data && typeof data.total_hits === 'number' && data.total_hits > 0) {
+            counterEl.textContent = data.total_hits.toLocaleString();
+            localStorage.setItem('waffle_global_hits_v1', data.total_hits);
+            if (!hasCountedSession) {
+              sessionStorage.setItem(sessionKey, 'true');
+            }
+          }
+        })
+        .catch(err => {
+          console.warn('Global visitor counter notice:', err.message);
+        });
+    } else {
+      // Local file:// protocol fallback for offline dev/testing
+      let localVisits = parseInt(localStorage.getItem('waffle_local_visits_preview') || '0', 10);
+      if (!sessionStorage.getItem('waffle_local_session')) {
+        localVisits += 1;
+        localStorage.setItem('waffle_local_visits_preview', localVisits);
+        sessionStorage.setItem('waffle_local_session', 'true');
+      }
+      counterEl.textContent = localVisits.toLocaleString();
+    }
   }
 });
