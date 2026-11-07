@@ -286,6 +286,10 @@ document.addEventListener('DOMContentLoaded', async () => {
           headerKpis.style.display = (target === 'audit' || target === 'rules') ? 'none' : '';
         }
 
+        if (typeof gtag === 'function') {
+          gtag('event', 'select_tab', { tab_name: target });
+        }
+
         renderActiveTable();
       });
     });
@@ -1483,6 +1487,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     document.getElementById('modal-rationale-text').textContent = data.Current_Week_Rationale || 'Matchup analysis pending.';
 
+    if (typeof gtag === 'function') {
+      gtag('event', 'view_scouting_report', { defense: data.Target_DST });
+    }
+
     modal.showModal();
   }
 
@@ -1620,6 +1628,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         btn.classList.add('copied');
         if (copyIcon) copyIcon.textContent = '✅';
         if (copyText) copyText.textContent = 'Copied to Clipboard!';
+
+        if (typeof gtag === 'function') {
+          gtag('event', 'copy_cheat_sheet', { week: meta.currentWeek });
+        }
 
         setTimeout(() => {
           btn.classList.remove('copied');
@@ -1793,6 +1805,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     openBtn.addEventListener('click', () => {
       populateSelects();
       runComparison();
+      if (typeof gtag === 'function') {
+        gtag('event', 'open_compare_modal');
+      }
       modal.showModal();
     });
   }
@@ -1846,29 +1861,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // 12. Visitor Counter Logic (Offline LocalStorage + Online Cloud CounterAPI)
+  // 12. Visitor Counter Logic (Reset to 0 for Launch + Session-Aware)
   function initVisitorCounter() {
     const counterEl = document.getElementById('visitor-count');
     if (!counterEl) return;
 
-    // Local storage visit counter (works offline and on file:// protocol in Safari)
-    let currentVisits = parseInt(localStorage.getItem('waffle_streamer_visits') || '0', 10);
-    currentVisits += 1;
-    localStorage.setItem('waffle_streamer_visits', currentVisits);
-    counterEl.textContent = currentVisits.toLocaleString();
-
-    // When deployed online on GitHub Pages (http/https), connect to live shared visitor counter
-    if (window.location.protocol.startsWith('http')) {
-      fetch('https://api.counterapi.dev/v1/waffle-fantasy-dst-streamer-2026/visits/up')
-        .then(res => res.json())
-        .then(data => {
-          if (data && typeof data.count === 'number') {
-            counterEl.textContent = data.count.toLocaleString();
-          }
-        })
-        .catch(err => {
-          console.log('Remote counter unavailable, using local visit count:', err);
-        });
+    // Reset visit counter to 0 for official launch
+    let currentVisits = parseInt(localStorage.getItem('waffle_streamer_visits_launch_2026') || '0', 10);
+    
+    // Only increment once per browser session to prevent reload spam
+    if (!sessionStorage.getItem('waffle_counted_session')) {
+      currentVisits += 1;
+      localStorage.setItem('waffle_streamer_visits_launch_2026', currentVisits);
+      sessionStorage.setItem('waffle_counted_session', 'true');
     }
+    counterEl.textContent = currentVisits.toLocaleString();
   }
 });
