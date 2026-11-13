@@ -175,8 +175,12 @@ def build_audit_report(week: int, season: int = 2026, dry_run: bool = False):
     actuals = compute_week_actuals(week, season)
 
     reconciled_matchups = []
-    errors = []
-    priority_hits = []
+    all_in_errors = []
+    core_errors = []
+    priority_above_med = []
+    priority_top25 = []
+    priority_duds = []
+    avoid_protected = []
     floor_hits = []
 
     for p in projections:
@@ -193,28 +197,101 @@ def build_audit_report(week: int, season: int = 2026, dry_run: bool = False):
         proj_pts = float(p.get('Proj_Fantasy_Pts', 0.0))
         act_pts = float(act['actual_pts'])
         err_diff = round(act_pts - proj_pts, 1)
-        abs_err = abs(err_diff)
-        errors.append(abs_err)
-
-        floor_val = float(p.get('Predicted_Floor', 0.0))
-        floor_met = act_pts >= floor_val
-        floor_hits.append(floor_met)
-
-        tier = p.get('Streamer_Tier', 'Neutral')
-        # A priority hit is either scoring >= 6.0 pts or beating projection
-        is_hit = (act_pts >= 6.0) if tier == 'Priority' else (act_pts >= proj_pts)
-        if tier == 'Priority':
-            priority_hits.append(is_hit)
+        abs_err = round(abs(err_diff), 1)
+        all_in_errors.append(abs_err)
 
         proj_sacks = float(p.get('Proj_Sacks', 0.0))
-        proj_to = float(p.get('Proj_INTs', 0.0)) + float(p.get('Proj_Fumbles', 0.0))
+        proj_to = round(float(p.get('Proj_INTs', 0.0)) + float(p.get('Proj_Fumbles', 0.0)), 1)
         proj_bracket = float(p.get('Exp_Bracket', 0.0))
         proj_other = max(0.0, round(proj_pts - (proj_sacks + proj_to + proj_bracket), 1))
+
+        # Core Points (Excludes random TDs, Safeties, and Blocked Kicks)
+        core_proj = round(proj_sacks + proj_to + proj_bracket, 1)
+        core_act = float(act['sacks'] + act['to'] + act['bracket_pts'])
+        core_err = round(core_act - core_proj, 1)
+        core_abs_err = round(abs(core_err), 1)
+        core_errors.append(core_abs_err)
+
+        floor_val = float(p.get('Predicted_Floor', 0.0))
+        floor_met = bool(core_act >= floor_val)
+        floor_hits.append(floor_met)
+
+        # Non-Parametric Empirical Percentile Bucket (2026 Baseline: Med=4.0, P25=2.0, P75=6.0, P90=9.0)
+        if core_act >= 9.0:
+            percentile_bucket = "Top 10% (Boom)"
+        elif core_act >= 6.0:
+            percentile_bucket = "Top 25% (Starter)"
+        elif core_act >= 5.0:
+            percentile_bucket = "Above Median"
+        elif core_act >= 3.0:
+            percentile_bucket = "Average (Med)"
+        else:
+            percentile_bucket = "Dud Zone (≤2)"
+
+        tier = p.get('Streamer_Tier', 'Neutral')
+
+        # Non-Parametric Tier Verdict Evaluation
+        if tier == 'Priority':
+            priority_above_med.append(core_act >= 5.0)
+            priority_top25.append(core_act >= 6.0)
+            priority_duds.append(core_act <= 2.0)
+            if core_act >= 6.0:
+                is_hit = True
+                verdict_label = "Top-25% Hit"
+            elif core_act >= 5.0:
+                is_hit = True
+                verdict_label = "Above Median"
+            elif core_act >= 3.0:
+                is_hit = False
+                verdict_label = "Flat (Avg)"
+            else:
+                is_hit = False
+                verdict_label = "Priority Bust"
+        elif tier == 'Speculative':
+            if core_act >= 6.0:
+                is_hit = True
+                verdict_label = "Top-25% Hit"
+            elif core_act >= 4.0 and floor_met:
+                is_hit = True
+                verdict_label = "Solid Stream"
+            elif core_act >= 3.0:
+                is_hit = False
+                verdict_label = "Mediocre"
+            else:
+                is_hit = False
+                verdict_label = "Dud Miss"
+        elif tier == 'Avoid':
+            avoid_protected.append(core_act <= 4.0)
+            if core_act <= 4.0:
+                is_hit = True
+                verdict_label = "Safe Avoid (≤Med)"
+            elif core_act == 5.0:
+                is_hit = False
+                verdict_label = "TD Fluke (5 Core)" if act['other_pts'] >= 6 else "Mid Avoid (5 pts)"
+            else:
+                is_hit = False
+                verdict_label = "Trap Miss (≥6)"
+        else:  # Neutral
+            if 3.0 <= core_act <= 6.0 or core_abs_err <= 2.5:
+                is_hit = True
+                verdict_label = "On Target"
+            elif core_act > 6.0:
+                is_hit = False
+                verdict_label = "Outperformed"
+            else:
+                is_hit = False
+                verdict_label = "Below Floor"
 
         reconciled_matchups.append({
             'dst': dst_code,
             'opp': act['opp'],
             'tier': tier,
+            'core_proj_pts': core_proj,
+            'core_actual_pts': core_act,
+            'core_error_diff': core_err,
+            'core_abs_error': core_abs_err,
+            'percentile_bucket': percentile_bucket,
+            'verdict_label': verdict_label,
             'proj_pts': proj_pts,
             'actual_pts': act_pts,
             'error_diff': err_diff,
@@ -223,7 +300,7 @@ def build_audit_report(week: int, season: int = 2026, dry_run: bool = False):
             'floor_met': floor_met,
             'proj_sacks': proj_sacks,
             'actual_sacks': act['sacks'],
-            'proj_to': round(proj_to, 1),
+            'proj_to': proj_to,
             'actual_to': act['to'],
             'proj_bracket': proj_bracket,
             'actual_bracket': act['bracket_pts'],
@@ -236,21 +313,33 @@ def build_audit_report(week: int, season: int = 2026, dry_run: bool = False):
         print("Note: All Week matchups are currently pending kickoff or unplayed.")
         return None
 
-    mae = round(float(np.mean(errors)), 2)
-    priority_pct = round(float(np.mean(priority_hits) * 100), 1) if priority_hits else 0.0
+    mae = round(float(np.mean(all_in_errors)), 2)
+    core_mae = round(float(np.mean(core_errors)), 2)
+    core_medae = round(float(np.median(core_errors)), 2)
+    core_iqr = round(float(np.percentile(core_errors, 75) - np.percentile(core_errors, 25)), 2)
+
+    priority_recs = [m for m in reconciled_matchups if m['tier'] == 'Priority']
+    priority_teams_str = ", ".join([m['dst'] for m in priority_recs]) if priority_recs else "—"
+    priority_avg_core_proj = round(float(np.mean([m['core_proj_pts'] for m in priority_recs])), 1) if priority_recs else 0.0
+    priority_avg_core_act = round(float(np.mean([m['core_actual_pts'] for m in priority_recs])), 1) if priority_recs else 0.0
+
+    priority_above_med_pct = round(float(np.mean(priority_above_med) * 100), 1) if priority_above_med else 0.0
+    priority_top25_pct = round(float(np.mean(priority_top25) * 100), 1) if priority_top25 else 0.0
+    priority_dud_pct = round(float(np.mean(priority_duds) * 100), 1) if priority_duds else 0.0
+    avoid_protected_pct = round(float(np.mean(avoid_protected) * 100), 1) if avoid_protected else 0.0
     floor_pct = round(float(np.mean(floor_hits) * 100), 1)
 
-    # Letter Grade Assignment
-    if mae <= 2.2 and priority_pct >= 80.0:
-        grade = "A+ (Elite)"
-    elif mae <= 2.6 and priority_pct >= 70.0:
-        grade = "A (Excellent)"
-    elif mae <= 3.2 and priority_pct >= 60.0:
-        grade = "B (Solid)"
-    elif mae <= 3.8:
+    # Non-Parametric Letter Grade Assignment (MedAE + Percentile Execution)
+    if core_medae <= 2.5 and priority_top25_pct >= 66.7 and priority_dud_pct == 0.0:
+        grade = "A (Elite)"
+    elif core_medae <= 3.0 and priority_above_med_pct >= 66.7 and priority_dud_pct == 0.0:
+        grade = "B+ (Strong)"
+    elif core_medae <= 3.3 and priority_above_med_pct >= 66.7 and priority_dud_pct == 0.0:
+        grade = "B- (Safe Floor)"
+    elif core_medae <= 3.8:
         grade = "C (Average)"
     else:
-        grade = "D (Volatile)"
+        grade = "D (Subpar)"
 
     audit_report = {
         'week': week,
@@ -258,8 +347,17 @@ def build_audit_report(week: int, season: int = 2026, dry_run: bool = False):
         'timestamp': datetime.now(timezone.utc).isoformat(),
         'snapshot_sha256': sha,
         'summary': {
+            'core_medae': core_medae,
+            'core_mae': core_mae,
+            'core_iqr_error': core_iqr,
             'mae': mae,
-            'priority_hit_rate_pct': priority_pct,
+            'priority_teams': priority_teams_str,
+            'priority_avg_proj': priority_avg_core_proj,
+            'priority_avg_actual': priority_avg_core_act,
+            'priority_hit_rate_pct': priority_above_med_pct,
+            'priority_top25_pct': priority_top25_pct,
+            'priority_dud_rate_pct': priority_dud_pct,
+            'avoid_protected_pct': avoid_protected_pct,
             'floor_reliability_pct': floor_pct,
             'total_matchups': len(reconciled_matchups),
             'grade': grade
@@ -275,11 +373,13 @@ def build_audit_report(week: int, season: int = 2026, dry_run: bool = False):
         print(f"Generated and saved official audit report to {audit_file}")
 
     print("\n" + "=" * 60)
-    print(f"WEEK {week} AUDIT RECONCILIATION SUMMARY")
+    print(f"WEEK {week} NON-PARAMETRIC CORE AUDIT SUMMARY")
     print("=" * 60)
-    print(f"Mean Absolute Error (MAE):     {mae} pts")
-    print(f"Priority Streamer Hit Rate:    {priority_pct}%")
-    print(f"Floor Reliability Rate:        {floor_pct}%")
+    print(f"Core Median Abs Error (MedAE): {core_medae} pts (Core MAE: {core_mae} pts)")
+    print(f"All-In MAE (incl. TDs):        {mae} pts")
+    print(f"Priority Above-Median Rate:    {priority_above_med_pct}% (Top-25%: {priority_top25_pct}%, Dud: {priority_dud_pct}%)")
+    print(f"Avoid Protected Rate (≤Med):   {avoid_protected_pct}%")
+    print(f"Core Floor Reliability Rate:   {floor_pct}%")
     print(f"Total Matchups Evaluated:      {len(reconciled_matchups)}")
     print(f"Overall Model Grade:           {grade}")
     print("=" * 60 + "\n")

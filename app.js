@@ -1180,21 +1180,29 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 2. Cumulative Season KPIs
     const maeEl = document.getElementById('audit-kpi-mae');
+    const maeSubEl = document.getElementById('audit-kpi-mae-sub');
     const priorityEl = document.getElementById('audit-kpi-priority');
+    const prioritySubEl = document.getElementById('audit-kpi-priority-sub');
     const floorEl = document.getElementById('audit-kpi-floor');
     const matchupsEl = document.getElementById('audit-kpi-matchups');
 
     const activeWeekNum = (appData.meta && appData.meta.currentWeek) || 10;
 
     if (completedAudits.length > 0) {
-      // Real mathematical aggregations across all completed audits
+      // Real mathematical aggregations across all completed audits (Non-Parametric Core Points)
       const totalMatchups = completedAudits.reduce((acc, a) => acc + (a.summary.total_matchups || 0), 0);
-      const weightedMae = (completedAudits.reduce((acc, a) => acc + (a.summary.mae * a.summary.total_matchups), 0) / (totalMatchups || 1)).toFixed(2);
+      const weightedMedAe = (completedAudits.reduce((acc, a) => acc + ((a.summary.core_medae !== undefined ? a.summary.core_medae : a.summary.mae) * a.summary.total_matchups), 0) / (totalMatchups || 1)).toFixed(2);
+      const weightedCoreMae = (completedAudits.reduce((acc, a) => acc + ((a.summary.core_mae !== undefined ? a.summary.core_mae : a.summary.mae) * a.summary.total_matchups), 0) / (totalMatchups || 1)).toFixed(2);
+      const weightedAllInMae = (completedAudits.reduce((acc, a) => acc + (a.summary.mae * a.summary.total_matchups), 0) / (totalMatchups || 1)).toFixed(2);
       const avgPriorityHit = (completedAudits.reduce((acc, a) => acc + (a.summary.priority_hit_rate_pct || 0), 0) / completedAudits.length).toFixed(1);
+      const avgTop25 = (completedAudits.reduce((acc, a) => acc + (a.summary.priority_top25_pct || 0), 0) / completedAudits.length).toFixed(1);
+      const avgDud = (completedAudits.reduce((acc, a) => acc + (a.summary.priority_dud_rate_pct || 0), 0) / completedAudits.length).toFixed(0);
       const avgFloorRel = (completedAudits.reduce((acc, a) => acc + (a.summary.floor_reliability_pct || 0), 0) / completedAudits.length).toFixed(1);
 
-      if (maeEl) maeEl.textContent = `${weightedMae} pts`;
+      if (maeEl) maeEl.textContent = `${weightedMedAe} pts`;
+      if (maeSubEl) maeSubEl.textContent = `Core MAE: ${weightedCoreMae} pts (All-In: ${weightedAllInMae})`;
       if (priorityEl) priorityEl.textContent = `${avgPriorityHit}%`;
+      if (prioritySubEl) prioritySubEl.textContent = `Top-25%: ${avgTop25}% • Dud Rate: ${avgDud}%`;
       if (floorEl) floorEl.textContent = `${avgFloorRel}%`;
       if (matchupsEl) matchupsEl.textContent = `${totalMatchups} (${completedAudits.length} wk${completedAudits.length > 1 ? 's' : ''})`;
     } else {
@@ -1217,10 +1225,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         const priorityRecs = (aud.matchup_reconciliation || []).filter(m => m.tier === 'Priority');
         const priorityTeams = aud.summary.priority_teams || (priorityRecs.length > 0 ? priorityRecs.map(m => m.dst).join(', ') : '—');
         const priorityAvgProj = aud.summary.priority_avg_proj !== undefined ? aud.summary.priority_avg_proj : 
-          (priorityRecs.length > 0 ? (priorityRecs.reduce((a, b) => a + (parseFloat(b.proj_pts) || 0), 0) / priorityRecs.length) : null);
+          (priorityRecs.length > 0 ? (priorityRecs.reduce((a, b) => a + (parseFloat(b.core_proj_pts ?? b.proj_pts) || 0), 0) / priorityRecs.length) : null);
         const priorityAvgActual = aud.summary.priority_avg_actual !== undefined ? aud.summary.priority_avg_actual :
-          (priorityRecs.length > 0 ? (priorityRecs.reduce((a, b) => a + (parseFloat(b.actual_pts) || 0), 0) / priorityRecs.length) : null);
+          (priorityRecs.length > 0 ? (priorityRecs.reduce((a, b) => a + (parseFloat(b.core_actual_pts ?? b.actual_pts) || 0), 0) / priorityRecs.length) : null);
         const priorityProjActualText = priorityAvgProj !== null ? `${formatNum(priorityAvgProj, 1)} / ${formatNum(priorityAvgActual, 1)} pts` : '—';
+        const dudPct = aud.summary.priority_dud_rate_pct !== undefined ? aud.summary.priority_dud_rate_pct : 0;
+        const coreMedAe = aud.summary.core_medae !== undefined ? aud.summary.core_medae : aud.summary.mae;
+        const coreMae = aud.summary.core_mae !== undefined ? aud.summary.core_mae : aud.summary.mae;
 
         summaryRowsHtml += `
           <tr>
@@ -1228,8 +1239,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             <td><span class="badge badge-priority">✅ Finalized</span></td>
             <td>${priorityTeams}</td>
             <td class="col-center stat-bold">${priorityProjActualText}</td>
-            <td class="col-center"><span class="pts-highlight">${formatNum(aud.summary.priority_hit_rate_pct, 1)}%</span></td>
-            <td class="col-center stat-bold">${formatNum(aud.summary.mae, 2)} pts</td>
+            <td class="col-center"><span class="pts-highlight">${formatNum(aud.summary.priority_hit_rate_pct, 1)}%</span> <span class="stat-dim">(${formatNum(dudPct, 0)}% Dud)</span></td>
+            <td class="col-center"><span class="stat-bold">${formatNum(coreMedAe, 2)} pts</span> <span class="stat-dim">(${formatNum(coreMae, 2)})</span></td>
             <td class="col-center">${formatNum(aud.summary.floor_reliability_pct, 1)}%</td>
             <td class="col-center"><span class="badge ${gradeClass}">${gradeStr}</span></td>
           </tr>
@@ -1244,14 +1255,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         const activeMatchups = appData.weekMatchups.filter(m => m.Target_DST && !m.Target_DST.includes('BYE'));
         const priorityList = activeMatchups.filter(m => m.Streamer_Tier === 'Priority');
         const priorityNames = priorityList.map(m => m.Target_DST.split(' ')[0]).join(', ');
-        const avgPriorityProj = priorityList.length > 0 ? (priorityList.reduce((acc, m) => acc + (parseFloat(m.Proj_Fantasy_Pts) || 0), 0) / priorityList.length).toFixed(1) : '—';
+        const avgPriorityCoreProj = priorityList.length > 0 ? (priorityList.reduce((acc, m) => {
+          const coreP = (parseFloat(m.Proj_Sacks) || 0) + (parseFloat(m.Proj_INTs) || 0) + (parseFloat(m.Proj_Fumbles) || 0) + (parseFloat(m.Exp_Bracket) || 0);
+          return acc + coreP;
+        }, 0) / priorityList.length).toFixed(1) : '—';
 
         summaryRowsHtml += `
           <tr>
             <td class="stat-bold">Week ${activeWeek}</td>
             <td><span class="badge badge-speculative">⏳ Baseline Locked (Pending)</span></td>
             <td>${priorityNames || '—'}</td>
-            <td class="col-center stat-bold">${avgPriorityProj} pts / Pending</td>
+            <td class="col-center stat-bold">${avgPriorityCoreProj} pts / Pending</td>
             <td class="col-center stat-dim">Awaiting final</td>
             <td class="col-center stat-dim">Awaiting final</td>
             <td class="col-center stat-dim">Awaiting final</td>
@@ -1281,16 +1295,21 @@ document.addEventListener('DOMContentLoaded', async () => {
       let enrichedRows = [];
 
       if (weekAudit && weekAudit.matchup_reconciliation) {
-        // Render completed official audited week outcomes
+        // Render completed official audited week outcomes (Non-Parametric Core Points)
         enrichedRows = weekAudit.matchup_reconciliation.map(m => {
+          const coreProj = m.core_proj_pts !== undefined ? parseFloat(m.core_proj_pts) : parseFloat(m.proj_pts) || 0;
+          const coreActual = m.core_actual_pts !== undefined ? parseFloat(m.core_actual_pts) : parseFloat(m.actual_pts) || 0;
+          const coreErr = m.core_error_diff !== undefined ? parseFloat(m.core_error_diff) : parseFloat(m.error_diff) || 0;
           return {
             Target_DST: m.dst,
             Offense: m.opp,
             Streamer_Tier: m.tier,
             _auditMatch: m,
-            _projPts: parseFloat(m.proj_pts) || 0,
-            _actualPts: m.actual_pts,
-            _projError: m.error_diff,
+            _projPts: coreProj,
+            _actualPts: coreActual,
+            _allInActualPts: parseFloat(m.actual_pts) || 0,
+            _projError: coreErr,
+            _percentileBucket: m.percentile_bucket || '—',
             _floor: parseFloat(m.floor) || 0,
             _floorMet: m.floor_met ? 1 : 0,
             _projSacks: parseFloat(m.proj_sacks) || 0,
@@ -1301,7 +1320,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             _actualBracket: m.actual_bracket,
             _projOther: parseFloat(m.proj_other) || 0,
             _actualOther: parseFloat(m.actual_other !== undefined ? m.actual_other : 0),
-            _outcome: m.hit ? 'HIT' : 'MISS',
+            _outcome: m.verdict_label || (m.hit ? 'HIT' : 'MISS'),
             _isAudited: true
           };
         });
@@ -1313,14 +1332,17 @@ document.addEventListener('DOMContentLoaded', async () => {
           const projSacks = parseFloat(r.Proj_Sacks) || 0;
           const projTO = parseFloat(r.Proj_INTs || 0) + parseFloat(r.Proj_Fumbles || 0);
           const projBracket = parseFloat(r.Exp_Bracket) || 0;
-          const projOther = Math.max(0, parseFloat((totalProj - (projSacks + projTO + projBracket)).toFixed(1)));
+          const coreProj = parseFloat((projSacks + projTO + projBracket).toFixed(1));
+          const projOther = Math.max(0, parseFloat((totalProj - coreProj).toFixed(1)));
 
           return {
             ...r,
             _auditMatch: null,
-            _projPts: totalProj,
+            _projPts: coreProj,
+            _allInProjPts: totalProj,
             _actualPts: null,
             _projError: null,
+            _percentileBucket: 'Pending',
             _floor: parseFloat(r.Predicted_Floor) || 0,
             _floorMet: null,
             _projSacks: projSacks,
@@ -1337,7 +1359,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
       }
 
-      // Sort according to active audit sort state (defaults to Projected Points descending)
+      // Sort according to active audit sort state (defaults to Core Projected Points descending)
       const sortConfig = sortStates.audit || { column: 'Projected Points', ascending: false };
       const keyMap = {
         'Streaming Defense': 'Target_DST',
@@ -1346,12 +1368,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         'Projected Points': '_projPts',
         'Actual Fantasy Pts': '_actualPts',
         'Projection Error': '_projError',
+        'Percentile Bucket': '_actualPts',
         'Floor': '_floor',
         'Floor Met?': '_floorMet',
         'Sacks (Proj / Act)': '_projSacks',
         'Turnovers (Proj / Act)': '_projTO',
         'Bracket (Proj / Act)': '_projBracket',
-        'Other (Proj / Act)': '_projOther',
+        'Other (Proj / Act)': '_actualOther',
         'Outcome': '_outcome'
       };
       const targetKey = keyMap[sortConfig.column] || '_projPts';
@@ -1364,8 +1387,33 @@ document.addEventListener('DOMContentLoaded', async () => {
         const oppCode = extractTeamCode(r.Offense);
 
         if (match) {
-          const errorSign = match.error_diff > 0 ? '+' : '';
-          const errorClass = Math.abs(match.error_diff) <= 2.5 ? 'pts-top' : (Math.abs(match.error_diff) >= 5.0 ? 'stat-dim' : '');
+          const coreProj = r._projPts;
+          const coreAct = r._actualPts;
+          const allInAct = r._allInActualPts;
+          const coreErr = r._projError;
+          const errorSign = coreErr > 0 ? '+' : '';
+          const errorClass = Math.abs(coreErr) <= 2.5 ? 'pts-top' : (Math.abs(coreErr) >= 5.0 ? 'stat-dim' : '');
+
+          // Style Percentile Bucket badge
+          const bucketStr = r._percentileBucket || '—';
+          let bucketClass = 'badge-neutral';
+          if (bucketStr.includes('Top 10%')) bucketClass = 'badge-priority';
+          else if (bucketStr.includes('Top 25%')) bucketClass = 'badge-speculative';
+          else if (bucketStr.includes('Dud Zone')) bucketClass = 'badge-avoid';
+
+          // Style Verdict Outcome badge
+          const vLabel = match.verdict_label || (match.hit ? 'HIT' : 'MISS');
+          let verdictBadgeClass = 'badge-avoid';
+          if (match.hit) {
+            verdictBadgeClass = 'badge-priority';
+          } else if (vLabel.includes('TD Fluke') || vLabel.includes('Flat') || vLabel.includes('Mediocre')) {
+            verdictBadgeClass = 'badge-neutral';
+          }
+
+          const vIcon = match.hit ? '✅ ' : (vLabel.includes('TD Fluke') ? '⚡ ' : (verdictBadgeClass === 'badge-neutral' ? '➖ ' : '❌ '));
+          const otherAct = match.actual_other !== undefined ? match.actual_other : 0;
+          const otherText = otherAct > 0 ? `<span class="pts-highlight">+${formatNum(otherAct, 0)} pts</span>` : `<span class="stat-dim">0 pts</span>`;
+
           return `
             <tr>
               <td class="col-sticky">
@@ -1381,16 +1429,17 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
               </td>
               <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
-              <td class="col-center stat-bold">${formatNum(match.proj_pts, 1)}</td>
-              <td class="col-center pts-highlight">${formatNum(match.actual_pts, 1)}</td>
-              <td class="col-center stat-bold ${errorClass}">${errorSign}${formatNum(match.error_diff, 1)}</td>
+              <td class="col-center stat-bold">${formatNum(coreProj, 1)}</td>
+              <td class="col-center"><span class="pts-highlight">${formatNum(coreAct, 0)}</span> <span class="stat-dim">(${formatNum(allInAct, 0)})</span></td>
+              <td class="col-center stat-bold ${errorClass}">${errorSign}${formatNum(coreErr, 1)}</td>
+              <td class="col-center"><span class="badge ${bucketClass}">${bucketStr}</span></td>
               <td class="col-center stat-dim">${formatNum(match.floor, 1)}</td>
               <td class="col-center">${match.floor_met ? '✅ Yes' : '❌ No'}</td>
               <td class="col-center">${formatNum(match.proj_sacks, 1)} / ${match.actual_sacks}</td>
               <td class="col-center">${formatNum(match.proj_to, 1)} / ${match.actual_to}</td>
               <td class="col-center">${formatNum(match.proj_bracket, 1)} / ${match.actual_bracket}</td>
-              <td class="col-center">${formatNum(r._projOther, 1)} / ${formatNum(match.actual_other !== undefined ? match.actual_other : 0, 1)}</td>
-              <td class="col-center"><span class="badge ${match.hit ? 'badge-priority' : 'badge-avoid'}">${match.hit ? 'HIT' : 'MISS'}</span></td>
+              <td class="col-center">${otherText}</td>
+              <td class="col-center"><span class="badge ${verdictBadgeClass}">${vIcon}${vLabel}</span></td>
             </tr>
           `;
         }
@@ -1412,15 +1461,16 @@ document.addEventListener('DOMContentLoaded', async () => {
               </div>
             </td>
             <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
-            <td class="col-center stat-bold pts-highlight">${formatNum(r.Proj_Fantasy_Pts, 1)}</td>
+            <td class="col-center stat-bold pts-highlight">${formatNum(r._projPts, 1)} <span class="stat-dim">(${formatNum(r._allInProjPts, 1)})</span></td>
             <td class="col-center"><span class="badge badge-neutral">⏳ Game Pending</span></td>
             <td class="col-center stat-dim">—</td>
+            <td class="col-center stat-dim">Pending</td>
             <td class="col-center stat-bold">${formatNum(r.Predicted_Floor, 1)}</td>
             <td class="col-center stat-dim">Awaiting final</td>
             <td class="col-center">${formatNum(r.Proj_Sacks, 1)} / —</td>
             <td class="col-center">${toProj} / —</td>
             <td class="col-center">${formatNum(r.Exp_Bracket, 1)} / —</td>
-            <td class="col-center">${formatNum(r._projOther, 1)} / —</td>
+            <td class="col-center stat-dim">+${formatNum(r._projOther, 1)} / —</td>
             <td class="col-center"><span class="badge badge-neutral">Pending</span></td>
           </tr>
         `;
