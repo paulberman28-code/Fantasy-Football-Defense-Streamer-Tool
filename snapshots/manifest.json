@@ -10,5 +10,17 @@
     "file_csv": "snapshots/week_09_2026_snapshot.csv",
     "records_count": 32,
     "sha256": "a724c6c949de2205c74e01429bc970e31df5c60b3000130486ba7129e8b55de5"
+  },
+  {
+    "snapshot_id": "2026_week_10",
+    "season": 2026,
+    "week": 10,
+    "timestamp_utc": "2026-11-13T03:11:30.896377+00:00",
+    "timestamp_local": "November 12, 2026 at 09:11 PM",
+    "git_commit_hash": "83cf620318c917fec1f212c6dce14de3409c4589",
+    "file_json": "snapshots/week_10_2026_snapshot.json",
+    "file_csv": "snapshots/week_10_2026_snapshot.csv",
+    "records_count": 32,
+    "sha256": "93f24af6f6d31975c63b7e39871c7923fdd38ebbfa6535d80eaa098ad3be796d"
   }
 ]

@@ -1,33 +1,33 @@
-Defense,Team,W1,W2,W3,W4,W5,W6,W7,W8,GP,Last_2_Games,Last_4_Games,Total_pts,PPG,L4_PPG,Trend_Delta,Trend_Direction,Sacks,Takeaways,Bracket_Pts,Def_DQI,Def_Pressure_Rate%,Def_Pass_EPA,Def_3rd_Stop%,Week9_Opponent,Week9_Verdict
-Vikings (MIN),MIN,6,14,14,6,7,BYE,8,5,7,13,26,60,8.6,6.5,-2.1,Cooling,25,12,16,95.4,34.9,-0.207,73.3,vs Bills (BUF),Neutral
-Buccaneers (TB),TB,8,2,4,2,3,6,19,14,8,33,42,58,7.2,10.5,3.3,Surging,16,16,13,83.4,17.7,-0.161,71.2,@ Bears (CHI),Priority
-Steelers (PIT),PIT,15,5,3,4,1,7,6,17,8,23,31,58,7.2,7.8,0.6,Steady,26,13,13,81.9,24.2,-0.028,68.4,BYE (None),BYE
-Bengals (CIN),CIN,14,11,3,4,6,BYE,8,6,7,14,24,52,7.4,6.0,-1.4,Steady,23,11,10,78.2,24.1,0.025,57.8,@ Falcons (ATL),Speculative
-Seahawks (SEA),SEA,9,6,8,8,6,2,9,2,8,11,19,50,6.2,4.8,-1.4,Steady,18,13,13,84.6,25.2,-0.072,71.3,vs Cardinals (ARI),Speculative
-Titans (TEN),TEN,0,5,6,2,2,22,3,7,8,10,34,47,5.9,8.5,2.6,Surging,20,11,3,72.4,20.7,0.171,60.4,BYE (None),BYE
-Patriots (NE),NE,5,19,2,3,4,4,3,6,8,9,17,46,5.8,4.2,-1.6,Cooling,22,8,10,78.4,24.1,0.069,67.0,vs Packers (GB),Avoid
-Jaguars (JAX),JAX,10,1,13,4,1,1,BYE,16,7,17,22,46,6.6,5.5,-1.1,Steady,15,12,13,83.6,21.1,-0.05,69.6,@ Ravens (BAL),Speculative
-Bears (CHI),CHI,6,6,8,6,2,8,3,5,8,8,18,44,5.5,4.5,-1.0,Steady,22,11,9,81.2,24.0,0.011,78.2,vs Buccaneers (TB),Avoid
-Packers (GB),GB,4,4,1,5,12,6,3,8,8,11,29,43,5.4,7.2,1.8,Surging,22,15,6,79.2,21.2,-0.052,64.9,@ Patriots (NE),Neutral
-Raiders (LV),LV,10,8,7,2,2,2,3,9,8,12,16,43,5.4,4.0,-1.4,Steady,18,13,3,75.0,23.4,0.159,61.9,@ 49ers (SF),Avoid
-Broncos (DEN),DEN,3,6,12,1,8,8,3,2,8,5,21,43,5.4,5.2,-0.2,Steady,23,10,3,78.0,28.5,-0.024,60.2,@ Panthers (CAR),Priority
-Falcons (ATL),ATL,3,2,3,3,11,5,6,2,8,8,24,35,4.4,6.0,1.6,Surging,18,10,0,75.9,22.7,-0.006,61.7,vs Bengals (CIN),Avoid
-Commanders (WAS),WAS,3,2,9,4,4,3,BYE,10,7,13,21,35,5.0,5.2,0.2,Steady,16,10,3,70.6,19.4,0.085,60.6,vs Rams (LA),Avoid
-Texans (HOU),HOU,2,5,7,4,13,1,3,BYE,7,4,21,35,5.0,5.2,0.2,Steady,21,6,7,72.6,23.7,0.07,62.9,@ Chargers (LAC),Speculative
-49ers (SF),SF,5,7,2,1,15,4,0,BYE,7,4,20,34,4.9,5.0,0.1,Steady,15,7,6,75.1,19.0,0.039,66.4,vs Raiders (LV),Avoid
-Jets (NYJ),NYJ,7,4,2,3,13,2,2,1,8,3,18,34,4.2,4.5,0.3,Steady,20,8,6,73.1,21.7,0.155,62.4,@ Chiefs (KC),Avoid
-Browns (CLE),CLE,1,4,4,7,6,7,3,2,8,5,18,34,4.2,4.5,0.3,Steady,21,10,3,79.4,24.1,-0.015,63.9,@ Saints (NO),Avoid
-Panthers (CAR),CAR,3,21,3,1,BYE,3,0,3,7,3,7,34,4.9,1.8,-3.1,Cooling,11,10,7,67.8,14.5,0.056,57.9,vs Broncos (DEN),Avoid
-Saints (NO),NO,2,5,4,1,10,9,3,BYE,7,12,23,34,4.9,5.8,0.9,Steady,18,9,0,70.0,19.9,0.101,57.0,vs Browns (CLE),Priority
-Giants (NYG),NYG,1,3,5,11,11,1,1,BYE,7,2,24,33,4.7,6.0,1.3,Steady,9,9,3,67.9,13.9,0.063,63.3,@ Eagles (PHI),Avoid
-Chiefs (KC),KC,9,1,5,2,BYE,13,1,1,7,2,17,32,4.6,4.2,-0.4,Steady,9,10,13,73.5,15.4,0.027,66.1,vs Jets (NYJ),Avoid
-Lions (DET),DET,8,2,6,3,6,BYE,3,4,7,7,16,32,4.6,4.0,-0.6,Steady,24,7,0,67.4,24.6,0.199,56.9,@ Dolphins (MIA),Avoid
-Rams (LA),LA,1,10,2,4,3,1,2,7,8,9,13,30,3.8,3.2,-0.6,Steady,12,8,10,77.0,15.2,-0.062,71.3,@ Commanders (WAS),Avoid
-Ravens (BAL),BAL,4,3,3,3,4,8,1,3,8,4,16,29,3.6,4.0,0.4,Steady,17,8,3,75.6,22.4,0.057,63.2,vs Jaguars (JAX),Avoid
-Bills (BUF),BUF,5,4,3,3,2,1,BYE,10,7,11,16,28,4.0,4.0,0.0,Steady,15,9,3,71.2,23.4,0.14,62.9,@ Vikings (MIN),Avoid
-Cardinals (ARI),ARI,6,2,1,7,3,4,1,4,8,5,12,28,3.5,3.0,-0.5,Steady,19,8,0,67.1,20.9,0.246,64.1,@ Seahawks (SEA),Speculative
-Cowboys (DAL),DAL,3,1,0,2,1,4,3,13,8,16,21,27,3.4,5.2,1.8,Surging,15,6,0,64.1,19.1,0.226,55.0,@ Colts (IND),Speculative
-Colts (IND),IND,3,2,3,6,1,1,4,4,8,8,10,24,3.0,2.5,-0.5,Steady,16,4,3,71.2,19.3,0.096,70.6,vs Cowboys (DAL),Avoid
-Chargers (LAC),LAC,1,3,9,4,2,2,BYE,2,7,4,10,23,3.3,2.5,-0.8,Steady,12,11,0,81.7,22.3,-0.025,72.0,vs Texans (HOU),Avoid
-Dolphins (MIA),MIA,2,0,1,4,1,BYE,3,4,7,7,12,15,2.1,3.0,0.9,Steady,9,6,0,62.6,18.0,0.302,53.8,vs Lions (DET),Avoid
-Eagles (PHI),PHI,2,2,0,3,3,2,0,3,8,3,8,15,1.9,2.0,0.1,Steady,10,4,0,65.1,12.3,0.141,63.4,vs Giants (NYG),Avoid
+Defense,Team,W1,W2,W3,W4,W5,W6,W7,W8,W9,GP,Last_2_Games,Last_4_Games,Total_pts,PPG,L4_PPG,Trend_Delta,Trend_Direction,Sacks,Takeaways,Bracket_Pts,Def_DQI,Def_Pressure_Rate%,Def_Pass_EPA,Def_3rd_Stop%,Week10_Opponent,Week10_Verdict
+Vikings (MIN),MIN,6,14,14,6,7,BYE,8,5,5,8,10,25,65,8.1,6.2,-1.9,Cooling,29,13,16,93.1,35.4,-0.179,71.4,@ Packers (GB),Speculative
+Buccaneers (TB),TB,8,2,4,2,3,6,19,14,6,9,20,45,64,7.1,11.2,4.1,Surging,17,21,13,83.4,17.0,-0.168,69.0,BYE (None),BYE
+Seahawks (SEA),SEA,9,6,8,8,6,2,9,2,10,9,12,23,60,6.7,5.8,-0.9,Steady,21,13,20,83.2,24.5,-0.086,71.5,@ Raiders (LV),Avoid
+Steelers (PIT),PIT,15,5,3,4,1,7,6,17,BYE,8,23,31,58,7.2,7.8,0.6,Steady,26,13,13,81.0,24.2,-0.028,68.4,@ Bengals (CIN),Avoid
+Bears (CHI),CHI,6,6,8,6,2,8,3,5,12,9,17,28,56,6.2,7.0,0.8,Steady,26,13,9,83.0,24.4,-0.032,79.2,BYE (None),BYE
+Bengals (CIN),CIN,14,11,3,4,6,BYE,8,6,1,8,7,21,53,6.6,5.2,-1.4,Steady,23,12,10,76.4,21.5,0.029,59.3,vs Steelers (PIT),Avoid
+Jaguars (JAX),JAX,10,1,13,4,1,1,BYE,16,7,8,23,25,53,6.6,6.2,-0.4,Steady,16,15,16,84.8,21.3,-0.101,70.4,@ Titans (TEN),Avoid
+Packers (GB),GB,4,4,1,5,12,6,3,8,8,9,16,25,51,5.7,6.2,0.5,Steady,26,19,6,79.0,21.8,-0.073,64.3,vs Vikings (MIN),Speculative
+49ers (SF),SF,5,7,2,1,15,4,0,BYE,17,8,17,36,51,6.4,9.0,2.6,Surging,15,12,6,77.0,19.0,-0.008,64.1,@ Cowboys (DAL),Avoid
+Patriots (NE),NE,5,19,2,3,4,4,3,6,3,9,9,16,49,5.4,4.0,-1.4,Steady,25,8,10,75.9,23.8,0.14,67.7,@ Lions (DET),Avoid
+Broncos (DEN),DEN,3,6,12,1,8,8,3,2,5,9,7,18,48,5.3,4.5,-0.8,Steady,26,12,3,76.9,27.4,-0.001,61.2,BYE (None),BYE
+Titans (TEN),TEN,0,5,6,2,2,22,3,7,BYE,8,10,34,47,5.9,8.5,2.6,Surging,20,11,3,70.9,20.7,0.171,60.4,vs Jaguars (JAX),Avoid
+Texans (HOU),HOU,2,5,7,4,13,1,3,BYE,10,8,13,27,45,5.6,6.8,1.2,Steady,29,8,7,75.5,25.5,0.053,65.5,@ Browns (CLE),Priority
+Raiders (LV),LV,10,8,7,2,2,2,3,9,2,9,11,16,45,5.0,4.0,-1.0,Steady,19,14,3,72.1,22.5,0.185,59.7,vs Seahawks (SEA),Avoid
+Giants (NYG),NYG,1,3,5,11,11,1,1,BYE,11,8,12,24,44,5.5,6.0,0.5,Steady,16,10,6,70.9,17.9,0.006,65.1,vs Commanders (WAS),Speculative
+Browns (CLE),CLE,1,4,4,7,6,7,3,2,7,9,9,19,41,4.6,4.8,0.2,Steady,26,12,3,79.3,24.4,-0.021,63.0,vs Texans (HOU),Avoid
+Chiefs (KC),KC,9,1,5,2,BYE,13,1,1,9,8,10,24,41,5.1,6.0,0.9,Steady,14,11,16,75.4,17.4,-0.01,68.0,@ Falcons (ATL),Avoid
+Bills (BUF),BUF,5,4,3,3,2,1,BYE,10,12,8,22,25,40,5.0,6.2,1.2,Steady,17,12,10,76.0,24.4,0.046,66.4,@ Jets (NYJ),Avoid
+Lions (DET),DET,8,2,6,3,6,BYE,3,4,7,8,11,20,39,4.9,5.0,0.1,Steady,27,8,3,69.2,25.4,0.165,59.0,vs Patriots (NE),Avoid
+Saints (NO),NO,2,5,4,1,10,9,3,BYE,5,8,8,27,39,4.9,6.8,1.9,Surging,23,9,0,70.2,22.0,0.096,57.1,vs Panthers (CAR),Priority
+Rams (LA),LA,1,10,2,4,3,1,2,7,9,9,16,19,39,4.3,4.8,0.5,Steady,16,10,13,77.6,16.0,-0.069,72.3,@ Cardinals (ARI),Neutral
+Jets (NYJ),NYJ,7,4,2,3,13,2,2,1,4,9,5,9,38,4.2,2.2,-2.0,Cooling,22,10,6,73.1,22.4,0.161,61.2,vs Bills (BUF),Avoid
+Commanders (WAS),WAS,3,2,9,4,4,3,BYE,10,3,8,13,20,38,4.8,5.0,0.2,Steady,17,12,3,71.7,18.6,0.07,63.3,@ Giants (NYG),Speculative
+Falcons (ATL),ATL,3,2,3,3,11,5,6,2,2,9,4,15,37,4.1,3.8,-0.3,Steady,20,10,0,73.3,22.9,0.043,60.0,vs Chiefs (KC),Avoid
+Panthers (CAR),CAR,3,21,3,1,BYE,3,0,3,2,8,5,8,36,4.5,2.0,-2.5,Cooling,12,11,7,65.5,14.0,0.073,57.9,@ Saints (NO),Avoid
+Cowboys (DAL),DAL,3,1,0,2,1,4,3,13,4,9,17,24,31,3.4,6.0,2.6,Surging,17,8,0,65.6,18.7,0.17,57.8,vs 49ers (SF),Neutral
+Ravens (BAL),BAL,4,3,3,3,4,8,1,3,1,9,4,13,30,3.3,3.2,-0.1,Steady,17,9,3,74.3,21.0,0.076,63.5,vs Chargers (LAC),Speculative
+Colts (IND),IND,3,2,3,6,1,1,4,4,5,9,9,14,29,3.2,3.5,0.3,Steady,19,6,3,71.3,20.2,0.112,71.1,vs Dolphins (MIA),Speculative
+Cardinals (ARI),ARI,6,2,1,7,3,4,1,4,0,9,4,9,28,3.1,2.2,-0.9,Steady,19,8,0,65.6,19.9,0.248,63.3,vs Rams (LA),Avoid
+Chargers (LAC),LAC,1,3,9,4,2,2,BYE,2,2,8,4,8,25,3.1,2.0,-1.1,Steady,13,12,0,78.0,21.6,0.059,68.8,@ Ravens (BAL),Avoid
+Eagles (PHI),PHI,2,2,0,3,3,2,0,3,7,9,10,12,22,2.4,3.0,0.6,Steady,16,5,0,65.9,15.5,0.141,63.8,BYE (None),BYE
+Dolphins (MIA),MIA,2,0,1,4,1,BYE,3,4,4,8,8,12,19,2.4,3.0,0.6,Steady,12,7,0,65.0,19.8,0.264,57.0,@ Colts (IND),Speculative

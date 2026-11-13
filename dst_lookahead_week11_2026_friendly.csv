@@ -1,0 +1,27 @@
+Defense,Week 11 Opponent,Week 11 Verdict,Def Quality Index (DQI - Season),Def Pressure % (Season),Def Pass EPA (Season),3rd Down Stop % (Season),Takeaway Drive % (Season),RZ TD Allowed % (Season),Opponent L4 Points Allowed (Last 4),Opponent Total Points Allowed (Season),Opponent Starting QB,Look-Ahead Strategy Rationale
+HOU,Colts (Home),Priority,75.5,25.5,0.053,65.5,30.8,40.0,38,55,Daniel Jones,Elite home stash for Week 11. Gets Daniel Jones and Colts offense at home. Texans pass rush with Will Anderson Jr. and Danielle Hunter creates immense sack upside.
+BAL,Panthers (@ CAR),Priority,74.3,21.0,0.076,63.5,37.5,23.5,34,49,Bryce Young,Smash road matchup in Week 11 against Bryce Young and Panthers offense that has surrendered heavy sacks and turnovers all season.
+DAL,Titans (Home),Priority,65.6,18.7,0.17,57.8,29.6,40.9,23,40,Cam Ward,Dome matchup against rookie Cam Ward and Titans offense allowing an 8%+ sack rate in Week 11.
+BUF,Dolphins (Home),Priority,76.0,24.4,0.046,66.4,57.1,57.1,21,49,Malik Willis,High-ceiling divisional home game. Faces Dolphins and backup QBs in chilly Orchard Park weather in Week 11.
+KC,Cardinals (Home),Priority,75.4,17.4,-0.01,68.0,45.8,33.3,21,47,Gardner Minshew,Arrowhead home matchup in Week 11 against Gardner Minshew and Cardinals offense that takes sacks in bunches.
+CHI,Saints (Home),Priority,83.0,24.4,-0.032,79.2,40.7,40.0,21,42,Tyler Shough,"Soldier Field wind/cold advantage fresh off Week 10 bye, hosting Tyler Shough and Saints in Week 11."
+DEN,Raiders (Home),Priority,76.9,27.4,-0.001,61.2,48.0,50.0,21,36,Fernando Mendoza,Mile High home advantage fresh off Week 10 bye. Ranks top-2 in sacks and hosts Kirk Cousins and Raiders in Week 11.
+SF,Vikings (Home),Speculative,77.0,19.0,-0.008,64.1,50.0,20.0,30,48,Kirk Cousins,Hosts Carson Wentz and Vikings at Levi's Stadium in Week 11. Pressure rate upside against an injured Minnesota backfield.
+JAX,Giants (@ NYG),Speculative,84.8,21.3,-0.101,70.4,62.5,15.4,23,49,J.J. McCarthy,Travels to MetLife Stadium in Week 11 to target rookie J.J. McCarthy and Giants offense allowing 23+ D/ST points over recent weeks.
+LAC,Jets (Home),Speculative,78.0,21.6,0.059,68.8,40.7,19.0,19,41,Geno Smith,Hosts Geno Smith and Jets in SoFi Stadium. Chargers pass defense ranks top-5 in 3rd down stop percentage.
+PHI,Steelers (Home),Speculative,65.9,15.5,0.141,63.8,15.4,33.3,12,44,Aaron Rodgers,"Fresh off Week 10 bye, hosts Aaron Rodgers and Steelers in an in-state rivalry matchup with high turnover drive percentage."
+DET,Buccaneers (Home),Neutral,69.2,25.4,0.165,59.0,30.8,50.0,21,53,Baker Mayfield,Indoor game against Baker Mayfield and Buccaneers. Mayfield takes occasional sacks but runs an aggressive passing attack.
+NYJ,Chargers (@ LAC),Avoid,73.1,22.4,0.161,61.2,40.0,20.0,38,63,Justin Herbert,AVOID / DO NOT STASH: Traveling to Los Angeles to face Justin Herbert and Jim Harbaugh's physical offense.
+CAR,Ravens (Home),Avoid,65.5,14.0,0.073,57.9,42.3,47.1,32,53,Tyler Huntley,AVOID / DO NOT STASH: Faces Lamar Jackson/Ravens offense with dangerous dual-threat scoring capability.
+PIT,Eagles (@ PHI),Avoid,81.0,24.2,-0.028,68.4,44.4,25.0,27,48,Joe Milton III,AVOID / DO NOT STASH: Tough road battle in Philadelphia against explosive Eagles offense.
+CIN,Commanders (@ WAS),Avoid,76.4,21.5,0.029,59.3,50.0,15.8,21,32,Jayden Daniels,AVOID / DO NOT STASH: Road matchup against Jayden Daniels and explosive Commanders offense.
+ARI,Chiefs (@ KC),Avoid,65.6,19.9,0.248,63.3,26.9,46.7,17,25,Patrick Mahomes,AVOID / DO NOT STASH: Road test at Arrowhead Stadium against Patrick Mahomes and Chiefs.
+MIN,49ers (@ SF),Avoid,93.1,35.4,-0.179,71.4,48.1,23.1,17,20,Brock Purdy,AVOID / DO NOT STASH: Road matchup in Santa Clara against Brock Purdy and 49ers offensive weapons.
+NO,Bears (@ CHI),Avoid,70.2,22.0,0.096,57.1,30.0,31.8,16,48,Caleb Williams,AVOID / DO NOT STASH: Outdoor road game in Chicago against Caleb Williams and improving Bears offense.
+TEN,Cowboys (@ DAL),Avoid,70.9,20.7,0.171,60.4,45.8,29.4,15,28,Dak Prescott,AVOID / DO NOT STASH: Road game in Dallas against Dak Prescott in a high-total dome environment.
+TB,Lions (@ DET),Avoid,83.4,17.0,-0.168,69.0,83.3,31.2,15,24,Jared Goff,AVOID / DO NOT STASH: Facing Jared Goff and high-powered Lions offense at Ford Field.
+MIA,Bills (@ BUF),Avoid,65.0,19.8,0.264,57.0,31.8,33.3,13,29,Josh Allen,AVOID / DO NOT STASH: High-risk road matchup in Buffalo against Josh Allen and elite Bills offense (+0.250 EPA/play).
+WAS,Bengals (Home),Avoid,71.7,18.6,0.07,63.3,48.0,42.1,11,31,Joe Burrow,AVOID / DO NOT STASH: Faces Joe Burrow and elite Bengals passing attack with high implied total.
+NYG,Jaguars (Home),Avoid,70.9,17.9,0.006,65.1,34.5,50.0,9,22,Trevor Lawrence,AVOID / DO NOT STASH: Faces Trevor Lawrence and disciplined Jaguars offense yielding low turnover rates.
+IND,Texans (@ HOU),Avoid,71.3,20.2,0.112,71.1,22.2,46.7,6,27,C.J. Stroud,AVOID / DO NOT STASH: Road matchup against C.J. Stroud and Texans offense that surrenders league-low fantasy points.
+LV,Broncos (@ DEN),Avoid,72.1,22.5,0.185,59.7,58.3,35.3,6,21,Bo Nix,AVOID / DO NOT STASH: Traveling to Denver to face Bo Nix at altitude against a top-3 defense.

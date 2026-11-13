@@ -245,8 +245,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (appData.lookAheadStashes && appData.lookAheadStashes.length > 0) {
       const topStash = appData.lookAheadStashes[0];
       const stashCode = topStash.Stash_DST.split(' ')[0];
+      const stashOpp = topStash.W11_Opponent || topStash.W10_Opponent || '';
       document.getElementById('kpi-stash-name').innerHTML = `${renderTeamLogoHtml(stashCode, stashCode, 'lg')} <span>${topStash.Stash_DST} (Week ${meta.lookAheadWeek})</span>`;
-      document.getElementById('kpi-stash-sub').textContent = `${topStash.W10_Opponent} (${topStash.Opp_Last_4} pts L4)`;
+      document.getElementById('kpi-stash-sub').textContent = `${stashOpp} (${topStash.Opp_Last_4} pts L4)`;
     }
   }
 
@@ -295,9 +296,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  // 4. Filter Event Listeners (Removed - no filters)
+  // 4. Filter & Selector Event Listeners
   function setupFilterEvents() {
-    // Search and filter bars removed per user request
+    const auditWeekSelect = document.getElementById('audit-week-select');
+    if (auditWeekSelect) {
+      auditWeekSelect.addEventListener('change', () => {
+        renderAuditReport();
+      });
+    }
   }
 
   // 5. Sorting Event Listeners
@@ -413,6 +419,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Opponent Offense': 'Offense',
       'Opposing QB (Status)': 'Starting_QB',
       'Week 9 Verdict': 'Streamer_Tier',
+      'Week 10 Verdict': 'Streamer_Tier',
       'Streaming Tier': 'Streamer_Tier',
       'Opponent Points Allowed L4': 'Last_4_Games',
       'Opponent L4 Points Allowed': 'Last_4_Games',
@@ -427,6 +434,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       '3-Week Runway': 'Runway_Avg_Pts',
       'Runway (W9-W11)': 'Runway_Avg_Pts',
       '3-Week Runway (W9–W11)': 'Runway_Avg_Pts',
+      'Runway (W10-W12)': 'Runway_Avg_Pts',
+      '3-Week Runway (W10–W12)': 'Runway_Avg_Pts',
       'Vegas Implied Opponent Score': 'Opp_Implied_Pts',
       'Vegas Implied': 'Opp_Implied_Pts',
       'Projected Bracket Points': 'Exp_Bracket',
@@ -516,7 +525,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
           <td class="col-center"><span class="pts-highlight ${parseFloat(r.Last_4_Games) >= 30 ? 'pts-top' : ''}">${r.Last_4_Games} pts</span> <span class="stat-dim">(${(parseFloat(r.Last_4_Games) / 4).toFixed(1)}/g)</span></td>
           <td class="col-center"><span class="stat-bold">${r.Total_pts} pts</span></td>
-          <td class="col-center">${renderRunwayCell(r.Runway_W9_W11, r.Runway_Grade)}</td>
+          <td class="col-center">${renderRunwayCell(r.Runway_W10_W12 || r.Runway_W9_W11, r.Runway_Grade)}</td>
           <td class="col-center"><span class="pts-highlight ${parseFloat(r.Proj_Fantasy_Pts) >= 9 ? 'pts-top' : ''}">${formatNum(r.Proj_Fantasy_Pts, 1)}</span></td>
           <td class="col-center stat-bold">${formatNum(r.Predicted_Floor, 1)}</td>
           <td class="col-center">${formatNum(r.Proj_Sacks, 1)}</td>
@@ -565,7 +574,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                   <span class="m-card-team">${formatDstLabel(r.Target_DST)} <small style="font-weight:500; opacity:0.85;">vs ${r.Offense}</small></span>
                 </div>
                 <div style="display:flex; align-items:center; gap:0.4rem; margin-top:0.25rem;">
-                  ${renderRunwayCell(r.Runway_W9_W11, r.Runway_Grade)}
+                  ${renderRunwayCell(r.Runway_W10_W12 || r.Runway_W9_W11, r.Runway_Grade)}
                   <span class="badge ${tierClass}">${r.Streamer_Tier}</span>
                 </div>
               </div>
@@ -624,7 +633,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Defense': 'Stash_DST',
       'Stash Defense': 'Stash_DST',
       'Week 10 Opponent': 'W10_Opponent',
+      'Week 11 Opponent': 'W11_Opponent',
       'Week 10 Verdict': 'Tier_Rank',
+      'Week 11 Verdict': 'Tier_Rank',
       'Def Quality Index (DQI)': 'Stash_DQI',
       'Def Quality Index (Szn)': 'Stash_DQI',
       'Defensive Quality Index (DQI)': 'Stash_DQI',
@@ -650,9 +661,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     tbody.innerHTML = rows.map((s, idx) => {
       const tierBadgeClass = getTierClass(s.Stash_Tier);
-      const mobileOpp = s.W10_Opponent_Mobile || s.W10_Opponent;
+      const rawOpp = s.W11_Opponent || s.W10_Opponent || '';
+      const mobileOpp = s.W11_Opponent_Mobile || s.W10_Opponent_Mobile || rawOpp;
       const stashCode = s.Stash_DST;
-      const oppCode = extractTeamCode(s.W10_Opponent);
+      const oppCode = extractTeamCode(rawOpp);
 
       return `
         <tr data-stash-idx="${idx}" class="stash-row">
@@ -664,8 +676,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           </td>
           <td>
             <div class="team-cell">
-              ${renderTeamLogoHtml(oppCode, s.W10_Opponent)}
-              <span class="team-desktop">${s.W10_Opponent}</span><span class="team-mobile stat-bold">${mobileOpp}</span>
+              ${renderTeamLogoHtml(oppCode, rawOpp)}
+              <span class="team-desktop">${rawOpp}</span><span class="team-mobile stat-bold">${mobileOpp}</span>
             </div>
           </td>
           <td class="col-center"><span class="badge ${tierBadgeClass}">${s.Stash_Tier || 'Neutral'}</span></td>
@@ -683,12 +695,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       `;
     }).join('');
 
-    // Render Mobile Card View for Week 10 Stashes
+    // Render Mobile Card View for Look-Ahead Stashes
     const w10CardsContainer = document.getElementById('week10-cards-container');
     if (w10CardsContainer) {
       w10CardsContainer.innerHTML = rows.map((s, idx) => {
         const tierBadgeClass = getTierClass(s.Stash_Tier);
-        const mobileOpp = s.W10_Opponent_Mobile || s.W10_Opponent;
+        const rawOpp = s.W11_Opponent || s.W10_Opponent || '';
+        const mobileOpp = s.W11_Opponent_Mobile || s.W10_Opponent_Mobile || rawOpp;
         const matchupLabel = mobileOpp.startsWith('@') ? `(${mobileOpp})` : `vs ${mobileOpp}`;
         const stashCode = s.Stash_DST;
 
@@ -855,7 +868,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     return getTierClass(tier);
   }
 
-  // 9. Render Tab 3: Historical Offense Vulnerability (W1–W8)
+  // 9. Render Tab 3: Historical Offense Vulnerability (W1–W9)
   function renderHistory() {
     const tbody = document.getElementById('history-tbody');
     if (!tbody || !appData.historicalOffenses) return;
@@ -866,13 +879,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     const keyMap = {
       'Offense': 'Offense',
       'Week 1': 'W1', 'Week 2': 'W2', 'Week 3': 'W3', 'Week 4': 'W4',
-      'Week 5': 'W5', 'Week 6': 'W6', 'Week 7': 'W7', 'Week 8': 'W8',
+      'Week 5': 'W5', 'Week 6': 'W6', 'Week 7': 'W7', 'Week 8': 'W8', 'Week 9': 'W9',
       'Last 2 Games Played': 'Last_2_Games',
       'Last 4 Games Played': 'Last_4_Games',
       'Total Points Allowed (W1-8)': 'Total_pts',
+      'Total Points Allowed (W1-9)': 'Total_pts',
+      'Total Pts (W1–9)': 'Total_pts',
+      'Total Pts (W1-9)': 'Total_pts',
       'Streaming Defense': 'Target_DST',
+      'Week 9 Opponent': 'Target_DST',
+      'Week 10 Opponent': 'Target_DST',
       'Quarterback & Status': 'Starting_QB',
       'Week 9 Verdict': 'Streamer_Tier',
+      'Week 10 Verdict': 'Streamer_Tier',
       'Streaming Tier': 'Streamer_Tier'
     };
     const targetKey = keyMap[sortConfig.column] || sortConfig.column;
@@ -898,6 +917,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           ${renderHeatCell(h.W6)}
           ${renderHeatCell(h.W7)}
           ${renderHeatCell(h.W8)}
+          ${renderHeatCell(h.W9)}
           <td class="col-center"><span class="stat-bold ${h.Last_2_Games >= 15 ? 'pts-top' : ''}">${h.Last_2_Games}</span></td>
           <td class="col-center"><span class="stat-bold ${h.Last_4_Games >= 30 ? 'pts-top' : ''}">${h.Last_4_Games}</span></td>
           <td class="col-center"><span class="pts-highlight ${h.Total_pts >= 45 ? 'pts-top' : ''}">${h.Total_pts}</span></td>
@@ -943,23 +963,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     return `<td class="col-wk excel-cell" style="background-color: ${bg} !important; color: ${textColor} !important; font-weight: 700;">${num}</td>`;
   }
 
-  // 9b. Render Tab: Historical Defense Performance & Momentum (W1–W8)
+  // 9b. Render Tab: Historical Defense Performance & Momentum (W1–W9)
   function renderDefenseHistory() {
     const tbody = document.getElementById('def-history-tbody');
     if (!tbody || !appData.historicalDefenses) return;
 
     let rows = [...appData.historicalDefenses];
 
-    const sortConfig = sortStates['def-history'] || { column: 'Total Points (W1-8)', ascending: false };
+    const sortConfig = sortStates['def-history'] || { column: 'Total Points (W1-9)', ascending: false };
     const keyMap = {
       'Defense': 'Defense',
       'Week 1': 'W1', 'Week 2': 'W2', 'Week 3': 'W3', 'Week 4': 'W4',
-      'Week 5': 'W5', 'Week 6': 'W6', 'Week 7': 'W7', 'Week 8': 'W8',
+      'Week 5': 'W5', 'Week 6': 'W6', 'Week 7': 'W7', 'Week 8': 'W8', 'Week 9': 'W9',
       'Last 2 Games Played': 'Last_2_Games',
       'Last 4 Games Played': 'Last_4_Games',
       'Total Points (W1-8)': 'Total_pts',
+      'Total Points (W1-9)': 'Total_pts',
       'Total Points': 'Total_pts',
       'Total Pts (W1-8)': 'Total_pts',
+      'Total Pts (W1-9)': 'Total_pts',
+      'Total Pts (W1–9)': 'Total_pts',
       'Fantasy PPG': 'PPG',
       'PPG': 'PPG',
       'Trend Momentum': 'Trend_Delta',
@@ -973,13 +996,18 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Takeaways': 'Takeaways',
       'Week 9 Opponent': 'Week9_Opponent',
       'Week 9 Matchup': 'Week9_Opponent',
-      'Week 9 Verdict': 'Week9_Verdict'
+      'Week 9 Verdict': 'Week9_Verdict',
+      'Week 10 Opponent': 'Week10_Opponent',
+      'Week 10 Matchup': 'Week10_Opponent',
+      'Week 10 Verdict': 'Week10_Verdict'
     };
     const targetKey = keyMap[sortConfig.column] || sortConfig.column;
     rows = sortData(rows, targetKey, sortConfig.ascending);
 
     tbody.innerHTML = rows.map(d => {
-      const tierClass = getTierClass(d.Week9_Verdict);
+      const oppMatchup = d.Week10_Opponent || d.Week9_Opponent || 'BYE';
+      const verdict = d.Week10_Verdict || d.Week9_Verdict || 'Neutral';
+      const tierClass = getTierClass(verdict);
       let trendBadge = '';
       if (d.Trend_Delta >= 1.5) {
         trendBadge = `<span class="badge badge-priority" title="L4 PPG is +${d.Trend_Delta} above season average">▲ +${d.Trend_Delta} Surging</span>`;
@@ -1005,6 +1033,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           ${renderDefHeatCell(d.W6)}
           ${renderDefHeatCell(d.W7)}
           ${renderDefHeatCell(d.W8)}
+          ${renderDefHeatCell(d.W9)}
           <td class="col-center"><span class="stat-bold ${d.Last_2_Games >= 18 ? 'pts-top' : ''}">${d.Last_2_Games}</span></td>
           <td class="col-center"><span class="stat-bold ${d.Last_4_Games >= 32 ? 'pts-top' : ''}">${d.Last_4_Games}</span> <span class="stat-dim">(${d.L4_PPG}/g)</span></td>
           <td class="col-center"><span class="pts-highlight ${d.Total_pts >= 50 ? 'pts-top' : ''}">${d.Total_pts}</span></td>
@@ -1015,8 +1044,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center ${parseFloat(d.Def_Pass_EPA) < 0 ? 'pts-top stat-bold' : ''}">${d.Def_Pass_EPA !== '-' ? (parseFloat(d.Def_Pass_EPA) > 0 ? '+' : '') + formatNum(d.Def_Pass_EPA, 3) : '—'}</td>
           <td class="col-center stat-bold">${d.Sacks}</td>
           <td class="col-center stat-bold">${d.Takeaways}</td>
-          <td>${d.Week9_Opponent}</td>
-          <td class="col-center"><span class="badge ${tierClass}">${d.Week9_Verdict}</span></td>
+          <td>${oppMatchup}</td>
+          <td class="col-center"><span class="badge ${tierClass}">${verdict}</span></td>
         </tr>
       `;
     }).join('');
@@ -1132,20 +1161,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 1. Populate Snapshot Transparency Ledger
     if (activeSnap) {
       const statusEl = document.getElementById('audit-ledger-status');
+      const isSnapAudited = completedAudits.some(a => a.week === activeSnap.week);
       if (statusEl) {
-        statusEl.textContent = completedAudits.length > 0 ? `✅ Week ${activeSnap.week} Audited` : `⏳ Week ${activeSnap.week} Baseline Locked`;
-        statusEl.className = `ledger-badge ${completedAudits.length > 0 ? 'badge-priority' : 'badge-speculative'}`;
+        statusEl.textContent = isSnapAudited ? `✅ Week ${activeSnap.week} Audited` : `⏳ Week ${activeSnap.week} Baseline Locked`;
+        statusEl.className = `ledger-badge ${isSnapAudited ? 'badge-priority' : 'badge-speculative'}`;
       }
       const idEl = document.getElementById('audit-ledger-id');
-      if (idEl) idEl.textContent = activeSnap.snapshot_id || '2026_week_09';
+      if (idEl) idEl.textContent = activeSnap.snapshot_id || `2026_week_${activeSnap.week}`;
       const timeEl = document.getElementById('audit-ledger-time');
-      if (timeEl) timeEl.textContent = activeSnap.timestamp_local || 'November 06, 2026 at 10:12 AM';
+      if (timeEl) timeEl.textContent = activeSnap.timestamp_local || 'Frozen Pre-Kickoff';
       const commitEl = document.getElementById('audit-ledger-commit');
       if (commitEl) commitEl.textContent = (activeSnap.git_commit_hash || '').slice(0, 10);
       const shaEl = document.getElementById('audit-ledger-sha');
       if (shaEl) shaEl.textContent = (activeSnap.sha256 || '').slice(0, 16) + '...';
       const countEl = document.getElementById('audit-ledger-count');
-      if (countEl) countEl.textContent = `${activeSnap.records_count || 30} Active Defenses`;
+      if (countEl) countEl.textContent = `${activeSnap.records_count || 28} Active Defenses`;
     }
 
     // 2. Cumulative Season KPIs
@@ -1153,6 +1183,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const priorityEl = document.getElementById('audit-kpi-priority');
     const floorEl = document.getElementById('audit-kpi-floor');
     const matchupsEl = document.getElementById('audit-kpi-matchups');
+
+    const activeWeekNum = (appData.meta && appData.meta.currentWeek) || 10;
 
     if (completedAudits.length > 0) {
       // Real mathematical aggregations across all completed audits
@@ -1164,13 +1196,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (maeEl) maeEl.textContent = `${weightedMae} pts`;
       if (priorityEl) priorityEl.textContent = `${avgPriorityHit}%`;
       if (floorEl) floorEl.textContent = `${avgFloorRel}%`;
-      if (matchupsEl) matchupsEl.textContent = `${totalMatchups} (${completedAudits.length} wks)`;
+      if (matchupsEl) matchupsEl.textContent = `${totalMatchups} (${completedAudits.length} wk${completedAudits.length > 1 ? 's' : ''})`;
     } else {
       // Pre-game zero-hardcoding state: strictly grounded in live status
       if (maeEl) maeEl.textContent = 'Pending';
       if (priorityEl) priorityEl.textContent = 'Pending';
       if (floorEl) floorEl.textContent = 'Pending';
-      if (matchupsEl) matchupsEl.textContent = `0 Audited (W9 Locked)`;
+      if (matchupsEl) matchupsEl.textContent = `0 Audited (W${activeWeekNum} Locked)`;
     }
 
     // 3. Weekly Report Cards Summary Table
@@ -1180,23 +1212,32 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       // Completed weeks from audits/
       completedAudits.forEach(aud => {
-        const gradeClass = (aud.summary.weekly_letter_grade || '').startsWith('A') ? 'badge-priority' : ((aud.summary.weekly_letter_grade || '').startsWith('B') ? 'badge-speculative' : 'badge-neutral');
+        const gradeStr = aud.summary.grade || aud.summary.weekly_letter_grade || 'C (Average)';
+        const gradeClass = gradeStr.startsWith('A') ? 'badge-priority' : (gradeStr.startsWith('B') ? 'badge-speculative' : (gradeStr.startsWith('C') ? 'badge-neutral' : 'badge-avoid'));
+        const priorityRecs = (aud.matchup_reconciliation || []).filter(m => m.tier === 'Priority');
+        const priorityTeams = aud.summary.priority_teams || (priorityRecs.length > 0 ? priorityRecs.map(m => m.dst).join(', ') : '—');
+        const priorityAvgProj = aud.summary.priority_avg_proj !== undefined ? aud.summary.priority_avg_proj : 
+          (priorityRecs.length > 0 ? (priorityRecs.reduce((a, b) => a + (parseFloat(b.proj_pts) || 0), 0) / priorityRecs.length) : null);
+        const priorityAvgActual = aud.summary.priority_avg_actual !== undefined ? aud.summary.priority_avg_actual :
+          (priorityRecs.length > 0 ? (priorityRecs.reduce((a, b) => a + (parseFloat(b.actual_pts) || 0), 0) / priorityRecs.length) : null);
+        const priorityProjActualText = priorityAvgProj !== null ? `${formatNum(priorityAvgProj, 1)} / ${formatNum(priorityAvgActual, 1)} pts` : '—';
+
         summaryRowsHtml += `
           <tr>
             <td class="stat-bold">Week ${aud.week}</td>
             <td><span class="badge badge-priority">✅ Finalized</span></td>
-            <td>${aud.summary.priority_teams || '—'}</td>
-            <td class="col-center stat-bold">${formatNum(aud.summary.priority_avg_proj, 1)} / ${formatNum(aud.summary.priority_avg_actual, 1)} pts</td>
+            <td>${priorityTeams}</td>
+            <td class="col-center stat-bold">${priorityProjActualText}</td>
             <td class="col-center"><span class="pts-highlight">${formatNum(aud.summary.priority_hit_rate_pct, 1)}%</span></td>
             <td class="col-center stat-bold">${formatNum(aud.summary.mae, 2)} pts</td>
             <td class="col-center">${formatNum(aud.summary.floor_reliability_pct, 1)}%</td>
-            <td class="col-center"><span class="badge ${gradeClass}">${aud.summary.weekly_letter_grade}</span></td>
+            <td class="col-center"><span class="badge ${gradeClass}">${gradeStr}</span></td>
           </tr>
         `;
       });
 
-      // Current In-Progress / Locked Week (Week 9)
-      const activeWeek = (appData.meta && appData.meta.currentWeek) || 9;
+      // Current In-Progress / Locked Week
+      const activeWeek = (appData.meta && appData.meta.currentWeek) || 10;
       const isCurrentAudited = completedAudits.some(a => a.week === activeWeek);
 
       if (!isCurrentAudited && appData.weekMatchups) {
@@ -1208,7 +1249,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         summaryRowsHtml += `
           <tr>
             <td class="stat-bold">Week ${activeWeek}</td>
-            <td><span class="badge badge-speculative">⏳ Games In Progress</span></td>
+            <td><span class="badge badge-speculative">⏳ Baseline Locked (Pending)</span></td>
             <td>${priorityNames || '—'}</td>
             <td class="col-center stat-bold">${avgPriorityProj} pts / Pending</td>
             <td class="col-center stat-dim">Awaiting final</td>
@@ -1224,43 +1265,77 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 4. Granular Team-by-Team Reconciliation Table
     const matchupsTbody = document.getElementById('audit-matchups-tbody');
-    if (matchupsTbody && appData.weekMatchups) {
-      const activeMatchups = appData.weekMatchups.filter(m => m.Target_DST && !m.Target_DST.includes('BYE'));
+    if (matchupsTbody) {
+      // Determine which week to display in granular reconciliation table
+      const weekSelectEl = document.getElementById('audit-week-select');
+      let targetAuditWeek = 9;
+      if (weekSelectEl) {
+        targetAuditWeek = parseInt(weekSelectEl.value, 10) || 9;
+      } else if (completedAudits.length > 0) {
+        targetAuditWeek = completedAudits[completedAudits.length - 1].week;
+      } else {
+        targetAuditWeek = activeWeekNum;
+      }
 
-      // Check if we have a completed audit for this week
-      const currentWeekNum = (appData.meta && appData.meta.currentWeek) || 9;
-      const weekAudit = completedAudits.find(a => a.week === currentWeekNum);
+      const weekAudit = completedAudits.find(a => a.week === targetAuditWeek);
+      let enrichedRows = [];
 
-      let enrichedRows = activeMatchups.map(r => {
-        const targetCode = r.Target_DST ? r.Target_DST.split(' ')[0] : '';
-        const match = weekAudit && weekAudit.matchup_reconciliation ? 
-          weekAudit.matchup_reconciliation.find(m => m.dst === targetCode) : null;
-        
-        const toProj = (parseFloat(r.Proj_INTs || 0) + parseFloat(r.Proj_Fumbles || 0));
-        const projSacks = parseFloat(match ? match.proj_sacks : r.Proj_Sacks) || 0;
-        const projTO = parseFloat(match ? match.proj_to : toProj) || 0;
-        const projBracket = parseFloat(match ? match.proj_bracket : r.Exp_Bracket) || 0;
-        const totalProj = parseFloat(match ? match.proj_pts : r.Proj_Fantasy_Pts) || 0;
-        const projOther = match && match.proj_other !== undefined ? 
-          parseFloat(match.proj_other) : Math.max(0, parseFloat((totalProj - (projSacks + projTO + projBracket)).toFixed(1)));
-        const actualOther = match && match.actual_other !== undefined ? parseFloat(match.actual_other) : null;
+      if (weekAudit && weekAudit.matchup_reconciliation) {
+        // Render completed official audited week outcomes
+        enrichedRows = weekAudit.matchup_reconciliation.map(m => {
+          return {
+            Target_DST: m.dst,
+            Offense: m.opp,
+            Streamer_Tier: m.tier,
+            _auditMatch: m,
+            _projPts: parseFloat(m.proj_pts) || 0,
+            _actualPts: m.actual_pts,
+            _projError: m.error_diff,
+            _floor: parseFloat(m.floor) || 0,
+            _floorMet: m.floor_met ? 1 : 0,
+            _projSacks: parseFloat(m.proj_sacks) || 0,
+            _actualSacks: m.actual_sacks,
+            _projTO: parseFloat(m.proj_to) || 0,
+            _actualTO: m.actual_to,
+            _projBracket: parseFloat(m.proj_bracket) || 0,
+            _actualBracket: m.actual_bracket,
+            _projOther: parseFloat(m.proj_other) || 0,
+            _actualOther: parseFloat(m.actual_other !== undefined ? m.actual_other : 0),
+            _outcome: m.hit ? 'HIT' : 'MISS',
+            _isAudited: true
+          };
+        });
+      } else if (appData.weekMatchups) {
+        // Render pre-game locked baseline for active/pending week
+        const activeMatchups = appData.weekMatchups.filter(m => m.Target_DST && !m.Target_DST.includes('BYE'));
+        enrichedRows = activeMatchups.map(r => {
+          const totalProj = parseFloat(r.Proj_Fantasy_Pts) || 0;
+          const projSacks = parseFloat(r.Proj_Sacks) || 0;
+          const projTO = parseFloat(r.Proj_INTs || 0) + parseFloat(r.Proj_Fumbles || 0);
+          const projBracket = parseFloat(r.Exp_Bracket) || 0;
+          const projOther = Math.max(0, parseFloat((totalProj - (projSacks + projTO + projBracket)).toFixed(1)));
 
-        return {
-          ...r,
-          _auditMatch: match,
-          _projPts: totalProj,
-          _actualPts: match && match.actual_pts !== undefined ? match.actual_pts : null,
-          _projError: match && match.error_diff !== undefined ? match.error_diff : null,
-          _floor: parseFloat(match ? match.floor : r.Predicted_Floor) || 0,
-          _floorMet: match ? (match.floor_met ? 1 : 0) : null,
-          _projSacks: projSacks,
-          _projTO: projTO,
-          _projBracket: projBracket,
-          _projOther: projOther,
-          _actualOther: actualOther,
-          _outcome: match ? (match.hit ? 'HIT' : 'MISS') : 'Pending'
-        };
-      });
+          return {
+            ...r,
+            _auditMatch: null,
+            _projPts: totalProj,
+            _actualPts: null,
+            _projError: null,
+            _floor: parseFloat(r.Predicted_Floor) || 0,
+            _floorMet: null,
+            _projSacks: projSacks,
+            _actualSacks: null,
+            _projTO: projTO,
+            _actualTO: null,
+            _projBracket: projBracket,
+            _actualBracket: null,
+            _projOther: projOther,
+            _actualOther: null,
+            _outcome: 'Pending',
+            _isAudited: false
+          };
+        });
+      }
 
       // Sort according to active audit sort state (defaults to Projected Points descending)
       const sortConfig = sortStates.audit || { column: 'Projected Points', ascending: false };
@@ -1285,14 +1360,26 @@ document.addEventListener('DOMContentLoaded', async () => {
       matchupsTbody.innerHTML = enrichedRows.map(r => {
         const tierClass = getTierClass(r.Streamer_Tier);
         const match = r._auditMatch;
+        const defCode = r.Target_DST.split(' ')[0];
+        const oppCode = extractTeamCode(r.Offense);
 
         if (match) {
           const errorSign = match.error_diff > 0 ? '+' : '';
           const errorClass = Math.abs(match.error_diff) <= 2.5 ? 'pts-top' : (Math.abs(match.error_diff) >= 5.0 ? 'stat-dim' : '');
           return `
             <tr>
-              <td class="col-sticky"><span class="stat-bold">${formatDstLabel(r.Target_DST)}</span></td>
-              <td>${r.Offense}</td>
+              <td class="col-sticky">
+                <div class="team-cell">
+                  ${renderTeamLogoHtml(defCode, r.Target_DST)}
+                  <span class="stat-bold">${formatDstLabel(r.Target_DST)}</span>
+                </div>
+              </td>
+              <td>
+                <div class="team-cell">
+                  ${renderTeamLogoHtml(oppCode, r.Offense)}
+                  <span>${r.Offense}</span>
+                </div>
+              </td>
               <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
               <td class="col-center stat-bold">${formatNum(match.proj_pts, 1)}</td>
               <td class="col-center pts-highlight">${formatNum(match.actual_pts, 1)}</td>
@@ -1302,7 +1389,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               <td class="col-center">${formatNum(match.proj_sacks, 1)} / ${match.actual_sacks}</td>
               <td class="col-center">${formatNum(match.proj_to, 1)} / ${match.actual_to}</td>
               <td class="col-center">${formatNum(match.proj_bracket, 1)} / ${match.actual_bracket}</td>
-              <td class="col-center">${formatNum(r._projOther, 1)} / ${formatNum(r._actualOther !== null ? r._actualOther : 0, 1)}</td>
+              <td class="col-center">${formatNum(r._projOther, 1)} / ${formatNum(match.actual_other !== undefined ? match.actual_other : 0, 1)}</td>
               <td class="col-center"><span class="badge ${match.hit ? 'badge-priority' : 'badge-avoid'}">${match.hit ? 'HIT' : 'MISS'}</span></td>
             </tr>
           `;
@@ -1312,8 +1399,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         const toProj = (parseFloat(r.Proj_INTs || 0) + parseFloat(r.Proj_Fumbles || 0)).toFixed(1);
         return `
           <tr>
-            <td class="col-sticky"><span class="stat-bold">${formatDstLabel(r.Target_DST)}</span></td>
-            <td>${r.Offense}</td>
+            <td class="col-sticky">
+              <div class="team-cell">
+                ${renderTeamLogoHtml(defCode, r.Target_DST)}
+                <span class="stat-bold">${formatDstLabel(r.Target_DST)}</span>
+              </div>
+            </td>
+            <td>
+              <div class="team-cell">
+                ${renderTeamLogoHtml(oppCode, r.Offense)}
+                <span>${r.Offense}</span>
+              </div>
+            </td>
             <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
             <td class="col-center stat-bold pts-highlight">${formatNum(r.Proj_Fantasy_Pts, 1)}</td>
             <td class="col-center"><span class="badge badge-neutral">⏳ Game Pending</span></td>
@@ -1501,7 +1598,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const kpiRow = modal.querySelector('.modal-kpi-row');
     if (kpiRow) kpiRow.style.display = 'none';
 
-    document.getElementById('modal-matchup-title').innerHTML = `<div class="team-cell" style="display:inline-flex;">${renderTeamLogoHtml(data.Stash_DST, data.Stash_DST, 'lg')} <span>Week 10 Stash: ${data.Stash_DST} vs ${data.W10_Opponent}</span></div>`;
+    const rawOpp = data.W11_Opponent || data.W10_Opponent || '';
+    const currentWk = (appData.meta && appData.meta.currentWeek) || 10;
+    const lookAheadWk = (appData.meta && appData.meta.lookAheadWeek) || 11;
+    document.getElementById('modal-matchup-title').innerHTML = `<div class="team-cell" style="display:inline-flex;">${renderTeamLogoHtml(data.Stash_DST, data.Stash_DST, 'lg')} <span>Week ${lookAheadWk} Stash: ${data.Stash_DST} vs ${rawOpp}</span></div>`;
     document.getElementById('modal-tier-badge').textContent = data.Stash_Tier || 'Neutral';
     document.getElementById('modal-tier-badge').className = `badge tier-badge ${getTierClass(data.Stash_Tier)}`;
 
@@ -1527,7 +1627,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const rzEl = document.getElementById('modal-def-rz-td');
     if (rzEl) rzEl.textContent = (data['Def_RZ_TD_Allowed%'] !== undefined && data['Def_RZ_TD_Allowed%'] !== '-') ? `${formatNum(data['Def_RZ_TD_Allowed%'], 1)}%` : '—';
     const defInjEl = document.getElementById('modal-def-injuries');
-    if (defInjEl) defInjEl.textContent = 'See Week 9 Tab';
+    if (defInjEl) defInjEl.textContent = `See Week ${currentWk} Tab`;
 
     document.getElementById('modal-sp').textContent = '—';
     const qbFumbEl = document.getElementById('modal-qb-fumble');
@@ -1574,7 +1674,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const priorityTargets = sorted.filter(m => (m.Streamer_Tier || '').includes('Priority') && m !== topSmash);
         const speculativeTargets = sorted.filter(m => (m.Streamer_Tier || '').includes('Speculative')).slice(0, 4);
 
-        const meta = appData.meta || { currentWeek: 9, lastUpdated: 'Nov 06, 2026' };
+        const meta = appData.meta || { currentWeek: 10, lookAheadWeek: 11, lastUpdated: 'Nov 12, 2026' };
         const topStash = (appData.lookAheadStashes && appData.lookAheadStashes[0]) || null;
         const windy = active.filter(m => (m.Gametime_Weather || '').toLowerCase().includes('wind') || (m.Gametime_Weather || '').toLowerCase().includes('gust'));
 
@@ -1603,8 +1703,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         if (topStash) {
-          text += `🔮 TOP WEEK 10 LOOK-AHEAD STASH:\n`;
-          text += `• ${topStash.Stash_DST} (W10: ${topStash.W10_Opponent}) — ${topStash.Opp_Last_4} pts allowed L4\n\n`;
+          const stashOpp = topStash.W11_Opponent || topStash.W10_Opponent || '';
+          text += `🔮 TOP WEEK ${meta.lookAheadWeek || 11} LOOK-AHEAD STASH:\n`;
+          text += `• ${topStash.Stash_DST} (W${meta.lookAheadWeek || 11}: ${stashOpp}) — ${topStash.Opp_Last_4} pts allowed L4\n\n`;
         }
 
         if (windy.length > 0) {
@@ -1768,7 +1869,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         },
         {
           label: '3-Week Runway Grade',
-          getVal: (m) => renderRunwayCell(m.Runway_W9_W11, m.Runway_Grade),
+          getVal: (m) => renderRunwayCell(m.Runway_W10_W12 || m.Runway_W9_W11, m.Runway_Grade),
           winner: 0
         },
         {
