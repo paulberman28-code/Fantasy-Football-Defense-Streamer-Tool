@@ -8137,5 +8137,32008 @@ window.DEFENSE_DATA = {
         ]
       }
     ]
+  },
+  "positionalVulnerability": {
+    "QB": {
+      "position": "QB",
+      "league_avg_ppg": 15.7,
+      "league_median": 14.9,
+      "p25_stingy": 11.5,
+      "p75_vulnerable": 20.2,
+      "p90_smash": 24.3,
+      "teams": [
+        {
+          "Defense": "Lions (DET)",
+          "Team": "DET",
+          "Position": "QB",
+          "W1": 23.2,
+          "W1_Int": 22,
+          "W1_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "410 Pass Yds (3 TD, 2 INT) + 8 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Tyler Shough",
+                "pts_frac": 23.2,
+                "pts_int": 22,
+                "stat_line": "410 Pass Yds, 3 Pass TD, 2 INT \u2022 8 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W2": 37.8,
+          "W2_Int": 36,
+          "W2_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "248 Pass Yds (3 TD, 0 INT) + 69 Rush Yds (2 TD)",
+            "players": [
+              {
+                "name": "Josh Allen",
+                "pts_frac": 37.8,
+                "pts_int": 36,
+                "stat_line": "248 Pass Yds, 3 Pass TD \u2022 69 Rush Yds, 2 Rush TD"
+              }
+            ]
+          },
+          "W3": 23.0,
+          "W3_Int": 22,
+          "W3_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "321 Pass Yds (3 TD, 0 INT) + 12 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Geno Smith",
+                "pts_frac": 23.0,
+                "pts_int": 22,
+                "stat_line": "321 Pass Yds, 3 Pass TD \u2022 12 Rush Yds \u2022 1 Pass 2PT \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W4": 19.5,
+          "W4_Int": 19,
+          "W4_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "329 Pass Yds (2 TD, 0 INT) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bryce Young",
+                "pts_frac": 19.5,
+                "pts_int": 19,
+                "stat_line": "329 Pass Yds, 2 Pass TD \u2022 3 Rush Yds"
+              }
+            ]
+          },
+          "W5": 22.3,
+          "W5_Int": 21,
+          "W5_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "292 Pass Yds (3 TD, 1 INT) + 19 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jacoby Brissett",
+                "pts_frac": 22.3,
+                "pts_int": 21,
+                "stat_line": "292 Pass Yds, 3 Pass TD, 1 INT \u2022 19 Rush Yds \u2022 7 Rec Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 16.0,
+          "W7_Int": 15,
+          "W7_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "274 Pass Yds (2 TD, 1 INT)",
+            "players": [
+              {
+                "name": "Jordan Love",
+                "pts_frac": 16.0,
+                "pts_int": 15,
+                "stat_line": "274 Pass Yds, 2 Pass TD, 1 INT"
+              }
+            ]
+          },
+          "W8": 17.9,
+          "W8_Int": 17,
+          "W8_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "210 Pass Yds (2 TD, 1 INT) + 35 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kyler Murray",
+                "pts_frac": 17.9,
+                "pts_int": 17,
+                "stat_line": "210 Pass Yds, 2 Pass TD, 1 INT \u2022 35 Rush Yds \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W9": 4.8,
+          "W9_Int": 4,
+          "W9_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "128 Pass Yds (0 TD, 1 INT) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Malik Willis",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "128 Pass Yds, 1 INT \u2022 7 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 22.7,
+          "Last_4_Games": 61.0,
+          "L4_PPG": 15.2,
+          "Total_pts": 164.5,
+          "PPG": 20.6,
+          "Last_2_Games_Int": 21,
+          "Last_4_Games_Int": 57,
+          "Total_pts_Int": 156,
+          "PPG_Int": 19.5,
+          "Stat_Summary": "2212 Pass Yds, 18 Pass TD, 153 Rush Yds, 2 Rush TD (6 INT)",
+          "Week10_Opponent": "vs Patriots (NE)",
+          "Week10_Offense": "Patriots (NE)",
+          "Vuln_Rank": 1,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Raiders (LV)",
+          "Team": "LV",
+          "Position": "QB",
+          "W1": 17.7,
+          "W1_Int": 16,
+          "W1_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "220 Pass Yds (0 TD, 1 INT) + 39 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Malik Willis",
+                "pts_frac": 17.7,
+                "pts_int": 16,
+                "stat_line": "220 Pass Yds, 1 INT \u2022 39 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W2": 8.9,
+          "W2_Int": 8,
+          "W2_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "192 Pass Yds (1 TD, 2 INT) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Justin Herbert",
+                "pts_frac": 8.9,
+                "pts_int": 8,
+                "stat_line": "192 Pass Yds, 1 Pass TD, 2 INT \u2022 2 Rush Yds"
+              }
+            ]
+          },
+          "W3": 22.8,
+          "W3_Int": 22,
+          "W3_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "255 Pass Yds (4 TD, 1 INT) + 36 Rush Yds (0 TD) \u2022 2 Fumb Lost",
+            "players": [
+              {
+                "name": "Tyler Shough",
+                "pts_frac": 22.8,
+                "pts_int": 22,
+                "stat_line": "255 Pass Yds, 4 Pass TD, 1 INT \u2022 36 Rush Yds \u2022 2 Fumb Lost"
+              }
+            ]
+          },
+          "W4": 15.0,
+          "W4_Int": 15,
+          "W4_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "225 Pass Yds (2 TD, 0 INT)",
+            "players": [
+              {
+                "name": "Patrick Mahomes",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "225 Pass Yds, 2 Pass TD"
+              }
+            ]
+          },
+          "W5": 35.5,
+          "W5_Int": 34,
+          "W5_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "374 Pass Yds (4 TD, 0 INT) + 25 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Drake Maye",
+                "pts_frac": 35.5,
+                "pts_int": 34,
+                "stat_line": "374 Pass Yds, 4 Pass TD \u2022 25 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W6": 16.3,
+          "W6_Int": 16,
+          "W6_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "255 Pass Yds (2 TD, 0 INT) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Josh Allen",
+                "pts_frac": 16.3,
+                "pts_int": 16,
+                "stat_line": "255 Pass Yds, 2 Pass TD \u2022 1 Rush Yds"
+              }
+            ]
+          },
+          "W7": 15.5,
+          "W7_Int": 15,
+          "W7_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "195 Pass Yds (3 TD, 1 INT) + -3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Matthew Stafford",
+                "pts_frac": 15.5,
+                "pts_int": 15,
+                "stat_line": "195 Pass Yds, 3 Pass TD, 1 INT \u2022 -3 Rush Yds"
+              }
+            ]
+          },
+          "W8": 17.0,
+          "W8_Int": 16,
+          "W8_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "290 Pass Yds (2 TD, 1 INT) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Geno Smith",
+                "pts_frac": 17.0,
+                "pts_int": 16,
+                "stat_line": "290 Pass Yds, 2 Pass TD, 1 INT \u2022 4 Rush Yds"
+              }
+            ]
+          },
+          "W9": 24.0,
+          "W9_Int": 24,
+          "W9_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "232 Pass Yds (2 TD, 1 INT) + 37 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Brock Purdy",
+                "pts_frac": 24.3,
+                "pts_int": 24,
+                "stat_line": "232 Pass Yds, 2 Pass TD, 1 INT \u2022 40 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Mac Jones",
+                "pts_frac": -0.3,
+                "pts_int": 0,
+                "stat_line": "-3 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 41.0,
+          "Last_4_Games": 72.8,
+          "L4_PPG": 18.2,
+          "Total_pts": 172.7,
+          "PPG": 19.2,
+          "Last_2_Games_Int": 40,
+          "Last_4_Games_Int": 71,
+          "Total_pts_Int": 166,
+          "PPG_Int": 18.4,
+          "Stat_Summary": "2238 Pass Yds, 20 Pass TD, 141 Rush Yds, 3 Rush TD (7 INT)",
+          "Week10_Opponent": "vs Seahawks (SEA)",
+          "Week10_Offense": "Seahawks (SEA)",
+          "Vuln_Rank": 2,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Cardinals (ARI)",
+          "Team": "ARI",
+          "Position": "QB",
+          "W1": 13.3,
+          "W1_Int": 12,
+          "W1_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "209 Pass Yds (1 TD, 1 INT) + 29 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Justin Herbert",
+                "pts_frac": 13.3,
+                "pts_int": 12,
+                "stat_line": "209 Pass Yds, 1 Pass TD, 1 INT \u2022 29 Rush Yds"
+              }
+            ]
+          },
+          "W2": 18.4,
+          "W2_Int": 18,
+          "W2_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "235 Pass Yds (3 TD, 0 INT)",
+            "players": [
+              {
+                "name": "Drew Lock",
+                "pts_frac": 18.4,
+                "pts_int": 18,
+                "stat_line": "235 Pass Yds, 3 Pass TD"
+              }
+            ]
+          },
+          "W3": 27.3,
+          "W3_Int": 26,
+          "W3_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "297 Pass Yds (4 TD, 0 INT) + 34 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brock Purdy",
+                "pts_frac": 27.3,
+                "pts_int": 26,
+                "stat_line": "297 Pass Yds, 4 Pass TD \u2022 34 Rush Yds"
+              }
+            ]
+          },
+          "W4": 17.0,
+          "W4_Int": 17,
+          "W4_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "250 Pass Yds (3 TD, 2 INT)",
+            "players": [
+              {
+                "name": "Jameis Winston",
+                "pts_frac": 17.0,
+                "pts_int": 17,
+                "stat_line": "250 Pass Yds, 3 Pass TD, 2 INT"
+              }
+            ]
+          },
+          "W5": 25.9,
+          "W5_Int": 25,
+          "W5_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "271 Pass Yds (3 TD, 0 INT) + 1 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jared Goff",
+                "pts_frac": 25.9,
+                "pts_int": 25,
+                "stat_line": "271 Pass Yds, 3 Pass TD \u2022 1 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W6": 14.9,
+          "W6_Int": 14,
+          "W6_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "222 Pass Yds (2 TD, 0 INT)",
+            "players": [
+              {
+                "name": "Matthew Stafford",
+                "pts_frac": 14.9,
+                "pts_int": 14,
+                "stat_line": "222 Pass Yds, 2 Pass TD"
+              }
+            ]
+          },
+          "W7": 25.2,
+          "W7_Int": 24,
+          "W7_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "222 Pass Yds (1 TD, 0 INT) + 73 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Bo Nix",
+                "pts_frac": 25.2,
+                "pts_int": 24,
+                "stat_line": "222 Pass Yds, 1 Pass TD \u2022 73 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W8": 18.8,
+          "W8_Int": 18,
+          "W8_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "195 Pass Yds (1 TD, 0 INT) + 20 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Dak Prescott",
+                "pts_frac": 18.8,
+                "pts_int": 18,
+                "stat_line": "195 Pass Yds, 1 Pass TD \u2022 20 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W9": 11.6,
+          "W9_Int": 11,
+          "W9_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "175 Pass Yds (1 TD, 0 INT) + 16 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Drew Lock",
+                "pts_frac": 11.6,
+                "pts_int": 11,
+                "stat_line": "175 Pass Yds, 1 Pass TD \u2022 16 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 30.4,
+          "Last_4_Games": 70.5,
+          "L4_PPG": 17.6,
+          "Total_pts": 172.4,
+          "PPG": 19.2,
+          "Last_2_Games_Int": 29,
+          "Last_4_Games_Int": 67,
+          "Total_pts_Int": 165,
+          "PPG_Int": 18.3,
+          "Stat_Summary": "2076 Pass Yds, 19 Pass TD, 173 Rush Yds, 3 Rush TD (3 INT)",
+          "Week10_Opponent": "vs Rams (LA)",
+          "Week10_Offense": "Rams (LA)",
+          "Vuln_Rank": 3,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Titans (TEN)",
+          "Team": "TEN",
+          "Position": "QB",
+          "W1": 9.3,
+          "W1_Int": 8,
+          "W1_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "215 Pass Yds (0 TD, 0 INT) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Geno Smith",
+                "pts_frac": 9.3,
+                "pts_int": 8,
+                "stat_line": "215 Pass Yds \u2022 7 Rush Yds"
+              }
+            ]
+          },
+          "W2": 16.2,
+          "W2_Int": 15,
+          "W2_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "264 Pass Yds (2 TD, 2 INT) + 16 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jalen Hurts",
+                "pts_frac": 16.2,
+                "pts_int": 15,
+                "stat_line": "264 Pass Yds, 2 Pass TD, 2 INT \u2022 16 Rush Yds"
+              }
+            ]
+          },
+          "W3": 6.1,
+          "W3_Int": 5,
+          "W3_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "118 Pass Yds (0 TD, 0 INT) + 14 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jameis Winston",
+                "pts_frac": 6.1,
+                "pts_int": 5,
+                "stat_line": "118 Pass Yds \u2022 14 Rush Yds"
+              }
+            ]
+          },
+          "W4": 21.0,
+          "W4_Int": 19,
+          "W4_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "285 Pass Yds (2 TD, 0 INT) + 36 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Lamar Jackson",
+                "pts_frac": 16.9,
+                "pts_int": 16,
+                "stat_line": "222 Pass Yds, 2 Pass TD \u2022 20 Rush Yds"
+              },
+              {
+                "name": "Tyler Huntley",
+                "pts_frac": 4.1,
+                "pts_int": 3,
+                "stat_line": "63 Pass Yds \u2022 16 Rush Yds"
+              }
+            ]
+          },
+          "W5": 19.9,
+          "W5_Int": 19,
+          "W5_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "261 Pass Yds (1 TD, 0 INT) + 5 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "C.J. Stroud",
+                "pts_frac": 19.9,
+                "pts_int": 19,
+                "stat_line": "261 Pass Yds, 1 Pass TD \u2022 5 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W6": 14.8,
+          "W6_Int": 14,
+          "W6_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "269 Pass Yds (1 TD, 2 INT) + 30 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Daniel Jones",
+                "pts_frac": 14.8,
+                "pts_int": 14,
+                "stat_line": "269 Pass Yds, 1 Pass TD, 2 INT \u2022 30 Rush Yds"
+              }
+            ]
+          },
+          "W7": 19.2,
+          "W7_Int": 18,
+          "W7_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "308 Pass Yds (0 TD, 1 INT) + 19 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Deshaun Watson",
+                "pts_frac": 19.2,
+                "pts_int": 18,
+                "stat_line": "308 Pass Yds, 1 INT \u2022 19 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W8": 37.5,
+          "W8_Int": 37,
+          "W8_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "462 Pass Yds (5 TD, 3 INT) + 10 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Joe Burrow",
+                "pts_frac": 37.5,
+                "pts_int": 37,
+                "stat_line": "462 Pass Yds, 5 Pass TD, 3 INT \u2022 10 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W9": "BYE",
+          "W9_Int": "BYE",
+          "W9_Detail": null,
+          "GP": 8,
+          "Last_2_Games": 56.7,
+          "Last_4_Games": 91.4,
+          "L4_PPG": 22.9,
+          "Total_pts": 144.0,
+          "PPG": 18.0,
+          "Last_2_Games_Int": 55,
+          "Last_4_Games_Int": 88,
+          "Total_pts_Int": 135,
+          "PPG_Int": 16.9,
+          "Stat_Summary": "2182 Pass Yds, 11 Pass TD, 137 Rush Yds, 3 Rush TD (8 INT)",
+          "Week10_Opponent": "vs Jaguars (JAX)",
+          "Week10_Offense": "Jaguars (JAX)",
+          "Vuln_Rank": 4,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Commanders (WAS)",
+          "Team": "WAS",
+          "Position": "QB",
+          "W1": 21.7,
+          "W1_Int": 21,
+          "W1_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "203 Pass Yds (3 TD, 0 INT) + 46 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jalen Hurts",
+                "pts_frac": 21.7,
+                "pts_int": 21,
+                "stat_line": "203 Pass Yds, 3 Pass TD \u2022 46 Rush Yds"
+              }
+            ]
+          },
+          "W2": 25.8,
+          "W2_Int": 25,
+          "W2_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "279 Pass Yds (4 TD, 0 INT) + 26 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dak Prescott",
+                "pts_frac": 25.8,
+                "pts_int": 25,
+                "stat_line": "279 Pass Yds, 4 Pass TD \u2022 26 Rush Yds"
+              }
+            ]
+          },
+          "W3": 25.7,
+          "W3_Int": 25,
+          "W3_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "379 Pass Yds (4 TD, 2 INT) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Sam Darnold",
+                "pts_frac": 25.7,
+                "pts_int": 25,
+                "stat_line": "379 Pass Yds, 4 Pass TD, 2 INT \u2022 5 Rush Yds"
+              }
+            ]
+          },
+          "W4": 9.9,
+          "W4_Int": 9,
+          "W4_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "143 Pass Yds (0 TD, 1 INT) + 2 Rush Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Daniel Jones",
+                "pts_frac": 9.9,
+                "pts_int": 9,
+                "stat_line": "143 Pass Yds, 1 INT \u2022 2 Rush Yds, 1 Rush TD \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W5": 23.9,
+          "W5_Int": 23,
+          "W5_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "326 Pass Yds (3 TD, 0 INT) + 29 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jameis Winston",
+                "pts_frac": 23.7,
+                "pts_int": 23,
+                "stat_line": "326 Pass Yds, 3 Pass TD \u2022 27 Rush Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "J.J. McCarthy",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rush Yds"
+              }
+            ]
+          },
+          "W6": 16.4,
+          "W6_Int": 15,
+          "W6_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "264 Pass Yds (1 TD, 0 INT) + 28 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brock Purdy",
+                "pts_frac": 16.4,
+                "pts_int": 15,
+                "stat_line": "264 Pass Yds, 1 Pass TD \u2022 28 Rush Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 9.0,
+          "W8_Int": 8,
+          "W8_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "212 Pass Yds (0 TD, 1 INT) + 25 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Tanner McKee",
+                "pts_frac": 9.0,
+                "pts_int": 8,
+                "stat_line": "212 Pass Yds, 1 INT \u2022 25 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W9": 11.2,
+          "W9_Int": 11,
+          "W9_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "228 Pass Yds (1 TD, 1 INT) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Matthew Stafford",
+                "pts_frac": 11.2,
+                "pts_int": 11,
+                "stat_line": "228 Pass Yds, 1 Pass TD, 1 INT \u2022 1 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 20.2,
+          "Last_4_Games": 60.5,
+          "L4_PPG": 15.1,
+          "Total_pts": 143.6,
+          "PPG": 17.9,
+          "Last_2_Games_Int": 19,
+          "Last_4_Games_Int": 57,
+          "Total_pts_Int": 137,
+          "PPG_Int": 17.1,
+          "Stat_Summary": "2034 Pass Yds, 16 Pass TD, 162 Rush Yds, 1 Rush TD (5 INT)",
+          "Week10_Opponent": "@ Giants (NYG)",
+          "Week10_Offense": "Giants (NYG)",
+          "Vuln_Rank": 5,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Cowboys (DAL)",
+          "Team": "DAL",
+          "Position": "QB",
+          "W1": 23.6,
+          "W1_Int": 23,
+          "W1_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "230 Pass Yds (3 TD, 0 INT) + 54 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaxson Dart",
+                "pts_frac": 23.6,
+                "pts_int": 23,
+                "stat_line": "230 Pass Yds, 3 Pass TD \u2022 54 Rush Yds"
+              }
+            ]
+          },
+          "W2": 21.5,
+          "W2_Int": 19,
+          "W2_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "207 Pass Yds (2 TD, 0 INT) + 72 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jayden Daniels",
+                "pts_frac": 13.7,
+                "pts_int": 12,
+                "stat_line": "96 Pass Yds, 1 Pass TD \u2022 69 Rush Yds"
+              },
+              {
+                "name": "Marcus Mariota",
+                "pts_frac": 7.7,
+                "pts_int": 7,
+                "stat_line": "111 Pass Yds, 1 Pass TD \u2022 3 Rush Yds"
+              }
+            ]
+          },
+          "W3": 18.4,
+          "W3_Int": 18,
+          "W3_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "186 Pass Yds (2 TD, 0 INT) + 50 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Lamar Jackson",
+                "pts_frac": 18.4,
+                "pts_int": 18,
+                "stat_line": "186 Pass Yds, 2 Pass TD \u2022 50 Rush Yds"
+              }
+            ]
+          },
+          "W4": 21.1,
+          "W4_Int": 20,
+          "W4_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "347 Pass Yds (2 TD, 0 INT) + 12 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "C.J. Stroud",
+                "pts_frac": 21.1,
+                "pts_int": 20,
+                "stat_line": "347 Pass Yds, 2 Pass TD \u2022 12 Rush Yds"
+              }
+            ]
+          },
+          "W5": 12.9,
+          "W5_Int": 12,
+          "W5_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "189 Pass Yds (1 TD, 0 INT) + 23 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jalon Daniels",
+                "pts_frac": 12.9,
+                "pts_int": 12,
+                "stat_line": "189 Pass Yds, 1 Pass TD \u2022 23 Rush Yds"
+              }
+            ]
+          },
+          "W6": 20.2,
+          "W6_Int": 20,
+          "W6_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "276 Pass Yds (1 TD, 1 INT) + 12 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jordan Love",
+                "pts_frac": 20.2,
+                "pts_int": 20,
+                "stat_line": "276 Pass Yds, 1 Pass TD, 1 INT \u2022 12 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W7": 10.5,
+          "W7_Int": 10,
+          "W7_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "211 Pass Yds (1 TD, 1 INT) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tanner McKee",
+                "pts_frac": 10.5,
+                "pts_int": 10,
+                "stat_line": "211 Pass Yds, 1 Pass TD, 1 INT \u2022 1 Rush Yds"
+              }
+            ]
+          },
+          "W8": 21.0,
+          "W8_Int": 19,
+          "W8_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "307 Pass Yds (3 TD, 1 INT) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Gardner Minshew",
+                "pts_frac": 16.5,
+                "pts_int": 16,
+                "stat_line": "188 Pass Yds, 3 Pass TD"
+              },
+              {
+                "name": "Jacoby Brissett",
+                "pts_frac": 4.5,
+                "pts_int": 3,
+                "stat_line": "119 Pass Yds, 1 INT \u2022 7 Rush Yds"
+              }
+            ]
+          },
+          "W9": 10.3,
+          "W9_Int": 10,
+          "W9_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "180 Pass Yds (1 TD, 1 INT) + 11 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Daniel Jones",
+                "pts_frac": 10.3,
+                "pts_int": 10,
+                "stat_line": "180 Pass Yds, 1 Pass TD, 1 INT \u2022 11 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 31.3,
+          "Last_4_Games": 62.0,
+          "L4_PPG": 15.5,
+          "Total_pts": 159.5,
+          "PPG": 17.7,
+          "Last_2_Games_Int": 29,
+          "Last_4_Games_Int": 59,
+          "Total_pts_Int": 151,
+          "PPG_Int": 16.8,
+          "Stat_Summary": "2133 Pass Yds, 16 Pass TD, 242 Rush Yds, 1 Rush TD (4 INT)",
+          "Week10_Opponent": "vs 49ers (SF)",
+          "Week10_Offense": "49ers (SF)",
+          "Vuln_Rank": 6,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Giants (NYG)",
+          "Team": "NYG",
+          "Position": "QB",
+          "W1": 13.4,
+          "W1_Int": 13,
+          "W1_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "175 Pass Yds (2 TD, 1 INT) + 14 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dak Prescott",
+                "pts_frac": 13.4,
+                "pts_int": 13,
+                "stat_line": "175 Pass Yds, 2 Pass TD, 1 INT \u2022 14 Rush Yds"
+              }
+            ]
+          },
+          "W2": 24.0,
+          "W2_Int": 24,
+          "W2_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "327 Pass Yds (4 TD, 1 INT) + -1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Matthew Stafford",
+                "pts_frac": 24.0,
+                "pts_int": 24,
+                "stat_line": "327 Pass Yds, 4 Pass TD, 1 INT \u2022 -1 Rush Yds"
+              }
+            ]
+          },
+          "W3": 9.4,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "181 Pass Yds (1 TD, 1 INT) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cam Ward",
+                "pts_frac": 9.4,
+                "pts_int": 9,
+                "stat_line": "181 Pass Yds, 1 Pass TD, 1 INT \u2022 2 Rush Yds"
+              }
+            ]
+          },
+          "W4": 11.4,
+          "W4_Int": 10,
+          "W4_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "166 Pass Yds (2 TD, 3 INT) + 18 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jacoby Brissett",
+                "pts_frac": 11.4,
+                "pts_int": 10,
+                "stat_line": "166 Pass Yds, 2 Pass TD, 3 INT \u2022 18 Rush Yds"
+              }
+            ]
+          },
+          "W5": 31.3,
+          "W5_Int": 30,
+          "W5_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "199 Pass Yds (0 TD, 0 INT) + 103 Rush Yds (2 TD)",
+            "players": [
+              {
+                "name": "Jayden Daniels",
+                "pts_frac": 31.3,
+                "pts_int": 30,
+                "stat_line": "199 Pass Yds \u2022 103 Rush Yds, 2 Rush TD \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W6": 24.0,
+          "W6_Int": 23,
+          "W6_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "144 Pass Yds (3 TD, 0 INT) + 32 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Tyler Shough",
+                "pts_frac": 24.0,
+                "pts_int": 23,
+                "stat_line": "144 Pass Yds, 3 Pass TD \u2022 32 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W7": 13.5,
+          "W7_Int": 13,
+          "W7_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "153 Pass Yds (2 TD, 0 INT) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "C.J. Stroud",
+                "pts_frac": 13.5,
+                "pts_int": 13,
+                "stat_line": "153 Pass Yds, 2 Pass TD \u2022 4 Rush Yds \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 14.2,
+          "W9_Int": 13,
+          "W9_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "169 Pass Yds (0 TD, 0 INT) + 64 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Joe Milton III",
+                "pts_frac": 14.2,
+                "pts_int": 13,
+                "stat_line": "169 Pass Yds \u2022 64 Rush Yds \u2022 1 Rush/Rec 2PT \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 27.7,
+          "Last_4_Games": 83.0,
+          "L4_PPG": 20.8,
+          "Total_pts": 141.2,
+          "PPG": 17.6,
+          "Last_2_Games_Int": 26,
+          "Last_4_Games_Int": 79,
+          "Total_pts_Int": 135,
+          "PPG_Int": 16.9,
+          "Stat_Summary": "1514 Pass Yds, 14 Pass TD, 236 Rush Yds, 3 Rush TD (6 INT)",
+          "Week10_Opponent": "vs Commanders (WAS)",
+          "Week10_Offense": "Commanders (WAS)",
+          "Vuln_Rank": 7,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Eagles (PHI)",
+          "Team": "PHI",
+          "Position": "QB",
+          "W1": 15.7,
+          "W1_Int": 15,
+          "W1_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "164 Pass Yds (2 TD, 0 INT) + 31 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jayden Daniels",
+                "pts_frac": 15.7,
+                "pts_int": 15,
+                "stat_line": "164 Pass Yds, 2 Pass TD \u2022 31 Rush Yds"
+              }
+            ]
+          },
+          "W2": 20.0,
+          "W2_Int": 19,
+          "W2_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "183 Pass Yds (0 TD, 0 INT) + 7 Rush Yds (2 TD)",
+            "players": [
+              {
+                "name": "Cam Ward",
+                "pts_frac": 20.0,
+                "pts_int": 19,
+                "stat_line": "183 Pass Yds \u2022 7 Rush Yds, 2 Rush TD"
+              }
+            ]
+          },
+          "W3": 22.5,
+          "W3_Int": 21,
+          "W3_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "247 Pass Yds (2 TD, 0 INT) + 6 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Case Keenum",
+                "pts_frac": 22.5,
+                "pts_int": 21,
+                "stat_line": "247 Pass Yds, 2 Pass TD \u2022 6 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W4": 11.7,
+          "W4_Int": 11,
+          "W4_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "317 Pass Yds (0 TD, 2 INT) + 10 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Matthew Stafford",
+                "pts_frac": 11.7,
+                "pts_int": 11,
+                "stat_line": "317 Pass Yds, 2 INT \u2022 10 Rush Yds"
+              }
+            ]
+          },
+          "W5": 20.7,
+          "W5_Int": 20,
+          "W5_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "331 Pass Yds (2 TD, 1 INT) + 25 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Trevor Lawrence",
+                "pts_frac": 20.7,
+                "pts_int": 20,
+                "stat_line": "331 Pass Yds, 2 Pass TD, 1 INT \u2022 25 Rush Yds"
+              }
+            ]
+          },
+          "W6": 17.8,
+          "W6_Int": 17,
+          "W6_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "281 Pass Yds (2 TD, 0 INT) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bryce Young",
+                "pts_frac": 17.8,
+                "pts_int": 17,
+                "stat_line": "281 Pass Yds, 2 Pass TD \u2022 6 Rush Yds"
+              }
+            ]
+          },
+          "W7": 20.3,
+          "W7_Int": 19,
+          "W7_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "212 Pass Yds (3 TD, 0 INT) + 8 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dak Prescott",
+                "pts_frac": 20.3,
+                "pts_int": 19,
+                "stat_line": "212 Pass Yds, 3 Pass TD \u2022 8 Rush Yds \u2022 1 Rush/Rec 2PT"
+              }
+            ]
+          },
+          "W8": 14.0,
+          "W8_Int": 13,
+          "W8_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "217 Pass Yds (1 TD, 0 INT) + 23 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jayden Daniels",
+                "pts_frac": 14.0,
+                "pts_int": 13,
+                "stat_line": "217 Pass Yds, 1 Pass TD \u2022 23 Rush Yds"
+              }
+            ]
+          },
+          "W9": 14.2,
+          "W9_Int": 13,
+          "W9_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "198 Pass Yds (1 TD, 0 INT) + 33 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "J.J. McCarthy",
+                "pts_frac": 7.3,
+                "pts_int": 7,
+                "stat_line": "127 Pass Yds \u2022 22 Rush Yds"
+              },
+              {
+                "name": "Jameis Winston",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "71 Pass Yds, 1 Pass TD \u2022 11 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 28.2,
+          "Last_4_Games": 66.3,
+          "L4_PPG": 16.6,
+          "Total_pts": 156.9,
+          "PPG": 17.4,
+          "Last_2_Games_Int": 26,
+          "Last_4_Games_Int": 62,
+          "Total_pts_Int": 148,
+          "PPG_Int": 16.4,
+          "Stat_Summary": "2150 Pass Yds, 13 Pass TD, 149 Rush Yds, 3 Rush TD (3 INT)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 8,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Bengals (CIN)",
+          "Team": "CIN",
+          "Position": "QB",
+          "W1": 14.6,
+          "W1_Int": 14,
+          "W1_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "216 Pass Yds (0 TD, 0 INT) + 30 Rush Yds (1 TD) \u2022 3 Fumb Lost",
+            "players": [
+              {
+                "name": "Baker Mayfield",
+                "pts_frac": 14.6,
+                "pts_int": 14,
+                "stat_line": "216 Pass Yds \u2022 30 Rush Yds, 1 Rush TD \u2022 3 Fumb Lost"
+              }
+            ]
+          },
+          "W2": 17.0,
+          "W2_Int": 16,
+          "W2_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "353 Pass Yds (0 TD, 0 INT) + 29 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "C.J. Stroud",
+                "pts_frac": 17.0,
+                "pts_int": 16,
+                "stat_line": "353 Pass Yds \u2022 29 Rush Yds"
+              }
+            ]
+          },
+          "W3": 20.7,
+          "W3_Int": 20,
+          "W3_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "292 Pass Yds (3 TD, 1 INT) + 10 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Aaron Rodgers",
+                "pts_frac": 20.7,
+                "pts_int": 20,
+                "stat_line": "292 Pass Yds, 3 Pass TD, 1 INT \u2022 10 Rush Yds"
+              }
+            ]
+          },
+          "W4": 12.1,
+          "W4_Int": 12,
+          "W4_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "227 Pass Yds (1 TD, 0 INT)",
+            "players": [
+              {
+                "name": "Trevor Lawrence",
+                "pts_frac": 12.1,
+                "pts_int": 12,
+                "stat_line": "227 Pass Yds, 1 Pass TD"
+              }
+            ]
+          },
+          "W5": 19.9,
+          "W5_Int": 19,
+          "W5_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "137 Pass Yds (1 TD, 2 INT) + 74 Rush Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Malik Willis",
+                "pts_frac": 19.9,
+                "pts_int": 19,
+                "stat_line": "137 Pass Yds, 1 Pass TD, 2 INT \u2022 74 Rush Yds, 1 Rush TD \u2022 1 Pass 2PT \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 15.1,
+          "W7_Int": 14,
+          "W7_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "298 Pass Yds (1 TD, 1 INT) + 12 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Huntley",
+                "pts_frac": 15.1,
+                "pts_int": 14,
+                "stat_line": "298 Pass Yds, 1 Pass TD, 1 INT \u2022 12 Rush Yds"
+              }
+            ]
+          },
+          "W8": 24.3,
+          "W8_Int": 24,
+          "W8_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "304 Pass Yds (2 TD, 0 INT) + 41 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Cam Ward",
+                "pts_frac": 24.3,
+                "pts_int": 24,
+                "stat_line": "304 Pass Yds, 2 Pass TD \u2022 41 Rush Yds \u2022 1 Pass 2PT \u2022 1 Rush/Rec 2PT \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W9": 13.5,
+          "W9_Int": 13,
+          "W9_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "162 Pass Yds (1 TD, 1 INT) + 50 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Penix Jr.",
+                "pts_frac": 13.5,
+                "pts_int": 13,
+                "stat_line": "162 Pass Yds, 1 Pass TD, 1 INT \u2022 50 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 37.8,
+          "Last_4_Games": 72.8,
+          "L4_PPG": 18.2,
+          "Total_pts": 137.2,
+          "PPG": 17.1,
+          "Last_2_Games_Int": 37,
+          "Last_4_Games_Int": 70,
+          "Total_pts_Int": 132,
+          "PPG_Int": 16.5,
+          "Stat_Summary": "1989 Pass Yds, 9 Pass TD, 246 Rush Yds, 2 Rush TD (5 INT)",
+          "Week10_Opponent": "vs Steelers (PIT)",
+          "Week10_Offense": "Steelers (PIT)",
+          "Vuln_Rank": 9,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Colts (IND)",
+          "Team": "IND",
+          "Position": "QB",
+          "W1": 25.0,
+          "W1_Int": 24,
+          "W1_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "324 Pass Yds (1 TD, 0 INT) + 40 Rush Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Lamar Jackson",
+                "pts_frac": 25.0,
+                "pts_int": 24,
+                "stat_line": "324 Pass Yds, 1 Pass TD \u2022 40 Rush Yds, 1 Rush TD \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W2": 26.0,
+          "W2_Int": 25,
+          "W2_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "382 Pass Yds (3 TD, 0 INT) + 17 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Patrick Mahomes",
+                "pts_frac": 26.0,
+                "pts_int": 25,
+                "stat_line": "382 Pass Yds, 3 Pass TD \u2022 17 Rush Yds"
+              }
+            ]
+          },
+          "W3": 10.7,
+          "W3_Int": 10,
+          "W3_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "167 Pass Yds (1 TD, 0 INT) + 10 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "C.J. Stroud",
+                "pts_frac": 10.7,
+                "pts_int": 10,
+                "stat_line": "167 Pass Yds, 1 Pass TD \u2022 10 Rush Yds"
+              }
+            ]
+          },
+          "W4": 16.4,
+          "W4_Int": 14,
+          "W4_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "232 Pass Yds (1 TD, 1 INT) + 51 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Athan Kaliakmanis",
+                "pts_frac": 11.0,
+                "pts_int": 10,
+                "stat_line": "186 Pass Yds, 1 Pass TD, 1 INT \u2022 16 Rush Yds"
+              },
+              {
+                "name": "Marcus Mariota",
+                "pts_frac": 5.3,
+                "pts_int": 4,
+                "stat_line": "46 Pass Yds \u2022 35 Rush Yds"
+              }
+            ]
+          },
+          "W5": 18.8,
+          "W5_Int": 18,
+          "W5_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "235 Pass Yds (3 TD, 0 INT) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Aaron Rodgers",
+                "pts_frac": 19.0,
+                "pts_int": 18,
+                "stat_line": "235 Pass Yds, 3 Pass TD \u2022 6 Rush Yds"
+              },
+              {
+                "name": "Mason Rudolph",
+                "pts_frac": -0.2,
+                "pts_int": 0,
+                "stat_line": "-2 Rush Yds"
+              }
+            ]
+          },
+          "W6": 6.8,
+          "W6_Int": 6,
+          "W6_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "102 Pass Yds (1 TD, 1 INT) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cam Ward",
+                "pts_frac": 6.8,
+                "pts_int": 6,
+                "stat_line": "102 Pass Yds, 1 Pass TD, 1 INT \u2022 7 Rush Yds"
+              }
+            ]
+          },
+          "W7": 12.9,
+          "W7_Int": 12,
+          "W7_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "150 Pass Yds (1 TD, 0 INT) + 39 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kyler Murray",
+                "pts_frac": 12.9,
+                "pts_int": 12,
+                "stat_line": "150 Pass Yds, 1 Pass TD \u2022 39 Rush Yds"
+              }
+            ]
+          },
+          "W8": 17.7,
+          "W8_Int": 17,
+          "W8_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "218 Pass Yds (3 TD, 0 INT) + 10 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Trevor Lawrence",
+                "pts_frac": 17.4,
+                "pts_int": 17,
+                "stat_line": "210 Pass Yds, 3 Pass TD \u2022 10 Rush Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Quinn Ewers",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "8 Pass Yds"
+              }
+            ]
+          },
+          "W9": 18.5,
+          "W9_Int": 18,
+          "W9_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "335 Pass Yds (2 TD, 0 INT) + 1 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Dak Prescott",
+                "pts_frac": 18.5,
+                "pts_int": 18,
+                "stat_line": "335 Pass Yds, 2 Pass TD \u2022 1 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 36.2,
+          "Last_4_Games": 55.9,
+          "L4_PPG": 14.0,
+          "Total_pts": 152.8,
+          "PPG": 17.0,
+          "Last_2_Games_Int": 35,
+          "Last_4_Games_Int": 53,
+          "Total_pts_Int": 144,
+          "PPG_Int": 16.0,
+          "Stat_Summary": "2145 Pass Yds, 16 Pass TD, 179 Rush Yds, 1 Rush TD (2 INT)",
+          "Week10_Opponent": "vs Dolphins (MIA)",
+          "Week10_Offense": "Dolphins (MIA)",
+          "Vuln_Rank": 10,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Texans (HOU)",
+          "Team": "HOU",
+          "Position": "QB",
+          "W1": 33.7,
+          "W1_Int": 33,
+          "W1_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "334 Pass Yds (2 TD, 0 INT) + 23 Rush Yds (2 TD)",
+            "players": [
+              {
+                "name": "Josh Allen",
+                "pts_frac": 33.7,
+                "pts_int": 33,
+                "stat_line": "334 Pass Yds, 2 Pass TD \u2022 23 Rush Yds, 2 Rush TD"
+              }
+            ]
+          },
+          "W2": 14.2,
+          "W2_Int": 14,
+          "W2_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "207 Pass Yds (2 TD, 0 INT) + -1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Joe Burrow",
+                "pts_frac": 14.2,
+                "pts_int": 14,
+                "stat_line": "207 Pass Yds, 2 Pass TD \u2022 -1 Rush Yds"
+              }
+            ]
+          },
+          "W3": 9.9,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "235 Pass Yds (1 TD, 1 INT) + 5 Rush Yds (0 TD) \u2022 2 Fumb Lost",
+            "players": [
+              {
+                "name": "Daniel Jones",
+                "pts_frac": 9.9,
+                "pts_int": 9,
+                "stat_line": "235 Pass Yds, 1 Pass TD, 1 INT \u2022 5 Rush Yds \u2022 2 Fumb Lost"
+              }
+            ]
+          },
+          "W4": 17.1,
+          "W4_Int": 16,
+          "W4_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "335 Pass Yds (1 TD, 0 INT) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dak Prescott",
+                "pts_frac": 17.1,
+                "pts_int": 16,
+                "stat_line": "335 Pass Yds, 1 Pass TD \u2022 7 Rush Yds"
+              }
+            ]
+          },
+          "W5": 6.0,
+          "W5_Int": 5,
+          "W5_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "170 Pass Yds (0 TD, 1 INT) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cam Ward",
+                "pts_frac": 6.0,
+                "pts_int": 5,
+                "stat_line": "170 Pass Yds, 1 INT \u2022 2 Rush Yds"
+              }
+            ]
+          },
+          "W6": 24.3,
+          "W6_Int": 24,
+          "W6_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "306 Pass Yds (4 TD, 1 INT) + 11 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Trevor Lawrence",
+                "pts_frac": 24.3,
+                "pts_int": 24,
+                "stat_line": "306 Pass Yds, 4 Pass TD, 1 INT \u2022 11 Rush Yds"
+              }
+            ]
+          },
+          "W7": 16.6,
+          "W7_Int": 16,
+          "W7_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "252 Pass Yds (0 TD, 0 INT) + 5 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "J.J. McCarthy",
+                "pts_frac": 10.2,
+                "pts_int": 10,
+                "stat_line": "252 Pass Yds \u2022 1 Rush Yds"
+              },
+              {
+                "name": "Jameis Winston",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "4 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 14.4,
+          "W9_Int": 12,
+          "W9_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "217 Pass Yds (2 TD, 1 INT) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Justin Herbert",
+                "pts_frac": 10.4,
+                "pts_int": 9,
+                "stat_line": "193 Pass Yds, 1 Pass TD, 1 INT \u2022 7 Rush Yds"
+              },
+              {
+                "name": "DJ Uiagalelei",
+                "pts_frac": 4.0,
+                "pts_int": 3,
+                "stat_line": "24 Pass Yds, 1 Pass TD"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 31.0,
+          "Last_4_Games": 61.3,
+          "L4_PPG": 15.3,
+          "Total_pts": 136.2,
+          "PPG": 17.0,
+          "Last_2_Games_Int": 28,
+          "Last_4_Games_Int": 57,
+          "Total_pts_Int": 129,
+          "PPG_Int": 16.1,
+          "Stat_Summary": "2056 Pass Yds, 12 Pass TD, 59 Rush Yds, 3 Rush TD (4 INT)",
+          "Week10_Opponent": "@ Browns (CLE)",
+          "Week10_Offense": "Browns (CLE)",
+          "Vuln_Rank": 11,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Bears (CHI)",
+          "Team": "CHI",
+          "Position": "QB",
+          "W1": 31.8,
+          "W1_Int": 31,
+          "W1_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "361 Pass Yds (3 TD, 1 INT) + 34 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Bryce Young",
+                "pts_frac": 29.4,
+                "pts_int": 29,
+                "stat_line": "361 Pass Yds, 3 Pass TD, 1 INT \u2022 10 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Kenny Pickett",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rush Yds"
+              }
+            ]
+          },
+          "W2": 6.3,
+          "W2_Int": 5,
+          "W2_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "143 Pass Yds (0 TD, 0 INT) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Carson Wentz",
+                "pts_frac": 6.3,
+                "pts_int": 5,
+                "stat_line": "143 Pass Yds \u2022 6 Rush Yds"
+              }
+            ]
+          },
+          "W3": 12.6,
+          "W3_Int": 12,
+          "W3_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "153 Pass Yds (0 TD, 2 INT) + 25 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jalen Hurts",
+                "pts_frac": 13.6,
+                "pts_int": 13,
+                "stat_line": "153 Pass Yds, 1 INT \u2022 25 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Andy Dalton",
+                "pts_frac": -1.0,
+                "pts_int": -1,
+                "stat_line": "0 Pass Yds, 1 INT"
+              }
+            ]
+          },
+          "W4": 7.8,
+          "W4_Int": 7,
+          "W4_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "119 Pass Yds (1 TD, 0 INT)",
+            "players": [
+              {
+                "name": "Geno Smith",
+                "pts_frac": 7.8,
+                "pts_int": 7,
+                "stat_line": "119 Pass Yds, 1 Pass TD"
+              }
+            ]
+          },
+          "W5": 22.1,
+          "W5_Int": 21,
+          "W5_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "367 Pass Yds (2 TD, 0 INT) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jordan Love",
+                "pts_frac": 22.3,
+                "pts_int": 21,
+                "stat_line": "367 Pass Yds, 2 Pass TD \u2022 6 Rush Yds \u2022 1 Pass 2PT"
+              },
+              {
+                "name": "Tyrod Taylor",
+                "pts_frac": -0.2,
+                "pts_int": 0,
+                "stat_line": "-2 Rush Yds"
+              }
+            ]
+          },
+          "W6": 19.1,
+          "W6_Int": 19,
+          "W6_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "225 Pass Yds (3 TD, 0 INT) + 1 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Michael Penix Jr.",
+                "pts_frac": 19.1,
+                "pts_int": 19,
+                "stat_line": "225 Pass Yds, 3 Pass TD \u2022 1 Rush Yds \u2022 2 Pass 2PT \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W7": 26.4,
+          "W7_Int": 25,
+          "W7_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "321 Pass Yds (2 TD, 1 INT) + 26 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Drake Maye",
+                "pts_frac": 26.4,
+                "pts_int": 25,
+                "stat_line": "321 Pass Yds, 2 Pass TD, 1 INT \u2022 26 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W8": 15.5,
+          "W8_Int": 15,
+          "W8_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "188 Pass Yds (2 TD, 1 INT) + 20 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Sam Darnold",
+                "pts_frac": 15.5,
+                "pts_int": 15,
+                "stat_line": "188 Pass Yds, 2 Pass TD, 1 INT \u2022 20 Rush Yds \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W9": 9.7,
+          "W9_Int": 9,
+          "W9_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "243 Pass Yds (0 TD, 2 INT)",
+            "players": [
+              {
+                "name": "Baker Mayfield",
+                "pts_frac": 9.7,
+                "pts_int": 9,
+                "stat_line": "243 Pass Yds, 2 INT \u2022 1 Rush/Rec 2PT"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 25.2,
+          "Last_4_Games": 70.7,
+          "L4_PPG": 17.7,
+          "Total_pts": 151.3,
+          "PPG": 16.8,
+          "Last_2_Games_Int": 24,
+          "Last_4_Games_Int": 68,
+          "Total_pts_Int": 144,
+          "PPG_Int": 16.0,
+          "Stat_Summary": "2120 Pass Yds, 13 Pass TD, 116 Rush Yds, 3 Rush TD (7 INT)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 12,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Dolphins (MIA)",
+          "Team": "MIA",
+          "Position": "QB",
+          "W1": 12.8,
+          "W1_Int": 13,
+          "W1_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "160 Pass Yds (3 TD, 2 INT) + -6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kirk Cousins",
+                "pts_frac": 12.8,
+                "pts_int": 13,
+                "stat_line": "160 Pass Yds, 3 Pass TD, 2 INT \u2022 -6 Rush Yds"
+              }
+            ]
+          },
+          "W2": 26.3,
+          "W2_Int": 26,
+          "W2_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "287 Pass Yds (2 TD, 0 INT) + 28 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Brock Purdy",
+                "pts_frac": 26.5,
+                "pts_int": 26,
+                "stat_line": "287 Pass Yds, 2 Pass TD \u2022 30 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Mac Jones",
+                "pts_frac": -0.2,
+                "pts_int": 0,
+                "stat_line": "-2 Rush Yds"
+              }
+            ]
+          },
+          "W3": 14.9,
+          "W3_Int": 14,
+          "W3_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "246 Pass Yds (2 TD, 1 INT) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Patrick Mahomes",
+                "pts_frac": 14.9,
+                "pts_int": 14,
+                "stat_line": "246 Pass Yds, 2 Pass TD, 1 INT \u2022 1 Rush Yds"
+              }
+            ]
+          },
+          "W4": 11.5,
+          "W4_Int": 10,
+          "W4_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "247 Pass Yds (0 TD, 0 INT) + 16 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kyler Murray",
+                "pts_frac": 11.5,
+                "pts_int": 10,
+                "stat_line": "247 Pass Yds \u2022 16 Rush Yds"
+              }
+            ]
+          },
+          "W5": 20.6,
+          "W5_Int": 20,
+          "W5_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "190 Pass Yds (4 TD, 0 INT) + 10 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Joe Burrow",
+                "pts_frac": 20.6,
+                "pts_int": 20,
+                "stat_line": "190 Pass Yds, 4 Pass TD \u2022 10 Rush Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 20.5,
+          "W7_Int": 20,
+          "W7_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "287 Pass Yds (3 TD, 1 INT)",
+            "players": [
+              {
+                "name": "Geno Smith",
+                "pts_frac": 20.5,
+                "pts_int": 20,
+                "stat_line": "287 Pass Yds, 3 Pass TD, 1 INT \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W8": 20.5,
+          "W8_Int": 19,
+          "W8_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "199 Pass Yds (2 TD, 0 INT) + 5 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Drake Maye",
+                "pts_frac": 20.5,
+                "pts_int": 19,
+                "stat_line": "199 Pass Yds, 2 Pass TD \u2022 5 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W9": 6.3,
+          "W9_Int": 5,
+          "W9_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "170 Pass Yds (0 TD, 1 INT) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jared Goff",
+                "pts_frac": 6.3,
+                "pts_int": 5,
+                "stat_line": "170 Pass Yds, 1 INT \u2022 5 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 26.8,
+          "Last_4_Games": 67.9,
+          "L4_PPG": 17.0,
+          "Total_pts": 133.4,
+          "PPG": 16.7,
+          "Last_2_Games_Int": 24,
+          "Last_4_Games_Int": 64,
+          "Total_pts_Int": 127,
+          "PPG_Int": 15.9,
+          "Stat_Summary": "1786 Pass Yds, 16 Pass TD, 59 Rush Yds, 2 Rush TD (5 INT)",
+          "Week10_Opponent": "@ Colts (IND)",
+          "Week10_Offense": "Colts (IND)",
+          "Vuln_Rank": 13,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Saints (NO)",
+          "Team": "NO",
+          "Position": "QB",
+          "W1": 14.4,
+          "W1_Int": 14,
+          "W1_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "206 Pass Yds (2 TD, 0 INT) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jared Goff",
+                "pts_frac": 14.4,
+                "pts_int": 14,
+                "stat_line": "206 Pass Yds, 2 Pass TD \u2022 2 Rush Yds"
+              }
+            ]
+          },
+          "W2": 14.8,
+          "W2_Int": 14,
+          "W2_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "235 Pass Yds (1 TD, 1 INT) + 34 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Lamar Jackson",
+                "pts_frac": 14.8,
+                "pts_int": 14,
+                "stat_line": "235 Pass Yds, 1 Pass TD, 1 INT \u2022 34 Rush Yds"
+              }
+            ]
+          },
+          "W3": 19.2,
+          "W3_Int": 18,
+          "W3_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "248 Pass Yds (3 TD, 0 INT) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kirk Cousins",
+                "pts_frac": 19.2,
+                "pts_int": 18,
+                "stat_line": "248 Pass Yds, 3 Pass TD \u2022 3 Rush Yds"
+              }
+            ]
+          },
+          "W4": 11.7,
+          "W4_Int": 11,
+          "W4_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "223 Pass Yds (1 TD, 0 INT) + -2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Penix Jr.",
+                "pts_frac": 11.7,
+                "pts_int": 11,
+                "stat_line": "223 Pass Yds, 1 Pass TD \u2022 -2 Rush Yds"
+              }
+            ]
+          },
+          "W5": 17.3,
+          "W5_Int": 17,
+          "W5_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "229 Pass Yds (1 TD, 0 INT) + 51 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kyler Murray",
+                "pts_frac": 17.3,
+                "pts_int": 17,
+                "stat_line": "229 Pass Yds, 1 Pass TD \u2022 51 Rush Yds"
+              }
+            ]
+          },
+          "W6": 22.8,
+          "W6_Int": 21,
+          "W6_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "395 Pass Yds (2 TD, 3 INT) + 30 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "J.J. McCarthy",
+                "pts_frac": 15.3,
+                "pts_int": 14,
+                "stat_line": "243 Pass Yds, 1 Pass TD, 1 INT \u2022 26 Rush Yds \u2022 1 Pass 2PT"
+              },
+              {
+                "name": "Jameis Winston",
+                "pts_frac": 7.5,
+                "pts_int": 7,
+                "stat_line": "152 Pass Yds, 1 Pass TD, 2 INT \u2022 4 Rush Yds"
+              }
+            ]
+          },
+          "W7": 12.1,
+          "W7_Int": 11,
+          "W7_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "212 Pass Yds (1 TD, 0 INT) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Aaron Rodgers",
+                "pts_frac": 12.1,
+                "pts_int": 11,
+                "stat_line": "212 Pass Yds, 1 Pass TD \u2022 6 Rush Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 20.7,
+          "W9_Int": 19,
+          "W9_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "297 Pass Yds (2 TD, 0 INT) + 28 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Shedeur Sanders",
+                "pts_frac": 20.7,
+                "pts_int": 19,
+                "stat_line": "297 Pass Yds, 2 Pass TD \u2022 28 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 32.8,
+          "Last_4_Games": 72.9,
+          "L4_PPG": 18.2,
+          "Total_pts": 133.0,
+          "PPG": 16.6,
+          "Last_2_Games_Int": 30,
+          "Last_4_Games_Int": 68,
+          "Total_pts_Int": 125,
+          "PPG_Int": 15.6,
+          "Stat_Summary": "2045 Pass Yds, 13 Pass TD, 152 Rush Yds, 0 Rush TD (4 INT)",
+          "Week10_Opponent": "vs Panthers (CAR)",
+          "Week10_Offense": "Panthers (CAR)",
+          "Vuln_Rank": 14,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Patriots (NE)",
+          "Team": "NE",
+          "Position": "QB",
+          "W1": 12.3,
+          "W1_Int": 11,
+          "W1_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "200 Pass Yds (1 TD, 0 INT) + 13 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Drew Lock",
+                "pts_frac": 11.8,
+                "pts_int": 11,
+                "stat_line": "187 Pass Yds, 1 Pass TD \u2022 13 Rush Yds"
+              },
+              {
+                "name": "Sam Darnold",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "13 Pass Yds"
+              }
+            ]
+          },
+          "W2": 6.3,
+          "W2_Int": 5,
+          "W2_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "187 Pass Yds (0 TD, 1 INT) + 8 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Aaron Rodgers",
+                "pts_frac": 6.0,
+                "pts_int": 5,
+                "stat_line": "187 Pass Yds, 1 INT \u2022 5 Rush Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Mason Rudolph",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds"
+              }
+            ]
+          },
+          "W3": 17.8,
+          "W3_Int": 17,
+          "W3_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "182 Pass Yds (3 TD, 1 INT) + 25 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Trevor Lawrence",
+                "pts_frac": 17.8,
+                "pts_int": 17,
+                "stat_line": "182 Pass Yds, 3 Pass TD, 1 INT \u2022 25 Rush Yds"
+              }
+            ]
+          },
+          "W4": 18.5,
+          "W4_Int": 18,
+          "W4_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "253 Pass Yds (1 TD, 1 INT) + 4 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Josh Allen",
+                "pts_frac": 18.5,
+                "pts_int": 18,
+                "stat_line": "253 Pass Yds, 1 Pass TD, 1 INT \u2022 4 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W5": 14.9,
+          "W5_Int": 13,
+          "W5_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "291 Pass Yds (1 TD, 0 INT) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kirk Cousins",
+                "pts_frac": 12.7,
+                "pts_int": 12,
+                "stat_line": "243 Pass Yds, 1 Pass TD"
+              },
+              {
+                "name": "Fernando Mendoza",
+                "pts_frac": 2.2,
+                "pts_int": 1,
+                "stat_line": "48 Pass Yds \u2022 3 Rush Yds"
+              }
+            ]
+          },
+          "W6": 12.0,
+          "W6_Int": 12,
+          "W6_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "252 Pass Yds (1 TD, 1 INT) + -1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Geno Smith",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "252 Pass Yds, 1 Pass TD, 1 INT \u2022 -1 Rush Yds"
+              }
+            ]
+          },
+          "W7": 20.1,
+          "W7_Int": 19,
+          "W7_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "308 Pass Yds (2 TD, 0 INT) + 18 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Caleb Williams",
+                "pts_frac": 20.1,
+                "pts_int": 19,
+                "stat_line": "308 Pass Yds, 2 Pass TD \u2022 18 Rush Yds"
+              }
+            ]
+          },
+          "W8": 13.6,
+          "W8_Int": 13,
+          "W8_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "211 Pass Yds (2 TD, 1 INT) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Malik Willis",
+                "pts_frac": 13.6,
+                "pts_int": 13,
+                "stat_line": "211 Pass Yds, 2 Pass TD, 1 INT \u2022 2 Rush Yds"
+              }
+            ]
+          },
+          "W9": 33.2,
+          "W9_Int": 32,
+          "W9_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "372 Pass Yds (3 TD, 0 INT) + 13 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jordan Love",
+                "pts_frac": 33.2,
+                "pts_int": 32,
+                "stat_line": "372 Pass Yds, 3 Pass TD \u2022 13 Rush Yds, 1 Rush TD \u2022 1 Rush/Rec 2PT"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 46.8,
+          "Last_4_Games": 78.9,
+          "L4_PPG": 19.7,
+          "Total_pts": 148.7,
+          "PPG": 16.5,
+          "Last_2_Games_Int": 45,
+          "Last_4_Games_Int": 76,
+          "Total_pts_Int": 140,
+          "PPG_Int": 15.6,
+          "Stat_Summary": "2256 Pass Yds, 14 Pass TD, 85 Rush Yds, 2 Rush TD (5 INT)",
+          "Week10_Opponent": "@ Lions (DET)",
+          "Week10_Offense": "Lions (DET)",
+          "Vuln_Rank": 15,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Ravens (BAL)",
+          "Team": "BAL",
+          "Position": "QB",
+          "W1": 9.0,
+          "W1_Int": 8,
+          "W1_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "166 Pass Yds (1 TD, 1 INT) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Daniel Jones",
+                "pts_frac": 9.0,
+                "pts_int": 8,
+                "stat_line": "166 Pass Yds, 1 Pass TD, 1 INT \u2022 4 Rush Yds"
+              }
+            ]
+          },
+          "W2": 21.4,
+          "W2_Int": 21,
+          "W2_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "252 Pass Yds (1 TD, 0 INT) + 23 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Tyler Shough",
+                "pts_frac": 21.4,
+                "pts_int": 21,
+                "stat_line": "252 Pass Yds, 1 Pass TD \u2022 23 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W3": 16.9,
+          "W3_Int": 16,
+          "W3_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "276 Pass Yds (1 TD, 0 INT) + 19 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dak Prescott",
+                "pts_frac": 16.9,
+                "pts_int": 16,
+                "stat_line": "276 Pass Yds, 1 Pass TD \u2022 19 Rush Yds \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W4": 14.6,
+          "W4_Int": 13,
+          "W4_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "222 Pass Yds (1 TD, 1 INT) + 27 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cam Ward",
+                "pts_frac": 14.6,
+                "pts_int": 13,
+                "stat_line": "222 Pass Yds, 1 Pass TD, 1 INT \u2022 27 Rush Yds \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W5": 13.8,
+          "W5_Int": 12,
+          "W5_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "274 Pass Yds (1 TD, 1 INT) + 8 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Penix Jr.",
+                "pts_frac": 13.4,
+                "pts_int": 12,
+                "stat_line": "240 Pass Yds, 1 Pass TD \u2022 8 Rush Yds"
+              },
+              {
+                "name": "Tua Tagovailoa",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "34 Pass Yds, 1 INT"
+              }
+            ]
+          },
+          "W6": 9.5,
+          "W6_Int": 8,
+          "W6_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "164 Pass Yds (0 TD, 0 INT) + 29 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Deshaun Watson",
+                "pts_frac": 9.5,
+                "pts_int": 8,
+                "stat_line": "164 Pass Yds \u2022 29 Rush Yds"
+              }
+            ]
+          },
+          "W7": 24.9,
+          "W7_Int": 24,
+          "W7_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "292 Pass Yds (4 TD, 0 INT) + 12 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Joe Burrow",
+                "pts_frac": 24.9,
+                "pts_int": 24,
+                "stat_line": "292 Pass Yds, 4 Pass TD \u2022 12 Rush Yds"
+              }
+            ]
+          },
+          "W8": 25.4,
+          "W8_Int": 25,
+          "W8_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "289 Pass Yds (2 TD, 1 INT) + 28 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Josh Allen",
+                "pts_frac": 25.6,
+                "pts_int": 25,
+                "stat_line": "289 Pass Yds, 2 Pass TD, 1 INT \u2022 30 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Kyle Allen",
+                "pts_frac": -0.2,
+                "pts_int": 0,
+                "stat_line": "-2 Rush Yds"
+              }
+            ]
+          },
+          "W9": 12.6,
+          "W9_Int": 12,
+          "W9_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "242 Pass Yds (1 TD, 0 INT) + -1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Trevor Lawrence",
+                "pts_frac": 12.6,
+                "pts_int": 12,
+                "stat_line": "242 Pass Yds, 1 Pass TD \u2022 -1 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 38.0,
+          "Last_4_Games": 72.4,
+          "L4_PPG": 18.1,
+          "Total_pts": 148.1,
+          "PPG": 16.5,
+          "Last_2_Games_Int": 37,
+          "Last_4_Games_Int": 69,
+          "Total_pts_Int": 139,
+          "PPG_Int": 15.4,
+          "Stat_Summary": "2177 Pass Yds, 12 Pass TD, 149 Rush Yds, 2 Rush TD (4 INT)",
+          "Week10_Opponent": "vs Chargers (LAC)",
+          "Week10_Offense": "Chargers (LAC)",
+          "Vuln_Rank": 16,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Broncos (DEN)",
+          "Team": "DEN",
+          "Position": "QB",
+          "W1": 20.7,
+          "W1_Int": 20,
+          "W1_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "184 Pass Yds (2 TD, 1 INT) + 23 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Patrick Mahomes",
+                "pts_frac": 20.7,
+                "pts_int": 20,
+                "stat_line": "184 Pass Yds, 2 Pass TD, 1 INT \u2022 23 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W2": 7.2,
+          "W2_Int": 6,
+          "W2_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "189 Pass Yds (0 TD, 1 INT) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Trevor Lawrence",
+                "pts_frac": 7.2,
+                "pts_int": 6,
+                "stat_line": "189 Pass Yds, 1 INT \u2022 6 Rush Yds"
+              }
+            ]
+          },
+          "W3": 20.9,
+          "W3_Int": 20,
+          "W3_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "390 Pass Yds (2 TD, 2 INT) + 13 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Matthew Stafford",
+                "pts_frac": 20.9,
+                "pts_int": 20,
+                "stat_line": "390 Pass Yds, 2 Pass TD, 2 INT \u2022 13 Rush Yds"
+              }
+            ]
+          },
+          "W4": 17.6,
+          "W4_Int": 16,
+          "W4_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "218 Pass Yds (2 TD, 0 INT) + 29 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brock Purdy",
+                "pts_frac": 17.6,
+                "pts_int": 16,
+                "stat_line": "218 Pass Yds, 2 Pass TD \u2022 29 Rush Yds"
+              }
+            ]
+          },
+          "W5": 11.2,
+          "W5_Int": 10,
+          "W5_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "121 Pass Yds (1 TD, 1 INT) + 54 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Justin Herbert",
+                "pts_frac": 11.2,
+                "pts_int": 10,
+                "stat_line": "121 Pass Yds, 1 Pass TD, 1 INT \u2022 54 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W6": 12.0,
+          "W6_Int": 11,
+          "W6_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "278 Pass Yds (0 TD, 2 INT) + 19 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Sam Darnold",
+                "pts_frac": 12.0,
+                "pts_int": 11,
+                "stat_line": "278 Pass Yds, 2 INT \u2022 19 Rush Yds \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W7": 15.5,
+          "W7_Int": 14,
+          "W7_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "272 Pass Yds (1 TD, 0 INT) + 16 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jacoby Brissett",
+                "pts_frac": 15.5,
+                "pts_int": 14,
+                "stat_line": "272 Pass Yds, 1 Pass TD \u2022 16 Rush Yds"
+              }
+            ]
+          },
+          "W8": 22.4,
+          "W8_Int": 21,
+          "W8_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "321 Pass Yds (3 TD, 0 INT) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Patrick Mahomes",
+                "pts_frac": 22.4,
+                "pts_int": 21,
+                "stat_line": "321 Pass Yds, 3 Pass TD \u2022 6 Rush Yds"
+              }
+            ]
+          },
+          "W9": 19.3,
+          "W9_Int": 19,
+          "W9_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "276 Pass Yds (3 TD, 1 INT) + 13 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Bryce Young",
+                "pts_frac": 19.3,
+                "pts_int": 19,
+                "stat_line": "276 Pass Yds, 3 Pass TD, 1 INT \u2022 13 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 41.7,
+          "Last_4_Games": 69.2,
+          "L4_PPG": 17.3,
+          "Total_pts": 146.8,
+          "PPG": 16.3,
+          "Last_2_Games_Int": 40,
+          "Last_4_Games_Int": 65,
+          "Total_pts_Int": 137,
+          "PPG_Int": 15.2,
+          "Stat_Summary": "2249 Pass Yds, 14 Pass TD, 179 Rush Yds, 1 Rush TD (8 INT)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 17,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Jets (NYJ)",
+          "Team": "NYJ",
+          "Position": "QB",
+          "W1": 10.7,
+          "W1_Int": 10,
+          "W1_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "140 Pass Yds (1 TD, 0 INT) + 21 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cam Ward",
+                "pts_frac": 10.7,
+                "pts_int": 10,
+                "stat_line": "140 Pass Yds, 1 Pass TD \u2022 21 Rush Yds"
+              }
+            ]
+          },
+          "W2": 11.8,
+          "W2_Int": 11,
+          "W2_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "145 Pass Yds (2 TD, 0 INT)",
+            "players": [
+              {
+                "name": "Jordan Love",
+                "pts_frac": 11.8,
+                "pts_int": 11,
+                "stat_line": "145 Pass Yds, 2 Pass TD"
+              }
+            ]
+          },
+          "W3": 17.4,
+          "W3_Int": 16,
+          "W3_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "269 Pass Yds (2 TD, 0 INT) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jared Goff",
+                "pts_frac": 17.4,
+                "pts_int": 16,
+                "stat_line": "269 Pass Yds, 2 Pass TD \u2022 6 Rush Yds"
+              }
+            ]
+          },
+          "W4": 9.8,
+          "W4_Int": 9,
+          "W4_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "268 Pass Yds (0 TD, 1 INT) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyson Bagent",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "268 Pass Yds, 1 INT \u2022 1 Rush Yds"
+              }
+            ]
+          },
+          "W5": 12.2,
+          "W5_Int": 12,
+          "W5_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "155 Pass Yds (1 TD, 0 INT) + 40 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Deshaun Watson",
+                "pts_frac": 12.2,
+                "pts_int": 12,
+                "stat_line": "155 Pass Yds, 1 Pass TD \u2022 40 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W6": 20.8,
+          "W6_Int": 20,
+          "W6_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "235 Pass Yds (3 TD, 0 INT) + 24 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Drake Maye",
+                "pts_frac": 20.8,
+                "pts_int": 20,
+                "stat_line": "235 Pass Yds, 3 Pass TD \u2022 24 Rush Yds"
+              }
+            ]
+          },
+          "W7": 24.0,
+          "W7_Int": 23,
+          "W7_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "208 Pass Yds (2 TD, 0 INT) + 37 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Malik Willis",
+                "pts_frac": 24.0,
+                "pts_int": 23,
+                "stat_line": "208 Pass Yds, 2 Pass TD \u2022 37 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W8": 25.2,
+          "W8_Int": 24,
+          "W8_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "247 Pass Yds (3 TD, 0 INT) + 3 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Kirk Cousins",
+                "pts_frac": 25.2,
+                "pts_int": 24,
+                "stat_line": "247 Pass Yds, 3 Pass TD \u2022 3 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W9": 14.4,
+          "W9_Int": 13,
+          "W9_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "242 Pass Yds (2 TD, 0 INT) + 7 Rush Yds (0 TD) \u2022 2 Fumb Lost",
+            "players": [
+              {
+                "name": "Patrick Mahomes",
+                "pts_frac": 15.5,
+                "pts_int": 14,
+                "stat_line": "242 Pass Yds, 2 Pass TD \u2022 8 Rush Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Justin Fields",
+                "pts_frac": -1.1,
+                "pts_int": -1,
+                "stat_line": "-1 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 39.6,
+          "Last_4_Games": 84.4,
+          "L4_PPG": 21.1,
+          "Total_pts": 146.3,
+          "PPG": 16.3,
+          "Last_2_Games_Int": 37,
+          "Last_4_Games_Int": 80,
+          "Total_pts_Int": 138,
+          "PPG_Int": 15.3,
+          "Stat_Summary": "1909 Pass Yds, 16 Pass TD, 139 Rush Yds, 2 Rush TD (1 INT)",
+          "Week10_Opponent": "vs Bills (BUF)",
+          "Week10_Offense": "Bills (BUF)",
+          "Vuln_Rank": 18,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Panthers (CAR)",
+          "Team": "CAR",
+          "Position": "QB",
+          "W1": 35.3,
+          "W1_Int": 34,
+          "W1_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "269 Pass Yds (2 TD, 0 INT) + 65 Rush Yds (2 TD)",
+            "players": [
+              {
+                "name": "Caleb Williams",
+                "pts_frac": 35.3,
+                "pts_int": 34,
+                "stat_line": "269 Pass Yds, 2 Pass TD \u2022 65 Rush Yds, 2 Rush TD"
+              }
+            ]
+          },
+          "W2": 4.4,
+          "W2_Int": 3,
+          "W2_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "145 Pass Yds (0 TD, 3 INT) + 36 Rush Yds (0 TD) \u2022 2 Fumb Lost",
+            "players": [
+              {
+                "name": "Cooper Rush",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "86 Pass Yds, 2 INT \u2022 20 Rush Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Jack Strand",
+                "pts_frac": 2.0,
+                "pts_int": 1,
+                "stat_line": "59 Pass Yds, 1 INT \u2022 16 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W3": 17.3,
+          "W3_Int": 16,
+          "W3_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "144 Pass Yds (2 TD, 0 INT) + 45 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Deshaun Watson",
+                "pts_frac": 17.3,
+                "pts_int": 16,
+                "stat_line": "144 Pass Yds, 2 Pass TD \u2022 45 Rush Yds \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W4": 19.5,
+          "W4_Int": 19,
+          "W4_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "412 Pass Yds (1 TD, 0 INT)",
+            "players": [
+              {
+                "name": "Jared Goff",
+                "pts_frac": 19.5,
+                "pts_int": 19,
+                "stat_line": "412 Pass Yds, 1 Pass TD"
+              }
+            ]
+          },
+          "W5": "BYE",
+          "W5_Int": "BYE",
+          "W5_Detail": null,
+          "W6": 11.6,
+          "W6_Int": 11,
+          "W6_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "215 Pass Yds (1 TD, 0 INT)",
+            "players": [
+              {
+                "name": "Tanner McKee",
+                "pts_frac": 11.6,
+                "pts_int": 11,
+                "stat_line": "215 Pass Yds, 1 Pass TD"
+              }
+            ]
+          },
+          "W7": 5.4,
+          "W7_Int": 5,
+          "W7_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "64 Pass Yds (1 TD, 0 INT) + -2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Baker Mayfield",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "64 Pass Yds, 1 Pass TD \u2022 1 Rush Yds"
+              },
+              {
+                "name": "Jalon Daniels",
+                "pts_frac": -0.3,
+                "pts_int": 0,
+                "stat_line": "-3 Rush Yds"
+              }
+            ]
+          },
+          "W8": 19.5,
+          "W8_Int": 19,
+          "W8_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "288 Pass Yds (3 TD, 1 INT)",
+            "players": [
+              {
+                "name": "Jordan Love",
+                "pts_frac": 19.5,
+                "pts_int": 19,
+                "stat_line": "288 Pass Yds, 3 Pass TD, 1 INT"
+              }
+            ]
+          },
+          "W9": 14.7,
+          "W9_Int": 14,
+          "W9_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "237 Pass Yds (2 TD, 1 INT) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bo Nix",
+                "pts_frac": 14.7,
+                "pts_int": 14,
+                "stat_line": "237 Pass Yds, 2 Pass TD, 1 INT \u2022 2 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 34.2,
+          "Last_4_Games": 51.2,
+          "L4_PPG": 12.8,
+          "Total_pts": 127.7,
+          "PPG": 16.0,
+          "Last_2_Games_Int": 33,
+          "Last_4_Games_Int": 49,
+          "Total_pts_Int": 121,
+          "PPG_Int": 15.1,
+          "Stat_Summary": "1774 Pass Yds, 12 Pass TD, 146 Rush Yds, 2 Rush TD (5 INT)",
+          "Week10_Opponent": "@ Saints (NO)",
+          "Week10_Offense": "Saints (NO)",
+          "Vuln_Rank": 19,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Falcons (ATL)",
+          "Team": "ATL",
+          "Position": "QB",
+          "W1": 11.5,
+          "W1_Int": 11,
+          "W1_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "221 Pass Yds (1 TD, 0 INT) + -3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Aaron Rodgers",
+                "pts_frac": 11.5,
+                "pts_int": 11,
+                "stat_line": "221 Pass Yds, 1 Pass TD \u2022 -3 Rush Yds"
+              }
+            ]
+          },
+          "W2": 20.7,
+          "W2_Int": 20,
+          "W2_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "287 Pass Yds (3 TD, 0 INT) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bryce Young",
+                "pts_frac": 21.1,
+                "pts_int": 20,
+                "stat_line": "287 Pass Yds, 3 Pass TD \u2022 6 Rush Yds"
+              },
+              {
+                "name": "Kenny Pickett",
+                "pts_frac": -0.4,
+                "pts_int": 0,
+                "stat_line": "-4 Rush Yds"
+              }
+            ]
+          },
+          "W3": 17.5,
+          "W3_Int": 17,
+          "W3_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "312 Pass Yds (2 TD, 1 INT)",
+            "players": [
+              {
+                "name": "Jordan Love",
+                "pts_frac": 17.5,
+                "pts_int": 17,
+                "stat_line": "312 Pass Yds, 2 Pass TD, 1 INT"
+              }
+            ]
+          },
+          "W4": 14.9,
+          "W4_Int": 14,
+          "W4_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "286 Pass Yds (1 TD, 0 INT) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Shough",
+                "pts_frac": 14.9,
+                "pts_int": 14,
+                "stat_line": "286 Pass Yds, 1 Pass TD \u2022 5 Rush Yds"
+              }
+            ]
+          },
+          "W5": 22.0,
+          "W5_Int": 22,
+          "W5_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "201 Pass Yds (2 TD, 0 INT) + 20 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Tyler Huntley",
+                "pts_frac": 22.0,
+                "pts_int": 22,
+                "stat_line": "201 Pass Yds, 2 Pass TD \u2022 20 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W6": 15.5,
+          "W6_Int": 15,
+          "W6_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "305 Pass Yds (1 TD, 0 INT) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Caleb Williams",
+                "pts_frac": 15.5,
+                "pts_int": 15,
+                "stat_line": "305 Pass Yds, 1 Pass TD \u2022 3 Rush Yds"
+              }
+            ]
+          },
+          "W7": 13.0,
+          "W7_Int": 12,
+          "W7_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "288 Pass Yds (1 TD, 2 INT) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brock Purdy",
+                "pts_frac": 13.0,
+                "pts_int": 12,
+                "stat_line": "288 Pass Yds, 1 Pass TD, 2 INT \u2022 5 Rush Yds"
+              }
+            ]
+          },
+          "W8": 0.4,
+          "W8_Int": 0,
+          "W8_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "0 Pass Yds (0 TD, 0 INT) + 14 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Baker Mayfield",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "14 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W9": 26.5,
+          "W9_Int": 25,
+          "W9_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "271 Pass Yds (3 TD, 0 INT) + 7 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Joe Burrow",
+                "pts_frac": 26.5,
+                "pts_int": 25,
+                "stat_line": "271 Pass Yds, 3 Pass TD \u2022 7 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 26.9,
+          "Last_4_Games": 55.4,
+          "L4_PPG": 13.8,
+          "Total_pts": 142.0,
+          "PPG": 15.8,
+          "Last_2_Games_Int": 25,
+          "Last_4_Games_Int": 52,
+          "Total_pts_Int": 136,
+          "PPG_Int": 15.1,
+          "Stat_Summary": "2171 Pass Yds, 14 Pass TD, 53 Rush Yds, 2 Rush TD (3 INT)",
+          "Week10_Opponent": "vs Chiefs (KC)",
+          "Week10_Offense": "Chiefs (KC)",
+          "Vuln_Rank": 20,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Chargers (LAC)",
+          "Team": "LAC",
+          "Position": "QB",
+          "W1": 15.5,
+          "W1_Int": 15,
+          "W1_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "277 Pass Yds (1 TD, 0 INT) + 14 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jacoby Brissett",
+                "pts_frac": 15.5,
+                "pts_int": 15,
+                "stat_line": "277 Pass Yds, 1 Pass TD \u2022 14 Rush Yds"
+              }
+            ]
+          },
+          "W2": 18.2,
+          "W2_Int": 18,
+          "W2_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "253 Pass Yds (3 TD, 1 INT) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kirk Cousins",
+                "pts_frac": 18.2,
+                "pts_int": 18,
+                "stat_line": "253 Pass Yds, 3 Pass TD, 1 INT \u2022 1 Rush Yds"
+              }
+            ]
+          },
+          "W3": 19.5,
+          "W3_Int": 19,
+          "W3_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "204 Pass Yds (0 TD, 2 INT) + 22 Rush Yds (2 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Josh Allen",
+                "pts_frac": 19.5,
+                "pts_int": 19,
+                "stat_line": "204 Pass Yds, 2 INT \u2022 22 Rush Yds, 2 Rush TD \u2022 1 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W4": 12.3,
+          "W4_Int": 11,
+          "W4_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "168 Pass Yds (2 TD, 1 INT) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Sam Darnold",
+                "pts_frac": 12.3,
+                "pts_int": 11,
+                "stat_line": "168 Pass Yds, 2 Pass TD, 1 INT \u2022 6 Rush Yds"
+              }
+            ]
+          },
+          "W5": 7.9,
+          "W5_Int": 7,
+          "W5_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "123 Pass Yds (1 TD, 0 INT) + 10 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Bo Nix",
+                "pts_frac": 7.9,
+                "pts_int": 7,
+                "stat_line": "123 Pass Yds, 1 Pass TD \u2022 10 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W6": 11.5,
+          "W6_Int": 10,
+          "W6_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "272 Pass Yds (0 TD, 1 INT) + 16 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Patrick Mahomes",
+                "pts_frac": 11.5,
+                "pts_int": 10,
+                "stat_line": "272 Pass Yds, 1 INT \u2022 16 Rush Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 8.3,
+          "W8_Int": 8,
+          "W8_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "157 Pass Yds (1 TD, 1 INT)",
+            "players": [
+              {
+                "name": "Matthew Stafford",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "157 Pass Yds, 1 Pass TD, 1 INT"
+              }
+            ]
+          },
+          "W9": 31.4,
+          "W9_Int": 31,
+          "W9_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "391 Pass Yds (5 TD, 1 INT) + 18 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "C.J. Stroud",
+                "pts_frac": 31.4,
+                "pts_int": 31,
+                "stat_line": "384 Pass Yds, 5 Pass TD, 1 INT \u2022 20 Rush Yds"
+              },
+              {
+                "name": "Davis Mills",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "7 Pass Yds \u2022 -2 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 39.7,
+          "Last_4_Games": 59.1,
+          "L4_PPG": 14.8,
+          "Total_pts": 124.6,
+          "PPG": 15.6,
+          "Last_2_Games_Int": 39,
+          "Last_4_Games_Int": 56,
+          "Total_pts_Int": 119,
+          "PPG_Int": 14.9,
+          "Stat_Summary": "1845 Pass Yds, 13 Pass TD, 87 Rush Yds, 2 Rush TD (7 INT)",
+          "Week10_Opponent": "@ Ravens (BAL)",
+          "Week10_Offense": "Ravens (BAL)",
+          "Vuln_Rank": 21,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Bills (BUF)",
+          "Team": "BUF",
+          "Position": "QB",
+          "W1": 16.5,
+          "W1_Int": 15,
+          "W1_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "274 Pass Yds (2 TD, 0 INT) + 15 Rush Yds (0 TD) \u2022 2 Fumb Lost",
+            "players": [
+              {
+                "name": "C.J. Stroud",
+                "pts_frac": 16.5,
+                "pts_int": 15,
+                "stat_line": "274 Pass Yds, 2 Pass TD \u2022 15 Rush Yds \u2022 2 Fumb Lost"
+              }
+            ]
+          },
+          "W2": 25.8,
+          "W2_Int": 25,
+          "W2_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "327 Pass Yds (4 TD, 0 INT) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jared Goff",
+                "pts_frac": 25.8,
+                "pts_int": 25,
+                "stat_line": "327 Pass Yds, 4 Pass TD \u2022 7 Rush Yds"
+              }
+            ]
+          },
+          "W3": 12.7,
+          "W3_Int": 12,
+          "W3_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "226 Pass Yds (1 TD, 1 INT) + 17 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Justin Herbert",
+                "pts_frac": 12.7,
+                "pts_int": 12,
+                "stat_line": "226 Pass Yds, 1 Pass TD, 1 INT \u2022 17 Rush Yds"
+              }
+            ]
+          },
+          "W4": 24.2,
+          "W4_Int": 23,
+          "W4_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "269 Pass Yds (3 TD, 1 INT) + 54 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Drake Maye",
+                "pts_frac": 24.2,
+                "pts_int": 23,
+                "stat_line": "269 Pass Yds, 3 Pass TD, 1 INT \u2022 54 Rush Yds \u2022 1 Pass 2PT \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W5": 24.3,
+          "W5_Int": 24,
+          "W5_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "383 Pass Yds (3 TD, 0 INT)",
+            "players": [
+              {
+                "name": "Matthew Stafford",
+                "pts_frac": 24.3,
+                "pts_int": 24,
+                "stat_line": "383 Pass Yds, 3 Pass TD"
+              }
+            ]
+          },
+          "W6": 17.5,
+          "W6_Int": 17,
+          "W6_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "313 Pass Yds (2 TD, 1 INT)",
+            "players": [
+              {
+                "name": "Kirk Cousins",
+                "pts_frac": 17.5,
+                "pts_int": 17,
+                "stat_line": "313 Pass Yds, 2 Pass TD, 1 INT"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 0.9,
+          "W8_Int": 0,
+          "W8_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "91 Pass Yds (0 TD, 1 INT) + 3 Rush Yds (0 TD) \u2022 2 Fumb Lost",
+            "players": [
+              {
+                "name": "Joe Fagnano",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "91 Pass Yds, 1 INT \u2022 3 Rush Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Tyler Huntley",
+                "pts_frac": -1.0,
+                "pts_int": -1,
+                "stat_line": "1 Fumb Lost"
+              }
+            ]
+          },
+          "W9": 2.6,
+          "W9_Int": 2,
+          "W9_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "139 Pass Yds (0 TD, 2 INT) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Max Brosmer",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "58 Pass Yds"
+              },
+              {
+                "name": "Carson Wentz",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "81 Pass Yds, 2 INT \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 3.5,
+          "Last_4_Games": 45.3,
+          "L4_PPG": 11.3,
+          "Total_pts": 124.5,
+          "PPG": 15.6,
+          "Last_2_Games_Int": 2,
+          "Last_4_Games_Int": 43,
+          "Total_pts_Int": 118,
+          "PPG_Int": 14.8,
+          "Stat_Summary": "2022 Pass Yds, 15 Pass TD, 96 Rush Yds, 0 Rush TD (6 INT)",
+          "Week10_Opponent": "@ Jets (NYJ)",
+          "Week10_Offense": "Jets (NYJ)",
+          "Vuln_Rank": 22,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Rams (LA)",
+          "Team": "LA",
+          "Position": "QB",
+          "W1": 19.1,
+          "W1_Int": 18,
+          "W1_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "205 Pass Yds (3 TD, 1 INT) + 29 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brock Purdy",
+                "pts_frac": 19.1,
+                "pts_int": 18,
+                "stat_line": "205 Pass Yds, 3 Pass TD, 1 INT \u2022 29 Rush Yds"
+              }
+            ]
+          },
+          "W2": 4.3,
+          "W2_Int": 3,
+          "W2_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "131 Pass Yds (0 TD, 1 INT) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jameis Winston",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "111 Pass Yds, 1 INT \u2022 1 Rush Yds"
+              },
+              {
+                "name": "Jaxson Dart",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "20 Pass Yds"
+              }
+            ]
+          },
+          "W3": 21.1,
+          "W3_Int": 20,
+          "W3_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "186 Pass Yds (2 TD, 1 INT) + 7 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Bo Nix",
+                "pts_frac": 21.1,
+                "pts_int": 20,
+                "stat_line": "186 Pass Yds, 2 Pass TD, 1 INT \u2022 7 Rush Yds, 1 Rush TD \u2022 2 Pass 2PT"
+              }
+            ]
+          },
+          "W4": 11.5,
+          "W4_Int": 10,
+          "W4_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "93 Pass Yds (2 TD, 0 INT) + 18 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jalen Hurts",
+                "pts_frac": 11.5,
+                "pts_int": 10,
+                "stat_line": "93 Pass Yds, 2 Pass TD \u2022 18 Rush Yds"
+              }
+            ]
+          },
+          "W5": 29.5,
+          "W5_Int": 29,
+          "W5_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "210 Pass Yds (1 TD, 1 INT) + 121 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Josh Allen",
+                "pts_frac": 29.5,
+                "pts_int": 29,
+                "stat_line": "210 Pass Yds, 1 Pass TD, 1 INT \u2022 121 Rush Yds, 1 Rush TD \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W6": 7.9,
+          "W6_Int": 7,
+          "W6_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "218 Pass Yds (0 TD, 1 INT) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jacoby Brissett",
+                "pts_frac": 7.9,
+                "pts_int": 7,
+                "stat_line": "218 Pass Yds, 1 INT \u2022 2 Rush Yds"
+              }
+            ]
+          },
+          "W7": 18.4,
+          "W7_Int": 17,
+          "W7_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "295 Pass Yds (2 TD, 0 INT) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kirk Cousins",
+                "pts_frac": 18.4,
+                "pts_int": 17,
+                "stat_line": "295 Pass Yds, 2 Pass TD \u2022 6 Rush Yds"
+              }
+            ]
+          },
+          "W8": 9.8,
+          "W8_Int": 9,
+          "W8_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "257 Pass Yds (0 TD, 2 INT) + 15 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Justin Herbert",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "257 Pass Yds, 2 INT \u2022 15 Rush Yds"
+              }
+            ]
+          },
+          "W9": 14.6,
+          "W9_Int": 13,
+          "W9_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "274 Pass Yds (1 TD, 0 INT) + 16 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jayden Daniels",
+                "pts_frac": 14.6,
+                "pts_int": 13,
+                "stat_line": "274 Pass Yds, 1 Pass TD \u2022 16 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 24.4,
+          "Last_4_Games": 50.7,
+          "L4_PPG": 12.7,
+          "Total_pts": 136.2,
+          "PPG": 15.1,
+          "Last_2_Games_Int": 22,
+          "Last_4_Games_Int": 46,
+          "Total_pts_Int": 126,
+          "PPG_Int": 14.0,
+          "Stat_Summary": "1869 Pass Yds, 11 Pass TD, 215 Rush Yds, 2 Rush TD (7 INT)",
+          "Week10_Opponent": "@ Cardinals (ARI)",
+          "Week10_Offense": "Cardinals (ARI)",
+          "Vuln_Rank": 23,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "49ers (SF)",
+          "Team": "SF",
+          "Position": "QB",
+          "W1": 6.5,
+          "W1_Int": 5,
+          "W1_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "168 Pass Yds (0 TD, 1 INT) + 8 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Matthew Stafford",
+                "pts_frac": 5.1,
+                "pts_int": 5,
+                "stat_line": "155 Pass Yds, 1 INT \u2022 -1 Rush Yds"
+              },
+              {
+                "name": "Stetson Bennett",
+                "pts_frac": 1.4,
+                "pts_int": 0,
+                "stat_line": "13 Pass Yds \u2022 9 Rush Yds"
+              }
+            ]
+          },
+          "W2": 11.5,
+          "W2_Int": 10,
+          "W2_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "197 Pass Yds (1 TD, 0 INT) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Malik Willis",
+                "pts_frac": 11.5,
+                "pts_int": 10,
+                "stat_line": "197 Pass Yds, 1 Pass TD \u2022 6 Rush Yds"
+              }
+            ]
+          },
+          "W3": 23.6,
+          "W3_Int": 23,
+          "W3_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "280 Pass Yds (2 TD, 0 INT) + 4 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jacoby Brissett",
+                "pts_frac": 23.6,
+                "pts_int": 23,
+                "stat_line": "280 Pass Yds, 2 Pass TD \u2022 4 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W4": 12.6,
+          "W4_Int": 12,
+          "W4_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "214 Pass Yds (1 TD, 0 INT) + 10 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bo Nix",
+                "pts_frac": 12.6,
+                "pts_int": 12,
+                "stat_line": "214 Pass Yds, 1 Pass TD \u2022 10 Rush Yds"
+              }
+            ]
+          },
+          "W5": 9.3,
+          "W5_Int": 8,
+          "W5_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "195 Pass Yds (1 TD, 2 INT) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Sam Darnold",
+                "pts_frac": 9.3,
+                "pts_int": 8,
+                "stat_line": "195 Pass Yds, 1 Pass TD, 2 INT \u2022 5 Rush Yds"
+              }
+            ]
+          },
+          "W6": 19.0,
+          "W6_Int": 19,
+          "W6_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "300 Pass Yds (2 TD, 0 INT) + 10 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jayden Daniels",
+                "pts_frac": 19.0,
+                "pts_int": 19,
+                "stat_line": "300 Pass Yds, 2 Pass TD \u2022 10 Rush Yds"
+              }
+            ]
+          },
+          "W7": 17.4,
+          "W7_Int": 17,
+          "W7_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "213 Pass Yds (3 TD, 0 INT) + -1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Penix Jr.",
+                "pts_frac": 17.4,
+                "pts_int": 17,
+                "stat_line": "213 Pass Yds, 3 Pass TD \u2022 -1 Rush Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 14.6,
+          "W9_Int": 14,
+          "W9_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "216 Pass Yds (1 TD, 3 INT) + 0 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Kirk Cousins",
+                "pts_frac": 14.6,
+                "pts_int": 14,
+                "stat_line": "216 Pass Yds, 1 Pass TD, 3 INT \u2022 0 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 32.0,
+          "Last_4_Games": 60.3,
+          "L4_PPG": 15.1,
+          "Total_pts": 114.5,
+          "PPG": 14.3,
+          "Last_2_Games_Int": 31,
+          "Last_4_Games_Int": 58,
+          "Total_pts_Int": 108,
+          "PPG_Int": 13.5,
+          "Stat_Summary": "1783 Pass Yds, 11 Pass TD, 42 Rush Yds, 2 Rush TD (6 INT)",
+          "Week10_Opponent": "@ Cowboys (DAL)",
+          "Week10_Offense": "Cowboys (DAL)",
+          "Vuln_Rank": 24,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Browns (CLE)",
+          "Team": "CLE",
+          "Position": "QB",
+          "W1": 21.8,
+          "W1_Int": 21,
+          "W1_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "245 Pass Yds (4 TD, 0 INT)",
+            "players": [
+              {
+                "name": "Trevor Lawrence",
+                "pts_frac": 22.1,
+                "pts_int": 21,
+                "stat_line": "245 Pass Yds, 4 Pass TD \u2022 3 Rush Yds"
+              },
+              {
+                "name": "Nick Mullens",
+                "pts_frac": -0.3,
+                "pts_int": 0,
+                "stat_line": "-3 Rush Yds"
+              }
+            ]
+          },
+          "W2": 12.2,
+          "W2_Int": 11,
+          "W2_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "182 Pass Yds (1 TD, 1 INT) + 29 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Baker Mayfield",
+                "pts_frac": 12.2,
+                "pts_int": 11,
+                "stat_line": "182 Pass Yds, 1 Pass TD, 1 INT \u2022 29 Rush Yds"
+              }
+            ]
+          },
+          "W3": 13.6,
+          "W3_Int": 13,
+          "W3_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "291 Pass Yds (1 TD, 1 INT)",
+            "players": [
+              {
+                "name": "Bryce Young",
+                "pts_frac": 13.6,
+                "pts_int": 13,
+                "stat_line": "291 Pass Yds, 1 Pass TD, 1 INT"
+              }
+            ]
+          },
+          "W4": 21.0,
+          "W4_Int": 20,
+          "W4_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "299 Pass Yds (3 TD, 2 INT)",
+            "players": [
+              {
+                "name": "Aaron Rodgers",
+                "pts_frac": 21.0,
+                "pts_int": 20,
+                "stat_line": "299 Pass Yds, 3 Pass TD, 2 INT \u2022 1 Rush/Rec 2PT"
+              }
+            ]
+          },
+          "W5": 10.0,
+          "W5_Int": 9,
+          "W5_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "182 Pass Yds (1 TD, 0 INT) + 7 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Geno Smith",
+                "pts_frac": 10.0,
+                "pts_int": 9,
+                "stat_line": "182 Pass Yds, 1 Pass TD \u2022 7 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W6": 12.4,
+          "W6_Int": 11,
+          "W6_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "165 Pass Yds (1 TD, 0 INT) + 28 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Huntley",
+                "pts_frac": 12.4,
+                "pts_int": 11,
+                "stat_line": "165 Pass Yds, 1 Pass TD \u2022 28 Rush Yds"
+              }
+            ]
+          },
+          "W7": 6.7,
+          "W7_Int": 6,
+          "W7_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "181 Pass Yds (0 TD, 1 INT) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cam Ward",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "181 Pass Yds, 1 INT \u2022 5 Rush Yds"
+              }
+            ]
+          },
+          "W8": 5.9,
+          "W8_Int": 5,
+          "W8_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "172 Pass Yds (0 TD, 1 INT)",
+            "players": [
+              {
+                "name": "Aaron Rodgers",
+                "pts_frac": 5.9,
+                "pts_int": 5,
+                "stat_line": "172 Pass Yds, 1 INT"
+              }
+            ]
+          },
+          "W9": 18.7,
+          "W9_Int": 18,
+          "W9_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "265 Pass Yds (1 TD, 0 INT) + 51 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Shough",
+                "pts_frac": 18.7,
+                "pts_int": 18,
+                "stat_line": "265 Pass Yds, 1 Pass TD \u2022 51 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 24.6,
+          "Last_4_Games": 43.7,
+          "L4_PPG": 10.9,
+          "Total_pts": 122.3,
+          "PPG": 13.6,
+          "Last_2_Games_Int": 23,
+          "Last_4_Games_Int": 40,
+          "Total_pts_Int": 114,
+          "PPG_Int": 12.7,
+          "Stat_Summary": "1982 Pass Yds, 12 Pass TD, 120 Rush Yds, 0 Rush TD (6 INT)",
+          "Week10_Opponent": "vs Texans (HOU)",
+          "Week10_Offense": "Texans (HOU)",
+          "Vuln_Rank": 25,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Packers (GB)",
+          "Team": "GB",
+          "Position": "QB",
+          "W1": 15.8,
+          "W1_Int": 14,
+          "W1_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "151 Pass Yds (3 TD, 1 INT) + 8 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Carson Wentz",
+                "pts_frac": 15.2,
+                "pts_int": 15,
+                "stat_line": "133 Pass Yds, 3 Pass TD \u2022 -1 Rush Yds \u2022 1 Pass 2PT"
+              },
+              {
+                "name": "Kyler Murray",
+                "pts_frac": 0.6,
+                "pts_int": -1,
+                "stat_line": "18 Pass Yds, 1 INT \u2022 9 Rush Yds"
+              }
+            ]
+          },
+          "W2": 14.6,
+          "W2_Int": 13,
+          "W2_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "247 Pass Yds (1 TD, 0 INT) + 17 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Geno Smith",
+                "pts_frac": 14.6,
+                "pts_int": 13,
+                "stat_line": "247 Pass Yds, 1 Pass TD \u2022 17 Rush Yds"
+              }
+            ]
+          },
+          "W3": 13.0,
+          "W3_Int": 13,
+          "W3_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "256 Pass Yds (1 TD, 1 INT) + -2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Penix Jr.",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "256 Pass Yds, 1 Pass TD, 1 INT \u2022 -2 Rush Yds \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W4": 12.4,
+          "W4_Int": 11,
+          "W4_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "148 Pass Yds (1 TD, 2 INT) + 55 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jalon Daniels",
+                "pts_frac": 12.4,
+                "pts_int": 11,
+                "stat_line": "148 Pass Yds, 1 Pass TD, 2 INT \u2022 55 Rush Yds"
+              }
+            ]
+          },
+          "W5": 5.9,
+          "W5_Int": 4,
+          "W5_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "195 Pass Yds (0 TD, 3 INT) + 21 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Tyson Bagent",
+                "pts_frac": 3.2,
+                "pts_int": 2,
+                "stat_line": "87 Pass Yds, 2 INT \u2022 17 Rush Yds"
+              },
+              {
+                "name": "Case Keenum",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "108 Pass Yds, 1 INT \u2022 4 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W6": 12.0,
+          "W6_Int": 11,
+          "W6_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "258 Pass Yds (1 TD, 2 INT) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dak Prescott",
+                "pts_frac": 12.0,
+                "pts_int": 11,
+                "stat_line": "258 Pass Yds, 1 Pass TD, 2 INT \u2022 7 Rush Yds"
+              }
+            ]
+          },
+          "W7": 17.0,
+          "W7_Int": 17,
+          "W7_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "303 Pass Yds (2 TD, 0 INT) + -1 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jared Goff",
+                "pts_frac": 17.0,
+                "pts_int": 17,
+                "stat_line": "303 Pass Yds, 2 Pass TD \u2022 -1 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W8": 10.4,
+          "W8_Int": 10,
+          "W8_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "209 Pass Yds (1 TD, 1 INT)",
+            "players": [
+              {
+                "name": "Bryce Young",
+                "pts_frac": 10.4,
+                "pts_int": 10,
+                "stat_line": "209 Pass Yds, 1 Pass TD, 1 INT"
+              }
+            ]
+          },
+          "W9": 19.1,
+          "W9_Int": 17,
+          "W9_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "320 Pass Yds (3 TD, 3 INT) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Drake Maye",
+                "pts_frac": 18.3,
+                "pts_int": 17,
+                "stat_line": "299 Pass Yds, 3 Pass TD, 3 INT \u2022 3 Rush Yds"
+              },
+              {
+                "name": "Tommy DeVito",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "21 Pass Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 29.5,
+          "Last_4_Games": 58.5,
+          "L4_PPG": 14.6,
+          "Total_pts": 120.2,
+          "PPG": 13.4,
+          "Last_2_Games_Int": 27,
+          "Last_4_Games_Int": 55,
+          "Total_pts_Int": 110,
+          "PPG_Int": 12.2,
+          "Stat_Summary": "2087 Pass Yds, 13 Pass TD, 108 Rush Yds, 0 Rush TD (13 INT)",
+          "Week10_Opponent": "vs Vikings (MIN)",
+          "Week10_Offense": "Vikings (MIN)",
+          "Vuln_Rank": 26,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Jaguars (JAX)",
+          "Team": "JAX",
+          "Position": "QB",
+          "W1": 14.0,
+          "W1_Int": 13,
+          "W1_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "205 Pass Yds (1 TD, 1 INT) + 38 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Deshaun Watson",
+                "pts_frac": 14.0,
+                "pts_int": 13,
+                "stat_line": "205 Pass Yds, 1 Pass TD, 1 INT \u2022 38 Rush Yds"
+              }
+            ]
+          },
+          "W2": 14.1,
+          "W2_Int": 13,
+          "W2_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "288 Pass Yds (1 TD, 1 INT) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bo Nix",
+                "pts_frac": 14.1,
+                "pts_int": 13,
+                "stat_line": "288 Pass Yds, 1 Pass TD, 1 INT \u2022 6 Rush Yds"
+              }
+            ]
+          },
+          "W3": 8.2,
+          "W3_Int": 6,
+          "W3_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "229 Pass Yds (0 TD, 2 INT) + 20 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Drake Maye",
+                "pts_frac": 6.8,
+                "pts_int": 5,
+                "stat_line": "199 Pass Yds, 2 INT \u2022 18 Rush Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Tommy DeVito",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "30 Pass Yds \u2022 2 Rush Yds"
+              }
+            ]
+          },
+          "W4": 24.7,
+          "W4_Int": 24,
+          "W4_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "428 Pass Yds (1 TD, 2 INT) + 6 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Joe Burrow",
+                "pts_frac": 24.7,
+                "pts_int": 24,
+                "stat_line": "428 Pass Yds, 1 Pass TD, 2 INT \u2022 6 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W5": 12.0,
+          "W5_Int": 11,
+          "W5_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "220 Pass Yds (1 TD, 0 INT) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jalen Hurts",
+                "pts_frac": 12.0,
+                "pts_int": 11,
+                "stat_line": "220 Pass Yds, 1 Pass TD \u2022 2 Rush Yds"
+              }
+            ]
+          },
+          "W6": 21.0,
+          "W6_Int": 20,
+          "W6_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "312 Pass Yds (3 TD, 1 INT) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "C.J. Stroud",
+                "pts_frac": 21.0,
+                "pts_int": 20,
+                "stat_line": "312 Pass Yds, 3 Pass TD, 1 INT \u2022 5 Rush Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 8.2,
+          "W8_Int": 6,
+          "W8_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "152 Pass Yds (1 TD, 2 INT) + 11 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Daniel Jones",
+                "pts_frac": 7.5,
+                "pts_int": 6,
+                "stat_line": "144 Pass Yds, 1 Pass TD, 2 INT \u2022 7 Rush Yds"
+              },
+              {
+                "name": "Anthony Richardson",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "8 Pass Yds \u2022 4 Rush Yds"
+              }
+            ]
+          },
+          "W9": 1.7,
+          "W9_Int": 1,
+          "W9_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "60 Pass Yds (0 TD, 2 INT) + 13 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Joe Fagnano",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "60 Pass Yds, 2 INT \u2022 13 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 9.9,
+          "Last_4_Games": 42.9,
+          "L4_PPG": 10.7,
+          "Total_pts": 103.9,
+          "PPG": 13.0,
+          "Last_2_Games_Int": 7,
+          "Last_4_Games_Int": 38,
+          "Total_pts_Int": 94,
+          "PPG_Int": 11.8,
+          "Stat_Summary": "1894 Pass Yds, 8 Pass TD, 101 Rush Yds, 1 Rush TD (11 INT)",
+          "Week10_Opponent": "@ Titans (TEN)",
+          "Week10_Offense": "Titans (TEN)",
+          "Vuln_Rank": 27,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Buccaneers (TB)",
+          "Team": "TB",
+          "Position": "QB",
+          "W1": 14.2,
+          "W1_Int": 14,
+          "W1_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "254 Pass Yds (1 TD, 1 INT) + 20 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Joe Burrow",
+                "pts_frac": 14.2,
+                "pts_int": 14,
+                "stat_line": "254 Pass Yds, 1 Pass TD, 1 INT \u2022 20 Rush Yds"
+              }
+            ]
+          },
+          "W2": 17.7,
+          "W2_Int": 17,
+          "W2_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "238 Pass Yds (2 TD, 0 INT) + 22 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Deshaun Watson",
+                "pts_frac": 17.7,
+                "pts_int": 17,
+                "stat_line": "238 Pass Yds, 2 Pass TD \u2022 22 Rush Yds"
+              }
+            ]
+          },
+          "W3": 10.4,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "168 Pass Yds (1 TD, 1 INT) + 17 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kyler Murray",
+                "pts_frac": 10.4,
+                "pts_int": 9,
+                "stat_line": "168 Pass Yds, 1 Pass TD, 1 INT \u2022 17 Rush Yds"
+              }
+            ]
+          },
+          "W4": 12.1,
+          "W4_Int": 12,
+          "W4_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "197 Pass Yds (2 TD, 1 INT) + -8 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jordan Love",
+                "pts_frac": 12.1,
+                "pts_int": 12,
+                "stat_line": "197 Pass Yds, 2 Pass TD, 1 INT \u2022 -8 Rush Yds"
+              }
+            ]
+          },
+          "W5": 13.6,
+          "W5_Int": 13,
+          "W5_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "316 Pass Yds (1 TD, 2 INT)",
+            "players": [
+              {
+                "name": "Dak Prescott",
+                "pts_frac": 13.6,
+                "pts_int": 13,
+                "stat_line": "316 Pass Yds, 1 Pass TD, 2 INT"
+              }
+            ]
+          },
+          "W6": 15.0,
+          "W6_Int": 15,
+          "W6_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "253 Pass Yds (2 TD, 1 INT) + -1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Aaron Rodgers",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "253 Pass Yds, 2 Pass TD, 1 INT \u2022 -1 Rush Yds"
+              }
+            ]
+          },
+          "W7": 10.8,
+          "W7_Int": 8,
+          "W7_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "210 Pass Yds (1 TD, 2 INT) + 24 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Bryce Young",
+                "pts_frac": 7.4,
+                "pts_int": 6,
+                "stat_line": "163 Pass Yds, 1 Pass TD, 2 INT \u2022 9 Rush Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Kenny Pickett",
+                "pts_frac": 3.4,
+                "pts_int": 2,
+                "stat_line": "47 Pass Yds \u2022 15 Rush Yds"
+              }
+            ]
+          },
+          "W8": 2.1,
+          "W8_Int": 2,
+          "W8_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "125 Pass Yds (0 TD, 4 INT) + 11 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Penix Jr.",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "125 Pass Yds, 4 INT \u2022 11 Rush Yds"
+              }
+            ]
+          },
+          "W9": 14.8,
+          "W9_Int": 14,
+          "W9_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "279 Pass Yds (2 TD, 4 INT) + 16 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Caleb Williams",
+                "pts_frac": 14.8,
+                "pts_int": 14,
+                "stat_line": "279 Pass Yds, 2 Pass TD, 4 INT \u2022 16 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 16.9,
+          "Last_4_Games": 42.7,
+          "L4_PPG": 10.7,
+          "Total_pts": 110.7,
+          "PPG": 12.3,
+          "Last_2_Games_Int": 16,
+          "Last_4_Games_Int": 39,
+          "Total_pts_Int": 104,
+          "PPG_Int": 11.6,
+          "Stat_Summary": "2040 Pass Yds, 12 Pass TD, 101 Rush Yds, 0 Rush TD (16 INT)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 28,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Steelers (PIT)",
+          "Team": "PIT",
+          "Position": "QB",
+          "W1": 6.7,
+          "W1_Int": 6,
+          "W1_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "143 Pass Yds (1 TD, 2 INT)",
+            "players": [
+              {
+                "name": "Cooper Rush",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "143 Pass Yds, 1 Pass TD, 2 INT"
+              }
+            ]
+          },
+          "W2": 9.0,
+          "W2_Int": 8,
+          "W2_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "208 Pass Yds (0 TD, 1 INT) + 17 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Drake Maye",
+                "pts_frac": 9.0,
+                "pts_int": 8,
+                "stat_line": "208 Pass Yds, 1 INT \u2022 17 Rush Yds"
+              }
+            ]
+          },
+          "W3": 20.6,
+          "W3_Int": 20,
+          "W3_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "282 Pass Yds (3 TD, 0 INT) + 13 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Joe Burrow",
+                "pts_frac": 20.6,
+                "pts_int": 20,
+                "stat_line": "282 Pass Yds, 3 Pass TD \u2022 13 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W4": 13.9,
+          "W4_Int": 13,
+          "W4_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "268 Pass Yds (1 TD, 1 INT) + 22 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Deshaun Watson",
+                "pts_frac": 13.9,
+                "pts_int": 13,
+                "stat_line": "268 Pass Yds, 1 Pass TD, 1 INT \u2022 22 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W5": 11.1,
+          "W5_Int": 10,
+          "W5_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "267 Pass Yds (0 TD, 0 INT) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Daniel Jones",
+                "pts_frac": 11.1,
+                "pts_int": 10,
+                "stat_line": "267 Pass Yds \u2022 4 Rush Yds"
+              }
+            ]
+          },
+          "W6": 11.2,
+          "W6_Int": 10,
+          "W6_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "164 Pass Yds (1 TD, 2 INT) + 39 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jalon Daniels",
+                "pts_frac": 11.2,
+                "pts_int": 10,
+                "stat_line": "164 Pass Yds, 1 Pass TD, 2 INT \u2022 39 Rush Yds \u2022 -3 Rec Yds"
+              }
+            ]
+          },
+          "W7": 13.8,
+          "W7_Int": 13,
+          "W7_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "278 Pass Yds (1 TD, 1 INT) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Shough",
+                "pts_frac": 13.8,
+                "pts_int": 13,
+                "stat_line": "278 Pass Yds, 1 Pass TD, 1 INT \u2022 7 Rush Yds"
+              }
+            ]
+          },
+          "W8": 12.2,
+          "W8_Int": 11,
+          "W8_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "326 Pass Yds (0 TD, 0 INT) + 2 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Deshaun Watson",
+                "pts_frac": 12.2,
+                "pts_int": 11,
+                "stat_line": "324 Pass Yds \u2022 2 Rush Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Shedeur Sanders",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "2 Pass Yds"
+              }
+            ]
+          },
+          "W9": "BYE",
+          "W9_Int": "BYE",
+          "W9_Detail": null,
+          "GP": 8,
+          "Last_2_Games": 26.0,
+          "Last_4_Games": 48.3,
+          "L4_PPG": 12.1,
+          "Total_pts": 98.5,
+          "PPG": 12.3,
+          "Last_2_Games_Int": 24,
+          "Last_4_Games_Int": 44,
+          "Total_pts_Int": 91,
+          "PPG_Int": 11.4,
+          "Stat_Summary": "1936 Pass Yds, 7 Pass TD, 104 Rush Yds, 0 Rush TD (7 INT)",
+          "Week10_Opponent": "@ Bengals (CIN)",
+          "Week10_Offense": "Bengals (CIN)",
+          "Vuln_Rank": 29,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Chiefs (KC)",
+          "Team": "KC",
+          "Position": "QB",
+          "W1": 6.4,
+          "W1_Int": 6,
+          "W1_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "131 Pass Yds (1 TD, 1 INT) + 2 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Bo Nix",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "131 Pass Yds, 1 Pass TD, 1 INT \u2022 2 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W2": 11.4,
+          "W2_Int": 11,
+          "W2_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "210 Pass Yds (1 TD, 1 INT) + 10 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Daniel Jones",
+                "pts_frac": 11.4,
+                "pts_int": 11,
+                "stat_line": "210 Pass Yds, 1 Pass TD, 1 INT \u2022 10 Rush Yds"
+              }
+            ]
+          },
+          "W3": 12.0,
+          "W3_Int": 11,
+          "W3_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "210 Pass Yds (0 TD, 1 INT) + 56 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Malik Willis",
+                "pts_frac": 12.0,
+                "pts_int": 11,
+                "stat_line": "210 Pass Yds, 1 INT \u2022 56 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W4": 20.6,
+          "W4_Int": 20,
+          "W4_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "365 Pass Yds (2 TD, 1 INT)",
+            "players": [
+              {
+                "name": "Kirk Cousins",
+                "pts_frac": 20.6,
+                "pts_int": 20,
+                "stat_line": "365 Pass Yds, 2 Pass TD, 1 INT \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W5": "BYE",
+          "W5_Int": "BYE",
+          "W5_Detail": null,
+          "W6": 9.8,
+          "W6_Int": 9,
+          "W6_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "204 Pass Yds (0 TD, 1 INT) + 26 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Justin Herbert",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "204 Pass Yds, 1 INT \u2022 26 Rush Yds"
+              }
+            ]
+          },
+          "W7": 14.0,
+          "W7_Int": 13,
+          "W7_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "257 Pass Yds (1 TD, 1 INT) + 17 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Sam Darnold",
+                "pts_frac": 14.0,
+                "pts_int": 13,
+                "stat_line": "257 Pass Yds, 1 Pass TD, 1 INT \u2022 17 Rush Yds"
+              }
+            ]
+          },
+          "W8": 16.3,
+          "W8_Int": 15,
+          "W8_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "222 Pass Yds (2 TD, 0 INT) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bo Nix",
+                "pts_frac": 16.3,
+                "pts_int": 15,
+                "stat_line": "222 Pass Yds, 2 Pass TD \u2022 4 Rush Yds \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W9": 7.4,
+          "W9_Int": 6,
+          "W9_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "165 Pass Yds (0 TD, 0 INT) + 8 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Geno Smith",
+                "pts_frac": 7.4,
+                "pts_int": 6,
+                "stat_line": "165 Pass Yds \u2022 8 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 23.7,
+          "Last_4_Games": 47.5,
+          "L4_PPG": 11.9,
+          "Total_pts": 97.9,
+          "PPG": 12.2,
+          "Last_2_Games_Int": 21,
+          "Last_4_Games_Int": 43,
+          "Total_pts_Int": 91,
+          "PPG_Int": 11.4,
+          "Stat_Summary": "1764 Pass Yds, 7 Pass TD, 123 Rush Yds, 0 Rush TD (6 INT)",
+          "Week10_Opponent": "@ Falcons (ATL)",
+          "Week10_Offense": "Falcons (ATL)",
+          "Vuln_Rank": 30,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Seahawks (SEA)",
+          "Team": "SEA",
+          "Position": "QB",
+          "W1": 11.8,
+          "W1_Int": 11,
+          "W1_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "178 Pass Yds (1 TD, 3 INT) + 47 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Drake Maye",
+                "pts_frac": 11.8,
+                "pts_int": 11,
+                "stat_line": "178 Pass Yds, 1 Pass TD, 3 INT \u2022 47 Rush Yds"
+              }
+            ]
+          },
+          "W2": 6.5,
+          "W2_Int": 5,
+          "W2_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "95 Pass Yds (1 TD, 1 INT) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jacoby Brissett",
+                "pts_frac": 6.5,
+                "pts_int": 5,
+                "stat_line": "95 Pass Yds, 1 Pass TD, 1 INT \u2022 7 Rush Yds"
+              }
+            ]
+          },
+          "W3": 17.4,
+          "W3_Int": 17,
+          "W3_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "183 Pass Yds (3 TD, 0 INT) + 11 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Marcus Mariota",
+                "pts_frac": 17.4,
+                "pts_int": 17,
+                "stat_line": "183 Pass Yds, 3 Pass TD \u2022 11 Rush Yds"
+              }
+            ]
+          },
+          "W4": 11.6,
+          "W4_Int": 11,
+          "W4_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "189 Pass Yds (1 TD, 2 INT) + 40 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Justin Herbert",
+                "pts_frac": 11.6,
+                "pts_int": 11,
+                "stat_line": "189 Pass Yds, 1 Pass TD, 2 INT \u2022 40 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W5": 14.2,
+          "W5_Int": 13,
+          "W5_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "189 Pass Yds (2 TD, 1 INT) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brock Purdy",
+                "pts_frac": 14.2,
+                "pts_int": 13,
+                "stat_line": "189 Pass Yds, 2 Pass TD, 1 INT \u2022 6 Rush Yds \u2022 1 Pass 2PT"
+              }
+            ]
+          },
+          "W6": 4.5,
+          "W6_Int": 4,
+          "W6_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "107 Pass Yds (0 TD, 0 INT) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bo Nix",
+                "pts_frac": 4.5,
+                "pts_int": 4,
+                "stat_line": "107 Pass Yds \u2022 2 Rush Yds"
+              }
+            ]
+          },
+          "W7": 7.0,
+          "W7_Int": 6,
+          "W7_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "165 Pass Yds (0 TD, 1 INT) + 14 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Patrick Mahomes",
+                "pts_frac": 7.0,
+                "pts_int": 6,
+                "stat_line": "165 Pass Yds, 1 INT \u2022 14 Rush Yds"
+              }
+            ]
+          },
+          "W8": 13.0,
+          "W8_Int": 12,
+          "W8_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "247 Pass Yds (1 TD, 0 INT) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Caleb Williams",
+                "pts_frac": 13.0,
+                "pts_int": 12,
+                "stat_line": "247 Pass Yds, 1 Pass TD \u2022 1 Rush Yds"
+              }
+            ]
+          },
+          "W9": 7.0,
+          "W9_Int": 6,
+          "W9_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "166 Pass Yds (0 TD, 0 INT) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Gardner Minshew",
+                "pts_frac": 7.0,
+                "pts_int": 6,
+                "stat_line": "166 Pass Yds \u2022 4 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 20.0,
+          "Last_4_Games": 31.5,
+          "L4_PPG": 7.9,
+          "Total_pts": 93.0,
+          "PPG": 10.3,
+          "Last_2_Games_Int": 18,
+          "Last_4_Games_Int": 28,
+          "Total_pts_Int": 85,
+          "PPG_Int": 9.4,
+          "Stat_Summary": "1519 Pass Yds, 9 Pass TD, 132 Rush Yds, 0 Rush TD (8 INT)",
+          "Week10_Opponent": "@ Raiders (LV)",
+          "Week10_Offense": "Raiders (LV)",
+          "Vuln_Rank": 31,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Vikings (MIN)",
+          "Team": "MIN",
+          "Position": "QB",
+          "W1": 19.5,
+          "W1_Int": 19,
+          "W1_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "387 Pass Yds (2 TD, 1 INT) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jordan Love",
+                "pts_frac": 19.5,
+                "pts_int": 19,
+                "stat_line": "387 Pass Yds, 2 Pass TD, 1 INT \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W2": 10.9,
+          "W2_Int": 10,
+          "W2_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "192 Pass Yds (0 TD, 1 INT) + 42 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Caleb Williams",
+                "pts_frac": 8.7,
+                "pts_int": 8,
+                "stat_line": "138 Pass Yds, 1 INT \u2022 42 Rush Yds"
+              },
+              {
+                "name": "Tyson Bagent",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "54 Pass Yds"
+              }
+            ]
+          },
+          "W3": 11.2,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "217 Pass Yds (1 TD, 2 INT) + 15 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Baker Mayfield",
+                "pts_frac": 11.3,
+                "pts_int": 10,
+                "stat_line": "217 Pass Yds, 1 Pass TD, 1 INT \u2022 6 Rush Yds"
+              },
+              {
+                "name": "Jalon Daniels",
+                "pts_frac": -0.1,
+                "pts_int": -1,
+                "stat_line": "0 Pass Yds, 1 INT \u2022 9 Rush Yds"
+              }
+            ]
+          },
+          "W4": 3.5,
+          "W4_Int": 3,
+          "W4_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "85 Pass Yds (0 TD, 0 INT) + 11 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Malik Willis",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "85 Pass Yds \u2022 11 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W5": 1.8,
+          "W5_Int": 1,
+          "W5_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "96 Pass Yds (0 TD, 2 INT)",
+            "players": [
+              {
+                "name": "Tyler Shough",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "96 Pass Yds, 2 INT"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 4.6,
+          "W7_Int": 4,
+          "W7_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "108 Pass Yds (0 TD, 1 INT) + 13 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Daniel Jones",
+                "pts_frac": 4.6,
+                "pts_int": 4,
+                "stat_line": "108 Pass Yds, 1 INT \u2022 13 Rush Yds"
+              }
+            ]
+          },
+          "W8": 9.0,
+          "W8_Int": 9,
+          "W8_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "176 Pass Yds (1 TD, 1 INT)",
+            "players": [
+              {
+                "name": "Jared Goff",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "176 Pass Yds, 1 Pass TD, 1 INT"
+              }
+            ]
+          },
+          "W9": 12.7,
+          "W9_Int": 12,
+          "W9_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "234 Pass Yds (1 TD, 1 INT) + 13 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Josh Allen",
+                "pts_frac": 12.9,
+                "pts_int": 12,
+                "stat_line": "234 Pass Yds, 1 Pass TD, 1 INT \u2022 15 Rush Yds"
+              },
+              {
+                "name": "Kyle Allen",
+                "pts_frac": -0.2,
+                "pts_int": 0,
+                "stat_line": "-2 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 21.7,
+          "Last_4_Games": 28.1,
+          "L4_PPG": 7.0,
+          "Total_pts": 73.2,
+          "PPG": 9.2,
+          "Last_2_Games_Int": 21,
+          "Last_4_Games_Int": 26,
+          "Total_pts_Int": 67,
+          "PPG_Int": 8.4,
+          "Stat_Summary": "1495 Pass Yds, 5 Pass TD, 94 Rush Yds, 0 Rush TD (9 INT)",
+          "Week10_Opponent": "@ Packers (GB)",
+          "Week10_Offense": "Packers (GB)",
+          "Vuln_Rank": 32,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        }
+      ]
+    },
+    "RB": {
+      "position": "RB",
+      "league_avg_ppg": 17.7,
+      "league_median": 16.2,
+      "p25_stingy": 10.9,
+      "p75_vulnerable": 22.1,
+      "p90_smash": 30.1,
+      "teams": [
+        {
+          "Defense": "Saints (NO)",
+          "Team": "NO",
+          "Position": "RB",
+          "W1": 31.4,
+          "W1_Int": 30,
+          "W1_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "163 Rush Yds (2 TD) + 41 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jahmyr Gibbs",
+                "pts_frac": 29.6,
+                "pts_int": 29,
+                "stat_line": "156 Rush Yds, 2 Rush TD \u2022 30 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Sione Vaki",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "7 Rush Yds \u2022 11 Rec Yds"
+              }
+            ]
+          },
+          "W2": 16.5,
+          "W2_Int": 15,
+          "W2_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "74 Rush Yds (1 TD) + 31 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Derrick Henry",
+                "pts_frac": 14.7,
+                "pts_int": 14,
+                "stat_line": "68 Rush Yds, 1 Rush TD \u2022 19 Rec Yds"
+              },
+              {
+                "name": "Justice Hill",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "6 Rush Yds \u2022 12 Rec Yds"
+              }
+            ]
+          },
+          "W3": 19.7,
+          "W3_Int": 19,
+          "W3_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "110 Rush Yds (1 TD) + 37 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Mike Washington Jr.",
+                "pts_frac": 11.4,
+                "pts_int": 11,
+                "stat_line": "54 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Ashton Jeanty",
+                "pts_frac": 9.3,
+                "pts_int": 9,
+                "stat_line": "56 Rush Yds \u2022 37 Rec Yds"
+              },
+              {
+                "name": "Dylan Laube",
+                "pts_frac": -1.0,
+                "pts_int": -1,
+                "stat_line": "1 Fumb Lost"
+              }
+            ]
+          },
+          "W4": 51.4,
+          "W4_Int": 50,
+          "W4_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "207 Rush Yds (5 TD) + 7 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bijan Robinson",
+                "pts_frac": 26.7,
+                "pts_int": 26,
+                "stat_line": "145 Rush Yds, 2 Rush TD \u2022 2 Rec Yds"
+              },
+              {
+                "name": "Brian Robinson",
+                "pts_frac": 24.7,
+                "pts_int": 24,
+                "stat_line": "62 Rush Yds, 3 Rush TD \u2022 5 Rec Yds"
+              }
+            ]
+          },
+          "W5": 18.4,
+          "W5_Int": 17,
+          "W5_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "113 Rush Yds (1 TD) + 21 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Aaron Jones",
+                "pts_frac": 16.7,
+                "pts_int": 16,
+                "stat_line": "113 Rush Yds, 1 Rush TD \u2022 4 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "DeeJay Dallas",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Demond Claiborne",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W6": 20.0,
+          "W6_Int": 19,
+          "W6_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "34 Rush Yds (1 TD) + 46 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Tyrone Tracy Jr.",
+                "pts_frac": 16.5,
+                "pts_int": 16,
+                "stat_line": "18 Rush Yds, 1 Rush TD \u2022 27 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Devin Singletary",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "14 Rush Yds \u2022 19 Rec Yds"
+              },
+              {
+                "name": "Najee Harris",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rush Yds"
+              }
+            ]
+          },
+          "W7": 22.3,
+          "W7_Int": 21,
+          "W7_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "142 Rush Yds (0 TD) + 81 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaylen Warren",
+                "pts_frac": 13.7,
+                "pts_int": 13,
+                "stat_line": "101 Rush Yds \u2022 36 Rec Yds"
+              },
+              {
+                "name": "Rico Dowdle",
+                "pts_frac": 8.6,
+                "pts_int": 8,
+                "stat_line": "41 Rush Yds \u2022 45 Rec Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 9.3,
+          "W9_Int": 8,
+          "W9_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "64 Rush Yds (0 TD) + 29 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dylan Sampson",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "21 Rush Yds \u2022 27 Rec Yds"
+              },
+              {
+                "name": "Quinshon Judkins",
+                "pts_frac": 4.5,
+                "pts_int": 4,
+                "stat_line": "43 Rush Yds \u2022 2 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 31.6,
+          "Last_4_Games": 70.0,
+          "L4_PPG": 17.5,
+          "Total_pts": 189.0,
+          "PPG": 23.6,
+          "Last_2_Games_Int": 29,
+          "Last_4_Games_Int": 65,
+          "Total_pts_Int": 179,
+          "PPG_Int": 22.4,
+          "Stat_Summary": "907 Rush Yds (11 TD) + 293 Rec Yds (1 TD)",
+          "Week10_Opponent": "vs Panthers (CAR)",
+          "Week10_Offense": "Panthers (CAR)",
+          "Vuln_Rank": 1,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Panthers (CAR)",
+          "Team": "CAR",
+          "Position": "RB",
+          "W1": 49.8,
+          "W1_Int": 49,
+          "W1_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "224 Rush Yds (4 TD) + 34 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "D'Andre Swift",
+                "pts_frac": 31.4,
+                "pts_int": 31,
+                "stat_line": "124 Rush Yds, 3 Rush TD \u2022 10 Rec Yds"
+              },
+              {
+                "name": "Kyle Monangai",
+                "pts_frac": 18.4,
+                "pts_int": 18,
+                "stat_line": "100 Rush Yds, 1 Rush TD \u2022 24 Rec Yds"
+              }
+            ]
+          },
+          "W2": 14.8,
+          "W2_Int": 14,
+          "W2_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "123 Rush Yds (0 TD) + 25 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bijan Robinson",
+                "pts_frac": 8.1,
+                "pts_int": 8,
+                "stat_line": "72 Rush Yds \u2022 9 Rec Yds"
+              },
+              {
+                "name": "Brian Robinson",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "51 Rush Yds \u2022 16 Rec Yds"
+              }
+            ]
+          },
+          "W3": 13.0,
+          "W3_Int": 12,
+          "W3_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "87 Rush Yds (0 TD) + 43 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Quinshon Judkins",
+                "pts_frac": 7.9,
+                "pts_int": 7,
+                "stat_line": "70 Rush Yds \u2022 9 Rec Yds"
+              },
+              {
+                "name": "Raheim Sanders",
+                "pts_frac": 5.1,
+                "pts_int": 5,
+                "stat_line": "17 Rush Yds \u2022 34 Rec Yds"
+              }
+            ]
+          },
+          "W4": 15.4,
+          "W4_Int": 14,
+          "W4_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "46 Rush Yds (1 TD) + 48 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jahmyr Gibbs",
+                "pts_frac": 13.7,
+                "pts_int": 13,
+                "stat_line": "46 Rush Yds, 1 Rush TD \u2022 31 Rec Yds"
+              },
+              {
+                "name": "Sione Vaki",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "W5": "BYE",
+          "W5_Int": "BYE",
+          "W5_Detail": null,
+          "W6": 11.4,
+          "W6_Int": 11,
+          "W6_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "35 Rush Yds (1 TD) + 19 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dameon Pierce",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "35 Rush Yds, 1 Rush TD \u2022 15 Rec Yds"
+              },
+              {
+                "name": "Carson Steele",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W7": 43.0,
+          "W7_Int": 42,
+          "W7_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "246 Rush Yds (3 TD) + 4 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bucky Irving",
+                "pts_frac": 23.0,
+                "pts_int": 23,
+                "stat_line": "106 Rush Yds, 2 Rush TD \u2022 4 Rec Yds"
+              },
+              {
+                "name": "Sean Tucker",
+                "pts_frac": 11.2,
+                "pts_int": 11,
+                "stat_line": "52 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Kenny Gainwell",
+                "pts_frac": 8.8,
+                "pts_int": 8,
+                "stat_line": "88 Rush Yds"
+              }
+            ]
+          },
+          "W8": 19.0,
+          "W8_Int": 18,
+          "W8_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "48 Rush Yds (1 TD) + 22 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Josh Jacobs",
+                "pts_frac": 17.2,
+                "pts_int": 17,
+                "stat_line": "39 Rush Yds, 1 Rush TD \u2022 13 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "MarShawn Lloyd",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "7 Rush Yds \u2022 9 Rec Yds"
+              },
+              {
+                "name": "Pierre Strong",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rush Yds"
+              }
+            ]
+          },
+          "W9": 17.0,
+          "W9_Int": 16,
+          "W9_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "75 Rush Yds (1 TD) + 35 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jonah Coleman",
+                "pts_frac": 14.8,
+                "pts_int": 14,
+                "stat_line": "57 Rush Yds, 1 Rush TD \u2022 31 Rec Yds"
+              },
+              {
+                "name": "J.K. Dobbins",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "18 Rush Yds \u2022 4 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 36.0,
+          "Last_4_Games": 90.4,
+          "L4_PPG": 22.6,
+          "Total_pts": 183.4,
+          "PPG": 22.9,
+          "Last_2_Games_Int": 34,
+          "Last_4_Games_Int": 87,
+          "Total_pts_Int": 176,
+          "PPG_Int": 22.0,
+          "Stat_Summary": "884 Rush Yds (11 TD) + 230 Rec Yds (1 TD)",
+          "Week10_Opponent": "@ Saints (NO)",
+          "Week10_Offense": "Saints (NO)",
+          "Vuln_Rank": 2,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Raiders (LV)",
+          "Team": "LV",
+          "Position": "RB",
+          "W1": 6.5,
+          "W1_Int": 6,
+          "W1_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "35 Rush Yds (0 TD) + 30 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "De'Von Achane",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "36 Rush Yds \u2022 30 Rec Yds"
+              },
+              {
+                "name": "Jaylen Wright",
+                "pts_frac": -0.1,
+                "pts_int": 0,
+                "stat_line": "-1 Rush Yds"
+              }
+            ]
+          },
+          "W2": 20.4,
+          "W2_Int": 19,
+          "W2_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "118 Rush Yds (1 TD) + 36 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Omarion Hampton",
+                "pts_frac": 16.5,
+                "pts_int": 16,
+                "stat_line": "94 Rush Yds, 1 Rush TD \u2022 21 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Keaton Mitchell",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "24 Rush Yds \u2022 15 Rec Yds"
+              }
+            ]
+          },
+          "W3": 13.5,
+          "W3_Int": 12,
+          "W3_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "112 Rush Yds (0 TD) + 23 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Travis Etienne",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "57 Rush Yds \u2022 13 Rec Yds"
+              },
+              {
+                "name": "Alvin Kamara",
+                "pts_frac": 4.1,
+                "pts_int": 4,
+                "stat_line": "36 Rush Yds \u2022 5 Rec Yds"
+              },
+              {
+                "name": "Kendre Miller",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "14 Rush Yds \u2022 5 Rec Yds"
+              },
+              {
+                "name": "CJ Donaldson",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rush Yds"
+              }
+            ]
+          },
+          "W4": 30.9,
+          "W4_Int": 30,
+          "W4_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "177 Rush Yds (2 TD) + 12 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kenneth Walker III",
+                "pts_frac": 29.9,
+                "pts_int": 29,
+                "stat_line": "177 Rush Yds, 2 Rush TD \u2022 2 Rec Yds"
+              },
+              {
+                "name": "Emmett Johnson",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W5": 23.2,
+          "W5_Int": 21,
+          "W5_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "138 Rush Yds (1 TD) + 44 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Rhamondre Stevenson",
+                "pts_frac": 14.5,
+                "pts_int": 14,
+                "stat_line": "64 Rush Yds, 1 Rush TD \u2022 21 Rec Yds"
+              },
+              {
+                "name": "Corey Kiner",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "52 Rush Yds \u2022 7 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "TreVeyon Henderson",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "22 Rush Yds \u2022 16 Rec Yds"
+              }
+            ]
+          },
+          "W6": 24.9,
+          "W6_Int": 23,
+          "W6_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "102 Rush Yds (1 TD) + 87 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "James Cook",
+                "pts_frac": 21.3,
+                "pts_int": 21,
+                "stat_line": "95 Rush Yds, 1 Rush TD \u2022 58 Rec Yds"
+              },
+              {
+                "name": "Ty Johnson",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "3 Rush Yds \u2022 24 Rec Yds"
+              },
+              {
+                "name": "Ray Davis",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "4 Rush Yds \u2022 5 Rec Yds"
+              }
+            ]
+          },
+          "W7": 33.2,
+          "W7_Int": 33,
+          "W7_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "192 Rush Yds (2 TD) + 30 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Kyren Williams",
+                "pts_frac": 17.1,
+                "pts_int": 17,
+                "stat_line": "99 Rush Yds, 1 Rush TD \u2022 22 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Blake Corum",
+                "pts_frac": 16.1,
+                "pts_int": 16,
+                "stat_line": "93 Rush Yds, 1 Rush TD \u2022 8 Rec Yds"
+              }
+            ]
+          },
+          "W8": 22.8,
+          "W8_Int": 22,
+          "W8_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "162 Rush Yds (1 TD) + 6 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Braelon Allen",
+                "pts_frac": 21.3,
+                "pts_int": 21,
+                "stat_line": "147 Rush Yds, 1 Rush TD \u2022 6 Rec Yds"
+              },
+              {
+                "name": "Isaiah Davis",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rush Yds"
+              }
+            ]
+          },
+          "W9": 29.2,
+          "W9_Int": 28,
+          "W9_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "153 Rush Yds (1 TD) + 19 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Christian McCaffrey",
+                "pts_frac": 20.7,
+                "pts_int": 20,
+                "stat_line": "68 Rush Yds, 1 Rush TD \u2022 19 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Kaelon Black",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "70 Rush Yds"
+              },
+              {
+                "name": "Jordan James",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rush Yds"
+              },
+              {
+                "name": "Kyle Juszczyk",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 52.0,
+          "Last_4_Games": 110.1,
+          "L4_PPG": 27.5,
+          "Total_pts": 204.6,
+          "PPG": 22.7,
+          "Last_2_Games_Int": 50,
+          "Last_4_Games_Int": 106,
+          "Total_pts_Int": 194,
+          "PPG_Int": 21.6,
+          "Stat_Summary": "1189 Rush Yds (9 TD) + 287 Rec Yds (1 TD)",
+          "Week10_Opponent": "vs Seahawks (SEA)",
+          "Week10_Offense": "Seahawks (SEA)",
+          "Vuln_Rank": 3,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Colts (IND)",
+          "Team": "IND",
+          "Position": "RB",
+          "W1": 37.1,
+          "W1_Int": 36,
+          "W1_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "162 Rush Yds (3 TD) + 29 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Derrick Henry",
+                "pts_frac": 34.3,
+                "pts_int": 34,
+                "stat_line": "144 Rush Yds, 3 Rush TD \u2022 19 Rec Yds"
+              },
+              {
+                "name": "Justice Hill",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "18 Rush Yds \u2022 10 Rec Yds"
+              }
+            ]
+          },
+          "W2": 21.3,
+          "W2_Int": 20,
+          "W2_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "132 Rush Yds (0 TD) + 81 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kenneth Walker III",
+                "pts_frac": 17.8,
+                "pts_int": 17,
+                "stat_line": "117 Rush Yds \u2022 61 Rec Yds"
+              },
+              {
+                "name": "Emmett Johnson",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "15 Rush Yds \u2022 20 Rec Yds"
+              }
+            ]
+          },
+          "W3": 12.9,
+          "W3_Int": 12,
+          "W3_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "48 Rush Yds (1 TD) + 21 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Woody Marks",
+                "pts_frac": 8.1,
+                "pts_int": 8,
+                "stat_line": "15 Rush Yds, 1 Rush TD \u2022 6 Rec Yds"
+              },
+              {
+                "name": "David Montgomery",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "33 Rush Yds \u2022 15 Rec Yds"
+              }
+            ]
+          },
+          "W4": 9.5,
+          "W4_Int": 9,
+          "W4_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "49 Rush Yds (0 TD) + 46 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jacory Croskey-Merritt",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "15 Rush Yds \u2022 35 Rec Yds"
+              },
+              {
+                "name": "Austin Ekeler",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "29 Rush Yds \u2022 11 Rec Yds"
+              },
+              {
+                "name": "Craig Reynolds",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rush Yds"
+              },
+              {
+                "name": "Kaytron Allen",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rush Yds"
+              }
+            ]
+          },
+          "W5": 31.4,
+          "W5_Int": 30,
+          "W5_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "107 Rush Yds (1 TD) + 87 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jaylen Warren",
+                "pts_frac": 30.8,
+                "pts_int": 30,
+                "stat_line": "101 Rush Yds, 1 Rush TD \u2022 87 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Lew Nichols III",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rush Yds"
+              }
+            ]
+          },
+          "W6": 8.4,
+          "W6_Int": 7,
+          "W6_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "77 Rush Yds (0 TD) + 7 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tony Pollard",
+                "pts_frac": 7.6,
+                "pts_int": 7,
+                "stat_line": "76 Rush Yds"
+              },
+              {
+                "name": "Tyjae Spears",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "1 Rush Yds \u2022 7 Rec Yds"
+              }
+            ]
+          },
+          "W7": 9.4,
+          "W7_Int": 8,
+          "W7_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "94 Rush Yds (0 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jordan Mason",
+                "pts_frac": 6.8,
+                "pts_int": 6,
+                "stat_line": "68 Rush Yds"
+              },
+              {
+                "name": "Aaron Jones",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rush Yds"
+              }
+            ]
+          },
+          "W8": 41.0,
+          "W8_Int": 39,
+          "W8_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "158 Rush Yds (2 TD) + 72 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Bhayshul Tuten",
+                "pts_frac": 27.9,
+                "pts_int": 27,
+                "stat_line": "104 Rush Yds, 1 Rush TD \u2022 55 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Chris Rodriguez Jr.",
+                "pts_frac": 11.8,
+                "pts_int": 11,
+                "stat_line": "41 Rush Yds, 1 Rush TD \u2022 17 Rec Yds"
+              },
+              {
+                "name": "Ameer Abdullah",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rush Yds"
+              }
+            ]
+          },
+          "W9": 26.1,
+          "W9_Int": 25,
+          "W9_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "178 Rush Yds (1 TD) + 23 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Javonte Williams",
+                "pts_frac": 18.4,
+                "pts_int": 18,
+                "stat_line": "101 Rush Yds, 1 Rush TD \u2022 23 Rec Yds"
+              },
+              {
+                "name": "Tyler Goodson",
+                "pts_frac": 7.7,
+                "pts_int": 7,
+                "stat_line": "77 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 67.1,
+          "Last_4_Games": 84.9,
+          "L4_PPG": 21.2,
+          "Total_pts": 197.1,
+          "PPG": 21.9,
+          "Last_2_Games_Int": 64,
+          "Last_4_Games_Int": 79,
+          "Total_pts_Int": 186,
+          "PPG_Int": 20.7,
+          "Stat_Summary": "1005 Rush Yds (8 TD) + 366 Rec Yds (2 TD)",
+          "Week10_Opponent": "vs Dolphins (MIA)",
+          "Week10_Offense": "Dolphins (MIA)",
+          "Vuln_Rank": 4,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Cowboys (DAL)",
+          "Team": "DAL",
+          "Position": "RB",
+          "W1": 24.3,
+          "W1_Int": 23,
+          "W1_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "111 Rush Yds (1 TD) + 22 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Cam Skattebo",
+                "pts_frac": 14.1,
+                "pts_int": 14,
+                "stat_line": "81 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Devin Singletary",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "16 Rush Yds \u2022 22 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tyrone Tracy Jr.",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "14 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W2": 15.5,
+          "W2_Int": 14,
+          "W2_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "110 Rush Yds (0 TD) + 45 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Rachaad White",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "43 Rush Yds \u2022 40 Rec Yds"
+              },
+              {
+                "name": "Jacory Croskey-Merritt",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "43 Rush Yds \u2022 5 Rec Yds"
+              },
+              {
+                "name": "Kaytron Allen",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rush Yds"
+              }
+            ]
+          },
+          "W3": 24.2,
+          "W3_Int": 23,
+          "W3_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "122 Rush Yds (2 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Derrick Henry",
+                "pts_frac": 20.9,
+                "pts_int": 20,
+                "stat_line": "89 Rush Yds, 2 Rush TD"
+              },
+              {
+                "name": "Justice Hill",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rush Yds"
+              }
+            ]
+          },
+          "W4": 12.5,
+          "W4_Int": 12,
+          "W4_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "46 Rush Yds (1 TD) + 19 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Woody Marks",
+                "pts_frac": 8.2,
+                "pts_int": 8,
+                "stat_line": "22 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "David Montgomery",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "24 Rush Yds \u2022 19 Rec Yds"
+              }
+            ]
+          },
+          "W5": 34.1,
+          "W5_Int": 32,
+          "W5_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "201 Rush Yds (1 TD) + 20 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Bucky Irving",
+                "pts_frac": 29.5,
+                "pts_int": 29,
+                "stat_line": "165 Rush Yds, 1 Rush TD \u2022 10 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Kenny Gainwell",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "18 Rush Yds \u2022 10 Rec Yds"
+              },
+              {
+                "name": "Sean Tucker",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rush Yds"
+              }
+            ]
+          },
+          "W6": 7.5,
+          "W6_Int": 7,
+          "W6_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "36 Rush Yds (0 TD) + 39 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Pierre Strong",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "28 Rush Yds \u2022 39 Rec Yds"
+              },
+              {
+                "name": "MarShawn Lloyd",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rush Yds"
+              },
+              {
+                "name": "Kaleb Johnson",
+                "pts_frac": -0.2,
+                "pts_int": 0,
+                "stat_line": "-2 Rush Yds"
+              }
+            ]
+          },
+          "W7": 27.3,
+          "W7_Int": 26,
+          "W7_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "120 Rush Yds (2 TD) + 33 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Saquon Barkley",
+                "pts_frac": 13.1,
+                "pts_int": 13,
+                "stat_line": "62 Rush Yds, 1 Rush TD \u2022 9 Rec Yds"
+              },
+              {
+                "name": "Dameon Pierce",
+                "pts_frac": 10.8,
+                "pts_int": 10,
+                "stat_line": "47 Rush Yds, 1 Rush TD \u2022 1 Rec Yds"
+              },
+              {
+                "name": "Elijah Mitchell",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "11 Rush Yds \u2022 23 Rec Yds"
+              }
+            ]
+          },
+          "W8": 34.2,
+          "W8_Int": 33,
+          "W8_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "178 Rush Yds (1 TD) + 54 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Tyler Allgeier",
+                "pts_frac": 31.1,
+                "pts_int": 31,
+                "stat_line": "147 Rush Yds, 1 Rush TD \u2022 44 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jeremiyah Love",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "23 Rush Yds"
+              },
+              {
+                "name": "Bam Knight",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rush Yds \u2022 10 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W9": 15.6,
+          "W9_Int": 15,
+          "W9_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "91 Rush Yds (1 TD) + 15 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Seth McGowan",
+                "pts_frac": 10.2,
+                "pts_int": 10,
+                "stat_line": "45 Rush Yds, 1 Rush TD \u2022 -3 Rec Yds"
+              },
+              {
+                "name": "Jonathan Taylor",
+                "pts_frac": 5.4,
+                "pts_int": 5,
+                "stat_line": "46 Rush Yds \u2022 18 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 49.8,
+          "Last_4_Games": 84.6,
+          "L4_PPG": 21.1,
+          "Total_pts": 195.2,
+          "PPG": 21.7,
+          "Last_2_Games_Int": 48,
+          "Last_4_Games_Int": 81,
+          "Total_pts_Int": 185,
+          "PPG_Int": 20.6,
+          "Stat_Summary": "1015 Rush Yds (9 TD) + 247 Rec Yds (3 TD)",
+          "Week10_Opponent": "vs 49ers (SF)",
+          "Week10_Offense": "49ers (SF)",
+          "Vuln_Rank": 5,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Packers (GB)",
+          "Team": "GB",
+          "Position": "RB",
+          "W1": 22.0,
+          "W1_Int": 21,
+          "W1_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "99 Rush Yds (2 TD) + 1 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jordan Mason",
+                "pts_frac": 11.9,
+                "pts_int": 11,
+                "stat_line": "59 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Aaron Jones",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "40 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "DeeJay Dallas",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rec Yds"
+              }
+            ]
+          },
+          "W2": 16.7,
+          "W2_Int": 16,
+          "W2_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "36 Rush Yds (1 TD) + 71 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Breece Hall",
+                "pts_frac": 9.2,
+                "pts_int": 9,
+                "stat_line": "29 Rush Yds \u2022 63 Rec Yds"
+              },
+              {
+                "name": "Braelon Allen",
+                "pts_frac": 7.5,
+                "pts_int": 7,
+                "stat_line": "7 Rush Yds, 1 Rush TD \u2022 8 Rec Yds"
+              }
+            ]
+          },
+          "W3": 44.3,
+          "W3_Int": 44,
+          "W3_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "244 Rush Yds (3 TD) + 19 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bijan Robinson",
+                "pts_frac": 33.3,
+                "pts_int": 33,
+                "stat_line": "194 Rush Yds, 2 Rush TD \u2022 19 Rec Yds"
+              },
+              {
+                "name": "Brian Robinson",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "50 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W4": 21.8,
+          "W4_Int": 21,
+          "W4_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "76 Rush Yds (1 TD) + 22 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Kenny Gainwell",
+                "pts_frac": 8.7,
+                "pts_int": 8,
+                "stat_line": "5 Rush Yds \u2022 22 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Sean Tucker",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "10 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Bucky Irving",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "61 Rush Yds"
+              }
+            ]
+          },
+          "W5": 17.3,
+          "W5_Int": 17,
+          "W5_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "49 Rush Yds (1 TD) + 64 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "D'Andre Swift",
+                "pts_frac": 13.3,
+                "pts_int": 13,
+                "stat_line": "43 Rush Yds, 1 Rush TD \u2022 30 Rec Yds"
+              },
+              {
+                "name": "Roschon Johnson",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "6 Rush Yds \u2022 34 Rec Yds"
+              }
+            ]
+          },
+          "W6": 12.8,
+          "W6_Int": 11,
+          "W6_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "41 Rush Yds (1 TD) + 27 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Javonte Williams",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "41 Rush Yds, 1 Rush TD \u2022 9 Rec Yds"
+              },
+              {
+                "name": "Tyler Goodson",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Hunter Luepke",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W7": 13.8,
+          "W7_Int": 13,
+          "W7_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "121 Rush Yds (0 TD) + 27 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jahmyr Gibbs",
+                "pts_frac": 13.3,
+                "pts_int": 13,
+                "stat_line": "116 Rush Yds \u2022 27 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Sione Vaki",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rush Yds"
+              }
+            ]
+          },
+          "W8": 18.0,
+          "W8_Int": 17,
+          "W8_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "82 Rush Yds (1 TD) + 38 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chuba Hubbard",
+                "pts_frac": 17.9,
+                "pts_int": 17,
+                "stat_line": "81 Rush Yds, 1 Rush TD \u2022 38 Rec Yds"
+              },
+              {
+                "name": "Trevor Etienne",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rush Yds"
+              }
+            ]
+          },
+          "W9": 24.7,
+          "W9_Int": 23,
+          "W9_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "91 Rush Yds (1 TD) + 46 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Rhamondre Stevenson",
+                "pts_frac": 12.8,
+                "pts_int": 12,
+                "stat_line": "32 Rush Yds \u2022 46 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Corey Kiner",
+                "pts_frac": 11.5,
+                "pts_int": 11,
+                "stat_line": "55 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Lan Larison",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 42.7,
+          "Last_4_Games": 69.3,
+          "L4_PPG": 17.3,
+          "Total_pts": 191.4,
+          "PPG": 21.3,
+          "Last_2_Games_Int": 40,
+          "Last_4_Games_Int": 64,
+          "Total_pts_Int": 183,
+          "PPG_Int": 20.3,
+          "Stat_Summary": "839 Rush Yds (11 TD) + 315 Rec Yds (2 TD)",
+          "Week10_Opponent": "vs Vikings (MIN)",
+          "Week10_Offense": "Vikings (MIN)",
+          "Vuln_Rank": 6,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Falcons (ATL)",
+          "Team": "ATL",
+          "Position": "RB",
+          "W1": 8.4,
+          "W1_Int": 8,
+          "W1_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "61 Rush Yds (0 TD) + 33 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jaylen Warren",
+                "pts_frac": 6.3,
+                "pts_int": 6,
+                "stat_line": "46 Rush Yds \u2022 27 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Rico Dowdle",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "15 Rush Yds \u2022 6 Rec Yds"
+              }
+            ]
+          },
+          "W2": 13.2,
+          "W2_Int": 13,
+          "W2_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "66 Rush Yds (0 TD) + 6 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Chuba Hubbard",
+                "pts_frac": 12.4,
+                "pts_int": 12,
+                "stat_line": "53 Rush Yds \u2022 11 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jonathon Brooks",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "16 Rush Yds \u2022 -5 Rec Yds"
+              },
+              {
+                "name": "AJ Dillon",
+                "pts_frac": -0.3,
+                "pts_int": 0,
+                "stat_line": "-3 Rush Yds"
+              }
+            ]
+          },
+          "W3": 3.8,
+          "W3_Int": 2,
+          "W3_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "17 Rush Yds (0 TD) + 21 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "MarShawn Lloyd",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "11 Rush Yds \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Kaleb Johnson",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "6 Rush Yds \u2022 10 Rec Yds"
+              },
+              {
+                "name": "Chris Brooks",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W4": 21.0,
+          "W4_Int": 19,
+          "W4_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "50 Rush Yds (2 TD) + 50 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Alvin Kamara",
+                "pts_frac": 17.8,
+                "pts_int": 17,
+                "stat_line": "23 Rush Yds, 2 Rush TD \u2022 35 Rec Yds"
+              },
+              {
+                "name": "CJ Donaldson",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "18 Rush Yds \u2022 5 Rec Yds"
+              },
+              {
+                "name": "Kendre Miller",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rush Yds \u2022 10 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W5": 27.8,
+          "W5_Int": 27,
+          "W5_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "175 Rush Yds (0 TD) + 23 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Derrick Henry",
+                "pts_frac": 20.0,
+                "pts_int": 20,
+                "stat_line": "102 Rush Yds \u2022 18 Rec Yds, 1 Rec TD \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Justice Hill",
+                "pts_frac": 7.8,
+                "pts_int": 7,
+                "stat_line": "73 Rush Yds \u2022 5 Rec Yds"
+              }
+            ]
+          },
+          "W6": 32.5,
+          "W6_Int": 32,
+          "W6_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "95 Rush Yds (3 TD) + 60 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "D'Andre Swift",
+                "pts_frac": 19.0,
+                "pts_int": 19,
+                "stat_line": "44 Rush Yds, 2 Rush TD \u2022 26 Rec Yds"
+              },
+              {
+                "name": "Roschon Johnson",
+                "pts_frac": 13.5,
+                "pts_int": 13,
+                "stat_line": "51 Rush Yds, 1 Rush TD \u2022 34 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W7": 35.7,
+          "W7_Int": 34,
+          "W7_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "108 Rush Yds (2 TD) + 79 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Christian McCaffrey",
+                "pts_frac": 16.0,
+                "pts_int": 16,
+                "stat_line": "39 Rush Yds, 1 Rush TD \u2022 61 Rec Yds"
+              },
+              {
+                "name": "Kaelon Black",
+                "pts_frac": 10.9,
+                "pts_int": 10,
+                "stat_line": "63 Rush Yds, 1 Rush TD \u2022 -4 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Kyle Juszczyk",
+                "pts_frac": 7.1,
+                "pts_int": 7,
+                "stat_line": "11 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jordan James",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "6 Rush Yds \u2022 11 Rec Yds"
+              }
+            ]
+          },
+          "W8": 37.0,
+          "W8_Int": 37,
+          "W8_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "310 Rush Yds (1 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bucky Irving",
+                "pts_frac": 23.0,
+                "pts_int": 23,
+                "stat_line": "170 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Kenny Gainwell",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "140 Rush Yds"
+              }
+            ]
+          },
+          "W9": 11.8,
+          "W9_Int": 11,
+          "W9_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "100 Rush Yds (0 TD) + 18 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chase Brown",
+                "pts_frac": 7.5,
+                "pts_int": 7,
+                "stat_line": "57 Rush Yds \u2022 18 Rec Yds"
+              },
+              {
+                "name": "Samaje Perine",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "43 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 48.8,
+          "Last_4_Games": 117.0,
+          "L4_PPG": 29.2,
+          "Total_pts": 191.2,
+          "PPG": 21.2,
+          "Last_2_Games_Int": 48,
+          "Last_4_Games_Int": 114,
+          "Total_pts_Int": 183,
+          "PPG_Int": 20.3,
+          "Stat_Summary": "982 Rush Yds (8 TD) + 290 Rec Yds (3 TD)",
+          "Week10_Opponent": "vs Chiefs (KC)",
+          "Week10_Offense": "Chiefs (KC)",
+          "Vuln_Rank": 7,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Jets (NYJ)",
+          "Team": "NYJ",
+          "Position": "RB",
+          "W1": 5.8,
+          "W1_Int": 5,
+          "W1_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "47 Rush Yds (0 TD) + 11 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tony Pollard",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "35 Rush Yds \u2022 -1 Rec Yds"
+              },
+              {
+                "name": "Tyjae Spears",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "12 Rush Yds \u2022 12 Rec Yds"
+              }
+            ]
+          },
+          "W2": 13.4,
+          "W2_Int": 12,
+          "W2_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "63 Rush Yds (0 TD) + 21 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "MarShawn Lloyd",
+                "pts_frac": 7.6,
+                "pts_int": 7,
+                "stat_line": "20 Rush Yds \u2022 6 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Kaleb Johnson",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rush Yds"
+              },
+              {
+                "name": "Chris Brooks",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "11 Rush Yds \u2022 15 Rec Yds"
+              }
+            ]
+          },
+          "W3": 38.1,
+          "W3_Int": 37,
+          "W3_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "125 Rush Yds (2 TD) + 76 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jahmyr Gibbs",
+                "pts_frac": 34.4,
+                "pts_int": 34,
+                "stat_line": "99 Rush Yds, 2 Rush TD \u2022 65 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Sione Vaki",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "26 Rush Yds \u2022 11 Rec Yds"
+              }
+            ]
+          },
+          "W4": 35.7,
+          "W4_Int": 35,
+          "W4_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "220 Rush Yds (2 TD) + 27 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Kyle Monangai",
+                "pts_frac": 27.0,
+                "pts_int": 27,
+                "stat_line": "146 Rush Yds, 2 Rush TD \u2022 4 Rec Yds"
+              },
+              {
+                "name": "D'Andre Swift",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "58 Rush Yds \u2022 16 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Roschon Johnson",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "16 Rush Yds \u2022 7 Rec Yds"
+              }
+            ]
+          },
+          "W5": 6.3,
+          "W5_Int": 6,
+          "W5_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "56 Rush Yds (0 TD) + 7 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Quinshon Judkins",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "44 Rush Yds \u2022 6 Rec Yds"
+              },
+              {
+                "name": "Raheim Sanders",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "12 Rush Yds \u2022 1 Rec Yds"
+              }
+            ]
+          },
+          "W6": 12.3,
+          "W6_Int": 11,
+          "W6_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "124 Rush Yds (0 TD) + 9 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Corey Kiner",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "57 Rush Yds"
+              },
+              {
+                "name": "Rhamondre Stevenson",
+                "pts_frac": 3.6,
+                "pts_int": 3,
+                "stat_line": "36 Rush Yds"
+              },
+              {
+                "name": "TreVeyon Henderson",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "31 Rush Yds \u2022 9 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W7": 17.1,
+          "W7_Int": 16,
+          "W7_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "111 Rush Yds (1 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ollie Gordon II",
+                "pts_frac": 16.3,
+                "pts_int": 16,
+                "stat_line": "103 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Jaylen Wright",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rush Yds"
+              }
+            ]
+          },
+          "W8": 15.6,
+          "W8_Int": 15,
+          "W8_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "92 Rush Yds (0 TD) + 64 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Mike Washington Jr.",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "83 Rush Yds"
+              },
+              {
+                "name": "Ashton Jeanty",
+                "pts_frac": 7.3,
+                "pts_int": 7,
+                "stat_line": "9 Rush Yds \u2022 64 Rec Yds"
+              }
+            ]
+          },
+          "W9": 43.6,
+          "W9_Int": 42,
+          "W9_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "155 Rush Yds (2 TD) + 41 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Kenneth Walker III",
+                "pts_frac": 32.3,
+                "pts_int": 32,
+                "stat_line": "102 Rush Yds, 1 Rush TD \u2022 41 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Emmett Johnson",
+                "pts_frac": 9.4,
+                "pts_int": 9,
+                "stat_line": "34 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Jaydn Ott",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 59.2,
+          "Last_4_Games": 88.6,
+          "L4_PPG": 22.1,
+          "Total_pts": 187.9,
+          "PPG": 20.9,
+          "Last_2_Games_Int": 57,
+          "Last_4_Games_Int": 84,
+          "Total_pts_Int": 179,
+          "PPG_Int": 19.9,
+          "Stat_Summary": "993 Rush Yds (7 TD) + 256 Rec Yds (4 TD)",
+          "Week10_Opponent": "vs Bills (BUF)",
+          "Week10_Offense": "Bills (BUF)",
+          "Vuln_Rank": 8,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Dolphins (MIA)",
+          "Team": "MIA",
+          "Position": "RB",
+          "W1": 30.9,
+          "W1_Int": 30,
+          "W1_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "144 Rush Yds (0 TD) + 45 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Ashton Jeanty",
+                "pts_frac": 26.7,
+                "pts_int": 26,
+                "stat_line": "102 Rush Yds \u2022 45 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Mike Washington Jr.",
+                "pts_frac": 4.1,
+                "pts_int": 4,
+                "stat_line": "41 Rush Yds"
+              },
+              {
+                "name": "Connor Heyward",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rush Yds"
+              }
+            ]
+          },
+          "W2": 31.3,
+          "W2_Int": 29,
+          "W2_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "63 Rush Yds (2 TD) + 70 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Christian McCaffrey",
+                "pts_frac": 18.6,
+                "pts_int": 18,
+                "stat_line": "23 Rush Yds, 2 Rush TD \u2022 43 Rec Yds"
+              },
+              {
+                "name": "Kyle Juszczyk",
+                "pts_frac": 8.7,
+                "pts_int": 8,
+                "stat_line": "27 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Kaelon Black",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rush Yds"
+              },
+              {
+                "name": "Jordan James",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rush Yds"
+              }
+            ]
+          },
+          "W3": 21.4,
+          "W3_Int": 20,
+          "W3_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "87 Rush Yds (1 TD) + 7 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Kenneth Walker III",
+                "pts_frac": 19.3,
+                "pts_int": 19,
+                "stat_line": "70 Rush Yds, 1 Rush TD \u2022 3 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Emmett Johnson",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rush Yds"
+              },
+              {
+                "name": "Brashard Smith",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W4": 15.0,
+          "W4_Int": 14,
+          "W4_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "106 Rush Yds (0 TD) + 44 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Aaron Jones",
+                "pts_frac": 12.8,
+                "pts_int": 12,
+                "stat_line": "94 Rush Yds \u2022 34 Rec Yds"
+              },
+              {
+                "name": "Demond Claiborne",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rush Yds"
+              },
+              {
+                "name": "DeeJay Dallas",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W5": 18.8,
+          "W5_Int": 18,
+          "W5_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "107 Rush Yds (0 TD) + 31 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Samaje Perine",
+                "pts_frac": 13.8,
+                "pts_int": 13,
+                "stat_line": "68 Rush Yds \u2022 10 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Chase Brown",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "39 Rush Yds \u2022 21 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 18.7,
+          "W7_Int": 18,
+          "W7_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "108 Rush Yds (0 TD) + 79 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Braelon Allen",
+                "pts_frac": 13.4,
+                "pts_int": 13,
+                "stat_line": "104 Rush Yds \u2022 30 Rec Yds"
+              },
+              {
+                "name": "Isaiah Davis",
+                "pts_frac": 5.4,
+                "pts_int": 5,
+                "stat_line": "5 Rush Yds \u2022 49 Rec Yds"
+              },
+              {
+                "name": "Andrew Beck",
+                "pts_frac": -0.1,
+                "pts_int": 0,
+                "stat_line": "-1 Rush Yds"
+              }
+            ]
+          },
+          "W8": 13.4,
+          "W8_Int": 12,
+          "W8_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "126 Rush Yds (0 TD) + 8 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Rhamondre Stevenson",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "82 Rush Yds \u2022 8 Rec Yds"
+              },
+              {
+                "name": "Corey Kiner",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "38 Rush Yds"
+              },
+              {
+                "name": "Lan Larison",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rush Yds"
+              }
+            ]
+          },
+          "W9": 15.5,
+          "W9_Int": 15,
+          "W9_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "88 Rush Yds (1 TD) + 7 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jahmyr Gibbs",
+                "pts_frac": 13.4,
+                "pts_int": 13,
+                "stat_line": "74 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Sione Vaki",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "14 Rush Yds \u2022 7 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 28.9,
+          "Last_4_Games": 66.4,
+          "L4_PPG": 16.6,
+          "Total_pts": 165.0,
+          "PPG": 20.6,
+          "Last_2_Games_Int": 27,
+          "Last_4_Games_Int": 63,
+          "Total_pts_Int": 156,
+          "PPG_Int": 19.5,
+          "Stat_Summary": "829 Rush Yds (4 TD) + 291 Rec Yds (5 TD)",
+          "Week10_Opponent": "@ Colts (IND)",
+          "Week10_Offense": "Colts (IND)",
+          "Vuln_Rank": 9,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Bills (BUF)",
+          "Team": "BUF",
+          "Position": "RB",
+          "W1": 29.9,
+          "W1_Int": 29,
+          "W1_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "102 Rush Yds (2 TD) + 17 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "David Montgomery",
+                "pts_frac": 25.9,
+                "pts_int": 25,
+                "stat_line": "60 Rush Yds, 2 Rush TD \u2022 19 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Woody Marks",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "42 Rush Yds \u2022 -2 Rec Yds"
+              }
+            ]
+          },
+          "W2": 19.3,
+          "W2_Int": 19,
+          "W2_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "59 Rush Yds (0 TD) + 74 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jahmyr Gibbs",
+                "pts_frac": 17.3,
+                "pts_int": 17,
+                "stat_line": "52 Rush Yds \u2022 61 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Sione Vaki",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "7 Rush Yds \u2022 13 Rec Yds"
+              }
+            ]
+          },
+          "W3": 21.8,
+          "W3_Int": 20,
+          "W3_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "114 Rush Yds (0 TD) + 44 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Keaton Mitchell",
+                "pts_frac": 10.7,
+                "pts_int": 10,
+                "stat_line": "52 Rush Yds \u2022 -5 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Omarion Hampton",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "56 Rush Yds"
+              },
+              {
+                "name": "Alec Ingold",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "35 Rec Yds"
+              },
+              {
+                "name": "Kimani Vidal",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "6 Rush Yds \u2022 14 Rec Yds"
+              }
+            ]
+          },
+          "W4": 19.6,
+          "W4_Int": 19,
+          "W4_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "89 Rush Yds (1 TD) + 27 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Rhamondre Stevenson",
+                "pts_frac": 15.4,
+                "pts_int": 15,
+                "stat_line": "47 Rush Yds, 1 Rush TD \u2022 27 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "TreVeyon Henderson",
+                "pts_frac": 4.2,
+                "pts_int": 4,
+                "stat_line": "42 Rush Yds"
+              }
+            ]
+          },
+          "W5": 26.8,
+          "W5_Int": 26,
+          "W5_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "68 Rush Yds (2 TD) + 80 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kyren Williams",
+                "pts_frac": 13.6,
+                "pts_int": 13,
+                "stat_line": "49 Rush Yds, 1 Rush TD \u2022 27 Rec Yds"
+              },
+              {
+                "name": "Blake Corum",
+                "pts_frac": 13.2,
+                "pts_int": 13,
+                "stat_line": "19 Rush Yds, 1 Rush TD \u2022 53 Rec Yds"
+              }
+            ]
+          },
+          "W6": 16.7,
+          "W6_Int": 16,
+          "W6_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "65 Rush Yds (1 TD) + 42 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ashton Jeanty",
+                "pts_frac": 11.8,
+                "pts_int": 11,
+                "stat_line": "22 Rush Yds, 1 Rush TD \u2022 36 Rec Yds"
+              },
+              {
+                "name": "Mike Washington Jr.",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "43 Rush Yds \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Dylan Laube",
+                "pts_frac": -0.1,
+                "pts_int": 0,
+                "stat_line": "-1 Rec Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 16.0,
+          "W8_Int": 15,
+          "W8_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "73 Rush Yds (1 TD) + 27 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Derrick Henry",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "53 Rush Yds, 1 Rush TD \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Justice Hill",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "15 Rush Yds \u2022 20 Rec Yds"
+              },
+              {
+                "name": "Rasheen Ali",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rush Yds"
+              }
+            ]
+          },
+          "W9": 6.5,
+          "W9_Int": 6,
+          "W9_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "51 Rush Yds (0 TD) + 14 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jordan Mason",
+                "pts_frac": 4.2,
+                "pts_int": 4,
+                "stat_line": "35 Rush Yds \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Aaron Jones",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "16 Rush Yds \u2022 5 Rec Yds"
+              },
+              {
+                "name": "DeeJay Dallas",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 22.5,
+          "Last_4_Games": 66.0,
+          "L4_PPG": 16.5,
+          "Total_pts": 156.6,
+          "PPG": 19.6,
+          "Last_2_Games_Int": 21,
+          "Last_4_Games_Int": 63,
+          "Total_pts_Int": 150,
+          "PPG_Int": 18.8,
+          "Stat_Summary": "621 Rush Yds (7 TD) + 325 Rec Yds (3 TD)",
+          "Week10_Opponent": "@ Jets (NYJ)",
+          "Week10_Offense": "Jets (NYJ)",
+          "Vuln_Rank": 10,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Chargers (LAC)",
+          "Team": "LAC",
+          "Position": "RB",
+          "W1": 18.0,
+          "W1_Int": 18,
+          "W1_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "102 Rush Yds (1 TD) + 18 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jeremiyah Love",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "41 Rush Yds, 1 Rush TD \u2022 9 Rec Yds"
+              },
+              {
+                "name": "Tyler Allgeier",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "61 Rush Yds \u2022 9 Rec Yds"
+              }
+            ]
+          },
+          "W2": 7.1,
+          "W2_Int": 6,
+          "W2_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "56 Rush Yds (0 TD) + 15 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ashton Jeanty",
+                "pts_frac": 6.3,
+                "pts_int": 6,
+                "stat_line": "48 Rush Yds \u2022 15 Rec Yds"
+              },
+              {
+                "name": "Mike Washington Jr.",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rush Yds"
+              },
+              {
+                "name": "Connor Heyward",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rush Yds"
+              }
+            ]
+          },
+          "W3": 25.4,
+          "W3_Int": 25,
+          "W3_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "154 Rush Yds (1 TD) + 50 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "James Cook",
+                "pts_frac": 20.4,
+                "pts_int": 20,
+                "stat_line": "154 Rush Yds, 1 Rush TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Ty Johnson",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "50 Rec Yds"
+              }
+            ]
+          },
+          "W4": 26.0,
+          "W4_Int": 26,
+          "W4_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "99 Rush Yds (1 TD) + 41 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Emanuel Wilson",
+                "pts_frac": 24.0,
+                "pts_int": 24,
+                "stat_line": "81 Rush Yds, 1 Rush TD \u2022 39 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "George Holani",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "18 Rush Yds \u2022 2 Rec Yds"
+              }
+            ]
+          },
+          "W5": 14.5,
+          "W5_Int": 13,
+          "W5_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "84 Rush Yds (1 TD) + 1 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "J.K. Dobbins",
+                "pts_frac": 13.4,
+                "pts_int": 13,
+                "stat_line": "68 Rush Yds, 1 Rush TD \u2022 6 Rec Yds"
+              },
+              {
+                "name": "RJ Harvey",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rush Yds"
+              },
+              {
+                "name": "Adam Prentice",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds"
+              },
+              {
+                "name": "Tyler Badie",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "6 Rush Yds \u2022 -5 Rec Yds"
+              }
+            ]
+          },
+          "W6": 28.3,
+          "W6_Int": 27,
+          "W6_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "134 Rush Yds (2 TD) + 29 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kenneth Walker III",
+                "pts_frac": 25.9,
+                "pts_int": 25,
+                "stat_line": "128 Rush Yds, 2 Rush TD \u2022 11 Rec Yds"
+              },
+              {
+                "name": "Emmett Johnson",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "6 Rush Yds \u2022 18 Rec Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 25.2,
+          "W8_Int": 24,
+          "W8_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "129 Rush Yds (2 TD) + 3 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Blake Corum",
+                "pts_frac": 13.3,
+                "pts_int": 13,
+                "stat_line": "73 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Kyren Williams",
+                "pts_frac": 11.9,
+                "pts_int": 11,
+                "stat_line": "56 Rush Yds, 1 Rush TD \u2022 3 Rec Yds"
+              }
+            ]
+          },
+          "W9": 10.1,
+          "W9_Int": 9,
+          "W9_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "86 Rush Yds (0 TD) + 15 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Woody Marks",
+                "pts_frac": 7.4,
+                "pts_int": 7,
+                "stat_line": "70 Rush Yds \u2022 4 Rec Yds"
+              },
+              {
+                "name": "Emari Demercado",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "16 Rush Yds \u2022 8 Rec Yds"
+              },
+              {
+                "name": "Dare Ogunbowale",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 35.3,
+          "Last_4_Games": 78.1,
+          "L4_PPG": 19.5,
+          "Total_pts": 154.6,
+          "PPG": 19.3,
+          "Last_2_Games_Int": 33,
+          "Last_4_Games_Int": 73,
+          "Total_pts_Int": 148,
+          "PPG_Int": 18.5,
+          "Stat_Summary": "844 Rush Yds (8 TD) + 172 Rec Yds (1 TD)",
+          "Week10_Opponent": "@ Ravens (BAL)",
+          "Week10_Offense": "Ravens (BAL)",
+          "Vuln_Rank": 11,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Broncos (DEN)",
+          "Team": "DEN",
+          "Position": "RB",
+          "W1": 37.9,
+          "W1_Int": 37,
+          "W1_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "197 Rush Yds (1 TD) + 62 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Kenneth Walker III",
+                "pts_frac": 31.1,
+                "pts_int": 31,
+                "stat_line": "173 Rush Yds, 1 Rush TD \u2022 18 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Emmett Johnson",
+                "pts_frac": 6.8,
+                "pts_int": 6,
+                "stat_line": "24 Rush Yds \u2022 44 Rec Yds"
+              }
+            ]
+          },
+          "W2": 14.8,
+          "W2_Int": 14,
+          "W2_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "89 Rush Yds (1 TD) + -1 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bhayshul Tuten",
+                "pts_frac": 12.2,
+                "pts_int": 12,
+                "stat_line": "65 Rush Yds, 1 Rush TD \u2022 -3 Rec Yds"
+              },
+              {
+                "name": "Chris Rodriguez Jr.",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rush Yds"
+              },
+              {
+                "name": "Ameer Abdullah",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "11 Rush Yds \u2022 2 Rec Yds"
+              }
+            ]
+          },
+          "W3": 17.3,
+          "W3_Int": 16,
+          "W3_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "103 Rush Yds (0 TD) + 70 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kyren Williams",
+                "pts_frac": 15.8,
+                "pts_int": 15,
+                "stat_line": "88 Rush Yds \u2022 70 Rec Yds"
+              },
+              {
+                "name": "Blake Corum",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rush Yds"
+              }
+            ]
+          },
+          "W4": 17.1,
+          "W4_Int": 16,
+          "W4_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "65 Rush Yds (1 TD) + 46 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Christian McCaffrey",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "52 Rush Yds, 1 Rush TD \u2022 18 Rec Yds"
+              },
+              {
+                "name": "Kyle Juszczyk",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "28 Rec Yds"
+              },
+              {
+                "name": "Kaelon Black",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rush Yds"
+              }
+            ]
+          },
+          "W5": 18.4,
+          "W5_Int": 16,
+          "W5_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "101 Rush Yds (1 TD) + 23 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kimani Vidal",
+                "pts_frac": 11.6,
+                "pts_int": 11,
+                "stat_line": "57 Rush Yds, 1 Rush TD \u2022 -1 Rec Yds"
+              },
+              {
+                "name": "Omarion Hampton",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "33 Rush Yds \u2022 6 Rec Yds"
+              },
+              {
+                "name": "Keaton Mitchell",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "11 Rush Yds \u2022 18 Rec Yds"
+              }
+            ]
+          },
+          "W6": 15.1,
+          "W6_Int": 14,
+          "W6_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "92 Rush Yds (1 TD) + -1 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "George Holani",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "20 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Emanuel Wilson",
+                "pts_frac": 5.2,
+                "pts_int": 5,
+                "stat_line": "52 Rush Yds"
+              },
+              {
+                "name": "Velus Jones Jr.",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "20 Rush Yds \u2022 -1 Rec Yds"
+              }
+            ]
+          },
+          "W7": 11.2,
+          "W7_Int": 10,
+          "W7_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "67 Rush Yds (0 TD) + 45 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bam Knight",
+                "pts_frac": 6.3,
+                "pts_int": 6,
+                "stat_line": "48 Rush Yds \u2022 15 Rec Yds"
+              },
+              {
+                "name": "Tyler Allgeier",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "19 Rush Yds \u2022 30 Rec Yds"
+              }
+            ]
+          },
+          "W8": 28.7,
+          "W8_Int": 28,
+          "W8_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "84 Rush Yds (0 TD) + 143 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Emmett Johnson",
+                "pts_frac": 20.3,
+                "pts_int": 20,
+                "stat_line": "15 Rush Yds \u2022 128 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Kenneth Walker III",
+                "pts_frac": 8.4,
+                "pts_int": 8,
+                "stat_line": "69 Rush Yds \u2022 15 Rec Yds"
+              }
+            ]
+          },
+          "W9": 10.3,
+          "W9_Int": 9,
+          "W9_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "86 Rush Yds (0 TD) + 17 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chuba Hubbard",
+                "pts_frac": 9.6,
+                "pts_int": 9,
+                "stat_line": "79 Rush Yds \u2022 17 Rec Yds"
+              },
+              {
+                "name": "Trevor Etienne",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 39.0,
+          "Last_4_Games": 65.3,
+          "L4_PPG": 16.3,
+          "Total_pts": 170.8,
+          "PPG": 19.0,
+          "Last_2_Games_Int": 37,
+          "Last_4_Games_Int": 61,
+          "Total_pts_Int": 160,
+          "PPG_Int": 17.8,
+          "Stat_Summary": "884 Rush Yds (5 TD) + 404 Rec Yds (2 TD)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 12,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Cardinals (ARI)",
+          "Team": "ARI",
+          "Position": "RB",
+          "W1": 10.2,
+          "W1_Int": 9,
+          "W1_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "52 Rush Yds (1 TD) + 0 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Omarion Hampton",
+                "pts_frac": 9.3,
+                "pts_int": 9,
+                "stat_line": "43 Rush Yds, 1 Rush TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Keaton Mitchell",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rush Yds"
+              }
+            ]
+          },
+          "W2": 15.7,
+          "W2_Int": 15,
+          "W2_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "157 Rush Yds (0 TD) + 10 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Emanuel Wilson",
+                "pts_frac": 9.2,
+                "pts_int": 9,
+                "stat_line": "92 Rush Yds"
+              },
+              {
+                "name": "Jadarian Price",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "52 Rush Yds \u2022 8 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "George Holani",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "13 Rush Yds \u2022 2 Rec Yds"
+              }
+            ]
+          },
+          "W3": 19.3,
+          "W3_Int": 18,
+          "W3_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "92 Rush Yds (1 TD) + 41 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Christian McCaffrey",
+                "pts_frac": 17.6,
+                "pts_int": 17,
+                "stat_line": "75 Rush Yds, 1 Rush TD \u2022 41 Rec Yds"
+              },
+              {
+                "name": "Kaelon Black",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rush Yds"
+              }
+            ]
+          },
+          "W4": 10.6,
+          "W4_Int": 10,
+          "W4_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "87 Rush Yds (0 TD) + 9 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Cam Skattebo",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "58 Rush Yds \u2022 8 Rec Yds"
+              },
+              {
+                "name": "Najee Harris",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "30 Rush Yds \u2022 1 Rush/Rec 2PT \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Patrick Ricard",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rec Yds"
+              },
+              {
+                "name": "Tyrone Tracy Jr.",
+                "pts_frac": -0.1,
+                "pts_int": 0,
+                "stat_line": "-1 Rush Yds"
+              }
+            ]
+          },
+          "W5": 33.8,
+          "W5_Int": 33,
+          "W5_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "162 Rush Yds (2 TD) + 56 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jahmyr Gibbs",
+                "pts_frac": 32.7,
+                "pts_int": 32,
+                "stat_line": "151 Rush Yds, 2 Rush TD \u2022 56 Rec Yds"
+              },
+              {
+                "name": "Sione Vaki",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rush Yds"
+              }
+            ]
+          },
+          "W6": 18.7,
+          "W6_Int": 18,
+          "W6_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "92 Rush Yds (0 TD) + 35 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Blake Corum",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "42 Rush Yds \u2022 18 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Kyren Williams",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "50 Rush Yds \u2022 17 Rec Yds"
+              }
+            ]
+          },
+          "W7": 27.2,
+          "W7_Int": 26,
+          "W7_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "83 Rush Yds (1 TD) + 69 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "RJ Harvey",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "6 Rush Yds \u2022 54 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "J.K. Dobbins",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "23 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Jonah Coleman",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "54 Rush Yds \u2022 15 Rec Yds"
+              }
+            ]
+          },
+          "W8": 9.0,
+          "W8_Int": 8,
+          "W8_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "70 Rush Yds (0 TD) + 20 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Javonte Williams",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "56 Rush Yds \u2022 1 Rec Yds"
+              },
+              {
+                "name": "Tyler Goodson",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "14 Rush Yds \u2022 19 Rec Yds"
+              }
+            ]
+          },
+          "W9": 16.4,
+          "W9_Int": 15,
+          "W9_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "101 Rush Yds (0 TD) + 63 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Zach Charbonnet",
+                "pts_frac": 8.6,
+                "pts_int": 8,
+                "stat_line": "77 Rush Yds \u2022 9 Rec Yds"
+              },
+              {
+                "name": "Jadarian Price",
+                "pts_frac": 7.8,
+                "pts_int": 7,
+                "stat_line": "24 Rush Yds \u2022 54 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 25.4,
+          "Last_4_Games": 71.3,
+          "L4_PPG": 17.8,
+          "Total_pts": 160.9,
+          "PPG": 17.9,
+          "Last_2_Games_Int": 23,
+          "Last_4_Games_Int": 67,
+          "Total_pts_Int": 152,
+          "PPG_Int": 16.9,
+          "Stat_Summary": "896 Rush Yds (5 TD) + 303 Rec Yds (2 TD)",
+          "Week10_Opponent": "vs Rams (LA)",
+          "Week10_Offense": "Rams (LA)",
+          "Vuln_Rank": 13,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Browns (CLE)",
+          "Team": "CLE",
+          "Position": "RB",
+          "W1": 14.3,
+          "W1_Int": 13,
+          "W1_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "121 Rush Yds (0 TD) + 22 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bhayshul Tuten",
+                "pts_frac": 8.8,
+                "pts_int": 8,
+                "stat_line": "66 Rush Yds \u2022 22 Rec Yds"
+              },
+              {
+                "name": "Ameer Abdullah",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rush Yds"
+              },
+              {
+                "name": "Chris Rodriguez Jr.",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "23 Rush Yds"
+              }
+            ]
+          },
+          "W2": 10.5,
+          "W2_Int": 10,
+          "W2_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "99 Rush Yds (0 TD) + 6 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bucky Irving",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "89 Rush Yds \u2022 1 Rec Yds"
+              },
+              {
+                "name": "Kenny Gainwell",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "10 Rush Yds \u2022 5 Rec Yds"
+              }
+            ]
+          },
+          "W3": 12.4,
+          "W3_Int": 12,
+          "W3_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "98 Rush Yds (0 TD) + 26 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chuba Hubbard",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "82 Rush Yds \u2022 28 Rec Yds"
+              },
+              {
+                "name": "AJ Dillon",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "16 Rush Yds \u2022 -2 Rec Yds"
+              }
+            ]
+          },
+          "W4": 12.5,
+          "W4_Int": 12,
+          "W4_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "92 Rush Yds (0 TD) + 33 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaylen Warren",
+                "pts_frac": 12.6,
+                "pts_int": 12,
+                "stat_line": "93 Rush Yds \u2022 33 Rec Yds"
+              },
+              {
+                "name": "Travis Homer",
+                "pts_frac": -0.1,
+                "pts_int": 0,
+                "stat_line": "-1 Rush Yds"
+              }
+            ]
+          },
+          "W5": 19.3,
+          "W5_Int": 18,
+          "W5_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "124 Rush Yds (1 TD) + 9 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Braelon Allen",
+                "pts_frac": 17.6,
+                "pts_int": 17,
+                "stat_line": "116 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Isaiah Davis",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "8 Rush Yds \u2022 9 Rec Yds"
+              }
+            ]
+          },
+          "W6": 5.9,
+          "W6_Int": 5,
+          "W6_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "58 Rush Yds (0 TD) + 11 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Derrick Henry",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "58 Rush Yds \u2022 2 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Justice Hill",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W7": 34.9,
+          "W7_Int": 34,
+          "W7_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "136 Rush Yds (3 TD) + 33 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tony Pollard",
+                "pts_frac": 33.5,
+                "pts_int": 33,
+                "stat_line": "129 Rush Yds, 3 Rush TD \u2022 26 Rec Yds"
+              },
+              {
+                "name": "Michael Carter",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "7 Rush Yds \u2022 7 Rec Yds"
+              }
+            ]
+          },
+          "W8": 31.9,
+          "W8_Int": 31,
+          "W8_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "199 Rush Yds (2 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaylen Warren",
+                "pts_frac": 20.3,
+                "pts_int": 20,
+                "stat_line": "143 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Rico Dowdle",
+                "pts_frac": 11.6,
+                "pts_int": 11,
+                "stat_line": "56 Rush Yds, 1 Rush TD"
+              }
+            ]
+          },
+          "W9": 19.1,
+          "W9_Int": 17,
+          "W9_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "109 Rush Yds (1 TD) + 22 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Audric Estim\u00e9",
+                "pts_frac": 13.7,
+                "pts_int": 13,
+                "stat_line": "72 Rush Yds, 1 Rush TD \u2022 5 Rec Yds"
+              },
+              {
+                "name": "Alvin Kamara",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "32 Rush Yds \u2022 17 Rec Yds"
+              },
+              {
+                "name": "Zamir White",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 51.0,
+          "Last_4_Games": 91.8,
+          "L4_PPG": 22.9,
+          "Total_pts": 160.8,
+          "PPG": 17.9,
+          "Last_2_Games_Int": 48,
+          "Last_4_Games_Int": 87,
+          "Total_pts_Int": 152,
+          "PPG_Int": 16.9,
+          "Stat_Summary": "1036 Rush Yds (7 TD) + 162 Rec Yds (0 TD)",
+          "Week10_Opponent": "vs Texans (HOU)",
+          "Week10_Offense": "Texans (HOU)",
+          "Vuln_Rank": 14,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Titans (TEN)",
+          "Team": "TEN",
+          "Position": "RB",
+          "W1": 21.8,
+          "W1_Int": 21,
+          "W1_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "142 Rush Yds (1 TD) + 16 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Breece Hall",
+                "pts_frac": 17.8,
+                "pts_int": 17,
+                "stat_line": "102 Rush Yds, 1 Rush TD \u2022 16 Rec Yds"
+              },
+              {
+                "name": "Braelon Allen",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rush Yds"
+              }
+            ]
+          },
+          "W2": 14.7,
+          "W2_Int": 13,
+          "W2_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "66 Rush Yds (1 TD) + 21 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tank Bigsby",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "33 Rush Yds, 1 Rush TD \u2022 5 Rec Yds"
+              },
+              {
+                "name": "Will Shipley",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "24 Rush Yds \u2022 5 Rec Yds"
+              },
+              {
+                "name": "Saquon Barkley",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "9 Rush Yds \u2022 11 Rec Yds"
+              }
+            ]
+          },
+          "W3": 15.5,
+          "W3_Int": 15,
+          "W3_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "115 Rush Yds (0 TD) + 40 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cam Skattebo",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "60 Rush Yds \u2022 40 Rec Yds"
+              },
+              {
+                "name": "Najee Harris",
+                "pts_frac": 5.2,
+                "pts_int": 5,
+                "stat_line": "52 Rush Yds"
+              },
+              {
+                "name": "Tyrone Tracy Jr.",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds"
+              }
+            ]
+          },
+          "W4": 16.4,
+          "W4_Int": 15,
+          "W4_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "76 Rush Yds (1 TD) + 28 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Derrick Henry",
+                "pts_frac": 13.9,
+                "pts_int": 13,
+                "stat_line": "73 Rush Yds, 1 Rush TD \u2022 6 Rec Yds"
+              },
+              {
+                "name": "Justice Hill",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "3 Rush Yds \u2022 22 Rec Yds"
+              }
+            ]
+          },
+          "W5": 9.6,
+          "W5_Int": 9,
+          "W5_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "73 Rush Yds (0 TD) + 23 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Woody Marks",
+                "pts_frac": 8.5,
+                "pts_int": 8,
+                "stat_line": "62 Rush Yds \u2022 23 Rec Yds"
+              },
+              {
+                "name": "David Montgomery",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rush Yds"
+              }
+            ]
+          },
+          "W6": 22.8,
+          "W6_Int": 22,
+          "W6_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "121 Rush Yds (1 TD) + 57 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jonathan Taylor",
+                "pts_frac": 20.1,
+                "pts_int": 20,
+                "stat_line": "94 Rush Yds, 1 Rush TD \u2022 57 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Seth McGowan",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rush Yds"
+              }
+            ]
+          },
+          "W7": 30.1,
+          "W7_Int": 29,
+          "W7_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "141 Rush Yds (2 TD) + 40 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Quinshon Judkins",
+                "pts_frac": 22.4,
+                "pts_int": 22,
+                "stat_line": "96 Rush Yds, 2 Rush TD \u2022 8 Rec Yds"
+              },
+              {
+                "name": "Dylan Sampson",
+                "pts_frac": 7.7,
+                "pts_int": 7,
+                "stat_line": "45 Rush Yds \u2022 32 Rec Yds"
+              }
+            ]
+          },
+          "W8": 11.0,
+          "W8_Int": 10,
+          "W8_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "65 Rush Yds (0 TD) + 55 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Chase Brown",
+                "pts_frac": 9.1,
+                "pts_int": 9,
+                "stat_line": "55 Rush Yds \u2022 46 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Samaje Perine",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "10 Rush Yds \u2022 9 Rec Yds"
+              }
+            ]
+          },
+          "W9": "BYE",
+          "W9_Int": "BYE",
+          "W9_Detail": null,
+          "GP": 8,
+          "Last_2_Games": 41.1,
+          "Last_4_Games": 73.5,
+          "L4_PPG": 18.4,
+          "Total_pts": 141.9,
+          "PPG": 17.7,
+          "Last_2_Games_Int": 39,
+          "Last_4_Games_Int": 70,
+          "Total_pts_Int": 134,
+          "PPG_Int": 16.8,
+          "Stat_Summary": "799 Rush Yds (6 TD) + 280 Rec Yds (0 TD)",
+          "Week10_Opponent": "vs Jaguars (JAX)",
+          "Week10_Offense": "Jaguars (JAX)",
+          "Vuln_Rank": 15,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Texans (HOU)",
+          "Team": "HOU",
+          "Position": "RB",
+          "W1": 7.5,
+          "W1_Int": 6,
+          "W1_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "63 Rush Yds (0 TD) + 12 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "James Cook",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "57 Rush Yds \u2022 12 Rec Yds"
+              },
+              {
+                "name": "Ray Davis",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds"
+              },
+              {
+                "name": "Frank Gore Jr.",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds"
+              }
+            ]
+          },
+          "W2": 10.4,
+          "W2_Int": 10,
+          "W2_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "86 Rush Yds (0 TD) + 18 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chase Brown",
+                "pts_frac": 8.2,
+                "pts_int": 8,
+                "stat_line": "80 Rush Yds \u2022 2 Rec Yds"
+              },
+              {
+                "name": "Samaje Perine",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "6 Rush Yds \u2022 16 Rec Yds"
+              }
+            ]
+          },
+          "W3": 8.6,
+          "W3_Int": 8,
+          "W3_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "82 Rush Yds (0 TD) + 4 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jonathan Taylor",
+                "pts_frac": 7.2,
+                "pts_int": 7,
+                "stat_line": "68 Rush Yds \u2022 4 Rec Yds"
+              },
+              {
+                "name": "Seth McGowan",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rush Yds"
+              }
+            ]
+          },
+          "W4": 27.7,
+          "W4_Int": 27,
+          "W4_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "74 Rush Yds (3 TD) + 23 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Javonte Williams",
+                "pts_frac": 26.3,
+                "pts_int": 26,
+                "stat_line": "62 Rush Yds, 3 Rush TD \u2022 21 Rec Yds"
+              },
+              {
+                "name": "Tyler Goodson",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rush Yds"
+              },
+              {
+                "name": "Hunter Luepke",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W5": 7.3,
+          "W5_Int": 6,
+          "W5_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "55 Rush Yds (0 TD) + 28 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Tony Pollard",
+                "pts_frac": 5.2,
+                "pts_int": 5,
+                "stat_line": "52 Rush Yds"
+              },
+              {
+                "name": "Tyjae Spears",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "28 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Kalel Mullings",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds"
+              }
+            ]
+          },
+          "W6": 26.3,
+          "W6_Int": 25,
+          "W6_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "95 Rush Yds (0 TD) + 48 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Bhayshul Tuten",
+                "pts_frac": 20.7,
+                "pts_int": 20,
+                "stat_line": "39 Rush Yds \u2022 48 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Chris Rodriguez Jr.",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "55 Rush Yds"
+              },
+              {
+                "name": "LeQuint Allen Jr.",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rush Yds"
+              }
+            ]
+          },
+          "W7": 37.3,
+          "W7_Int": 36,
+          "W7_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "180 Rush Yds (3 TD) + 13 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cam Skattebo",
+                "pts_frac": 18.1,
+                "pts_int": 18,
+                "stat_line": "124 Rush Yds, 1 Rush TD \u2022 -3 Rec Yds"
+              },
+              {
+                "name": "Devin Singletary",
+                "pts_frac": 11.5,
+                "pts_int": 11,
+                "stat_line": "41 Rush Yds, 1 Rush TD \u2022 14 Rec Yds"
+              },
+              {
+                "name": "Tyrone Tracy Jr.",
+                "pts_frac": 7.7,
+                "pts_int": 7,
+                "stat_line": "15 Rush Yds, 1 Rush TD \u2022 2 Rec Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 15.3,
+          "W9_Int": 14,
+          "W9_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "123 Rush Yds (0 TD) + 40 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Omarion Hampton",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "60 Rush Yds"
+              },
+              {
+                "name": "Keaton Mitchell",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "33 Rush Yds \u2022 34 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Kimani Vidal",
+                "pts_frac": 3.6,
+                "pts_int": 3,
+                "stat_line": "30 Rush Yds \u2022 6 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 52.6,
+          "Last_4_Games": 86.2,
+          "L4_PPG": 21.6,
+          "Total_pts": 140.4,
+          "PPG": 17.6,
+          "Last_2_Games_Int": 50,
+          "Last_4_Games_Int": 81,
+          "Total_pts_Int": 132,
+          "PPG_Int": 16.5,
+          "Stat_Summary": "758 Rush Yds (6 TD) + 186 Rec Yds (2 TD)",
+          "Week10_Opponent": "@ Browns (CLE)",
+          "Week10_Offense": "Browns (CLE)",
+          "Vuln_Rank": 16,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Eagles (PHI)",
+          "Team": "PHI",
+          "Position": "RB",
+          "W1": 15.9,
+          "W1_Int": 14,
+          "W1_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "101 Rush Yds (1 TD) + -2 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jacory Croskey-Merritt",
+                "pts_frac": 11.6,
+                "pts_int": 11,
+                "stat_line": "63 Rush Yds, 1 Rush TD \u2022 -7 Rec Yds"
+              },
+              {
+                "name": "Rachaad White",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "22 Rush Yds \u2022 5 Rec Yds"
+              },
+              {
+                "name": "Kaytron Allen",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rush Yds"
+              }
+            ]
+          },
+          "W2": 14.5,
+          "W2_Int": 14,
+          "W2_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "115 Rush Yds (0 TD) + 30 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyjae Spears",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "41 Rush Yds \u2022 29 Rec Yds"
+              },
+              {
+                "name": "Tony Pollard",
+                "pts_frac": 6.5,
+                "pts_int": 6,
+                "stat_line": "64 Rush Yds \u2022 1 Rec Yds"
+              },
+              {
+                "name": "Nicholas Singleton",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rush Yds"
+              }
+            ]
+          },
+          "W3": 11.9,
+          "W3_Int": 11,
+          "W3_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "115 Rush Yds (0 TD) + 4 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "D'Andre Swift",
+                "pts_frac": 8.8,
+                "pts_int": 8,
+                "stat_line": "84 Rush Yds \u2022 4 Rec Yds"
+              },
+              {
+                "name": "Kyle Monangai",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "31 Rush Yds"
+              }
+            ]
+          },
+          "W4": 28.8,
+          "W4_Int": 28,
+          "W4_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "94 Rush Yds (2 TD) + 74 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kyren Williams",
+                "pts_frac": 26.7,
+                "pts_int": 26,
+                "stat_line": "80 Rush Yds, 2 Rush TD \u2022 67 Rec Yds"
+              },
+              {
+                "name": "Blake Corum",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "14 Rush Yds \u2022 7 Rec Yds"
+              }
+            ]
+          },
+          "W5": 10.7,
+          "W5_Int": 10,
+          "W5_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "77 Rush Yds (0 TD) + 30 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bhayshul Tuten",
+                "pts_frac": 9.6,
+                "pts_int": 9,
+                "stat_line": "72 Rush Yds \u2022 24 Rec Yds"
+              },
+              {
+                "name": "Chris Rodriguez Jr.",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "5 Rush Yds \u2022 6 Rec Yds"
+              }
+            ]
+          },
+          "W6": 18.0,
+          "W6_Int": 18,
+          "W6_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "119 Rush Yds (1 TD) + 1 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chuba Hubbard",
+                "pts_frac": 18.1,
+                "pts_int": 18,
+                "stat_line": "120 Rush Yds, 1 Rush TD \u2022 1 Rec Yds"
+              },
+              {
+                "name": "Trevor Etienne",
+                "pts_frac": -0.1,
+                "pts_int": 0,
+                "stat_line": "-1 Rush Yds"
+              }
+            ]
+          },
+          "W7": 25.6,
+          "W7_Int": 24,
+          "W7_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "196 Rush Yds (1 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Javonte Williams",
+                "pts_frac": 21.5,
+                "pts_int": 21,
+                "stat_line": "155 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Tyler Goodson",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "38 Rush Yds"
+              },
+              {
+                "name": "Hunter Luepke",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds"
+              }
+            ]
+          },
+          "W8": 20.4,
+          "W8_Int": 19,
+          "W8_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "112 Rush Yds (1 TD) + 12 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Rachaad White",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "55 Rush Yds, 1 Rush TD \u2022 5 Rec Yds"
+              },
+              {
+                "name": "Austin Ekeler",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "36 Rush Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Jeremy McNichols",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "21 Rush Yds \u2022 7 Rec Yds"
+              }
+            ]
+          },
+          "W9": 5.9,
+          "W9_Int": 5,
+          "W9_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "51 Rush Yds (0 TD) + 8 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Devin Singletary",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "31 Rush Yds \u2022 8 Rec Yds"
+              },
+              {
+                "name": "Gregory Desrosiers",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 26.3,
+          "Last_4_Games": 69.9,
+          "L4_PPG": 17.5,
+          "Total_pts": 151.7,
+          "PPG": 16.9,
+          "Last_2_Games_Int": 24,
+          "Last_4_Games_Int": 66,
+          "Total_pts_Int": 143,
+          "PPG_Int": 15.9,
+          "Stat_Summary": "980 Rush Yds (6 TD) + 157 Rec Yds (0 TD)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 17,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Bengals (CIN)",
+          "Team": "CIN",
+          "Position": "RB",
+          "W1": 16.1,
+          "W1_Int": 15,
+          "W1_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "60 Rush Yds (1 TD) + 51 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Bucky Irving",
+                "pts_frac": 14.3,
+                "pts_int": 14,
+                "stat_line": "45 Rush Yds, 1 Rush TD \u2022 48 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Kenny Gainwell",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "15 Rush Yds \u2022 3 Rec Yds"
+              }
+            ]
+          },
+          "W2": 5.9,
+          "W2_Int": 5,
+          "W2_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "18 Rush Yds (0 TD) + 41 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Woody Marks",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "8 Rush Yds \u2022 27 Rec Yds"
+              },
+              {
+                "name": "David Montgomery",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "10 Rush Yds \u2022 14 Rec Yds"
+              }
+            ]
+          },
+          "W3": 17.6,
+          "W3_Int": 17,
+          "W3_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "127 Rush Yds (0 TD) + 49 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaylen Warren",
+                "pts_frac": 17.6,
+                "pts_int": 17,
+                "stat_line": "127 Rush Yds \u2022 49 Rec Yds"
+              }
+            ]
+          },
+          "W4": 18.6,
+          "W4_Int": 18,
+          "W4_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "108 Rush Yds (1 TD) + 18 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chris Rodriguez Jr.",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "35 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Bhayshul Tuten",
+                "pts_frac": 9.1,
+                "pts_int": 9,
+                "stat_line": "73 Rush Yds \u2022 18 Rec Yds"
+              }
+            ]
+          },
+          "W5": 15.9,
+          "W5_Int": 15,
+          "W5_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "99 Rush Yds (1 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ollie Gordon II",
+                "pts_frac": 14.8,
+                "pts_int": 14,
+                "stat_line": "88 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Jaylen Wright",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rush Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 10.1,
+          "W7_Int": 8,
+          "W7_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "71 Rush Yds (0 TD) + 30 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Derrick Henry",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "45 Rush Yds \u2022 4 Rec Yds"
+              },
+              {
+                "name": "Justice Hill",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "7 Rush Yds \u2022 26 Rec Yds"
+              },
+              {
+                "name": "Rasheen Ali",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rush Yds"
+              }
+            ]
+          },
+          "W8": 25.7,
+          "W8_Int": 25,
+          "W8_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "117 Rush Yds (2 TD) + 20 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tony Pollard",
+                "pts_frac": 25.7,
+                "pts_int": 25,
+                "stat_line": "117 Rush Yds, 2 Rush TD \u2022 20 Rec Yds"
+              }
+            ]
+          },
+          "W9": 21.6,
+          "W9_Int": 20,
+          "W9_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "107 Rush Yds (1 TD) + 49 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bijan Robinson",
+                "pts_frac": 20.7,
+                "pts_int": 20,
+                "stat_line": "100 Rush Yds, 1 Rush TD \u2022 47 Rec Yds"
+              },
+              {
+                "name": "Khalil Herbert",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "7 Rush Yds \u2022 2 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 47.3,
+          "Last_4_Games": 73.3,
+          "L4_PPG": 18.3,
+          "Total_pts": 131.5,
+          "PPG": 16.4,
+          "Last_2_Games_Int": 45,
+          "Last_4_Games_Int": 68,
+          "Total_pts_Int": 123,
+          "PPG_Int": 15.4,
+          "Stat_Summary": "707 Rush Yds (6 TD) + 258 Rec Yds (0 TD)",
+          "Week10_Opponent": "vs Steelers (PIT)",
+          "Week10_Offense": "Steelers (PIT)",
+          "Vuln_Rank": 18,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Giants (NYG)",
+          "Team": "NYG",
+          "Position": "RB",
+          "W1": 20.6,
+          "W1_Int": 19,
+          "W1_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "55 Rush Yds (1 TD) + 31 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Javonte Williams",
+                "pts_frac": 19.2,
+                "pts_int": 19,
+                "stat_line": "41 Rush Yds, 1 Rush TD \u2022 31 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Emari Demercado",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rush Yds"
+              },
+              {
+                "name": "Hunter Luepke",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rush Yds"
+              }
+            ]
+          },
+          "W2": 23.9,
+          "W2_Int": 23,
+          "W2_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "164 Rush Yds (0 TD) + 25 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Kyren Williams",
+                "pts_frac": 14.7,
+                "pts_int": 14,
+                "stat_line": "85 Rush Yds \u2022 12 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Blake Corum",
+                "pts_frac": 9.2,
+                "pts_int": 9,
+                "stat_line": "79 Rush Yds \u2022 13 Rec Yds"
+              }
+            ]
+          },
+          "W3": 10.1,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "79 Rush Yds (0 TD) + 22 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tony Pollard",
+                "pts_frac": 9.6,
+                "pts_int": 9,
+                "stat_line": "74 Rush Yds \u2022 22 Rec Yds"
+              },
+              {
+                "name": "Tyjae Spears",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rush Yds"
+              }
+            ]
+          },
+          "W4": 16.4,
+          "W4_Int": 15,
+          "W4_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "105 Rush Yds (1 TD) + -1 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Allgeier",
+                "pts_frac": 10.9,
+                "pts_int": 10,
+                "stat_line": "42 Rush Yds, 1 Rush TD \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Jeremiyah Love",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "63 Rush Yds \u2022 -8 Rec Yds"
+              }
+            ]
+          },
+          "W5": 17.6,
+          "W5_Int": 17,
+          "W5_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "99 Rush Yds (1 TD) + 17 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jacory Croskey-Merritt",
+                "pts_frac": 14.2,
+                "pts_int": 14,
+                "stat_line": "82 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Rachaad White",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "18 Rush Yds \u2022 2 Rec Yds"
+              },
+              {
+                "name": "Austin Ekeler",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "-1 Rush Yds \u2022 15 Rec Yds"
+              }
+            ]
+          },
+          "W6": 22.8,
+          "W6_Int": 21,
+          "W6_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "143 Rush Yds (0 TD) + 35 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Alvin Kamara",
+                "pts_frac": 12.9,
+                "pts_int": 12,
+                "stat_line": "34 Rush Yds \u2022 35 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Kendre Miller",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "70 Rush Yds"
+              },
+              {
+                "name": "CJ Donaldson",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "39 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W7": 8.1,
+          "W7_Int": 8,
+          "W7_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "66 Rush Yds (0 TD) + 15 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Woody Marks",
+                "pts_frac": 8.1,
+                "pts_int": 8,
+                "stat_line": "66 Rush Yds \u2022 15 Rec Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 10.8,
+          "W9_Int": 10,
+          "W9_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "28 Rush Yds (1 TD) + 20 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Saquon Barkley",
+                "pts_frac": 8.2,
+                "pts_int": 8,
+                "stat_line": "22 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Elijah Mitchell",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "6 Rush Yds \u2022 20 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 18.9,
+          "Last_4_Games": 59.3,
+          "L4_PPG": 14.8,
+          "Total_pts": 130.3,
+          "PPG": 16.3,
+          "Last_2_Games_Int": 18,
+          "Last_4_Games_Int": 56,
+          "Total_pts_Int": 122,
+          "PPG_Int": 15.2,
+          "Stat_Summary": "739 Rush Yds (4 TD) + 164 Rec Yds (3 TD)",
+          "Week10_Opponent": "vs Commanders (WAS)",
+          "Week10_Offense": "Commanders (WAS)",
+          "Vuln_Rank": 19,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Bears (CHI)",
+          "Team": "CHI",
+          "Position": "RB",
+          "W1": 29.7,
+          "W1_Int": 28,
+          "W1_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "91 Rush Yds (1 TD) + 86 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Chuba Hubbard",
+                "pts_frac": 20.7,
+                "pts_int": 20,
+                "stat_line": "49 Rush Yds, 1 Rush TD \u2022 38 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jonathon Brooks",
+                "pts_frac": 6.2,
+                "pts_int": 6,
+                "stat_line": "14 Rush Yds \u2022 48 Rec Yds"
+              },
+              {
+                "name": "AJ Dillon",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "28 Rush Yds"
+              }
+            ]
+          },
+          "W2": 12.7,
+          "W2_Int": 12,
+          "W2_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "113 Rush Yds (0 TD) + 14 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Aaron Jones",
+                "pts_frac": 10.5,
+                "pts_int": 10,
+                "stat_line": "105 Rush Yds"
+              },
+              {
+                "name": "DeeJay Dallas",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "8 Rush Yds \u2022 12 Rec Yds"
+              },
+              {
+                "name": "Demond Claiborne",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W3": 8.6,
+          "W3_Int": 8,
+          "W3_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "82 Rush Yds (0 TD) + 14 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Saquon Barkley",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "82 Rush Yds \u2022 -2 Rec Yds"
+              },
+              {
+                "name": "Will Shipley",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Tank Bigsby",
+                "pts_frac": -0.5,
+                "pts_int": -1,
+                "stat_line": "5 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W4": 6.7,
+          "W4_Int": 6,
+          "W4_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "59 Rush Yds (0 TD) + 8 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Braelon Allen",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "59 Rush Yds \u2022 8 Rec Yds"
+              }
+            ]
+          },
+          "W5": 20.1,
+          "W5_Int": 18,
+          "W5_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "64 Rush Yds (2 TD) + 17 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "MarShawn Lloyd",
+                "pts_frac": 15.7,
+                "pts_int": 15,
+                "stat_line": "31 Rush Yds, 2 Rush TD \u2022 6 Rec Yds"
+              },
+              {
+                "name": "Kaleb Johnson",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rush Yds"
+              },
+              {
+                "name": "Pierre Strong",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "7 Rush Yds \u2022 11 Rec Yds"
+              }
+            ]
+          },
+          "W6": 6.3,
+          "W6_Int": 6,
+          "W6_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "62 Rush Yds (0 TD) + 1 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bijan Robinson",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "61 Rush Yds \u2022 -8 Rec Yds"
+              },
+              {
+                "name": "Brian Robinson",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "1 Rush Yds \u2022 9 Rec Yds"
+              }
+            ]
+          },
+          "W7": 21.1,
+          "W7_Int": 20,
+          "W7_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "44 Rush Yds (0 TD) + 107 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Rhamondre Stevenson",
+                "pts_frac": 17.5,
+                "pts_int": 17,
+                "stat_line": "22 Rush Yds \u2022 93 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "TreVeyon Henderson",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "9 Rush Yds \u2022 14 Rec Yds"
+              },
+              {
+                "name": "Corey Kiner",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rush Yds"
+              }
+            ]
+          },
+          "W8": 7.5,
+          "W8_Int": 5,
+          "W8_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "61 Rush Yds (0 TD) + 14 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jadarian Price",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "29 Rush Yds \u2022 8 Rec Yds"
+              },
+              {
+                "name": "Zach Charbonnet",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "23 Rush Yds \u2022 6 Rec Yds"
+              },
+              {
+                "name": "George Holani",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rush Yds"
+              }
+            ]
+          },
+          "W9": 32.1,
+          "W9_Int": 31,
+          "W9_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "113 Rush Yds (2 TD) + 88 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bucky Irving",
+                "pts_frac": 24.5,
+                "pts_int": 24,
+                "stat_line": "97 Rush Yds, 2 Rush TD \u2022 28 Rec Yds"
+              },
+              {
+                "name": "Kenny Gainwell",
+                "pts_frac": 7.6,
+                "pts_int": 7,
+                "stat_line": "16 Rush Yds \u2022 60 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 39.6,
+          "Last_4_Games": 67.0,
+          "L4_PPG": 16.8,
+          "Total_pts": 144.8,
+          "PPG": 16.1,
+          "Last_2_Games_Int": 36,
+          "Last_4_Games_Int": 62,
+          "Total_pts_Int": 134,
+          "PPG_Int": 14.9,
+          "Stat_Summary": "689 Rush Yds (5 TD) + 349 Rec Yds (2 TD)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 20,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Vikings (MIN)",
+          "Team": "MIN",
+          "Position": "RB",
+          "W1": 6.6,
+          "W1_Int": 5,
+          "W1_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "66 Rush Yds (0 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "MarShawn Lloyd",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rush Yds"
+              },
+              {
+                "name": "Chris Brooks",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "29 Rush Yds"
+              }
+            ]
+          },
+          "W2": 14.7,
+          "W2_Int": 13,
+          "W2_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "92 Rush Yds (0 TD) + 65 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "D'Andre Swift",
+                "pts_frac": 8.9,
+                "pts_int": 8,
+                "stat_line": "45 Rush Yds \u2022 54 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Kyle Monangai",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "47 Rush Yds \u2022 11 Rec Yds"
+              }
+            ]
+          },
+          "W3": 6.8,
+          "W3_Int": 6,
+          "W3_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "42 Rush Yds (0 TD) + 26 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bucky Irving",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "46 Rush Yds \u2022 12 Rec Yds"
+              },
+              {
+                "name": "Kenny Gainwell",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "-4 Rush Yds \u2022 14 Rec Yds"
+              }
+            ]
+          },
+          "W4": 16.7,
+          "W4_Int": 16,
+          "W4_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "107 Rush Yds (1 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ollie Gordon II",
+                "pts_frac": 16.0,
+                "pts_int": 16,
+                "stat_line": "100 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Jaylen Wright",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rush Yds"
+              }
+            ]
+          },
+          "W5": 11.6,
+          "W5_Int": 11,
+          "W5_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "55 Rush Yds (1 TD) + 1 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kendre Miller",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "30 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "CJ Donaldson",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "13 Rush Yds \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Alvin Kamara",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "12 Rush Yds \u2022 -6 Rec Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 21.8,
+          "W7_Int": 21,
+          "W7_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "141 Rush Yds (1 TD) + 17 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jonathan Taylor",
+                "pts_frac": 17.0,
+                "pts_int": 17,
+                "stat_line": "95 Rush Yds, 1 Rush TD \u2022 15 Rec Yds"
+              },
+              {
+                "name": "Seth McGowan",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "46 Rush Yds \u2022 2 Rec Yds"
+              }
+            ]
+          },
+          "W8": 29.8,
+          "W8_Int": 29,
+          "W8_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "218 Rush Yds (1 TD) + 20 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jahmyr Gibbs",
+                "pts_frac": 22.8,
+                "pts_int": 22,
+                "stat_line": "153 Rush Yds, 1 Rush TD \u2022 15 Rec Yds"
+              },
+              {
+                "name": "Sione Vaki",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "65 Rush Yds \u2022 5 Rec Yds"
+              }
+            ]
+          },
+          "W9": 20.6,
+          "W9_Int": 19,
+          "W9_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "110 Rush Yds (1 TD) + 36 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "James Cook",
+                "pts_frac": 16.7,
+                "pts_int": 16,
+                "stat_line": "107 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Ty Johnson",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "1 Rush Yds \u2022 36 Rec Yds"
+              },
+              {
+                "name": "Ray Davis",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 50.4,
+          "Last_4_Games": 83.8,
+          "L4_PPG": 20.9,
+          "Total_pts": 128.6,
+          "PPG": 16.1,
+          "Last_2_Games_Int": 48,
+          "Last_4_Games_Int": 80,
+          "Total_pts_Int": 120,
+          "PPG_Int": 15.0,
+          "Stat_Summary": "831 Rush Yds (5 TD) + 165 Rec Yds (0 TD)",
+          "Week10_Opponent": "@ Packers (GB)",
+          "Week10_Offense": "Packers (GB)",
+          "Vuln_Rank": 21,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Ravens (BAL)",
+          "Team": "BAL",
+          "Position": "RB",
+          "W1": 23.1,
+          "W1_Int": 23,
+          "W1_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "98 Rush Yds (2 TD) + 23 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jonathan Taylor",
+                "pts_frac": 23.1,
+                "pts_int": 23,
+                "stat_line": "98 Rush Yds, 2 Rush TD \u2022 23 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W2": 7.5,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "42 Rush Yds (0 TD) + 13 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Travis Etienne",
+                "pts_frac": 5.1,
+                "pts_int": 5,
+                "stat_line": "25 Rush Yds \u2022 6 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Alvin Kamara",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "15 Rush Yds \u2022 7 Rec Yds"
+              },
+              {
+                "name": "CJ Donaldson",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rush Yds"
+              }
+            ]
+          },
+          "W3": 18.0,
+          "W3_Int": 17,
+          "W3_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "120 Rush Yds (1 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Javonte Williams",
+                "pts_frac": 16.3,
+                "pts_int": 16,
+                "stat_line": "98 Rush Yds, 1 Rush TD \u2022 5 Rec Yds"
+              },
+              {
+                "name": "Tyler Goodson",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "22 Rush Yds \u2022 -5 Rec Yds"
+              }
+            ]
+          },
+          "W4": 11.8,
+          "W4_Int": 11,
+          "W4_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "57 Rush Yds (1 TD) + 1 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tony Pollard",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "48 Rush Yds, 1 Rush TD \u2022 2 Rec Yds"
+              },
+              {
+                "name": "Tyjae Spears",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "7 Rush Yds \u2022 -1 Rec Yds"
+              },
+              {
+                "name": "Nicholas Singleton",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rush Yds"
+              }
+            ]
+          },
+          "W5": 13.4,
+          "W5_Int": 12,
+          "W5_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "102 Rush Yds (0 TD) + 32 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bijan Robinson",
+                "pts_frac": 11.8,
+                "pts_int": 11,
+                "stat_line": "86 Rush Yds \u2022 32 Rec Yds"
+              },
+              {
+                "name": "Brian Robinson",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rush Yds"
+              }
+            ]
+          },
+          "W6": 13.6,
+          "W6_Int": 12,
+          "W6_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "62 Rush Yds (1 TD) + 14 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Audric Estim\u00e9",
+                "pts_frac": 7.9,
+                "pts_int": 7,
+                "stat_line": "19 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Jaleel McLaughlin",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "41 Rush Yds \u2022 14 Rec Yds"
+              },
+              {
+                "name": "Michael Burton",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rush Yds"
+              }
+            ]
+          },
+          "W7": 14.0,
+          "W7_Int": 12,
+          "W7_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "61 Rush Yds (1 TD) + 19 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Samaje Perine",
+                "pts_frac": 7.6,
+                "pts_int": 7,
+                "stat_line": "16 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Chase Brown",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "39 Rush Yds \u2022 19 Rec Yds"
+              },
+              {
+                "name": "Tahj Brooks",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rush Yds"
+              }
+            ]
+          },
+          "W8": 21.4,
+          "W8_Int": 21,
+          "W8_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "114 Rush Yds (1 TD) + 40 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "James Cook",
+                "pts_frac": 16.1,
+                "pts_int": 16,
+                "stat_line": "80 Rush Yds, 1 Rush TD \u2022 21 Rec Yds"
+              },
+              {
+                "name": "Ray Davis",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "30 Rush Yds"
+              },
+              {
+                "name": "Ty Johnson",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "4 Rush Yds \u2022 19 Rec Yds"
+              }
+            ]
+          },
+          "W9": 21.1,
+          "W9_Int": 20,
+          "W9_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "78 Rush Yds (2 TD) + 13 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chris Rodriguez Jr.",
+                "pts_frac": 9.2,
+                "pts_int": 9,
+                "stat_line": "19 Rush Yds, 1 Rush TD \u2022 13 Rec Yds"
+              },
+              {
+                "name": "Bhayshul Tuten",
+                "pts_frac": 8.9,
+                "pts_int": 8,
+                "stat_line": "29 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Ameer Abdullah",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "30 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 42.5,
+          "Last_4_Games": 70.1,
+          "L4_PPG": 17.5,
+          "Total_pts": 143.9,
+          "PPG": 16.0,
+          "Last_2_Games_Int": 41,
+          "Last_4_Games_Int": 65,
+          "Total_pts_Int": 135,
+          "PPG_Int": 15.0,
+          "Stat_Summary": "734 Rush Yds (9 TD) + 155 Rec Yds (0 TD)",
+          "Week10_Opponent": "vs Chargers (LAC)",
+          "Week10_Offense": "Chargers (LAC)",
+          "Vuln_Rank": 22,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Seahawks (SEA)",
+          "Team": "SEA",
+          "Position": "RB",
+          "W1": 11.5,
+          "W1_Int": 10,
+          "W1_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "62 Rush Yds (0 TD) + 53 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Rhamondre Stevenson",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "51 Rush Yds \u2022 44 Rec Yds"
+              },
+              {
+                "name": "Corey Kiner",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rush Yds"
+              },
+              {
+                "name": "Lan Larison",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W2": 8.8,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "63 Rush Yds (0 TD) + 25 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jeremiyah Love",
+                "pts_frac": 4.5,
+                "pts_int": 4,
+                "stat_line": "29 Rush Yds \u2022 16 Rec Yds"
+              },
+              {
+                "name": "Bam Knight",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rush Yds"
+              },
+              {
+                "name": "Tyler Allgeier",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "10 Rush Yds \u2022 9 Rec Yds"
+              }
+            ]
+          },
+          "W3": 14.4,
+          "W3_Int": 14,
+          "W3_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "71 Rush Yds (0 TD) + 13 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Rachaad White",
+                "pts_frac": 10.1,
+                "pts_int": 10,
+                "stat_line": "35 Rush Yds \u2022 6 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jacory Croskey-Merritt",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "36 Rush Yds \u2022 7 Rec Yds"
+              }
+            ]
+          },
+          "W4": 27.2,
+          "W4_Int": 26,
+          "W4_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "109 Rush Yds (1 TD) + 43 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Omarion Hampton",
+                "pts_frac": 11.3,
+                "pts_int": 11,
+                "stat_line": "45 Rush Yds, 1 Rush TD \u2022 8 Rec Yds"
+              },
+              {
+                "name": "Kimani Vidal",
+                "pts_frac": 9.6,
+                "pts_int": 9,
+                "stat_line": "25 Rush Yds \u2022 11 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Keaton Mitchell",
+                "pts_frac": 6.3,
+                "pts_int": 6,
+                "stat_line": "39 Rush Yds \u2022 24 Rec Yds"
+              }
+            ]
+          },
+          "W5": 15.9,
+          "W5_Int": 15,
+          "W5_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "84 Rush Yds (1 TD) + 15 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Christian McCaffrey",
+                "pts_frac": 14.3,
+                "pts_int": 14,
+                "stat_line": "68 Rush Yds, 1 Rush TD \u2022 15 Rec Yds"
+              },
+              {
+                "name": "Kaelon Black",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rush Yds"
+              }
+            ]
+          },
+          "W6": 22.8,
+          "W6_Int": 21,
+          "W6_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "72 Rush Yds (2 TD) + 36 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "RJ Harvey",
+                "pts_frac": 11.6,
+                "pts_int": 11,
+                "stat_line": "25 Rush Yds, 1 Rush TD \u2022 31 Rec Yds"
+              },
+              {
+                "name": "J.K. Dobbins",
+                "pts_frac": 10.6,
+                "pts_int": 10,
+                "stat_line": "41 Rush Yds, 1 Rush TD \u2022 5 Rec Yds"
+              },
+              {
+                "name": "Tyler Badie",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rush Yds"
+              }
+            ]
+          },
+          "W7": 7.4,
+          "W7_Int": 6,
+          "W7_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "36 Rush Yds (0 TD) + 38 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kenneth Walker III",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "36 Rush Yds \u2022 21 Rec Yds"
+              },
+              {
+                "name": "Emmett Johnson",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "W8": 28.7,
+          "W8_Int": 27,
+          "W8_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "86 Rush Yds (3 TD) + 21 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "D'Andre Swift",
+                "pts_frac": 25.9,
+                "pts_int": 25,
+                "stat_line": "69 Rush Yds, 3 Rush TD \u2022 10 Rec Yds"
+              },
+              {
+                "name": "Roschon Johnson",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "17 Rush Yds \u2022 11 Rec Yds"
+              }
+            ]
+          },
+          "W9": 4.6,
+          "W9_Int": 4,
+          "W9_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "46 Rush Yds (0 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Allgeier",
+                "pts_frac": 4.6,
+                "pts_int": 4,
+                "stat_line": "46 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 33.3,
+          "Last_4_Games": 63.5,
+          "L4_PPG": 15.9,
+          "Total_pts": 141.3,
+          "PPG": 15.7,
+          "Last_2_Games_Int": 31,
+          "Last_4_Games_Int": 58,
+          "Total_pts_Int": 130,
+          "PPG_Int": 14.4,
+          "Stat_Summary": "629 Rush Yds (7 TD) + 244 Rec Yds (2 TD)",
+          "Week10_Opponent": "@ Raiders (LV)",
+          "Week10_Offense": "Raiders (LV)",
+          "Vuln_Rank": 23,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Commanders (WAS)",
+          "Team": "WAS",
+          "Position": "RB",
+          "W1": 9.5,
+          "W1_Int": 9,
+          "W1_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "90 Rush Yds (0 TD) + 5 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Saquon Barkley",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "83 Rush Yds \u2022 -3 Rec Yds"
+              },
+              {
+                "name": "Will Shipley",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "4 Rush Yds \u2022 8 Rec Yds"
+              },
+              {
+                "name": "Tank Bigsby",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds"
+              }
+            ]
+          },
+          "W2": 5.9,
+          "W2_Int": 5,
+          "W2_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "39 Rush Yds (0 TD) + 20 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Javonte Williams",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "30 Rush Yds \u2022 20 Rec Yds"
+              },
+              {
+                "name": "Emari Demercado",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rush Yds"
+              },
+              {
+                "name": "Hunter Luepke",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rush Yds"
+              }
+            ]
+          },
+          "W3": 10.4,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "39 Rush Yds (0 TD) + 75 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "George Holani",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "10 Rush Yds \u2022 48 Rec Yds"
+              },
+              {
+                "name": "Brady Russell",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Emanuel Wilson",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rush Yds"
+              },
+              {
+                "name": "Jadarian Price",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "15 Rush Yds \u2022 7 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W4": 25.5,
+          "W4_Int": 24,
+          "W4_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "126 Rush Yds (2 TD) + 9 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jonathan Taylor",
+                "pts_frac": 21.7,
+                "pts_int": 21,
+                "stat_line": "95 Rush Yds, 2 Rush TD \u2022 2 Rec Yds"
+              },
+              {
+                "name": "Seth McGowan",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "31 Rush Yds \u2022 7 Rec Yds"
+              }
+            ]
+          },
+          "W5": 10.6,
+          "W5_Int": 10,
+          "W5_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "74 Rush Yds (0 TD) + 42 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Cam Skattebo",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "59 Rush Yds \u2022 12 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Tyrone Tracy Jr.",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "6 Rush Yds \u2022 25 Rec Yds"
+              },
+              {
+                "name": "Najee Harris",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "9 Rush Yds \u2022 5 Rec Yds"
+              }
+            ]
+          },
+          "W6": 27.4,
+          "W6_Int": 26,
+          "W6_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "98 Rush Yds (2 TD) + 66 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Christian McCaffrey",
+                "pts_frac": 22.7,
+                "pts_int": 22,
+                "stat_line": "64 Rush Yds, 2 Rush TD \u2022 53 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Kaelon Black",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "34 Rush Yds \u2022 3 Rec Yds"
+              },
+              {
+                "name": "Kyle Juszczyk",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 16.0,
+          "W8_Int": 14,
+          "W8_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "64 Rush Yds (1 TD) + 36 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Saquon Barkley",
+                "pts_frac": 11.4,
+                "pts_int": 11,
+                "stat_line": "30 Rush Yds, 1 Rush TD \u2022 24 Rec Yds"
+              },
+              {
+                "name": "Elijah Mitchell",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "34 Rush Yds \u2022 3 Rec Yds"
+              },
+              {
+                "name": "Jaydon Blue",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W9": 17.9,
+          "W9_Int": 17,
+          "W9_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "103 Rush Yds (1 TD) + 16 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Blake Corum",
+                "pts_frac": 11.8,
+                "pts_int": 11,
+                "stat_line": "58 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Kyren Williams",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "45 Rush Yds \u2022 16 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 33.9,
+          "Last_4_Games": 71.9,
+          "L4_PPG": 18.0,
+          "Total_pts": 123.2,
+          "PPG": 15.4,
+          "Last_2_Games_Int": 31,
+          "Last_4_Games_Int": 67,
+          "Total_pts_Int": 114,
+          "PPG_Int": 14.2,
+          "Stat_Summary": "633 Rush Yds (6 TD) + 269 Rec Yds (0 TD)",
+          "Week10_Opponent": "@ Giants (NYG)",
+          "Week10_Offense": "Giants (NYG)",
+          "Vuln_Rank": 24,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Patriots (NE)",
+          "Team": "NE",
+          "Position": "RB",
+          "W1": 11.0,
+          "W1_Int": 9,
+          "W1_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "84 Rush Yds (0 TD) + 26 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jadarian Price",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "52 Rush Yds \u2022 6 Rec Yds"
+              },
+              {
+                "name": "George Holani",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "29 Rush Yds"
+              },
+              {
+                "name": "Brady Russell",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Emanuel Wilson",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds"
+              }
+            ]
+          },
+          "W2": 13.7,
+          "W2_Int": 12,
+          "W2_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "81 Rush Yds (0 TD) + 56 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaylen Warren",
+                "pts_frac": 7.7,
+                "pts_int": 7,
+                "stat_line": "43 Rush Yds \u2022 34 Rec Yds"
+              },
+              {
+                "name": "Rico Dowdle",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "22 Rush Yds \u2022 22 Rec Yds"
+              },
+              {
+                "name": "Travis Homer",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rush Yds"
+              }
+            ]
+          },
+          "W3": 25.8,
+          "W3_Int": 24,
+          "W3_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "112 Rush Yds (2 TD) + 26 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bhayshul Tuten",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "73 Rush Yds, 1 Rush TD \u2022 17 Rec Yds"
+              },
+              {
+                "name": "Chris Rodriguez Jr.",
+                "pts_frac": 9.7,
+                "pts_int": 9,
+                "stat_line": "37 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "LeQuint Allen Jr.",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Ameer Abdullah",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rush Yds"
+              }
+            ]
+          },
+          "W4": 16.2,
+          "W4_Int": 15,
+          "W4_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "81 Rush Yds (1 TD) + 21 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "James Cook",
+                "pts_frac": 14.3,
+                "pts_int": 14,
+                "stat_line": "75 Rush Yds, 1 Rush TD \u2022 8 Rec Yds"
+              },
+              {
+                "name": "Ty Johnson",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "3 Rush Yds \u2022 9 Rec Yds"
+              },
+              {
+                "name": "Ray Davis",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds \u2022 4 Rec Yds"
+              }
+            ]
+          },
+          "W5": 17.2,
+          "W5_Int": 16,
+          "W5_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "41 Rush Yds (1 TD) + 71 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dylan Laube",
+                "pts_frac": 8.5,
+                "pts_int": 8,
+                "stat_line": "9 Rush Yds, 1 Rush TD \u2022 16 Rec Yds"
+              },
+              {
+                "name": "Ashton Jeanty",
+                "pts_frac": 7.7,
+                "pts_int": 7,
+                "stat_line": "27 Rush Yds \u2022 50 Rec Yds"
+              },
+              {
+                "name": "Mike Washington Jr.",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "5 Rush Yds \u2022 5 Rec Yds"
+              }
+            ]
+          },
+          "W6": 13.0,
+          "W6_Int": 12,
+          "W6_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "94 Rush Yds (0 TD) + 36 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Braelon Allen",
+                "pts_frac": 10.4,
+                "pts_int": 10,
+                "stat_line": "78 Rush Yds \u2022 26 Rec Yds"
+              },
+              {
+                "name": "Isaiah Davis",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "16 Rush Yds \u2022 10 Rec Yds"
+              }
+            ]
+          },
+          "W7": 16.3,
+          "W7_Int": 16,
+          "W7_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "91 Rush Yds (1 TD) + 12 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "D'Andre Swift",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "78 Rush Yds, 1 Rush TD \u2022 12 Rec Yds"
+              },
+              {
+                "name": "Roschon Johnson",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rush Yds"
+              }
+            ]
+          },
+          "W8": 7.4,
+          "W8_Int": 6,
+          "W8_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "74 Rush Yds (0 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ollie Gordon II",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "69 Rush Yds"
+              },
+              {
+                "name": "Jaylen Wright",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rush Yds"
+              }
+            ]
+          },
+          "W9": 16.6,
+          "W9_Int": 15,
+          "W9_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "95 Rush Yds (1 TD) + 11 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kaleb Johnson",
+                "pts_frac": 12.8,
+                "pts_int": 12,
+                "stat_line": "68 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Pierre Strong",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "22 Rush Yds \u2022 11 Rec Yds"
+              },
+              {
+                "name": "Josh Jacobs",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 24.0,
+          "Last_4_Games": 53.3,
+          "L4_PPG": 13.3,
+          "Total_pts": 137.2,
+          "PPG": 15.2,
+          "Last_2_Games_Int": 21,
+          "Last_4_Games_Int": 49,
+          "Total_pts_Int": 125,
+          "PPG_Int": 13.9,
+          "Stat_Summary": "753 Rush Yds (6 TD) + 259 Rec Yds (0 TD)",
+          "Week10_Opponent": "@ Lions (DET)",
+          "Week10_Offense": "Lions (DET)",
+          "Vuln_Rank": 25,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Chiefs (KC)",
+          "Team": "KC",
+          "Position": "RB",
+          "W1": 7.7,
+          "W1_Int": 7,
+          "W1_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "54 Rush Yds (0 TD) + 23 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "RJ Harvey",
+                "pts_frac": 4.1,
+                "pts_int": 4,
+                "stat_line": "18 Rush Yds \u2022 23 Rec Yds"
+              },
+              {
+                "name": "J.K. Dobbins",
+                "pts_frac": 3.6,
+                "pts_int": 3,
+                "stat_line": "36 Rush Yds"
+              }
+            ]
+          },
+          "W2": 25.2,
+          "W2_Int": 25,
+          "W2_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "92 Rush Yds (2 TD) + 40 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jonathan Taylor",
+                "pts_frac": 25.2,
+                "pts_int": 25,
+                "stat_line": "92 Rush Yds, 2 Rush TD \u2022 40 Rec Yds"
+              }
+            ]
+          },
+          "W3": 13.2,
+          "W3_Int": 12,
+          "W3_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "58 Rush Yds (1 TD) + 14 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ollie Gordon II",
+                "pts_frac": 11.5,
+                "pts_int": 11,
+                "stat_line": "41 Rush Yds, 1 Rush TD \u2022 14 Rec Yds"
+              },
+              {
+                "name": "De'Von Achane",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rush Yds"
+              }
+            ]
+          },
+          "W4": 14.8,
+          "W4_Int": 13,
+          "W4_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "72 Rush Yds (0 TD) + 76 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ashton Jeanty",
+                "pts_frac": 12.6,
+                "pts_int": 12,
+                "stat_line": "58 Rush Yds \u2022 68 Rec Yds"
+              },
+              {
+                "name": "Mike Washington Jr.",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "18 Rush Yds \u2022 -1 Rec Yds"
+              },
+              {
+                "name": "Connor Heyward",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "-4 Rush Yds \u2022 9 Rec Yds"
+              }
+            ]
+          },
+          "W5": "BYE",
+          "W5_Int": "BYE",
+          "W5_Detail": null,
+          "W6": 8.3,
+          "W6_Int": 7,
+          "W6_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "43 Rush Yds (0 TD) + 40 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kimani Vidal",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "21 Rush Yds \u2022 19 Rec Yds"
+              },
+              {
+                "name": "Omarion Hampton",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "18 Rush Yds \u2022 21 Rec Yds"
+              },
+              {
+                "name": "Keaton Mitchell",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rush Yds"
+              }
+            ]
+          },
+          "W7": 20.6,
+          "W7_Int": 19,
+          "W7_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "119 Rush Yds (1 TD) + 27 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Emanuel Wilson",
+                "pts_frac": 17.5,
+                "pts_int": 17,
+                "stat_line": "100 Rush Yds, 1 Rush TD \u2022 15 Rec Yds"
+              },
+              {
+                "name": "George Holani",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "11 Rush Yds \u2022 12 Rec Yds"
+              },
+              {
+                "name": "Velus Jones Jr.",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rush Yds"
+              }
+            ]
+          },
+          "W8": 18.7,
+          "W8_Int": 18,
+          "W8_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "54 Rush Yds (1 TD) + 73 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jonah Coleman",
+                "pts_frac": 16.4,
+                "pts_int": 16,
+                "stat_line": "41 Rush Yds, 1 Rush TD \u2022 63 Rec Yds"
+              },
+              {
+                "name": "J.K. Dobbins",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rush Yds"
+              },
+              {
+                "name": "Adam Prentice",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W9": 13.1,
+          "W9_Int": 12,
+          "W9_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "94 Rush Yds (0 TD) + 47 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Breece Hall",
+                "pts_frac": 8.7,
+                "pts_int": 8,
+                "stat_line": "61 Rush Yds \u2022 26 Rec Yds"
+              },
+              {
+                "name": "Braelon Allen",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "33 Rush Yds \u2022 21 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 31.8,
+          "Last_4_Games": 60.7,
+          "L4_PPG": 15.2,
+          "Total_pts": 121.6,
+          "PPG": 15.2,
+          "Last_2_Games_Int": 30,
+          "Last_4_Games_Int": 56,
+          "Total_pts_Int": 113,
+          "PPG_Int": 14.1,
+          "Stat_Summary": "586 Rush Yds (5 TD) + 340 Rec Yds (0 TD)",
+          "Week10_Opponent": "@ Falcons (ATL)",
+          "Week10_Offense": "Falcons (ATL)",
+          "Vuln_Rank": 26,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Steelers (PIT)",
+          "Team": "PIT",
+          "Position": "RB",
+          "W1": 26.4,
+          "W1_Int": 26,
+          "W1_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "114 Rush Yds (0 TD) + 90 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Bijan Robinson",
+                "pts_frac": 23.3,
+                "pts_int": 23,
+                "stat_line": "83 Rush Yds \u2022 90 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Brian Robinson",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "31 Rush Yds"
+              }
+            ]
+          },
+          "W2": 17.6,
+          "W2_Int": 16,
+          "W2_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "119 Rush Yds (1 TD) + 7 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "TreVeyon Henderson",
+                "pts_frac": 13.6,
+                "pts_int": 13,
+                "stat_line": "76 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Rhamondre Stevenson",
+                "pts_frac": 3.6,
+                "pts_int": 3,
+                "stat_line": "43 Rush Yds \u2022 3 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Reggie Gilliam",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W3": 8.3,
+          "W3_Int": 7,
+          "W3_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "70 Rush Yds (0 TD) + 13 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chase Brown",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "61 Rush Yds \u2022 8 Rec Yds"
+              },
+              {
+                "name": "Samaje Perine",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "9 Rush Yds \u2022 5 Rec Yds"
+              }
+            ]
+          },
+          "W4": 26.0,
+          "W4_Int": 24,
+          "W4_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "90 Rush Yds (2 TD) + 50 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Quinshon Judkins",
+                "pts_frac": 15.6,
+                "pts_int": 15,
+                "stat_line": "53 Rush Yds, 1 Rush TD \u2022 43 Rec Yds"
+              },
+              {
+                "name": "Jaleel McLaughlin",
+                "pts_frac": 8.8,
+                "pts_int": 8,
+                "stat_line": "28 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Raheim Sanders",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "9 Rush Yds \u2022 7 Rec Yds"
+              }
+            ]
+          },
+          "W5": 10.1,
+          "W5_Int": 9,
+          "W5_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "61 Rush Yds (0 TD) + 40 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jonathan Taylor",
+                "pts_frac": 8.2,
+                "pts_int": 8,
+                "stat_line": "45 Rush Yds \u2022 37 Rec Yds"
+              },
+              {
+                "name": "Seth McGowan",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "16 Rush Yds \u2022 3 Rec Yds"
+              }
+            ]
+          },
+          "W6": 7.3,
+          "W6_Int": 6,
+          "W6_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "63 Rush Yds (0 TD) + 10 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bucky Irving",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "46 Rush Yds \u2022 3 Rec Yds"
+              },
+              {
+                "name": "Kenny Gainwell",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "17 Rush Yds \u2022 7 Rec Yds"
+              }
+            ]
+          },
+          "W7": 9.0,
+          "W7_Int": 8,
+          "W7_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "11 Rush Yds (0 TD) + 79 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Alvin Kamara",
+                "pts_frac": 6.2,
+                "pts_int": 6,
+                "stat_line": "5 Rush Yds \u2022 57 Rec Yds"
+              },
+              {
+                "name": "Kendre Miller",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "6 Rush Yds \u2022 22 Rec Yds"
+              }
+            ]
+          },
+          "W8": 11.8,
+          "W8_Int": 10,
+          "W8_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "32 Rush Yds (0 TD) + 86 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dylan Sampson",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "7 Rush Yds \u2022 62 Rec Yds"
+              },
+              {
+                "name": "Quinshon Judkins",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "25 Rush Yds \u2022 24 Rec Yds"
+              }
+            ]
+          },
+          "W9": "BYE",
+          "W9_Int": "BYE",
+          "W9_Detail": null,
+          "GP": 8,
+          "Last_2_Games": 20.8,
+          "Last_4_Games": 38.2,
+          "L4_PPG": 9.6,
+          "Total_pts": 116.5,
+          "PPG": 14.6,
+          "Last_2_Games_Int": 18,
+          "Last_4_Games_Int": 33,
+          "Total_pts_Int": 106,
+          "PPG_Int": 13.2,
+          "Stat_Summary": "560 Rush Yds (3 TD) + 375 Rec Yds (1 TD)",
+          "Week10_Opponent": "@ Bengals (CIN)",
+          "Week10_Offense": "Bengals (CIN)",
+          "Vuln_Rank": 27,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "49ers (SF)",
+          "Team": "SF",
+          "Position": "RB",
+          "W1": 20.3,
+          "W1_Int": 19,
+          "W1_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "114 Rush Yds (1 TD) + 29 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kyren Williams",
+                "pts_frac": 12.5,
+                "pts_int": 12,
+                "stat_line": "41 Rush Yds, 1 Rush TD \u2022 24 Rec Yds"
+              },
+              {
+                "name": "Blake Corum",
+                "pts_frac": 5.4,
+                "pts_int": 5,
+                "stat_line": "54 Rush Yds"
+              },
+              {
+                "name": "Ronnie Rivers",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "19 Rush Yds \u2022 5 Rec Yds"
+              }
+            ]
+          },
+          "W2": 12.9,
+          "W2_Int": 11,
+          "W2_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "92 Rush Yds (0 TD) + 37 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "De'Von Achane",
+                "pts_frac": 9.3,
+                "pts_int": 9,
+                "stat_line": "74 Rush Yds \u2022 19 Rec Yds"
+              },
+              {
+                "name": "DJ Herman",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              },
+              {
+                "name": "Jaylen Wright",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rush Yds"
+              },
+              {
+                "name": "Ollie Gordon II",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rush Yds"
+              }
+            ]
+          },
+          "W3": 17.8,
+          "W3_Int": 16,
+          "W3_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "89 Rush Yds (0 TD) + 29 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jeremiyah Love",
+                "pts_frac": 16.9,
+                "pts_int": 16,
+                "stat_line": "90 Rush Yds \u2022 19 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tyler Allgeier",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "-1 Rush Yds \u2022 10 Rec Yds"
+              }
+            ]
+          },
+          "W4": 20.4,
+          "W4_Int": 19,
+          "W4_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "72 Rush Yds (0 TD) + 112 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "RJ Harvey",
+                "pts_frac": 9.3,
+                "pts_int": 9,
+                "stat_line": "25 Rush Yds \u2022 68 Rec Yds"
+              },
+              {
+                "name": "Tyler Badie",
+                "pts_frac": 5.9,
+                "pts_int": 5,
+                "stat_line": "7 Rush Yds \u2022 32 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "J.K. Dobbins",
+                "pts_frac": 5.2,
+                "pts_int": 5,
+                "stat_line": "40 Rush Yds \u2022 12 Rec Yds"
+              }
+            ]
+          },
+          "W5": 14.3,
+          "W5_Int": 14,
+          "W5_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "68 Rush Yds (1 TD) + 35 Rec Yds (0 TD) \u2022 2 Fumb Lost",
+            "players": [
+              {
+                "name": "Emanuel Wilson",
+                "pts_frac": 12.2,
+                "pts_int": 12,
+                "stat_line": "61 Rush Yds, 1 Rush TD \u2022 11 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "George Holani",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "7 Rush Yds \u2022 24 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W6": 13.7,
+          "W6_Int": 12,
+          "W6_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "43 Rush Yds (0 TD) + 34 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Rachaad White",
+                "pts_frac": 11.7,
+                "pts_int": 11,
+                "stat_line": "27 Rush Yds \u2022 30 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jeremy McNichols",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rush Yds"
+              },
+              {
+                "name": "Austin Ekeler",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds \u2022 4 Rec Yds"
+              }
+            ]
+          },
+          "W7": 15.0,
+          "W7_Int": 14,
+          "W7_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "72 Rush Yds (0 TD) + 78 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bijan Robinson",
+                "pts_frac": 12.2,
+                "pts_int": 12,
+                "stat_line": "63 Rush Yds \u2022 59 Rec Yds"
+              },
+              {
+                "name": "Khalil Herbert",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "9 Rush Yds \u2022 19 Rec Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 1.7,
+          "W9_Int": 2,
+          "W9_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "22 Rush Yds (0 TD) + -5 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ashton Jeanty",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "25 Rush Yds \u2022 -5 Rec Yds"
+              },
+              {
+                "name": "Mike Washington Jr.",
+                "pts_frac": -0.3,
+                "pts_int": 0,
+                "stat_line": "-3 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 16.7,
+          "Last_4_Games": 44.7,
+          "L4_PPG": 11.2,
+          "Total_pts": 116.1,
+          "PPG": 14.5,
+          "Last_2_Games_Int": 16,
+          "Last_4_Games_Int": 42,
+          "Total_pts_Int": 107,
+          "PPG_Int": 13.4,
+          "Stat_Summary": "572 Rush Yds (2 TD) + 349 Rec Yds (2 TD)",
+          "Week10_Opponent": "@ Cowboys (DAL)",
+          "Week10_Offense": "Cowboys (DAL)",
+          "Vuln_Rank": 28,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Rams (LA)",
+          "Team": "LA",
+          "Position": "RB",
+          "W1": 15.8,
+          "W1_Int": 15,
+          "W1_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "133 Rush Yds (0 TD) + 25 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Christian McCaffrey",
+                "pts_frac": 8.8,
+                "pts_int": 8,
+                "stat_line": "68 Rush Yds \u2022 20 Rec Yds"
+              },
+              {
+                "name": "Kaelon Black",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "65 Rush Yds \u2022 5 Rec Yds"
+              }
+            ]
+          },
+          "W2": 7.0,
+          "W2_Int": 5,
+          "W2_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "51 Rush Yds (0 TD) + 19 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cam Skattebo",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "36 Rush Yds \u2022 19 Rec Yds"
+              },
+              {
+                "name": "Devin Singletary",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rush Yds"
+              },
+              {
+                "name": "Najee Harris",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rush Yds"
+              }
+            ]
+          },
+          "W3": 11.4,
+          "W3_Int": 10,
+          "W3_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "57 Rush Yds (0 TD) + 57 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "J.K. Dobbins",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "49 Rush Yds \u2022 4 Rec Yds"
+              },
+              {
+                "name": "RJ Harvey",
+                "pts_frac": 4.7,
+                "pts_int": 4,
+                "stat_line": "6 Rush Yds \u2022 41 Rec Yds"
+              },
+              {
+                "name": "Tyler Badie",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "2 Rush Yds \u2022 12 Rec Yds"
+              }
+            ]
+          },
+          "W4": 8.8,
+          "W4_Int": 8,
+          "W4_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "86 Rush Yds (0 TD) + 2 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tank Bigsby",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "55 Rush Yds"
+              },
+              {
+                "name": "Will Shipley",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "23 Rush Yds"
+              },
+              {
+                "name": "Saquon Barkley",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "8 Rush Yds \u2022 2 Rec Yds"
+              }
+            ]
+          },
+          "W5": 33.3,
+          "W5_Int": 32,
+          "W5_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "113 Rush Yds (2 TD) + 110 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "James Cook",
+                "pts_frac": 22.8,
+                "pts_int": 22,
+                "stat_line": "111 Rush Yds, 2 Rush TD \u2022 7 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Ty Johnson",
+                "pts_frac": 7.2,
+                "pts_int": 7,
+                "stat_line": "72 Rec Yds"
+              },
+              {
+                "name": "Ray Davis",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "2 Rush Yds \u2022 31 Rec Yds"
+              }
+            ]
+          },
+          "W6": 14.6,
+          "W6_Int": 13,
+          "W6_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "118 Rush Yds (0 TD) + 28 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bam Knight",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "80 Rush Yds \u2022 18 Rec Yds"
+              },
+              {
+                "name": "Tyler Allgeier",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "38 Rush Yds \u2022 10 Rec Yds"
+              }
+            ]
+          },
+          "W7": 17.6,
+          "W7_Int": 16,
+          "W7_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "42 Rush Yds (0 TD) + 74 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Ashton Jeanty",
+                "pts_frac": 13.6,
+                "pts_int": 13,
+                "stat_line": "15 Rush Yds \u2022 61 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mike Washington Jr.",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rush Yds"
+              },
+              {
+                "name": "Connor Heyward",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W8": 8.0,
+          "W8_Int": 7,
+          "W8_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "49 Rush Yds (0 TD) + 31 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kimani Vidal",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "23 Rush Yds \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Omarion Hampton",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "20 Rush Yds \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Keaton Mitchell",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "6 Rush Yds \u2022 17 Rec Yds"
+              }
+            ]
+          },
+          "W9": 10.3,
+          "W9_Int": 9,
+          "W9_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "44 Rush Yds (0 TD) + 59 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Rachaad White",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "28 Rush Yds \u2022 41 Rec Yds"
+              },
+              {
+                "name": "Austin Ekeler",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "16 Rush Yds \u2022 18 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 18.3,
+          "Last_4_Games": 50.5,
+          "L4_PPG": 12.6,
+          "Total_pts": 126.8,
+          "PPG": 14.1,
+          "Last_2_Games_Int": 16,
+          "Last_4_Games_Int": 45,
+          "Total_pts_Int": 115,
+          "PPG_Int": 12.8,
+          "Stat_Summary": "693 Rush Yds (2 TD) + 405 Rec Yds (1 TD)",
+          "Week10_Opponent": "@ Cardinals (ARI)",
+          "Week10_Offense": "Cardinals (ARI)",
+          "Vuln_Rank": 29,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Lions (DET)",
+          "Team": "DET",
+          "Position": "RB",
+          "W1": 17.0,
+          "W1_Int": 16,
+          "W1_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "80 Rush Yds (1 TD) + 30 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kendre Miller",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "30 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Travis Etienne",
+                "pts_frac": 7.8,
+                "pts_int": 7,
+                "stat_line": "46 Rush Yds \u2022 32 Rec Yds"
+              },
+              {
+                "name": "CJ Donaldson",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "4 Rush Yds \u2022 -2 Rec Yds"
+              }
+            ]
+          },
+          "W2": 19.9,
+          "W2_Int": 19,
+          "W2_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "135 Rush Yds (1 TD) + 4 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "James Cook",
+                "pts_frac": 19.9,
+                "pts_int": 19,
+                "stat_line": "135 Rush Yds, 1 Rush TD \u2022 4 Rec Yds"
+              }
+            ]
+          },
+          "W3": 7.2,
+          "W3_Int": 6,
+          "W3_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "46 Rush Yds (0 TD) + 26 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Breece Hall",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "32 Rush Yds \u2022 23 Rec Yds"
+              },
+              {
+                "name": "Braelon Allen",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "14 Rush Yds \u2022 3 Rec Yds"
+              }
+            ]
+          },
+          "W4": 25.6,
+          "W4_Int": 24,
+          "W4_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "124 Rush Yds (2 TD) + 12 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chuba Hubbard",
+                "pts_frac": 24.9,
+                "pts_int": 24,
+                "stat_line": "122 Rush Yds, 2 Rush TD \u2022 7 Rec Yds"
+              },
+              {
+                "name": "AJ Dillon",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "2 Rush Yds \u2022 5 Rec Yds"
+              }
+            ]
+          },
+          "W5": 4.6,
+          "W5_Int": 3,
+          "W5_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "37 Rush Yds (0 TD) + 9 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jeremiyah Love",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rush Yds"
+              },
+              {
+                "name": "Tyler Allgeier",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "7 Rush Yds \u2022 9 Rec Yds"
+              },
+              {
+                "name": "Bam Knight",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rush Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 18.6,
+          "W7_Int": 18,
+          "W7_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "56 Rush Yds (0 TD) + 70 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Josh Jacobs",
+                "pts_frac": 15.1,
+                "pts_int": 15,
+                "stat_line": "36 Rush Yds \u2022 55 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "MarShawn Lloyd",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "20 Rush Yds \u2022 15 Rec Yds"
+              }
+            ]
+          },
+          "W8": 6.4,
+          "W8_Int": 6,
+          "W8_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "46 Rush Yds (0 TD) + 18 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Aaron Jones",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "22 Rush Yds \u2022 18 Rec Yds"
+              },
+              {
+                "name": "Jordan Mason",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rush Yds"
+              },
+              {
+                "name": "DeeJay Dallas",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rush Yds"
+              }
+            ]
+          },
+          "W9": 11.7,
+          "W9_Int": 10,
+          "W9_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "54 Rush Yds (0 TD) + 63 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ollie Gordon II",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "55 Rush Yds \u2022 9 Rec Yds"
+              },
+              {
+                "name": "Kaytron Allen",
+                "pts_frac": 4.5,
+                "pts_int": 4,
+                "stat_line": "-1 Rush Yds \u2022 46 Rec Yds"
+              },
+              {
+                "name": "Carlos Washington",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 18.1,
+          "Last_4_Games": 41.3,
+          "L4_PPG": 10.3,
+          "Total_pts": 111.0,
+          "PPG": 13.9,
+          "Last_2_Games_Int": 16,
+          "Last_4_Games_Int": 37,
+          "Total_pts_Int": 102,
+          "PPG_Int": 12.8,
+          "Stat_Summary": "578 Rush Yds (4 TD) + 232 Rec Yds (1 TD)",
+          "Week10_Opponent": "vs Patriots (NE)",
+          "Week10_Offense": "Patriots (NE)",
+          "Vuln_Rank": 30,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Jaguars (JAX)",
+          "Team": "JAX",
+          "Position": "RB",
+          "W1": 7.6,
+          "W1_Int": 7,
+          "W1_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "34 Rush Yds (0 TD) + 42 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Quinshon Judkins",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "33 Rush Yds \u2022 17 Rec Yds"
+              },
+              {
+                "name": "Raheim Sanders",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "1 Rush Yds \u2022 25 Rec Yds"
+              }
+            ]
+          },
+          "W2": 18.5,
+          "W2_Int": 16,
+          "W2_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "76 Rush Yds (1 TD) + 49 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jonah Coleman",
+                "pts_frac": 11.8,
+                "pts_int": 11,
+                "stat_line": "39 Rush Yds, 1 Rush TD \u2022 19 Rec Yds"
+              },
+              {
+                "name": "J.K. Dobbins",
+                "pts_frac": 3.6,
+                "pts_int": 3,
+                "stat_line": "36 Rush Yds"
+              },
+              {
+                "name": "Tyler Badie",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "1 Rush Yds \u2022 28 Rec Yds"
+              },
+              {
+                "name": "Adam Prentice",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W3": 9.4,
+          "W3_Int": 7,
+          "W3_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "63 Rush Yds (0 TD) + 31 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Rhamondre Stevenson",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "22 Rush Yds \u2022 16 Rec Yds"
+              },
+              {
+                "name": "TreVeyon Henderson",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "23 Rush Yds \u2022 6 Rec Yds"
+              },
+              {
+                "name": "Corey Kiner",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "18 Rush Yds \u2022 9 Rec Yds"
+              }
+            ]
+          },
+          "W4": 8.8,
+          "W4_Int": 8,
+          "W4_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "17 Rush Yds (0 TD) + 71 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chase Brown",
+                "pts_frac": 8.1,
+                "pts_int": 8,
+                "stat_line": "10 Rush Yds \u2022 71 Rec Yds"
+              },
+              {
+                "name": "Samaje Perine",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rush Yds"
+              }
+            ]
+          },
+          "W5": 8.5,
+          "W5_Int": 8,
+          "W5_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "20 Rush Yds (1 TD) + 5 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Will Shipley",
+                "pts_frac": 7.3,
+                "pts_int": 7,
+                "stat_line": "6 Rush Yds, 1 Rush TD \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Dameon Pierce",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "14 Rush Yds \u2022 -2 Rec Yds"
+              }
+            ]
+          },
+          "W6": 19.1,
+          "W6_Int": 19,
+          "W6_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "99 Rush Yds (1 TD) + 32 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jawhar Jordan",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "43 Rush Yds, 1 Rush TD \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Woody Marks",
+                "pts_frac": 8.1,
+                "pts_int": 8,
+                "stat_line": "56 Rush Yds \u2022 25 Rec Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 10.9,
+          "W8_Int": 9,
+          "W8_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "95 Rush Yds (0 TD) + 24 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "DJ Giddens",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "43 Rush Yds"
+              },
+              {
+                "name": "Jonathan Taylor",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "23 Rush Yds \u2022 24 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Seth McGowan",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "29 Rush Yds"
+              }
+            ]
+          },
+          "W9": 20.8,
+          "W9_Int": 20,
+          "W9_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "142 Rush Yds (1 TD) + 7 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Justice Hill",
+                "pts_frac": 15.2,
+                "pts_int": 15,
+                "stat_line": "85 Rush Yds, 1 Rush TD \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Derrick Henry",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "-3 Pass Yds \u2022 57 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 31.7,
+          "Last_4_Games": 59.3,
+          "L4_PPG": 14.8,
+          "Total_pts": 103.6,
+          "PPG": 12.9,
+          "Last_2_Games_Int": 29,
+          "Last_4_Games_Int": 56,
+          "Total_pts_Int": 94,
+          "PPG_Int": 11.8,
+          "Stat_Summary": "546 Rush Yds (4 TD) + 261 Rec Yds (0 TD)",
+          "Week10_Opponent": "@ Titans (TEN)",
+          "Week10_Offense": "Titans (TEN)",
+          "Vuln_Rank": 31,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Buccaneers (TB)",
+          "Team": "TB",
+          "Position": "RB",
+          "W1": 18.8,
+          "W1_Int": 18,
+          "W1_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "76 Rush Yds (1 TD) + 52 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chase Brown",
+                "pts_frac": 13.8,
+                "pts_int": 13,
+                "stat_line": "56 Rush Yds, 1 Rush TD \u2022 22 Rec Yds"
+              },
+              {
+                "name": "Samaje Perine",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "20 Rush Yds \u2022 30 Rec Yds"
+              }
+            ]
+          },
+          "W2": 6.2,
+          "W2_Int": 5,
+          "W2_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "28 Rush Yds (0 TD) + 34 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Quinshon Judkins",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "21 Rush Yds \u2022 27 Rec Yds"
+              },
+              {
+                "name": "Raheim Sanders",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "4 Rush Yds \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Jaleel McLaughlin",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds"
+              }
+            ]
+          },
+          "W3": 9.5,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "61 Rush Yds (0 TD) + 34 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Aaron Jones",
+                "pts_frac": 9.2,
+                "pts_int": 9,
+                "stat_line": "58 Rush Yds \u2022 34 Rec Yds"
+              },
+              {
+                "name": "DeeJay Dallas",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rush Yds"
+              },
+              {
+                "name": "Demond Claiborne",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rush Yds"
+              }
+            ]
+          },
+          "W4": 11.6,
+          "W4_Int": 10,
+          "W4_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "85 Rush Yds (0 TD) + 41 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "MarShawn Lloyd",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "13 Rush Yds \u2022 36 Rec Yds"
+              },
+              {
+                "name": "Chris Brooks",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "30 Rush Yds \u2022 5 Rec Yds"
+              },
+              {
+                "name": "Kaleb Johnson",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "42 Rush Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W5": 12.7,
+          "W5_Int": 12,
+          "W5_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "50 Rush Yds (1 TD) + 17 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Javonte Williams",
+                "pts_frac": 12.2,
+                "pts_int": 12,
+                "stat_line": "45 Rush Yds, 1 Rush TD \u2022 17 Rec Yds"
+              },
+              {
+                "name": "Hunter Luepke",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rush Yds"
+              }
+            ]
+          },
+          "W6": 12.7,
+          "W6_Int": 11,
+          "W6_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "90 Rush Yds (0 TD) + 37 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaylen Warren",
+                "pts_frac": 7.8,
+                "pts_int": 7,
+                "stat_line": "50 Rush Yds \u2022 28 Rec Yds"
+              },
+              {
+                "name": "Rico Dowdle",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "40 Rush Yds \u2022 9 Rec Yds"
+              }
+            ]
+          },
+          "W7": 16.8,
+          "W7_Int": 16,
+          "W7_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "64 Rush Yds (1 TD) + 44 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Anthony Tyus III",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "23 Rush Yds, 1 Rush TD"
+              },
+              {
+                "name": "Chuba Hubbard",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "33 Rush Yds \u2022 27 Rec Yds"
+              },
+              {
+                "name": "Trevor Etienne",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "8 Rush Yds \u2022 17 Rec Yds"
+              }
+            ]
+          },
+          "W8": 9.1,
+          "W8_Int": 8,
+          "W8_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "88 Rush Yds (0 TD) + 3 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bijan Robinson",
+                "pts_frac": 7.6,
+                "pts_int": 7,
+                "stat_line": "76 Rush Yds"
+              },
+              {
+                "name": "Khalil Herbert",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "12 Rush Yds \u2022 3 Rec Yds"
+              }
+            ]
+          },
+          "W9": 5.6,
+          "W9_Int": 5,
+          "W9_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "56 Rush Yds (0 TD) + 0 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "D'Andre Swift",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "31 Rush Yds"
+              },
+              {
+                "name": "Salvon Ahmed",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rush Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 14.7,
+          "Last_4_Games": 44.2,
+          "L4_PPG": 11.1,
+          "Total_pts": 103.0,
+          "PPG": 11.4,
+          "Last_2_Games_Int": 13,
+          "Last_4_Games_Int": 40,
+          "Total_pts_Int": 94,
+          "PPG_Int": 10.4,
+          "Stat_Summary": "598 Rush Yds (3 TD) + 262 Rec Yds (0 TD)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 32,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        }
+      ]
+    },
+    "WR": {
+      "position": "WR",
+      "league_avg_ppg": 20.4,
+      "league_median": 19.7,
+      "p25_stingy": 13.2,
+      "p75_vulnerable": 26.2,
+      "p90_smash": 33.2,
+      "teams": [
+        {
+          "Defense": "Patriots (NE)",
+          "Team": "NE",
+          "Position": "WR",
+          "W1": 22.1,
+          "W1_Int": 21,
+          "W1_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "161 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jaxon Smith-Njigba",
+                "pts_frac": 18.2,
+                "pts_int": 18,
+                "stat_line": "122 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Cooper Kupp",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "35 Rec Yds"
+              },
+              {
+                "name": "Rashid Shaheed",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W2": 9.2,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "92 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Germie Bernard",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "35 Rec Yds"
+              },
+              {
+                "name": "Roman Wilson",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "28 Rec Yds"
+              },
+              {
+                "name": "DK Metcalf",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Ben Skowronek",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W3": 30.4,
+          "W3_Int": 29,
+          "W3_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "124 Rec Yds (3 TD)",
+            "players": [
+              {
+                "name": "Jakobi Meyers",
+                "pts_frac": 12.4,
+                "pts_int": 12,
+                "stat_line": "64 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Parker Washington",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "40 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Josh Cameron",
+                "pts_frac": 7.2,
+                "pts_int": 7,
+                "stat_line": "12 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Brian Thomas Jr.",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W4": 26.8,
+          "W4_Int": 25,
+          "W4_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "212 Rec Yds (1 TD) + 6 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Keon Coleman",
+                "pts_frac": 17.6,
+                "pts_int": 17,
+                "stat_line": "116 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Khalil Shakir",
+                "pts_frac": 7.2,
+                "pts_int": 7,
+                "stat_line": "82 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "DJ Moore",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "6 Rush Yds \u2022 11 Rec Yds"
+              },
+              {
+                "name": "Josh Palmer",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "W5": 9.3,
+          "W5_Int": 7,
+          "W5_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "99 Rec Yds (0 TD) + -6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cody White",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "44 Rec Yds"
+              },
+              {
+                "name": "Tre Tucker",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "-6 Rush Yds \u2022 41 Rec Yds"
+              },
+              {
+                "name": "Deven Thompkins",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              },
+              {
+                "name": "Malik Benson",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W6": 22.6,
+          "W6_Int": 21,
+          "W6_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "162 Rec Yds (1 TD) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Omar Cooper Jr.",
+                "pts_frac": 16.3,
+                "pts_int": 16,
+                "stat_line": "103 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Garrett Wilson",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "44 Rec Yds"
+              },
+              {
+                "name": "Tim Patrick",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              },
+              {
+                "name": "Isaiah Williams",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rush Yds"
+              }
+            ]
+          },
+          "W7": 26.6,
+          "W7_Int": 25,
+          "W7_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "199 Rec Yds (1 TD) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Luther Burden III",
+                "pts_frac": 19.7,
+                "pts_int": 19,
+                "stat_line": "7 Rush Yds \u2022 130 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Rome Odunze",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "69 Rec Yds"
+              }
+            ]
+          },
+          "W8": 28.6,
+          "W8_Int": 26,
+          "W8_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "168 Rec Yds (2 TD) + -2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kevin Coleman Jr.",
+                "pts_frac": 10.6,
+                "pts_int": 10,
+                "stat_line": "46 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Malik Washington",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "40 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Caleb Douglas",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "43 Rec Yds"
+              },
+              {
+                "name": "Chris Bell",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "-2 Rush Yds \u2022 31 Rec Yds"
+              },
+              {
+                "name": "Jalen Tolbert",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W9": 55.3,
+          "W9_Int": 54,
+          "W9_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "360 Rec Yds (3 TD) + 13 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Christian Watson",
+                "pts_frac": 23.1,
+                "pts_int": 23,
+                "stat_line": "171 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Matthew Golden",
+                "pts_frac": 22.4,
+                "pts_int": 22,
+                "stat_line": "164 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Savion Williams",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "13 Rush Yds \u2022 25 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 83.9,
+          "Last_4_Games": 133.1,
+          "L4_PPG": 33.3,
+          "Total_pts": 230.9,
+          "PPG": 25.7,
+          "Last_2_Games_Int": 80,
+          "Last_4_Games_Int": 126,
+          "Total_pts_Int": 215,
+          "PPG_Int": 23.9,
+          "Stat_Summary": "1577 Rec Yds (12 TD) + 22 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Lions (DET)",
+          "Week10_Offense": "Lions (DET)",
+          "Vuln_Rank": 1,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Texans (HOU)",
+          "Team": "HOU",
+          "Position": "WR",
+          "W1": 30.5,
+          "W1_Int": 30,
+          "W1_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "185 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "DJ Moore",
+                "pts_frac": 16.0,
+                "pts_int": 16,
+                "stat_line": "100 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Josh Palmer",
+                "pts_frac": 9.4,
+                "pts_int": 9,
+                "stat_line": "34 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Khalil Shakir",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "50 Rec Yds"
+              },
+              {
+                "name": "Keon Coleman",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rec Yds"
+              }
+            ]
+          },
+          "W2": 30.4,
+          "W2_Int": 28,
+          "W2_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "184 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Ja'Marr Chase",
+                "pts_frac": 19.5,
+                "pts_int": 19,
+                "stat_line": "75 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Tee Higgins",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "95 Rec Yds"
+              },
+              {
+                "name": "Colbie Young",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              },
+              {
+                "name": "Andrei Iosivas",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W3": 22.0,
+          "W3_Int": 21,
+          "W3_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "160 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Keenan Allen",
+                "pts_frac": 12.3,
+                "pts_int": 12,
+                "stat_line": "63 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Josh Downs",
+                "pts_frac": 7.7,
+                "pts_int": 7,
+                "stat_line": "77 Rec Yds"
+              },
+              {
+                "name": "Laquon Treadwell",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "W4": 35.5,
+          "W4_Int": 34,
+          "W4_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "301 Rec Yds (1 TD) + -6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "CeeDee Lamb",
+                "pts_frac": 24.3,
+                "pts_int": 24,
+                "stat_line": "-6 Rush Yds \u2022 189 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "George Pickens",
+                "pts_frac": 7.5,
+                "pts_int": 7,
+                "stat_line": "75 Rec Yds"
+              },
+              {
+                "name": "Ryan Flournoy",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              }
+            ]
+          },
+          "W5": 13.7,
+          "W5_Int": 11,
+          "W5_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "137 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Wan'Dale Robinson",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              },
+              {
+                "name": "Calvin Ridley",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              },
+              {
+                "name": "Chimere Dike",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "28 Rec Yds"
+              },
+              {
+                "name": "Elic Ayomanor",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              },
+              {
+                "name": "Carnell Tate",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W6": 26.6,
+          "W6_Int": 25,
+          "W6_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "206 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Travis Hunter",
+                "pts_frac": 11.9,
+                "pts_int": 11,
+                "stat_line": "59 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jakobi Meyers",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "83 Rec Yds"
+              },
+              {
+                "name": "Parker Washington",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "64 Rec Yds"
+              }
+            ]
+          },
+          "W7": 20.1,
+          "W7_Int": 19,
+          "W7_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "198 Rec Yds (0 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Malik Nabers",
+                "pts_frac": 11.1,
+                "pts_int": 11,
+                "stat_line": "111 Rec Yds"
+              },
+              {
+                "name": "Malachi Fields",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "83 Rec Yds"
+              },
+              {
+                "name": "Darnell Mooney",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds \u2022 4 Rec Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 25.4,
+          "W9_Int": 24,
+          "W9_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "129 Rec Yds (2 TD) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Quentin Johnston",
+                "pts_frac": 12.3,
+                "pts_int": 12,
+                "stat_line": "5 Rush Yds \u2022 58 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Derius Davis",
+                "pts_frac": 7.5,
+                "pts_int": 7,
+                "stat_line": "15 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "KeAndre Lambert-Smith",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "50 Rec Yds"
+              },
+              {
+                "name": "Tre Harris",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 45.5,
+          "Last_4_Games": 85.8,
+          "L4_PPG": 21.4,
+          "Total_pts": 204.2,
+          "PPG": 25.5,
+          "Last_2_Games_Int": 43,
+          "Last_4_Games_Int": 79,
+          "Total_pts_Int": 192,
+          "PPG_Int": 24.0,
+          "Stat_Summary": "1500 Rec Yds (9 TD) + 2 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Browns (CLE)",
+          "Week10_Offense": "Browns (CLE)",
+          "Vuln_Rank": 2,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Titans (TEN)",
+          "Team": "TEN",
+          "Position": "WR",
+          "W1": 17.6,
+          "W1_Int": 16,
+          "W1_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "176 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Garrett Wilson",
+                "pts_frac": 7.9,
+                "pts_int": 7,
+                "stat_line": "79 Rec Yds"
+              },
+              {
+                "name": "Adonai Mitchell",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "60 Rec Yds"
+              },
+              {
+                "name": "Omar Cooper Jr.",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "30 Rec Yds"
+              },
+              {
+                "name": "Isaiah Williams",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W2": 35.8,
+          "W2_Int": 33,
+          "W2_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "231 Rec Yds (2 TD) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "DeVonta Smith",
+                "pts_frac": 17.7,
+                "pts_int": 17,
+                "stat_line": "117 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Darius Cooper",
+                "pts_frac": 8.6,
+                "pts_int": 8,
+                "stat_line": "26 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Dontayvion Wicks",
+                "pts_frac": 7.4,
+                "pts_int": 7,
+                "stat_line": "74 Rec Yds"
+              },
+              {
+                "name": "Marquise Brown",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rush Yds"
+              },
+              {
+                "name": "Makai Lemon",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "-5 Rush Yds \u2022 14 Rec Yds"
+              }
+            ]
+          },
+          "W3": 7.4,
+          "W3_Int": 5,
+          "W3_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "65 Rec Yds (0 TD) + 9 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Darnell Mooney",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "9 Rush Yds \u2022 20 Rec Yds"
+              },
+              {
+                "name": "Malik Nabers",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              },
+              {
+                "name": "Malachi Fields",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              }
+            ]
+          },
+          "W4": 25.6,
+          "W4_Int": 23,
+          "W4_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "196 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Zay Flowers",
+                "pts_frac": 17.8,
+                "pts_int": 17,
+                "stat_line": "118 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Rashod Bateman",
+                "pts_frac": 4.6,
+                "pts_int": 4,
+                "stat_line": "46 Rec Yds"
+              },
+              {
+                "name": "Devontez Walker",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Elijah Sarratt",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W5": 26.1,
+          "W5_Int": 24,
+          "W5_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "200 Rec Yds (1 TD) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaylin Noel",
+                "pts_frac": 10.2,
+                "pts_int": 10,
+                "stat_line": "1 Rush Yds \u2022 41 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Xavier Hutchinson",
+                "pts_frac": 6.5,
+                "pts_int": 6,
+                "stat_line": "65 Rec Yds"
+              },
+              {
+                "name": "Nico Collins",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "56 Rec Yds"
+              },
+              {
+                "name": "Kayshon Boutte",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "38 Rec Yds"
+              }
+            ]
+          },
+          "W6": 19.8,
+          "W6_Int": 18,
+          "W6_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "184 Rec Yds (0 TD) + 14 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Keenan Allen",
+                "pts_frac": 8.2,
+                "pts_int": 8,
+                "stat_line": "82 Rec Yds"
+              },
+              {
+                "name": "Deion Burks",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "7 Rush Yds \u2022 41 Rec Yds"
+              },
+              {
+                "name": "Josh Downs",
+                "pts_frac": 4.7,
+                "pts_int": 4,
+                "stat_line": "7 Rush Yds \u2022 40 Rec Yds"
+              },
+              {
+                "name": "Laquon Treadwell",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              }
+            ]
+          },
+          "W7": 20.0,
+          "W7_Int": 19,
+          "W7_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "177 Rec Yds (0 TD) + 23 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "KC Concepcion",
+                "pts_frac": 15.2,
+                "pts_int": 15,
+                "stat_line": "23 Rush Yds \u2022 129 Rec Yds"
+              },
+              {
+                "name": "Denzel Boston",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Jerry Jeudy",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              }
+            ]
+          },
+          "W8": 51.0,
+          "W8_Int": 50,
+          "W8_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "330 Rec Yds (3 TD)",
+            "players": [
+              {
+                "name": "Tee Higgins",
+                "pts_frac": 27.5,
+                "pts_int": 27,
+                "stat_line": "155 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Ja'Marr Chase",
+                "pts_frac": 20.1,
+                "pts_int": 20,
+                "stat_line": "141 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Dohnte Meyers",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "34 Rec Yds"
+              }
+            ]
+          },
+          "W9": "BYE",
+          "W9_Int": "BYE",
+          "W9_Detail": null,
+          "GP": 8,
+          "Last_2_Games": 71.0,
+          "Last_4_Games": 116.9,
+          "L4_PPG": 29.2,
+          "Total_pts": 203.3,
+          "PPG": 25.4,
+          "Last_2_Games_Int": 69,
+          "Last_4_Games_Int": 111,
+          "Total_pts_Int": 188,
+          "PPG_Int": 23.5,
+          "Stat_Summary": "1559 Rec Yds (7 TD) + 54 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Jaguars (JAX)",
+          "Week10_Offense": "Jaguars (JAX)",
+          "Vuln_Rank": 3,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Chargers (LAC)",
+          "Team": "LAC",
+          "Position": "WR",
+          "W1": 16.4,
+          "W1_Int": 15,
+          "W1_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "164 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kendrick Bourne",
+                "pts_frac": 7.5,
+                "pts_int": 7,
+                "stat_line": "75 Rec Yds"
+              },
+              {
+                "name": "Michael Wilson",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "56 Rec Yds"
+              },
+              {
+                "name": "Marvin Harrison Jr.",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              }
+            ]
+          },
+          "W2": 38.4,
+          "W2_Int": 35,
+          "W2_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "204 Rec Yds (3 TD)",
+            "players": [
+              {
+                "name": "Tre Tucker",
+                "pts_frac": 17.9,
+                "pts_int": 17,
+                "stat_line": "119 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Cody White",
+                "pts_frac": 14.4,
+                "pts_int": 14,
+                "stat_line": "24 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Dareke Young",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Jack Bech",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Jalen Nailor",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W3": 11.0,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "110 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "DJ Moore",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "67 Rec Yds"
+              },
+              {
+                "name": "Keon Coleman",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              },
+              {
+                "name": "Khalil Shakir",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W4": 26.8,
+          "W4_Int": 25,
+          "W4_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "115 Rec Yds (1 TD) + 33 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Rashid Shaheed",
+                "pts_frac": 11.3,
+                "pts_int": 11,
+                "stat_line": "33 Rush Yds, 1 Rush TD \u2022 20 Rec Yds"
+              },
+              {
+                "name": "Jaxon Smith-Njigba",
+                "pts_frac": 7.6,
+                "pts_int": 7,
+                "stat_line": "76 Rec Yds"
+              },
+              {
+                "name": "Tory Horton",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "6 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Cooper Kupp",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W5": 13.9,
+          "W5_Int": 10,
+          "W5_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "67 Rec Yds (1 TD) + 12 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Courtland Sutton",
+                "pts_frac": 7.8,
+                "pts_int": 7,
+                "stat_line": "18 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jaylen Waddle",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "9 Rush Yds \u2022 19 Rec Yds"
+              },
+              {
+                "name": "Troy Franklin",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              },
+              {
+                "name": "Marvin Mims Jr.",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds \u2022 6 Rec Yds"
+              },
+              {
+                "name": "Lil'Jordan Humphrey",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W6": 13.7,
+          "W6_Int": 12,
+          "W6_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "137 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Xavier Worthy",
+                "pts_frac": 7.3,
+                "pts_int": 7,
+                "stat_line": "73 Rec Yds"
+              },
+              {
+                "name": "Cyrus Allen",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Jalen Royals",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              },
+              {
+                "name": "Andrew Armstrong",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 19.2,
+          "W8_Int": 19,
+          "W8_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "132 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Puka Nacua",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "80 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tutu Atwell",
+                "pts_frac": 5.2,
+                "pts_int": 5,
+                "stat_line": "52 Rec Yds"
+              }
+            ]
+          },
+          "W9": 63.4,
+          "W9_Int": 61,
+          "W9_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "334 Rec Yds (5 TD)",
+            "players": [
+              {
+                "name": "Kayshon Boutte",
+                "pts_frac": 24.5,
+                "pts_int": 24,
+                "stat_line": "125 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Tank Dell",
+                "pts_frac": 16.5,
+                "pts_int": 16,
+                "stat_line": "105 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Nico Collins",
+                "pts_frac": 11.5,
+                "pts_int": 11,
+                "stat_line": "55 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Xavier Hutchinson",
+                "pts_frac": 8.9,
+                "pts_int": 8,
+                "stat_line": "29 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Marvin Harrison Jr.",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 82.6,
+          "Last_4_Games": 110.2,
+          "L4_PPG": 27.6,
+          "Total_pts": 202.8,
+          "PPG": 25.4,
+          "Last_2_Games_Int": 80,
+          "Last_4_Games_Int": 102,
+          "Total_pts_Int": 186,
+          "PPG_Int": 23.2,
+          "Stat_Summary": "1263 Rec Yds (11 TD) + 45 Rush Yds (1 TD)",
+          "Week10_Opponent": "@ Ravens (BAL)",
+          "Week10_Offense": "Ravens (BAL)",
+          "Vuln_Rank": 4,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Eagles (PHI)",
+          "Team": "PHI",
+          "Position": "WR",
+          "W1": 25.7,
+          "W1_Int": 24,
+          "W1_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "137 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Antonio Williams",
+                "pts_frac": 12.4,
+                "pts_int": 12,
+                "stat_line": "64 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Stefon Diggs",
+                "pts_frac": 11.5,
+                "pts_int": 11,
+                "stat_line": "55 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Terry McLaurin",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              },
+              {
+                "name": "Jaylin Lane",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W2": 14.0,
+          "W2_Int": 11,
+          "W2_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "140 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Elic Ayomanor",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "69 Rec Yds"
+              },
+              {
+                "name": "Calvin Ridley",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "35 Rec Yds"
+              },
+              {
+                "name": "Carnell Tate",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Wan'Dale Robinson",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W3": 32.3,
+          "W3_Int": 31,
+          "W3_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "196 Rec Yds (2 TD) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kalif Raymond",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "90 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Luther Burden III",
+                "pts_frac": 12.8,
+                "pts_int": 12,
+                "stat_line": "7 Rush Yds \u2022 61 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Rome Odunze",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "44 Rec Yds"
+              },
+              {
+                "name": "Zavion Thomas",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rec Yds"
+              }
+            ]
+          },
+          "W4": 23.8,
+          "W4_Int": 21,
+          "W4_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "176 Rec Yds (0 TD) + 2 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Puka Nacua",
+                "pts_frac": 18.7,
+                "pts_int": 18,
+                "stat_line": "2 Rush Yds, 1 Rush TD \u2022 125 Rec Yds"
+              },
+              {
+                "name": "Davante Adams",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              },
+              {
+                "name": "Tutu Atwell",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              },
+              {
+                "name": "Konata Mumpfield",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              },
+              {
+                "name": "Jordan Whittington",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W5": 33.3,
+          "W5_Int": 31,
+          "W5_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "213 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Parker Washington",
+                "pts_frac": 24.4,
+                "pts_int": 24,
+                "stat_line": "124 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Josh Cameron",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "43 Rec Yds"
+              },
+              {
+                "name": "Jakobi Meyers",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              },
+              {
+                "name": "Travis Hunter",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W6": 23.4,
+          "W6_Int": 21,
+          "W6_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "234 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jalen Coker",
+                "pts_frac": 9.7,
+                "pts_int": 9,
+                "stat_line": "97 Rec Yds"
+              },
+              {
+                "name": "Tetairoa McMillan",
+                "pts_frac": 8.6,
+                "pts_int": 8,
+                "stat_line": "86 Rec Yds"
+              },
+              {
+                "name": "David Moore",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "John Metchie III",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              }
+            ]
+          },
+          "W7": 38.1,
+          "W7_Int": 37,
+          "W7_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "201 Rec Yds (3 TD)",
+            "players": [
+              {
+                "name": "CeeDee Lamb",
+                "pts_frac": 19.4,
+                "pts_int": 19,
+                "stat_line": "74 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "George Pickens",
+                "pts_frac": 11.7,
+                "pts_int": 11,
+                "stat_line": "57 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Ryan Flournoy",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "70 Rec Yds"
+              }
+            ]
+          },
+          "W8": 23.3,
+          "W8_Int": 22,
+          "W8_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "173 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Stefon Diggs",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "38 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Treylon Burks",
+                "pts_frac": 8.1,
+                "pts_int": 8,
+                "stat_line": "81 Rec Yds"
+              },
+              {
+                "name": "Antonio Williams",
+                "pts_frac": 5.4,
+                "pts_int": 5,
+                "stat_line": "54 Rec Yds"
+              }
+            ]
+          },
+          "W9": 13.3,
+          "W9_Int": 13,
+          "W9_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "137 Rec Yds (0 TD) + -4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Darnell Mooney",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "-4 Rush Yds \u2022 54 Rec Yds"
+              },
+              {
+                "name": "Malik Nabers",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "43 Rec Yds"
+              },
+              {
+                "name": "Malachi Fields",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 36.6,
+          "Last_4_Games": 98.1,
+          "L4_PPG": 24.5,
+          "Total_pts": 227.2,
+          "PPG": 25.2,
+          "Last_2_Games_Int": 35,
+          "Last_4_Games_Int": 93,
+          "Total_pts_Int": 211,
+          "PPG_Int": 23.4,
+          "Stat_Summary": "1607 Rec Yds (10 TD) + 5 Rush Yds (1 TD)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 5,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Raiders (LV)",
+          "Team": "LV",
+          "Position": "WR",
+          "W1": 16.2,
+          "W1_Int": 15,
+          "W1_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "172 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Caleb Douglas",
+                "pts_frac": 9.4,
+                "pts_int": 9,
+                "stat_line": "94 Rec Yds"
+              },
+              {
+                "name": "Malik Washington",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "53 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Chris Bell",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              }
+            ]
+          },
+          "W2": 11.5,
+          "W2_Int": 10,
+          "W2_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "108 Rec Yds (0 TD) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tre Harris",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              },
+              {
+                "name": "Ladd McConkey",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "35 Rec Yds"
+              },
+              {
+                "name": "Quentin Johnston",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "7 Rush Yds \u2022 7 Rec Yds"
+              },
+              {
+                "name": "Brenen Thompson",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W3": 14.6,
+          "W3_Int": 13,
+          "W3_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "146 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chris Olave",
+                "pts_frac": 10.7,
+                "pts_int": 10,
+                "stat_line": "107 Rec Yds"
+              },
+              {
+                "name": "Devaughn Vele",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "39 Rec Yds"
+              }
+            ]
+          },
+          "W4": 30.1,
+          "W4_Int": 30,
+          "W4_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "181 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Tyquan Thornton",
+                "pts_frac": 23.1,
+                "pts_int": 23,
+                "stat_line": "111 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Xavier Worthy",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "70 Rec Yds"
+              }
+            ]
+          },
+          "W5": 41.1,
+          "W5_Int": 39,
+          "W5_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "229 Rec Yds (3 TD) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "DeMario Douglas",
+                "pts_frac": 18.5,
+                "pts_int": 18,
+                "stat_line": "65 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Kyle Williams",
+                "pts_frac": 15.1,
+                "pts_int": 15,
+                "stat_line": "91 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Efton Chism III",
+                "pts_frac": 5.9,
+                "pts_int": 5,
+                "stat_line": "2 Rush Yds \u2022 57 Rec Yds"
+              },
+              {
+                "name": "Romeo Doubs",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              }
+            ]
+          },
+          "W6": 25.0,
+          "W6_Int": 23,
+          "W6_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "130 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Keon Coleman",
+                "pts_frac": 11.9,
+                "pts_int": 11,
+                "stat_line": "59 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Khalil Shakir",
+                "pts_frac": 9.4,
+                "pts_int": 9,
+                "stat_line": "34 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Josh Palmer",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              }
+            ]
+          },
+          "W7": 15.3,
+          "W7_Int": 14,
+          "W7_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "83 Rec Yds (1 TD) + 10 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Puka Nacua",
+                "pts_frac": 13.8,
+                "pts_int": 13,
+                "stat_line": "10 Rush Yds \u2022 68 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Konata Mumpfield",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "W8": 36.3,
+          "W8_Int": 35,
+          "W8_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "243 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Adonai Mitchell",
+                "pts_frac": 20.2,
+                "pts_int": 20,
+                "stat_line": "142 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Garrett Wilson",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "83 Rec Yds"
+              },
+              {
+                "name": "Isaiah Williams",
+                "pts_frac": 7.8,
+                "pts_int": 7,
+                "stat_line": "18 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W9": 21.5,
+          "W9_Int": 19,
+          "W9_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "155 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jordan Watkins",
+                "pts_frac": 14.6,
+                "pts_int": 14,
+                "stat_line": "86 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Brandin Cooks",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Demarcus Robinson",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "KhaDarel Hodge",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              },
+              {
+                "name": "Jacob Cowing",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 57.8,
+          "Last_4_Games": 98.1,
+          "L4_PPG": 24.5,
+          "Total_pts": 211.6,
+          "PPG": 23.5,
+          "Last_2_Games_Int": 54,
+          "Last_4_Games_Int": 91,
+          "Total_pts_Int": 198,
+          "PPG_Int": 22.0,
+          "Stat_Summary": "1447 Rec Yds (11 TD) + 19 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Seahawks (SEA)",
+          "Week10_Offense": "Seahawks (SEA)",
+          "Vuln_Rank": 6,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Cowboys (DAL)",
+          "Team": "DAL",
+          "Position": "WR",
+          "W1": 12.1,
+          "W1_Int": 10,
+          "W1_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "121 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Malik Nabers",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "69 Rec Yds"
+              },
+              {
+                "name": "Darnell Mooney",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Malachi Fields",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              }
+            ]
+          },
+          "W2": 25.2,
+          "W2_Int": 24,
+          "W2_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "142 Rec Yds (2 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Stefon Diggs",
+                "pts_frac": 16.7,
+                "pts_int": 16,
+                "stat_line": "47 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Terry McLaurin",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "50 Rec Yds"
+              },
+              {
+                "name": "Antonio Williams",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              },
+              {
+                "name": "Dyami Brown",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "21 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W3": 20.5,
+          "W3_Int": 19,
+          "W3_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "125 Rec Yds (1 TD) + 20 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Zay Flowers",
+                "pts_frac": 10.4,
+                "pts_int": 10,
+                "stat_line": "20 Rush Yds \u2022 84 Rec Yds"
+              },
+              {
+                "name": "Chris Moore",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "4 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Rashod Bateman",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              }
+            ]
+          },
+          "W4": 40.9,
+          "W4_Int": 38,
+          "W4_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "285 Rec Yds (2 TD) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Nico Collins",
+                "pts_frac": 23.8,
+                "pts_int": 23,
+                "stat_line": "118 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Jaylin Noel",
+                "pts_frac": 8.9,
+                "pts_int": 8,
+                "stat_line": "4 Rush Yds \u2022 85 Rec Yds"
+              },
+              {
+                "name": "Xavier Hutchinson",
+                "pts_frac": 4.6,
+                "pts_int": 4,
+                "stat_line": "46 Rec Yds"
+              },
+              {
+                "name": "Kayshon Boutte",
+                "pts_frac": 3.6,
+                "pts_int": 3,
+                "stat_line": "36 Rec Yds"
+              }
+            ]
+          },
+          "W5": 21.6,
+          "W5_Int": 21,
+          "W5_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "139 Rec Yds (0 TD) + 17 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Emeka Egbuka",
+                "pts_frac": 11.2,
+                "pts_int": 11,
+                "stat_line": "14 Rush Yds, 1 Rush TD \u2022 38 Rec Yds"
+              },
+              {
+                "name": "Tez Johnson",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "64 Rec Yds"
+              },
+              {
+                "name": "Chris Godwin Jr.",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "3 Rush Yds \u2022 37 Rec Yds"
+              }
+            ]
+          },
+          "W6": 26.9,
+          "W6_Int": 26,
+          "W6_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "200 Rec Yds (1 TD) + 9 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Matthew Golden",
+                "pts_frac": 16.4,
+                "pts_int": 16,
+                "stat_line": "104 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Christian Watson",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "64 Rec Yds"
+              },
+              {
+                "name": "Savion Williams",
+                "pts_frac": 4.1,
+                "pts_int": 4,
+                "stat_line": "9 Rush Yds \u2022 32 Rec Yds"
+              }
+            ]
+          },
+          "W7": 19.0,
+          "W7_Int": 17,
+          "W7_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "130 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Makai Lemon",
+                "pts_frac": 12.7,
+                "pts_int": 12,
+                "stat_line": "67 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Marquise Brown",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "30 Rec Yds"
+              },
+              {
+                "name": "Darius Cooper",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              },
+              {
+                "name": "Elijah Moore",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              }
+            ]
+          },
+          "W8": 24.8,
+          "W8_Int": 22,
+          "W8_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "171 Rec Yds (1 TD) + 17 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Wilson",
+                "pts_frac": 18.8,
+                "pts_int": 18,
+                "stat_line": "17 Rush Yds \u2022 111 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Kendrick Bourne",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "29 Rec Yds"
+              },
+              {
+                "name": "Simi Fehoko",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              },
+              {
+                "name": "Devin Duvernay",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              }
+            ]
+          },
+          "W9": 18.4,
+          "W9_Int": 16,
+          "W9_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "121 Rec Yds (1 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ashton Dulin",
+                "pts_frac": 11.8,
+                "pts_int": 11,
+                "stat_line": "3 Rush Yds \u2022 55 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Keenan Allen",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              },
+              {
+                "name": "Josh Downs",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              },
+              {
+                "name": "Anthony Gould",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 43.2,
+          "Last_4_Games": 89.1,
+          "L4_PPG": 22.3,
+          "Total_pts": 209.4,
+          "PPG": 23.3,
+          "Last_2_Games_Int": 38,
+          "Last_4_Games_Int": 81,
+          "Total_pts_Int": 193,
+          "PPG_Int": 21.4,
+          "Stat_Summary": "1434 Rec Yds (9 TD) + 70 Rush Yds (1 TD)",
+          "Week10_Opponent": "vs 49ers (SF)",
+          "Week10_Offense": "49ers (SF)",
+          "Vuln_Rank": 7,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Bills (BUF)",
+          "Team": "BUF",
+          "Position": "WR",
+          "W1": 26.0,
+          "W1_Int": 25,
+          "W1_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "193 Rec Yds (1 TD) + 7 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Nico Collins",
+                "pts_frac": 14.2,
+                "pts_int": 14,
+                "stat_line": "7 Rush Yds \u2022 75 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jaylin Noel",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              },
+              {
+                "name": "Xavier Hutchinson",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              },
+              {
+                "name": "Kayshon Boutte",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              },
+              {
+                "name": "Jared Wayne",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W2": 32.1,
+          "W2_Int": 31,
+          "W2_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "201 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Amon-Ra St. Brown",
+                "pts_frac": 26.2,
+                "pts_int": 26,
+                "stat_line": "142 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Jameson Williams",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              },
+              {
+                "name": "Isaac TeSlaa",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              }
+            ]
+          },
+          "W3": 18.2,
+          "W3_Int": 17,
+          "W3_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "182 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tre Harris",
+                "pts_frac": 7.6,
+                "pts_int": 7,
+                "stat_line": "76 Rec Yds"
+              },
+              {
+                "name": "Ladd McConkey",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "66 Rec Yds"
+              },
+              {
+                "name": "Quentin Johnston",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              }
+            ]
+          },
+          "W4": 34.8,
+          "W4_Int": 33,
+          "W4_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "168 Rec Yds (3 TD)",
+            "players": [
+              {
+                "name": "Romeo Doubs",
+                "pts_frac": 17.8,
+                "pts_int": 17,
+                "stat_line": "58 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Efton Chism III",
+                "pts_frac": 10.2,
+                "pts_int": 10,
+                "stat_line": "42 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mack Hollins",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              },
+              {
+                "name": "DeMario Douglas",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "W5": 38.2,
+          "W5_Int": 37,
+          "W5_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "193 Rec Yds (3 TD) + 9 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Puka Nacua",
+                "pts_frac": 20.7,
+                "pts_int": 20,
+                "stat_line": "9 Rush Yds \u2022 138 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Davante Adams",
+                "pts_frac": 17.1,
+                "pts_int": 17,
+                "stat_line": "51 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Tutu Atwell",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W6": 22.6,
+          "W6_Int": 21,
+          "W6_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "106 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Tre Tucker",
+                "pts_frac": 21.7,
+                "pts_int": 21,
+                "stat_line": "97 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Jalen Nailor",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 3.5,
+          "W8_Int": 3,
+          "W8_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "35 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Rashod Bateman",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "Ja'Kobi Lane",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W9": 9.2,
+          "W9_Int": 7,
+          "W9_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "92 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Justin Jefferson",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "58 Rec Yds"
+              },
+              {
+                "name": "Jordan Addison",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "28 Rec Yds"
+              },
+              {
+                "name": "Myles Price",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 12.7,
+          "Last_4_Games": 73.5,
+          "L4_PPG": 18.4,
+          "Total_pts": 184.6,
+          "PPG": 23.1,
+          "Last_2_Games_Int": 10,
+          "Last_4_Games_Int": 68,
+          "Total_pts_Int": 174,
+          "PPG_Int": 21.8,
+          "Stat_Summary": "1170 Rec Yds (11 TD) + 16 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Jets (NYJ)",
+          "Week10_Offense": "Jets (NYJ)",
+          "Vuln_Rank": 8,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Cardinals (ARI)",
+          "Team": "ARI",
+          "Position": "WR",
+          "W1": 17.9,
+          "W1_Int": 17,
+          "W1_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "119 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Ladd McConkey",
+                "pts_frac": 14.2,
+                "pts_int": 14,
+                "stat_line": "82 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tre Harris",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Quentin Johnston",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "W2": 39.4,
+          "W2_Int": 38,
+          "W2_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "210 Rec Yds (3 TD) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaxon Smith-Njigba",
+                "pts_frac": 33.5,
+                "pts_int": 33,
+                "stat_line": "155 Rec Yds, 3 Rec TD"
+              },
+              {
+                "name": "Rashid Shaheed",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "4 Rush Yds \u2022 35 Rec Yds"
+              },
+              {
+                "name": "Cooper Kupp",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "W3": 30.8,
+          "W3_Int": 30,
+          "W3_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "174 Rec Yds (2 TD) + 14 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Deebo Samuel Sr.",
+                "pts_frac": 15.4,
+                "pts_int": 15,
+                "stat_line": "14 Rush Yds \u2022 80 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mike Evans",
+                "pts_frac": 9.4,
+                "pts_int": 9,
+                "stat_line": "34 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jordan Watkins",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "60 Rec Yds"
+              }
+            ]
+          },
+          "W4": 28.4,
+          "W4_Int": 28,
+          "W4_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "164 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Malik Nabers",
+                "pts_frac": 17.2,
+                "pts_int": 17,
+                "stat_line": "112 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Malachi Fields",
+                "pts_frac": 11.2,
+                "pts_int": 11,
+                "stat_line": "52 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W5": 23.6,
+          "W5_Int": 22,
+          "W5_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "116 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Jameson Williams",
+                "pts_frac": 16.7,
+                "pts_int": 16,
+                "stat_line": "47 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Amon-Ra St. Brown",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "69 Rec Yds"
+              }
+            ]
+          },
+          "W6": 13.4,
+          "W6_Int": 12,
+          "W6_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "134 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Puka Nacua",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "80 Rec Yds"
+              },
+              {
+                "name": "Davante Adams",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "39 Rec Yds"
+              },
+              {
+                "name": "Konata Mumpfield",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "W7": 15.4,
+          "W7_Int": 13,
+          "W7_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "151 Rec Yds (0 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Marvin Mims Jr.",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "3 Rush Yds \u2022 53 Rec Yds"
+              },
+              {
+                "name": "Jaylen Waddle",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "48 Rec Yds"
+              },
+              {
+                "name": "Courtland Sutton",
+                "pts_frac": 4.5,
+                "pts_int": 4,
+                "stat_line": "45 Rec Yds"
+              },
+              {
+                "name": "Lil'Jordan Humphrey",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W8": 20.7,
+          "W8_Int": 19,
+          "W8_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "144 Rec Yds (1 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ryan Flournoy",
+                "pts_frac": 10.1,
+                "pts_int": 10,
+                "stat_line": "3 Rush Yds \u2022 38 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "CeeDee Lamb",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "58 Rec Yds"
+              },
+              {
+                "name": "George Pickens",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "48 Rec Yds"
+              }
+            ]
+          },
+          "W9": 10.5,
+          "W9_Int": 10,
+          "W9_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "105 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaxon Smith-Njigba",
+                "pts_frac": 5.1,
+                "pts_int": 5,
+                "stat_line": "51 Rec Yds"
+              },
+              {
+                "name": "Cooper Kupp",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              },
+              {
+                "name": "Tory Horton",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 31.2,
+          "Last_4_Games": 60.0,
+          "L4_PPG": 15.0,
+          "Total_pts": 200.1,
+          "PPG": 22.2,
+          "Last_2_Games_Int": 29,
+          "Last_4_Games_Int": 54,
+          "Total_pts_Int": 189,
+          "PPG_Int": 21.0,
+          "Stat_Summary": "1317 Rec Yds (11 TD) + 24 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Rams (LA)",
+          "Week10_Offense": "Rams (LA)",
+          "Vuln_Rank": 9,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Packers (GB)",
+          "Team": "GB",
+          "Position": "WR",
+          "W1": 23.2,
+          "W1_Int": 23,
+          "W1_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "92 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Justin Jefferson",
+                "pts_frac": 23.2,
+                "pts_int": 23,
+                "stat_line": "92 Rec Yds, 2 Rec TD \u2022 1 Rush/Rec 2PT"
+              }
+            ]
+          },
+          "W2": 22.8,
+          "W2_Int": 21,
+          "W2_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "154 Rec Yds (1 TD) + 14 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Garrett Wilson",
+                "pts_frac": 11.7,
+                "pts_int": 11,
+                "stat_line": "57 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Adonai Mitchell",
+                "pts_frac": 6.3,
+                "pts_int": 6,
+                "stat_line": "63 Rec Yds"
+              },
+              {
+                "name": "Isaiah Williams",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "14 Rush Yds \u2022 34 Rec Yds"
+              }
+            ]
+          },
+          "W3": 24.1,
+          "W3_Int": 22,
+          "W3_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "221 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Drake London",
+                "pts_frac": 19.4,
+                "pts_int": 19,
+                "stat_line": "194 Rec Yds"
+              },
+              {
+                "name": "Chris Blair",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Jahan Dotson",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Olamide Zaccheaus",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Zachariah Branch",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W4": 9.9,
+          "W4_Int": 8,
+          "W4_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "89 Rec Yds (0 TD) + 10 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chris Godwin Jr.",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "31 Rec Yds"
+              },
+              {
+                "name": "Tez Johnson",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "10 Rush Yds \u2022 17 Rec Yds"
+              },
+              {
+                "name": "Ted Hurst III",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Emeka Egbuka",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              },
+              {
+                "name": "Kameron Johnson",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "W5": 10.5,
+          "W5_Int": 9,
+          "W5_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "104 Rec Yds (0 TD) + 11 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Luther Burden III",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "2 Rush Yds \u2022 47 Rec Yds"
+              },
+              {
+                "name": "Rome Odunze",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "40 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Zavion Thomas",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "11 Rush Yds \u2022 11 Rec Yds"
+              },
+              {
+                "name": "Kalif Raymond",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "-2 Rush Yds \u2022 6 Rec Yds"
+              }
+            ]
+          },
+          "W6": 24.3,
+          "W6_Int": 24,
+          "W6_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "183 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Ryan Flournoy",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "40 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "George Pickens",
+                "pts_frac": 7.3,
+                "pts_int": 7,
+                "stat_line": "73 Rec Yds"
+              },
+              {
+                "name": "CeeDee Lamb",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "70 Rec Yds"
+              }
+            ]
+          },
+          "W7": 37.3,
+          "W7_Int": 37,
+          "W7_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "254 Rec Yds (2 TD) + -1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jameson Williams",
+                "pts_frac": 21.1,
+                "pts_int": 21,
+                "stat_line": "91 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Amon-Ra St. Brown",
+                "pts_frac": 15.2,
+                "pts_int": 15,
+                "stat_line": "-1 Rush Yds \u2022 153 Rec Yds"
+              },
+              {
+                "name": "Isaac TeSlaa",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W8": 16.9,
+          "W8_Int": 15,
+          "W8_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "119 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jalen Coker",
+                "pts_frac": 8.6,
+                "pts_int": 8,
+                "stat_line": "36 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Tetairoa McMillan",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "58 Rec Yds"
+              },
+              {
+                "name": "John Metchie III",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              },
+              {
+                "name": "Brycen Tremayne",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W9": 30.7,
+          "W9_Int": 29,
+          "W9_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "187 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Efton Chism III",
+                "pts_frac": 10.9,
+                "pts_int": 10,
+                "stat_line": "49 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "DeMario Douglas",
+                "pts_frac": 10.2,
+                "pts_int": 10,
+                "stat_line": "102 Rec Yds"
+              },
+              {
+                "name": "Mack Hollins",
+                "pts_frac": 9.6,
+                "pts_int": 9,
+                "stat_line": "36 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 47.6,
+          "Last_4_Games": 109.2,
+          "L4_PPG": 27.3,
+          "Total_pts": 199.7,
+          "PPG": 22.2,
+          "Last_2_Games_Int": 44,
+          "Last_4_Games_Int": 105,
+          "Total_pts_Int": 188,
+          "PPG_Int": 20.9,
+          "Stat_Summary": "1403 Rec Yds (9 TD) + 34 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Vikings (MIN)",
+          "Week10_Offense": "Vikings (MIN)",
+          "Vuln_Rank": 10,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Ravens (BAL)",
+          "Team": "BAL",
+          "Position": "WR",
+          "W1": 13.0,
+          "W1_Int": 12,
+          "W1_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "130 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Alec Pierce",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "61 Rec Yds"
+              },
+              {
+                "name": "Josh Downs",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              },
+              {
+                "name": "Keenan Allen",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              }
+            ]
+          },
+          "W2": 22.5,
+          "W2_Int": 20,
+          "W2_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "165 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Chris Olave",
+                "pts_frac": 14.6,
+                "pts_int": 14,
+                "stat_line": "86 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Devaughn Vele",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "64 Rec Yds"
+              },
+              {
+                "name": "Bryce Lance",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              },
+              {
+                "name": "Kevin Austin Jr.",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W3": 31.4,
+          "W3_Int": 30,
+          "W3_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "225 Rec Yds (0 TD) + 9 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "CeeDee Lamb",
+                "pts_frac": 13.2,
+                "pts_int": 13,
+                "stat_line": "112 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "George Pickens",
+                "pts_frac": 8.2,
+                "pts_int": 8,
+                "stat_line": "82 Rec Yds"
+              },
+              {
+                "name": "KaVontae Turpin",
+                "pts_frac": 7.8,
+                "pts_int": 7,
+                "stat_line": "9 Rush Yds, 1 Rush TD \u2022 9 Rec Yds"
+              },
+              {
+                "name": "Ryan Flournoy",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              }
+            ]
+          },
+          "W4": 26.5,
+          "W4_Int": 25,
+          "W4_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "214 Rec Yds (1 TD) + 1 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Carnell Tate",
+                "pts_frac": 13.5,
+                "pts_int": 13,
+                "stat_line": "145 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Wan'Dale Robinson",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "1 Rush Yds \u2022 19 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Elic Ayomanor",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "Chimere Dike",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              },
+              {
+                "name": "Calvin Ridley",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W5": 18.7,
+          "W5_Int": 17,
+          "W5_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "187 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Drake London",
+                "pts_frac": 11.8,
+                "pts_int": 11,
+                "stat_line": "118 Rec Yds"
+              },
+              {
+                "name": "Jahan Dotson",
+                "pts_frac": 5.4,
+                "pts_int": 5,
+                "stat_line": "54 Rec Yds"
+              },
+              {
+                "name": "Zachariah Branch",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "W6": 13.5,
+          "W6_Int": 11,
+          "W6_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "133 Rec Yds (0 TD) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jerry Jeudy",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "69 Rec Yds"
+              },
+              {
+                "name": "KC Concepcion",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "2 Rush Yds \u2022 37 Rec Yds"
+              },
+              {
+                "name": "Denzel Boston",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              },
+              {
+                "name": "Tylan Wallace",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W7": 33.7,
+          "W7_Int": 32,
+          "W7_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "217 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Tee Higgins",
+                "pts_frac": 20.8,
+                "pts_int": 20,
+                "stat_line": "148 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Ja'Marr Chase",
+                "pts_frac": 12.2,
+                "pts_int": 12,
+                "stat_line": "62 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mitchell Tinsley",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W8": 20.4,
+          "W8_Int": 19,
+          "W8_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "150 Rec Yds (1 TD) + 4 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "DJ Moore",
+                "pts_frac": 13.6,
+                "pts_int": 13,
+                "stat_line": "4 Rush Yds \u2022 82 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Khalil Shakir",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "64 Rec Yds"
+              },
+              {
+                "name": "Keon Coleman",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W9": 18.1,
+          "W9_Int": 17,
+          "W9_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "131 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Parker Washington",
+                "pts_frac": 12.1,
+                "pts_int": 12,
+                "stat_line": "61 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jakobi Meyers",
+                "pts_frac": 6.5,
+                "pts_int": 6,
+                "stat_line": "65 Rec Yds"
+              },
+              {
+                "name": "Josh Cameron",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              },
+              {
+                "name": "Travis Hunter",
+                "pts_frac": -1.1,
+                "pts_int": -1,
+                "stat_line": "-1 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 38.5,
+          "Last_4_Games": 85.7,
+          "L4_PPG": 21.4,
+          "Total_pts": 197.8,
+          "PPG": 22.0,
+          "Last_2_Games_Int": 36,
+          "Last_4_Games_Int": 79,
+          "Total_pts_Int": 183,
+          "PPG_Int": 20.3,
+          "Stat_Summary": "1552 Rec Yds (6 TD) + 16 Rush Yds (1 TD)",
+          "Week10_Opponent": "vs Chargers (LAC)",
+          "Week10_Offense": "Chargers (LAC)",
+          "Vuln_Rank": 11,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Lions (DET)",
+          "Team": "DET",
+          "Position": "WR",
+          "W1": 35.6,
+          "W1_Int": 34,
+          "W1_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "293 Rec Yds (1 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chris Olave",
+                "pts_frac": 18.2,
+                "pts_int": 18,
+                "stat_line": "182 Rec Yds"
+              },
+              {
+                "name": "Devaughn Vele",
+                "pts_frac": 12.9,
+                "pts_int": 12,
+                "stat_line": "69 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Bryce Lance",
+                "pts_frac": 4.2,
+                "pts_int": 4,
+                "stat_line": "42 Rec Yds"
+              },
+              {
+                "name": "Barion Brown",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds"
+              }
+            ]
+          },
+          "W2": 20.3,
+          "W2_Int": 19,
+          "W2_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "144 Rec Yds (1 TD) + -1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Josh Palmer",
+                "pts_frac": 10.3,
+                "pts_int": 10,
+                "stat_line": "43 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Keon Coleman",
+                "pts_frac": 6.3,
+                "pts_int": 6,
+                "stat_line": "63 Rec Yds"
+              },
+              {
+                "name": "Khalil Shakir",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "38 Rec Yds"
+              },
+              {
+                "name": "DJ Moore",
+                "pts_frac": -0.1,
+                "pts_int": 0,
+                "stat_line": "-1 Rush Yds"
+              }
+            ]
+          },
+          "W3": 21.1,
+          "W3_Int": 20,
+          "W3_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "131 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Garrett Wilson",
+                "pts_frac": 16.7,
+                "pts_int": 16,
+                "stat_line": "107 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Sterling Shepard",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "3 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Isaiah Williams",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              }
+            ]
+          },
+          "W4": 38.1,
+          "W4_Int": 37,
+          "W4_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "261 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Tetairoa McMillan",
+                "pts_frac": 31.2,
+                "pts_int": 31,
+                "stat_line": "192 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "John Metchie III",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              },
+              {
+                "name": "Brycen Tremayne",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              }
+            ]
+          },
+          "W5": 14.8,
+          "W5_Int": 13,
+          "W5_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "145 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kendrick Bourne",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "70 Rec Yds"
+              },
+              {
+                "name": "Michael Wilson",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "7 Pass Yds \u2022 30 Rec Yds"
+              },
+              {
+                "name": "Reggie Virgil",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "29 Rec Yds"
+              },
+              {
+                "name": "Jalen Brooks",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 15.1,
+          "W7_Int": 13,
+          "W7_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "147 Rec Yds (0 TD) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Christian Watson",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "57 Rec Yds"
+              },
+              {
+                "name": "Savion Williams",
+                "pts_frac": 5.1,
+                "pts_int": 5,
+                "stat_line": "4 Rush Yds \u2022 47 Rec Yds"
+              },
+              {
+                "name": "Matthew Golden",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "39 Rec Yds"
+              },
+              {
+                "name": "Bo Melton",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W8": 19.0,
+          "W8_Int": 18,
+          "W8_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "110 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Justin Jefferson",
+                "pts_frac": 9.3,
+                "pts_int": 9,
+                "stat_line": "33 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jordan Addison",
+                "pts_frac": 8.6,
+                "pts_int": 8,
+                "stat_line": "66 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Jauan Jennings",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W9": 10.7,
+          "W9_Int": 10,
+          "W9_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "91 Rec Yds (0 TD) + 16 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Caleb Douglas",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "70 Rec Yds"
+              },
+              {
+                "name": "Malik Washington",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              },
+              {
+                "name": "Kevin Coleman Jr.",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 29.7,
+          "Last_4_Games": 59.6,
+          "L4_PPG": 14.9,
+          "Total_pts": 174.7,
+          "PPG": 21.8,
+          "Last_2_Games_Int": 28,
+          "Last_4_Games_Int": 54,
+          "Total_pts_Int": 164,
+          "PPG_Int": 20.5,
+          "Stat_Summary": "1322 Rec Yds (6 TD) + 22 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Patriots (NE)",
+          "Week10_Offense": "Patriots (NE)",
+          "Vuln_Rank": 12,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Commanders (WAS)",
+          "Team": "WAS",
+          "Position": "WR",
+          "W1": 18.1,
+          "W1_Int": 18,
+          "W1_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "121 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Dontayvion Wicks",
+                "pts_frac": 13.3,
+                "pts_int": 13,
+                "stat_line": "73 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "DeVonta Smith",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              },
+              {
+                "name": "Makai Lemon",
+                "pts_frac": -0.5,
+                "pts_int": 0,
+                "stat_line": "-5 Rec Yds"
+              }
+            ]
+          },
+          "W2": 33.7,
+          "W2_Int": 33,
+          "W2_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "216 Rec Yds (2 TD) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "CeeDee Lamb",
+                "pts_frac": 27.3,
+                "pts_int": 27,
+                "stat_line": "153 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "George Pickens",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              },
+              {
+                "name": "Ryan Flournoy",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "23 Rec Yds"
+              },
+              {
+                "name": "KaVontae Turpin",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rush Yds"
+              }
+            ]
+          },
+          "W3": 42.2,
+          "W3_Int": 39,
+          "W3_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "236 Rec Yds (3 TD)",
+            "players": [
+              {
+                "name": "Jaxon Smith-Njigba",
+                "pts_frac": 25.4,
+                "pts_int": 24,
+                "stat_line": "14 Pass Yds \u2022 128 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Cooper Kupp",
+                "pts_frac": 10.6,
+                "pts_int": 10,
+                "stat_line": "46 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tory Horton",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "48 Rec Yds"
+              },
+              {
+                "name": "Rashid Shaheed",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              }
+            ]
+          },
+          "W4": 9.3,
+          "W4_Int": 7,
+          "W4_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "93 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Laquon Treadwell",
+                "pts_frac": 4.2,
+                "pts_int": 4,
+                "stat_line": "42 Rec Yds"
+              },
+              {
+                "name": "Ashton Dulin",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "29 Rec Yds"
+              },
+              {
+                "name": "Josh Downs",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              },
+              {
+                "name": "Deion Burks",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W5": 21.5,
+          "W5_Int": 21,
+          "W5_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "155 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Malik Nabers",
+                "pts_frac": 18.1,
+                "pts_int": 18,
+                "stat_line": "121 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Malachi Fields",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Darnell Mooney",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              }
+            ]
+          },
+          "W6": 12.9,
+          "W6_Int": 12,
+          "W6_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "129 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Mike Evans",
+                "pts_frac": 9.4,
+                "pts_int": 9,
+                "stat_line": "94 Rec Yds"
+              },
+              {
+                "name": "Jordan Watkins",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "Brandin Cooks",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 9.3,
+          "W8_Int": 7,
+          "W8_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "93 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Makai Lemon",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "57 Rec Yds"
+              },
+              {
+                "name": "Darius Cooper",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Marquise Brown",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "W9": 25.6,
+          "W9_Int": 25,
+          "W9_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "186 Rec Yds (1 TD) + 20 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Puka Nacua",
+                "pts_frac": 22.0,
+                "pts_int": 22,
+                "stat_line": "20 Rush Yds \u2022 150 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Konata Mumpfield",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Tutu Atwell",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 34.9,
+          "Last_4_Games": 69.3,
+          "L4_PPG": 17.3,
+          "Total_pts": 172.6,
+          "PPG": 21.6,
+          "Last_2_Games_Int": 32,
+          "Last_4_Games_Int": 65,
+          "Total_pts_Int": 162,
+          "PPG_Int": 20.2,
+          "Stat_Summary": "1229 Rec Yds (8 TD) + 21 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Giants (NYG)",
+          "Week10_Offense": "Giants (NYG)",
+          "Vuln_Rank": 13,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Jaguars (JAX)",
+          "Team": "JAX",
+          "Position": "WR",
+          "W1": 19.3,
+          "W1_Int": 17,
+          "W1_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "128 Rec Yds (1 TD) + 15 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Denzel Boston",
+                "pts_frac": 11.9,
+                "pts_int": 11,
+                "stat_line": "59 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "KC Concepcion",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "15 Rush Yds \u2022 43 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Jerry Jeudy",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              }
+            ]
+          },
+          "W2": 20.6,
+          "W2_Int": 18,
+          "W2_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "190 Rec Yds (0 TD) + 16 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaylen Waddle",
+                "pts_frac": 13.8,
+                "pts_int": 13,
+                "stat_line": "138 Rec Yds"
+              },
+              {
+                "name": "Troy Franklin",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Courtland Sutton",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Pat Bryant",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rush Yds"
+              }
+            ]
+          },
+          "W3": 21.5,
+          "W3_Int": 18,
+          "W3_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "209 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Mack Hollins",
+                "pts_frac": 8.7,
+                "pts_int": 8,
+                "stat_line": "87 Rec Yds"
+              },
+              {
+                "name": "Romeo Doubs",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "49 Rec Yds"
+              },
+              {
+                "name": "DeMario Douglas",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "38 Rec Yds"
+              },
+              {
+                "name": "Kyle Williams",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "34 Rec Yds"
+              },
+              {
+                "name": "Efton Chism III",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "16 Pass Yds \u2022 1 Rec Yds"
+              }
+            ]
+          },
+          "W4": 31.5,
+          "W4_Int": 29,
+          "W4_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "315 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tee Higgins",
+                "pts_frac": 15.7,
+                "pts_int": 15,
+                "stat_line": "157 Rec Yds"
+              },
+              {
+                "name": "Dohnte Meyers",
+                "pts_frac": 8.2,
+                "pts_int": 8,
+                "stat_line": "82 Rec Yds"
+              },
+              {
+                "name": "Mitchell Tinsley",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "49 Rec Yds"
+              },
+              {
+                "name": "Ja'Marr Chase",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              }
+            ]
+          },
+          "W5": 23.7,
+          "W5_Int": 23,
+          "W5_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "177 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Darius Cooper",
+                "pts_frac": 13.1,
+                "pts_int": 13,
+                "stat_line": "71 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Dontayvion Wicks",
+                "pts_frac": 6.3,
+                "pts_int": 6,
+                "stat_line": "63 Rec Yds"
+              },
+              {
+                "name": "Makai Lemon",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "43 Rec Yds"
+              }
+            ]
+          },
+          "W6": 30.6,
+          "W6_Int": 28,
+          "W6_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "241 Rec Yds (1 TD) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaylin Noel",
+                "pts_frac": 16.7,
+                "pts_int": 16,
+                "stat_line": "107 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Nico Collins",
+                "pts_frac": 7.9,
+                "pts_int": 7,
+                "stat_line": "5 Rush Yds \u2022 74 Rec Yds"
+              },
+              {
+                "name": "Marvin Harrison Jr.",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "34 Rec Yds"
+              },
+              {
+                "name": "Kayshon Boutte",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              },
+              {
+                "name": "Xavier Hutchinson",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 17.3,
+          "W8_Int": 15,
+          "W8_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "110 Rec Yds (1 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Josh Downs",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "23 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Keenan Allen",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "67 Rec Yds"
+              },
+              {
+                "name": "Laquon Treadwell",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              },
+              {
+                "name": "Ashton Dulin",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rush Yds"
+              },
+              {
+                "name": "Deion Burks",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W9": 3.3,
+          "W9_Int": 2,
+          "W9_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "26 Rec Yds (0 TD) + 17 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Zay Flowers",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "17 Rush Yds \u2022 6 Rec Yds"
+              },
+              {
+                "name": "Rashod Bateman",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              },
+              {
+                "name": "LaJohntay Wester",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "14 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 20.6,
+          "Last_4_Games": 74.9,
+          "L4_PPG": 18.7,
+          "Total_pts": 167.8,
+          "PPG": 21.0,
+          "Last_2_Games_Int": 17,
+          "Last_4_Games_Int": 68,
+          "Total_pts_Int": 150,
+          "PPG_Int": 18.8,
+          "Stat_Summary": "1396 Rec Yds (4 TD) + 56 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Titans (TEN)",
+          "Week10_Offense": "Titans (TEN)",
+          "Vuln_Rank": 14,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Falcons (ATL)",
+          "Team": "ATL",
+          "Position": "WR",
+          "W1": 12.4,
+          "W1_Int": 11,
+          "W1_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "124 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Pittman",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "58 Rec Yds"
+              },
+              {
+                "name": "DK Metcalf",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              },
+              {
+                "name": "Roman Wilson",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              }
+            ]
+          },
+          "W2": 23.1,
+          "W2_Int": 22,
+          "W2_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "231 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tetairoa McMillan",
+                "pts_frac": 10.1,
+                "pts_int": 10,
+                "stat_line": "101 Rec Yds"
+              },
+              {
+                "name": "Jalen Coker",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "66 Rec Yds"
+              },
+              {
+                "name": "Xavier Legette",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "64 Rec Yds"
+              }
+            ]
+          },
+          "W3": 36.9,
+          "W3_Int": 36,
+          "W3_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "249 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Matthew Golden",
+                "pts_frac": 16.0,
+                "pts_int": 16,
+                "stat_line": "100 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Christian Watson",
+                "pts_frac": 15.6,
+                "pts_int": 15,
+                "stat_line": "96 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Skyy Moore",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "31 Rec Yds"
+              },
+              {
+                "name": "J. Michael Sturdivant",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              }
+            ]
+          },
+          "W4": 23.2,
+          "W4_Int": 22,
+          "W4_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "177 Rec Yds (1 TD) + -5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chris Olave",
+                "pts_frac": 11.6,
+                "pts_int": 11,
+                "stat_line": "116 Rec Yds"
+              },
+              {
+                "name": "Devaughn Vele",
+                "pts_frac": 11.4,
+                "pts_int": 11,
+                "stat_line": "54 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Bryce Lance",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              },
+              {
+                "name": "Barion Brown",
+                "pts_frac": -0.5,
+                "pts_int": 0,
+                "stat_line": "-5 Rush Yds"
+              }
+            ]
+          },
+          "W5": 19.7,
+          "W5_Int": 18,
+          "W5_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "124 Rec Yds (1 TD) + 13 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Devontez Walker",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "9 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Zay Flowers",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "13 Rush Yds \u2022 53 Rec Yds"
+              },
+              {
+                "name": "Rashod Bateman",
+                "pts_frac": 6.2,
+                "pts_int": 6,
+                "stat_line": "62 Rec Yds"
+              }
+            ]
+          },
+          "W6": 17.7,
+          "W6_Int": 15,
+          "W6_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "177 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Luther Burden III",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "95 Rec Yds"
+              },
+              {
+                "name": "Rome Odunze",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "39 Rec Yds"
+              },
+              {
+                "name": "Zavion Thomas",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Kalif Raymond",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              }
+            ]
+          },
+          "W7": 11.7,
+          "W7_Int": 10,
+          "W7_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "107 Rec Yds (0 TD) + 10 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jordan Watkins",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "56 Rec Yds"
+              },
+              {
+                "name": "Jacob Cowing",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "10 Rush Yds \u2022 38 Rec Yds"
+              },
+              {
+                "name": "Brandin Cooks",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W8": 0.0,
+          "W8_Int": 0,
+          "W8_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "0 Rec Yds (0 TD)",
+            "players": []
+          },
+          "W9": 43.4,
+          "W9_Int": 42,
+          "W9_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "238 Rec Yds (3 TD) + 16 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ja'Marr Chase",
+                "pts_frac": 21.5,
+                "pts_int": 21,
+                "stat_line": "155 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tee Higgins",
+                "pts_frac": 15.2,
+                "pts_int": 15,
+                "stat_line": "32 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Dohnte Meyers",
+                "pts_frac": 6.3,
+                "pts_int": 6,
+                "stat_line": "16 Rush Yds \u2022 47 Rec Yds"
+              },
+              {
+                "name": "Mitchell Tinsley",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 43.4,
+          "Last_4_Games": 72.8,
+          "L4_PPG": 18.2,
+          "Total_pts": 188.1,
+          "PPG": 20.9,
+          "Last_2_Games_Int": 42,
+          "Last_4_Games_Int": 67,
+          "Total_pts_Int": 176,
+          "PPG_Int": 19.6,
+          "Stat_Summary": "1427 Rec Yds (7 TD) + 34 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Chiefs (KC)",
+          "Week10_Offense": "Chiefs (KC)",
+          "Vuln_Rank": 15,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Bears (CHI)",
+          "Team": "CHI",
+          "Position": "WR",
+          "W1": 32.3,
+          "W1_Int": 31,
+          "W1_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "213 Rec Yds (2 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jalen Coker",
+                "pts_frac": 25.8,
+                "pts_int": 25,
+                "stat_line": "138 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Tetairoa McMillan",
+                "pts_frac": 6.5,
+                "pts_int": 6,
+                "stat_line": "75 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W2": 7.6,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "76 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Justin Jefferson",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "55 Rec Yds"
+              },
+              {
+                "name": "Jordan Addison",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              }
+            ]
+          },
+          "W3": 12.6,
+          "W3_Int": 11,
+          "W3_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "126 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "DeVonta Smith",
+                "pts_frac": 6.5,
+                "pts_int": 6,
+                "stat_line": "65 Rec Yds"
+              },
+              {
+                "name": "Dontayvion Wicks",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              },
+              {
+                "name": "Makai Lemon",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "29 Rec Yds"
+              }
+            ]
+          },
+          "W4": 16.0,
+          "W4_Int": 15,
+          "W4_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "100 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Isaiah Williams",
+                "pts_frac": 13.3,
+                "pts_int": 13,
+                "stat_line": "73 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Garrett Wilson",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              }
+            ]
+          },
+          "W5": 42.6,
+          "W5_Int": 42,
+          "W5_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "286 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Christian Watson",
+                "pts_frac": 26.3,
+                "pts_int": 26,
+                "stat_line": "143 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Matthew Golden",
+                "pts_frac": 14.3,
+                "pts_int": 14,
+                "stat_line": "123 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Bo Melton",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "W6": 24.8,
+          "W6_Int": 23,
+          "W6_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "158 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jahan Dotson",
+                "pts_frac": 14.7,
+                "pts_int": 14,
+                "stat_line": "87 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Drake London",
+                "pts_frac": 8.2,
+                "pts_int": 8,
+                "stat_line": "62 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Zachariah Branch",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "9 Rec Yds \u2022 1 Rush/Rec 2PT \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W7": 8.7,
+          "W7_Int": 7,
+          "W7_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "87 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "A.J. Brown",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "48 Rec Yds"
+              },
+              {
+                "name": "DeMario Douglas",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "23 Rec Yds"
+              },
+              {
+                "name": "Efton Chism III",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              }
+            ]
+          },
+          "W8": 29.1,
+          "W8_Int": 27,
+          "W8_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "151 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Jaxon Smith-Njigba",
+                "pts_frac": 17.8,
+                "pts_int": 17,
+                "stat_line": "118 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Cooper Kupp",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "7 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tory Horton",
+                "pts_frac": 4.6,
+                "pts_int": 4,
+                "stat_line": "26 Rec Yds \u2022 1 Rush/Rec 2PT"
+              }
+            ]
+          },
+          "W9": 14.3,
+          "W9_Int": 12,
+          "W9_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "130 Rec Yds (0 TD) + 13 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tez Johnson",
+                "pts_frac": 7.6,
+                "pts_int": 7,
+                "stat_line": "76 Rec Yds"
+              },
+              {
+                "name": "Emeka Egbuka",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "1 Rush Yds \u2022 38 Rec Yds"
+              },
+              {
+                "name": "Chris Godwin Jr.",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "12 Rush Yds \u2022 16 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 43.4,
+          "Last_4_Games": 76.9,
+          "L4_PPG": 19.2,
+          "Total_pts": 188.0,
+          "PPG": 20.9,
+          "Last_2_Games_Int": 39,
+          "Last_4_Games_Int": 69,
+          "Total_pts_Int": 175,
+          "PPG_Int": 19.4,
+          "Stat_Summary": "1327 Rec Yds (8 TD) + 13 Rush Yds (0 TD)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 16,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Saints (NO)",
+          "Team": "NO",
+          "Position": "WR",
+          "W1": 23.2,
+          "W1_Int": 22,
+          "W1_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "112 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Amon-Ra St. Brown",
+                "pts_frac": 18.7,
+                "pts_int": 18,
+                "stat_line": "67 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Jameson Williams",
+                "pts_frac": 4.5,
+                "pts_int": 4,
+                "stat_line": "45 Rec Yds"
+              }
+            ]
+          },
+          "W2": 21.5,
+          "W2_Int": 19,
+          "W2_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "155 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Rashod Bateman",
+                "pts_frac": 14.8,
+                "pts_int": 14,
+                "stat_line": "88 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Devontez Walker",
+                "pts_frac": 4.7,
+                "pts_int": 4,
+                "stat_line": "47 Rec Yds"
+              },
+              {
+                "name": "LaJohntay Wester",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              },
+              {
+                "name": "Chris Moore",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W3": 12.3,
+          "W3_Int": 11,
+          "W3_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "63 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Cody White",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "4 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tre Tucker",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "43 Rec Yds"
+              },
+              {
+                "name": "Jalen Nailor",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              }
+            ]
+          },
+          "W4": 22.0,
+          "W4_Int": 21,
+          "W4_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "160 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jahan Dotson",
+                "pts_frac": 11.4,
+                "pts_int": 11,
+                "stat_line": "54 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Drake London",
+                "pts_frac": 9.6,
+                "pts_int": 9,
+                "stat_line": "96 Rec Yds"
+              },
+              {
+                "name": "Zachariah Branch",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W5": 19.7,
+          "W5_Int": 18,
+          "W5_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "158 Rec Yds (1 TD) + -11 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Justin Jefferson",
+                "pts_frac": 12.8,
+                "pts_int": 12,
+                "stat_line": "-11 Rush Yds \u2022 79 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jeshaun Jones",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              },
+              {
+                "name": "Tai Felton",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Myles Price",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "20 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W6": 26.0,
+          "W6_Int": 24,
+          "W6_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "250 Rec Yds (0 TD) + 20 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Malik Nabers",
+                "pts_frac": 16.5,
+                "pts_int": 16,
+                "stat_line": "165 Rec Yds"
+              },
+              {
+                "name": "Charlie Jones",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "66 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Darnell Mooney",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rush Yds"
+              },
+              {
+                "name": "Malachi Fields",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              }
+            ]
+          },
+          "W7": 10.7,
+          "W7_Int": 9,
+          "W7_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "107 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "DK Metcalf",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "56 Rec Yds"
+              },
+              {
+                "name": "Germie Bernard",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Brandon Smith",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 28.9,
+          "W9_Int": 26,
+          "W9_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "226 Rec Yds (1 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "KC Concepcion",
+                "pts_frac": 14.8,
+                "pts_int": 14,
+                "stat_line": "3 Rush Yds \u2022 85 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Denzel Boston",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "98 Rec Yds"
+              },
+              {
+                "name": "Jerry Jeudy",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              },
+              {
+                "name": "Tylan Wallace",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 39.6,
+          "Last_4_Games": 85.3,
+          "L4_PPG": 21.3,
+          "Total_pts": 164.3,
+          "PPG": 20.5,
+          "Last_2_Games_Int": 35,
+          "Last_4_Games_Int": 77,
+          "Total_pts_Int": 150,
+          "PPG_Int": 18.8,
+          "Stat_Summary": "1231 Rec Yds (7 TD) + 12 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Panthers (CAR)",
+          "Week10_Offense": "Panthers (CAR)",
+          "Vuln_Rank": 17,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Bengals (CIN)",
+          "Team": "CIN",
+          "Position": "WR",
+          "W1": 13.8,
+          "W1_Int": 13,
+          "W1_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "139 Rec Yds (0 TD) + -1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Emeka Egbuka",
+                "pts_frac": 6.3,
+                "pts_int": 6,
+                "stat_line": "63 Rec Yds"
+              },
+              {
+                "name": "Chris Godwin Jr.",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "3 Rush Yds \u2022 40 Rec Yds"
+              },
+              {
+                "name": "Ted Hurst III",
+                "pts_frac": 3.6,
+                "pts_int": 3,
+                "stat_line": "36 Rec Yds"
+              },
+              {
+                "name": "Tez Johnson",
+                "pts_frac": -0.4,
+                "pts_int": 0,
+                "stat_line": "-4 Rush Yds"
+              }
+            ]
+          },
+          "W2": 15.1,
+          "W2_Int": 13,
+          "W2_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "138 Rec Yds (0 TD) + 13 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaylin Noel",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "13 Rush Yds \u2022 31 Rec Yds"
+              },
+              {
+                "name": "Kayshon Boutte",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              },
+              {
+                "name": "Xavier Hutchinson",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              },
+              {
+                "name": "Jared Wayne",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              }
+            ]
+          },
+          "W3": 32.4,
+          "W3_Int": 31,
+          "W3_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "144 Rec Yds (3 TD)",
+            "players": [
+              {
+                "name": "Roman Wilson",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "60 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "DK Metcalf",
+                "pts_frac": 9.1,
+                "pts_int": 9,
+                "stat_line": "31 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Ben Skowronek",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "23 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Michael Pittman",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              },
+              {
+                "name": "Germie Bernard",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              }
+            ]
+          },
+          "W4": 16.2,
+          "W4_Int": 15,
+          "W4_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "99 Rec Yds (1 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brian Thomas Jr.",
+                "pts_frac": 7.7,
+                "pts_int": 7,
+                "stat_line": "17 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Josh Cameron",
+                "pts_frac": 4.2,
+                "pts_int": 4,
+                "stat_line": "42 Rec Yds"
+              },
+              {
+                "name": "Jakobi Meyers",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              },
+              {
+                "name": "Parker Washington",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "3 Rush Yds \u2022 7 Rec Yds"
+              }
+            ]
+          },
+          "W5": 19.9,
+          "W5_Int": 19,
+          "W5_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "95 Rec Yds (1 TD) + 44 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kevin Coleman Jr.",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "30 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Malik Washington",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "18 Rush Yds \u2022 43 Rec Yds"
+              },
+              {
+                "name": "Chris Bell",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rush Yds"
+              },
+              {
+                "name": "Jalen Tolbert",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 27.0,
+          "W7_Int": 25,
+          "W7_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "210 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Zay Flowers",
+                "pts_frac": 19.7,
+                "pts_int": 19,
+                "stat_line": "137 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Rashod Bateman",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              },
+              {
+                "name": "Ja'Kobi Lane",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "LaJohntay Wester",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "W8": 28.2,
+          "W8_Int": 27,
+          "W8_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "172 Rec Yds (2 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Chimere Dike",
+                "pts_frac": 13.1,
+                "pts_int": 13,
+                "stat_line": "71 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Wan'Dale Robinson",
+                "pts_frac": 10.7,
+                "pts_int": 10,
+                "stat_line": "57 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Elic Ayomanor",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "34 Rec Yds"
+              },
+              {
+                "name": "Calvin Ridley",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W9": 8.9,
+          "W9_Int": 7,
+          "W9_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "89 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Drake London",
+                "pts_frac": 6.8,
+                "pts_int": 6,
+                "stat_line": "68 Rec Yds"
+              },
+              {
+                "name": "Jahan Dotson",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              },
+              {
+                "name": "Olamide Zaccheaus",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 37.1,
+          "Last_4_Games": 84.0,
+          "L4_PPG": 21.0,
+          "Total_pts": 161.5,
+          "PPG": 20.2,
+          "Last_2_Games_Int": 34,
+          "Last_4_Games_Int": 78,
+          "Total_pts_Int": 150,
+          "PPG_Int": 18.8,
+          "Stat_Summary": "1086 Rec Yds (8 TD) + 59 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Steelers (PIT)",
+          "Week10_Offense": "Steelers (PIT)",
+          "Vuln_Rank": 18,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Colts (IND)",
+          "Team": "IND",
+          "Position": "WR",
+          "W1": 28.9,
+          "W1_Int": 28,
+          "W1_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "229 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Zay Flowers",
+                "pts_frac": 21.0,
+                "pts_int": 21,
+                "stat_line": "150 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Chris Moore",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              },
+              {
+                "name": "LaJohntay Wester",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              },
+              {
+                "name": "Ja'Kobi Lane",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W2": 32.0,
+          "W2_Int": 30,
+          "W2_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "200 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Tyquan Thornton",
+                "pts_frac": 8.6,
+                "pts_int": 8,
+                "stat_line": "86 Rec Yds"
+              },
+              {
+                "name": "Xavier Worthy",
+                "pts_frac": 8.5,
+                "pts_int": 8,
+                "stat_line": "25 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Rashee Rice",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "83 Rec Yds"
+              },
+              {
+                "name": "Jalen Royals",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "6 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W3": 12.1,
+          "W3_Int": 11,
+          "W3_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "109 Rec Yds (0 TD) + 12 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Xavier Hutchinson",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "4 Rush Yds \u2022 51 Rec Yds"
+              },
+              {
+                "name": "Jaylin Noel",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "8 Rush Yds \u2022 17 Rec Yds"
+              },
+              {
+                "name": "Kayshon Boutte",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              },
+              {
+                "name": "Jared Wayne",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "W4": 22.8,
+          "W4_Int": 21,
+          "W4_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "168 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Treylon Burks",
+                "pts_frac": 10.7,
+                "pts_int": 10,
+                "stat_line": "47 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Dyami Brown",
+                "pts_frac": 6.5,
+                "pts_int": 6,
+                "stat_line": "65 Rec Yds"
+              },
+              {
+                "name": "Stefon Diggs",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "35 Rec Yds"
+              },
+              {
+                "name": "Antonio Williams",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              }
+            ]
+          },
+          "W5": 10.7,
+          "W5_Int": 10,
+          "W5_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "92 Rec Yds (0 TD) + 15 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Germie Bernard",
+                "pts_frac": 8.4,
+                "pts_int": 8,
+                "stat_line": "4 Rush Yds \u2022 80 Rec Yds"
+              },
+              {
+                "name": "DK Metcalf",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "11 Rush Yds \u2022 12 Rec Yds"
+              }
+            ]
+          },
+          "W6": 15.5,
+          "W6_Int": 15,
+          "W6_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "95 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Carnell Tate",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "70 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Wan'Dale Robinson",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "Elic Ayomanor",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "W7": 10.1,
+          "W7_Int": 9,
+          "W7_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "98 Rec Yds (0 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Justin Jefferson",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "44 Rec Yds"
+              },
+              {
+                "name": "Jauan Jennings",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "34 Rec Yds"
+              },
+              {
+                "name": "Jordan Addison",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "3 Rush Yds \u2022 20 Rec Yds"
+              }
+            ]
+          },
+          "W8": 12.7,
+          "W8_Int": 11,
+          "W8_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "52 Rec Yds (1 TD) + 15 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brian Thomas Jr.",
+                "pts_frac": 7.2,
+                "pts_int": 7,
+                "stat_line": "12 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Parker Washington",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "10 Rush Yds \u2022 16 Rec Yds"
+              },
+              {
+                "name": "Jakobi Meyers",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              },
+              {
+                "name": "Travis Hunter",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rush Yds"
+              }
+            ]
+          },
+          "W9": 32.1,
+          "W9_Int": 31,
+          "W9_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "271 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "CeeDee Lamb",
+                "pts_frac": 24.5,
+                "pts_int": 24,
+                "stat_line": "195 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Ryan Flournoy",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              },
+              {
+                "name": "Jonathan Mingo",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "23 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 44.8,
+          "Last_4_Games": 70.4,
+          "L4_PPG": 17.6,
+          "Total_pts": 176.9,
+          "PPG": 19.7,
+          "Last_2_Games_Int": 42,
+          "Last_4_Games_Int": 66,
+          "Total_pts_Int": 166,
+          "PPG_Int": 18.4,
+          "Stat_Summary": "1314 Rec Yds (7 TD) + 45 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Dolphins (MIA)",
+          "Week10_Offense": "Dolphins (MIA)",
+          "Vuln_Rank": 19,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Giants (NYG)",
+          "Team": "NYG",
+          "Position": "WR",
+          "W1": 17.2,
+          "W1_Int": 15,
+          "W1_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "112 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "CeeDee Lamb",
+                "pts_frac": 10.4,
+                "pts_int": 10,
+                "stat_line": "44 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "George Pickens",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "28 Rec Yds"
+              },
+              {
+                "name": "Ryan Flournoy",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "Jonathan Mingo",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              },
+              {
+                "name": "KaVontae Turpin",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W2": 34.6,
+          "W2_Int": 33,
+          "W2_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "226 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Davante Adams",
+                "pts_frac": 31.5,
+                "pts_int": 31,
+                "stat_line": "195 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Tutu Atwell",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Konata Mumpfield",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W3": 17.9,
+          "W3_Int": 16,
+          "W3_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "129 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Wan'Dale Robinson",
+                "pts_frac": 11.7,
+                "pts_int": 11,
+                "stat_line": "57 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Carnell Tate",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "58 Rec Yds"
+              },
+              {
+                "name": "Elic Ayomanor",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Chimere Dike",
+                "pts_frac": -0.7,
+                "pts_int": -1,
+                "stat_line": "3 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W4": 16.7,
+          "W4_Int": 16,
+          "W4_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "107 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Michael Wilson",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "95 Rec Yds"
+              },
+              {
+                "name": "Marvin Harrison Jr.",
+                "pts_frac": 7.2,
+                "pts_int": 7,
+                "stat_line": "12 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W5": 14.1,
+          "W5_Int": 13,
+          "W5_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "121 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Terry McLaurin",
+                "pts_frac": 8.2,
+                "pts_int": 8,
+                "stat_line": "62 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Antonio Williams",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "31 Rec Yds"
+              },
+              {
+                "name": "Treylon Burks",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              },
+              {
+                "name": "Dyami Brown",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W6": 21.9,
+          "W6_Int": 20,
+          "W6_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "99 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Chris Olave",
+                "pts_frac": 10.3,
+                "pts_int": 10,
+                "stat_line": "43 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Bryce Lance",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "9 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Devaughn Vele",
+                "pts_frac": 4.2,
+                "pts_int": 4,
+                "stat_line": "42 Rec Yds"
+              },
+              {
+                "name": "Barion Brown",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W7": 22.8,
+          "W7_Int": 20,
+          "W7_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "94 Rec Yds (2 TD) + 14 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Xavier Hutchinson",
+                "pts_frac": 8.9,
+                "pts_int": 8,
+                "stat_line": "12 Rush Yds \u2022 17 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Marvin Harrison Jr.",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "6 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tank Dell",
+                "pts_frac": 4.5,
+                "pts_int": 4,
+                "stat_line": "2 Rush Yds \u2022 43 Rec Yds"
+              },
+              {
+                "name": "Kayshon Boutte",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Nico Collins",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              },
+              {
+                "name": "Jaylin Noel",
+                "pts_frac": -0.3,
+                "pts_int": 0,
+                "stat_line": "-3 Rec Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 9.9,
+          "W9_Int": 9,
+          "W9_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "99 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Makai Lemon",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "61 Rec Yds"
+              },
+              {
+                "name": "Darius Cooper",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Marquise Brown",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              },
+              {
+                "name": "Elijah Moore",
+                "pts_frac": -0.3,
+                "pts_int": 0,
+                "stat_line": "-3 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 32.7,
+          "Last_4_Games": 68.7,
+          "L4_PPG": 17.2,
+          "Total_pts": 155.1,
+          "PPG": 19.4,
+          "Last_2_Games_Int": 29,
+          "Last_4_Games_Int": 62,
+          "Total_pts_Int": 142,
+          "PPG_Int": 17.8,
+          "Stat_Summary": "987 Rec Yds (9 TD) + 14 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Commanders (WAS)",
+          "Week10_Offense": "Commanders (WAS)",
+          "Vuln_Rank": 20,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Panthers (CAR)",
+          "Team": "CAR",
+          "Position": "WR",
+          "W1": 25.2,
+          "W1_Int": 24,
+          "W1_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "200 Rec Yds (1 TD) + 2 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Kalif Raymond",
+                "pts_frac": 8.4,
+                "pts_int": 8,
+                "stat_line": "84 Rec Yds"
+              },
+              {
+                "name": "Jahdae Walker",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "1 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Luther Burden III",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "2 Rush Yds \u2022 63 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Rome Odunze",
+                "pts_frac": 5.2,
+                "pts_int": 5,
+                "stat_line": "52 Rec Yds"
+              }
+            ]
+          },
+          "W2": 8.3,
+          "W2_Int": 6,
+          "W2_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "85 Rec Yds (0 TD) + -2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Drake London",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "-2 Rush Yds \u2022 51 Rec Yds"
+              },
+              {
+                "name": "Zachariah Branch",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              },
+              {
+                "name": "Jahan Dotson",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Chris Blair",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              },
+              {
+                "name": "Olamide Zaccheaus",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "W3": 6.0,
+          "W3_Int": 5,
+          "W3_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "50 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Denzel Boston",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "41 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "KC Concepcion",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Malachi Corley",
+                "pts_frac": -1.0,
+                "pts_int": -1,
+                "stat_line": "1 Fumb Lost"
+              }
+            ]
+          },
+          "W4": 27.2,
+          "W4_Int": 26,
+          "W4_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "272 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jameson Williams",
+                "pts_frac": 10.2,
+                "pts_int": 10,
+                "stat_line": "102 Rec Yds"
+              },
+              {
+                "name": "Isaac TeSlaa",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "95 Rec Yds"
+              },
+              {
+                "name": "Amon-Ra St. Brown",
+                "pts_frac": 7.5,
+                "pts_int": 7,
+                "stat_line": "75 Rec Yds"
+              }
+            ]
+          },
+          "W5": "BYE",
+          "W5_Int": "BYE",
+          "W5_Detail": null,
+          "W6": 19.1,
+          "W6_Int": 16,
+          "W6_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "131 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "DeVonta Smith",
+                "pts_frac": 13.5,
+                "pts_int": 13,
+                "stat_line": "75 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Dontayvion Wicks",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              },
+              {
+                "name": "Makai Lemon",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Darius Cooper",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Elijah Moore",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W7": 13.4,
+          "W7_Int": 12,
+          "W7_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "60 Rec Yds (1 TD) + 14 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tez Johnson",
+                "pts_frac": 10.7,
+                "pts_int": 10,
+                "stat_line": "14 Rush Yds \u2022 33 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Chris Godwin Jr.",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              }
+            ]
+          },
+          "W8": 27.1,
+          "W8_Int": 25,
+          "W8_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "213 Rec Yds (1 TD) + 18 Rush Yds (0 TD) \u2022 2 Fumb Lost",
+            "players": [
+              {
+                "name": "Matthew Golden",
+                "pts_frac": 13.9,
+                "pts_int": 13,
+                "stat_line": "79 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Christian Watson",
+                "pts_frac": 10.3,
+                "pts_int": 10,
+                "stat_line": "113 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Savion Williams",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "18 Rush Yds \u2022 5 Rec Yds"
+              },
+              {
+                "name": "J. Michael Sturdivant",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              },
+              {
+                "name": "Coleman Owen",
+                "pts_frac": -1.0,
+                "pts_int": -1,
+                "stat_line": "1 Fumb Lost"
+              }
+            ]
+          },
+          "W9": 27.9,
+          "W9_Int": 26,
+          "W9_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "154 Rec Yds (2 TD) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Pat Bryant",
+                "pts_frac": 11.6,
+                "pts_int": 11,
+                "stat_line": "56 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Courtland Sutton",
+                "pts_frac": 10.5,
+                "pts_int": 10,
+                "stat_line": "45 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Troy Franklin",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "31 Rec Yds"
+              },
+              {
+                "name": "Jaylen Waddle",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "Marvin Mims Jr.",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 55.0,
+          "Last_4_Games": 87.5,
+          "L4_PPG": 21.9,
+          "Total_pts": 154.2,
+          "PPG": 19.3,
+          "Last_2_Games_Int": 51,
+          "Last_4_Games_Int": 79,
+          "Total_pts_Int": 140,
+          "PPG_Int": 17.5,
+          "Stat_Summary": "1165 Rec Yds (6 TD) + 37 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Saints (NO)",
+          "Week10_Offense": "Saints (NO)",
+          "Vuln_Rank": 21,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Browns (CLE)",
+          "Team": "CLE",
+          "Position": "WR",
+          "W1": 37.6,
+          "W1_Int": 37,
+          "W1_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "191 Rec Yds (3 TD) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Parker Washington",
+                "pts_frac": 14.3,
+                "pts_int": 14,
+                "stat_line": "83 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jakobi Meyers",
+                "pts_frac": 10.2,
+                "pts_int": 10,
+                "stat_line": "2 Rush Yds \u2022 40 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Josh Cameron",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "20 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Brian Thomas Jr.",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              },
+              {
+                "name": "Travis Hunter",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "3 Rush Yds \u2022 8 Rec Yds"
+              }
+            ]
+          },
+          "W2": 20.7,
+          "W2_Int": 18,
+          "W2_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "138 Rec Yds (1 TD) + 9 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Emeka Egbuka",
+                "pts_frac": 7.3,
+                "pts_int": 7,
+                "stat_line": "-3 Rush Yds \u2022 16 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Chris Godwin Jr.",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "12 Rush Yds \u2022 46 Rec Yds"
+              },
+              {
+                "name": "Tez Johnson",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "49 Rec Yds"
+              },
+              {
+                "name": "Ted Hurst III",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              }
+            ]
+          },
+          "W3": 19.7,
+          "W3_Int": 17,
+          "W3_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "137 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Brycen Tremayne",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "83 Rec Yds"
+              },
+              {
+                "name": "John Metchie III",
+                "pts_frac": 7.9,
+                "pts_int": 7,
+                "stat_line": "19 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jalen Coker",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              },
+              {
+                "name": "Tetairoa McMillan",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "W4": 28.2,
+          "W4_Int": 26,
+          "W4_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "222 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Roman Wilson",
+                "pts_frac": 13.4,
+                "pts_int": 13,
+                "stat_line": "74 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "DK Metcalf",
+                "pts_frac": 11.5,
+                "pts_int": 11,
+                "stat_line": "115 Rec Yds"
+              },
+              {
+                "name": "Michael Pittman",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              },
+              {
+                "name": "Germie Bernard",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Ben Skowronek",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W5": 20.9,
+          "W5_Int": 19,
+          "W5_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "146 Rec Yds (1 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Garrett Wilson",
+                "pts_frac": 16.4,
+                "pts_int": 16,
+                "stat_line": "104 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tim Patrick",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              },
+              {
+                "name": "Isaiah Williams",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "3 Rush Yds \u2022 16 Rec Yds"
+              }
+            ]
+          },
+          "W6": 10.7,
+          "W6_Int": 10,
+          "W6_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "106 Rec Yds (0 TD) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Zay Flowers",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "1 Rush Yds \u2022 66 Rec Yds"
+              },
+              {
+                "name": "Ja'Kobi Lane",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              }
+            ]
+          },
+          "W7": 11.0,
+          "W7_Int": 9,
+          "W7_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "120 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Carnell Tate",
+                "pts_frac": 5.9,
+                "pts_int": 5,
+                "stat_line": "69 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Elic Ayomanor",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "44 Rec Yds"
+              },
+              {
+                "name": "Wan'Dale Robinson",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W8": 4.3,
+          "W8_Int": 3,
+          "W8_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "43 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Germie Bernard",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "30 Rec Yds"
+              },
+              {
+                "name": "Brandon Johnson",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "DK Metcalf",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W9": 18.7,
+          "W9_Int": 17,
+          "W9_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "197 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Chris Olave",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "98 Rec Yds"
+              },
+              {
+                "name": "Barion Brown",
+                "pts_frac": 5.2,
+                "pts_int": 5,
+                "stat_line": "52 Rec Yds"
+              },
+              {
+                "name": "Jordyn Tyson",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "30 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Devaughn Vele",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 23.0,
+          "Last_4_Games": 44.7,
+          "L4_PPG": 11.2,
+          "Total_pts": 171.8,
+          "PPG": 19.1,
+          "Last_2_Games_Int": 20,
+          "Last_4_Games_Int": 39,
+          "Total_pts_Int": 156,
+          "PPG_Int": 17.3,
+          "Stat_Summary": "1300 Rec Yds (7 TD) + 18 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Texans (HOU)",
+          "Week10_Offense": "Texans (HOU)",
+          "Vuln_Rank": 22,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Buccaneers (TB)",
+          "Team": "TB",
+          "Position": "WR",
+          "W1": 11.1,
+          "W1_Int": 9,
+          "W1_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "101 Rec Yds (0 TD) + 10 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tee Higgins",
+                "pts_frac": 5.9,
+                "pts_int": 5,
+                "stat_line": "59 Rec Yds"
+              },
+              {
+                "name": "Dohnte Meyers",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "10 Rush Yds \u2022 18 Rec Yds"
+              },
+              {
+                "name": "Andrei Iosivas",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              },
+              {
+                "name": "Ja'Marr Chase",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W2": 18.7,
+          "W2_Int": 18,
+          "W2_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "133 Rec Yds (1 TD) + -6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Denzel Boston",
+                "pts_frac": 15.5,
+                "pts_int": 15,
+                "stat_line": "95 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "KC Concepcion",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "-6 Rush Yds \u2022 28 Rec Yds"
+              },
+              {
+                "name": "Isaiah Bond",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W3": 18.3,
+          "W3_Int": 18,
+          "W3_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "123 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jordan Addison",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "90 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Justin Jefferson",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              },
+              {
+                "name": "Jauan Jennings",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rec Yds"
+              }
+            ]
+          },
+          "W4": 13.2,
+          "W4_Int": 12,
+          "W4_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "66 Rec Yds (1 TD) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Matthew Golden",
+                "pts_frac": 8.7,
+                "pts_int": 8,
+                "stat_line": "6 Rush Yds \u2022 21 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Christian Watson",
+                "pts_frac": 4.7,
+                "pts_int": 4,
+                "stat_line": "47 Rec Yds"
+              },
+              {
+                "name": "Skyy Moore",
+                "pts_frac": -0.2,
+                "pts_int": 0,
+                "stat_line": "-2 Rec Yds"
+              }
+            ]
+          },
+          "W5": 32.1,
+          "W5_Int": 31,
+          "W5_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "271 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "George Pickens",
+                "pts_frac": 19.0,
+                "pts_int": 19,
+                "stat_line": "130 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Ryan Flournoy",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "90 Rec Yds"
+              },
+              {
+                "name": "Jonathan Mingo",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "KaVontae Turpin",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "22 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "CeeDee Lamb",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W6": 24.0,
+          "W6_Int": 23,
+          "W6_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "180 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Germie Bernard",
+                "pts_frac": 14.7,
+                "pts_int": 14,
+                "stat_line": "87 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "DK Metcalf",
+                "pts_frac": 9.3,
+                "pts_int": 9,
+                "stat_line": "93 Rec Yds"
+              }
+            ]
+          },
+          "W7": 6.9,
+          "W7_Int": 6,
+          "W7_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "69 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tetairoa McMillan",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              },
+              {
+                "name": "John Metchie III",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Jalen Coker",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W8": 10.7,
+          "W8_Int": 9,
+          "W8_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "107 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jahan Dotson",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "95 Rec Yds"
+              },
+              {
+                "name": "Drake London",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              },
+              {
+                "name": "Olamide Zaccheaus",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W9": 31.2,
+          "W9_Int": 30,
+          "W9_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "202 Rec Yds (2 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Luther Burden III",
+                "pts_frac": 14.7,
+                "pts_int": 14,
+                "stat_line": "97 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Rome Odunze",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "60 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Kalif Raymond",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              },
+              {
+                "name": "Zavion Thomas",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 41.9,
+          "Last_4_Games": 72.8,
+          "L4_PPG": 18.2,
+          "Total_pts": 166.2,
+          "PPG": 18.5,
+          "Last_2_Games_Int": 39,
+          "Last_4_Games_Int": 68,
+          "Total_pts_Int": 156,
+          "PPG_Int": 17.3,
+          "Stat_Summary": "1252 Rec Yds (7 TD) + 10 Rush Yds (0 TD)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 23,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Rams (LA)",
+          "Team": "LA",
+          "Position": "WR",
+          "W1": 33.9,
+          "W1_Int": 33,
+          "W1_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "147 Rec Yds (3 TD) + 12 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Deebo Samuel Sr.",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "12 Rush Yds \u2022 48 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Demarcus Robinson",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "50 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mike Evans",
+                "pts_frac": 10.9,
+                "pts_int": 10,
+                "stat_line": "49 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W2": 7.9,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "79 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Darnell Mooney",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "48 Rec Yds"
+              },
+              {
+                "name": "Malachi Fields",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "30 Rec Yds"
+              },
+              {
+                "name": "Malik Nabers",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rec Yds"
+              }
+            ]
+          },
+          "W3": 23.5,
+          "W3_Int": 22,
+          "W3_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "121 Rec Yds (1 TD) + 14 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Pat Bryant",
+                "pts_frac": 12.4,
+                "pts_int": 12,
+                "stat_line": "44 Rec Yds, 1 Rec TD \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Courtland Sutton",
+                "pts_frac": 4.6,
+                "pts_int": 4,
+                "stat_line": "46 Rec Yds"
+              },
+              {
+                "name": "Jaylen Waddle",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "14 Rush Yds \u2022 10 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Troy Franklin",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              }
+            ]
+          },
+          "W4": 19.8,
+          "W4_Int": 18,
+          "W4_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "78 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Darius Cooper",
+                "pts_frac": 15.3,
+                "pts_int": 15,
+                "stat_line": "33 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Makai Lemon",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Dontayvion Wicks",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              }
+            ]
+          },
+          "W5": 14.7,
+          "W5_Int": 14,
+          "W5_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "87 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Khalil Shakir",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "80 Rec Yds"
+              },
+              {
+                "name": "Keon Coleman",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "7 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W6": 10.9,
+          "W6_Int": 10,
+          "W6_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "109 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kendrick Bourne",
+                "pts_frac": 4.7,
+                "pts_int": 4,
+                "stat_line": "47 Rec Yds"
+              },
+              {
+                "name": "Michael Wilson",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              },
+              {
+                "name": "Jalen Brooks",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "30 Rec Yds"
+              }
+            ]
+          },
+          "W7": 18.1,
+          "W7_Int": 17,
+          "W7_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "121 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Tre Tucker",
+                "pts_frac": 16.3,
+                "pts_int": 16,
+                "stat_line": "103 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jalen Nailor",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              },
+              {
+                "name": "Cody White",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W8": 15.4,
+          "W8_Int": 14,
+          "W8_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "154 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ladd McConkey",
+                "pts_frac": 8.6,
+                "pts_int": 8,
+                "stat_line": "86 Rec Yds"
+              },
+              {
+                "name": "Quentin Johnston",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              },
+              {
+                "name": "Tre Harris",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "31 Rec Yds"
+              }
+            ]
+          },
+          "W9": 21.2,
+          "W9_Int": 19,
+          "W9_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "152 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Van Jefferson",
+                "pts_frac": 11.8,
+                "pts_int": 11,
+                "stat_line": "58 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Stefon Diggs",
+                "pts_frac": 5.1,
+                "pts_int": 5,
+                "stat_line": "51 Rec Yds"
+              },
+              {
+                "name": "Antonio Williams",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Jaden Bradley",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              },
+              {
+                "name": "Luke McCaffrey",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 36.6,
+          "Last_4_Games": 65.6,
+          "L4_PPG": 16.4,
+          "Total_pts": 165.4,
+          "PPG": 18.4,
+          "Last_2_Games_Int": 33,
+          "Last_4_Games_Int": 60,
+          "Total_pts_Int": 154,
+          "PPG_Int": 17.1,
+          "Stat_Summary": "1048 Rec Yds (9 TD) + 26 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Cardinals (ARI)",
+          "Week10_Offense": "Cardinals (ARI)",
+          "Vuln_Rank": 24,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Jets (NYJ)",
+          "Team": "NYJ",
+          "Position": "WR",
+          "W1": 14.4,
+          "W1_Int": 12,
+          "W1_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "94 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Elic Ayomanor",
+                "pts_frac": 7.1,
+                "pts_int": 7,
+                "stat_line": "11 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Carnell Tate",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "38 Rec Yds"
+              },
+              {
+                "name": "Wan'Dale Robinson",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "38 Rec Yds"
+              },
+              {
+                "name": "Chimere Dike",
+                "pts_frac": -0.3,
+                "pts_int": -1,
+                "stat_line": "7 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W2": 16.9,
+          "W2_Int": 15,
+          "W2_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "109 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Christian Watson",
+                "pts_frac": 10.1,
+                "pts_int": 10,
+                "stat_line": "41 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Matthew Golden",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "58 Rec Yds"
+              },
+              {
+                "name": "Skyy Moore",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              },
+              {
+                "name": "Jayden Reed",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W3": 19.4,
+          "W3_Int": 17,
+          "W3_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "134 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Amon-Ra St. Brown",
+                "pts_frac": 7.9,
+                "pts_int": 7,
+                "stat_line": "19 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Isaac TeSlaa",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "66 Rec Yds"
+              },
+              {
+                "name": "Jameson Williams",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "49 Rec Yds"
+              }
+            ]
+          },
+          "W4": 17.4,
+          "W4_Int": 16,
+          "W4_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "163 Rec Yds (0 TD) + 11 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Rome Odunze",
+                "pts_frac": 9.4,
+                "pts_int": 9,
+                "stat_line": "94 Rec Yds"
+              },
+              {
+                "name": "Luther Burden III",
+                "pts_frac": 7.4,
+                "pts_int": 7,
+                "stat_line": "11 Rush Yds \u2022 63 Rec Yds"
+              },
+              {
+                "name": "Kalif Raymond",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W5": 20.4,
+          "W5_Int": 18,
+          "W5_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "144 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Denzel Boston",
+                "pts_frac": 10.6,
+                "pts_int": 10,
+                "stat_line": "46 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Isaiah Bond",
+                "pts_frac": 7.4,
+                "pts_int": 7,
+                "stat_line": "74 Rec Yds"
+              },
+              {
+                "name": "Jerry Jeudy",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "KC Concepcion",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W6": 27.7,
+          "W6_Int": 26,
+          "W6_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "167 Rec Yds (2 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "DeMario Douglas",
+                "pts_frac": 13.6,
+                "pts_int": 13,
+                "stat_line": "86 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Romeo Doubs",
+                "pts_frac": 10.2,
+                "pts_int": 10,
+                "stat_line": "42 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "A.J. Brown",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Kyle Williams",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W7": 25.0,
+          "W7_Int": 24,
+          "W7_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "122 Rec Yds (2 TD) + 8 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Caleb Douglas",
+                "pts_frac": 19.0,
+                "pts_int": 19,
+                "stat_line": "70 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Malik Washington",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "8 Rush Yds \u2022 27 Rec Yds"
+              },
+              {
+                "name": "Chris Bell",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              }
+            ]
+          },
+          "W8": 9.8,
+          "W8_Int": 9,
+          "W8_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "38 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jalen Nailor",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "38 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W9": 11.5,
+          "W9_Int": 9,
+          "W9_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "115 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Rashee Rice",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "49 Rec Yds"
+              },
+              {
+                "name": "Xavier Worthy",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "48 Rec Yds"
+              },
+              {
+                "name": "Jalen Royals",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 21.3,
+          "Last_4_Games": 74.0,
+          "L4_PPG": 18.5,
+          "Total_pts": 162.5,
+          "PPG": 18.1,
+          "Last_2_Games_Int": 18,
+          "Last_4_Games_Int": 68,
+          "Total_pts_Int": 146,
+          "PPG_Int": 16.2,
+          "Stat_Summary": "1086 Rec Yds (9 TD) + 19 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Bills (BUF)",
+          "Week10_Offense": "Bills (BUF)",
+          "Vuln_Rank": 25,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "49ers (SF)",
+          "Team": "SF",
+          "Position": "WR",
+          "W1": 10.8,
+          "W1_Int": 9,
+          "W1_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "108 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Puka Nacua",
+                "pts_frac": 7.4,
+                "pts_int": 7,
+                "stat_line": "74 Rec Yds"
+              },
+              {
+                "name": "Davante Adams",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              },
+              {
+                "name": "Jordan Whittington",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W2": 20.3,
+          "W2_Int": 18,
+          "W2_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "139 Rec Yds (1 TD) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Ryan Miller",
+                "pts_frac": 13.7,
+                "pts_int": 13,
+                "stat_line": "77 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Malik Washington",
+                "pts_frac": 4.7,
+                "pts_int": 4,
+                "stat_line": "4 Rush Yds \u2022 43 Rec Yds"
+              },
+              {
+                "name": "Caleb Douglas",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              }
+            ]
+          },
+          "W3": 21.1,
+          "W3_Int": 20,
+          "W3_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "151 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Michael Wilson",
+                "pts_frac": 14.9,
+                "pts_int": 14,
+                "stat_line": "89 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Marvin Harrison Jr.",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              },
+              {
+                "name": "Kendrick Bourne",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              }
+            ]
+          },
+          "W4": 15.6,
+          "W4_Int": 14,
+          "W4_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "96 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jaylen Waddle",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "35 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Pat Bryant",
+                "pts_frac": 4.7,
+                "pts_int": 4,
+                "stat_line": "47 Rec Yds"
+              },
+              {
+                "name": "Marvin Mims Jr.",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              },
+              {
+                "name": "Courtland Sutton",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W5": 21.6,
+          "W5_Int": 20,
+          "W5_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "140 Rec Yds (1 TD) + 16 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaxon Smith-Njigba",
+                "pts_frac": 17.8,
+                "pts_int": 17,
+                "stat_line": "16 Rush Yds \u2022 102 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Rashid Shaheed",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "23 Rec Yds"
+              },
+              {
+                "name": "Cooper Kupp",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "W6": 25.3,
+          "W6_Int": 23,
+          "W6_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "193 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Stefon Diggs",
+                "pts_frac": 10.4,
+                "pts_int": 10,
+                "stat_line": "44 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Treylon Burks",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "66 Rec Yds"
+              },
+              {
+                "name": "Antonio Williams",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "50 Rec Yds"
+              },
+              {
+                "name": "Terry McLaurin",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Dyami Brown",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W7": 14.9,
+          "W7_Int": 13,
+          "W7_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "81 Rec Yds (1 TD) + 8 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Drake London",
+                "pts_frac": 12.6,
+                "pts_int": 12,
+                "stat_line": "66 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Zachariah Branch",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "8 Rush Yds \u2022 9 Rec Yds"
+              },
+              {
+                "name": "Jahan Dotson",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 7.3,
+          "W9_Int": 5,
+          "W9_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "73 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tre Tucker",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "55 Rec Yds"
+              },
+              {
+                "name": "Jack Bech",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Jalen Nailor",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 22.2,
+          "Last_4_Games": 69.1,
+          "L4_PPG": 17.3,
+          "Total_pts": 136.9,
+          "PPG": 17.1,
+          "Last_2_Games_Int": 18,
+          "Last_4_Games_Int": 61,
+          "Total_pts_Int": 122,
+          "PPG_Int": 15.2,
+          "Stat_Summary": "981 Rec Yds (6 TD) + 28 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Cowboys (DAL)",
+          "Week10_Offense": "Cowboys (DAL)",
+          "Vuln_Rank": 26,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Broncos (DEN)",
+          "Team": "DEN",
+          "Position": "WR",
+          "W1": 9.7,
+          "W1_Int": 8,
+          "W1_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "37 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Rashee Rice",
+                "pts_frac": 7.9,
+                "pts_int": 7,
+                "stat_line": "19 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Xavier Worthy",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              }
+            ]
+          },
+          "W2": 16.6,
+          "W2_Int": 15,
+          "W2_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "166 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Parker Washington",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "98 Rec Yds"
+              },
+              {
+                "name": "Brian Thomas Jr.",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              },
+              {
+                "name": "Jakobi Meyers",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "28 Rec Yds"
+              }
+            ]
+          },
+          "W3": 29.0,
+          "W3_Int": 28,
+          "W3_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "230 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Konata Mumpfield",
+                "pts_frac": 15.3,
+                "pts_int": 15,
+                "stat_line": "93 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Davante Adams",
+                "pts_frac": 13.7,
+                "pts_int": 13,
+                "stat_line": "137 Rec Yds"
+              }
+            ]
+          },
+          "W4": 20.8,
+          "W4_Int": 20,
+          "W4_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "102 Rec Yds (1 TD) + 46 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Deebo Samuel Sr.",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "44 Rush Yds \u2022 26 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mike Evans",
+                "pts_frac": 7.6,
+                "pts_int": 7,
+                "stat_line": "76 Rec Yds"
+              },
+              {
+                "name": "Jacob Cowing",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rush Yds"
+              }
+            ]
+          },
+          "W5": 5.4,
+          "W5_Int": 4,
+          "W5_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "54 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Marquez Valdes-Scantling",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "Tre Harris",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              },
+              {
+                "name": "Theo Wease Jr.",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              }
+            ]
+          },
+          "W6": 27.5,
+          "W6_Int": 26,
+          "W6_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "263 Rec Yds (0 TD) + 2 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jaxon Smith-Njigba",
+                "pts_frac": 13.4,
+                "pts_int": 13,
+                "stat_line": "134 Rec Yds"
+              },
+              {
+                "name": "Rashid Shaheed",
+                "pts_frac": 7.8,
+                "pts_int": 7,
+                "stat_line": "2 Rush Yds \u2022 66 Rec Yds \u2022 1 Rush/Rec 2PT \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Cooper Kupp",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "50 Rec Yds"
+              },
+              {
+                "name": "Tory Horton",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W7": 11.0,
+          "W7_Int": 9,
+          "W7_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "99 Rec Yds (0 TD) + 11 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Wilson",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "11 Rush Yds \u2022 55 Rec Yds"
+              },
+              {
+                "name": "Jalen Brooks",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "35 Rec Yds"
+              },
+              {
+                "name": "Kendrick Bourne",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W8": 15.0,
+          "W8_Int": 14,
+          "W8_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "90 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Rashee Rice",
+                "pts_frac": 11.3,
+                "pts_int": 11,
+                "stat_line": "53 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Cyrus Allen",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Xavier Worthy",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              },
+              {
+                "name": "Jalen Royals",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W9": 18.2,
+          "W9_Int": 17,
+          "W9_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "125 Rec Yds (1 TD) + -3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tetairoa McMillan",
+                "pts_frac": 11.6,
+                "pts_int": 11,
+                "stat_line": "56 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "John Metchie III",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              },
+              {
+                "name": "Jalen Coker",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "-3 Rush Yds \u2022 29 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 33.2,
+          "Last_4_Games": 71.7,
+          "L4_PPG": 17.9,
+          "Total_pts": 153.2,
+          "PPG": 17.0,
+          "Last_2_Games_Int": 31,
+          "Last_4_Games_Int": 66,
+          "Total_pts_Int": 141,
+          "PPG_Int": 15.7,
+          "Stat_Summary": "1166 Rec Yds (5 TD) + 56 Rush Yds (0 TD)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 27,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Steelers (PIT)",
+          "Team": "PIT",
+          "Position": "WR",
+          "W1": 5.9,
+          "W1_Int": 4,
+          "W1_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "53 Rec Yds (0 TD) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Drake London",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "6 Rush Yds \u2022 29 Rec Yds"
+              },
+              {
+                "name": "Jahan Dotson",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Olamide Zaccheaus",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W2": 13.1,
+          "W2_Int": 11,
+          "W2_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "131 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Romeo Doubs",
+                "pts_frac": 9.6,
+                "pts_int": 9,
+                "stat_line": "96 Rec Yds"
+              },
+              {
+                "name": "Mack Hollins",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              },
+              {
+                "name": "Kyle Williams",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              },
+              {
+                "name": "DeMario Douglas",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Efton Chism III",
+                "pts_frac": -0.2,
+                "pts_int": 0,
+                "stat_line": "-2 Rec Yds"
+              }
+            ]
+          },
+          "W3": 33.9,
+          "W3_Int": 32,
+          "W3_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "219 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Ja'Marr Chase",
+                "pts_frac": 15.8,
+                "pts_int": 15,
+                "stat_line": "98 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tee Higgins",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "90 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Dohnte Meyers",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "29 Rec Yds"
+              },
+              {
+                "name": "Colbie Young",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W4": 19.1,
+          "W4_Int": 17,
+          "W4_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "191 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Denzel Boston",
+                "pts_frac": 8.9,
+                "pts_int": 8,
+                "stat_line": "89 Rec Yds"
+              },
+              {
+                "name": "KC Concepcion",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "64 Rec Yds"
+              },
+              {
+                "name": "Jerry Jeudy",
+                "pts_frac": 3.6,
+                "pts_int": 3,
+                "stat_line": "36 Rec Yds"
+              },
+              {
+                "name": "Isaiah Bond",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W5": 12.6,
+          "W5_Int": 11,
+          "W5_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "126 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Josh Downs",
+                "pts_frac": 4.7,
+                "pts_int": 4,
+                "stat_line": "47 Rec Yds"
+              },
+              {
+                "name": "Keenan Allen",
+                "pts_frac": 4.5,
+                "pts_int": 4,
+                "stat_line": "45 Rec Yds"
+              },
+              {
+                "name": "Laquon Treadwell",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "34 Rec Yds"
+              }
+            ]
+          },
+          "W6": 19.2,
+          "W6_Int": 17,
+          "W6_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "132 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Emeka Egbuka",
+                "pts_frac": 10.8,
+                "pts_int": 10,
+                "stat_line": "48 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Ted Hurst III",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              },
+              {
+                "name": "Chris Godwin Jr.",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              },
+              {
+                "name": "Tez Johnson",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W7": 23.9,
+          "W7_Int": 22,
+          "W7_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "179 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Devaughn Vele",
+                "pts_frac": 11.4,
+                "pts_int": 11,
+                "stat_line": "54 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Barion Brown",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "57 Rec Yds"
+              },
+              {
+                "name": "Chris Olave",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "56 Rec Yds"
+              },
+              {
+                "name": "Bryce Lance",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W8": 7.7,
+          "W8_Int": 6,
+          "W8_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "77 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Denzel Boston",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              },
+              {
+                "name": "KC Concepcion",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              },
+              {
+                "name": "Tylan Wallace",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "W9": "BYE",
+          "W9_Int": "BYE",
+          "W9_Detail": null,
+          "GP": 8,
+          "Last_2_Games": 31.6,
+          "Last_4_Games": 63.4,
+          "L4_PPG": 15.8,
+          "Total_pts": 135.4,
+          "PPG": 16.9,
+          "Last_2_Games_Int": 28,
+          "Last_4_Games_Int": 56,
+          "Total_pts_Int": 120,
+          "PPG_Int": 15.0,
+          "Stat_Summary": "1108 Rec Yds (4 TD) + 6 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Bengals (CIN)",
+          "Week10_Offense": "Bengals (CIN)",
+          "Vuln_Rank": 28,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Dolphins (MIA)",
+          "Team": "MIA",
+          "Position": "WR",
+          "W1": 13.5,
+          "W1_Int": 12,
+          "W1_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "83 Rec Yds (1 TD) + -8 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jack Bech",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "23 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jalen Nailor",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Tre Tucker",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "27 Rec Yds"
+              },
+              {
+                "name": "Malik Benson",
+                "pts_frac": -0.2,
+                "pts_int": 0,
+                "stat_line": "-8 Rush Yds \u2022 6 Rec Yds"
+              }
+            ]
+          },
+          "W2": 14.1,
+          "W2_Int": 12,
+          "W2_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "137 Rec Yds (0 TD) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Mike Evans",
+                "pts_frac": 5.4,
+                "pts_int": 5,
+                "stat_line": "54 Rec Yds"
+              },
+              {
+                "name": "Deebo Samuel Sr.",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "4 Rush Yds \u2022 31 Rec Yds"
+              },
+              {
+                "name": "Demarcus Robinson",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "34 Rec Yds"
+              },
+              {
+                "name": "KhaDarel Hodge",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              }
+            ]
+          },
+          "W3": 14.1,
+          "W3_Int": 13,
+          "W3_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "141 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Rashee Rice",
+                "pts_frac": 8.8,
+                "pts_int": 8,
+                "stat_line": "88 Rec Yds"
+              },
+              {
+                "name": "Tyquan Thornton",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "Xavier Worthy",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Jalen Royals",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W4": 8.1,
+          "W4_Int": 6,
+          "W4_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "80 Rec Yds (0 TD) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jordan Addison",
+                "pts_frac": 5.1,
+                "pts_int": 5,
+                "stat_line": "-1 Rush Yds \u2022 52 Rec Yds"
+              },
+              {
+                "name": "Tai Felton",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              },
+              {
+                "name": "Myles Price",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "2 Rush Yds \u2022 6 Rec Yds"
+              },
+              {
+                "name": "Jauan Jennings",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W5": 17.1,
+          "W5_Int": 16,
+          "W5_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "111 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Ja'Marr Chase",
+                "pts_frac": 13.7,
+                "pts_int": 13,
+                "stat_line": "77 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tee Higgins",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "Dohnte Meyers",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 20.1,
+          "W7_Int": 19,
+          "W7_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "141 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Omar Cooper Jr.",
+                "pts_frac": 17.5,
+                "pts_int": 17,
+                "stat_line": "115 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Garrett Wilson",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              }
+            ]
+          },
+          "W8": 26.6,
+          "W8_Int": 25,
+          "W8_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "156 Rec Yds (2 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "DeMario Douglas",
+                "pts_frac": 13.6,
+                "pts_int": 13,
+                "stat_line": "76 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Kyle Williams",
+                "pts_frac": 10.3,
+                "pts_int": 10,
+                "stat_line": "43 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Efton Chism III",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "37 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W9": 15.1,
+          "W9_Int": 13,
+          "W9_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "142 Rec Yds (0 TD) + 9 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Amon-Ra St. Brown",
+                "pts_frac": 8.6,
+                "pts_int": 8,
+                "stat_line": "86 Rec Yds"
+              },
+              {
+                "name": "Jameson Williams",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "9 Rush Yds \u2022 31 Rec Yds"
+              },
+              {
+                "name": "Tay Martin",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Isaac TeSlaa",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "DeAndre Carter",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 41.7,
+          "Last_4_Games": 78.9,
+          "L4_PPG": 19.7,
+          "Total_pts": 128.7,
+          "PPG": 16.1,
+          "Last_2_Games_Int": 38,
+          "Last_4_Games_Int": 73,
+          "Total_pts_Int": 116,
+          "PPG_Int": 14.5,
+          "Stat_Summary": "991 Rec Yds (5 TD) + 6 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Colts (IND)",
+          "Week10_Offense": "Colts (IND)",
+          "Vuln_Rank": 29,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Vikings (MIN)",
+          "Team": "MIN",
+          "Position": "WR",
+          "W1": 39.2,
+          "W1_Int": 38,
+          "W1_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "272 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Christian Watson",
+                "pts_frac": 26.7,
+                "pts_int": 26,
+                "stat_line": "147 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Matthew Golden",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "95 Rec Yds"
+              },
+              {
+                "name": "Jayden Reed",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Bo Melton",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W2": 11.5,
+          "W2_Int": 11,
+          "W2_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "115 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Rome Odunze",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "43 Rec Yds"
+              },
+              {
+                "name": "Kalif Raymond",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              },
+              {
+                "name": "Luther Burden III",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              }
+            ]
+          },
+          "W3": 19.5,
+          "W3_Int": 18,
+          "W3_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "135 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Ted Hurst III",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "40 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Emeka Egbuka",
+                "pts_frac": 6.2,
+                "pts_int": 6,
+                "stat_line": "62 Rec Yds"
+              },
+              {
+                "name": "Chris Godwin Jr.",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Tez Johnson",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W4": 7.3,
+          "W4_Int": 7,
+          "W4_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "70 Rec Yds (0 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Malik Washington",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "3 Rush Yds \u2022 67 Rec Yds"
+              },
+              {
+                "name": "Kevin Coleman Jr.",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "W5": 7.2,
+          "W5_Int": 6,
+          "W5_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "72 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chris Olave",
+                "pts_frac": 4.6,
+                "pts_int": 4,
+                "stat_line": "46 Rec Yds"
+              },
+              {
+                "name": "Devaughn Vele",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 7.9,
+          "W7_Int": 6,
+          "W7_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "79 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Keenan Allen",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "31 Rec Yds"
+              },
+              {
+                "name": "Laquon Treadwell",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Josh Downs",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              },
+              {
+                "name": "Deion Burks",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W8": 18.6,
+          "W8_Int": 18,
+          "W8_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "116 Rec Yds (1 TD) + 10 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jameson Williams",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "70 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Amon-Ra St. Brown",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "10 Rush Yds \u2022 46 Rec Yds"
+              }
+            ]
+          },
+          "W9": 11.1,
+          "W9_Int": 9,
+          "W9_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "100 Rec Yds (0 TD) + 11 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Khalil Shakir",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "58 Rec Yds"
+              },
+              {
+                "name": "DJ Moore",
+                "pts_frac": 3.6,
+                "pts_int": 3,
+                "stat_line": "11 Rush Yds \u2022 25 Rec Yds"
+              },
+              {
+                "name": "Keon Coleman",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 29.7,
+          "Last_4_Games": 44.8,
+          "L4_PPG": 11.2,
+          "Total_pts": 122.3,
+          "PPG": 15.3,
+          "Last_2_Games_Int": 27,
+          "Last_4_Games_Int": 39,
+          "Total_pts_Int": 113,
+          "PPG_Int": 14.1,
+          "Stat_Summary": "959 Rec Yds (4 TD) + 24 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Packers (GB)",
+          "Week10_Offense": "Packers (GB)",
+          "Vuln_Rank": 30,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Chiefs (KC)",
+          "Team": "KC",
+          "Position": "WR",
+          "W1": 6.0,
+          "W1_Int": 5,
+          "W1_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "55 Rec Yds (0 TD) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Pat Bryant",
+                "pts_frac": 4.2,
+                "pts_int": 4,
+                "stat_line": "42 Rec Yds"
+              },
+              {
+                "name": "Courtland Sutton",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Troy Franklin",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rush Yds"
+              },
+              {
+                "name": "Jaylen Waddle",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W2": 16.3,
+          "W2_Int": 15,
+          "W2_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "149 Rec Yds (0 TD) + 14 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Josh Downs",
+                "pts_frac": 7.2,
+                "pts_int": 7,
+                "stat_line": "72 Rec Yds"
+              },
+              {
+                "name": "Laquon Treadwell",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "61 Rec Yds"
+              },
+              {
+                "name": "Deion Burks",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rush Yds"
+              },
+              {
+                "name": "Alec Pierce",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Keenan Allen",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W3": 14.6,
+          "W3_Int": 13,
+          "W3_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "141 Rec Yds (0 TD) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chris Bell",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "67 Rec Yds"
+              },
+              {
+                "name": "Malik Washington",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "5 Rush Yds \u2022 56 Rec Yds"
+              },
+              {
+                "name": "Ryan Miller",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              },
+              {
+                "name": "Kevin Coleman Jr.",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "W4": 9.9,
+          "W4_Int": 8,
+          "W4_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "89 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Cody White",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "36 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Tre Tucker",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "44 Rec Yds"
+              },
+              {
+                "name": "Dareke Young",
+                "pts_frac": -0.1,
+                "pts_int": -1,
+                "stat_line": "9 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W5": "BYE",
+          "W5_Int": "BYE",
+          "W5_Detail": null,
+          "W6": 12.1,
+          "W6_Int": 10,
+          "W6_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "127 Rec Yds (0 TD) + 4 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Quentin Johnston",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "57 Rec Yds"
+              },
+              {
+                "name": "KeAndre Lambert-Smith",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "32 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Theo Wease Jr.",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              },
+              {
+                "name": "Ladd McConkey",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              },
+              {
+                "name": "Derius Davis",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rush Yds"
+              }
+            ]
+          },
+          "W7": 24.4,
+          "W7_Int": 24,
+          "W7_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "171 Rec Yds (1 TD) + 13 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaxon Smith-Njigba",
+                "pts_frac": 22.3,
+                "pts_int": 22,
+                "stat_line": "13 Rush Yds \u2022 150 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Cooper Kupp",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Rashid Shaheed",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rec Yds"
+              }
+            ]
+          },
+          "W8": 21.4,
+          "W8_Int": 19,
+          "W8_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "115 Rec Yds (1 TD) + 19 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaylen Waddle",
+                "pts_frac": 11.9,
+                "pts_int": 11,
+                "stat_line": "39 Rec Yds, 1 Rec TD \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Courtland Sutton",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              },
+              {
+                "name": "Marvin Mims Jr.",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "19 Rush Yds \u2022 10 Rec Yds"
+              },
+              {
+                "name": "Lil'Jordan Humphrey",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              },
+              {
+                "name": "Troy Franklin",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "W9": 6.2,
+          "W9_Int": 5,
+          "W9_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "58 Rec Yds (0 TD) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Omar Cooper Jr.",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "58 Rec Yds"
+              },
+              {
+                "name": "Isaiah Williams",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rush Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 27.6,
+          "Last_4_Games": 64.1,
+          "L4_PPG": 16.0,
+          "Total_pts": 110.9,
+          "PPG": 13.9,
+          "Last_2_Games_Int": 24,
+          "Last_4_Games_Int": 58,
+          "Total_pts_Int": 99,
+          "PPG_Int": 12.4,
+          "Stat_Summary": "905 Rec Yds (2 TD) + 64 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Falcons (ATL)",
+          "Week10_Offense": "Falcons (ATL)",
+          "Vuln_Rank": 31,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Seahawks (SEA)",
+          "Team": "SEA",
+          "Position": "WR",
+          "W1": 9.7,
+          "W1_Int": 9,
+          "W1_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "97 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Mack Hollins",
+                "pts_frac": 5.1,
+                "pts_int": 5,
+                "stat_line": "51 Rec Yds"
+              },
+              {
+                "name": "A.J. Brown",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              },
+              {
+                "name": "DeMario Douglas",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "W2": 2.9,
+          "W2_Int": 2,
+          "W2_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "29 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Wilson",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              },
+              {
+                "name": "Kendrick Bourne",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W3": 27.9,
+          "W3_Int": 26,
+          "W3_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "159 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Terry McLaurin",
+                "pts_frac": 13.7,
+                "pts_int": 13,
+                "stat_line": "77 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Treylon Burks",
+                "pts_frac": 7.3,
+                "pts_int": 7,
+                "stat_line": "13 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Stefon Diggs",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              },
+              {
+                "name": "Jaylin Lane",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              },
+              {
+                "name": "Antonio Williams",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "W4": 10.6,
+          "W4_Int": 10,
+          "W4_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "110 Rec Yds (0 TD) + -4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tre Harris",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "60 Rec Yds"
+              },
+              {
+                "name": "Quentin Johnston",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "-4 Rush Yds \u2022 44 Rec Yds"
+              },
+              {
+                "name": "Derius Davis",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W5": 28.4,
+          "W5_Int": 26,
+          "W5_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "150 Rec Yds (2 TD) + 4 Rush Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Mike Evans",
+                "pts_frac": 19.3,
+                "pts_int": 19,
+                "stat_line": "113 Rec Yds, 1 Rec TD \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Brandin Cooks",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "7 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Deebo Samuel Sr.",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "4 Rush Yds \u2022 21 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Jacob Cowing",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W6": 5.8,
+          "W6_Int": 4,
+          "W6_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "58 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jaylen Waddle",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              },
+              {
+                "name": "Courtland Sutton",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Marvin Mims Jr.",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              },
+              {
+                "name": "Troy Franklin",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W7": 3.9,
+          "W7_Int": 2,
+          "W7_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "39 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cyrus Allen",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              },
+              {
+                "name": "Xavier Worthy",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Justin Watson",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              },
+              {
+                "name": "Andrew Armstrong",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "W8": 26.0,
+          "W8_Int": 24,
+          "W8_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "161 Rec Yds (1 TD) + 39 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Luther Burden III",
+                "pts_frac": 11.6,
+                "pts_int": 11,
+                "stat_line": "56 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Rome Odunze",
+                "pts_frac": 8.7,
+                "pts_int": 8,
+                "stat_line": "87 Rec Yds"
+              },
+              {
+                "name": "Kalif Raymond",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "39 Rush Yds \u2022 14 Rec Yds"
+              },
+              {
+                "name": "Zavion Thomas",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W9": 9.3,
+          "W9_Int": 8,
+          "W9_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "93 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Wilson",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "60 Rec Yds"
+              },
+              {
+                "name": "Reggie Virgil",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Devin Duvernay",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 35.3,
+          "Last_4_Games": 45.0,
+          "L4_PPG": 11.2,
+          "Total_pts": 124.5,
+          "PPG": 13.8,
+          "Last_2_Games_Int": 32,
+          "Last_4_Games_Int": 38,
+          "Total_pts_Int": 111,
+          "PPG_Int": 12.3,
+          "Stat_Summary": "896 Rec Yds (5 TD) + 39 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Raiders (LV)",
+          "Week10_Offense": "Raiders (LV)",
+          "Vuln_Rank": 32,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        }
+      ]
+    },
+    "TE": {
+      "position": "TE",
+      "league_avg_ppg": 8.4,
+      "league_median": 6.9,
+      "p25_stingy": 3.2,
+      "p75_vulnerable": 12.3,
+      "p90_smash": 17.1,
+      "teams": [
+        {
+          "Defense": "Lions (DET)",
+          "Team": "DET",
+          "Position": "TE",
+          "W1": 20.7,
+          "W1_Int": 20,
+          "W1_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "87 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Juwan Johnson",
+                "pts_frac": 11.4,
+                "pts_int": 11,
+                "stat_line": "54 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Noah Fant",
+                "pts_frac": 9.3,
+                "pts_int": 9,
+                "stat_line": "33 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W2": 22.0,
+          "W2_Int": 21,
+          "W2_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "100 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Dalton Kincaid",
+                "pts_frac": 15.5,
+                "pts_int": 15,
+                "stat_line": "95 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Dawson Knox",
+                "pts_frac": 6.5,
+                "pts_int": 6,
+                "stat_line": "5 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W3": 28.4,
+          "W3_Int": 27,
+          "W3_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "164 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Kenyon Sadiq",
+                "pts_frac": 16.5,
+                "pts_int": 16,
+                "stat_line": "105 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jeremy Ruckert",
+                "pts_frac": 9.9,
+                "pts_int": 9,
+                "stat_line": "39 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jelani Woods",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "W4": 5.6,
+          "W4_Int": 4,
+          "W4_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "56 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Darren Waller",
+                "pts_frac": 3.6,
+                "pts_int": 3,
+                "stat_line": "36 Rec Yds"
+              },
+              {
+                "name": "Tommy Tremble",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              },
+              {
+                "name": "Mitchell Evans",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W5": 31.8,
+          "W5_Int": 30,
+          "W5_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "138 Rec Yds (3 TD)",
+            "players": [
+              {
+                "name": "Teagan Quitoriano",
+                "pts_frac": 13.5,
+                "pts_int": 13,
+                "stat_line": "15 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Trey McBride",
+                "pts_frac": 12.6,
+                "pts_int": 12,
+                "stat_line": "66 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Elijah Higgins",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "57 Rec Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 11.7,
+          "W7_Int": 10,
+          "W7_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "57 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Tucker Kraft",
+                "pts_frac": 10.8,
+                "pts_int": 10,
+                "stat_line": "48 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jonnu Smith",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W8": 14.2,
+          "W8_Int": 13,
+          "W8_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "82 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "T.J. Hockenson",
+                "pts_frac": 11.8,
+                "pts_int": 11,
+                "stat_line": "58 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Ben Yurosek",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              }
+            ]
+          },
+          "W9": 2.0,
+          "W9_Int": 1,
+          "W9_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "20 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Greg Dulcich",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              },
+              {
+                "name": "Will Kacmarek",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 16.2,
+          "Last_4_Games": 59.7,
+          "L4_PPG": 14.9,
+          "Total_pts": 136.4,
+          "PPG": 17.1,
+          "Last_2_Games_Int": 14,
+          "Last_4_Games_Int": 54,
+          "Total_pts_Int": 126,
+          "PPG_Int": 15.8,
+          "Stat_Summary": "704 Rec Yds (11 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Patriots (NE)",
+          "Week10_Offense": "Patriots (NE)",
+          "Vuln_Rank": 1,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Commanders (WAS)",
+          "Team": "WAS",
+          "Position": "TE",
+          "W1": 19.7,
+          "W1_Int": 19,
+          "W1_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "77 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Dallas Goedert",
+                "pts_frac": 19.7,
+                "pts_int": 19,
+                "stat_line": "77 Rec Yds, 2 Rec TD"
+              }
+            ]
+          },
+          "W2": 16.3,
+          "W2_Int": 16,
+          "W2_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "43 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Jake Ferguson",
+                "pts_frac": 16.3,
+                "pts_int": 16,
+                "stat_line": "43 Rec Yds, 2 Rec TD"
+              }
+            ]
+          },
+          "W3": 14.2,
+          "W3_Int": 13,
+          "W3_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "82 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Eric Saubert",
+                "pts_frac": 7.3,
+                "pts_int": 7,
+                "stat_line": "13 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "AJ Barner",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "69 Rec Yds"
+              }
+            ]
+          },
+          "W4": 4.1,
+          "W4_Int": 4,
+          "W4_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "41 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Warren",
+                "pts_frac": 4.1,
+                "pts_int": 4,
+                "stat_line": "41 Rec Yds"
+              }
+            ]
+          },
+          "W5": 24.9,
+          "W5_Int": 24,
+          "W5_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "129 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Isaiah Likely",
+                "pts_frac": 21.4,
+                "pts_int": 21,
+                "stat_line": "94 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Theo Johnson",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "35 Rec Yds"
+              }
+            ]
+          },
+          "W6": 12.9,
+          "W6_Int": 12,
+          "W6_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "69 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "George Kittle",
+                "pts_frac": 12.9,
+                "pts_int": 12,
+                "stat_line": "69 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 8.5,
+          "W8_Int": 8,
+          "W8_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "83 Rec Yds (0 TD) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Eli Stowers",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              },
+              {
+                "name": "Dallas Goedert",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "2 Rush Yds \u2022 30 Rec Yds"
+              }
+            ]
+          },
+          "W9": 2.6,
+          "W9_Int": 2,
+          "W9_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "26 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Colby Parkinson",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              },
+              {
+                "name": "Tyler Higbee",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 11.1,
+          "Last_4_Games": 48.9,
+          "L4_PPG": 12.2,
+          "Total_pts": 103.2,
+          "PPG": 12.9,
+          "Last_2_Games_Int": 10,
+          "Last_4_Games_Int": 46,
+          "Total_pts_Int": 98,
+          "PPG_Int": 12.2,
+          "Stat_Summary": "550 Rec Yds (8 TD) + 2 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Giants (NYG)",
+          "Week10_Offense": "Giants (NYG)",
+          "Vuln_Rank": 2,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Broncos (DEN)",
+          "Team": "DEN",
+          "Position": "TE",
+          "W1": 8.5,
+          "W1_Int": 7,
+          "W1_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "85 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Travis Kelce",
+                "pts_frac": 7.1,
+                "pts_int": 7,
+                "stat_line": "71 Rec Yds"
+              },
+              {
+                "name": "Jake Briningstool",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Noah Gray",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W2": 2.4,
+          "W2_Int": 1,
+          "W2_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "24 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brenton Strange",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              },
+              {
+                "name": "Quintin Morris",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W3": 15.0,
+          "W3_Int": 13,
+          "W3_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "90 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Tyler Higbee",
+                "pts_frac": 12.2,
+                "pts_int": 12,
+                "stat_line": "62 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Davis Allen",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Terrance Ferguson",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W4": 13.0,
+          "W4_Int": 13,
+          "W4_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "70 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "George Kittle",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "70 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W5": 9.4,
+          "W5_Int": 8,
+          "W5_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "44 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Hayden Rucci",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "7 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Charlie Kolar",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "37 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W6": 1.6,
+          "W6_Int": 1,
+          "W6_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "16 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "AJ Barner",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              }
+            ]
+          },
+          "W7": 18.8,
+          "W7_Int": 18,
+          "W7_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "128 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Trey McBride",
+                "pts_frac": 17.1,
+                "pts_int": 17,
+                "stat_line": "111 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Elijah Higgins",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "W8": 14.8,
+          "W8_Int": 13,
+          "W8_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "88 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Noah Gray",
+                "pts_frac": 7.5,
+                "pts_int": 7,
+                "stat_line": "15 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Travis Kelce",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "67 Rec Yds"
+              },
+              {
+                "name": "Jake Briningstool",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W9": 25.4,
+          "W9_Int": 25,
+          "W9_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "134 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Darren Waller",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "90 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tommy Tremble",
+                "pts_frac": 8.4,
+                "pts_int": 8,
+                "stat_line": "24 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mitchell Evans",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 40.2,
+          "Last_4_Games": 60.6,
+          "L4_PPG": 15.2,
+          "Total_pts": 108.9,
+          "PPG": 12.1,
+          "Last_2_Games_Int": 38,
+          "Last_4_Games_Int": 57,
+          "Total_pts_Int": 99,
+          "PPG_Int": 11.0,
+          "Stat_Summary": "679 Rec Yds (7 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 3,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Dolphins (MIA)",
+          "Team": "MIA",
+          "Position": "TE",
+          "W1": 3.2,
+          "W1_Int": 3,
+          "W1_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "32 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Mayer",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              }
+            ]
+          },
+          "W2": 14.0,
+          "W2_Int": 14,
+          "W2_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "80 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "George Kittle",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "80 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W3": 15.8,
+          "W3_Int": 14,
+          "W3_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "98 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Travis Kelce",
+                "pts_frac": 11.9,
+                "pts_int": 11,
+                "stat_line": "59 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Noah Gray",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "39 Rec Yds"
+              }
+            ]
+          },
+          "W4": 12.3,
+          "W4_Int": 11,
+          "W4_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "123 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "T.J. Hockenson",
+                "pts_frac": 11.9,
+                "pts_int": 11,
+                "stat_line": "119 Rec Yds"
+              },
+              {
+                "name": "Gavin Bartholomew",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W5": 16.8,
+          "W5_Int": 15,
+          "W5_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "48 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Tanner Hudson",
+                "pts_frac": 7.4,
+                "pts_int": 7,
+                "stat_line": "14 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mike Gesicki",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "4 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Erick All",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Drew Sample",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 20.7,
+          "W7_Int": 20,
+          "W7_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "67 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Mason Taylor",
+                "pts_frac": 20.2,
+                "pts_int": 20,
+                "stat_line": "62 Rec Yds, 2 Rec TD \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Kenyon Sadiq",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              },
+              {
+                "name": "Jelani Woods",
+                "pts_frac": -0.1,
+                "pts_int": 0,
+                "stat_line": "-1 Rec Yds"
+              }
+            ]
+          },
+          "W8": 3.5,
+          "W8_Int": 3,
+          "W8_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "35 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Hunter Henry",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "30 Rec Yds"
+              },
+              {
+                "name": "Eli Raridon",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W9": 3.2,
+          "W9_Int": 3,
+          "W9_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "32 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Sam LaPorta",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 6.7,
+          "Last_4_Games": 44.2,
+          "L4_PPG": 11.1,
+          "Total_pts": 89.5,
+          "PPG": 11.2,
+          "Last_2_Games_Int": 6,
+          "Last_4_Games_Int": 41,
+          "Total_pts_Int": 83,
+          "PPG_Int": 10.4,
+          "Stat_Summary": "515 Rec Yds (6 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Colts (IND)",
+          "Week10_Offense": "Colts (IND)",
+          "Vuln_Rank": 4,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Raiders (LV)",
+          "Team": "LV",
+          "Position": "TE",
+          "W1": 1.8,
+          "W1_Int": 1,
+          "W1_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "18 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Greg Dulcich",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              }
+            ]
+          },
+          "W2": 10.8,
+          "W2_Int": 9,
+          "W2_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "48 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Oronde Gadsden II",
+                "pts_frac": 7.8,
+                "pts_int": 7,
+                "stat_line": "18 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Charlie Kolar",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              },
+              {
+                "name": "David Njoku",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W3": 31.6,
+          "W3_Int": 31,
+          "W3_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "86 Rec Yds (4 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Juwan Johnson",
+                "pts_frac": 16.3,
+                "pts_int": 16,
+                "stat_line": "53 Rec Yds, 2 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Noah Fant",
+                "pts_frac": 15.3,
+                "pts_int": 15,
+                "stat_line": "33 Rec Yds, 2 Rec TD"
+              }
+            ]
+          },
+          "W4": 3.2,
+          "W4_Int": 2,
+          "W4_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "32 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Noah Gray",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              },
+              {
+                "name": "Travis Kelce",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "W5": 16.1,
+          "W5_Int": 15,
+          "W5_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "101 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Hunter Henry",
+                "pts_frac": 10.4,
+                "pts_int": 10,
+                "stat_line": "44 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Eli Raridon",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "57 Rec Yds"
+              }
+            ]
+          },
+          "W6": 3.8,
+          "W6_Int": 3,
+          "W6_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "38 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dalton Kincaid",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "38 Rec Yds"
+              }
+            ]
+          },
+          "W7": 20.2,
+          "W7_Int": 19,
+          "W7_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "82 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Davis Allen",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "20 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Colby Parkinson",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "48 Rec Yds"
+              },
+              {
+                "name": "Tyler Higbee",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              }
+            ]
+          },
+          "W8": 4.1,
+          "W8_Int": 3,
+          "W8_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "41 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kenyon Sadiq",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "Mason Taylor",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              }
+            ]
+          },
+          "W9": 5.8,
+          "W9_Int": 5,
+          "W9_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "58 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "George Kittle",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "58 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 9.9,
+          "Last_4_Games": 33.9,
+          "L4_PPG": 8.5,
+          "Total_pts": 97.4,
+          "PPG": 10.8,
+          "Last_2_Games_Int": 8,
+          "Last_4_Games_Int": 30,
+          "Total_pts_Int": 88,
+          "PPG_Int": 9.8,
+          "Stat_Summary": "504 Rec Yds (8 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Seahawks (SEA)",
+          "Week10_Offense": "Seahawks (SEA)",
+          "Vuln_Rank": 5,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Saints (NO)",
+          "Team": "NO",
+          "Position": "TE",
+          "W1": 5.3,
+          "W1_Int": 4,
+          "W1_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "53 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Sam LaPorta",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "48 Rec Yds"
+              },
+              {
+                "name": "Brock Wright",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W2": 4.9,
+          "W2_Int": 4,
+          "W2_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "49 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Mark Andrews",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "49 Rec Yds"
+              }
+            ]
+          },
+          "W3": 26.8,
+          "W3_Int": 26,
+          "W3_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "148 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Brock Bowers",
+                "pts_frac": 17.6,
+                "pts_int": 17,
+                "stat_line": "116 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Michael Mayer",
+                "pts_frac": 9.2,
+                "pts_int": 9,
+                "stat_line": "32 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W4": 5.6,
+          "W4_Int": 4,
+          "W4_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "56 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kyle Pitts",
+                "pts_frac": 4.7,
+                "pts_int": 4,
+                "stat_line": "47 Rec Yds"
+              },
+              {
+                "name": "Austin Hooper",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W5": 5.0,
+          "W5_Int": 4,
+          "W5_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "50 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Gavin Bartholomew",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              },
+              {
+                "name": "Ben Yurosek",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              },
+              {
+                "name": "T.J. Hockenson",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W6": 17.9,
+          "W6_Int": 17,
+          "W6_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "99 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Isaiah Likely",
+                "pts_frac": 17.9,
+                "pts_int": 17,
+                "stat_line": "99 Rec Yds, 1 Rec TD \u2022 1 Rush/Rec 2PT"
+              }
+            ]
+          },
+          "W7": 8.4,
+          "W7_Int": 8,
+          "W7_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "24 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Darnell Washington",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "4 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Pat Freiermuth",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 10.2,
+          "W9_Int": 10,
+          "W9_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "42 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Harold Fannin Jr.",
+                "pts_frac": 10.2,
+                "pts_int": 10,
+                "stat_line": "42 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 18.6,
+          "Last_4_Games": 41.5,
+          "L4_PPG": 10.4,
+          "Total_pts": 84.1,
+          "PPG": 10.5,
+          "Last_2_Games_Int": 18,
+          "Last_4_Games_Int": 39,
+          "Total_pts_Int": 77,
+          "PPG_Int": 9.6,
+          "Stat_Summary": "521 Rec Yds (5 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Panthers (CAR)",
+          "Week10_Offense": "Panthers (CAR)",
+          "Vuln_Rank": 6,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Cardinals (ARI)",
+          "Team": "ARI",
+          "Position": "TE",
+          "W1": 9.0,
+          "W1_Int": 8,
+          "W1_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "90 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "David Njoku",
+                "pts_frac": 5.8,
+                "pts_int": 5,
+                "stat_line": "58 Rec Yds"
+              },
+              {
+                "name": "Oronde Gadsden II",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              }
+            ]
+          },
+          "W2": 7.6,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "15 Rec Yds (0 TD) + 1 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "AJ Barner",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "1 Rush Yds, 1 Rush TD \u2022 8 Rec Yds"
+              },
+              {
+                "name": "Elijah Arroyo",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              },
+              {
+                "name": "Eric Saubert",
+                "pts_frac": -1.0,
+                "pts_int": 0,
+                "stat_line": "-10 Rec Yds"
+              }
+            ]
+          },
+          "W3": 20.2,
+          "W3_Int": 20,
+          "W3_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "82 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "George Kittle",
+                "pts_frac": 20.2,
+                "pts_int": 20,
+                "stat_line": "82 Rec Yds, 2 Rec TD"
+              }
+            ]
+          },
+          "W4": 13.7,
+          "W4_Int": 13,
+          "W4_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "77 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Theo Johnson",
+                "pts_frac": 7.1,
+                "pts_int": 7,
+                "stat_line": "11 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Isaiah Likely",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "66 Rec Yds"
+              }
+            ]
+          },
+          "W5": 15.9,
+          "W5_Int": 15,
+          "W5_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "99 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Sam LaPorta",
+                "pts_frac": 14.8,
+                "pts_int": 14,
+                "stat_line": "88 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Brock Wright",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W6": 10.3,
+          "W6_Int": 10,
+          "W6_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "53 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Colby Parkinson",
+                "pts_frac": 9.1,
+                "pts_int": 9,
+                "stat_line": "31 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tyler Higbee",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "22 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W7": 0.2,
+          "W7_Int": 0,
+          "W7_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "2 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Evan Engram",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W8": 3.1,
+          "W8_Int": 3,
+          "W8_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "31 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brevyn Spann-Ford",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "31 Rec Yds"
+              }
+            ]
+          },
+          "W9": 13.0,
+          "W9_Int": 13,
+          "W9_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "7 Rec Yds (1 TD) + 3 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "AJ Barner",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "3 Rush Yds, 1 Rush TD \u2022 7 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 16.1,
+          "Last_4_Games": 26.6,
+          "L4_PPG": 6.7,
+          "Total_pts": 93.0,
+          "PPG": 10.3,
+          "Last_2_Games_Int": 16,
+          "Last_4_Games_Int": 26,
+          "Total_pts_Int": 89,
+          "PPG_Int": 9.9,
+          "Stat_Summary": "456 Rec Yds (6 TD) + 4 Rush Yds (2 TD)",
+          "Week10_Opponent": "vs Rams (LA)",
+          "Week10_Offense": "Rams (LA)",
+          "Vuln_Rank": 7,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Chiefs (KC)",
+          "Team": "KC",
+          "Position": "TE",
+          "W1": 11.3,
+          "W1_Int": 11,
+          "W1_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "53 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Evan Engram",
+                "pts_frac": 10.3,
+                "pts_int": 10,
+                "stat_line": "43 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Adam Trautman",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W2": 8.4,
+          "W2_Int": 8,
+          "W2_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "21 Rec Yds (1 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Warren",
+                "pts_frac": 8.4,
+                "pts_int": 8,
+                "stat_line": "3 Rush Yds \u2022 21 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W3": 5.5,
+          "W3_Int": 5,
+          "W3_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "55 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Greg Dulcich",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "55 Rec Yds"
+              }
+            ]
+          },
+          "W4": 32.0,
+          "W4_Int": 31,
+          "W4_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "200 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Brock Bowers",
+                "pts_frac": 14.6,
+                "pts_int": 14,
+                "stat_line": "86 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Ian Thomas",
+                "pts_frac": 9.2,
+                "pts_int": 9,
+                "stat_line": "32 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Michael Mayer",
+                "pts_frac": 8.2,
+                "pts_int": 8,
+                "stat_line": "82 Rec Yds"
+              }
+            ]
+          },
+          "W5": "BYE",
+          "W5_Int": "BYE",
+          "W5_Detail": null,
+          "W6": 3.7,
+          "W6_Int": 3,
+          "W6_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "37 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Charlie Kolar",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Oronde Gadsden II",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "W7": 6.3,
+          "W7_Int": 5,
+          "W7_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "59 Rec Yds (0 TD) + 4 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "AJ Barner",
+                "pts_frac": 4.6,
+                "pts_int": 4,
+                "stat_line": "4 Rush Yds \u2022 42 Rec Yds"
+              },
+              {
+                "name": "Eric Saubert",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "W8": 9.4,
+          "W8_Int": 9,
+          "W8_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "34 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Nate Adkins",
+                "pts_frac": 6.4,
+                "pts_int": 6,
+                "stat_line": "4 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Adam Trautman",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "30 Rec Yds"
+              }
+            ]
+          },
+          "W9": 6.0,
+          "W9_Int": 5,
+          "W9_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "60 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kenyon Sadiq",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "49 Rec Yds"
+              },
+              {
+                "name": "Mason Taylor",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 15.4,
+          "Last_4_Games": 25.4,
+          "L4_PPG": 6.3,
+          "Total_pts": 82.6,
+          "PPG": 10.3,
+          "Last_2_Games_Int": 14,
+          "Last_4_Games_Int": 22,
+          "Total_pts_Int": 77,
+          "PPG_Int": 9.6,
+          "Stat_Summary": "519 Rec Yds (5 TD) + 7 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Falcons (ATL)",
+          "Week10_Offense": "Falcons (ATL)",
+          "Vuln_Rank": 8,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Colts (IND)",
+          "Team": "IND",
+          "Position": "TE",
+          "W1": 6.6,
+          "W1_Int": 5,
+          "W1_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "66 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Mark Andrews",
+                "pts_frac": 4.9,
+                "pts_int": 4,
+                "stat_line": "49 Rec Yds"
+              },
+              {
+                "name": "Matthew Hibner",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              },
+              {
+                "name": "Durham Smythe",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W2": 16.1,
+          "W2_Int": 16,
+          "W2_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "101 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Travis Kelce",
+                "pts_frac": 16.1,
+                "pts_int": 16,
+                "stat_line": "101 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W3": 9.7,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "37 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Foster Moreau",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "7 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Dalton Schultz",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "30 Rec Yds"
+              }
+            ]
+          },
+          "W4": 0.5,
+          "W4_Int": 0,
+          "W4_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "5 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chig Okonkwo",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W5": 17.7,
+          "W5_Int": 17,
+          "W5_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "56 Rec Yds (2 TD) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Pat Freiermuth",
+                "pts_frac": 16.5,
+                "pts_int": 16,
+                "stat_line": "1 Rush Yds \u2022 44 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Darnell Washington",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W6": 0.0,
+          "W6_Int": 0,
+          "W6_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "0 Rec Yds (0 TD)",
+            "players": []
+          },
+          "W7": 11.2,
+          "W7_Int": 10,
+          "W7_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "52 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "T.J. Hockenson",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "35 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Gavin Bartholomew",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "W8": 15.4,
+          "W8_Int": 14,
+          "W8_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "94 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Nate Boerkircher",
+                "pts_frac": 9.1,
+                "pts_int": 9,
+                "stat_line": "31 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Brenton Strange",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "55 Rec Yds"
+              },
+              {
+                "name": "Tanner Koziol",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W9": 10.1,
+          "W9_Int": 10,
+          "W9_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "41 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Jake Ferguson",
+                "pts_frac": 8.1,
+                "pts_int": 8,
+                "stat_line": "21 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Brevyn Spann-Ford",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 25.5,
+          "Last_4_Games": 36.7,
+          "L4_PPG": 9.2,
+          "Total_pts": 87.3,
+          "PPG": 9.7,
+          "Last_2_Games_Int": 24,
+          "Last_4_Games_Int": 34,
+          "Total_pts_Int": 81,
+          "PPG_Int": 9.0,
+          "Stat_Summary": "452 Rec Yds (7 TD) + 1 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Dolphins (MIA)",
+          "Week10_Offense": "Dolphins (MIA)",
+          "Vuln_Rank": 9,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Browns (CLE)",
+          "Team": "CLE",
+          "Position": "TE",
+          "W1": 9.2,
+          "W1_Int": 8,
+          "W1_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "32 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Brenton Strange",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "23 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Nate Boerkircher",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W2": 3.8,
+          "W2_Int": 3,
+          "W2_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "38 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cade Otton",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "38 Rec Yds"
+              }
+            ]
+          },
+          "W3": 12.8,
+          "W3_Int": 12,
+          "W3_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "128 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Darren Waller",
+                "pts_frac": 5.1,
+                "pts_int": 5,
+                "stat_line": "51 Rec Yds"
+              },
+              {
+                "name": "Tommy Tremble",
+                "pts_frac": 4.1,
+                "pts_int": 4,
+                "stat_line": "41 Rec Yds"
+              },
+              {
+                "name": "Mitchell Evans",
+                "pts_frac": 3.6,
+                "pts_int": 3,
+                "stat_line": "36 Rec Yds"
+              }
+            ]
+          },
+          "W4": 16.4,
+          "W4_Int": 15,
+          "W4_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "44 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Darnell Washington",
+                "pts_frac": 8.7,
+                "pts_int": 8,
+                "stat_line": "27 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Pat Freiermuth",
+                "pts_frac": 7.7,
+                "pts_int": 7,
+                "stat_line": "17 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W5": 1.7,
+          "W5_Int": 1,
+          "W5_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "27 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Mason Taylor",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              },
+              {
+                "name": "Kenyon Sadiq",
+                "pts_frac": -0.7,
+                "pts_int": -1,
+                "stat_line": "3 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W6": 10.8,
+          "W6_Int": 10,
+          "W6_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "48 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Josh Cuevas",
+                "pts_frac": 10.4,
+                "pts_int": 10,
+                "stat_line": "44 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mark Andrews",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W7": 2.8,
+          "W7_Int": 2,
+          "W7_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "28 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Gunnar Helm",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              },
+              {
+                "name": "Daniel Bellinger",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W8": 19.0,
+          "W8_Int": 18,
+          "W8_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "129 Rec Yds (0 TD) + 1 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Pat Freiermuth",
+                "pts_frac": 9.6,
+                "pts_int": 9,
+                "stat_line": "1 Rush Yds, 1 Rush TD \u2022 35 Rec Yds"
+              },
+              {
+                "name": "Darnell Washington",
+                "pts_frac": 9.4,
+                "pts_int": 9,
+                "stat_line": "94 Rec Yds"
+              }
+            ]
+          },
+          "W9": 10.6,
+          "W9_Int": 10,
+          "W9_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "46 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Juwan Johnson",
+                "pts_frac": 9.4,
+                "pts_int": 9,
+                "stat_line": "34 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Noah Fant",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 29.6,
+          "Last_4_Games": 43.2,
+          "L4_PPG": 10.8,
+          "Total_pts": 87.1,
+          "PPG": 9.7,
+          "Last_2_Games_Int": 28,
+          "Last_4_Games_Int": 40,
+          "Total_pts_Int": 79,
+          "PPG_Int": 8.8,
+          "Stat_Summary": "520 Rec Yds (5 TD) + 1 Rush Yds (1 TD)",
+          "Week10_Opponent": "vs Texans (HOU)",
+          "Week10_Offense": "Texans (HOU)",
+          "Vuln_Rank": 10,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Ravens (BAL)",
+          "Team": "BAL",
+          "Position": "TE",
+          "W1": 7.3,
+          "W1_Int": 7,
+          "W1_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "13 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Tyler Warren",
+                "pts_frac": 7.3,
+                "pts_int": 7,
+                "stat_line": "13 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W2": 7.4,
+          "W2_Int": 6,
+          "W2_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "74 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Juwan Johnson",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "66 Rec Yds"
+              },
+              {
+                "name": "Oscar Delp",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W3": 10.1,
+          "W3_Int": 8,
+          "W3_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "51 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Jake Ferguson",
+                "pts_frac": 7.3,
+                "pts_int": 7,
+                "stat_line": "23 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Brevyn Spann-Ford",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Luke Schoonmaker",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W4": 2.7,
+          "W4_Int": 2,
+          "W4_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "7 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Gunnar Helm",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "5 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Daniel Bellinger",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W5": 11.5,
+          "W5_Int": 11,
+          "W5_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "55 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Kyle Pitts",
+                "pts_frac": 10.2,
+                "pts_int": 10,
+                "stat_line": "42 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Charlie Woerner",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W6": 1.7,
+          "W6_Int": 0,
+          "W6_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "17 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Harold Fannin Jr.",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Blake Whiteheart",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W7": 17.6,
+          "W7_Int": 16,
+          "W7_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "56 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Drew Sample",
+                "pts_frac": 8.4,
+                "pts_int": 8,
+                "stat_line": "24 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mike Gesicki",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "6 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Erick All",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              }
+            ]
+          },
+          "W8": 15.9,
+          "W8_Int": 14,
+          "W8_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "99 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Dalton Kincaid",
+                "pts_frac": 14.6,
+                "pts_int": 14,
+                "stat_line": "86 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jackson Hawes",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              },
+              {
+                "name": "Dawson Knox",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W9": 9.8,
+          "W9_Int": 9,
+          "W9_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "98 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Nate Boerkircher",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "61 Rec Yds"
+              },
+              {
+                "name": "Brenton Strange",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "Tanner Koziol",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 25.7,
+          "Last_4_Games": 45.0,
+          "L4_PPG": 11.2,
+          "Total_pts": 84.0,
+          "PPG": 9.3,
+          "Last_2_Games_Int": 23,
+          "Last_4_Games_Int": 39,
+          "Total_pts_Int": 73,
+          "PPG_Int": 8.1,
+          "Stat_Summary": "470 Rec Yds (6 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Chargers (LAC)",
+          "Week10_Offense": "Chargers (LAC)",
+          "Vuln_Rank": 11,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Bengals (CIN)",
+          "Team": "CIN",
+          "Position": "TE",
+          "W1": 2.6,
+          "W1_Int": 2,
+          "W1_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "26 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cade Otton",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              }
+            ]
+          },
+          "W2": 17.4,
+          "W2_Int": 17,
+          "W2_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "174 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dalton Schultz",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "140 Rec Yds"
+              },
+              {
+                "name": "Foster Moreau",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "34 Rec Yds"
+              }
+            ]
+          },
+          "W3": 10.0,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "99 Rec Yds (0 TD) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Darnell Washington",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "67 Rec Yds"
+              },
+              {
+                "name": "Pat Freiermuth",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "1 Rush Yds \u2022 30 Rec Yds"
+              },
+              {
+                "name": "Robert Tonyan",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W4": 11.0,
+          "W4_Int": 10,
+          "W4_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "110 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brenton Strange",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "95 Rec Yds"
+              },
+              {
+                "name": "Nate Boerkircher",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "W5": 6.2,
+          "W5_Int": 5,
+          "W5_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "42 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Greg Dulcich",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "37 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Will Kacmarek",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 5.8,
+          "W7_Int": 5,
+          "W7_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "58 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Josh Cuevas",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "35 Rec Yds"
+              },
+              {
+                "name": "Mark Andrews",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "23 Rec Yds"
+              }
+            ]
+          },
+          "W8": 13.2,
+          "W8_Int": 12,
+          "W8_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "112 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Gunnar Helm",
+                "pts_frac": 9.6,
+                "pts_int": 9,
+                "stat_line": "76 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Daniel Bellinger",
+                "pts_frac": 3.6,
+                "pts_int": 3,
+                "stat_line": "36 Rec Yds"
+              }
+            ]
+          },
+          "W9": 8.4,
+          "W9_Int": 8,
+          "W9_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "24 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Charlie Woerner",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "1 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Kyle Pitts",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "23 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 21.6,
+          "Last_4_Games": 33.6,
+          "L4_PPG": 8.4,
+          "Total_pts": 74.6,
+          "PPG": 9.3,
+          "Last_2_Games_Int": 20,
+          "Last_4_Games_Int": 30,
+          "Total_pts_Int": 68,
+          "PPG_Int": 8.5,
+          "Stat_Summary": "645 Rec Yds (1 TD) + 1 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Steelers (PIT)",
+          "Week10_Offense": "Steelers (PIT)",
+          "Vuln_Rank": 12,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Buccaneers (TB)",
+          "Team": "TB",
+          "Position": "TE",
+          "W1": 16.1,
+          "W1_Int": 14,
+          "W1_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "101 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Mike Gesicki",
+                "pts_frac": 13.8,
+                "pts_int": 13,
+                "stat_line": "78 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Drew Sample",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Tanner Hudson",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W2": 13.1,
+          "W2_Int": 12,
+          "W2_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "71 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Blake Whiteheart",
+                "pts_frac": 7.7,
+                "pts_int": 7,
+                "stat_line": "17 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Harold Fannin Jr.",
+                "pts_frac": 5.4,
+                "pts_int": 5,
+                "stat_line": "54 Rec Yds"
+              }
+            ]
+          },
+          "W3": 1.1,
+          "W3_Int": 1,
+          "W3_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "11 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "T.J. Hockenson",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W4": 15.3,
+          "W4_Int": 13,
+          "W4_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "90 Rec Yds (1 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tucker Kraft",
+                "pts_frac": 10.5,
+                "pts_int": 10,
+                "stat_line": "3 Rush Yds \u2022 42 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mark Redman",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "29 Rec Yds"
+              },
+              {
+                "name": "Jonnu Smith",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              }
+            ]
+          },
+          "W5": 2.8,
+          "W5_Int": 1,
+          "W5_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "28 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jake Ferguson",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Luke Schoonmaker",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W6": 9.6,
+          "W6_Int": 9,
+          "W6_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "36 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Darnell Washington",
+                "pts_frac": 8.5,
+                "pts_int": 8,
+                "stat_line": "25 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Pat Freiermuth",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W7": 15.7,
+          "W7_Int": 14,
+          "W7_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "97 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Darren Waller",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "50 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mitchell Evans",
+                "pts_frac": 3.9,
+                "pts_int": 3,
+                "stat_line": "39 Rec Yds"
+              },
+              {
+                "name": "Tommy Tremble",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W8": 1.5,
+          "W8_Int": 0,
+          "W8_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "15 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Austin Hooper",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Kyle Pitts",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W9": 7.7,
+          "W9_Int": 7,
+          "W9_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "77 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Colston Loveland",
+                "pts_frac": 5.4,
+                "pts_int": 5,
+                "stat_line": "54 Rec Yds"
+              },
+              {
+                "name": "Sam Roush",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "23 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 9.2,
+          "Last_4_Games": 34.5,
+          "L4_PPG": 8.6,
+          "Total_pts": 82.9,
+          "PPG": 9.2,
+          "Last_2_Games_Int": 7,
+          "Last_4_Games_Int": 30,
+          "Total_pts_Int": 71,
+          "PPG_Int": 7.9,
+          "Stat_Summary": "526 Rec Yds (5 TD) + 3 Rush Yds (0 TD)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 13,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Jets (NYJ)",
+          "Team": "NYJ",
+          "Position": "TE",
+          "W1": 3.5,
+          "W1_Int": 2,
+          "W1_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "35 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Gunnar Helm",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "28 Rec Yds"
+              },
+              {
+                "name": "Daniel Bellinger",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W2": 1.5,
+          "W2_Int": 1,
+          "W2_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "15 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tucker Kraft",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "W3": 5.9,
+          "W3_Int": 4,
+          "W3_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "59 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Sam LaPorta",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "44 Rec Yds"
+              },
+              {
+                "name": "Jackson Meeks",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              },
+              {
+                "name": "Brock Wright",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W4": 7.8,
+          "W4_Int": 6,
+          "W4_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "78 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Colston Loveland",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "57 Rec Yds"
+              },
+              {
+                "name": "Cole Kmet",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              },
+              {
+                "name": "Sam Roush",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W5": 0.4,
+          "W5_Int": 0,
+          "W5_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "4 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Harold Fannin Jr.",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W6": 11.9,
+          "W6_Int": 11,
+          "W6_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "59 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Hunter Henry",
+                "pts_frac": 10.8,
+                "pts_int": 10,
+                "stat_line": "48 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Eli Raridon",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W7": 8.6,
+          "W7_Int": 8,
+          "W7_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "86 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Greg Dulcich",
+                "pts_frac": 8.6,
+                "pts_int": 8,
+                "stat_line": "86 Rec Yds"
+              }
+            ]
+          },
+          "W8": 26.5,
+          "W8_Int": 26,
+          "W8_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "145 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Brock Bowers",
+                "pts_frac": 21.2,
+                "pts_int": 21,
+                "stat_line": "92 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Michael Mayer",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              }
+            ]
+          },
+          "W9": 14.7,
+          "W9_Int": 14,
+          "W9_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "86 Rec Yds (0 TD) + 1 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Travis Kelce",
+                "pts_frac": 13.3,
+                "pts_int": 13,
+                "stat_line": "1 Rush Yds, 1 Rush TD \u2022 72 Rec Yds"
+              },
+              {
+                "name": "Noah Gray",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Jake Briningstool",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 41.2,
+          "Last_4_Games": 61.7,
+          "L4_PPG": 15.4,
+          "Total_pts": 80.8,
+          "PPG": 9.0,
+          "Last_2_Games_Int": 40,
+          "Last_4_Games_Int": 59,
+          "Total_pts_Int": 72,
+          "PPG_Int": 8.0,
+          "Stat_Summary": "567 Rec Yds (3 TD) + 1 Rush Yds (1 TD)",
+          "Week10_Opponent": "vs Bills (BUF)",
+          "Week10_Offense": "Bills (BUF)",
+          "Vuln_Rank": 14,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Panthers (CAR)",
+          "Team": "CAR",
+          "Position": "TE",
+          "W1": 9.5,
+          "W1_Int": 9,
+          "W1_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "35 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Cole Kmet",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "35 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W2": 3.5,
+          "W2_Int": 3,
+          "W2_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "35 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Austin Hooper",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Kyle Pitts",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "W3": 17.1,
+          "W3_Int": 17,
+          "W3_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "51 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Harold Fannin Jr.",
+                "pts_frac": 17.1,
+                "pts_int": 17,
+                "stat_line": "51 Rec Yds, 2 Rec TD"
+              }
+            ]
+          },
+          "W4": 15.2,
+          "W4_Int": 14,
+          "W4_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "92 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Sam LaPorta",
+                "pts_frac": 14.4,
+                "pts_int": 14,
+                "stat_line": "84 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Brock Wright",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W5": "BYE",
+          "W5_Int": "BYE",
+          "W5_Detail": null,
+          "W6": 6.5,
+          "W6_Int": 6,
+          "W6_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "65 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dallas Goedert",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "61 Rec Yds"
+              },
+              {
+                "name": "Johnny Mundt",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W7": 0.0,
+          "W7_Int": 0,
+          "W7_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "0 Rec Yds (0 TD)",
+            "players": []
+          },
+          "W8": 11.3,
+          "W8_Int": 11,
+          "W8_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "53 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Tucker Kraft",
+                "pts_frac": 11.3,
+                "pts_int": 11,
+                "stat_line": "53 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W9": 4.8,
+          "W9_Int": 4,
+          "W9_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "48 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Evan Engram",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              },
+              {
+                "name": "Adam Trautman",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 16.1,
+          "Last_4_Games": 22.6,
+          "L4_PPG": 5.7,
+          "Total_pts": 67.9,
+          "PPG": 8.5,
+          "Last_2_Games_Int": 15,
+          "Last_4_Games_Int": 21,
+          "Total_pts_Int": 64,
+          "PPG_Int": 8.0,
+          "Stat_Summary": "379 Rec Yds (5 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Saints (NO)",
+          "Week10_Offense": "Saints (NO)",
+          "Vuln_Rank": 15,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Titans (TEN)",
+          "Team": "TEN",
+          "Position": "TE",
+          "W1": 8.6,
+          "W1_Int": 8,
+          "W1_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "23 Rec Yds (0 TD) + 3 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Kenyon Sadiq",
+                "pts_frac": 8.4,
+                "pts_int": 8,
+                "stat_line": "3 Rush Yds, 1 Rush TD \u2022 21 Rec Yds"
+              },
+              {
+                "name": "Jeremy Ruckert",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              },
+              {
+                "name": "Mason Taylor",
+                "pts_frac": -0.2,
+                "pts_int": 0,
+                "stat_line": "-2 Rec Yds"
+              }
+            ]
+          },
+          "W2": 1.2,
+          "W2_Int": 0,
+          "W2_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "12 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Johnny Mundt",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              },
+              {
+                "name": "Dallas Goedert",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W3": 1.3,
+          "W3_Int": 1,
+          "W3_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "13 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Isaiah Likely",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W4": 12.1,
+          "W4_Int": 11,
+          "W4_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "61 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Mark Andrews",
+                "pts_frac": 8.7,
+                "pts_int": 8,
+                "stat_line": "27 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Matthew Hibner",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "34 Rec Yds"
+              }
+            ]
+          },
+          "W5": 3.8,
+          "W5_Int": 3,
+          "W5_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "38 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dalton Schultz",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "30 Rec Yds"
+              },
+              {
+                "name": "Foster Moreau",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W6": 8.8,
+          "W6_Int": 8,
+          "W6_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "28 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Mo Alie-Cox",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "1 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Will Mallory",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Pharaoh Brown",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W7": 8.1,
+          "W7_Int": 8,
+          "W7_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "91 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Harold Fannin Jr.",
+                "pts_frac": 8.1,
+                "pts_int": 8,
+                "stat_line": "91 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W8": 19.7,
+          "W8_Int": 19,
+          "W8_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "77 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Mike Gesicki",
+                "pts_frac": 13.6,
+                "pts_int": 13,
+                "stat_line": "76 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Jack Endries",
+                "pts_frac": 6.1,
+                "pts_int": 6,
+                "stat_line": "1 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W9": "BYE",
+          "W9_Int": "BYE",
+          "W9_Detail": null,
+          "GP": 8,
+          "Last_2_Games": 27.8,
+          "Last_4_Games": 40.4,
+          "L4_PPG": 10.1,
+          "Total_pts": 63.6,
+          "PPG": 8.0,
+          "Last_2_Games_Int": 27,
+          "Last_4_Games_Int": 38,
+          "Total_pts_Int": 58,
+          "PPG_Int": 7.2,
+          "Stat_Summary": "343 Rec Yds (4 TD) + 3 Rush Yds (1 TD)",
+          "Week10_Opponent": "vs Jaguars (JAX)",
+          "Week10_Offense": "Jaguars (JAX)",
+          "Vuln_Rank": 16,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Steelers (PIT)",
+          "Team": "PIT",
+          "Position": "TE",
+          "W1": 0.0,
+          "W1_Int": 0,
+          "W1_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "0 Rec Yds (0 TD)",
+            "players": []
+          },
+          "W2": 7.0,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "70 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Hunter Henry",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "40 Rec Yds"
+              },
+              {
+                "name": "Eli Raridon",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "30 Rec Yds"
+              }
+            ]
+          },
+          "W3": 11.0,
+          "W3_Int": 10,
+          "W3_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "50 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Mike Gesicki",
+                "pts_frac": 9.7,
+                "pts_int": 9,
+                "stat_line": "37 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tanner Hudson",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W4": 8.7,
+          "W4_Int": 8,
+          "W4_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "27 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Harold Fannin Jr.",
+                "pts_frac": 8.7,
+                "pts_int": 8,
+                "stat_line": "27 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W5": 16.2,
+          "W5_Int": 15,
+          "W5_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "101 Rec Yds (0 TD) + 1 Rush Yds (1 TD)",
+            "players": [
+              {
+                "name": "Tyler Warren",
+                "pts_frac": 14.4,
+                "pts_int": 14,
+                "stat_line": "1 Rush Yds, 1 Rush TD \u2022 83 Rec Yds"
+              },
+              {
+                "name": "Mo Alie-Cox",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              },
+              {
+                "name": "Andrew Ogletree",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W6": 2.5,
+          "W6_Int": 2,
+          "W6_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "25 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Bauer Sharp",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              },
+              {
+                "name": "Cade Otton",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W7": 2.0,
+          "W7_Int": 1,
+          "W7_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "20 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Noah Fant",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Juwan Johnson",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              },
+              {
+                "name": "Oscar Delp",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W8": 15.3,
+          "W8_Int": 14,
+          "W8_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "163 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Harold Fannin Jr.",
+                "pts_frac": 14.4,
+                "pts_int": 14,
+                "stat_line": "154 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Blake Whiteheart",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W9": "BYE",
+          "W9_Int": "BYE",
+          "W9_Detail": null,
+          "GP": 8,
+          "Last_2_Games": 17.3,
+          "Last_4_Games": 36.0,
+          "L4_PPG": 9.0,
+          "Total_pts": 62.7,
+          "PPG": 7.8,
+          "Last_2_Games_Int": 15,
+          "Last_4_Games_Int": 32,
+          "Total_pts_Int": 57,
+          "PPG_Int": 7.1,
+          "Stat_Summary": "456 Rec Yds (2 TD) + 1 Rush Yds (1 TD)",
+          "Week10_Opponent": "@ Bengals (CIN)",
+          "Week10_Offense": "Bengals (CIN)",
+          "Vuln_Rank": 17,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Cowboys (DAL)",
+          "Team": "DAL",
+          "Position": "TE",
+          "W1": 20.7,
+          "W1_Int": 19,
+          "W1_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "87 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Isaiah Likely",
+                "pts_frac": 19.8,
+                "pts_int": 19,
+                "stat_line": "78 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Theo Johnson",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W2": 2.0,
+          "W2_Int": 1,
+          "W2_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "20 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Colson Yankoff",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              },
+              {
+                "name": "Ben Sinnott",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W3": 12.1,
+          "W3_Int": 11,
+          "W3_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "61 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Matthew Hibner",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "23 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Mark Andrews",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              },
+              {
+                "name": "Josh Cuevas",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              }
+            ]
+          },
+          "W4": 4.3,
+          "W4_Int": 3,
+          "W4_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "43 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cade Stover",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Brevin Jordan",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              },
+              {
+                "name": "Dalton Schultz",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Foster Moreau",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rec Yds"
+              }
+            ]
+          },
+          "W5": 3.0,
+          "W5_Int": 2,
+          "W5_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "30 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cade Otton",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Payne Durham",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W6": 3.7,
+          "W6_Int": 3,
+          "W6_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "37 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tucker Kraft",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              }
+            ]
+          },
+          "W7": 4.8,
+          "W7_Int": 4,
+          "W7_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "48 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dallas Goedert",
+                "pts_frac": 4.8,
+                "pts_int": 4,
+                "stat_line": "48 Rec Yds"
+              }
+            ]
+          },
+          "W8": 14.2,
+          "W8_Int": 14,
+          "W8_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "82 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Trey McBride",
+                "pts_frac": 13.2,
+                "pts_int": 13,
+                "stat_line": "72 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Elijah Higgins",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W9": 4.4,
+          "W9_Int": 4,
+          "W9_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "44 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Warren",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "44 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 18.6,
+          "Last_4_Games": 27.1,
+          "L4_PPG": 6.8,
+          "Total_pts": 69.2,
+          "PPG": 7.7,
+          "Last_2_Games_Int": 18,
+          "Last_4_Games_Int": 25,
+          "Total_pts_Int": 61,
+          "PPG_Int": 6.8,
+          "Stat_Summary": "452 Rec Yds (4 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs 49ers (SF)",
+          "Week10_Offense": "49ers (SF)",
+          "Vuln_Rank": 18,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "49ers (SF)",
+          "Team": "SF",
+          "Position": "TE",
+          "W1": 2.1,
+          "W1_Int": 1,
+          "W1_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "31 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Davis Allen",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              },
+              {
+                "name": "Colby Parkinson",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              },
+              {
+                "name": "Tyler Higbee",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "12 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W2": 2.1,
+          "W2_Int": 1,
+          "W2_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "21 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Greg Dulcich",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              },
+              {
+                "name": "Will Kacmarek",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W3": 10.0,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "100 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Trey McBride",
+                "pts_frac": 7.5,
+                "pts_int": 7,
+                "stat_line": "75 Rec Yds"
+              },
+              {
+                "name": "Elijah Higgins",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              },
+              {
+                "name": "Hunter Long",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W4": 0.6,
+          "W4_Int": 0,
+          "W4_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "6 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Evan Engram",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W5": 2.0,
+          "W5_Int": 2,
+          "W5_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "20 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "AJ Barner",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "W6": 7.3,
+          "W6_Int": 6,
+          "W6_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "73 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chig Okonkwo",
+                "pts_frac": 6.9,
+                "pts_int": 6,
+                "stat_line": "69 Rec Yds"
+              },
+              {
+                "name": "John Bates",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W7": 17.7,
+          "W7_Int": 17,
+          "W7_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "54 Rec Yds (2 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kyle Pitts",
+                "pts_frac": 8.2,
+                "pts_int": 8,
+                "stat_line": "22 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Nick Muse",
+                "pts_frac": 6.2,
+                "pts_int": 6,
+                "stat_line": "2 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Austin Hooper",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              },
+              {
+                "name": "Charlie Woerner",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "3 Rush Yds \u2022 9 Rec Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 19.0,
+          "W9_Int": 18,
+          "W9_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "148 Rec Yds (1 TD) + 2 Rush Yds (0 TD) \u2022 2 Fumb Lost",
+            "players": [
+              {
+                "name": "Brock Bowers",
+                "pts_frac": 16.3,
+                "pts_int": 16,
+                "stat_line": "2 Rush Yds \u2022 111 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Michael Mayer",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "37 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 36.7,
+          "Last_4_Games": 46.0,
+          "L4_PPG": 11.5,
+          "Total_pts": 60.8,
+          "PPG": 7.6,
+          "Last_2_Games_Int": 35,
+          "Last_4_Games_Int": 43,
+          "Total_pts_Int": 54,
+          "PPG_Int": 6.8,
+          "Stat_Summary": "453 Rec Yds (3 TD) + 5 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Cowboys (DAL)",
+          "Week10_Offense": "Cowboys (DAL)",
+          "Vuln_Rank": 19,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Falcons (ATL)",
+          "Team": "ATL",
+          "Position": "TE",
+          "W1": 12.4,
+          "W1_Int": 11,
+          "W1_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "64 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Pat Freiermuth",
+                "pts_frac": 10.6,
+                "pts_int": 10,
+                "stat_line": "46 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Darnell Washington",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              }
+            ]
+          },
+          "W2": 17.0,
+          "W2_Int": 16,
+          "W2_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "50 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Darren Waller",
+                "pts_frac": 15.3,
+                "pts_int": 15,
+                "stat_line": "33 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Mitchell Evans",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              },
+              {
+                "name": "Tommy Tremble",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W3": 4.2,
+          "W3_Int": 3,
+          "W3_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "42 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tucker Kraft",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              },
+              {
+                "name": "Jonnu Smith",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              }
+            ]
+          },
+          "W4": 5.9,
+          "W4_Int": 5,
+          "W4_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "59 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Juwan Johnson",
+                "pts_frac": 5.9,
+                "pts_int": 5,
+                "stat_line": "59 Rec Yds"
+              }
+            ]
+          },
+          "W5": 4.4,
+          "W5_Int": 3,
+          "W5_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "54 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Josh Cuevas",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              },
+              {
+                "name": "Mark Andrews",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "28 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W6": 12.8,
+          "W6_Int": 12,
+          "W6_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "68 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Colston Loveland",
+                "pts_frac": 12.5,
+                "pts_int": 12,
+                "stat_line": "65 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Cole Kmet",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "W7": 9.2,
+          "W7_Int": 8,
+          "W7_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "102 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "George Kittle",
+                "pts_frac": 7.8,
+                "pts_int": 7,
+                "stat_line": "88 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Luke Farrell",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              }
+            ]
+          },
+          "W8": 0.0,
+          "W8_Int": 0,
+          "W8_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "0 Rec Yds (0 TD)",
+            "players": []
+          },
+          "W9": 1.5,
+          "W9_Int": 1,
+          "W9_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "15 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Mike Gesicki",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Jack Endries",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 1.5,
+          "Last_4_Games": 23.5,
+          "L4_PPG": 5.9,
+          "Total_pts": 67.4,
+          "PPG": 7.5,
+          "Last_2_Games_Int": 1,
+          "Last_4_Games_Int": 21,
+          "Total_pts_Int": 59,
+          "PPG_Int": 6.6,
+          "Stat_Summary": "454 Rec Yds (4 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Chiefs (KC)",
+          "Week10_Offense": "Chiefs (KC)",
+          "Vuln_Rank": 20,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Bills (BUF)",
+          "Team": "BUF",
+          "Position": "TE",
+          "W1": 6.4,
+          "W1_Int": 5,
+          "W1_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "64 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dalton Schultz",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "35 Rec Yds"
+              },
+              {
+                "name": "Marlin Klein",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              },
+              {
+                "name": "Foster Moreau",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              },
+              {
+                "name": "Cade Stover",
+                "pts_frac": -0.2,
+                "pts_int": 0,
+                "stat_line": "-2 Rec Yds"
+              }
+            ]
+          },
+          "W2": 11.2,
+          "W2_Int": 11,
+          "W2_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "52 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Sam LaPorta",
+                "pts_frac": 11.2,
+                "pts_int": 11,
+                "stat_line": "52 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W3": 0.0,
+          "W3_Int": 0,
+          "W3_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "0 Rec Yds (0 TD)",
+            "players": []
+          },
+          "W4": 7.4,
+          "W4_Int": 7,
+          "W4_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "74 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Hunter Henry",
+                "pts_frac": 6.2,
+                "pts_int": 6,
+                "stat_line": "62 Rec Yds"
+              },
+              {
+                "name": "Eli Raridon",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W5": 11.0,
+          "W5_Int": 10,
+          "W5_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "110 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Higbee",
+                "pts_frac": 8.3,
+                "pts_int": 8,
+                "stat_line": "83 Rec Yds"
+              },
+              {
+                "name": "Davis Allen",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              },
+              {
+                "name": "Colby Parkinson",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "W6": 16.5,
+          "W6_Int": 16,
+          "W6_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "165 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Mayer",
+                "pts_frac": 9.5,
+                "pts_int": 9,
+                "stat_line": "95 Rec Yds"
+              },
+              {
+                "name": "Brock Bowers",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "70 Rec Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 2.9,
+          "W8_Int": 2,
+          "W8_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "29 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Josh Cuevas",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              },
+              {
+                "name": "Mark Andrews",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              }
+            ]
+          },
+          "W9": 3.3,
+          "W9_Int": 3,
+          "W9_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "33 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "T.J. Hockenson",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 6.2,
+          "Last_4_Games": 33.7,
+          "L4_PPG": 8.4,
+          "Total_pts": 58.7,
+          "PPG": 7.3,
+          "Last_2_Games_Int": 5,
+          "Last_4_Games_Int": 31,
+          "Total_pts_Int": 54,
+          "PPG_Int": 6.8,
+          "Stat_Summary": "527 Rec Yds (1 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Jets (NYJ)",
+          "Week10_Offense": "Jets (NYJ)",
+          "Vuln_Rank": 21,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Bears (CHI)",
+          "Team": "CHI",
+          "Position": "TE",
+          "W1": 6.2,
+          "W1_Int": 4,
+          "W1_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "62 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Darren Waller",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "28 Rec Yds"
+              },
+              {
+                "name": "Tommy Tremble",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              },
+              {
+                "name": "Mitchell Evans",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W2": 5.3,
+          "W2_Int": 4,
+          "W2_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "53 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "T.J. Hockenson",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "29 Rec Yds"
+              },
+              {
+                "name": "Josh Oliver",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              }
+            ]
+          },
+          "W3": 1.3,
+          "W3_Int": 0,
+          "W3_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "13 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Zach Ertz",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Johnny Mundt",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W4": 1.1,
+          "W4_Int": 1,
+          "W4_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "11 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jelani Woods",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W5": 6.6,
+          "W5_Int": 6,
+          "W5_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "64 Rec Yds (0 TD) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tucker Kraft",
+                "pts_frac": 6.6,
+                "pts_int": 6,
+                "stat_line": "2 Rush Yds \u2022 64 Rec Yds"
+              }
+            ]
+          },
+          "W6": 18.6,
+          "W6_Int": 18,
+          "W6_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "66 Rec Yds (2 TD)",
+            "players": [
+              {
+                "name": "Kyle Pitts",
+                "pts_frac": 18.0,
+                "pts_int": 18,
+                "stat_line": "60 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Austin Hooper",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W7": 18.7,
+          "W7_Int": 18,
+          "W7_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "127 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Eli Raridon",
+                "pts_frac": 11.6,
+                "pts_int": 11,
+                "stat_line": "56 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Hunter Henry",
+                "pts_frac": 7.1,
+                "pts_int": 7,
+                "stat_line": "71 Rec Yds"
+              }
+            ]
+          },
+          "W8": 2.3,
+          "W8_Int": 2,
+          "W8_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "23 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "AJ Barner",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "23 Rec Yds"
+              }
+            ]
+          },
+          "W9": 2.5,
+          "W9_Int": 2,
+          "W9_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "25 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cade Otton",
+                "pts_frac": 2.5,
+                "pts_int": 2,
+                "stat_line": "25 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 4.8,
+          "Last_4_Games": 42.1,
+          "L4_PPG": 10.5,
+          "Total_pts": 62.6,
+          "PPG": 7.0,
+          "Last_2_Games_Int": 4,
+          "Last_4_Games_Int": 40,
+          "Total_pts_Int": 55,
+          "PPG_Int": 6.1,
+          "Stat_Summary": "444 Rec Yds (3 TD) + 2 Rush Yds (0 TD)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 22,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Giants (NYG)",
+          "Team": "NYG",
+          "Position": "TE",
+          "W1": 3.2,
+          "W1_Int": 2,
+          "W1_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "32 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brevyn Spann-Ford",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              },
+              {
+                "name": "Luke Schoonmaker",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              },
+              {
+                "name": "Jake Ferguson",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W2": 13.6,
+          "W2_Int": 12,
+          "W2_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "76 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Terrance Ferguson",
+                "pts_frac": 11.4,
+                "pts_int": 11,
+                "stat_line": "54 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Colby Parkinson",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              },
+              {
+                "name": "Davis Allen",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W3": 3.0,
+          "W3_Int": 2,
+          "W3_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "30 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Daniel Bellinger",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              },
+              {
+                "name": "Gunnar Helm",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              }
+            ]
+          },
+          "W4": 12.0,
+          "W4_Int": 11,
+          "W4_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "60 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Elijah Higgins",
+                "pts_frac": 7.9,
+                "pts_int": 7,
+                "stat_line": "19 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Trey McBride",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "31 Rec Yds"
+              },
+              {
+                "name": "Hunter Long",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W5": 6.1,
+          "W5_Int": 6,
+          "W5_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "61 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chig Okonkwo",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "60 Rec Yds"
+              },
+              {
+                "name": "John Bates",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rec Yds"
+              }
+            ]
+          },
+          "W6": 1.0,
+          "W6_Int": 1,
+          "W6_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "10 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Oscar Delp",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "10 Rec Yds"
+              }
+            ]
+          },
+          "W7": 6.4,
+          "W7_Int": 6,
+          "W7_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "44 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dalton Schultz",
+                "pts_frac": 4.5,
+                "pts_int": 4,
+                "stat_line": "45 Rec Yds"
+              },
+              {
+                "name": "Cade Stover",
+                "pts_frac": 1.9,
+                "pts_int": 2,
+                "stat_line": "-1 Rec Yds \u2022 1 Rush/Rec 2PT"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 5.0,
+          "W9_Int": 5,
+          "W9_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "50 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dallas Goedert",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "50 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 11.4,
+          "Last_4_Games": 18.5,
+          "L4_PPG": 4.6,
+          "Total_pts": 50.3,
+          "PPG": 6.3,
+          "Last_2_Games_Int": 11,
+          "Last_4_Games_Int": 18,
+          "Total_pts_Int": 45,
+          "PPG_Int": 5.6,
+          "Stat_Summary": "363 Rec Yds (2 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Commanders (WAS)",
+          "Week10_Offense": "Commanders (WAS)",
+          "Vuln_Rank": 23,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Jaguars (JAX)",
+          "Team": "JAX",
+          "Position": "TE",
+          "W1": 3.5,
+          "W1_Int": 3,
+          "W1_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "35 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Harold Fannin Jr.",
+                "pts_frac": 2.1,
+                "pts_int": 2,
+                "stat_line": "21 Rec Yds"
+              },
+              {
+                "name": "Blake Whiteheart",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              }
+            ]
+          },
+          "W2": 11.5,
+          "W2_Int": 10,
+          "W2_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "49 Rec Yds (1 TD) + 6 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Nate Adkins",
+                "pts_frac": 9.8,
+                "pts_int": 9,
+                "stat_line": "6 Rush Yds \u2022 32 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Evan Engram",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "W3": 0.5,
+          "W3_Int": 0,
+          "W3_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "5 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Hunter Henry",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W4": 10.2,
+          "W4_Int": 10,
+          "W4_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "42 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Mike Gesicki",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "40 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Tanner Hudson",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W5": 3.8,
+          "W5_Int": 3,
+          "W5_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "38 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dallas Goedert",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "38 Rec Yds"
+              }
+            ]
+          },
+          "W6": 16.4,
+          "W6_Int": 15,
+          "W6_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "39 Rec Yds (2 TD) + 5 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Foster Moreau",
+                "pts_frac": 12.7,
+                "pts_int": 12,
+                "stat_line": "7 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Dalton Schultz",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              },
+              {
+                "name": "Cade Stover",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rush Yds"
+              },
+              {
+                "name": "Brevin Jordan",
+                "pts_frac": -0.1,
+                "pts_int": 0,
+                "stat_line": "-1 Rec Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 1.8,
+          "W8_Int": 1,
+          "W8_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "18 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Warren",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              }
+            ]
+          },
+          "W9": 2.4,
+          "W9_Int": 1,
+          "W9_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "24 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Mark Andrews",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Matthew Hibner",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 4.2,
+          "Last_4_Games": 24.4,
+          "L4_PPG": 6.1,
+          "Total_pts": 50.1,
+          "PPG": 6.3,
+          "Last_2_Games_Int": 2,
+          "Last_4_Games_Int": 20,
+          "Total_pts_Int": 43,
+          "PPG_Int": 5.4,
+          "Stat_Summary": "250 Rec Yds (4 TD) + 11 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Titans (TEN)",
+          "Week10_Offense": "Titans (TEN)",
+          "Vuln_Rank": 24,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Eagles (PHI)",
+          "Team": "PHI",
+          "Position": "TE",
+          "W1": 2.9,
+          "W1_Int": 2,
+          "W1_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "29 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Chig Okonkwo",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              },
+              {
+                "name": "John Bates",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W2": 1.3,
+          "W2_Int": 1,
+          "W2_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "13 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Gunnar Helm",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W3": 4.7,
+          "W3_Int": 4,
+          "W3_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "47 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Colston Loveland",
+                "pts_frac": 3.1,
+                "pts_int": 3,
+                "stat_line": "31 Rec Yds"
+              },
+              {
+                "name": "Sam Roush",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              }
+            ]
+          },
+          "W4": 6.7,
+          "W4_Int": 6,
+          "W4_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "67 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Higbee",
+                "pts_frac": 6.7,
+                "pts_int": 6,
+                "stat_line": "67 Rec Yds"
+              }
+            ]
+          },
+          "W5": 8.8,
+          "W5_Int": 8,
+          "W5_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "88 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brenton Strange",
+                "pts_frac": 6.8,
+                "pts_int": 6,
+                "stat_line": "68 Rec Yds"
+              },
+              {
+                "name": "Nate Boerkircher",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "W6": 16.7,
+          "W6_Int": 16,
+          "W6_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "46 Rec Yds (2 TD) + 1 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tommy Tremble",
+                "pts_frac": 16.6,
+                "pts_int": 16,
+                "stat_line": "46 Rec Yds, 2 Rec TD"
+              },
+              {
+                "name": "Mitchell Evans",
+                "pts_frac": 0.1,
+                "pts_int": 0,
+                "stat_line": "1 Rush Yds"
+              }
+            ]
+          },
+          "W7": 1.1,
+          "W7_Int": 1,
+          "W7_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "11 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brevyn Spann-Ford",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W8": 2.2,
+          "W8_Int": 2,
+          "W8_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "32 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Chig Okonkwo",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "32 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W9": 11.3,
+          "W9_Int": 11,
+          "W9_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "53 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Isaiah Likely",
+                "pts_frac": 11.3,
+                "pts_int": 11,
+                "stat_line": "53 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 13.5,
+          "Last_4_Games": 31.3,
+          "L4_PPG": 7.8,
+          "Total_pts": 55.7,
+          "PPG": 6.2,
+          "Last_2_Games_Int": 13,
+          "Last_4_Games_Int": 30,
+          "Total_pts_Int": 51,
+          "PPG_Int": 5.7,
+          "Stat_Summary": "386 Rec Yds (3 TD) + 1 Rush Yds (0 TD)",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 25,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Patriots (NE)",
+          "Team": "NE",
+          "Position": "TE",
+          "W1": 1.3,
+          "W1_Int": 1,
+          "W1_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "13 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "AJ Barner",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W2": 4.1,
+          "W2_Int": 3,
+          "W2_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "39 Rec Yds (0 TD) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Pat Freiermuth",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "2 Rush Yds \u2022 32 Rec Yds"
+              },
+              {
+                "name": "Darnell Washington",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W3": 3.2,
+          "W3_Int": 3,
+          "W3_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "32 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brenton Strange",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              }
+            ]
+          },
+          "W4": 2.0,
+          "W4_Int": 1,
+          "W4_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "20 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dawson Knox",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              },
+              {
+                "name": "Dalton Kincaid",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W5": 17.1,
+          "W5_Int": 16,
+          "W5_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "121 Rec Yds (1 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Brock Bowers",
+                "pts_frac": 16.0,
+                "pts_int": 16,
+                "stat_line": "110 Rec Yds, 1 Rec TD \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Ian Thomas",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Michael Mayer",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W6": 5.4,
+          "W6_Int": 4,
+          "W6_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "54 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Mason Taylor",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              },
+              {
+                "name": "Kenyon Sadiq",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              },
+              {
+                "name": "Jelani Woods",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              }
+            ]
+          },
+          "W7": 15.7,
+          "W7_Int": 14,
+          "W7_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "97 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Colston Loveland",
+                "pts_frac": 12.9,
+                "pts_int": 12,
+                "stat_line": "69 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Cole Kmet",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "28 Rec Yds"
+              }
+            ]
+          },
+          "W8": 4.3,
+          "W8_Int": 4,
+          "W8_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "43 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Greg Dulcich",
+                "pts_frac": 4.3,
+                "pts_int": 4,
+                "stat_line": "43 Rec Yds"
+              }
+            ]
+          },
+          "W9": 0.9,
+          "W9_Int": 0,
+          "W9_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "1 Rec Yds (0 TD) + 8 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tucker Kraft",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "8 Rush Yds \u2022 1 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 5.2,
+          "Last_4_Games": 26.3,
+          "L4_PPG": 6.6,
+          "Total_pts": 54.0,
+          "PPG": 6.0,
+          "Last_2_Games_Int": 4,
+          "Last_4_Games_Int": 22,
+          "Total_pts_Int": 46,
+          "PPG_Int": 5.1,
+          "Stat_Summary": "420 Rec Yds (2 TD) + 10 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Lions (DET)",
+          "Week10_Offense": "Lions (DET)",
+          "Vuln_Rank": 26,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Chargers (LAC)",
+          "Team": "LAC",
+          "Position": "TE",
+          "W1": 15.5,
+          "W1_Int": 15,
+          "W1_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "95 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Trey McBride",
+                "pts_frac": 15.5,
+                "pts_int": 15,
+                "stat_line": "95 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W2": 3.4,
+          "W2_Int": 3,
+          "W2_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "34 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Michael Mayer",
+                "pts_frac": 2.3,
+                "pts_int": 2,
+                "stat_line": "23 Rec Yds"
+              },
+              {
+                "name": "Ian Thomas",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W3": 3.3,
+          "W3_Int": 2,
+          "W3_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "43 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Dalton Kincaid",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "38 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Dawson Knox",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W4": 1.2,
+          "W4_Int": 1,
+          "W4_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "12 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "AJ Barner",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W5": 5.5,
+          "W5_Int": 5,
+          "W5_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "55 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Evan Engram",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "55 Rec Yds"
+              }
+            ]
+          },
+          "W6": 10.6,
+          "W6_Int": 10,
+          "W6_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "106 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Noah Gray",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              },
+              {
+                "name": "Travis Kelce",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 2.2,
+          "W8_Int": 1,
+          "W8_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "22 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Higbee",
+                "pts_frac": 1.4,
+                "pts_int": 1,
+                "stat_line": "14 Rec Yds"
+              },
+              {
+                "name": "Davis Allen",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W9": 4.2,
+          "W9_Int": 4,
+          "W9_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "42 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dalton Schultz",
+                "pts_frac": 4.2,
+                "pts_int": 4,
+                "stat_line": "42 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 6.4,
+          "Last_4_Games": 22.5,
+          "L4_PPG": 5.6,
+          "Total_pts": 45.9,
+          "PPG": 5.7,
+          "Last_2_Games_Int": 5,
+          "Last_4_Games_Int": 20,
+          "Total_pts_Int": 41,
+          "PPG_Int": 5.1,
+          "Stat_Summary": "409 Rec Yds (1 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Ravens (BAL)",
+          "Week10_Offense": "Ravens (BAL)",
+          "Vuln_Rank": 27,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Rams (LA)",
+          "Team": "LA",
+          "Position": "TE",
+          "W1": 3.1,
+          "W1_Int": 2,
+          "W1_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "31 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Luke Farrell",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "George Kittle",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W2": 3.3,
+          "W2_Int": 3,
+          "W2_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "33 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Isaiah Likely",
+                "pts_frac": 3.3,
+                "pts_int": 3,
+                "stat_line": "33 Rec Yds"
+              }
+            ]
+          },
+          "W3": 6.8,
+          "W3_Int": 6,
+          "W3_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "8 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Nate Adkins",
+                "pts_frac": 6.8,
+                "pts_int": 6,
+                "stat_line": "8 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W4": 1.3,
+          "W4_Int": 1,
+          "W4_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "13 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Zach Ertz",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W5": 3.3,
+          "W5_Int": 2,
+          "W5_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "13 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dalton Kincaid",
+                "pts_frac": 2.7,
+                "pts_int": 2,
+                "stat_line": "7 Rec Yds \u2022 1 Rush/Rec 2PT"
+              },
+              {
+                "name": "Dawson Knox",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "W6": 8.1,
+          "W6_Int": 7,
+          "W6_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "81 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Trey McBride",
+                "pts_frac": 5.3,
+                "pts_int": 5,
+                "stat_line": "53 Rec Yds"
+              },
+              {
+                "name": "Elijah Higgins",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "28 Rec Yds"
+              }
+            ]
+          },
+          "W7": 11.3,
+          "W7_Int": 10,
+          "W7_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "113 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brock Bowers",
+                "pts_frac": 7.3,
+                "pts_int": 7,
+                "stat_line": "73 Rec Yds"
+              },
+              {
+                "name": "Michael Mayer",
+                "pts_frac": 3.2,
+                "pts_int": 3,
+                "stat_line": "32 Rec Yds"
+              },
+              {
+                "name": "Ian Thomas",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W8": 7.2,
+          "W8_Int": 7,
+          "W8_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "72 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Oronde Gadsden II",
+                "pts_frac": 5.2,
+                "pts_int": 5,
+                "stat_line": "52 Rec Yds"
+              },
+              {
+                "name": "Charlie Kolar",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "20 Rec Yds"
+              }
+            ]
+          },
+          "W9": 5.3,
+          "W9_Int": 4,
+          "W9_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "63 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Chig Okonkwo",
+                "pts_frac": 4.7,
+                "pts_int": 4,
+                "stat_line": "57 Rec Yds \u2022 1 Fumb Lost"
+              },
+              {
+                "name": "Colson Yankoff",
+                "pts_frac": 0.6,
+                "pts_int": 0,
+                "stat_line": "6 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 12.5,
+          "Last_4_Games": 31.9,
+          "L4_PPG": 8.0,
+          "Total_pts": 49.7,
+          "PPG": 5.5,
+          "Last_2_Games_Int": 11,
+          "Last_4_Games_Int": 28,
+          "Total_pts_Int": 42,
+          "PPG_Int": 4.7,
+          "Stat_Summary": "427 Rec Yds (1 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Cardinals (ARI)",
+          "Week10_Offense": "Cardinals (ARI)",
+          "Vuln_Rank": 28,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Seahawks (SEA)",
+          "Team": "SEA",
+          "Position": "TE",
+          "W1": 8.8,
+          "W1_Int": 8,
+          "W1_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "28 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Eli Raridon",
+                "pts_frac": 6.2,
+                "pts_int": 6,
+                "stat_line": "2 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Hunter Henry",
+                "pts_frac": 2.6,
+                "pts_int": 2,
+                "stat_line": "26 Rec Yds"
+              }
+            ]
+          },
+          "W2": 10.1,
+          "W2_Int": 10,
+          "W2_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "41 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Trey McBride",
+                "pts_frac": 10.1,
+                "pts_int": 10,
+                "stat_line": "41 Rec Yds, 1 Rec TD"
+              }
+            ]
+          },
+          "W3": 1.1,
+          "W3_Int": 0,
+          "W3_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "11 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "John Bates",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Colson Yankoff",
+                "pts_frac": 0.2,
+                "pts_int": 0,
+                "stat_line": "2 Rec Yds"
+              }
+            ]
+          },
+          "W4": 3.8,
+          "W4_Int": 3,
+          "W4_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "36 Rec Yds (0 TD) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Oronde Gadsden II",
+                "pts_frac": 3.8,
+                "pts_int": 3,
+                "stat_line": "2 Rush Yds \u2022 36 Rec Yds"
+              }
+            ]
+          },
+          "W5": 2.4,
+          "W5_Int": 2,
+          "W5_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "24 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "George Kittle",
+                "pts_frac": 2.4,
+                "pts_int": 2,
+                "stat_line": "24 Rec Yds"
+              }
+            ]
+          },
+          "W6": 1.3,
+          "W6_Int": 1,
+          "W6_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "13 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Evan Engram",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W7": 8.8,
+          "W7_Int": 8,
+          "W7_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "88 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Noah Gray",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "44 Rec Yds"
+              },
+              {
+                "name": "Travis Kelce",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "44 Rec Yds"
+              }
+            ]
+          },
+          "W8": 5.5,
+          "W8_Int": 5,
+          "W8_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "65 Rec Yds (0 TD) \u2022 1 Fumb Lost",
+            "players": [
+              {
+                "name": "Colston Loveland",
+                "pts_frac": 5.5,
+                "pts_int": 5,
+                "stat_line": "65 Rec Yds \u2022 1 Fumb Lost"
+              }
+            ]
+          },
+          "W9": 7.3,
+          "W9_Int": 6,
+          "W9_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "73 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Trey McBride",
+                "pts_frac": 5.4,
+                "pts_int": 5,
+                "stat_line": "54 Rec Yds"
+              },
+              {
+                "name": "Elijah Higgins",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              },
+              {
+                "name": "Teagan Quitoriano",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 12.8,
+          "Last_4_Games": 22.9,
+          "L4_PPG": 5.7,
+          "Total_pts": 49.1,
+          "PPG": 5.5,
+          "Last_2_Games_Int": 11,
+          "Last_4_Games_Int": 20,
+          "Total_pts_Int": 43,
+          "PPG_Int": 4.8,
+          "Stat_Summary": "379 Rec Yds (2 TD) + 2 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Raiders (LV)",
+          "Week10_Offense": "Raiders (LV)",
+          "Vuln_Rank": 29,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Packers (GB)",
+          "Team": "GB",
+          "Position": "TE",
+          "W1": 11.8,
+          "W1_Int": 11,
+          "W1_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "58 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "T.J. Hockenson",
+                "pts_frac": 9.6,
+                "pts_int": 9,
+                "stat_line": "36 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Josh Oliver",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              }
+            ]
+          },
+          "W2": 2.2,
+          "W2_Int": 1,
+          "W2_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "22 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Kenyon Sadiq",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              },
+              {
+                "name": "Jeremy Ruckert",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W3": 7.6,
+          "W3_Int": 7,
+          "W3_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "16 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Austin Hooper",
+                "pts_frac": 7.1,
+                "pts_int": 7,
+                "stat_line": "11 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Kyle Pitts",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W4": 3.7,
+          "W4_Int": 3,
+          "W4_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "37 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cade Otton",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              }
+            ]
+          },
+          "W5": 2.7,
+          "W5_Int": 1,
+          "W5_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "27 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Colston Loveland",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Cole Kmet",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "W6": 4.8,
+          "W6_Int": 4,
+          "W6_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "48 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Brevyn Spann-Ford",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "35 Rec Yds"
+              },
+              {
+                "name": "Jake Ferguson",
+                "pts_frac": 1.3,
+                "pts_int": 1,
+                "stat_line": "13 Rec Yds"
+              }
+            ]
+          },
+          "W7": 2.2,
+          "W7_Int": 1,
+          "W7_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "22 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Sam LaPorta",
+                "pts_frac": 1.8,
+                "pts_int": 1,
+                "stat_line": "18 Rec Yds"
+              },
+              {
+                "name": "Tyler Conklin",
+                "pts_frac": 0.4,
+                "pts_int": 0,
+                "stat_line": "4 Rec Yds"
+              }
+            ]
+          },
+          "W8": 5.2,
+          "W8_Int": 4,
+          "W8_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "52 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Mitchell Evans",
+                "pts_frac": 2.2,
+                "pts_int": 2,
+                "stat_line": "22 Rec Yds"
+              },
+              {
+                "name": "Tommy Tremble",
+                "pts_frac": 1.9,
+                "pts_int": 1,
+                "stat_line": "19 Rec Yds"
+              },
+              {
+                "name": "Darren Waller",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W9": 8.7,
+          "W9_Int": 8,
+          "W9_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "87 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Eli Raridon",
+                "pts_frac": 5.2,
+                "pts_int": 5,
+                "stat_line": "52 Rec Yds"
+              },
+              {
+                "name": "Hunter Henry",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "35 Rec Yds"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 13.9,
+          "Last_4_Games": 20.9,
+          "L4_PPG": 5.2,
+          "Total_pts": 48.9,
+          "PPG": 5.4,
+          "Last_2_Games_Int": 12,
+          "Last_4_Games_Int": 17,
+          "Total_pts_Int": 40,
+          "PPG_Int": 4.4,
+          "Stat_Summary": "369 Rec Yds (2 TD) + 0 Rush Yds (0 TD)",
+          "Week10_Opponent": "vs Vikings (MIN)",
+          "Week10_Offense": "Vikings (MIN)",
+          "Vuln_Rank": 30,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Texans (HOU)",
+          "Team": "HOU",
+          "Position": "TE",
+          "W1": 13.7,
+          "W1_Int": 13,
+          "W1_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "137 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Dalton Kincaid",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "130 Rec Yds"
+              },
+              {
+                "name": "Dawson Knox",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W2": 0.5,
+          "W2_Int": 0,
+          "W2_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "5 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Erick All",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W3": 7.3,
+          "W3_Int": 6,
+          "W3_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "71 Rec Yds (0 TD) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tyler Warren",
+                "pts_frac": 5.7,
+                "pts_int": 5,
+                "stat_line": "2 Rush Yds \u2022 55 Rec Yds"
+              },
+              {
+                "name": "Mo Alie-Cox",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              }
+            ]
+          },
+          "W4": 1.1,
+          "W4_Int": 1,
+          "W4_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "11 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Jake Ferguson",
+                "pts_frac": 1.1,
+                "pts_int": 1,
+                "stat_line": "11 Rec Yds"
+              }
+            ]
+          },
+          "W5": 0.5,
+          "W5_Int": 0,
+          "W5_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "5 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Daniel Bellinger",
+                "pts_frac": 0.5,
+                "pts_int": 0,
+                "stat_line": "5 Rec Yds"
+              }
+            ]
+          },
+          "W6": 11.2,
+          "W6_Int": 10,
+          "W6_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "52 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Nate Boerkircher",
+                "pts_frac": 6.8,
+                "pts_int": 6,
+                "stat_line": "8 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Brenton Strange",
+                "pts_frac": 4.4,
+                "pts_int": 4,
+                "stat_line": "44 Rec Yds"
+              }
+            ]
+          },
+          "W7": 4.1,
+          "W7_Int": 3,
+          "W7_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "41 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Thomas Fidone II",
+                "pts_frac": 2.9,
+                "pts_int": 2,
+                "stat_line": "29 Rec Yds"
+              },
+              {
+                "name": "Isaiah Likely",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 5.1,
+          "W9_Int": 4,
+          "W9_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "48 Rec Yds (0 TD) + 3 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Charlie Kolar",
+                "pts_frac": 3.4,
+                "pts_int": 3,
+                "stat_line": "3 Rush Yds \u2022 31 Rec Yds"
+              },
+              {
+                "name": "Oronde Gadsden II",
+                "pts_frac": 1.7,
+                "pts_int": 1,
+                "stat_line": "17 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 9.2,
+          "Last_4_Games": 20.9,
+          "L4_PPG": 5.2,
+          "Total_pts": 43.5,
+          "PPG": 5.4,
+          "Last_2_Games_Int": 7,
+          "Last_4_Games_Int": 17,
+          "Total_pts_Int": 37,
+          "PPG_Int": 4.6,
+          "Stat_Summary": "370 Rec Yds (1 TD) + 5 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Browns (CLE)",
+          "Week10_Offense": "Browns (CLE)",
+          "Vuln_Rank": 31,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Vikings (MIN)",
+          "Team": "MIN",
+          "Position": "TE",
+          "W1": 11.5,
+          "W1_Int": 11,
+          "W1_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "115 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Tucker Kraft",
+                "pts_frac": 6.5,
+                "pts_int": 6,
+                "stat_line": "65 Rec Yds"
+              },
+              {
+                "name": "Jonnu Smith",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "50 Rec Yds"
+              }
+            ]
+          },
+          "W2": 1.2,
+          "W2_Int": 0,
+          "W2_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "12 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Sam Roush",
+                "pts_frac": 0.9,
+                "pts_int": 0,
+                "stat_line": "9 Rec Yds"
+              },
+              {
+                "name": "Colston Loveland",
+                "pts_frac": 0.3,
+                "pts_int": 0,
+                "stat_line": "3 Rec Yds"
+              }
+            ]
+          },
+          "W3": 5.6,
+          "W3_Int": 5,
+          "W3_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "56 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Cade Otton",
+                "pts_frac": 5.6,
+                "pts_int": 5,
+                "stat_line": "56 Rec Yds"
+              }
+            ]
+          },
+          "W4": 1.5,
+          "W4_Int": 1,
+          "W4_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "15 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Will Kacmarek",
+                "pts_frac": 1.5,
+                "pts_int": 1,
+                "stat_line": "15 Rec Yds"
+              }
+            ]
+          },
+          "W5": 2.3,
+          "W5_Int": 1,
+          "W5_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "23 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Juwan Johnson",
+                "pts_frac": 1.6,
+                "pts_int": 1,
+                "stat_line": "16 Rec Yds"
+              },
+              {
+                "name": "Noah Fant",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 1.2,
+          "W7_Int": 1,
+          "W7_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "12 Rec Yds (0 TD)",
+            "players": [
+              {
+                "name": "Andrew Ogletree",
+                "pts_frac": 1.2,
+                "pts_int": 1,
+                "stat_line": "12 Rec Yds"
+              }
+            ]
+          },
+          "W8": 4.2,
+          "W8_Int": 3,
+          "W8_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "40 Rec Yds (0 TD) + 2 Rush Yds (0 TD)",
+            "players": [
+              {
+                "name": "Sam LaPorta",
+                "pts_frac": 3.5,
+                "pts_int": 3,
+                "stat_line": "2 Rush Yds \u2022 33 Rec Yds"
+              },
+              {
+                "name": "Tyler Conklin",
+                "pts_frac": 0.7,
+                "pts_int": 0,
+                "stat_line": "7 Rec Yds"
+              }
+            ]
+          },
+          "W9": 15.8,
+          "W9_Int": 13,
+          "W9_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "98 Rec Yds (1 TD)",
+            "players": [
+              {
+                "name": "Keleki Latu",
+                "pts_frac": 8.5,
+                "pts_int": 8,
+                "stat_line": "25 Rec Yds, 1 Rec TD"
+              },
+              {
+                "name": "Dawson Knox",
+                "pts_frac": 3.7,
+                "pts_int": 3,
+                "stat_line": "37 Rec Yds"
+              },
+              {
+                "name": "Dalton Kincaid",
+                "pts_frac": 2.8,
+                "pts_int": 2,
+                "stat_line": "28 Rec Yds"
+              },
+              {
+                "name": "Jackson Hawes",
+                "pts_frac": 0.8,
+                "pts_int": 0,
+                "stat_line": "8 Rec Yds"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 20.0,
+          "Last_4_Games": 23.5,
+          "L4_PPG": 5.9,
+          "Total_pts": 43.3,
+          "PPG": 5.4,
+          "Last_2_Games_Int": 16,
+          "Last_4_Games_Int": 18,
+          "Total_pts_Int": 35,
+          "PPG_Int": 4.4,
+          "Stat_Summary": "371 Rec Yds (1 TD) + 2 Rush Yds (0 TD)",
+          "Week10_Opponent": "@ Packers (GB)",
+          "Week10_Offense": "Packers (GB)",
+          "Vuln_Rank": 32,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        }
+      ]
+    },
+    "K": {
+      "position": "K",
+      "league_avg_ppg": 7.9,
+      "league_median": 7.0,
+      "p25_stingy": 5.0,
+      "p75_vulnerable": 11.0,
+      "p90_smash": 13.0,
+      "teams": [
+        {
+          "Defense": "Colts (IND)",
+          "Team": "IND",
+          "Position": "K",
+          "W1": 12.0,
+          "W1_Int": 12,
+          "W1_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "2 FG (1 of 50+ yds), 5 XP",
+            "players": [
+              {
+                "name": "Tyler Loop",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 5 XP"
+              }
+            ]
+          },
+          "W2": 15.0,
+          "W2_Int": 15,
+          "W2_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "4 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Harrison Butker",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "4 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W3": 5.0,
+          "W3_Int": 5,
+          "W3_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Ka'imi Fairbairn",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W4": 7.0,
+          "W4_Int": 7,
+          "W4_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "2 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Drew Stevens",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W5": 11.0,
+          "W5_Int": 11,
+          "W5_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "2 FG (1 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Chris Boswell",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 4 XP"
+              }
+            ]
+          },
+          "W6": 15.0,
+          "W6_Int": 15,
+          "W6_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "4 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Joey Slye",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "4 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W7": 11.0,
+          "W7_Int": 11,
+          "W7_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "3 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Will Reichard",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W8": 6.0,
+          "W8_Int": 6,
+          "W8_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "0 FG (0 of 50+ yds), 6 XP",
+            "players": [
+              {
+                "name": "Cam Little",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "6 XP"
+              }
+            ]
+          },
+          "W9": 9.0,
+          "W9_Int": 9,
+          "W9_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "2 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Brandon Aubrey",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "2 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 15.0,
+          "Last_4_Games": 41.0,
+          "L4_PPG": 10.2,
+          "Total_pts": 91.0,
+          "PPG": 10.1,
+          "Last_2_Games_Int": 15,
+          "Last_4_Games_Int": 41,
+          "Total_pts_Int": 91,
+          "PPG_Int": 10.1,
+          "Stat_Summary": "20 FGs (4 of 50+ yds), 27 XPs",
+          "Week10_Opponent": "vs Dolphins (MIA)",
+          "Week10_Offense": "Dolphins (MIA)",
+          "Vuln_Rank": 1,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Steelers (PIT)",
+          "Team": "PIT",
+          "Position": "K",
+          "W1": 8.0,
+          "W1_Int": 8,
+          "W1_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "2 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Nick Folk",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W2": 8.0,
+          "W2_Int": 8,
+          "W2_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Andy Borregales",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W3": 10.0,
+          "W3_Int": 10,
+          "W3_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "2 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Evan McPherson",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W4": 10.0,
+          "W4_Int": 10,
+          "W4_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "2 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Andre Szmyt",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W5": 18.0,
+          "W5_Int": 18,
+          "W5_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "5 FG (2 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Spencer Shrader",
+                "pts_frac": 18.0,
+                "pts_int": 18,
+                "stat_line": "5 FG (2 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W6": 14.0,
+          "W6_Int": 14,
+          "W6_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "4 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Chase McLaughlin",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "4 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W7": 4.0,
+          "W7_Int": 4,
+          "W7_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Daniel Carlson",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W8": 6.0,
+          "W8_Int": 6,
+          "W8_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "2 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Andre Szmyt",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "2 FG"
+              }
+            ]
+          },
+          "W9": "BYE",
+          "W9_Int": "BYE",
+          "W9_Detail": null,
+          "GP": 8,
+          "Last_2_Games": 10.0,
+          "Last_4_Games": 42.0,
+          "L4_PPG": 10.5,
+          "Total_pts": 78.0,
+          "PPG": 9.8,
+          "Last_2_Games_Int": 10,
+          "Last_4_Games_Int": 42,
+          "Total_pts_Int": 78,
+          "PPG_Int": 9.8,
+          "Stat_Summary": "20 FGs (6 of 50+ yds), 12 XPs",
+          "Week10_Opponent": "@ Bengals (CIN)",
+          "Week10_Offense": "Bengals (CIN)",
+          "Vuln_Rank": 2,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Chargers (LAC)",
+          "Team": "LAC",
+          "Position": "K",
+          "W1": 14.0,
+          "W1_Int": 14,
+          "W1_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "4 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Chad Ryland",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "4 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W2": 7.0,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "1 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Matt Gay",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W3": 6.0,
+          "W3_Int": 6,
+          "W3_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Tyler Bass",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W4": 6.0,
+          "W4_Int": 6,
+          "W4_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Jason Myers",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W5": 11.0,
+          "W5_Int": 11,
+          "W5_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "3 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Wil Lutz",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W6": 11.0,
+          "W6_Int": 11,
+          "W6_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "3 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Harrison Butker",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 6.0,
+          "W8_Int": 6,
+          "W8_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Brandon McManus",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W9": 15.0,
+          "W9_Int": 15,
+          "W9_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "3 FG (1 of 50+ yds), 5 XP",
+            "players": [
+              {
+                "name": "Ka'imi Fairbairn",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 5 XP"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 21.0,
+          "Last_4_Games": 43.0,
+          "L4_PPG": 10.8,
+          "Total_pts": 76.0,
+          "PPG": 9.5,
+          "Last_2_Games_Int": 21,
+          "Last_4_Games_Int": 43,
+          "Total_pts_Int": 76,
+          "PPG_Int": 9.5,
+          "Stat_Summary": "17 FGs (3 of 50+ yds), 22 XPs",
+          "Week10_Opponent": "@ Ravens (BAL)",
+          "Week10_Offense": "Ravens (BAL)",
+          "Vuln_Rank": 3,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Titans (TEN)",
+          "Team": "TEN",
+          "Position": "K",
+          "W1": 13.0,
+          "W1_Int": 13,
+          "W1_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "3 FG (2 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Jason Sanders",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "3 FG (2 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W2": 7.0,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "1 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Jake Elliott",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W3": 12.0,
+          "W3_Int": 12,
+          "W3_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "4 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Dominic Zvada",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "4 FG"
+              }
+            ]
+          },
+          "W4": 7.0,
+          "W4_Int": 7,
+          "W4_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "1 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Tyler Loop",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W5": 15.0,
+          "W5_Int": 15,
+          "W5_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "4 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Ka'imi Fairbairn",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "4 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W6": 8.0,
+          "W6_Int": 8,
+          "W6_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Spencer Shrader",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W7": 9.0,
+          "W7_Int": 9,
+          "W7_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "2 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Andre Szmyt",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "2 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W8": 5.0,
+          "W8_Int": 5,
+          "W8_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "0 FG (0 of 50+ yds), 5 XP",
+            "players": [
+              {
+                "name": "Evan McPherson",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "5 XP"
+              }
+            ]
+          },
+          "W9": "BYE",
+          "W9_Int": "BYE",
+          "W9_Detail": null,
+          "GP": 8,
+          "Last_2_Games": 14.0,
+          "Last_4_Games": 37.0,
+          "L4_PPG": 9.2,
+          "Total_pts": 76.0,
+          "PPG": 9.5,
+          "Last_2_Games_Int": 14,
+          "Last_4_Games_Int": 37,
+          "Total_pts_Int": 76,
+          "PPG_Int": 9.5,
+          "Stat_Summary": "17 FGs (5 of 50+ yds), 20 XPs",
+          "Week10_Opponent": "vs Jaguars (JAX)",
+          "Week10_Offense": "Jaguars (JAX)",
+          "Vuln_Rank": 4,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Eagles (PHI)",
+          "Team": "PHI",
+          "Position": "K",
+          "W1": 5.0,
+          "W1_Int": 5,
+          "W1_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "1 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Drew Stevens",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W2": 8.0,
+          "W2_Int": 8,
+          "W2_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Joey Slye",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W3": 9.0,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "2 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Cairo Santos",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "2 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W4": 6.0,
+          "W4_Int": 6,
+          "W4_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Harrison Mevis",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W5": 8.0,
+          "W5_Int": 8,
+          "W5_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "2 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Cam Little",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W6": 8.0,
+          "W6_Int": 8,
+          "W6_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "2 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Ryan Fitzgerald",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W7": 13.0,
+          "W7_Int": 13,
+          "W7_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "3 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Brandon Aubrey",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W8": 14.0,
+          "W8_Int": 14,
+          "W8_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "4 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Drew Stevens",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "4 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W9": 14.0,
+          "W9_Int": 14,
+          "W9_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "4 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Dominic Zvada",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "4 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 28.0,
+          "Last_4_Games": 49.0,
+          "L4_PPG": 12.2,
+          "Total_pts": 85.0,
+          "PPG": 9.4,
+          "Last_2_Games_Int": 28,
+          "Last_4_Games_Int": 49,
+          "Total_pts_Int": 85,
+          "PPG_Int": 9.4,
+          "Stat_Summary": "21 FGs (6 of 50+ yds), 16 XPs",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 5,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Ravens (BAL)",
+          "Team": "BAL",
+          "Position": "K",
+          "W1": 6.0,
+          "W1_Int": 6,
+          "W1_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "1 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Spencer Shrader",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W2": 11.0,
+          "W2_Int": 11,
+          "W2_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "3 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Daniel Carlson",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W3": 11.0,
+          "W3_Int": 11,
+          "W3_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "3 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Brandon Aubrey",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W4": 4.0,
+          "W4_Int": 4,
+          "W4_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Joey Slye",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W5": 11.0,
+          "W5_Int": 11,
+          "W5_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "3 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Nick Folk",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W6": 7.0,
+          "W6_Int": 7,
+          "W6_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "2 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Andre Szmyt",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W7": 5.0,
+          "W7_Int": 5,
+          "W7_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "0 FG (0 of 50+ yds), 5 XP",
+            "players": [
+              {
+                "name": "Evan McPherson",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "5 XP"
+              }
+            ]
+          },
+          "W8": 14.0,
+          "W8_Int": 14,
+          "W8_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "3 FG (2 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Tyler Bass",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "3 FG (2 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W9": 15.0,
+          "W9_Int": 15,
+          "W9_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "4 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Cam Little",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "4 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 29.0,
+          "Last_4_Games": 41.0,
+          "L4_PPG": 10.2,
+          "Total_pts": 84.0,
+          "PPG": 9.3,
+          "Last_2_Games_Int": 29,
+          "Last_4_Games_Int": 41,
+          "Total_pts_Int": 84,
+          "PPG_Int": 9.3,
+          "Stat_Summary": "20 FGs (4 of 50+ yds), 20 XPs",
+          "Week10_Opponent": "vs Chargers (LAC)",
+          "Week10_Offense": "Chargers (LAC)",
+          "Vuln_Rank": 6,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Rams (LA)",
+          "Team": "LA",
+          "Position": "K",
+          "W1": 10.0,
+          "W1_Int": 10,
+          "W1_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "2 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Eddy Pineiro",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W2": 7.0,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "2 FG (1 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Dominic Zvada",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG (1 of 50+ yds)"
+              }
+            ]
+          },
+          "W3": 2.0,
+          "W3_Int": 2,
+          "W3_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "0 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Wil Lutz",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "2 XP"
+              }
+            ]
+          },
+          "W4": 9.0,
+          "W4_Int": 9,
+          "W4_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "2 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Jake Elliott",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W5": 11.0,
+          "W5_Int": 11,
+          "W5_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "3 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Tyler Bass",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W6": 18.0,
+          "W6_Int": 18,
+          "W6_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "6 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Chad Ryland",
+                "pts_frac": 18.0,
+                "pts_int": 18,
+                "stat_line": "6 FG"
+              }
+            ]
+          },
+          "W7": 9.0,
+          "W7_Int": 9,
+          "W7_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "3 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Matt Gay",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "3 FG"
+              }
+            ]
+          },
+          "W8": 9.0,
+          "W8_Int": 9,
+          "W8_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "3 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Cameron Dicker",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "3 FG"
+              }
+            ]
+          },
+          "W9": 7.0,
+          "W9_Int": 7,
+          "W9_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "2 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Drew Stevens",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 16.0,
+          "Last_4_Games": 43.0,
+          "L4_PPG": 10.8,
+          "Total_pts": 82.0,
+          "PPG": 9.1,
+          "Last_2_Games_Int": 16,
+          "Last_4_Games_Int": 43,
+          "Total_pts_Int": 82,
+          "PPG_Int": 9.1,
+          "Stat_Summary": "23 FGs (3 of 50+ yds), 10 XPs",
+          "Week10_Opponent": "@ Cardinals (ARI)",
+          "Week10_Offense": "Cardinals (ARI)",
+          "Vuln_Rank": 7,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Texans (HOU)",
+          "Team": "HOU",
+          "Position": "K",
+          "W1": 12.0,
+          "W1_Int": 12,
+          "W1_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "3 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Tyler Bass",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "3 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W2": 10.0,
+          "W2_Int": 10,
+          "W2_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "2 FG (2 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Evan McPherson",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "2 FG (2 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W3": 15.0,
+          "W3_Int": 15,
+          "W3_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "4 FG (2 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Spencer Shrader",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "4 FG (2 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W4": 11.0,
+          "W4_Int": 11,
+          "W4_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "2 FG (1 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Brandon Aubrey",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 4 XP"
+              }
+            ]
+          },
+          "W5": 3.0,
+          "W5_Int": 3,
+          "W5_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "1 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Joey Slye",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "1 FG"
+              }
+            ]
+          },
+          "W6": 8.0,
+          "W6_Int": 8,
+          "W6_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "1 FG (1 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Cam Little",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 4 XP"
+              }
+            ]
+          },
+          "W7": 3.0,
+          "W7_Int": 3,
+          "W7_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "0 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Dominic Zvada",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "3 XP"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 11.0,
+          "W9_Int": 11,
+          "W9_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "3 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Cameron Dicker",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 14.0,
+          "Last_4_Games": 25.0,
+          "L4_PPG": 6.2,
+          "Total_pts": 73.0,
+          "PPG": 9.1,
+          "Last_2_Games_Int": 14,
+          "Last_4_Games_Int": 25,
+          "Total_pts_Int": 73,
+          "PPG_Int": 9.1,
+          "Stat_Summary": "16 FGs (7 of 50+ yds), 18 XPs",
+          "Week10_Opponent": "@ Browns (CLE)",
+          "Week10_Offense": "Browns (CLE)",
+          "Vuln_Rank": 8,
+          "Matchup_Grade": "Smash Target (Top 8)"
+        },
+        {
+          "Defense": "Saints (NO)",
+          "Team": "NO",
+          "Position": "K",
+          "W1": 7.0,
+          "W1_Int": 7,
+          "W1_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "1 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Jake Bates",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG \u2022 4 XP"
+              }
+            ]
+          },
+          "W2": 5.0,
+          "W2_Int": 5,
+          "W2_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Tyler Loop",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W3": 11.0,
+          "W3_Int": 11,
+          "W3_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "3 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Matt Gay",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W4": 9.0,
+          "W4_Int": 9,
+          "W4_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "1 FG (0 of 50+ yds), 6 XP",
+            "players": [
+              {
+                "name": "Nick Folk",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "1 FG \u2022 6 XP"
+              }
+            ]
+          },
+          "W5": 13.0,
+          "W5_Int": 13,
+          "W5_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "3 FG (2 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Will Reichard",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "3 FG (2 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W6": 7.0,
+          "W6_Int": 7,
+          "W6_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "2 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Dominic Zvada",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W7": 10.0,
+          "W7_Int": 10,
+          "W7_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "3 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Chris Boswell",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "3 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 11.0,
+          "W9_Int": 11,
+          "W9_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "3 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Andre Szmyt",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 21.0,
+          "Last_4_Games": 41.0,
+          "L4_PPG": 10.2,
+          "Total_pts": 73.0,
+          "PPG": 9.1,
+          "Last_2_Games_Int": 21,
+          "Last_4_Games_Int": 41,
+          "Total_pts_Int": 73,
+          "PPG_Int": 9.1,
+          "Stat_Summary": "17 FGs (3 of 50+ yds), 19 XPs",
+          "Week10_Opponent": "vs Panthers (CAR)",
+          "Week10_Offense": "Panthers (CAR)",
+          "Vuln_Rank": 9,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Cowboys (DAL)",
+          "Team": "DAL",
+          "Position": "K",
+          "W1": 4.0,
+          "W1_Int": 4,
+          "W1_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "0 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Dominic Zvada",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "4 XP"
+              }
+            ]
+          },
+          "W2": 8.0,
+          "W2_Int": 8,
+          "W2_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Drew Stevens",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W3": 11.0,
+          "W3_Int": 11,
+          "W3_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "2 FG (1 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Tyler Loop",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 4 XP"
+              }
+            ]
+          },
+          "W4": 14.0,
+          "W4_Int": 14,
+          "W4_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "3 FG (2 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Ka'imi Fairbairn",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "3 FG (2 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W5": 6.0,
+          "W5_Int": 6,
+          "W5_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Chase McLaughlin",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W6": 11.0,
+          "W6_Int": 11,
+          "W6_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "3 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Trey Smack",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W7": 3.0,
+          "W7_Int": 3,
+          "W7_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "0 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Jake Elliott",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "3 XP"
+              }
+            ]
+          },
+          "W8": 9.0,
+          "W8_Int": 9,
+          "W8_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "2 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Chad Ryland",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "2 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W9": 13.0,
+          "W9_Int": 13,
+          "W9_Detail": {
+            "opp": "IND",
+            "matchup": "@ IND",
+            "summary": "3 FG (2 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Spencer Shrader",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "3 FG (2 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 22.0,
+          "Last_4_Games": 36.0,
+          "L4_PPG": 9.0,
+          "Total_pts": 79.0,
+          "PPG": 8.8,
+          "Last_2_Games_Int": 22,
+          "Last_4_Games_Int": 36,
+          "Total_pts_Int": 79,
+          "PPG_Int": 8.8,
+          "Stat_Summary": "16 FGs (5 of 50+ yds), 26 XPs",
+          "Week10_Opponent": "vs 49ers (SF)",
+          "Week10_Offense": "49ers (SF)",
+          "Vuln_Rank": 10,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Buccaneers (TB)",
+          "Team": "TB",
+          "Position": "K",
+          "W1": 17.0,
+          "W1_Int": 17,
+          "W1_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "4 FG (2 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Evan McPherson",
+                "pts_frac": 17.0,
+                "pts_int": 17,
+                "stat_line": "4 FG (2 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W2": 12.0,
+          "W2_Int": 12,
+          "W2_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "3 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Andre Szmyt",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W3": 13.0,
+          "W3_Int": 13,
+          "W3_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "3 FG (2 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Will Reichard",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "3 FG (2 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W4": 6.0,
+          "W4_Int": 6,
+          "W4_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "1 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Trey Smack",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W5": 4.0,
+          "W5_Int": 4,
+          "W5_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Brandon Aubrey",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W6": 16.0,
+          "W6_Int": 16,
+          "W6_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "4 FG (2 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Chris Boswell",
+                "pts_frac": 16.0,
+                "pts_int": 16,
+                "stat_line": "4 FG (2 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W7": 1.0,
+          "W7_Int": 1,
+          "W7_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "0 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Ryan Fitzgerald",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "1 XP"
+              }
+            ]
+          },
+          "W8": 0.0,
+          "W8_Int": 0,
+          "W8_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "0 FG (0 of 50+ yds), 0 XP",
+            "players": []
+          },
+          "W9": 9.0,
+          "W9_Int": 9,
+          "W9_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "2 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Cairo Santos",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "2 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 9.0,
+          "Last_4_Games": 26.0,
+          "L4_PPG": 6.5,
+          "Total_pts": 78.0,
+          "PPG": 8.7,
+          "Last_2_Games_Int": 9,
+          "Last_4_Games_Int": 26,
+          "Total_pts_Int": 78,
+          "PPG_Int": 8.7,
+          "Stat_Summary": "18 FGs (8 of 50+ yds), 16 XPs",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 11,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Browns (CLE)",
+          "Team": "CLE",
+          "Position": "K",
+          "W1": 10.0,
+          "W1_Int": 10,
+          "W1_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "2 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Cam Little",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "2 FG \u2022 4 XP"
+              }
+            ]
+          },
+          "W2": 14.0,
+          "W2_Int": 14,
+          "W2_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "4 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Chase McLaughlin",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "4 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W3": 13.0,
+          "W3_Int": 13,
+          "W3_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "4 FG (1 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Ryan Fitzgerald",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "4 FG (1 of 50+ yds)"
+              }
+            ]
+          },
+          "W4": 4.0,
+          "W4_Int": 4,
+          "W4_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Chris Boswell",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W5": 6.0,
+          "W5_Int": 6,
+          "W5_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "1 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Jason Sanders",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W6": 4.0,
+          "W6_Int": 4,
+          "W6_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Tyler Loop",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W7": 6.0,
+          "W7_Int": 6,
+          "W7_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Joey Slye",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W8": 9.0,
+          "W8_Int": 9,
+          "W8_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "2 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Chris Boswell",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "2 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W9": 11.0,
+          "W9_Int": 11,
+          "W9_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "3 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Charlie Smyth",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 20.0,
+          "Last_4_Games": 30.0,
+          "L4_PPG": 7.5,
+          "Total_pts": 77.0,
+          "PPG": 8.6,
+          "Last_2_Games_Int": 20,
+          "Last_4_Games_Int": 30,
+          "Total_pts_Int": 77,
+          "PPG_Int": 8.6,
+          "Stat_Summary": "19 FGs (3 of 50+ yds), 17 XPs",
+          "Week10_Opponent": "vs Texans (HOU)",
+          "Week10_Offense": "Texans (HOU)",
+          "Vuln_Rank": 12,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Patriots (NE)",
+          "Team": "NE",
+          "Position": "K",
+          "W1": 7.0,
+          "W1_Int": 7,
+          "W1_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "2 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Jason Myers",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W2": 4.0,
+          "W2_Int": 4,
+          "W2_Detail": {
+            "opp": "PIT",
+            "matchup": "vs PIT",
+            "summary": "1 FG (1 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Chris Boswell",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG (1 of 50+ yds)"
+              }
+            ]
+          },
+          "W3": 5.0,
+          "W3_Int": 5,
+          "W3_Detail": {
+            "opp": "JAX",
+            "matchup": "@ JAX",
+            "summary": "0 FG (0 of 50+ yds), 5 XP",
+            "players": [
+              {
+                "name": "Cam Little",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "5 XP"
+              }
+            ]
+          },
+          "W4": 8.0,
+          "W4_Int": 8,
+          "W4_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Tyler Bass",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W5": 5.0,
+          "W5_Int": 5,
+          "W5_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Matt Gay",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W6": 13.0,
+          "W6_Int": 13,
+          "W6_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "4 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Jason Sanders",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "4 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W7": 13.0,
+          "W7_Int": 13,
+          "W7_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "3 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Cairo Santos",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W8": 8.0,
+          "W8_Int": 8,
+          "W8_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "2 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Zane Gonzalez",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W9": 14.0,
+          "W9_Int": 14,
+          "W9_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "3 FG (1 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Trey Smack",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 4 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 22.0,
+          "Last_4_Games": 48.0,
+          "L4_PPG": 12.0,
+          "Total_pts": 77.0,
+          "PPG": 8.6,
+          "Last_2_Games_Int": 22,
+          "Last_4_Games_Int": 48,
+          "Total_pts_Int": 77,
+          "PPG_Int": 8.6,
+          "Stat_Summary": "18 FGs (4 of 50+ yds), 19 XPs",
+          "Week10_Opponent": "@ Lions (DET)",
+          "Week10_Offense": "Lions (DET)",
+          "Vuln_Rank": 13,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Commanders (WAS)",
+          "Team": "WAS",
+          "Position": "K",
+          "W1": 6.0,
+          "W1_Int": 6,
+          "W1_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Jake Elliott",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W2": 14.0,
+          "W2_Int": 14,
+          "W2_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "3 FG (1 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Brandon Aubrey",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 4 XP"
+              }
+            ]
+          },
+          "W3": 8.0,
+          "W3_Int": 8,
+          "W3_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "1 FG (1 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Jason Myers",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 4 XP"
+              }
+            ]
+          },
+          "W4": 13.0,
+          "W4_Int": 13,
+          "W4_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "3 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Spencer Shrader",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W5": 11.0,
+          "W5_Int": 11,
+          "W5_Detail": {
+            "opp": "NYG",
+            "matchup": "vs NYG",
+            "summary": "2 FG (2 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Dominic Zvada",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "2 FG (2 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W6": 5.0,
+          "W6_Int": 5,
+          "W6_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Eddy Pineiro",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 4.0,
+          "W8_Int": 4,
+          "W8_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Jake Elliott",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W9": 8.0,
+          "W9_Int": 8,
+          "W9_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Brandon McManus",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 12.0,
+          "Last_4_Games": 28.0,
+          "L4_PPG": 7.0,
+          "Total_pts": 69.0,
+          "PPG": 8.6,
+          "Last_2_Games_Int": 12,
+          "Last_4_Games_Int": 28,
+          "Total_pts_Int": 69,
+          "PPG_Int": 8.6,
+          "Stat_Summary": "14 FGs (5 of 50+ yds), 22 XPs",
+          "Week10_Opponent": "@ Giants (NYG)",
+          "Week10_Offense": "Giants (NYG)",
+          "Vuln_Rank": 14,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Chiefs (KC)",
+          "Team": "KC",
+          "Position": "K",
+          "W1": 4.0,
+          "W1_Int": 4,
+          "W1_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Wil Lutz",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W2": 12.0,
+          "W2_Int": 12,
+          "W2_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "3 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Spencer Shrader",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "3 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W3": 4.0,
+          "W3_Int": 4,
+          "W3_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Riley Patterson",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W4": 13.0,
+          "W4_Int": 13,
+          "W4_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "4 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Matt Gay",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "4 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W5": "BYE",
+          "W5_Int": "BYE",
+          "W5_Detail": null,
+          "W6": 6.0,
+          "W6_Int": 6,
+          "W6_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "2 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Cameron Dicker",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "2 FG"
+              }
+            ]
+          },
+          "W7": 8.0,
+          "W7_Int": 8,
+          "W7_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Jason Myers",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W8": 8.0,
+          "W8_Int": 8,
+          "W8_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Wil Lutz",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W9": 13.0,
+          "W9_Int": 13,
+          "W9_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "4 FG (1 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Jason Sanders",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "4 FG (1 of 50+ yds)"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 21.0,
+          "Last_4_Games": 35.0,
+          "L4_PPG": 8.8,
+          "Total_pts": 68.0,
+          "PPG": 8.5,
+          "Last_2_Games_Int": 21,
+          "Last_4_Games_Int": 35,
+          "Total_pts_Int": 68,
+          "PPG_Int": 8.5,
+          "Stat_Summary": "19 FGs (1 of 50+ yds), 10 XPs",
+          "Week10_Opponent": "@ Falcons (ATL)",
+          "Week10_Offense": "Falcons (ATL)",
+          "Vuln_Rank": 15,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "49ers (SF)",
+          "Team": "SF",
+          "Position": "K",
+          "W1": 1.0,
+          "W1_Int": 1,
+          "W1_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "0 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Harrison Mevis",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "1 XP"
+              }
+            ]
+          },
+          "W2": 7.0,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "2 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Riley Patterson",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W3": 12.0,
+          "W3_Int": 12,
+          "W3_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "3 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Chad Ryland",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "3 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W4": 7.0,
+          "W4_Int": 7,
+          "W4_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "2 FG (1 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Wil Lutz",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG (1 of 50+ yds)"
+              }
+            ]
+          },
+          "W5": 18.0,
+          "W5_Int": 18,
+          "W5_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "5 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Jason Myers",
+                "pts_frac": 18.0,
+                "pts_int": 18,
+                "stat_line": "5 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W6": 6.0,
+          "W6_Int": 6,
+          "W6_Detail": {
+            "opp": "WAS",
+            "matchup": "vs WAS",
+            "summary": "1 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Drew Stevens",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W7": 11.0,
+          "W7_Int": 11,
+          "W7_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "3 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Nick Folk",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 6.0,
+          "W9_Int": 6,
+          "W9_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "1 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Matt Gay",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 17.0,
+          "Last_4_Games": 41.0,
+          "L4_PPG": 10.2,
+          "Total_pts": 68.0,
+          "PPG": 8.5,
+          "Last_2_Games_Int": 17,
+          "Last_4_Games_Int": 41,
+          "Total_pts_Int": 68,
+          "PPG_Int": 8.5,
+          "Stat_Summary": "17 FGs (4 of 50+ yds), 13 XPs",
+          "Week10_Opponent": "@ Cowboys (DAL)",
+          "Week10_Offense": "Cowboys (DAL)",
+          "Vuln_Rank": 16,
+          "Matchup_Grade": "Favorable (9\u201316)"
+        },
+        {
+          "Defense": "Dolphins (MIA)",
+          "Team": "MIA",
+          "Position": "K",
+          "W1": 9.0,
+          "W1_Int": 9,
+          "W1_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "2 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Matt Gay",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "2 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W2": 5.0,
+          "W2_Int": 5,
+          "W2_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "0 FG (0 of 50+ yds), 5 XP",
+            "players": [
+              {
+                "name": "Eddy Pineiro",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "5 XP"
+              }
+            ]
+          },
+          "W3": 6.0,
+          "W3_Int": 6,
+          "W3_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Harrison Butker",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W4": 16.0,
+          "W4_Int": 16,
+          "W4_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "5 FG (1 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Will Reichard",
+                "pts_frac": 16.0,
+                "pts_int": 16,
+                "stat_line": "5 FG (1 of 50+ yds)"
+              }
+            ]
+          },
+          "W5": 7.0,
+          "W5_Int": 7,
+          "W5_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "1 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Evan McPherson",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG \u2022 4 XP"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 5.0,
+          "W7_Int": 5,
+          "W7_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Jason Sanders",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W8": 6.0,
+          "W8_Int": 6,
+          "W8_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Andy Borregales",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W9": 13.0,
+          "W9_Int": 13,
+          "W9_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "4 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Jake Bates",
+                "pts_frac": 13.0,
+                "pts_int": 13,
+                "stat_line": "4 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 19.0,
+          "Last_4_Games": 31.0,
+          "L4_PPG": 7.8,
+          "Total_pts": 67.0,
+          "PPG": 8.4,
+          "Last_2_Games_Int": 19,
+          "Last_4_Games_Int": 31,
+          "Total_pts_Int": 67,
+          "PPG_Int": 8.4,
+          "Stat_Summary": "15 FGs (1 of 50+ yds), 21 XPs",
+          "Week10_Opponent": "@ Colts (IND)",
+          "Week10_Offense": "Colts (IND)",
+          "Vuln_Rank": 17,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Bengals (CIN)",
+          "Team": "CIN",
+          "Position": "K",
+          "W1": 10.0,
+          "W1_Int": 10,
+          "W1_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "2 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Chase McLaughlin",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W2": 6.0,
+          "W2_Int": 6,
+          "W2_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "2 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Ka'imi Fairbairn",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "2 FG"
+              }
+            ]
+          },
+          "W3": 12.0,
+          "W3_Int": 12,
+          "W3_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "3 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Chris Boswell",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "3 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W4": 12.0,
+          "W4_Int": 12,
+          "W4_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "3 FG (2 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Cam Little",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "3 FG (2 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W5": 4.0,
+          "W5_Int": 4,
+          "W5_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Riley Patterson",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 7.0,
+          "W7_Int": 7,
+          "W7_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "2 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Tyler Loop",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W8": 8.0,
+          "W8_Int": 8,
+          "W8_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Joey Slye",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W9": 5.0,
+          "W9_Int": 5,
+          "W9_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Nick Folk",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 13.0,
+          "Last_4_Games": 24.0,
+          "L4_PPG": 6.0,
+          "Total_pts": 64.0,
+          "PPG": 8.0,
+          "Last_2_Games_Int": 13,
+          "Last_4_Games_Int": 24,
+          "Total_pts_Int": 64,
+          "PPG_Int": 8.0,
+          "Stat_Summary": "16 FGs (3 of 50+ yds), 13 XPs",
+          "Week10_Opponent": "vs Steelers (PIT)",
+          "Week10_Offense": "Steelers (PIT)",
+          "Vuln_Rank": 18,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Raiders (LV)",
+          "Team": "LV",
+          "Position": "K",
+          "W1": 7.0,
+          "W1_Int": 7,
+          "W1_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "2 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Riley Patterson",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W2": 2.0,
+          "W2_Int": 2,
+          "W2_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "0 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Cameron Dicker",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "2 XP"
+              }
+            ]
+          },
+          "W3": 3.0,
+          "W3_Int": 3,
+          "W3_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "0 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Daniel Carlson",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "3 XP"
+              }
+            ]
+          },
+          "W4": 6.0,
+          "W4_Int": 6,
+          "W4_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Harrison Butker",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W5": 9.0,
+          "W5_Int": 9,
+          "W5_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "1 FG (0 of 50+ yds), 6 XP",
+            "players": [
+              {
+                "name": "Andy Borregales",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "1 FG \u2022 6 XP"
+              }
+            ]
+          },
+          "W6": 15.0,
+          "W6_Int": 15,
+          "W6_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "4 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Tyler Bass",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "4 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W7": 5.0,
+          "W7_Int": 5,
+          "W7_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "0 FG (0 of 50+ yds), 5 XP",
+            "players": [
+              {
+                "name": "Brandon McManus",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "5 XP"
+              }
+            ]
+          },
+          "W8": 15.0,
+          "W8_Int": 15,
+          "W8_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "4 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Jason Sanders",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "4 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W9": 8.0,
+          "W9_Int": 8,
+          "W9_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "1 FG (0 of 50+ yds), 5 XP",
+            "players": [
+              {
+                "name": "Eddy Pineiro",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "1 FG \u2022 5 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 23.0,
+          "Last_4_Games": 43.0,
+          "L4_PPG": 10.8,
+          "Total_pts": 70.0,
+          "PPG": 7.8,
+          "Last_2_Games_Int": 23,
+          "Last_4_Games_Int": 43,
+          "Total_pts_Int": 70,
+          "PPG_Int": 7.8,
+          "Stat_Summary": "13 FGs (0 of 50+ yds), 31 XPs",
+          "Week10_Opponent": "vs Seahawks (SEA)",
+          "Week10_Offense": "Seahawks (SEA)",
+          "Vuln_Rank": 19,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Cardinals (ARI)",
+          "Team": "ARI",
+          "Position": "K",
+          "W1": 2.0,
+          "W1_Int": 2,
+          "W1_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "0 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Cameron Dicker",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "2 XP"
+              }
+            ]
+          },
+          "W2": 7.0,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "1 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Jason Myers",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG \u2022 4 XP"
+              }
+            ]
+          },
+          "W3": 7.0,
+          "W3_Int": 7,
+          "W3_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "1 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Eddy Pineiro",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W4": 12.0,
+          "W4_Int": 12,
+          "W4_Detail": {
+            "opp": "NYG",
+            "matchup": "@ NYG",
+            "summary": "3 FG (2 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Dominic Zvada",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "3 FG (2 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W5": 9.0,
+          "W5_Int": 9,
+          "W5_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "1 FG (0 of 50+ yds), 6 XP",
+            "players": [
+              {
+                "name": "Jake Bates",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "1 FG \u2022 6 XP"
+              }
+            ]
+          },
+          "W6": 3.0,
+          "W6_Int": 3,
+          "W6_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "1 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Blake Grupe",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "1 FG"
+              }
+            ]
+          },
+          "W7": 12.0,
+          "W7_Int": 12,
+          "W7_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "3 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Wil Lutz",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "3 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W8": 12.0,
+          "W8_Int": 12,
+          "W8_Detail": {
+            "opp": "DAL",
+            "matchup": "@ DAL",
+            "summary": "3 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Brandon Aubrey",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "3 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W9": 5.0,
+          "W9_Int": 5,
+          "W9_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Jason Myers",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 17.0,
+          "Last_4_Games": 32.0,
+          "L4_PPG": 8.0,
+          "Total_pts": 69.0,
+          "PPG": 7.7,
+          "Last_2_Games_Int": 17,
+          "Last_4_Games_Int": 32,
+          "Total_pts_Int": 69,
+          "PPG_Int": 7.7,
+          "Stat_Summary": "14 FGs (3 of 50+ yds), 24 XPs",
+          "Week10_Opponent": "vs Rams (LA)",
+          "Week10_Offense": "Rams (LA)",
+          "Vuln_Rank": 20,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Falcons (ATL)",
+          "Team": "ATL",
+          "Position": "K",
+          "W1": 8.0,
+          "W1_Int": 8,
+          "W1_Detail": {
+            "opp": "PIT",
+            "matchup": "@ PIT",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Chris Boswell",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W2": 10.0,
+          "W2_Int": 10,
+          "W2_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "2 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Ryan Fitzgerald",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "2 FG \u2022 4 XP"
+              }
+            ]
+          },
+          "W3": 2.0,
+          "W3_Int": 2,
+          "W3_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "0 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Trey Smack",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "2 XP"
+              }
+            ]
+          },
+          "W4": 6.0,
+          "W4_Int": 6,
+          "W4_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Daniel Carlson",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W5": 12.0,
+          "W5_Int": 12,
+          "W5_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "3 FG (2 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Tyler Loop",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "3 FG (2 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W6": 8.0,
+          "W6_Int": 8,
+          "W6_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "1 FG (1 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Cairo Santos",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 4 XP"
+              }
+            ]
+          },
+          "W7": 2.0,
+          "W7_Int": 2,
+          "W7_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "0 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Eddy Pineiro",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "2 XP"
+              }
+            ]
+          },
+          "W8": 10.0,
+          "W8_Int": 10,
+          "W8_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "3 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Chase McLaughlin",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "3 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W9": 11.0,
+          "W9_Int": 11,
+          "W9_Detail": {
+            "opp": "CIN",
+            "matchup": "vs CIN",
+            "summary": "2 FG (1 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Evan McPherson",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 4 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 21.0,
+          "Last_4_Games": 31.0,
+          "L4_PPG": 7.8,
+          "Total_pts": 69.0,
+          "PPG": 7.7,
+          "Last_2_Games_Int": 21,
+          "Last_4_Games_Int": 31,
+          "Total_pts_Int": 69,
+          "PPG_Int": 7.7,
+          "Stat_Summary": "14 FGs (4 of 50+ yds), 23 XPs",
+          "Week10_Opponent": "vs Chiefs (KC)",
+          "Week10_Offense": "Chiefs (KC)",
+          "Vuln_Rank": 21,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Panthers (CAR)",
+          "Team": "CAR",
+          "Position": "K",
+          "W1": 11.0,
+          "W1_Int": 11,
+          "W1_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "1 FG (0 of 50+ yds), 8 XP",
+            "players": [
+              {
+                "name": "Cairo Santos",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "1 FG \u2022 8 XP"
+              }
+            ]
+          },
+          "W2": 3.0,
+          "W2_Int": 3,
+          "W2_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "1 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Nick Folk",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "1 FG"
+              }
+            ]
+          },
+          "W3": 7.0,
+          "W3_Int": 7,
+          "W3_Detail": {
+            "opp": "CLE",
+            "matchup": "@ CLE",
+            "summary": "2 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Andre Szmyt",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W4": 15.0,
+          "W4_Int": 15,
+          "W4_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "4 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Jake Bates",
+                "pts_frac": 15.0,
+                "pts_int": 15,
+                "stat_line": "4 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W5": "BYE",
+          "W5_Int": "BYE",
+          "W5_Detail": null,
+          "W6": 2.0,
+          "W6_Int": 2,
+          "W6_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "0 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Jake Elliott",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "2 XP"
+              }
+            ]
+          },
+          "W7": 11.0,
+          "W7_Int": 11,
+          "W7_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "2 FG (0 of 50+ yds), 5 XP",
+            "players": [
+              {
+                "name": "Chase McLaughlin",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "2 FG \u2022 5 XP"
+              }
+            ]
+          },
+          "W8": 3.0,
+          "W8_Int": 3,
+          "W8_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "0 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Trey Smack",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "3 XP"
+              }
+            ]
+          },
+          "W9": 8.0,
+          "W9_Int": 8,
+          "W9_Detail": {
+            "opp": "DEN",
+            "matchup": "vs DEN",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Wil Lutz",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 11.0,
+          "Last_4_Games": 24.0,
+          "L4_PPG": 6.0,
+          "Total_pts": 60.0,
+          "PPG": 7.5,
+          "Last_2_Games_Int": 11,
+          "Last_4_Games_Int": 24,
+          "Total_pts_Int": 60,
+          "PPG_Int": 7.5,
+          "Stat_Summary": "12 FGs (1 of 50+ yds), 23 XPs",
+          "Week10_Opponent": "@ Saints (NO)",
+          "Week10_Offense": "Saints (NO)",
+          "Vuln_Rank": 22,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Broncos (DEN)",
+          "Team": "DEN",
+          "Position": "K",
+          "W1": 7.0,
+          "W1_Int": 7,
+          "W1_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "1 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Harrison Butker",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG \u2022 4 XP"
+              }
+            ]
+          },
+          "W2": 7.0,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "JAX",
+            "matchup": "vs JAX",
+            "summary": "2 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Cam Little",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W3": 14.0,
+          "W3_Int": 14,
+          "W3_Detail": {
+            "opp": "LA",
+            "matchup": "vs LA",
+            "summary": "4 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Harrison Mevis",
+                "pts_frac": 14.0,
+                "pts_int": 14,
+                "stat_line": "4 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W4": 6.0,
+          "W4_Int": 6,
+          "W4_Detail": {
+            "opp": "SF",
+            "matchup": "@ SF",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Eddy Pineiro",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W5": 5.0,
+          "W5_Int": 5,
+          "W5_Detail": {
+            "opp": "LAC",
+            "matchup": "@ LAC",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Cameron Dicker",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W6": 7.0,
+          "W6_Int": 7,
+          "W6_Detail": {
+            "opp": "SEA",
+            "matchup": "vs SEA",
+            "summary": "2 FG (1 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Jason Myers",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG (1 of 50+ yds)"
+              }
+            ]
+          },
+          "W7": 10.0,
+          "W7_Int": 10,
+          "W7_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "3 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Chad Ryland",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "3 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W8": 6.0,
+          "W8_Int": 6,
+          "W8_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Harrison Butker",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W9": 3.0,
+          "W9_Int": 3,
+          "W9_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "0 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Ryan Fitzgerald",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "3 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 9.0,
+          "Last_4_Games": 26.0,
+          "L4_PPG": 6.5,
+          "Total_pts": 65.0,
+          "PPG": 7.2,
+          "Last_2_Games_Int": 9,
+          "Last_4_Games_Int": 26,
+          "Total_pts_Int": 65,
+          "PPG_Int": 7.2,
+          "Stat_Summary": "15 FGs (1 of 50+ yds), 19 XPs",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 23,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Jets (NYJ)",
+          "Team": "NYJ",
+          "Position": "K",
+          "W1": 4.0,
+          "W1_Int": 4,
+          "W1_Detail": {
+            "opp": "TEN",
+            "matchup": "@ TEN",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Joey Slye",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W2": 8.0,
+          "W2_Int": 8,
+          "W2_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Trey Smack",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W3": 7.0,
+          "W3_Int": 7,
+          "W3_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "1 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Jake Bates",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG \u2022 4 XP"
+              }
+            ]
+          },
+          "W4": 11.0,
+          "W4_Int": 11,
+          "W4_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "3 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Cairo Santos",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W5": 6.0,
+          "W5_Int": 6,
+          "W5_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "2 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Andre Szmyt",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "2 FG"
+              }
+            ]
+          },
+          "W6": 8.0,
+          "W6_Int": 8,
+          "W6_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Andy Borregales",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W7": 4.0,
+          "W7_Int": 4,
+          "W7_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "0 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Zane Gonzalez",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "4 XP"
+              }
+            ]
+          },
+          "W8": 9.0,
+          "W8_Int": 9,
+          "W8_Detail": {
+            "opp": "LV",
+            "matchup": "vs LV",
+            "summary": "1 FG (1 of 50+ yds), 5 XP",
+            "players": [
+              {
+                "name": "Matt Gay",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 5 XP"
+              }
+            ]
+          },
+          "W9": 5.0,
+          "W9_Int": 5,
+          "W9_Detail": {
+            "opp": "KC",
+            "matchup": "@ KC",
+            "summary": "0 FG (0 of 50+ yds), 5 XP",
+            "players": [
+              {
+                "name": "Harrison Butker",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "5 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 14.0,
+          "Last_4_Games": 26.0,
+          "L4_PPG": 6.5,
+          "Total_pts": 62.0,
+          "PPG": 6.9,
+          "Last_2_Games_Int": 14,
+          "Last_4_Games_Int": 26,
+          "Total_pts_Int": 62,
+          "PPG_Int": 6.9,
+          "Stat_Summary": "12 FGs (1 of 50+ yds), 25 XPs",
+          "Week10_Opponent": "vs Bills (BUF)",
+          "Week10_Offense": "Bills (BUF)",
+          "Vuln_Rank": 24,
+          "Matchup_Grade": "Neutral (17\u201324)"
+        },
+        {
+          "Defense": "Bills (BUF)",
+          "Team": "BUF",
+          "Position": "K",
+          "W1": 8.0,
+          "W1_Int": 8,
+          "W1_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "1 FG (1 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Ka'imi Fairbairn",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 4 XP"
+              }
+            ]
+          },
+          "W2": 7.0,
+          "W2_Int": 7,
+          "W2_Detail": {
+            "opp": "DET",
+            "matchup": "vs DET",
+            "summary": "1 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Jake Bates",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG \u2022 4 XP"
+              }
+            ]
+          },
+          "W3": 10.0,
+          "W3_Int": 10,
+          "W3_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "3 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Cameron Dicker",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "3 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W4": 3.0,
+          "W4_Int": 3,
+          "W4_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "0 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Andy Borregales",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "3 XP"
+              }
+            ]
+          },
+          "W5": 4.0,
+          "W5_Int": 4,
+          "W5_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "0 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Harrison Mevis",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "4 XP"
+              }
+            ]
+          },
+          "W6": 12.0,
+          "W6_Int": 12,
+          "W6_Detail": {
+            "opp": "LV",
+            "matchup": "@ LV",
+            "summary": "3 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Matt Gay",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "3 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 4.0,
+          "W8_Int": 4,
+          "W8_Detail": {
+            "opp": "BAL",
+            "matchup": "vs BAL",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Tyler Loop",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W9": 7.0,
+          "W9_Int": 7,
+          "W9_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "2 FG (1 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Will Reichard",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG (1 of 50+ yds)"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 11.0,
+          "Last_4_Games": 27.0,
+          "L4_PPG": 6.8,
+          "Total_pts": 55.0,
+          "PPG": 6.9,
+          "Last_2_Games_Int": 11,
+          "Last_4_Games_Int": 27,
+          "Total_pts_Int": 55,
+          "PPG_Int": 6.9,
+          "Stat_Summary": "11 FGs (2 of 50+ yds), 20 XPs",
+          "Week10_Opponent": "@ Jets (NYJ)",
+          "Week10_Offense": "Jets (NYJ)",
+          "Vuln_Rank": 25,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Vikings (MIN)",
+          "Team": "MIN",
+          "Position": "K",
+          "W1": 11.0,
+          "W1_Int": 11,
+          "W1_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "3 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Trey Smack",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W2": 4.0,
+          "W2_Int": 4,
+          "W2_Detail": {
+            "opp": "CHI",
+            "matchup": "@ CHI",
+            "summary": "1 FG (1 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Cairo Santos",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG (1 of 50+ yds)"
+              }
+            ]
+          },
+          "W3": 11.0,
+          "W3_Int": 11,
+          "W3_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "3 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Chase McLaughlin",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W4": 4.0,
+          "W4_Int": 4,
+          "W4_Detail": {
+            "opp": "MIA",
+            "matchup": "vs MIA",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Riley Patterson",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W5": 1.0,
+          "W5_Int": 1,
+          "W5_Detail": {
+            "opp": "NO",
+            "matchup": "@ NO",
+            "summary": "0 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Daniel Carlson",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "1 XP"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 4.0,
+          "W7_Int": 4,
+          "W7_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Spencer Shrader",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W8": 7.0,
+          "W8_Int": 7,
+          "W8_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "2 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Jake Bates",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W9": 12.0,
+          "W9_Int": 12,
+          "W9_Detail": {
+            "opp": "BUF",
+            "matchup": "vs BUF",
+            "summary": "3 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Tyler Bass",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "3 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 19.0,
+          "Last_4_Games": 24.0,
+          "L4_PPG": 6.0,
+          "Total_pts": 54.0,
+          "PPG": 6.8,
+          "Last_2_Games_Int": 19,
+          "Last_4_Games_Int": 24,
+          "Total_pts_Int": 54,
+          "PPG_Int": 6.8,
+          "Stat_Summary": "14 FGs (4 of 50+ yds), 8 XPs",
+          "Week10_Opponent": "@ Packers (GB)",
+          "Week10_Offense": "Packers (GB)",
+          "Vuln_Rank": 26,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Seahawks (SEA)",
+          "Team": "SEA",
+          "Position": "K",
+          "W1": 5.0,
+          "W1_Int": 5,
+          "W1_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "1 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Andy Borregales",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W2": 1.0,
+          "W2_Int": 1,
+          "W2_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "0 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Chad Ryland",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "1 XP"
+              }
+            ]
+          },
+          "W3": 10.0,
+          "W3_Int": 10,
+          "W3_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "2 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Drew Stevens",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W4": 11.0,
+          "W4_Int": 11,
+          "W4_Detail": {
+            "opp": "LAC",
+            "matchup": "vs LAC",
+            "summary": "3 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Cameron Dicker",
+                "pts_frac": 11.0,
+                "pts_int": 11,
+                "stat_line": "3 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W5": 6.0,
+          "W5_Int": 6,
+          "W5_Detail": {
+            "opp": "SF",
+            "matchup": "vs SF",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Eddy Pineiro",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W6": 6.0,
+          "W6_Int": 6,
+          "W6_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "1 FG (1 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Wil Lutz",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 2 XP"
+              }
+            ]
+          },
+          "W7": 4.0,
+          "W7_Int": 4,
+          "W7_Detail": {
+            "opp": "KC",
+            "matchup": "vs KC",
+            "summary": "1 FG (1 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Harrison Butker",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG (1 of 50+ yds)"
+              }
+            ]
+          },
+          "W8": 10.0,
+          "W8_Int": 10,
+          "W8_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "2 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Cairo Santos",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "2 FG \u2022 4 XP"
+              }
+            ]
+          },
+          "W9": 3.0,
+          "W9_Int": 3,
+          "W9_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "1 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Chad Ryland",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "1 FG"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 13.0,
+          "Last_4_Games": 23.0,
+          "L4_PPG": 5.8,
+          "Total_pts": 56.0,
+          "PPG": 6.2,
+          "Last_2_Games_Int": 13,
+          "Last_4_Games_Int": 23,
+          "Total_pts_Int": 56,
+          "PPG_Int": 6.2,
+          "Stat_Summary": "12 FGs (4 of 50+ yds), 16 XPs",
+          "Week10_Opponent": "@ Raiders (LV)",
+          "Week10_Offense": "Raiders (LV)",
+          "Vuln_Rank": 27,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Giants (NYG)",
+          "Team": "NYG",
+          "Position": "K",
+          "W1": 2.0,
+          "W1_Int": 2,
+          "W1_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "0 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Brandon Aubrey",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "2 XP"
+              }
+            ]
+          },
+          "W2": 4.0,
+          "W2_Int": 4,
+          "W2_Detail": {
+            "opp": "LA",
+            "matchup": "@ LA",
+            "summary": "0 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Harrison Mevis",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "4 XP"
+              }
+            ]
+          },
+          "W3": 1.0,
+          "W3_Int": 1,
+          "W3_Detail": {
+            "opp": "TEN",
+            "matchup": "vs TEN",
+            "summary": "0 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Joey Slye",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "1 XP"
+              }
+            ]
+          },
+          "W4": 7.0,
+          "W4_Int": 7,
+          "W4_Detail": {
+            "opp": "ARI",
+            "matchup": "vs ARI",
+            "summary": "1 FG (1 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Chad Ryland",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 3 XP"
+              }
+            ]
+          },
+          "W5": 7.0,
+          "W5_Int": 7,
+          "W5_Detail": {
+            "opp": "WAS",
+            "matchup": "@ WAS",
+            "summary": "2 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Drew Stevens",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "2 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W6": 12.0,
+          "W6_Int": 12,
+          "W6_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "2 FG (2 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Daniel Carlson",
+                "pts_frac": 12.0,
+                "pts_int": 12,
+                "stat_line": "2 FG (2 of 50+ yds) \u2022 4 XP"
+              }
+            ]
+          },
+          "W7": 9.0,
+          "W7_Int": 9,
+          "W7_Detail": {
+            "opp": "HOU",
+            "matchup": "@ HOU",
+            "summary": "2 FG (2 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Ka'imi Fairbairn",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "2 FG (2 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W8": "BYE",
+          "W8_Int": "BYE",
+          "W8_Detail": null,
+          "W9": 3.0,
+          "W9_Int": 3,
+          "W9_Detail": {
+            "opp": "PHI",
+            "matchup": "@ PHI",
+            "summary": "1 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Jake Elliott",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "1 FG"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 12.0,
+          "Last_4_Games": 31.0,
+          "L4_PPG": 7.8,
+          "Total_pts": 45.0,
+          "PPG": 5.6,
+          "Last_2_Games_Int": 12,
+          "Last_4_Games_Int": 31,
+          "Total_pts_Int": 45,
+          "PPG_Int": 5.6,
+          "Stat_Summary": "8 FGs (5 of 50+ yds), 16 XPs",
+          "Week10_Opponent": "vs Commanders (WAS)",
+          "Week10_Offense": "Commanders (WAS)",
+          "Vuln_Rank": 28,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Jaguars (JAX)",
+          "Team": "JAX",
+          "Position": "K",
+          "W1": 4.0,
+          "W1_Int": 4,
+          "W1_Detail": {
+            "opp": "CLE",
+            "matchup": "vs CLE",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Andre Szmyt",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W2": 8.0,
+          "W2_Int": 8,
+          "W2_Detail": {
+            "opp": "DEN",
+            "matchup": "@ DEN",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Wil Lutz",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W3": 6.0,
+          "W3_Int": 6,
+          "W3_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "2 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Andy Borregales",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "2 FG"
+              }
+            ]
+          },
+          "W4": 5.0,
+          "W4_Int": 5,
+          "W4_Detail": {
+            "opp": "CIN",
+            "matchup": "@ CIN",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Evan McPherson",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W5": 5.0,
+          "W5_Int": 5,
+          "W5_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Jake Elliott",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W6": 10.0,
+          "W6_Int": 10,
+          "W6_Detail": {
+            "opp": "HOU",
+            "matchup": "vs HOU",
+            "summary": "2 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Ka'imi Fairbairn",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "2 FG \u2022 4 XP"
+              }
+            ]
+          },
+          "W7": "BYE",
+          "W7_Int": "BYE",
+          "W7_Detail": null,
+          "W8": 1.0,
+          "W8_Int": 1,
+          "W8_Detail": {
+            "opp": "IND",
+            "matchup": "vs IND",
+            "summary": "0 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Spencer Shrader",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "1 XP"
+              }
+            ]
+          },
+          "W9": 5.0,
+          "W9_Int": 5,
+          "W9_Detail": {
+            "opp": "BAL",
+            "matchup": "@ BAL",
+            "summary": "1 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Jake Moody",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 6.0,
+          "Last_4_Games": 21.0,
+          "L4_PPG": 5.2,
+          "Total_pts": 44.0,
+          "PPG": 5.5,
+          "Last_2_Games_Int": 6,
+          "Last_4_Games_Int": 21,
+          "Total_pts_Int": 44,
+          "PPG_Int": 5.5,
+          "Stat_Summary": "10 FGs (1 of 50+ yds), 13 XPs",
+          "Week10_Opponent": "@ Titans (TEN)",
+          "Week10_Offense": "Titans (TEN)",
+          "Vuln_Rank": 29,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Bears (CHI)",
+          "Team": "CHI",
+          "Position": "K",
+          "W1": 7.0,
+          "W1_Int": 7,
+          "W1_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "1 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Ryan Fitzgerald",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG \u2022 4 XP"
+              }
+            ]
+          },
+          "W2": 9.0,
+          "W2_Int": 9,
+          "W2_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "3 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Will Reichard",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "3 FG"
+              }
+            ]
+          },
+          "W3": 1.0,
+          "W3_Int": 1,
+          "W3_Detail": {
+            "opp": "PHI",
+            "matchup": "vs PHI",
+            "summary": "0 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Jake Elliott",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "1 XP"
+              }
+            ]
+          },
+          "W4": 6.0,
+          "W4_Int": 6,
+          "W4_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "2 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Jason Sanders",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "2 FG"
+              }
+            ]
+          },
+          "W5": 5.0,
+          "W5_Int": 5,
+          "W5_Detail": {
+            "opp": "GB",
+            "matchup": "@ GB",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Trey Smack",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W6": 1.0,
+          "W6_Int": 1,
+          "W6_Detail": {
+            "opp": "ATL",
+            "matchup": "@ ATL",
+            "summary": "0 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Nick Folk",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "1 XP"
+              }
+            ]
+          },
+          "W7": 6.0,
+          "W7_Int": 6,
+          "W7_Detail": {
+            "opp": "NE",
+            "matchup": "vs NE",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Andy Borregales",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W8": 3.0,
+          "W8_Int": 3,
+          "W8_Detail": {
+            "opp": "SEA",
+            "matchup": "@ SEA",
+            "summary": "1 FG (0 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Jason Myers",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "1 FG"
+              }
+            ]
+          },
+          "W9": 10.0,
+          "W9_Int": 10,
+          "W9_Detail": {
+            "opp": "TB",
+            "matchup": "vs TB",
+            "summary": "3 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Chase McLaughlin",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "3 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 13.0,
+          "Last_4_Games": 20.0,
+          "L4_PPG": 5.0,
+          "Total_pts": 48.0,
+          "PPG": 5.3,
+          "Last_2_Games_Int": 13,
+          "Last_4_Games_Int": 20,
+          "Total_pts_Int": 48,
+          "PPG_Int": 5.3,
+          "Stat_Summary": "12 FGs (0 of 50+ yds), 12 XPs",
+          "Week10_Opponent": "BYE (None)",
+          "Week10_Offense": "BYE",
+          "Vuln_Rank": 30,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Lions (DET)",
+          "Team": "DET",
+          "Position": "K",
+          "W1": 6.0,
+          "W1_Int": 6,
+          "W1_Detail": {
+            "opp": "NO",
+            "matchup": "vs NO",
+            "summary": "1 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Daniel Carlson",
+                "pts_frac": 6.0,
+                "pts_int": 6,
+                "stat_line": "1 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W2": 5.0,
+          "W2_Int": 5,
+          "W2_Detail": {
+            "opp": "BUF",
+            "matchup": "@ BUF",
+            "summary": "0 FG (0 of 50+ yds), 5 XP",
+            "players": [
+              {
+                "name": "Tyler Bass",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "5 XP"
+              }
+            ]
+          },
+          "W3": 4.0,
+          "W3_Int": 4,
+          "W3_Detail": {
+            "opp": "NYJ",
+            "matchup": "vs NYJ",
+            "summary": "1 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Jason Sanders",
+                "pts_frac": 4.0,
+                "pts_int": 4,
+                "stat_line": "1 FG \u2022 1 XP"
+              }
+            ]
+          },
+          "W4": 8.0,
+          "W4_Int": 8,
+          "W4_Detail": {
+            "opp": "CAR",
+            "matchup": "@ CAR",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Ryan Fitzgerald",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W5": 3.0,
+          "W5_Int": 3,
+          "W5_Detail": {
+            "opp": "ARI",
+            "matchup": "@ ARI",
+            "summary": "0 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Chad Ryland",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "3 XP"
+              }
+            ]
+          },
+          "W6": "BYE",
+          "W6_Int": "BYE",
+          "W6_Detail": null,
+          "W7": 5.0,
+          "W7_Int": 5,
+          "W7_Detail": {
+            "opp": "GB",
+            "matchup": "vs GB",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Trey Smack",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W8": 1.0,
+          "W8_Int": 1,
+          "W8_Detail": {
+            "opp": "MIN",
+            "matchup": "vs MIN",
+            "summary": "0 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Will Reichard",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "1 XP"
+              }
+            ]
+          },
+          "W9": 10.0,
+          "W9_Int": 10,
+          "W9_Detail": {
+            "opp": "MIA",
+            "matchup": "@ MIA",
+            "summary": "3 FG (1 of 50+ yds), 0 XP",
+            "players": [
+              {
+                "name": "Zane Gonzalez",
+                "pts_frac": 10.0,
+                "pts_int": 10,
+                "stat_line": "3 FG (1 of 50+ yds)"
+              }
+            ]
+          },
+          "GP": 8,
+          "Last_2_Games": 11.0,
+          "Last_4_Games": 19.0,
+          "L4_PPG": 4.8,
+          "Total_pts": 42.0,
+          "PPG": 5.2,
+          "Last_2_Games_Int": 11,
+          "Last_4_Games_Int": 19,
+          "Total_pts_Int": 42,
+          "PPG_Int": 5.2,
+          "Stat_Summary": "8 FGs (1 of 50+ yds), 17 XPs",
+          "Week10_Opponent": "vs Patriots (NE)",
+          "Week10_Offense": "Patriots (NE)",
+          "Vuln_Rank": 31,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        },
+        {
+          "Defense": "Packers (GB)",
+          "Team": "GB",
+          "Position": "K",
+          "W1": 7.0,
+          "W1_Int": 7,
+          "W1_Detail": {
+            "opp": "MIN",
+            "matchup": "@ MIN",
+            "summary": "1 FG (0 of 50+ yds), 4 XP",
+            "players": [
+              {
+                "name": "Will Reichard",
+                "pts_frac": 7.0,
+                "pts_int": 7,
+                "stat_line": "1 FG \u2022 4 XP"
+              }
+            ]
+          },
+          "W2": 5.0,
+          "W2_Int": 5,
+          "W2_Detail": {
+            "opp": "NYJ",
+            "matchup": "@ NYJ",
+            "summary": "1 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Jason Sanders",
+                "pts_frac": 5.0,
+                "pts_int": 5,
+                "stat_line": "1 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W3": 9.0,
+          "W3_Int": 9,
+          "W3_Detail": {
+            "opp": "ATL",
+            "matchup": "vs ATL",
+            "summary": "2 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Nick Folk",
+                "pts_frac": 9.0,
+                "pts_int": 9,
+                "stat_line": "2 FG \u2022 3 XP"
+              }
+            ]
+          },
+          "W4": 2.0,
+          "W4_Int": 2,
+          "W4_Detail": {
+            "opp": "TB",
+            "matchup": "@ TB",
+            "summary": "0 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Chase McLaughlin",
+                "pts_frac": 2.0,
+                "pts_int": 2,
+                "stat_line": "2 XP"
+              }
+            ]
+          },
+          "W5": 1.0,
+          "W5_Int": 1,
+          "W5_Detail": {
+            "opp": "CHI",
+            "matchup": "vs CHI",
+            "summary": "0 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Cairo Santos",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "1 XP"
+              }
+            ]
+          },
+          "W6": 1.0,
+          "W6_Int": 1,
+          "W6_Detail": {
+            "opp": "DAL",
+            "matchup": "vs DAL",
+            "summary": "0 FG (0 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Brandon Aubrey",
+                "pts_frac": 1.0,
+                "pts_int": 1,
+                "stat_line": "1 XP"
+              }
+            ]
+          },
+          "W7": 8.0,
+          "W7_Int": 8,
+          "W7_Detail": {
+            "opp": "DET",
+            "matchup": "@ DET",
+            "summary": "2 FG (0 of 50+ yds), 2 XP",
+            "players": [
+              {
+                "name": "Jake Bates",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG \u2022 2 XP"
+              }
+            ]
+          },
+          "W8": 8.0,
+          "W8_Int": 8,
+          "W8_Detail": {
+            "opp": "CAR",
+            "matchup": "vs CAR",
+            "summary": "2 FG (1 of 50+ yds), 1 XP",
+            "players": [
+              {
+                "name": "Ryan Fitzgerald",
+                "pts_frac": 8.0,
+                "pts_int": 8,
+                "stat_line": "2 FG (1 of 50+ yds) \u2022 1 XP"
+              }
+            ]
+          },
+          "W9": 3.0,
+          "W9_Int": 3,
+          "W9_Detail": {
+            "opp": "NE",
+            "matchup": "@ NE",
+            "summary": "0 FG (0 of 50+ yds), 3 XP",
+            "players": [
+              {
+                "name": "Andy Borregales",
+                "pts_frac": 3.0,
+                "pts_int": 3,
+                "stat_line": "3 XP"
+              }
+            ]
+          },
+          "GP": 9,
+          "Last_2_Games": 11.0,
+          "Last_4_Games": 20.0,
+          "L4_PPG": 5.0,
+          "Total_pts": 44.0,
+          "PPG": 4.9,
+          "Last_2_Games_Int": 11,
+          "Last_4_Games_Int": 20,
+          "Total_pts_Int": 44,
+          "PPG_Int": 4.9,
+          "Stat_Summary": "8 FGs (1 of 50+ yds), 19 XPs",
+          "Week10_Opponent": "vs Vikings (MIN)",
+          "Week10_Offense": "Vikings (MIN)",
+          "Vuln_Rank": 32,
+          "Matchup_Grade": "Stingy Avoid (Bot 8)"
+        }
+      ]
+    }
   }
 };

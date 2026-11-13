@@ -11,12 +11,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   let currentRenderedWeek10Rows = [];
   
   // Sort states for each table
+  let activePosVuln = 'QB';
+  let activePosYardageMode = 'fractional';
   const sortStates = {
     week9: { column: 'Projected Fantasy Points', ascending: false },
     week10: { column: 'Opponent L4 Points Allowed', ascending: false },
     playoffs: { column: 'Avg Opp Pts Allowed', ascending: false },
     history: { column: 'Total Points Allowed (W1-8)', ascending: false },
     'def-history': { column: 'Total Points (W1-8)', ascending: false },
+    'pos-vuln': { column: 'PPG Allowed', ascending: false },
     anatomy: { column: 'PPG', ascending: false },
     audit: { column: 'Projected Points', ascending: false }
   };
@@ -304,6 +307,110 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderAuditReport();
       });
     }
+
+    const posSelector = document.getElementById('pos-vuln-selector');
+    if (posSelector) {
+      posSelector.querySelectorAll('button[data-pos]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          activePosVuln = btn.dataset.pos || 'QB';
+          posSelector.querySelectorAll('button[data-pos]').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          renderPositionalVulnerability();
+        });
+      });
+    }
+
+    const posYardageSelect = document.getElementById('pos-vuln-yardage-mode');
+    if (posYardageSelect) {
+      posYardageSelect.addEventListener('change', () => {
+        activePosYardageMode = posYardageSelect.value || 'fractional';
+        renderPositionalVulnerability();
+      });
+    }
+
+    // Setup Hover Popover for Positional Weekly Cells
+    const posTbody = document.getElementById('pos-vuln-tbody');
+    const popoverEl = document.getElementById('cell-breakdown-popover');
+    if (posTbody && popoverEl) {
+      function positionPopover(e) {
+        const pad = 14;
+        const rect = popoverEl.getBoundingClientRect();
+        let left = e.clientX + pad;
+        let top = e.clientY + pad;
+        if (left + rect.width > window.innerWidth - 12) {
+          left = Math.max(12, e.clientX - rect.width - pad);
+        }
+        if (top + rect.height > window.innerHeight - 12) {
+          top = Math.max(12, e.clientY - rect.height - pad);
+        }
+        popoverEl.style.left = `${left}px`;
+        popoverEl.style.top = `${top}px`;
+      }
+
+      posTbody.addEventListener('mouseover', (e) => {
+        const cell = e.target.closest('td.pos-wk-cell');
+        if (!cell) {
+          popoverEl.classList.remove('visible');
+          return;
+        }
+        const teamCode = cell.dataset.team;
+        const wk = cell.dataset.week;
+        const posData = appData && appData.positionalVulnerability && appData.positionalVulnerability[activePosVuln];
+        if (!posData || !posData.teams) return;
+        const teamRow = posData.teams.find(t => t.Team === teamCode);
+        if (!teamRow) return;
+        const detail = teamRow[`W${wk}_Detail`];
+        if (!detail) {
+          popoverEl.classList.remove('visible');
+          return;
+        }
+
+        const isInt = activePosYardageMode === 'integer';
+        const totalPts = isInt ? teamRow[`W${wk}_Int`] : teamRow[`W${wk}`];
+        const totalDisp = isInt ? `${Math.round(totalPts)} pts` : `${formatNum(totalPts, 1)} pts`;
+
+        const playersHtml = (detail.players && detail.players.length > 0)
+          ? detail.players.map(p => {
+              const pPts = isInt ? `${p.pts_int} pts` : `${formatNum(p.pts_frac, 1)} pts`;
+              return `
+                <div class="popover-player-row">
+                  <div>
+                    <div class="popover-player-name">${p.name} <span style="font-weight:500; font-size:0.74rem; color:#94a3b8;">(${detail.opp})</span></div>
+                    <div class="popover-player-line">${p.stat_line}</div>
+                  </div>
+                  <div class="popover-player-pts">${pPts}</div>
+                </div>
+              `;
+            }).join('')
+          : `<div class="popover-player-line">No ${activePosVuln} fantasy stats recorded</div>`;
+
+        popoverEl.innerHTML = `
+          <div class="popover-header">
+            <span class="popover-title">${teamCode} vs ${activePosVuln} • Week ${wk} (${detail.matchup})</span>
+            <span class="popover-total-badge">${totalDisp}</span>
+          </div>
+          <div class="popover-summary-box">
+            📊 <strong>Group Total:</strong> ${detail.summary}
+          </div>
+          <div class="popover-players-lbl">Individual ${activePosVuln} Scorers (${detail.opp})</div>
+          <div class="popover-players-list">
+            ${playersHtml}
+          </div>
+        `;
+        popoverEl.classList.add('visible');
+        positionPopover(e);
+      });
+
+      posTbody.addEventListener('mousemove', (e) => {
+        if (popoverEl.classList.contains('visible')) {
+          positionPopover(e);
+        }
+      });
+
+      posTbody.addEventListener('mouseleave', () => {
+        popoverEl.classList.remove('visible');
+      });
+    }
   }
 
   // 5. Sorting Event Listeners
@@ -387,6 +494,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderPlayoffRadar();
     renderHistory();
     renderDefenseHistory();
+    renderPositionalVulnerability();
     renderPointsAnatomy();
     renderAuditReport();
   }
@@ -399,6 +507,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     else if (activeTab === 'history') renderHistory();
     else if (activeTab === 'def-history') renderDefenseHistory();
+    else if (activeTab === 'pos-vuln') renderPositionalVulnerability();
     else if (activeTab === 'anatomy') renderPointsAnatomy();
     else if (activeTab === 'audit') renderAuditReport();
   }
@@ -1083,6 +1192,185 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     return `<td class="col-wk excel-cell" style="background-color: ${bg} !important; color: ${textColor} !important; font-weight: 700;">${num}</td>`;
+  }
+
+  // 9c. Render Tab: Master Positional Vulnerability Board (QB, RB, WR, TE, K)
+  function renderPositionalVulnerability() {
+    const tbody = document.getElementById('pos-vuln-tbody');
+    if (!tbody || !appData || !appData.positionalVulnerability) return;
+
+    const posData = appData.positionalVulnerability[activePosVuln];
+    if (!posData || !posData.teams) return;
+
+    const isIntMode = activePosYardageMode === 'integer';
+    const midVal = posData.league_median || posData.league_avg_ppg || 12.0;
+    const maxVal = posData.p90_smash || (midVal * 1.8);
+
+    // Prepare rows with active yardage mode mapped
+    let rows = posData.teams.map(t => {
+      const w1 = isIntMode ? t.W1_Int : t.W1;
+      const w2 = isIntMode ? t.W2_Int : t.W2;
+      const w3 = isIntMode ? t.W3_Int : t.W3;
+      const w4 = isIntMode ? t.W4_Int : t.W4;
+      const w5 = isIntMode ? t.W5_Int : t.W5;
+      const w6 = isIntMode ? t.W6_Int : t.W6;
+      const w7 = isIntMode ? t.W7_Int : t.W7;
+      const w8 = isIntMode ? t.W8_Int : t.W8;
+      const w9 = isIntMode ? t.W9_Int : t.W9;
+      const l2 = isIntMode ? t.Last_2_Games_Int : t.Last_2_Games;
+      const l4 = isIntMode ? t.Last_4_Games_Int : t.Last_4_Games;
+      const tot = isIntMode ? t.Total_pts_Int : t.Total_pts;
+      const ppg = isIntMode ? t.PPG_Int : t.PPG;
+      return {
+        ...t,
+        _W1: w1, _W2: w2, _W3: w3, _W4: w4, _W5: w5, _W6: w6, _W7: w7, _W8: w8, _W9: w9,
+        _L2: l2, _L4: l4, _Total: tot, _PPG: ppg
+      };
+    });
+
+    // Update Active Position Banner & Table Headers
+    const posNamesMap = {
+      'QB': { icon: '🎯', full: 'Quarterbacks (QB)' },
+      'RB': { icon: '🏃', full: 'Running Backs (RB)' },
+      'WR': { icon: '⚡', full: 'Wide Receivers (WR)' },
+      'TE': { icon: '🛡️', full: 'Tight Ends (TE)' },
+      'K':  { icon: '🦵', full: 'Kickers (K)' }
+    };
+    const pMeta = posNamesMap[activePosVuln] || { icon: '🏈', full: activePosVuln };
+    const bannerTitleEl = document.getElementById('pos-vuln-table-title');
+    if (bannerTitleEl) {
+      bannerTitleEl.textContent = `${pMeta.icon} Viewing Position: ${pMeta.full} — Fantasy Points Allowed by NFL Defenses (Weeks 1–9)`;
+    }
+    const bannerBadgeEl = document.getElementById('pos-vuln-table-badge');
+    if (bannerBadgeEl) {
+      bannerBadgeEl.textContent = `Position: ${activePosVuln}`;
+    }
+    const thPpgEl = document.getElementById('pos-th-ppg');
+    if (thPpgEl) {
+      const arrowSpan = thPpgEl.querySelector('.sort-arrow');
+      const arrowTxt = arrowSpan ? arrowSpan.textContent : '';
+      thPpgEl.innerHTML = `${activePosVuln} PPG<br>Allowed <span class="sort-arrow">${arrowTxt}</span>`;
+    }
+    const thStatsEl = document.getElementById('pos-th-stats');
+    if (thStatsEl) {
+      thStatsEl.textContent = `${activePosVuln} Season Stat Breakdown (W1–9)`;
+    }
+
+    // Update Positional KPI Summary Cards
+    const byPpg = [...rows].sort((a, b) => b._PPG - a._PPG);
+    const byL4 = [...rows].sort((a, b) => b._L4 - a._L4);
+    const mostVuln = byPpg[0];
+    const stingiest = byPpg[byPpg.length - 1];
+    const hottestL4 = byL4[0];
+
+    const mostLbl = document.getElementById('pos-kpi-most-lbl');
+    const mostVal = document.getElementById('pos-kpi-most-val');
+    const mostSub = document.getElementById('pos-kpi-most-sub');
+    if (mostLbl) mostLbl.textContent = `#1 Most Vulnerable vs ${activePosVuln}`;
+    if (mostVal && mostVuln) mostVal.innerHTML = `${renderTeamLogoHtml(mostVuln.Team, mostVuln.Defense, 'sm')} ${mostVuln.Defense}`;
+    if (mostSub && mostVuln) mostSub.textContent = `${formatNum(mostVuln._PPG, 1)} PPG Allowed (${formatNum(mostVuln._Total, isIntMode ? 0 : 1)} Total • W10: ${mostVuln.Week10_Opponent})`;
+
+    const l4Lbl = document.getElementById('pos-kpi-l4-lbl');
+    const l4Val = document.getElementById('pos-kpi-l4-val');
+    const l4Sub = document.getElementById('pos-kpi-l4-sub');
+    if (l4Lbl) l4Lbl.textContent = `Hottest L4 Target vs ${activePosVuln}`;
+    if (l4Val && hottestL4) l4Val.innerHTML = `${renderTeamLogoHtml(hottestL4.Team, hottestL4.Defense, 'sm')} ${hottestL4.Defense}`;
+    if (l4Sub && hottestL4) l4Sub.textContent = `${formatNum(hottestL4._L4, isIntMode ? 0 : 1)} pts in Last 4 Games (W10: ${hottestL4.Week10_Opponent})`;
+
+    const stingyLbl = document.getElementById('pos-kpi-stingy-lbl');
+    const stingyVal = document.getElementById('pos-kpi-stingy-val');
+    const stingySub = document.getElementById('pos-kpi-stingy-sub');
+    if (stingyLbl) stingyLbl.textContent = `#32 Stingiest vs ${activePosVuln} (Avoid)`;
+    if (stingyVal && stingiest) stingyVal.innerHTML = `${renderTeamLogoHtml(stingiest.Team, stingiest.Defense, 'sm')} ${stingiest.Defense}`;
+    if (stingySub && stingiest) stingySub.textContent = `${formatNum(stingiest._PPG, 1)} PPG Allowed (${formatNum(stingiest._Total, isIntMode ? 0 : 1)} Total • W10: ${stingiest.Week10_Opponent})`;
+
+    const avgVal = document.getElementById('pos-kpi-avg-val');
+    const avgSub = document.getElementById('pos-kpi-avg-sub');
+    if (avgVal) avgVal.textContent = `${formatNum(posData.league_avg_ppg, 1)} PPG Avg`;
+    if (avgSub) avgSub.textContent = `Med: ${formatNum(posData.league_median, 1)} • Top 25%: ≥${formatNum(posData.p75_vulnerable, 1)} • Bot 25%: ≤${formatNum(posData.p25_stingy, 1)}`;
+
+    // Sort table rows
+    const sortConfig = sortStates['pos-vuln'] || { column: 'PPG Allowed', ascending: false };
+    const keyMap = {
+      'Vuln_Rank': 'Vuln_Rank',
+      'Position': 'Position',
+      'Defense': 'Defense',
+      'Week 1': '_W1', 'Week 2': '_W2', 'Week 3': '_W3', 'Week 4': '_W4',
+      'Week 5': '_W5', 'Week 6': '_W6', 'Week 7': '_W7', 'Week 8': '_W8', 'Week 9': '_W9',
+      'Last 2 Games': '_L2',
+      'Last 4 Games': '_L4',
+      'Total Points': '_Total',
+      'PPG Allowed': '_PPG',
+      'Season Stat Breakdown': 'Stat_Summary',
+      'Week 10 Offense Faced': 'Week10_Opponent'
+    };
+    const targetKey = keyMap[sortConfig.column] || '_PPG';
+    rows = sortData(rows, targetKey, sortConfig.ascending);
+
+    function renderPosHeatCell(val, teamCode, wkNum) {
+      if (val === 'BYE') return `<td class="stat-dim col-wk">BYE</td>`;
+      const num = parseFloat(val);
+      if (isNaN(num)) return `<td class="col-wk">${val}</td>`;
+
+      let bg, textColor;
+      if (num <= midVal) {
+        const ratio = Math.max(0, num / Math.max(0.1, midVal));
+        const r = Math.round(37 + (255 - 37) * ratio);
+        const g = Math.round(99 + (255 - 99) * ratio);
+        const b = 255;
+        bg = `rgb(${r}, ${g}, ${b})`;
+        textColor = ratio < 0.45 ? '#ffffff' : '#0f172a';
+      } else {
+        const ratio = Math.min(1.0, (num - midVal) / Math.max(1.0, maxVal - midVal));
+        const r = 255;
+        const g = Math.round(255 - (255 - 38) * ratio);
+        const b = Math.round(255 - (255 - 38) * ratio);
+        bg = `rgb(${r}, ${g}, ${b})`;
+        textColor = ratio < 0.45 ? '#0f172a' : '#ffffff';
+      }
+      const disp = isIntMode ? Math.round(num) : formatNum(num, 1);
+      return `<td class="col-wk excel-cell pos-wk-cell" data-team="${teamCode}" data-week="${wkNum}" style="background-color: ${bg} !important; color: ${textColor} !important; font-weight: 700;">${disp}</td>`;
+    }
+
+    const decPlaces = isIntMode ? 0 : 1;
+
+    tbody.innerHTML = rows.map(r => {
+      const defCode = r.Team || extractTeamCode(r.Defense);
+      const oppCode = extractTeamCode(r.Week10_Opponent);
+
+      return `
+        <tr>
+          <td class="col-center stat-bold">#${r.Vuln_Rank}</td>
+          <td class="col-center"><span class="badge badge-primary">${r.Position || activePosVuln}</span></td>
+          <td class="col-sticky">
+            <div class="team-cell">
+              ${renderTeamLogoHtml(defCode, r.Defense)}
+              <span class="stat-bold team-desktop">${r.Defense}</span><span class="stat-bold team-mobile">${defCode}</span>
+            </div>
+          </td>
+          ${renderPosHeatCell(r._W1, defCode, 1)}
+          ${renderPosHeatCell(r._W2, defCode, 2)}
+          ${renderPosHeatCell(r._W3, defCode, 3)}
+          ${renderPosHeatCell(r._W4, defCode, 4)}
+          ${renderPosHeatCell(r._W5, defCode, 5)}
+          ${renderPosHeatCell(r._W6, defCode, 6)}
+          ${renderPosHeatCell(r._W7, defCode, 7)}
+          ${renderPosHeatCell(r._W8, defCode, 8)}
+          ${renderPosHeatCell(r._W9, defCode, 9)}
+          <td class="col-center stat-bold">${formatNum(r._L2, decPlaces)}</td>
+          <td class="col-center stat-bold ${r.Vuln_Rank <= 8 ? 'pts-top' : ''}">${formatNum(r._L4, decPlaces)}</td>
+          <td class="col-center"><span class="pts-highlight">${formatNum(r._Total, decPlaces)}</span></td>
+          <td class="col-center"><span class="stat-bold ${r.Vuln_Rank <= 8 ? 'pts-top' : ''}">${formatNum(r._PPG, 1)}</span></td>
+          <td style="font-size: 0.82rem; color: var(--text-muted);">${r.Stat_Summary}</td>
+          <td>
+            <div class="team-cell">
+              ${oppCode ? renderTeamLogoHtml(oppCode, r.Week10_Opponent) : ''}
+              <span>${r.Week10_Opponent}</span>
+            </div>
+          </td>
+        </tr>
+      `;
+    }).join('');
   }
 
   // 10. Render Tab 4: D/ST Fantasy Points Anatomy (Weeks 1-8)

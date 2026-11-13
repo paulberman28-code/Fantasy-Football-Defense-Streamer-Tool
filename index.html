@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WAFFLe Fantasy D/ST Streamer Tool | 2026 Season</title>
   <meta name="description" content="WAFFLe Customized Defensive Scoring Fantasy D/ST streamer rankings and projections using NFL play-by-play data, Next Gen Stats, Vegas lines, and game-time weather.">
-  <link rel="stylesheet" href="style.css?v=20261106_12">
+  <link rel="stylesheet" href="style.css?v=20261113_03">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -110,6 +110,9 @@
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-def-history" aria-selected="false" aria-controls="tab-def-history" data-tab="def-history">
         <span class="tab-icon">🛡️</span> <span class="tab-label">Defense History</span>
+      </button>
+      <button class="nav-tab" role="tab" id="tab-btn-pos-vuln" aria-selected="false" aria-controls="tab-pos-vuln" data-tab="pos-vuln">
+        <span class="tab-icon">🔥</span> <span class="tab-label">Position Vulnerability</span>
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-anatomy" aria-selected="false" aria-controls="tab-anatomy" data-tab="anatomy">
         <span class="tab-icon">🏈</span> <span class="tab-label">Points Anatomy</span>
@@ -430,6 +433,104 @@
       </div>
     </section>
 
+    <!-- Tab 4b: Master Positional Vulnerability Board (QB, RB, WR, TE, K) -->
+    <section class="tab-panel" id="tab-pos-vuln" role="tabpanel" aria-labelledby="tab-btn-pos-vuln" hidden>
+      <div class="panel-header">
+        <div class="panel-title-wrap">
+          <h2 class="panel-title">Master Positional Vulnerability Board (Weeks 1–9)</h2>
+          <p class="panel-desc">Fantasy points surrendered by all 32 NFL defenses to opposing <strong>QB, RB, WR, TE, and K</strong> position groups under <strong>WAFFLe Offensive &amp; Kicking Rules</strong> (0 PPR, 6 pt Rush/Rec TD, 3 pt Pass TD, -1 INT/Fumb, 1 pt per 10 combined Rush+Rec yds, 1 pt per 25 Pass yds, 3 pt FG + 1 pt 50+ yd bonus).</p>
+        </div>
+        <div class="legend-row">
+          <span class="legend-item"><span class="legend-badge" style="background: #dc2626; color: #ffffff; padding: 0.2rem 0.5rem; font-weight: 700;">Red</span> Soft Defense / Smash Target (High Points Allowed)</span>
+          <span class="legend-item"><span class="legend-badge" style="background: #ffffff; color: #0f172a; padding: 0.2rem 0.5rem; font-weight: 700; border: 1px solid #94a3b8;">White</span> Neutral (League Average)</span>
+          <span class="legend-item"><span class="legend-badge" style="background: #2563eb; color: #ffffff; padding: 0.2rem 0.5rem; font-weight: 700;">Blue</span> Stingy Defense / Tough Matchup (Low Points Allowed)</span>
+        </div>
+      </div>
+
+      <!-- Position Selector Pill Bar & Yardage Mode Toggle -->
+      <div class="audit-section-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+        <div class="pos-selector-bar" id="pos-vuln-selector" role="group" aria-label="Select Fantasy Position">
+          <button type="button" class="pos-select-btn active" data-pos="QB">🎯 QB (Quarterbacks)</button>
+          <button type="button" class="pos-select-btn" data-pos="RB">🏃 RB (Running Backs)</button>
+          <button type="button" class="pos-select-btn" data-pos="WR">⚡ WR (Wide Receivers)</button>
+          <button type="button" class="pos-select-btn" data-pos="TE">🛡️ TE (Tight Ends)</button>
+          <button type="button" class="pos-select-btn" data-pos="K">🦵 K (Kickers)</button>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <label for="pos-vuln-yardage-mode" style="font-size: 0.9rem; font-weight: 700; color: var(--text-dim);">Yardage Scoring:</label>
+          <select id="pos-vuln-yardage-mode" class="m-sort-select" style="padding: 0.5rem 0.85rem; font-size: 0.9rem;">
+            <option value="fractional" selected>Fractional (0.1/yd Rush+Rec, 0.04/yd Pass)</option>
+            <option value="integer">Integer Thresholds (1 pt per full 10 / 25 yds)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Positional Summary KPI Cards -->
+      <div class="audit-kpi-grid" style="margin-bottom: 1.25rem;">
+        <div class="card audit-kpi-card">
+          <span class="audit-kpi-lbl" id="pos-kpi-most-lbl">Most Vulnerable Defense (#1 Target)</span>
+          <div class="audit-kpi-val" id="pos-kpi-most-val">—</div>
+          <span class="audit-kpi-sub" id="pos-kpi-most-sub">—</span>
+        </div>
+        <div class="card audit-kpi-card">
+          <span class="audit-kpi-lbl" id="pos-kpi-l4-lbl">Hottest L4 Target (Bleeding Pts)</span>
+          <div class="audit-kpi-val" id="pos-kpi-l4-val">—</div>
+          <span class="audit-kpi-sub" id="pos-kpi-l4-sub">—</span>
+        </div>
+        <div class="card audit-kpi-card">
+          <span class="audit-kpi-lbl" id="pos-kpi-stingy-lbl">Stingiest Defense (#32 Avoid)</span>
+          <div class="audit-kpi-val" id="pos-kpi-stingy-val">—</div>
+          <span class="audit-kpi-sub" id="pos-kpi-stingy-sub">—</span>
+        </div>
+        <div class="card audit-kpi-card">
+          <span class="audit-kpi-lbl">2026 League Benchmarks</span>
+          <div class="audit-kpi-val" id="pos-kpi-avg-val">—</div>
+          <span class="audit-kpi-sub" id="pos-kpi-avg-sub">—</span>
+        </div>
+      </div>
+
+      <!-- Active Position Table Header Banner -->
+      <div class="pos-table-banner">
+        <div class="pos-table-banner-title" id="pos-vuln-table-title">🎯 Viewing Position: Quarterbacks (QB) — Fantasy Points Allowed by NFL Defenses</div>
+        <span class="badge badge-primary" id="pos-vuln-table-badge">Position: QB</span>
+      </div>
+
+      <div class="mobile-scroll-hint">
+        <span>👈 Swipe table horizontally to see all weekly heatmaps &amp; stats 👉</span>
+      </div>
+
+      <div class="table-wrapper" tabindex="0" role="region" aria-label="Master Positional Vulnerability Grid">
+        <table id="pos-vuln-table">
+          <caption class="sr-only">Historical Fantasy Points Allowed by NFL Defenses to Skill Positions and Kickers</caption>
+          <thead>
+            <tr>
+              <th data-sort="Vuln_Rank" class="col-center col-wk" title="Positional Vulnerability Rank (1 = Allows Most Points)">Rk <span class="sort-arrow"></span></th>
+              <th data-sort="Position" class="col-center col-wk" title="Fantasy Position">Pos <span class="sort-arrow"></span></th>
+              <th data-sort="Defense" class="col-sticky col-def">Defense <span class="sort-arrow"></span></th>
+              <th data-sort="Week 1" class="col-center col-wk">W1 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 2" class="col-center col-wk">W2 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 3" class="col-center col-wk">W3 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 4" class="col-center col-wk">W4 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 5" class="col-center col-wk">W5 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 6" class="col-center col-wk">W6 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 7" class="col-center col-wk">W7 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 8" class="col-center col-wk">W8 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 9" class="col-center col-wk">W9 <span class="sort-arrow"></span></th>
+              <th data-sort="Last 2 Games" class="col-center col-stat">Last 2<br>Games <span class="sort-arrow"></span></th>
+              <th data-sort="Last 4 Games" class="col-center col-stat">Last 4<br>Games <span class="sort-arrow"></span></th>
+              <th data-sort="Total Points" class="col-center col-stat">Total Pts<br>(W1–9) <span class="sort-arrow"></span></th>
+              <th data-sort="PPG Allowed" class="col-center col-stat sort-active desc" id="pos-th-ppg">QB PPG<br>Allowed <span class="sort-arrow">▼</span></th>
+              <th data-sort="Season Stat Breakdown" class="col-stat-wide" id="pos-th-stats">QB Season Stat Breakdown (W1–9)</th>
+              <th data-sort="Week 10 Offense Faced" class="col-def">Week 10<br>Offense Faced <span class="sort-arrow"></span></th>
+            </tr>
+          </thead>
+          <tbody id="pos-vuln-tbody">
+            <!-- Dynamically populated by app.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
     <!-- Tab 5: D/ST Fantasy Points Anatomy (Weeks 1-9) -->
     <section class="tab-panel" id="tab-anatomy" role="tabpanel" aria-labelledby="tab-btn-anatomy" hidden>
       <div class="panel-header">
@@ -572,6 +673,17 @@
               <p class="doc-text" style="margin-top: 0.65rem; font-size: 0.85rem; color: var(--text-dim); line-height: 1.4;">
                 <strong>Vegas Calibration (17.0 Implied Cutoff):</strong> Because any opponent scoring 14+ points earns 0 fantasy points, our projection engine enforces a strict 17.0 Vegas implied point cutoff (5 points above the 7–13 pt bracket ceiling). Any offense implied for &gt;17.0 points projects flat 0.0 bracket fantasy points, ensuring high-risk defenses derive 100% of their projection from genuine sack and takeaway potential.
               </p>
+            </div>
+            <div class="rule-group">
+              <span class="rule-cat">Offensive Positions (QB, RB, WR, TE) &amp; Kickers (K):</span>
+              <ul>
+                <li><strong>Rushing or Receiving TD:</strong> 6 pts (0 PPR / Standard non-reception scoring)</li>
+                <li><strong>Passing TD:</strong> 3 pts</li>
+                <li><strong>Passing Interception / Fumble Lost:</strong> -1 pt each</li>
+                <li><strong>2-Point Conversion:</strong> 2 pts (Rushing / Receiving) • 1 pt (Passing)</li>
+                <li><strong>Offensive Yardage:</strong> 1 pt per 10 yds combined Rushing &amp; Receiving • 1 pt per 25 yds Passing</li>
+                <li><strong>Kicking:</strong> 3 pts per Field Goal made (+1 bonus pt for 50+ yard FG = 4 pts) • 1 pt per Extra Point made</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -1055,9 +1167,12 @@
     </div>
   </footer>
 
+  <!-- Floating Breakdown Popover for Weekly Positional Cells -->
+  <div id="cell-breakdown-popover" class="cell-breakdown-popover" role="tooltip" aria-hidden="true"></div>
+
   <!-- Load data.js for zero-CORS local Safari viewing (file:// protocol) -->
-  <script src="data.js?v=20261112_02"></script>
+  <script src="data.js?v=20261113_03"></script>
   <!-- Main application logic -->
-  <script src="app.js?v=20261112_02"></script>
+  <script src="app.js?v=20261113_03"></script>
 </body>
 </html>
