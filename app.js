@@ -1438,16 +1438,15 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center"><span class="stat-bold">${r.Bracket_Pts} pts</span> <span class="stat-dim">(${formatNum(r.Bracket_Pct, 1)}%)</span></td>
           <td class="col-center"><span class="stat-bold">${r.INTs}</span> <span class="stat-dim">(${r.INT_Pts} pts • ${formatNum(r.INT_Pct, 1)}%)</span></td>
           <td class="col-center"><span class="stat-bold">${r.Fumbles_Rec}</span> <span class="stat-dim">(${r.Fumble_Pts} pts • ${formatNum(r.Fumble_Pct, 1)}%)</span></td>
-          <td class="col-center"><span class="stat-bold">${r.Blocks || 0}</span> <span class="stat-dim">(${r.Block_Pts || 0} pts • ${formatNum(r.Block_Pct || 0, 1)}%)</span></td>
+          <td class="col-center"><span class="stat-bold">${r.Blocks || 0}</span> <span class="stat-dim">(0 pts)</span></td>
           <td class="col-center"><span class="stat-bold">${r.Def_TDs}</span> <span class="stat-dim">(${r.TD_Pts} pts • ${formatNum(r.TD_Pct, 1)}%)</span></td>
           <td class="col-center"><span class="stat-bold">${r.Safeties}</span> <span class="stat-dim">(${r.Safety_Pts} pts)</span></td>
           <td>
-            <div class="dist-bar-wrap" title="Sacks: ${r.Sack_Pct}%, Bracket: ${r.Bracket_Pct}%, INTs: ${r.INT_Pct}%, Fumbles: ${r.Fumble_Pct}%, Blocks: ${r.Block_Pct || 0}%, TDs: ${r.TD_Pct}%">
+            <div class="dist-bar-wrap" title="Sacks: ${r.Sack_Pct}%, Bracket: ${r.Bracket_Pct}%, INTs: ${r.INT_Pct}%, Fumbles: ${r.Fumble_Pct}%, TDs: ${r.TD_Pct}%">
               <div class="dist-seg seg-sack" style="width: ${r.Sack_Pct}%;"></div>
               <div class="dist-seg seg-bracket" style="width: ${r.Bracket_Pct}%;"></div>
               <div class="dist-seg seg-int" style="width: ${r.INT_Pct}%;"></div>
               <div class="dist-seg seg-fumb" style="width: ${r.Fumble_Pct}%;"></div>
-              <div class="dist-seg seg-block" style="width: ${r.Block_Pct || 0}%;"></div>
               <div class="dist-seg seg-td" style="width: ${r.TD_Pct}%;"></div>
             </div>
           </td>

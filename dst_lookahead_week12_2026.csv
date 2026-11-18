@@ -1,33 +1,33 @@
 Stash_DST,W11_Opponent,Opp_Last_4,Opp_Total_Pts,Opp_QB,Stash_Tier,Stash_DQI,Def_Pressure_Rate%,Def_Pass_EPA,Def_3rd_Stop%,Def_Takeaway_Drive%,Def_RZ_TD_Allowed%,Look_Ahead_Rationale
-TB,Panthers (Home),35,52,Bryce Young,Priority,82.2,17.0,-0.122,69.0,83.3,31.2,Divisional home smash spot in Week 12 against Bryce Young and Panthers offense that consistently yields sacks and turnovers.
-HOU,Ravens (Home),29,57,Tyler Huntley,Priority,75.4,25.3,0.038,64.4,33.3,35.3,"Elite multi-week hold. After facing Colts in Week 11, hosts Ravens and backup QBs at home in Week 12 with top-tier pass-rush pressure."
+TB,Panthers (Home),34,50,Bryce Young,Priority,82.2,17.0,-0.122,69.0,83.3,31.2,Divisional home smash spot in Week 12 against Bryce Young and Panthers offense that consistently yields sacks and turnovers.
+HOU,Ravens (Home),29,56,Tyler Huntley,Priority,75.4,25.3,0.038,64.4,33.3,35.3,"Elite multi-week hold. After facing Colts in Week 11, hosts Ravens and backup QBs at home in Week 12 with top-tier pass-rush pressure."
 CLE,Raiders (Home),29,45,Fernando Mendoza,Priority,78.1,22.5,-0.002,64.4,48.0,22.2,"Fresh off Week 11 bye, hosts rookie Fernando Mendoza and Raiders offense in chilly Cleveland weather in Week 12."
 MIN,Falcons (Home),23,73,Michael Penix Jr.,Priority,95.0,37.7,-0.145,71.5,63.0,21.4,Elite DQI defense returns home in Week 12 as a 7-point favorite against Michael Penix Jr. and Falcons offense that just gave up 8 D/ST points.
 JAX,Titans (Home),12,42,Cam Ward,Priority,83.8,20.1,-0.065,71.4,66.7,15.4,Top-ranked Week 12 home smash stash. Hosts rookie Cam Ward and Titans offense as a 14.5-point home favorite with massive sack/turnover upside.
-WAS,Cardinals (@ ARI),34,61,Gardner Minshew,Speculative,71.9,18.5,0.073,63.6,56.0,40.0,Road favorite in Arizona in Week 12 against Cardinals backup QB situation.
+WAS,Cardinals (@ ARI),40,67,Gardner Minshew,Speculative,71.9,18.5,0.073,63.6,56.0,40.0,Road favorite in Arizona in Week 12 against Cardinals backup QB situation.
 DAL,Eagles (Home),27,48,Joe Milton III,Speculative,64.0,19.9,0.197,56.8,29.6,40.9,8.5-point home favorite in Week 12 against backup QB Joe Milton III and Eagles offense.
 NYJ,Dolphins (@ MIA),25,59,Kyle McCord,Speculative,73.2,21.9,0.153,63.2,44.0,19.0,Road favorite in Miami in Week 12 against backup QB Kyle McCord and Dolphins offense.
 LAC,Patriots (Home),24,58,Drake Maye,Speculative,78.0,21.6,0.049,67.8,48.1,19.0,Home game at SoFi Stadium in Week 12 against Patriots offense that has struggled with pocket protection.
-CIN,Saints (Home),19,47,Tyler Shough,Speculative,76.2,21.8,0.021,59.5,50.0,15.8,10-point home favorite in Week 12 against Tyler Shough and Saints offense that will be forced into high dropback volume.
+CIN,Saints (Home),19,46,Tyler Shough,Speculative,76.2,21.8,0.021,59.5,50.0,15.8,10-point home favorite in Week 12 against Tyler Shough and Saints offense that will be forced into high dropback volume.
 DEN,Steelers (@ PIT),14,47,Aaron Rodgers,Speculative,75.6,27.4,0.013,61.2,48.0,50.0,Road favorite in Pittsburgh in Week 12 against Aaron Rodgers with elite sack generation.
-NYG,Colts (@ IND),37,64,Daniel Jones,Neutral,69.6,16.7,0.034,64.0,41.4,47.1,Road favorite in Indianapolis in Week 12 against Daniel Jones and Colts offense.
-NE,Chargers (@ LAC),32,65,Justin Herbert,Neutral,75.2,23.8,0.129,66.0,38.5,21.1,Neutral Week 12 matchup against Chargers.
+NYG,Colts (@ IND),37,75,Daniel Jones,Neutral,69.6,16.7,0.034,64.0,41.4,47.1,Road favorite in Indianapolis in Week 12 against Daniel Jones and Colts offense.
+NE,Chargers (@ LAC),32,64,Justin Herbert,Neutral,75.2,23.8,0.129,66.0,38.5,21.1,Neutral Week 12 matchup against Chargers.
 LV,Browns (@ CLE),30,70,Deshaun Watson,Neutral,71.2,22.8,0.178,58.0,66.7,35.3,Neutral Week 12 matchup against Browns.
-MIA,Jets (Home),24,50,Geno Smith,Neutral,67.6,19.9,0.161,58.5,39.1,33.3,Neutral Week 12 matchup against NYJ.
-LA,Packers (Home),24,45,Jordan Love,Neutral,80.6,17.7,-0.087,73.9,44.0,23.5,"Fresh off Week 11 bye, hosts Jordan Love and Packers in Week 12."
+MIA,Jets (Home),30,56,Geno Smith,Neutral,67.6,19.9,0.161,58.5,39.1,33.3,Neutral Week 12 matchup against NYJ.
+LA,Packers (Home),23,43,Jordan Love,Neutral,80.6,17.7,-0.087,73.9,44.0,23.5,"Fresh off Week 11 bye, hosts Jordan Love and Packers in Week 12."
 IND,Giants (Home),22,52,J.J. McCarthy,Neutral,73.4,21.2,0.061,71.9,25.9,43.8,Neutral Week 12 matchup against NYG.
-CAR,Buccaneers (@ TB),21,53,Baker Mayfield,Neutral,68.0,15.4,0.054,59.1,50.0,42.1,Neutral Week 12 matchup against Buccaneers.
-ARI,Commanders (Home),19,35,Jayden Daniels,Neutral,65.1,20.3,0.242,61.7,30.8,41.2,Neutral Week 12 matchup against WAS.
-SEA,49ers (@ SF),16,25,Brock Purdy,Neutral,83.7,26.8,-0.08,70.1,40.7,25.0,Neutral Week 12 matchup against 49ers.
-SF,Seahawks (Home),11,54,Sam Darnold,Neutral,75.4,19.2,0.037,63.2,52.2,20.0,Divisional home matchup in Week 12 against Seahawks.
+CAR,Buccaneers (@ TB),21,59,Baker Mayfield,Neutral,68.0,15.4,0.054,59.1,50.0,42.1,Neutral Week 12 matchup against Buccaneers.
+ARI,Commanders (Home),19,46,Jayden Daniels,Neutral,65.1,20.3,0.242,61.7,30.8,41.2,Neutral Week 12 matchup against WAS.
+SEA,49ers (@ SF),16,24,Brock Purdy,Neutral,83.7,26.8,-0.08,70.1,40.7,25.0,Neutral Week 12 matchup against 49ers.
+SF,Seahawks (Home),10,53,Sam Darnold,Neutral,75.4,19.2,0.037,63.2,52.2,20.0,Divisional home matchup in Week 12 against Seahawks.
 PIT,Broncos (Home),6,21,Bo Nix,Neutral,78.3,22.4,0.044,68.6,44.4,20.0,Neutral Week 12 matchup against DEN.
-ATL,Vikings (@ MIN),24,52,Kirk Cousins,Avoid,72.3,22.7,0.075,61.4,33.3,31.2,AVOID / DO NOT STASH: 7-point road underdog in Minnesota.
-DET,Bears (Home),16,48,Caleb Williams,Avoid,71.1,25.8,0.105,61.8,34.6,50.0,AVOID / DO NOT STASH: High-total divisional game (54.5 O/U) against Caleb Williams and Bears.
+ATL,Vikings (@ MIN),23,51,Kirk Cousins,Avoid,72.3,22.7,0.075,61.4,33.3,31.2,AVOID / DO NOT STASH: 7-point road underdog in Minnesota.
+DET,Bears (Home),16,47,Caleb Williams,Avoid,71.1,25.8,0.105,61.8,34.6,50.0,AVOID / DO NOT STASH: High-total divisional game (54.5 O/U) against Caleb Williams and Bears.
 CHI,Lions (@ DET),16,28,Jared Goff,Avoid,81.8,24.4,-0.002,79.2,40.7,40.0,AVOID / DO NOT STASH: High-total divisional shootout against Jared Goff and Lions.
 BUF,Chiefs (Home),16,26,Patrick Mahomes,Avoid,77.5,25.5,0.024,67.4,66.7,57.1,AVOID / DO NOT STASH: High-total showdown (50.5 O/U) hosting Patrick Mahomes and Chiefs.
 KC,Bills (@ BUF),13,32,Josh Allen,Avoid,77.2,17.0,-0.054,69.0,50.0,29.4,AVOID / DO NOT STASH: High-powered road showdown in Buffalo against Josh Allen.
-PHI,Cowboys (@ DAL),12,31,Dak Prescott,Avoid,65.5,15.5,0.13,63.8,15.4,33.3,AVOID / DO NOT STASH: 8.5-point road underdog in Dallas against Dak Prescott.
-GB,Rams (@ LA),11,40,Matthew Stafford,Avoid,77.9,21.6,-0.031,63.3,74.1,42.1,AVOID / DO NOT STASH: Road test in Los Angeles against Matthew Stafford and Rams off their bye.
+PHI,Cowboys (@ DAL),12,29,Dak Prescott,Avoid,65.5,15.5,0.13,63.8,15.4,33.3,AVOID / DO NOT STASH: 8.5-point road underdog in Dallas against Dak Prescott.
+GB,Rams (@ LA),11,39,Matthew Stafford,Avoid,77.9,21.6,-0.031,63.3,74.1,42.1,AVOID / DO NOT STASH: Road test in Los Angeles against Matthew Stafford and Rams off their bye.
 NO,Bengals (@ CIN),11,32,Joe Burrow,Avoid,71.6,22.5,0.059,59.3,30.0,30.4,AVOID / DO NOT STASH: 10-point road underdog in Cincinnati against Joe Burrow.
 TEN,Jaguars (@ JAX),8,24,Trevor Lawrence,Avoid,68.4,19.6,0.195,59.5,44.4,26.3,AVOID / DO NOT STASH: 14.5-point road underdog in Jacksonville against Trevor Lawrence.
 BAL,Texans (@ HOU),6,29,C.J. Stroud,Avoid,75.3,21.9,0.066,65.5,37.5,22.2,AVOID / DO NOT STASH: Road underdog in Houston against C.J. Stroud.

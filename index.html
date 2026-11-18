@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WAFFLe Fantasy D/ST Streamer Tool | 2026 Season</title>
   <meta name="description" content="WAFFLe Customized Defensive Scoring Fantasy D/ST streamer rankings and projections using NFL play-by-play data, Next Gen Stats, Vegas lines, and game-time weather.">
-  <link rel="stylesheet" href="style.css?v=20261113_03">
+  <link rel="stylesheet" href="style.css?v=20261117_02">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -550,7 +550,7 @@
             <span class="a-icon">💥</span>
             <span class="a-title">Sacks (1 pt)</span>
           </div>
-          <div class="a-val">717 pts <span class="a-pct">47.6%</span></div>
+          <div class="a-val">717 pts <span class="a-pct">48.1%</span></div>
           <p class="a-desc">#1 overall fantasy point generator. Sacks account for nearly half of all defensive scoring.</p>
         </div>
 
@@ -559,7 +559,7 @@
             <span class="a-icon">🛡️</span>
             <span class="a-title">Points Allowed Brackets</span>
           </div>
-          <div class="a-val">230 pts <span class="a-pct">15.3%</span></div>
+          <div class="a-val">230 pts <span class="a-pct">15.4%</span></div>
           <p class="a-desc">10 pts (0 allowed), 7 pts (1–6), 3 pts (7–13). Heavily driven by Vegas implied score totals.</p>
         </div>
 
@@ -568,7 +568,7 @@
             <span class="a-icon">🎯</span>
             <span class="a-title">Interceptions (1 pt)</span>
           </div>
-          <div class="a-val">220 pts <span class="a-pct">14.6%</span></div>
+          <div class="a-val">220 pts <span class="a-pct">14.8%</span></div>
           <p class="a-desc">Driven by tight-window throw % (Agg%), pocket pressure, and high-wind weather gusts.</p>
         </div>
 
@@ -577,7 +577,7 @@
             <span class="a-icon">🏈</span>
             <span class="a-title">Fumble Recoveries (1 pt)</span>
           </div>
-          <div class="a-val">170 pts <span class="a-pct">11.3%</span></div>
+          <div class="a-val">170 pts <span class="a-pct">11.4%</span></div>
           <p class="a-desc">Generated via strip-sacks (QBs with slow release times &gt;3.0s) and wet ball carries. 47% recovery rate.</p>
         </div>
 
@@ -586,17 +586,17 @@
             <span class="a-icon">⚡</span>
             <span class="a-title">Def & ST Touchdowns (6 pts)</span>
           </div>
-          <div class="a-val">150 pts <span class="a-pct">10.0%</span></div>
+          <div class="a-val">150 pts <span class="a-pct">10.1%</span></div>
           <p class="a-desc">25 pick-sixes, scoop-and-scores, and punt/kick returns. High point swings with game-winning upside.</p>
         </div>
 
         <div class="card anatomy-card">
           <div class="anatomy-card-header">
             <span class="a-icon">🛑</span>
-            <span class="a-title">Blocked Kicks (1 pt)</span>
+            <span class="a-title">Blocked Kicks (0 pts)</span>
           </div>
-          <div class="a-val">16 pts <span class="a-pct">1.1%</span></div>
-          <p class="a-desc">16 blocked field goals, extra points, and punts recorded across the NFL.</p>
+          <div class="a-val">0 pts <span class="a-pct">0.0%</span></div>
+          <p class="a-desc">16 blocked field goals, extra points, and punts recorded across the NFL (0 pts accrued to D/ST; only return TDs award pts).</p>
         </div>
 
         <div class="card anatomy-card">
@@ -626,7 +626,7 @@
               <th data-sort="Bracket_Pts" class="col-center col-stat-wide">Points Allowed<br>Bracket (Pts / %) <span class="sort-arrow"></span></th>
               <th data-sort="INTs" class="col-center col-stat-wide">INTs<br>(Pts / %) <span class="sort-arrow"></span></th>
               <th data-sort="Fumbles_Rec" class="col-center col-stat-wide">Fumbles Rec<br>(Pts / %) <span class="sort-arrow"></span></th>
-              <th data-sort="Blocks" class="col-center col-stat-wide">Blocks<br>(Pts / %) <span class="sort-arrow"></span></th>
+              <th data-sort="Blocks" class="col-center col-stat-wide">Blocks<br>(0 pts) <span class="sort-arrow"></span></th>
               <th data-sort="Def_TDs" class="col-center col-stat-wide">Def TDs<br>(Pts / %) <span class="sort-arrow"></span></th>
               <th data-sort="Safeties" class="col-center col-stat-wide">Safeties<br>(Pts / %) <span class="sort-arrow"></span></th>
               <th style="min-width: 220px;">Point Source Distribution</th>
@@ -661,8 +661,8 @@
                 <li><strong>Interception Caught:</strong> 1 pt</li>
                 <li><strong>Fumble Recovered:</strong> 1 pt</li>
                 <li><strong>Safety Allowed:</strong> 2 pts</li>
-                <li><strong>Blocked Kick (FG / Punt / XP):</strong> 1 pt</li>
-                <li><strong>Defensive & ST Touchdown:</strong> 6 pts (Pick-six, fumble scoop-and-score, punt/kickoff return)</li>
+                <li><strong>Blocked Kick (FG / Punt / XP):</strong> 0 pts (Blocked kicks do not accrue points; return touchdowns resulting from a block award 6 pts)</li>
+                <li><strong>Defensive & ST Touchdown:</strong> 6 pts (Pick-six, fumble scoop-and-score, punt/kickoff/blocked kick return)</li>
               </ul>
             </div>
             <div class="rule-group">
@@ -813,25 +813,25 @@
         <!-- 5. D/ST Fantasy Points Anatomy Glossary -->
         <div class="card doc-card full-span">
           <h3 class="card-title">5. D/ST Points Anatomy & League Scoring Glossary (Tab 4 Metrics)</h3>
-          <p class="doc-text">Comprehensive definitions for all columns in the D/ST Fantasy Points Anatomy breakdown, based on 1,181 total defensive fantasy points recorded across Weeks 1–8:</p>
+          <p class="doc-text">Comprehensive definitions for all columns in the D/ST Fantasy Points Anatomy breakdown, based on 1,491 total defensive fantasy points recorded across Weeks 1–10:</p>
           <div class="scoring-rules-list">
             <div class="rule-group">
               <span class="rule-cat">Points Anatomy Table Columns:</span>
               <ul>
-                <li><strong>Fantasy PPG (Points per Game):</strong> Total fantasy points divided by games played. Default sort metric highlighting weekly efficiency (e.g. Vikings 8.6 PPG, Bengals 7.4 PPG).</li>
-                <li><strong>Total Fantasy Points (Total_Pts):</strong> Cumulative fantasy points earned across Weeks 1–8 under customized WAFFLe rules.</li>
-                <li><strong>Point Source Distribution Bar:</strong> Proportional visual bar illustrating the percentage of a defense's scoring derived from Sacks (amber), Brackets (blue), INTs (cyan), Fumbles (emerald), Blocks (pink), and TDs (purple).</li>
+                <li><strong>Fantasy PPG (Points per Game):</strong> Total fantasy points divided by games played. Default sort metric highlighting weekly efficiency.</li>
+                <li><strong>Total Fantasy Points (Total_Pts):</strong> Cumulative fantasy points earned across Weeks 1–10 under customized WAFFLe rules.</li>
+                <li><strong>Point Source Distribution Bar:</strong> Proportional visual bar illustrating the percentage of a defense's scoring derived from Sacks (amber), Brackets (blue), INTs (cyan), Fumbles (emerald), and TDs (purple).</li>
               </ul>
             </div>
             <div class="rule-group">
-              <span class="rule-cat">League-Wide Scoring Distribution (Weeks 1–8):</span>
+              <span class="rule-cat">League-Wide Scoring Distribution (Weeks 1–10):</span>
               <ul>
-                <li><strong>Sacks (1 pt):</strong> 557 pts (<strong style="color: #f59e0b;">47.2%</strong>) • #1 point generator league-wide.</li>
-                <li><strong>Points Allowed Brackets:</strong> 179 pts (<strong style="color: #3b82f6;">15.2%</strong>) • 10 / 7 / 3 pts tiers.</li>
-                <li><strong>Interceptions (1 pt):</strong> 170 pts (<strong style="color: #06b6d4;">14.4%</strong>) • Pressures & tight-window throws.</li>
-                <li><strong>Fumble Recoveries (1 pt):</strong> 135 pts (<strong style="color: #10b981;">11.4%</strong>) • Strip-sacks & wet ball carries.</li>
-                <li><strong>Def & ST Touchdowns (6 pts):</strong> 120 pts (<strong style="color: #8b5cf6;">10.2%</strong>) • Pick-sixes, fumble returns & punt/kick returns.</li>
-                <li><strong>Blocked Kicks (1 pt):</strong> 16 pts (<strong style="color: #ec4899;">1.4%</strong>) • Blocked field goals, extra points, and punts.</li>
+                <li><strong>Sacks (1 pt):</strong> 717 pts (<strong style="color: #f59e0b;">48.1%</strong>) • #1 point generator league-wide.</li>
+                <li><strong>Points Allowed Brackets:</strong> 230 pts (<strong style="color: #3b82f6;">15.4%</strong>) • 10 / 7 / 3 pts tiers.</li>
+                <li><strong>Interceptions (1 pt):</strong> 220 pts (<strong style="color: #06b6d4;">14.8%</strong>) • Pressures & tight-window throws.</li>
+                <li><strong>Fumble Recoveries (1 pt):</strong> 170 pts (<strong style="color: #10b981;">11.4%</strong>) • Strip-sacks & wet ball carries.</li>
+                <li><strong>Def & ST Touchdowns (6 pts):</strong> 150 pts (<strong style="color: #8b5cf6;">10.1%</strong>) • Pick-sixes, fumble returns & punt/kick/block returns.</li>
+                <li><strong>Blocked Kicks (0 pts):</strong> 0 pts (<strong style="color: #ec4899;">0.0%</strong>) • 16 blocked field goals, extra points, and punts recorded across the NFL (0 pts accrued to D/ST; only return TDs award pts).</li>
                 <li><strong>Safeties (2 pts):</strong> 4 pts (<strong style="color: #94a3b8;">0.3%</strong>) • End-zone tackles and holding penalties.</li>
               </ul>
             </div>
@@ -903,7 +903,7 @@
               <br>• <strong>Sacks (Proj / Act):</strong> 1 pt per sack generated.
               <br>• <strong>Turnovers (Proj / Act):</strong> 1 pt per takeaway (Interceptions + Fumble Recoveries).
               <br>• <strong>Bracket (Proj / Act):</strong> Points-allowed bracket points (10 pts for shutout, 7 pts for 1–6 pts, 3 pts for 7–13 pts, 0 pts for 14+ pts).
-              <br>• <strong>Other & Splash Plays (Proj / Act):</strong> Defensive/ST Touchdowns (6 pts), Safeties (2 pts), and Blocked Kicks (1 pt). Isolating "Other" separates predictable, repeatable defensive pressure skills from low-frequency, high-variance splash events (such as an 85-yard fumble-return TD).
+              <br>• <strong>Other & Splash Plays (Proj / Act):</strong> Defensive/ST Touchdowns (6 pts) and Safeties (2 pts). (Note: Blocked kicks award 0 pts in WAFFLe). Isolating "Other" separates predictable, repeatable defensive pressure skills from low-frequency, high-variance splash events (such as an 85-yard fumble-return TD).
             </li>
             <li>
               <strong>Mathematical Component Identity:</strong> Proves full accounting transparency across all active matchups: <code>Total Projected Points = Proj Sacks + Proj Turnovers + Proj Bracket + Proj Other</code>, and <code>Actual Fantasy Points = Actual Sacks + Actual Turnovers + Actual Bracket + Actual Other</code>.
@@ -1033,7 +1033,7 @@
                 <th data-sort="Sacks (Proj / Act)" class="col-center">Sacks (Proj / Act) <span class="sort-arrow"></span></th>
                 <th data-sort="Turnovers (Proj / Act)" class="col-center">Turnovers (Proj / Act) <span class="sort-arrow"></span></th>
                 <th data-sort="Bracket (Proj / Act)" class="col-center">Bracket (Proj / Act) <span class="sort-arrow"></span></th>
-                <th data-sort="Other (Proj / Act)" class="col-center" title="Excluded Random Points: Defensive & ST Touchdowns (6 pts), Safeties (2 pts), Blocked Kicks (1 pt)">TDs / Other (Excl) <span class="sort-arrow"></span></th>
+                <th data-sort="Other (Proj / Act)" class="col-center" title="Excluded Random Points: Defensive & ST Touchdowns (6 pts), Safeties (2 pts); Blocked Kicks (0 pts)">TDs / Other (Excl) <span class="sort-arrow"></span></th>
                 <th data-sort="Outcome" class="col-center">Verdict Outcome <span class="sort-arrow"></span></th>
               </tr>
             </thead>
@@ -1175,8 +1175,8 @@
   <div id="cell-breakdown-popover" class="cell-breakdown-popover" role="tooltip" aria-hidden="true"></div>
 
   <!-- Load data.js for zero-CORS local Safari viewing (file:// protocol) -->
-  <script src="data.js?v=20261117_01"></script>
+  <script src="data.js?v=20261117_02"></script>
   <!-- Main application logic -->
-  <script src="app.js?v=20261117_01"></script>
+  <script src="app.js?v=20261117_02"></script>
 </body>
 </html>

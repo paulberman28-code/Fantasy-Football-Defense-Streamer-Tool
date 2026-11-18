@@ -136,7 +136,7 @@ def compute_week_actuals(week: int, season: int = 2026):
             blk_td = int(((sub_pbp['touchdown'] == 1) & (sub_pbp['td_team'] == tm) & (sub_pbp['desc'].str.contains('BLOCKED', case=False, na=False))).sum())
 
             total_td = pick6 + fumb_td + punt_td + ko_td + blk_td
-            other_pts = (total_td * 6) + (safe * 2) + (blk * 1)
+            other_pts = (total_td * 6) + (safe * 2)  # Blocked kicks award 0 pts in WAFFLe
             total_fantasy_pts = (s * 1) + (i * 1) + (f * 1) + bracket + other_pts
 
             actuals[tm] = {
