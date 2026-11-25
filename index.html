@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WAFFLe Fantasy D/ST Streamer Tool | 2026 Season</title>
   <meta name="description" content="WAFFLe Customized Defensive Scoring Fantasy D/ST streamer rankings and projections using NFL play-by-play data, Next Gen Stats, Vegas lines, and game-time weather.">
-  <link rel="stylesheet" href="style.css?v=20261117_02">
+  <link rel="stylesheet" href="style.css?v=20261125_01">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -40,12 +40,12 @@
       <div class="header-top-bar">
         <div class="badge-row">
           <span class="badge badge-accent">2026 NFL Regular Season</span>
-          <span class="badge badge-primary" id="header-week-badge">Week 11 Matchups</span>
+          <span class="badge badge-primary" id="header-week-badge">Week 12 Matchups</span>
           <span class="badge badge-waffle">WAFFLe Custom Scoring</span>
-          <span class="badge badge-muted" id="header-updated-badge">Updated: Nov 17, 2026</span>
+          <span class="badge badge-muted" id="header-updated-badge">Updated: Nov 25, 2026</span>
         </div>
         <div class="header-controls-group">
-          <button class="action-btn" id="btn-copy-cheatsheet" title="Copy Week 11 Streaming Cheat Sheet for League Chat / Text">
+          <button class="action-btn" id="btn-copy-cheatsheet" title="Copy Week 12 Streaming Cheat Sheet for League Chat / Text">
             <span class="btn-icon" id="copy-icon">📋</span>
             <span id="copy-text">Copy Cheat Sheet</span>
           </button>
@@ -88,9 +88,9 @@
           <span class="kpi-sub" id="kpi-weather-sub">Clear / Breezy (24 mph gusts)</span>
         </div>
         <div class="kpi-card">
-          <span class="kpi-label">Top Week 12 Stash</span>
-          <div class="kpi-value" id="kpi-stash-name">Jacksonville (JAX) & Houston (HOU)</div>
-          <span class="kpi-sub" id="kpi-stash-sub">vs TEN & vs BAL (Top Stash Slates)</span>
+          <span class="kpi-label">Top Week 13 Stash</span>
+          <div class="kpi-value" id="kpi-stash-name">Denver (DEN) & Minnesota (MIN)</div>
+          <span class="kpi-sub" id="kpi-stash-sub">vs MIA & vs CAR (Top Stash Slates)</span>
         </div>
       </div>
     </div>
@@ -100,10 +100,10 @@
     <!-- Navigation Tabs -->
     <nav class="nav-tabs" role="tablist" aria-label="Main Navigation">
       <button class="nav-tab active" role="tab" id="tab-btn-week9" aria-selected="true" aria-controls="tab-week9" data-tab="week9">
-        <span class="tab-icon">🎯</span> <span class="tab-label">Week 11 Projections</span>
+        <span class="tab-icon">🎯</span> <span class="tab-label">Week 12 Projections</span>
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-week10" aria-selected="false" aria-controls="tab-week10" data-tab="week10">
-        <span class="tab-icon">🔮</span> <span class="tab-label">Week 12 Stashes</span>
+        <span class="tab-icon">🔮</span> <span class="tab-label">Week 13 Stashes</span>
       </button>
       <button class="nav-tab" role="tab" id="tab-btn-history" aria-selected="false" aria-controls="tab-history" data-tab="history">
         <span class="tab-icon">📊</span> <span class="tab-label">Offense History</span>
@@ -125,11 +125,11 @@
       </button>
     </nav>
 
-    <!-- Tab 1: Week 11 Matchups & Projections -->
+    <!-- Tab 1: Week 12 Matchups & Projections -->
     <section class="tab-panel active" id="tab-week9" role="tabpanel" aria-labelledby="tab-btn-week9" data-mobile-view="cards">
       <div class="panel-header">
         <div class="panel-title-wrap">
-          <h2 class="panel-title">Week 11 Streaming Rankings & Next Gen Stats</h2>
+          <h2 class="panel-title">Week 12 Streaming Rankings & Next Gen Stats</h2>
           <p class="panel-desc">Click any column header to sort. Evaluates defenses using the composite <strong>Defensive Quality Index (DQI)</strong>, pressure rate, pass EPA, 3rd down stops, takeaway drive %, punt %, red zone defense, and official injuries.</p>
         </div>
         <div class="legend-row">
@@ -141,7 +141,7 @@
       </div>
 
       <div class="mobile-view-controls" id="week9-mobile-controls">
-        <div class="mobile-view-toggle" role="group" aria-label="Week 11 view mode selector">
+        <div class="mobile-view-toggle" role="group" aria-label="Week 12 view mode selector">
           <button type="button" class="m-toggle-btn active" data-view="cards" data-target="week9">📱 Card View</button>
           <button type="button" class="m-toggle-btn" data-view="table" data-target="week9">📊 Full Table</button>
         </div>
@@ -167,9 +167,9 @@
         <span>👈 Swipe table horizontally to see all 29 columns • Tap any row for Full Analysis 👉</span>
       </div>
 
-      <div class="table-wrapper" tabindex="0" role="region" aria-label="Week 11 Defensive Projections Table">
+      <div class="table-wrapper" tabindex="0" role="region" aria-label="Week 12 Defensive Projections Table">
         <table id="projections-table">
-          <caption class="sr-only">Week 11 Defensive Streaming Target Rankings and Performance Metrics</caption>
+          <caption class="sr-only">Week 12 Defensive Streaming Target Rankings and Performance Metrics</caption>
           <thead>
             <tr class="header-super-row">
               <th colspan="7" class="super-header super-matchup">Matchup Core & Opponent Form</th>
@@ -183,10 +183,10 @@
               <th data-sort="Streaming Defense" class="col-sticky col-def">Streaming<br>Defense <span class="sort-arrow"></span></th>
               <th data-sort="Opponent" class="col-def">Opponent <span class="sort-arrow"></span></th>
               <th data-sort="Opposing QB (Status)" class="col-qb">Opposing QB<br>& Status <span class="sort-arrow"></span></th>
-              <th data-sort="Week 11 Verdict" class="col-center col-tier">Week 11<br>Verdict <span class="sort-arrow"></span></th>
+              <th data-sort="Week 12 Verdict" class="col-center col-tier">Week 12<br>Verdict <span class="sort-arrow"></span></th>
               <th data-sort="Opponent Points Allowed L4" class="col-center col-stat-wide">Opponent L4<br>Pts Allowed <span class="sort-arrow"></span></th>
               <th data-sort="Opponent Points Allowed Season" class="col-center col-stat-wide">Opponent Szn<br>Pts Allowed <span class="sort-arrow"></span></th>
-              <th data-sort="3-Week Runway Grade" class="col-center col-stat-wide" title="Schedule difficulty for Weeks 11, 12, and 13 (Green=Easy, Yellow=Neutral, Red=Hard, Grey=BYE)">3-Week Runway<br>(W11–W13) <span class="sort-arrow"></span></th>
+              <th data-sort="3-Week Runway Grade" class="col-center col-stat-wide" title="Schedule difficulty for Weeks 12, 13, and 14 (Green=Easy, Yellow=Neutral, Red=Hard, Grey=BYE)">3-Week Runway<br>(W12–W14) <span class="sort-arrow"></span></th>
               <th data-sort="Projected Fantasy Points" class="col-center col-stat sort-active desc">Projected<br>Points <span class="sort-arrow">▼</span></th>
               <th data-sort="Scoring Floor" class="col-center col-stat">Scoring<br>Floor <span class="sort-arrow"></span></th>
               <th data-sort="Projected Sacks" class="col-center col-stat">Projected<br>Sacks <span class="sort-arrow"></span></th>
@@ -218,11 +218,11 @@
       </div>
     </section>
 
-    <!-- Tab 2: Week 12 Look-Ahead Stash Board -->
+    <!-- Tab 2: Week 13 Look-Ahead Stash Board -->
     <section class="tab-panel" id="tab-week10" role="tabpanel" aria-labelledby="tab-btn-week10" data-mobile-view="cards" hidden>
       <div class="panel-header">
         <div class="panel-title-wrap">
-          <h2 class="panel-title">Week 12 Look-Ahead Stash Board</h2>
+          <h2 class="panel-title">Week 13 Look-Ahead Stash Board</h2>
           <p class="panel-desc">Target next week's premier defensive matchups ahead of the waiver wire run. Tiered by matchup vulnerability from Priority Stashes down to High-Risk Traps.</p>
         </div>
         <div class="legend-row">
@@ -234,7 +234,7 @@
       </div>
 
       <div class="mobile-view-controls" id="week10-mobile-controls">
-        <div class="mobile-view-toggle" role="group" aria-label="Week 12 view mode selector">
+        <div class="mobile-view-toggle" role="group" aria-label="Week 13 view mode selector">
           <button type="button" class="m-toggle-btn active" data-view="cards" data-target="week10">📱 Card View</button>
           <button type="button" class="m-toggle-btn" data-view="table" data-target="week10">📊 Full Table</button>
         </div>
@@ -242,7 +242,7 @@
           <label for="week10-mobile-sort" class="m-sort-label">Sort:</label>
           <select id="week10-mobile-sort" class="m-sort-select">
             <option value="Opponent L4 Points Allowed:desc">Opp L4 Pts Allowed (High ➔ Low)</option>
-            <option value="Week 12 Verdict:asc">Week 12 Verdict (Priority First)</option>
+            <option value="Week 13 Verdict:asc">Week 13 Verdict (Priority First)</option>
             <option value="Def Quality Index (DQI):desc">Def DQI (High ➔ Low)</option>
             <option value="Opponent Total Points Allowed:desc">Opp Szn Pts Allowed (High ➔ Low)</option>
           </select>
@@ -257,14 +257,14 @@
         <span>👈 Swipe table horizontally to see all columns • Tap any row for Full Analysis 👉</span>
       </div>
 
-      <div class="table-wrapper" tabindex="0" role="region" aria-label="Week 12 Look-Ahead Stash Table">
+      <div class="table-wrapper" tabindex="0" role="region" aria-label="Week 13 Look-Ahead Stash Table">
         <table id="stashes-table">
-          <caption class="sr-only">Week 12 Look-Ahead Defensive Stashes</caption>
+          <caption class="sr-only">Week 13 Look-Ahead Defensive Stashes</caption>
           <thead>
             <tr>
               <th data-sort="Defense" class="col-sticky col-def">Defense <span class="sort-arrow"></span></th>
-              <th data-sort="Week 12 Opponent" class="col-def">Week 12<br>Opponent <span class="sort-arrow"></span></th>
-              <th data-sort="Week 12 Verdict" class="col-center col-tier">Week 12<br>Verdict <span class="sort-arrow"></span></th>
+              <th data-sort="Week 13 Opponent" class="col-def">Week 13<br>Opponent <span class="sort-arrow"></span></th>
+              <th data-sort="Week 13 Verdict" class="col-center col-tier">Week 13<br>Verdict <span class="sort-arrow"></span></th>
               <th data-sort="Def Quality Index (DQI)" class="col-center col-stat">Def Quality<br>Index (Szn) <span class="sort-arrow"></span></th>
               <th data-sort="Def Pressure %" class="col-center col-stat-wide">Def Pressure<br>% (Szn) <span class="sort-arrow"></span></th>
               <th data-sort="Def Pass EPA" class="col-center col-stat-wide">Def Pass<br>EPA (Szn) <span class="sort-arrow"></span></th>
@@ -333,8 +333,8 @@
     <section class="tab-panel" id="tab-history" role="tabpanel" aria-labelledby="tab-btn-history" hidden>
       <div class="panel-header">
         <div class="panel-title-wrap">
-          <h2 class="panel-title">Master Offense Vulnerability Board (Weeks 1–10)</h2>
-          <p class="panel-desc">Breakdown of fantasy points yielded to opposing D/STs across all 10 weeks. Last 2 and Last 4 games reflect actual games played (properly skipping bye weeks).</p>
+          <h2 class="panel-title">Master Offense Vulnerability Board (Weeks 1–11)</h2>
+          <p class="panel-desc">Breakdown of fantasy points yielded to opposing D/STs across all 11 weeks. Last 2 and Last 4 games reflect actual games played (properly skipping bye weeks).</p>
         </div>
         <div class="legend-row">
           <span class="legend-item"><span class="legend-badge" style="background: #2563eb; color: #ffffff; padding: 0.2rem 0.5rem; font-weight: 700;">Blue</span> Good Offense (Low Points Allowed: 0–2)</span>
@@ -363,12 +363,13 @@
               <th data-sort="Week 8" class="col-center col-wk">W8 <span class="sort-arrow"></span></th>
               <th data-sort="Week 9" class="col-center col-wk">W9 <span class="sort-arrow"></span></th>
               <th data-sort="Week 10" class="col-center col-wk">W10 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 11" class="col-center col-wk">W11 <span class="sort-arrow"></span></th>
               <th data-sort="Last 2 Games Played" class="col-center col-stat">Last 2<br>Games <span class="sort-arrow"></span></th>
               <th data-sort="Last 4 Games Played" class="col-center col-stat">Last 4<br>Games <span class="sort-arrow"></span></th>
-              <th data-sort="Total Points Allowed (W1-10)" class="col-center col-stat sort-active desc">Total Pts<br>(W1–10) <span class="sort-arrow">▼</span></th>
-              <th data-sort="Streaming Defense" class="col-def">Week 11<br>Opponent <span class="sort-arrow"></span></th>
+              <th data-sort="Total Points Allowed (W1-11)" class="col-center col-stat sort-active desc">Total Pts<br>(W1–11) <span class="sort-arrow">▼</span></th>
+              <th data-sort="Streaming Defense" class="col-def">Week 12<br>Opponent <span class="sort-arrow"></span></th>
               <th data-sort="Opposing QB (Status)" class="col-qb">Quarterback<br>& Status <span class="sort-arrow"></span></th>
-              <th data-sort="Week 11 Verdict" class="col-center col-tier">Week 11<br>Verdict <span class="sort-arrow"></span></th>
+              <th data-sort="Week 12 Verdict" class="col-center col-tier">Week 12<br>Verdict <span class="sort-arrow"></span></th>
             </tr>
           </thead>
           <tbody id="history-tbody">
@@ -378,12 +379,12 @@
       </div>
     </section>
 
-    <!-- Tab 4: Master Defense History & Momentum Board (Weeks 1-10) -->
+    <!-- Tab 4: Master Defense History & Momentum Board (Weeks 1-11) -->
     <section class="tab-panel" id="tab-def-history" role="tabpanel" aria-labelledby="tab-btn-def-history" hidden>
       <div class="panel-header">
         <div class="panel-title-wrap">
-          <h2 class="panel-title">Master Defense History & Momentum Board (Weeks 1–10)</h2>
-          <p class="panel-desc">Empirical fantasy scoring history for all 32 NFL defenses across Weeks 1–10 under WAFFLe rules. Evaluates rolling momentum (Last 2 & Last 4 games played) and short-term trajectory (L4 PPG vs. Season PPG) alongside underlying quality metrics.</p>
+          <h2 class="panel-title">Master Defense History & Momentum Board (Weeks 1–11)</h2>
+          <p class="panel-desc">Empirical fantasy scoring history for all 32 NFL defenses across Weeks 1–11 under WAFFLe rules. Evaluates rolling momentum (Last 2 & Last 4 games played) and short-term trajectory (L4 PPG vs. Season PPG) alongside underlying quality metrics.</p>
         </div>
         <div class="legend-row">
           <span class="legend-item"><span class="legend-badge" style="background: #2563eb; color: #ffffff; padding: 0.2rem 0.5rem; font-weight: 700;">Blue</span> Boom Week (High Points Scored: 7–22+)</span>
@@ -395,12 +396,12 @@
       </div>
 
       <div class="mobile-scroll-hint">
-        <span>👈 Swipe table horizontally to see all 23 columns 👉</span>
+        <span>👈 Swipe table horizontally to see all 24 columns 👉</span>
       </div>
 
       <div class="table-wrapper" tabindex="0" role="region" aria-label="Master Defense History & Momentum Grid">
         <table id="def-history-table">
-          <caption class="sr-only">Historical Points Scored by NFL Defenses Across Weeks 1 to 10</caption>
+          <caption class="sr-only">Historical Points Scored by NFL Defenses Across Weeks 1 to 11</caption>
           <thead>
             <tr>
               <th data-sort="Defense" class="col-sticky col-def">Defense <span class="sort-arrow"></span></th>
@@ -414,9 +415,10 @@
               <th data-sort="Week 8" class="col-center col-wk">W8 <span class="sort-arrow"></span></th>
               <th data-sort="Week 9" class="col-center col-wk">W9 <span class="sort-arrow"></span></th>
               <th data-sort="Week 10" class="col-center col-wk">W10 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 11" class="col-center col-wk">W11 <span class="sort-arrow"></span></th>
               <th data-sort="Last 2 Games Played" class="col-center col-stat">Last 2<br>Games <span class="sort-arrow"></span></th>
               <th data-sort="Last 4 Games Played" class="col-center col-stat">Last 4<br>Games <span class="sort-arrow"></span></th>
-              <th data-sort="Total Points (W1-10)" class="col-center col-stat sort-active desc">Total Pts<br>(W1–10) <span class="sort-arrow">▼</span></th>
+              <th data-sort="Total Points (W1-11)" class="col-center col-stat sort-active desc">Total Pts<br>(W1–11) <span class="sort-arrow">▼</span></th>
               <th data-sort="Fantasy PPG" class="col-center col-stat">PPG <span class="sort-arrow"></span></th>
               <th data-sort="Trend Momentum" class="col-center col-stat-wide">Momentum<br>Trend <span class="sort-arrow"></span></th>
               <th data-sort="Def Quality Index (DQI)" class="col-center col-stat">Def Quality<br>Index (Szn) <span class="sort-arrow"></span></th>
@@ -424,8 +426,8 @@
               <th data-sort="Def Pass EPA" class="col-center col-stat-wide">Def Pass<br>EPA (Szn) <span class="sort-arrow"></span></th>
               <th data-sort="Total Sacks" class="col-center col-stat">Sacks <span class="sort-arrow"></span></th>
               <th data-sort="Total Takeaways" class="col-center col-stat">Takeaways <span class="sort-arrow"></span></th>
-              <th data-sort="Week 11 Opponent" class="col-def">Week 11<br>Matchup <span class="sort-arrow"></span></th>
-              <th data-sort="Week 11 Verdict" class="col-center col-tier">Week 11<br>Verdict <span class="sort-arrow"></span></th>
+              <th data-sort="Week 12 Opponent" class="col-def">Week 12<br>Matchup <span class="sort-arrow"></span></th>
+              <th data-sort="Week 12 Verdict" class="col-center col-tier">Week 12<br>Verdict <span class="sort-arrow"></span></th>
             </tr>
           </thead>
           <tbody id="def-history-tbody">
@@ -439,7 +441,7 @@
     <section class="tab-panel" id="tab-pos-vuln" role="tabpanel" aria-labelledby="tab-btn-pos-vuln" hidden>
       <div class="panel-header">
         <div class="panel-title-wrap">
-          <h2 class="panel-title">Master Positional Vulnerability Board (Weeks 1–10)</h2>
+          <h2 class="panel-title">Master Positional Vulnerability Board (Weeks 1–11)</h2>
           <p class="panel-desc">Fantasy points surrendered by all 32 NFL defenses to opposing <strong>QB, RB, WR, TE, and K</strong> position groups under <strong>WAFFLe Offensive &amp; Kicking Rules</strong> (0 PPR, 6 pt Rush/Rec TD, 3 pt Pass TD, -1 INT/Fumb, 1 pt per 10 combined Rush+Rec yds, 1 pt per 25 Pass yds, 3 pt FG + 1 pt 50+ yd bonus).</p>
         </div>
         <div class="legend-row">
@@ -519,12 +521,13 @@
               <th data-sort="Week 8" class="col-center col-wk">W8 <span class="sort-arrow"></span></th>
               <th data-sort="Week 9" class="col-center col-wk">W9 <span class="sort-arrow"></span></th>
               <th data-sort="Week 10" class="col-center col-wk">W10 <span class="sort-arrow"></span></th>
+              <th data-sort="Week 11" class="col-center col-wk">W11 <span class="sort-arrow"></span></th>
               <th data-sort="Last 2 Games" class="col-center col-stat">Last 2<br>Games <span class="sort-arrow"></span></th>
               <th data-sort="Last 4 Games" class="col-center col-stat">Last 4<br>Games <span class="sort-arrow"></span></th>
-              <th data-sort="Total Points" class="col-center col-stat">Total Pts<br>(W1–10) <span class="sort-arrow"></span></th>
+              <th data-sort="Total Points" class="col-center col-stat">Total Pts<br>(W1–11) <span class="sort-arrow"></span></th>
               <th data-sort="PPG Allowed" class="col-center col-stat sort-active desc" id="pos-th-ppg">QB PPG<br>Allowed <span class="sort-arrow">▼</span></th>
-              <th data-sort="Season Stat Breakdown" class="col-stat-wide" id="pos-th-stats">QB Season Stat Breakdown (W1–10)</th>
-              <th data-sort="Week 11 Offense Faced" class="col-def">Week 11<br>Offense Faced <span class="sort-arrow"></span></th>
+              <th data-sort="Season Stat Breakdown" class="col-stat-wide" id="pos-th-stats">QB Season Stat Breakdown (W1–11)</th>
+              <th data-sort="Week 12 Offense Faced" class="col-def">Week 12<br>Offense Faced <span class="sort-arrow"></span></th>
             </tr>
           </thead>
           <tbody id="pos-vuln-tbody">
@@ -534,11 +537,11 @@
       </div>
     </section>
 
-    <!-- Tab 5: D/ST Fantasy Points Anatomy (Weeks 1-10) -->
+    <!-- Tab 5: D/ST Fantasy Points Anatomy (Weeks 1-11) -->
     <section class="tab-panel" id="tab-anatomy" role="tabpanel" aria-labelledby="tab-btn-anatomy" hidden>
       <div class="panel-header">
         <div class="panel-title-wrap">
-          <h2 class="panel-title">D/ST Fantasy Points Anatomy (Weeks 1–10)</h2>
+          <h2 class="panel-title">D/ST Fantasy Points Anatomy (Weeks 1–11)</h2>
           <p class="panel-desc">Where do defensive fantasy points come from? Empirical breakdown of all fantasy points scored across the 2026 NFL regular season under WAFFLe rules. Sorted by Fantasy Points per Game (PPG). Filter by NFL defense or sort any column to see which teams rely on sacks, takeaways, or low points allowed.</p>
         </div>
       </div>
@@ -550,7 +553,7 @@
             <span class="a-icon">💥</span>
             <span class="a-title">Sacks (1 pt)</span>
           </div>
-          <div class="a-val">717 pts <span class="a-pct">48.1%</span></div>
+          <div class="a-val">785 pts <span class="a-pct">48.3%</span></div>
           <p class="a-desc">#1 overall fantasy point generator. Sacks account for nearly half of all defensive scoring.</p>
         </div>
 
@@ -559,7 +562,7 @@
             <span class="a-icon">🛡️</span>
             <span class="a-title">Points Allowed Brackets</span>
           </div>
-          <div class="a-val">230 pts <span class="a-pct">15.4%</span></div>
+          <div class="a-val">249 pts <span class="a-pct">15.3%</span></div>
           <p class="a-desc">10 pts (0 allowed), 7 pts (1–6), 3 pts (7–13). Heavily driven by Vegas implied score totals.</p>
         </div>
 
@@ -568,7 +571,7 @@
             <span class="a-icon">🎯</span>
             <span class="a-title">Interceptions (1 pt)</span>
           </div>
-          <div class="a-val">220 pts <span class="a-pct">14.8%</span></div>
+          <div class="a-val">234 pts <span class="a-pct">14.4%</span></div>
           <p class="a-desc">Driven by tight-window throw % (Agg%), pocket pressure, and high-wind weather gusts.</p>
         </div>
 
@@ -577,7 +580,7 @@
             <span class="a-icon">🏈</span>
             <span class="a-title">Fumble Recoveries (1 pt)</span>
           </div>
-          <div class="a-val">170 pts <span class="a-pct">11.4%</span></div>
+          <div class="a-val">179 pts <span class="a-pct">11.0%</span></div>
           <p class="a-desc">Generated via strip-sacks (QBs with slow release times &gt;3.0s) and wet ball carries. 47% recovery rate.</p>
         </div>
 
@@ -586,8 +589,8 @@
             <span class="a-icon">⚡</span>
             <span class="a-title">Def & ST Touchdowns (6 pts)</span>
           </div>
-          <div class="a-val">150 pts <span class="a-pct">10.1%</span></div>
-          <p class="a-desc">25 pick-sixes, scoop-and-scores, and punt/kick returns. High point swings with game-winning upside.</p>
+          <div class="a-val">168 pts <span class="a-pct">10.3%</span></div>
+          <p class="a-desc">28 pick-sixes, scoop-and-scores, and punt/kick returns. High point swings with game-winning upside.</p>
         </div>
 
         <div class="card anatomy-card">
@@ -596,7 +599,7 @@
             <span class="a-title">Blocked Kicks (0 pts)</span>
           </div>
           <div class="a-val">0 pts <span class="a-pct">0.0%</span></div>
-          <p class="a-desc">16 blocked field goals, extra points, and punts recorded across the NFL (0 pts accrued to D/ST; only return TDs award pts).</p>
+          <p class="a-desc">17 blocked field goals, extra points, and punts recorded across the NFL (0 pts accrued to D/ST; only return TDs award pts).</p>
         </div>
 
         <div class="card anatomy-card">
@@ -604,8 +607,8 @@
             <span class="a-icon">🔒</span>
             <span class="a-title">Safeties (2 pts)</span>
           </div>
-          <div class="a-val">4 pts <span class="a-pct">0.3%</span></div>
-          <p class="a-desc">End-zone tackles/holding penalties (2 total recorded across NFL in Weeks 1–10).</p>
+          <div class="a-val">10 pts <span class="a-pct">0.6%</span></div>
+          <p class="a-desc">End-zone tackles/holding penalties (5 total recorded across NFL in Weeks 1–11).</p>
         </div>
       </div>
 
@@ -694,7 +697,7 @@
         <!-- 2. Fantasy Projections & Streamer Verdicts Glossary -->
         <div class="card doc-card">
           <h3 class="card-title">2. Fantasy Projections & Streamer Verdicts Glossary</h3>
-          <p class="doc-text">Definitions of all core projection and ranking columns featured on the Week 10 and Look-Ahead boards:</p>
+          <p class="doc-text">Definitions of all core projection and ranking columns featured on the Week 12 and Look-Ahead boards:</p>
           <ul class="advanced-defs">
             <li>
               <strong>Projected Fantasy Points (Proj Pts):</strong> Mathematically weighted fantasy projection summing expected sacks (1.0), interceptions (1.0), fumbles recovered (1.0), defensive/ST touchdowns (6.0), safeties (2.0), and expected points-allowed bracket points.
@@ -735,9 +738,9 @@
               </p>
             </div>
             <div class="rule-group">
-              <span class="rule-cat">2. Defensive Unit Quality &mdash; Full Season Baseline (Weeks 1–9):</span>
+              <span class="rule-cat">2. Defensive Unit Quality &mdash; Full Season Baseline (Weeks 1–11):</span>
               <p class="doc-text" style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.45;">
-                <strong>Why Full Season?</strong> Defense is inherently reactive and opponent-dependent. Over any 4-game sample (~230 snaps), a defense's numbers can be heavily distorted by facing backup QBs or an offensive juggernaut. A full 9-game season baseline (~560 snaps) smooths out schedule variance and isolates genuine defensive talent (pressure generation, 3rd down stops, red zone defense).
+                <strong>Why Full Season?</strong> Defense is inherently reactive and opponent-dependent. Over any 4-game sample (~230 snaps), a defense's numbers can be heavily distorted by facing backup QBs or an offensive juggernaut. A full 11-game season baseline (~700 snaps) smooths out schedule variance and isolates genuine defensive talent (pressure generation, 3rd down stops, red zone defense).
               </p>
             </div>
             <div class="rule-group">
@@ -751,8 +754,8 @@
 
         <!-- 3. Defensive Quality & Health Glossary -->
         <div class="card doc-card">
-          <h3 class="card-title">3. Defensive Quality & Health Glossary (Full Season Baseline: Weeks 1–9)</h3>
-          <p class="doc-text">Advanced metrics measuring the defense's inherent skill, efficiency, and roster health (evaluated over all games played in Weeks 1–9 to smooth opponent schedule variance):</p>
+          <h3 class="card-title">3. Defensive Quality & Health Glossary (Full Season Baseline: Weeks 1–11)</h3>
+          <p class="doc-text">Advanced metrics measuring the defense's inherent skill, efficiency, and roster health (evaluated over all games played in Weeks 1–11 to smooth opponent schedule variance):</p>
           <ul class="advanced-defs">
             <li>
               <strong>Defensive Quality Index (DQI - Szn):</strong> Composite quality score (50–100 scale, league average = 75.0) synthesizing full-season defensive pressure generation (25%), pass EPA allowed (25%), 3rd down stop rate (20%), takeaway drive rate (15%), and red zone touchdown prevention (15%). Isolates true defensive prowess regardless of matchup.
@@ -776,7 +779,7 @@
               <strong>Red Zone TD Allowed % (Szn):</strong> Full-season opponent touchdown conversion rate inside the 20-yard line. Elite red-zone defenses bend without breaking, holding offenses to field goals and preserving low-scoring brackets.
             </li>
             <li>
-              <strong>Def Health / Key Defensive Injuries:</strong> Current Week 10 official practice participation and injury report statuses (Out, DNP, Questionable, IR), filtering out routine veteran rest to isolate impactful absences along the defensive line, edge rush, and secondary.
+              <strong>Def Health / Key Defensive Injuries:</strong> Current Week 12 official practice participation and injury report statuses (Out, DNP, Questionable, IR), filtering out routine veteran rest to isolate impactful absences along the defensive line, edge rush, and secondary.
             </li>
           </ul>
         </div>
@@ -793,7 +796,7 @@
               <strong>Opponent Passing EPA (Off Pass EPA - Last 4 Games):</strong> Expected Points Added per pass play conceded by the opposing offense over their last 4 games. Captures current passing form and offensive line decline (e.g. Chargers -0.365 is a prime streaming target).
             </li>
             <li>
-              <strong>Opponent Points Allowed to D/ST (L2, L4, Total Szn):</strong> Historical fantasy points yielded by that offense to opposing defenses across recent games (L2, L4) and full season (Weeks 1–8).
+              <strong>Opponent Points Allowed to D/ST (L2, L4, Total Szn):</strong> Historical fantasy points yielded by that offense to opposing defenses across recent games (L2, L4) and full season (Weeks 1–11).
             </li>
             <li>
               <strong>QB Fumble Rate % & Fumbles (Season Baseline):</strong> Percentage of offensive dropbacks and touches where the quarterback commits a fumble all season. Full-season tracking separates chronic fumblers (e.g. Baker Mayfield 4.8%, Joe Fagnano 4.2%) from noise.
@@ -813,26 +816,26 @@
         <!-- 5. D/ST Fantasy Points Anatomy Glossary -->
         <div class="card doc-card full-span">
           <h3 class="card-title">5. D/ST Points Anatomy & League Scoring Glossary (Tab 4 Metrics)</h3>
-          <p class="doc-text">Comprehensive definitions for all columns in the D/ST Fantasy Points Anatomy breakdown, based on 1,491 total defensive fantasy points recorded across Weeks 1–10:</p>
+          <p class="doc-text">Comprehensive definitions for all columns in the D/ST Fantasy Points Anatomy breakdown, based on 1,625 total defensive fantasy points recorded across Weeks 1–11:</p>
           <div class="scoring-rules-list">
             <div class="rule-group">
               <span class="rule-cat">Points Anatomy Table Columns:</span>
               <ul>
                 <li><strong>Fantasy PPG (Points per Game):</strong> Total fantasy points divided by games played. Default sort metric highlighting weekly efficiency.</li>
-                <li><strong>Total Fantasy Points (Total_Pts):</strong> Cumulative fantasy points earned across Weeks 1–10 under customized WAFFLe rules.</li>
+                <li><strong>Total Fantasy Points (Total_Pts):</strong> Cumulative fantasy points earned across Weeks 1–11 under customized WAFFLe rules.</li>
                 <li><strong>Point Source Distribution Bar:</strong> Proportional visual bar illustrating the percentage of a defense's scoring derived from Sacks (amber), Brackets (blue), INTs (cyan), Fumbles (emerald), and TDs (purple).</li>
               </ul>
             </div>
             <div class="rule-group">
-              <span class="rule-cat">League-Wide Scoring Distribution (Weeks 1–10):</span>
+              <span class="rule-cat">League-Wide Scoring Distribution (Weeks 1–11):</span>
               <ul>
-                <li><strong>Sacks (1 pt):</strong> 717 pts (<strong style="color: #f59e0b;">48.1%</strong>) • #1 point generator league-wide.</li>
-                <li><strong>Points Allowed Brackets:</strong> 230 pts (<strong style="color: #3b82f6;">15.4%</strong>) • 10 / 7 / 3 pts tiers.</li>
-                <li><strong>Interceptions (1 pt):</strong> 220 pts (<strong style="color: #06b6d4;">14.8%</strong>) • Pressures & tight-window throws.</li>
-                <li><strong>Fumble Recoveries (1 pt):</strong> 170 pts (<strong style="color: #10b981;">11.4%</strong>) • Strip-sacks & wet ball carries.</li>
-                <li><strong>Def & ST Touchdowns (6 pts):</strong> 150 pts (<strong style="color: #8b5cf6;">10.1%</strong>) • Pick-sixes, fumble returns & punt/kick/block returns.</li>
-                <li><strong>Blocked Kicks (0 pts):</strong> 0 pts (<strong style="color: #ec4899;">0.0%</strong>) • 16 blocked field goals, extra points, and punts recorded across the NFL (0 pts accrued to D/ST; only return TDs award pts).</li>
-                <li><strong>Safeties (2 pts):</strong> 4 pts (<strong style="color: #94a3b8;">0.3%</strong>) • End-zone tackles and holding penalties.</li>
+                <li><strong>Sacks (1 pt):</strong> 785 pts (<strong style="color: #f59e0b;">48.3%</strong>) • #1 point generator league-wide.</li>
+                <li><strong>Points Allowed Brackets:</strong> 249 pts (<strong style="color: #3b82f6;">15.3%</strong>) • 10 / 7 / 3 pts tiers.</li>
+                <li><strong>Interceptions (1 pt):</strong> 234 pts (<strong style="color: #06b6d4;">14.4%</strong>) • Pressures & tight-window throws.</li>
+                <li><strong>Fumble Recoveries (1 pt):</strong> 179 pts (<strong style="color: #10b981;">11.0%</strong>) • Strip-sacks & wet ball carries.</li>
+                <li><strong>Def & ST Touchdowns (6 pts):</strong> 168 pts (<strong style="color: #8b5cf6;">10.3%</strong>) • Pick-sixes, fumble returns & punt/kick/block returns.</li>
+                <li><strong>Blocked Kicks (0 pts):</strong> 0 pts (<strong style="color: #ec4899;">0.0%</strong>) • 17 blocked field goals, extra points, and punts recorded across the NFL (0 pts accrued to D/ST; only return TDs award pts).</li>
+                <li><strong>Safeties (2 pts):</strong> 10 pts (<strong style="color: #94a3b8;">0.6%</strong>) • End-zone tackles and holding penalties.</li>
               </ul>
             </div>
           </div>
@@ -955,7 +958,7 @@
       <div class="audit-ledger-card">
         <div class="ledger-header">
           <div class="ledger-title-group">
-            <span class="ledger-badge" id="audit-ledger-status">⏳ Week 11 Baseline Locked</span>
+            <span class="ledger-badge" id="audit-ledger-status">⏳ Week 12 Baseline Locked</span>
             <h3 class="ledger-title">Pre-Kickoff Immutable Snapshot Ledger</h3>
           </div>
           <div class="ledger-meta-group">
@@ -1011,9 +1014,10 @@
           <div class="audit-week-selector-wrap" style="display: flex; align-items: center; gap: 0.5rem;">
             <label for="audit-week-select" style="font-size: 0.85rem; font-weight: 600; color: var(--text-dim);">Reconciliation Week:</label>
             <select id="audit-week-select" class="m-sort-select">
-              <option value="10" selected>Week 10 (Official Audited Outcomes)</option>
+              <option value="11" selected>Week 11 (Official Audited Outcomes)</option>
+              <option value="10">Week 10 (Official Audited Outcomes)</option>
               <option value="9">Week 9 (Official Audited Outcomes)</option>
-              <option value="11">Week 11 (Locked Baseline • Pending Kickoff)</option>
+              <option value="12">Week 12 (Locked Baseline • Pending Kickoff)</option>
             </select>
           </div>
         </div>
@@ -1122,7 +1126,7 @@
             <span class="badge badge-waffle">Head-to-Head</span>
           </div>
           <h3 class="modal-title">⚖️ Start 'Em / Sit 'Em Decider</h3>
-          <p class="modal-sub">Compare any two Week 11 defenses side-by-side to make the optimal starting lineup decision.</p>
+          <p class="modal-sub">Compare any two Week 12 defenses side-by-side to make the optimal starting lineup decision.</p>
         </div>
         <button id="compare-close-btn" class="modal-close" aria-label="Close dialog">&times;</button>
       </div>
@@ -1175,8 +1179,8 @@
   <div id="cell-breakdown-popover" class="cell-breakdown-popover" role="tooltip" aria-hidden="true"></div>
 
   <!-- Load data.js for zero-CORS local Safari viewing (file:// protocol) -->
-  <script src="data.js?v=20261117_02"></script>
+  <script src="data.js?v=20261125_01"></script>
   <!-- Main application logic -->
-  <script src="app.js?v=20261117_02"></script>
+  <script src="app.js?v=20261125_01"></script>
 </body>
 </html>

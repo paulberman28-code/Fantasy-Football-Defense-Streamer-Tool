@@ -34,5 +34,17 @@
     "file_csv": "snapshots/week_11_2026_snapshot.csv",
     "records_count": 32,
     "sha256": "fdbf08251f43ffe12613046556c32530989dcb845d44c45b846220d6dbbdf221"
+  },
+  {
+    "snapshot_id": "2026_week_12",
+    "season": 2026,
+    "week": 12,
+    "timestamp_utc": "2026-11-25T06:44:13.494787+00:00",
+    "timestamp_local": "November 25, 2026 at 12:44 AM",
+    "git_commit_hash": "072110ece43193fe5ba41dabd89ed27ec817d465",
+    "file_json": "snapshots/week_12_2026_snapshot.json",
+    "file_csv": "snapshots/week_12_2026_snapshot.csv",
+    "records_count": 32,
+    "sha256": "0403ccf78390df747948f4355905eca038d4734574e0de4b956d5019b078547d"
   }
 ]

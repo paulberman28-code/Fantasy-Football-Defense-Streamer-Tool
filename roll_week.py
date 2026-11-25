@@ -454,8 +454,8 @@ def rollover_week(from_week: int, to_week: int, dry_run: bool = False):
 
 def main():
     parser = argparse.ArgumentParser(description="NFL Fantasy D/ST Streamer Tool — Week Rollover & Auditing Engine")
-    parser.add_argument("--week", type=int, default=9, help="Target week to audit/reconcile (default: 9)")
-    parser.add_argument("--next-week", type=int, default=10, help="Next week to roll over to (default: 10)")
+    parser.add_argument("--week", type=int, default=11, help="Target week to audit/reconcile (default: 11)")
+    parser.add_argument("--next-week", type=int, default=12, help="Next week to roll over to (default: 12)")
     parser.add_argument("--audit-only", action="store_true", help="Generate audit reconciliation only without rolling over week")
     parser.add_argument("--rollover", action="store_true", help="Perform post-game audit and advance system to next week")
     parser.add_argument("--status", action="store_true", help="Display system status, snapshots, and audit ledger")

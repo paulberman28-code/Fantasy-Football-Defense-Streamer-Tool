@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     week9: { column: 'Projected Fantasy Points', ascending: false },
     week10: { column: 'Opponent L4 Points Allowed', ascending: false },
     playoffs: { column: 'Avg Opp Pts Allowed', ascending: false },
-    history: { column: 'Total Points Allowed (W1-8)', ascending: false },
-    'def-history': { column: 'Total Points (W1-8)', ascending: false },
+    history: { column: 'Total Points Allowed (W1-11)', ascending: false },
+    'def-history': { column: 'Total Points (W1-11)', ascending: false },
     'pos-vuln': { column: 'PPG Allowed', ascending: false },
     anatomy: { column: 'PPG', ascending: false },
     audit: { column: 'Projected Points', ascending: false }
@@ -529,6 +529,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Opposing QB (Status)': 'Starting_QB',
       'Week 9 Verdict': 'Streamer_Tier',
       'Week 10 Verdict': 'Streamer_Tier',
+      'Week 11 Verdict': 'Streamer_Tier',
+      'Week 12 Verdict': 'Streamer_Tier',
       'Streaming Tier': 'Streamer_Tier',
       'Opponent Points Allowed L4': 'Last_4_Games',
       'Opponent L4 Points Allowed': 'Last_4_Games',
@@ -545,6 +547,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       '3-Week Runway (W9–W11)': 'Runway_Avg_Pts',
       'Runway (W10-W12)': 'Runway_Avg_Pts',
       '3-Week Runway (W10–W12)': 'Runway_Avg_Pts',
+      'Runway (W11-W13)': 'Runway_Avg_Pts',
+      '3-Week Runway (W11–W13)': 'Runway_Avg_Pts',
+      'Runway (W12-W14)': 'Runway_Avg_Pts',
+      '3-Week Runway (W12–W14)': 'Runway_Avg_Pts',
       'Vegas Implied Opponent Score': 'Opp_Implied_Pts',
       'Vegas Implied': 'Opp_Implied_Pts',
       'Projected Bracket Points': 'Exp_Bracket',
@@ -634,7 +640,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td class="col-center"><span class="badge ${tierClass}">${r.Streamer_Tier}</span></td>
           <td class="col-center"><span class="pts-highlight ${parseFloat(r.Last_4_Games) >= 30 ? 'pts-top' : ''}">${r.Last_4_Games} pts</span> <span class="stat-dim">(${(parseFloat(r.Last_4_Games) / 4).toFixed(1)}/g)</span></td>
           <td class="col-center"><span class="stat-bold">${r.Total_pts} pts</span></td>
-          <td class="col-center">${renderRunwayCell(r.Runway_W10_W12 || r.Runway_W9_W11, r.Runway_Grade)}</td>
+          <td class="col-center">${renderRunwayCell(r.Runway_W12_W14 || r.Runway_W11_W13 || r.Runway_W10_W12 || r.Runway_W9_W11, r.Runway_Grade)}</td>
           <td class="col-center"><span class="pts-highlight ${parseFloat(r.Proj_Fantasy_Pts) >= 9 ? 'pts-top' : ''}">${formatNum(r.Proj_Fantasy_Pts, 1)}</span></td>
           <td class="col-center stat-bold">${formatNum(r.Predicted_Floor, 1)}</td>
           <td class="col-center">${formatNum(r.Proj_Sacks, 1)}</td>
@@ -683,7 +689,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                   <span class="m-card-team">${formatDstLabel(r.Target_DST)} <small style="font-weight:500; opacity:0.85;">vs ${r.Offense}</small></span>
                 </div>
                 <div style="display:flex; align-items:center; gap:0.4rem; margin-top:0.25rem;">
-                  ${renderRunwayCell(r.Runway_W10_W12 || r.Runway_W9_W11, r.Runway_Grade)}
+                  ${renderRunwayCell(r.Runway_W12_W14 || r.Runway_W11_W13 || r.Runway_W10_W12 || r.Runway_W9_W11, r.Runway_Grade)}
                   <span class="badge ${tierClass}">${r.Streamer_Tier}</span>
                 </div>
               </div>
@@ -744,9 +750,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Week 10 Opponent': 'W10_Opponent',
       'Week 11 Opponent': 'W11_Opponent',
       'Week 12 Opponent': 'W11_Opponent',
+      'Week 13 Opponent': 'W11_Opponent',
       'Week 10 Verdict': 'Tier_Rank',
       'Week 11 Verdict': 'Tier_Rank',
       'Week 12 Verdict': 'Tier_Rank',
+      'Week 13 Verdict': 'Tier_Rank',
       'Def Quality Index (DQI)': 'Stash_DQI',
       'Def Quality Index (Szn)': 'Stash_DQI',
       'Defensive Quality Index (DQI)': 'Stash_DQI',
@@ -772,8 +780,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     tbody.innerHTML = rows.map((s, idx) => {
       const tierBadgeClass = getTierClass(s.Stash_Tier);
-      const rawOpp = s.W11_Opponent || s.W10_Opponent || '';
-      const mobileOpp = s.W11_Opponent_Mobile || s.W10_Opponent_Mobile || rawOpp;
+      const rawOpp = s.W13_Opponent || s.W12_Opponent || s.W11_Opponent || s.W10_Opponent || '';
+      const mobileOpp = s.W13_Opponent_Mobile || s.W12_Opponent_Mobile || s.W11_Opponent_Mobile || s.W10_Opponent_Mobile || rawOpp;
       const stashCode = s.Stash_DST;
       const oppCode = extractTeamCode(rawOpp);
 
@@ -811,8 +819,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (w10CardsContainer) {
       w10CardsContainer.innerHTML = rows.map((s, idx) => {
         const tierBadgeClass = getTierClass(s.Stash_Tier);
-        const rawOpp = s.W11_Opponent || s.W10_Opponent || '';
-        const mobileOpp = s.W11_Opponent_Mobile || s.W10_Opponent_Mobile || rawOpp;
+        const rawOpp = s.W13_Opponent || s.W12_Opponent || s.W11_Opponent || s.W10_Opponent || '';
+        const mobileOpp = s.W13_Opponent_Mobile || s.W12_Opponent_Mobile || s.W11_Opponent_Mobile || s.W10_Opponent_Mobile || rawOpp;
         const matchupLabel = mobileOpp.startsWith('@') ? `(${mobileOpp})` : `vs ${mobileOpp}`;
         const stashCode = s.Stash_DST;
 
@@ -990,24 +998,29 @@ document.addEventListener('DOMContentLoaded', async () => {
     const keyMap = {
       'Offense': 'Offense',
       'Week 1': 'W1', 'Week 2': 'W2', 'Week 3': 'W3', 'Week 4': 'W4',
-      'Week 5': 'W5', 'Week 6': 'W6', 'Week 7': 'W7', 'Week 8': 'W8', 'Week 9': 'W9', 'Week 10': 'W10',
+      'Week 5': 'W5', 'Week 6': 'W6', 'Week 7': 'W7', 'Week 8': 'W8', 'Week 9': 'W9', 'Week 10': 'W10', 'Week 11': 'W11',
       'Last 2 Games Played': 'Last_2_Games',
       'Last 4 Games Played': 'Last_4_Games',
       'Total Points Allowed (W1-8)': 'Total_pts',
       'Total Points Allowed (W1-9)': 'Total_pts',
       'Total Points Allowed (W1-10)': 'Total_pts',
+      'Total Points Allowed (W1-11)': 'Total_pts',
       'Total Pts (W1–9)': 'Total_pts',
       'Total Pts (W1-9)': 'Total_pts',
       'Total Pts (W1–10)': 'Total_pts',
       'Total Pts (W1-10)': 'Total_pts',
+      'Total Pts (W1–11)': 'Total_pts',
+      'Total Pts (W1-11)': 'Total_pts',
       'Streaming Defense': 'Target_DST',
       'Week 9 Opponent': 'Target_DST',
       'Week 10 Opponent': 'Target_DST',
       'Week 11 Opponent': 'Target_DST',
+      'Week 12 Opponent': 'Target_DST',
       'Quarterback & Status': 'Starting_QB',
       'Week 9 Verdict': 'Streamer_Tier',
       'Week 10 Verdict': 'Streamer_Tier',
       'Week 11 Verdict': 'Streamer_Tier',
+      'Week 12 Verdict': 'Streamer_Tier',
       'Streaming Tier': 'Streamer_Tier'
     };
     const targetKey = keyMap[sortConfig.column] || sortConfig.column;
@@ -1035,6 +1048,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           ${renderHeatCell(h.W8)}
           ${renderHeatCell(h.W9)}
           ${renderHeatCell(h.W10)}
+          ${renderHeatCell(h.W11)}
           <td class="col-center"><span class="stat-bold ${h.Last_2_Games >= 15 ? 'pts-top' : ''}">${h.Last_2_Games}</span></td>
           <td class="col-center"><span class="stat-bold ${h.Last_4_Games >= 30 ? 'pts-top' : ''}">${h.Last_4_Games}</span></td>
           <td class="col-center"><span class="pts-highlight ${h.Total_pts >= 45 ? 'pts-top' : ''}">${h.Total_pts}</span></td>
@@ -1091,18 +1105,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     const keyMap = {
       'Defense': 'Defense',
       'Week 1': 'W1', 'Week 2': 'W2', 'Week 3': 'W3', 'Week 4': 'W4',
-      'Week 5': 'W5', 'Week 6': 'W6', 'Week 7': 'W7', 'Week 8': 'W8', 'Week 9': 'W9', 'Week 10': 'W10',
+      'Week 5': 'W5', 'Week 6': 'W6', 'Week 7': 'W7', 'Week 8': 'W8', 'Week 9': 'W9', 'Week 10': 'W10', 'Week 11': 'W11',
       'Last 2 Games Played': 'Last_2_Games',
       'Last 4 Games Played': 'Last_4_Games',
       'Total Points (W1-8)': 'Total_pts',
       'Total Points (W1-9)': 'Total_pts',
       'Total Points (W1-10)': 'Total_pts',
+      'Total Points (W1-11)': 'Total_pts',
       'Total Points': 'Total_pts',
       'Total Pts (W1-8)': 'Total_pts',
       'Total Pts (W1-9)': 'Total_pts',
       'Total Pts (W1–9)': 'Total_pts',
       'Total Pts (W1-10)': 'Total_pts',
       'Total Pts (W1–10)': 'Total_pts',
+      'Total Pts (W1-11)': 'Total_pts',
+      'Total Pts (W1–11)': 'Total_pts',
       'Fantasy PPG': 'PPG',
       'PPG': 'PPG',
       'Trend Momentum': 'Trend_Delta',
@@ -1120,16 +1137,19 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Week 10 Opponent': 'Week10_Opponent',
       'Week 10 Matchup': 'Week10_Opponent',
       'Week 10 Verdict': 'Week10_Verdict',
-      'Week 11 Opponent': 'Week10_Opponent',
-      'Week 11 Matchup': 'Week10_Opponent',
-      'Week 11 Verdict': 'Week10_Verdict'
+      'Week 11 Opponent': 'Week11_Opponent',
+      'Week 11 Matchup': 'Week11_Opponent',
+      'Week 11 Verdict': 'Week11_Verdict',
+      'Week 12 Opponent': 'Week12_Opponent',
+      'Week 12 Matchup': 'Week12_Opponent',
+      'Week 12 Verdict': 'Week12_Verdict'
     };
     const targetKey = keyMap[sortConfig.column] || sortConfig.column;
     rows = sortData(rows, targetKey, sortConfig.ascending);
 
     tbody.innerHTML = rows.map(d => {
-      const oppMatchup = d.Week10_Opponent || d.Week9_Opponent || 'BYE';
-      const verdict = d.Week10_Verdict || d.Week9_Verdict || 'Neutral';
+      const oppMatchup = d.Week12_Opponent || d.Week11_Opponent || d.Week10_Opponent || d.Week9_Opponent || 'BYE';
+      const verdict = d.Week12_Verdict || d.Week11_Verdict || d.Week10_Verdict || d.Week9_Verdict || 'Neutral';
       const tierClass = getTierClass(verdict);
       let trendBadge = '';
       if (d.Trend_Delta >= 1.5) {
@@ -1158,6 +1178,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           ${renderDefHeatCell(d.W8)}
           ${renderDefHeatCell(d.W9)}
           ${renderDefHeatCell(d.W10)}
+          ${renderDefHeatCell(d.W11)}
           <td class="col-center"><span class="stat-bold ${d.Last_2_Games >= 18 ? 'pts-top' : ''}">${d.Last_2_Games}</span></td>
           <td class="col-center"><span class="stat-bold ${d.Last_4_Games >= 32 ? 'pts-top' : ''}">${d.Last_4_Games}</span> <span class="stat-dim">(${d.L4_PPG}/g)</span></td>
           <td class="col-center"><span class="pts-highlight ${d.Total_pts >= 50 ? 'pts-top' : ''}">${d.Total_pts}</span></td>
@@ -1233,13 +1254,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       const w8 = isIntMode ? t.W8_Int : t.W8;
       const w9 = isIntMode ? t.W9_Int : t.W9;
       const w10 = isIntMode ? t.W10_Int : t.W10;
+      const w11 = isIntMode ? t.W11_Int : t.W11;
       const l2 = isIntMode ? t.Last_2_Games_Int : t.Last_2_Games;
       const l4 = isIntMode ? t.Last_4_Games_Int : t.Last_4_Games;
       const tot = isIntMode ? t.Total_pts_Int : t.Total_pts;
       const ppg = isIntMode ? t.PPG_Int : t.PPG;
       return {
         ...t,
-        _W1: w1, _W2: w2, _W3: w3, _W4: w4, _W5: w5, _W6: w6, _W7: w7, _W8: w8, _W9: w9, _W10: w10,
+        _W1: w1, _W2: w2, _W3: w3, _W4: w4, _W5: w5, _W6: w6, _W7: w7, _W8: w8, _W9: w9, _W10: w10, _W11: w11,
         _L2: l2, _L4: l4, _Total: tot, _PPG: ppg
       };
     });
@@ -1255,7 +1277,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const pMeta = posNamesMap[activePosVuln] || { icon: '🏈', full: activePosVuln };
     const bannerTitleEl = document.getElementById('pos-vuln-table-title');
     if (bannerTitleEl) {
-      bannerTitleEl.textContent = `${pMeta.icon} Viewing Position: ${pMeta.full} — Fantasy Points Allowed by NFL Defenses (Weeks 1–10)`;
+      bannerTitleEl.textContent = `${pMeta.icon} Viewing Position: ${pMeta.full} — Fantasy Points Allowed by NFL Defenses (Weeks 1–11)`;
     }
     const bannerBadgeEl = document.getElementById('pos-vuln-table-badge');
     if (bannerBadgeEl) {
@@ -1284,21 +1306,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     const mostSub = document.getElementById('pos-kpi-most-sub');
     if (mostLbl) mostLbl.textContent = `#1 Most Vulnerable vs ${activePosVuln}`;
     if (mostVal && mostVuln) mostVal.innerHTML = `${renderTeamLogoHtml(mostVuln.Team, mostVuln.Defense, 'sm')} ${mostVuln.Defense}`;
-    if (mostSub && mostVuln) mostSub.textContent = `${formatNum(mostVuln._PPG, 1)} PPG Allowed (${formatNum(mostVuln._Total, isIntMode ? 0 : 1)} Total • W11: ${mostVuln.Week10_Opponent})`;
+    if (mostSub && mostVuln) mostSub.textContent = `${formatNum(mostVuln._PPG, 1)} PPG Allowed (${formatNum(mostVuln._Total, isIntMode ? 0 : 1)} Total • W12: ${mostVuln.Week12_Opponent || mostVuln.Week11_Opponent || mostVuln.Week10_Opponent || 'BYE'})`;
 
     const l4Lbl = document.getElementById('pos-kpi-l4-lbl');
     const l4Val = document.getElementById('pos-kpi-l4-val');
     const l4Sub = document.getElementById('pos-kpi-l4-sub');
     if (l4Lbl) l4Lbl.textContent = `Hottest L4 Target vs ${activePosVuln}`;
     if (l4Val && hottestL4) l4Val.innerHTML = `${renderTeamLogoHtml(hottestL4.Team, hottestL4.Defense, 'sm')} ${hottestL4.Defense}`;
-    if (l4Sub && hottestL4) l4Sub.textContent = `${formatNum(hottestL4._L4, isIntMode ? 0 : 1)} pts in Last 4 Games (W11: ${hottestL4.Week10_Opponent})`;
+    if (l4Sub && hottestL4) l4Sub.textContent = `${formatNum(hottestL4._L4, isIntMode ? 0 : 1)} pts in Last 4 Games (W12: ${hottestL4.Week12_Opponent || hottestL4.Week11_Opponent || hottestL4.Week10_Opponent || 'BYE'})`;
 
     const stingyLbl = document.getElementById('pos-kpi-stingy-lbl');
     const stingyVal = document.getElementById('pos-kpi-stingy-val');
     const stingySub = document.getElementById('pos-kpi-stingy-sub');
     if (stingyLbl) stingyLbl.textContent = `#32 Stingiest vs ${activePosVuln} (Avoid)`;
     if (stingyVal && stingiest) stingyVal.innerHTML = `${renderTeamLogoHtml(stingiest.Team, stingiest.Defense, 'sm')} ${stingiest.Defense}`;
-    if (stingySub && stingiest) stingySub.textContent = `${formatNum(stingiest._PPG, 1)} PPG Allowed (${formatNum(stingiest._Total, isIntMode ? 0 : 1)} Total • W11: ${stingiest.Week10_Opponent})`;
+    if (stingySub && stingiest) stingySub.textContent = `${formatNum(stingiest._PPG, 1)} PPG Allowed (${formatNum(stingiest._Total, isIntMode ? 0 : 1)} Total • W12: ${stingiest.Week12_Opponent || stingiest.Week11_Opponent || stingiest.Week10_Opponent || 'BYE'})`;
 
     const avgVal = document.getElementById('pos-kpi-avg-val');
     const avgSub = document.getElementById('pos-kpi-avg-sub');
@@ -1312,14 +1334,17 @@ document.addEventListener('DOMContentLoaded', async () => {
       'Position': 'Position',
       'Defense': 'Defense',
       'Week 1': '_W1', 'Week 2': '_W2', 'Week 3': '_W3', 'Week 4': '_W4',
-      'Week 5': '_W5', 'Week 6': '_W6', 'Week 7': '_W7', 'Week 8': '_W8', 'Week 9': '_W9', 'Week 10': '_W10',
+      'Week 5': '_W5', 'Week 6': '_W6', 'Week 7': '_W7', 'Week 8': '_W8', 'Week 9': '_W9', 'Week 10': '_W10', 'Week 11': '_W11',
       'Last 2 Games': '_L2',
       'Last 4 Games': '_L4',
       'Total Points': '_Total',
+      'Total Pts (W1-10)': '_Total',
+      'Total Pts (W1-11)': '_Total',
       'PPG Allowed': '_PPG',
       'Season Stat Breakdown': 'Stat_Summary',
       'Week 10 Offense Faced': 'Week10_Opponent',
-      'Week 11 Offense Faced': 'Week10_Opponent'
+      'Week 11 Offense Faced': 'Week11_Opponent',
+      'Week 12 Offense Faced': 'Week12_Opponent'
     };
     const targetKey = keyMap[sortConfig.column] || '_PPG';
     rows = sortData(rows, targetKey, sortConfig.ascending);
@@ -1353,7 +1378,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     tbody.innerHTML = rows.map(r => {
       const defCode = r.Team || extractTeamCode(r.Defense);
-      const oppCode = extractTeamCode(r.Week10_Opponent);
+      const opp = r.Week12_Opponent || r.Week11_Opponent || r.Week10_Opponent || 'BYE';
+      const oppCode = extractTeamCode(opp);
 
       return `
         <tr>
@@ -1375,6 +1401,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           ${renderPosHeatCell(r._W8, defCode, 8)}
           ${renderPosHeatCell(r._W9, defCode, 9)}
           ${renderPosHeatCell(r._W10, defCode, 10)}
+          ${renderPosHeatCell(r._W11, defCode, 11)}
           <td class="col-center stat-bold">${formatNum(r._L2, decPlaces)}</td>
           <td class="col-center stat-bold ${r.Vuln_Rank <= 8 ? 'pts-top' : ''}">${formatNum(r._L4, decPlaces)}</td>
           <td class="col-center"><span class="pts-highlight">${formatNum(r._Total, decPlaces)}</span></td>
@@ -1382,8 +1409,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td style="font-size: 0.82rem; color: var(--text-muted);">${r.Stat_Summary}</td>
           <td>
             <div class="team-cell">
-              ${oppCode ? renderTeamLogoHtml(oppCode, r.Week10_Opponent) : ''}
-              <span>${r.Week10_Opponent}</span>
+              ${oppCode ? renderTeamLogoHtml(oppCode, opp) : ''}
+              <span>${opp}</span>
             </div>
           </td>
         </tr>
@@ -1587,9 +1614,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (matchupsTbody) {
       // Determine which week to display in granular reconciliation table
       const weekSelectEl = document.getElementById('audit-week-select');
-      let targetAuditWeek = 10;
+      let targetAuditWeek = 11;
       if (weekSelectEl) {
-        targetAuditWeek = parseInt(weekSelectEl.value, 10) || 10;
+        targetAuditWeek = parseInt(weekSelectEl.value, 10) || 11;
       } else if (completedAudits.length > 0) {
         targetAuditWeek = completedAudits[completedAudits.length - 1].week;
       } else {
@@ -1953,9 +1980,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const kpiRow = modal.querySelector('.modal-kpi-row');
     if (kpiRow) kpiRow.style.display = 'none';
 
-    const rawOpp = data.W11_Opponent || data.W10_Opponent || '';
-    const currentWk = (appData.meta && appData.meta.currentWeek) || 10;
-    const lookAheadWk = (appData.meta && appData.meta.lookAheadWeek) || 11;
+    const rawOpp = data.W13_Opponent || data.W12_Opponent || data.W11_Opponent || data.W10_Opponent || '';
+    const currentWk = (appData.meta && appData.meta.currentWeek) || 12;
+    const lookAheadWk = (appData.meta && appData.meta.lookAheadWeek) || 13;
     document.getElementById('modal-matchup-title').innerHTML = `<div class="team-cell" style="display:inline-flex;">${renderTeamLogoHtml(data.Stash_DST, data.Stash_DST, 'lg')} <span>Week ${lookAheadWk} Stash: ${data.Stash_DST} vs ${rawOpp}</span></div>`;
     document.getElementById('modal-tier-badge').textContent = data.Stash_Tier || 'Neutral';
     document.getElementById('modal-tier-badge').className = `badge tier-badge ${getTierClass(data.Stash_Tier)}`;
@@ -2029,7 +2056,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const priorityTargets = sorted.filter(m => (m.Streamer_Tier || '').includes('Priority') && m !== topSmash);
         const speculativeTargets = sorted.filter(m => (m.Streamer_Tier || '').includes('Speculative')).slice(0, 4);
 
-        const meta = appData.meta || { currentWeek: 10, lookAheadWeek: 11, lastUpdated: 'Nov 12, 2026' };
+        const meta = appData.meta || { currentWeek: 12, lookAheadWeek: 13, lastUpdated: 'Nov 25, 2026' };
         const topStash = (appData.lookAheadStashes && appData.lookAheadStashes[0]) || null;
         const windy = active.filter(m => (m.Gametime_Weather || '').toLowerCase().includes('wind') || (m.Gametime_Weather || '').toLowerCase().includes('gust'));
 
@@ -2058,7 +2085,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         if (topStash) {
-          const stashOpp = topStash.W11_Opponent || topStash.W10_Opponent || '';
+          const stashOpp = topStash.W13_Opponent || topStash.W12_Opponent || topStash.W11_Opponent || topStash.W10_Opponent || '';
           text += `🔮 TOP WEEK ${meta.lookAheadWeek || 11} LOOK-AHEAD STASH:\n`;
           text += `• ${topStash.Stash_DST} (W${meta.lookAheadWeek || 11}: ${stashOpp}) — ${topStash.Opp_Last_4} pts allowed L4\n\n`;
         }
@@ -2224,7 +2251,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         },
         {
           label: '3-Week Runway Grade',
-          getVal: (m) => renderRunwayCell(m.Runway_W10_W12 || m.Runway_W9_W11, m.Runway_Grade),
+          getVal: (m) => renderRunwayCell(m.Runway_W12_W14 || m.Runway_W11_W13 || m.Runway_W10_W12 || m.Runway_W9_W11, m.Runway_Grade),
           winner: 0
         },
         {

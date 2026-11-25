@@ -1,0 +1,33 @@
+Stash_DST,W11_Opponent,W13_Opponent,Opp_Last_4,Opp_Total_Pts,Opp_QB,Stash_Tier,Stash_DQI,Def_Pressure_Rate%,Def_Pass_EPA,Def_3rd_Stop%,Def_Takeaway_Drive%,Def_RZ_TD_Allowed%,Look_Ahead_Rationale
+DEN,Dolphins (Home),Dolphins (Home),29,65,Kyle McCord,Priority,76.0,27.9,0.007,61.0,50.0,50.0,Top-ranked Week 13 home smash stash. Hosts backup QB Kyle McCord and Dolphins offense at Mile High as a massive 14.5-point home favorite with a 39.5 low game total.
+MIN,Panthers (Home),Panthers (Home),28,62,Bryce Young,Priority,93.1,36.0,-0.081,70.9,63.0,17.6,Elite home smash spot in Week 13. Hosts Bryce Young and Panthers offense as a 5.5-point home favorite with high takeaway upside.
+BUF,Patriots (@ NE),Patriots (@ NE),24,58,Drake Maye,Priority,80.6,25.7,-0.024,69.2,71.4,53.3,12.5-point road favorite in Foxborough in Week 13 against Drake Maye and Patriots offense.
+SF,Giants (@ NYG),Giants (@ NYG),15,54,J.J. McCarthy,Priority,76.1,18.8,0.003,61.9,58.3,17.6,Road smash spot in Week 13. Attacks backup QB J.J. McCarthy and Giants offense that struggles heavily in pass protection.
+ARI,Eagles (Home),Eagles (Home),28,52,Joe Milton III,Speculative,62.9,19.7,0.261,60.3,30.8,42.1,Low-scoring defensive environment (36.5 O/U). Hosts backup QB Joe Milton III and Eagles offense.
+LAC,Buccaneers (@ TB),Buccaneers (@ TB),18,63,Baker Mayfield,Speculative,74.2,20.7,0.085,63.6,48.1,21.7,High-pressure road matchup in Tampa Bay against Baker Mayfield and Buccaneers.
+WAS,Titans (@ TEN),Titans (@ TEN),17,48,Cam Ward,Speculative,72.0,19.2,0.08,64.1,56.0,40.0,Favorable road matchup in Week 13 attacking rookie Cam Ward and high-dropback Titans offense.
+CHI,Jaguars (Home),Jaguars (Home),12,29,Trevor Lawrence,Speculative,82.8,25.4,-0.039,75.4,48.1,40.0,Home favorite in Week 13 at Soldier Field against Trevor Lawrence and Jaguars offense.
+GB,Saints (@ NO),Saints (@ NO),31,59,Tyler Shough,Neutral,77.7,21.6,-0.031,63.3,74.1,42.1,Road favorite in New Orleans against Tyler Shough and Saints.
+TB,Chargers (Home),Chargers (Home),25,70,Justin Herbert,Neutral,80.5,17.5,-0.093,66.4,83.3,31.2,Home game in Tampa against Justin Herbert and Chargers.
+DET,Falcons (@ ATL),Falcons (@ ATL),23,73,Michael Penix Jr.,Neutral,70.1,25.4,0.103,60.3,34.6,50.0,Road matchup in Atlanta dome against Michael Penix Jr. and Falcons.
+CLE,Bengals (Home),Bengals (Home),13,35,Joe Burrow,Neutral,78.0,22.5,-0.007,64.4,48.0,22.2,Divisional home clash in Cleveland against Joe Burrow and Bengals.
+SEA,Cowboys (Home),Cowboys (Home),12,29,Dak Prescott,Neutral,83.8,26.8,-0.079,70.1,40.7,25.0,Home matchup at Lumen Field against Dak Prescott and Cowboys.
+KC,Rams (@ LA),Rams (@ LA),11,39,Matthew Stafford,Neutral,77.7,17.7,-0.07,68.4,50.0,29.4,Road matchup at SoFi Stadium against Matthew Stafford and Rams.
+PIT,Texans (Home),Texans (Home),7,31,C.J. Stroud,Neutral,79.2,22.0,0.017,68.9,48.1,20.0,Home matchup in Pittsburgh against C.J. Stroud and Texans.
+PHI,Cardinals (@ ARI),Cardinals (@ ARI),43,73,Josh Johnson,Avoid,66.9,16.2,0.089,64.9,15.4,33.3,AVOID / DO NOT STASH: Road game in Arizona with backup QB Joe Milton III starting.
+CAR,Vikings (@ MIN),Vikings (@ MIN),32,63,Kirk Cousins,Avoid,68.6,15.6,0.045,59.5,57.7,42.9,AVOID / DO NOT STASH: Road underdog in Minnesota against elite Vikings pass rush.
+CIN,Browns (@ CLE),Browns (@ CLE),30,70,Deshaun Watson,Avoid,76.5,21.6,0.025,61.3,50.0,15.0,AVOID / DO NOT STASH: Road divisional game in Cleveland against Browns defense.
+NO,Packers (Home),Packers (Home),23,43,Jordan Love,Avoid,71.9,22.2,0.057,59.2,36.7,29.2,AVOID / DO NOT STASH: Home underdog against Jordan Love and Packers.
+TEN,Commanders (Home),Commanders (Home),18,49,Jayden Daniels,Avoid,65.5,17.9,0.227,58.3,44.4,26.3,AVOID / DO NOT STASH: Facing Jayden Daniels and Commanders offense.
+NE,Bills (Home),Bills (Home),16,37,Josh Allen,Avoid,75.3,23.8,0.116,66.0,38.5,21.1,AVOID / DO NOT STASH: 12.5-point home underdog against Josh Allen and Bills.
+JAX,Bears (@ CHI),Bears (@ CHI),15,51,Caleb Williams,Avoid,83.9,18.8,-0.074,71.9,70.8,15.4,AVOID / DO NOT STASH: Road underdog in Chicago at Soldier Field.
+ATL,Lions (Home),Lions (Home),14,29,Jared Goff,Avoid,72.0,22.7,0.076,61.4,33.3,31.2,AVOID / DO NOT STASH: Facing Jared Goff and high-scoring Lions offense.
+NYG,49ers (Home),49ers (Home),14,25,Brock Purdy,Avoid,72.3,18.2,0.006,65.0,48.3,44.4,AVOID / DO NOT STASH: Home underdog against Brock Purdy and 49ers.
+HOU,Steelers (@ PIT),Steelers (@ PIT),13,52,Aaron Rodgers,Avoid,77.5,25.3,0.001,66.7,37.0,35.3,AVOID / DO NOT STASH: Road game in Pittsburgh against Aaron Rodgers.
+DAL,Seahawks (@ SEA),Seahawks (@ SEA),10,53,Sam Darnold,Avoid,65.9,21.1,0.167,58.0,33.3,40.9,AVOID / DO NOT STASH: High-total (50.5 O/U) road game in Seattle.
+LA,Chiefs (Home),Chiefs (Home),8,27,Patrick Mahomes,Avoid,80.5,17.7,-0.085,73.9,44.0,23.5,AVOID / DO NOT STASH: High-total home game against Patrick Mahomes and Chiefs.
+MIA,Broncos (@ DEN),Broncos (@ DEN),6,23,Bo Nix,Avoid,67.7,19.6,0.142,57.0,47.8,33.3,AVOID / DO NOT STASH: 14.5-point road underdog at Mile High against Bo Nix and Broncos.
+BAL,BYE (Week 13),BYE (Week 13),0,0,BYE,Avoid,75.9,22.6,0.055,65.1,38.5,21.1,BYE WEEK (Week 13) - Defense holds a bye week.
+IND,BYE (Week 13),BYE (Week 13),0,0,BYE,Avoid,71.0,19.9,0.074,69.1,29.6,47.1,BYE WEEK (Week 13) - Defense holds a bye week.
+LV,BYE (Week 13),BYE (Week 13),0,0,BYE,Avoid,70.7,21.6,0.163,57.9,65.4,31.6,BYE WEEK (Week 13) - Defense holds a bye week.
+NYJ,BYE (Week 13),BYE (Week 13),0,0,BYE,Avoid,73.3,23.2,0.136,61.2,44.0,19.0,BYE WEEK (Week 13) - Defense holds a bye week.
